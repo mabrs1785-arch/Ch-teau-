@@ -640,3 +640,10 @@ Constat transversal : **aucun** des domaines dont les comptes ont été lus ne f
 | Dividende annuel de la foncière Northumberland Estates | 5 | M£ par an | 2024-25 et 2025-26 | PAGE LUE | R5-14 |
 | Prix du foncier équestre à Wellington (Floride) | 692 000 (383 000 en 2019-20) | $ par acre | ≈ 2022 | PAGE LUE | R5-38 |
 | Wentworth Woodhouse : recettes, résultat, réserves libres | 7,13 M£ ; – 0,36 M£ ; 173 908 £ | £ | 2024-25 | PAGE LUE | R5-40 |
+
+
+## Errata après vérification indépendante (V2V, 2026-10-14)
+
+Ajouté par le directeur de mission. Le texte ci-dessus n'est pas modifié ; ces précisions s'appliquent à sa lecture.
+
+- Chatsworth (§ 1.3, leçon) : « 600 000 visiteurs payants » doit se lire « environ 630 000 visiteurs, détenteurs de pass et membres compris » [V2V-19].

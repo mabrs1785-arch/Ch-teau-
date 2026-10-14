@@ -482,3 +482,10 @@ Avocat en droit rural ou de l'urbanisme, bureau de contrôle, acousticien :
 | Fonds de dotation : dotation minimale | 15 000 | € | 2025 | PAGE LUE | [R3-58] |
 | Bail rural : durée minimale | 9 | ans | 2025 | PAGE LUE | [R3-28] [R3-45] |
 | Exemple IFI pour 5 M€ (hors RP) / 3,5 M€ (RP) / 10 M€ | 35 690 / 20 690 / 98 190 | € par an | 2026 | ESTIMATION | [R3-15] |
+
+
+## Errata après vérification indépendante (V2V, 2026-10-14)
+
+Ajouté par le directeur de mission. Le texte ci-dessus n'est pas modifié ; ces précisions s'appliquent à sa lecture.
+
+- Taxe de 20 % sur les holdings patrimoniales : la synthèse d'avocats citée numérote l'article tantôt « art. 7 », tantôt « article 3 ». Le contenu (seuils de 5 M€, revenus passifs de plus de 50 %, logement réservé à l'associé, chevaux de concours) est conforme à cette synthèse, mais le texte officiel n'a pas pu être lu : À VALIDER sur le CGI [V2V-47].

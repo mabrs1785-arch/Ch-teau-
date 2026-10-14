@@ -723,3 +723,11 @@ Source : API open data du BODACC (DILA) [R7-64]. Statut : PAGE LUE, données off
 | 27 | Sociétés « château » de l'hôtellerie et de la réception en procédure collective | au moins 41 entités | entités, du 01/2024 au 10/2026 | 2024-2026 | PAGE LUE (comptage par API) | [R7-64] |
 | 28 | Chiffre d'affaires d'une société d'exploitation de château de réception de taille familiale | 64 000 à 600 000 € ; marge nette de 0 à 6 % (un cas à 27 %) | € par an | 2016-2023 | PAGE LUE | [R7-63] |
 | 29 | Choc de 2020 sur les séminaires (Châteauform') | −69 % de chiffre d'affaires ; −65 % de séminaires | % | 2020 | PAGE LUE | [R7-26] |
+
+
+## Errata après vérification indépendante (V2V, 2026-10-14)
+
+Ajouté par le directeur de mission. Le texte ci-dessus n'est pas modifié ; ces précisions s'appliquent à sa lecture.
+
+- Louise de La Vallière (chiffres clés n° 18) : « 33 salariés […] ETP » doit se lire « effectif projeté à l'ouverture de 33 personnes, dont 19 en cuisine, restaurant et bar ». Le ratio de 1,65 personne par chambre inclut donc la restauration ; sans restaurant, l'ordre de grandeur serait d'environ 0,7. L'investissement de 675 000 € par chambre s'entend hors prix d'achat (750 000 € en l'incluant), restaurant, spa, piscine et parc compris [V2V-30].
+- Mariages.net : 1 382 et 3 769 sont des lieux classés dans les catégories commerciales « château » et « domaine », avec un recouvrement possible ; ce n'est pas un recensement [V2V-26] [V2V-27].

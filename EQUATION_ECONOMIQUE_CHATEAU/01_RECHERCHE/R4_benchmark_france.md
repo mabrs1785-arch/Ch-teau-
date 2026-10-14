@@ -453,3 +453,10 @@ Contre-exemples (réussites qui nuancent le constat) :
 - WebFetch : 99 appels (dont environ 16 sans contenu exploitable : 403, 404, 502, 503, DNS, redirection, page fermée). Les moteurs internes utilisés sont ceux de sites officiels (API Recherche d'entreprises, API BODACC de la DILA, Companies House), conformément aux règles.
 - Deux PDF de La Demeure Historique ont été extraits localement (pdftotext) après téléchargement par WebFetch, dans un dossier isolé du scratchpad.
 - Aucune commande git, aucun contact, aucun formulaire.
+
+
+## Errata après vérification indépendante (V2V, 2026-10-14)
+
+Ajouté par le directeur de mission. Le texte ci-dessus n'est pas modifié ; ces précisions s'appliquent à sa lecture.
+
+- Échantillon de 33 sociétés de châteaux-hôtels (§ 1.B et ligne 12 des chiffres clés) : V2V retrouve exactement les mêmes 33 sociétés et le même résultat (20 en perte, 61 %, marge nette médiane −6,3 %), mais sur des comptes de 2017 à 2025, dont 4 sociétés fermées et 2 en liquidation selon R7. Sur les seuls comptes 2023-2025 (26 sociétés) : 54 % en perte, marge nette médiane −4,5 %. Biais à signaler : classement par pertinence, seules les sociétés qui publient leurs comptes, résultat net et non EBE [V2V-33] [V2V-34].

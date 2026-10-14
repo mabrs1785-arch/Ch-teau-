@@ -589,3 +589,13 @@ print(f"   Olhain : cotisations moyennes ≈ {300000/40:,.0f} €/an (nominal, 4
 | 22 | **Budget annuel du bâti S2** | 230 100 – 518 600 – 936 800 | € TTC/an | 2026 | ESTIMATION (§ 9) | calcul R1 |
 | 23 | **Budget annuel du bâti S3** | 903 800 – 1 978 400 – 3 523 100 | € TTC/an | 2026 | ESTIMATION (§ 9) | calcul R1 |
 | 24 | Part du gros entretien dans le budget du bâti (central) | 51 – 55 | % | 2026 | ESTIMATION (§ 9) | calcul R1 |
+
+
+## Errata après vérification indépendante (V2V, 2026-10-14)
+
+Ajouté par le directeur de mission. Le texte ci-dessus n'est pas modifié ; ces précisions s'appliquent à sa lecture.
+
+- Crédits des DRAC (§ 6.3 et ligne 9 des chiffres clés) : la ligne « 112 M€ en CP, soit −29 % (−172 M€) » mélange deux périmètres. Le Sénat indique −29 % en crédits de paiement (−172 M€) sur le périmètre large des crédits d'intervention des DRAC. L'Assemblée nationale indique 128,7 → 112 M€ (−13 %) sur les seuls crédits déconcentrés d'intervention (monuments, orgues, objets). Ce sont des montants du projet de loi de finances, non votés [V2V-08] [V2V-09].
+- « Moins de 2 000 visiteurs » par monument (§ 1.1 et contre-exemple 4) : la citation complète précise « en dehors des zones touristiques très fréquentées, et des monuments emblématiques » [V2V-07].
+- Source R1-08 : la phrase « absolute minimum value » se trouve p. xii du rapport du NRC de 1990 (chapitre 1, « Front Matter »), lue par V2V : https://www.nationalacademies.org/read/9807/chapter/1 [V2V-02]. La règle est conditionnelle (« in the absence of specific information »), repose sur le jugement du comité et vaut pour un parc de bâtiments, en moyenne sur 5 à 10 ans.
+- Rapport Harlow (§ 1.2) : la TVA effective représente 17,9 à 18,5 % de la dépense hors TVA ; pour passer en HT, diviser par environ 1,18 et non par 1,20 [V2V-06].

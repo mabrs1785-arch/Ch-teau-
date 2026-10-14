@@ -675,3 +675,11 @@ Le périmètre de R2 porte sur des coûts. Les liquidations et les reventes de d
   - 35 requêtes POST à l'API publique de calcul du simulateur URSSAF mon-entreprise.urssaf.fr, sans compte ni donnée personnelle ;
   - 5 requêtes de diagnostic : statut d'urssaf.fr et de mon-entreprise, téléchargement Plante & Cité (403), téléchargement chambre de Normandie (en maintenance), état du proxy.
 - Aucun contact, formulaire, achat ni commande git.
+
+
+## Errata après vérification indépendante (V2V, 2026-10-14)
+
+Ajouté par le directeur de mission. Le texte ci-dessus n'est pas modifié ; ces précisions s'appliquent à sa lecture.
+
+- Allègement général (§ 1.2 et chiffres clés) : 0,3981 est le coefficient **maximal** (moins de 50 salariés, salaire égal au SMIC de janvier 2026). Au SMIC de juin 2026, le coefficient effectif est d'environ 0,375, car la formule garde le SMIC de janvier [V2V-14] [V2V-15]. Les trois coûts employeur du simulateur URSSAF (23 853, 44 118 et 78 982 €/an) sont confirmés au centime [V2V].
+- Jardiniers de S3 : V2C a montré, à partir des temps d'entretien de la Ville de Rennes, que 11 jardiniers ne suffisent pas pour 60 ha (au moins 15,7 ETP en gestion différenciée). Le modèle retient désormais 16 jardiniers [V2C-21].
