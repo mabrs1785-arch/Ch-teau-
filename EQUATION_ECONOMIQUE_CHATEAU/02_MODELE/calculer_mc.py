@@ -136,9 +136,55 @@ def distribution():
     json.dump(out, open("sorties/mc_distribution_solutions.json", "w"), indent=1, ensure_ascii=False)
 
 
+def comparaison_modeles():
+    """Dotation nécessaire pour chaque modèle candidat de L3 (30 ans, 50 % et 95 % de chances de tenir).
+
+    - A : dotation seule, avec le socle d'activités calmes de la solution ;
+    - B : hybride, dividendes de transition de la holding (5 PME) puis dotation ;
+    - C : locataire d'ancrage (bail à un exploitant de séminaires) + socle foncier, puis dotation. Le loyer est
+      traité en classe B (choc de crise de −15 % au lieu de −5 %), par prudence (loyers suspendus en 2020-2021) ;
+      pour S3, le moteur S2 (50 chambres) est multiplié par 1,6 (80 chambres, valeur centrale de V2A) ;
+    - D : réduction du besoin par les leviers vérifiés par V2C (−7,5 %), sans avantage fiscal MH.
+    """
+    out = {}
+    v = mc._v
+
+    def k(P, cible, horizon=30, **kw):
+        return round(mc.dotation_necessaire(P, cible=cible, horizon=horizon, n=6000, borne_haute=8e8, **kw), -5)
+
+    for scen in ("S2", "S3"):
+        B = EXTRA[f"bud_total_besoin_{scen}"]
+        r0 = RESERVES[scen]
+        # A — dotation seule
+        PA = mc.parametres_solution(scen, div=0, div_annees=0, reserve0=r0)
+        out[f"A_dotation_seule_{scen}"] = {"k50": k(PA, 0.50), "k95": k(PA, 0.05)}
+        # B — hybride : dividendes de 1 M€ (S2) pendant 10 ans, 5 PME
+        div = 1_000_000 if scen == "S2" else 3_000_000
+        PB = mc.parametres_solution(scen, div=div, div_annees=10, reserve0=r0)
+        out[f"B_hybride_{scen}"] = {"dividendes": div, "k95_30ans": k(PB, 0.05, ent_n=5),
+                                    "k95_20ans": k(PB, 0.05, horizon=20, ent_n=5)}
+        # C — locataire d'ancrage
+        f_anc = 1.0 if scen == "S2" else 1.6
+        ech = (lambda m: v(f"{scen}_ech_{m}"))
+        PC = dict(PA)
+        PC["A"] = ech("pv") * v("mot_pv_cn") + ech("bois") * v("mot_bois_cn")
+        PC["B"] = f_anc * v("mot_anc_cn") + ech("eq_ret") * v("mot_eq_ret_cn")
+        PC["C"] = 0.0
+        PC["capex"] = 0.0
+        out[f"C_ancrage_{scen}"] = {"contribution_brute_activites": round(PC["A"] + PC["B"], -3),
+                                    "k50": k(PC, 0.50), "k95": k(PC, 0.05)}
+        # D — leviers vérifiés (−7,5 % du besoin), sans avantage MH
+        PD = mc.parametres_solution(scen, div=0, div_annees=0, reserve0=r0, mult_besoin=0.925, mh_actif=0)
+        out[f"D_leviers_verifies_{scen}"] = {"k50": k(PD, 0.50), "k95": k(PD, 0.05)}
+        for cle in [c for c in out if c.endswith(scen)]:
+            print(cle, out[cle])
+    json.dump(out, open("sorties/mc_comparaison_modeles.json", "w"), indent=1, ensure_ascii=False)
+
+
 if __name__ == "__main__":
     dotations()
     grille()
     ruptures()
     holding()
     distribution()
+    comparaison_modeles()

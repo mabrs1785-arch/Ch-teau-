@@ -1,0 +1,38 @@
+{
+ "A_dotation_seule_S2": {
+  "k50": 36500000.0,
+  "k95": 85500000.0
+ },
+ "B_hybride_S2": {
+  "dividendes": 1000000,
+  "k95_30ans": 74600000.0,
+  "k95_20ans": 56800000.0
+ },
+ "C_ancrage_S2": {
+  "contribution_brute_activites": 378000.0,
+  "k50": 28500000.0,
+  "k95": 69700000.0
+ },
+ "D_leviers_verifies_S2": {
+  "k50": 33400000.0,
+  "k95": 78400000.0
+ },
+ "A_dotation_seule_S3": {
+  "k50": 108700000.0,
+  "k95": 271300000.0
+ },
+ "B_hybride_S3": {
+  "dividendes": 3000000,
+  "k95_30ans": 237300000.0,
+  "k95_20ans": 182500000.0
+ },
+ "C_ancrage_S3": {
+  "contribution_brute_activites": 613000.0,
+  "k50": 96600000.0,
+  "k95": 249600000.0
+ },
+ "D_leviers_verifies_S3": {
+  "k50": 101100000.0,
+  "k95": 249000000.0
+ }
+}
