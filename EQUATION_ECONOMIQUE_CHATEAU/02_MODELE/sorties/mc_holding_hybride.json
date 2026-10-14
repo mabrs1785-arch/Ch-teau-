@@ -1,0 +1,65 @@
+{
+ "S1_div300k_3pme_dot3M": {
+  "p_echec_20": 0.4984,
+  "p_echec_30": 0.6908,
+  "reserve_min_p05": -4000000.0,
+  "dotation_20_p05": 1000000.0,
+  "dotation_20_p50": 3200000.0,
+  "dotation_fin_p05": 700000.0,
+  "dotation_fin_p50": 3000000.0
+ },
+ "S1_div400k_3pme_dot2M": {
+  "p_echec_20": 0.4161,
+  "p_echec_30": 0.6097,
+  "reserve_min_p05": -4200000.0,
+  "dotation_20_p05": 900000.0,
+  "dotation_20_p50": 3000000.0,
+  "dotation_fin_p05": 700000.0,
+  "dotation_fin_p50": 3000000.0
+ },
+ "S1_div250k_1pme_dot3M": {
+  "p_echec_20": 0.5452,
+  "p_echec_30": 0.7054,
+  "reserve_min_p05": -5800000.0,
+  "dotation_20_p05": 1000000.0,
+  "dotation_20_p50": 3100000.0,
+  "dotation_fin_p05": 700000.0,
+  "dotation_fin_p50": 3000000.0
+ },
+ "S2_div1000k_5pme_dot10M": {
+  "p_echec_20": 0.7148,
+  "p_echec_30": 0.8676,
+  "reserve_min_p05": -15600000.0,
+  "dotation_20_p05": 2900000.0,
+  "dotation_20_p50": 8700000.0,
+  "dotation_fin_p05": 2100000.0,
+  "dotation_fin_p50": 7900000.0
+ },
+ "S2_div1200k_5pme_dot8M": {
+  "p_echec_20": 0.6467,
+  "p_echec_30": 0.8312,
+  "reserve_min_p05": -15400000.0,
+  "dotation_20_p05": 2500000.0,
+  "dotation_20_p50": 7800000.0,
+  "dotation_fin_p05": 1900000.0,
+  "dotation_fin_p50": 7300000.0
+ },
+ "S2_div1000k_1pme_dot10M": {
+  "p_echec_20": 0.5501,
+  "p_echec_30": 0.7136,
+  "reserve_min_p05": -23400000.0,
+  "dotation_20_p05": 3300000.0,
+  "dotation_20_p50": 10300000.0,
+  "dotation_fin_p05": 2500000.0,
+  "dotation_fin_p50": 10000000.0
+ },
+ "S2_div1400k_6pme_dot5M": {
+  "p_echec_20": 0.6422,
+  "p_echec_30": 0.8482,
+  "reserve_min_p05": -15200000.0,
+  "dotation_20_p05": 1800000.0,
+  "dotation_20_p50": 5800000.0,
+  "dotation_fin_p05": 1300000.0,
+  "dotation_fin_p50": 5400000.0
+ }
+}

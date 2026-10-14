@@ -502,3 +502,33 @@ Questions :
 Livrable :
 - un tableau des cas réels ;
 - un tableau des leviers, avec effet chiffré, source et conditions.
+
+## V2D — Libérer du capital et louer sans perdre la propriété : opérations MH, copropriétés, location de luxe
+
+Fichier : `01_RECHERCHE/V2D_capital_et_location_luxe.md`. Sources : `sources/sources_V2D.csv` (identifiants V2D-xx).
+
+Questions :
+1. **Opérations de défiscalisation « Monument historique » en France.** Des promoteurs (sociétés spécialisées) achètent des châteaux ou des dépendances protégés, les divisent en lots d'habitation et les vendent à des contribuables, qui déduisent les travaux de leur revenu global.
+   - Qui sont ces opérateurs ?
+   - Prix de vente au m² (foncier + travaux), part foncier/travaux.
+   - Avantage fiscal pour l'investisseur, règles :
+     - copropriété autorisée si l'habitation représente au moins 75 % (depuis 2018) ;
+     - engagement de conservation de 15 ans ;
+     - obligation de location éventuelle.
+   - Un propriétaire de château peut-il vendre ses dépendances à une telle opération tout en gardant le corps principal ? À quel prix d'achat du foncier par le promoteur ? Exemples réels.
+   - Effet sur le domaine : copropriétaires, servitudes, vie privée.
+2. **Loi Malraux** (sites patrimoniaux remarquables) et label de la Fondation du patrimoine : seulement si c'est utile à ce montage.
+3. **Démembrement de propriété.** Vente de la nue-propriété d'un château, ou d'une partie, à un investisseur institutionnel, avec conservation de l'usufruit. Le marché existe-t-il pour des châteaux ? Décote (barème de l'article 669 du CGI selon l'âge), exemples.
+4. **Location de luxe à la semaine de la partie privée pendant les absences du propriétaire**, via Le Collectionist, Oliver's Travels, Abercrombie & Kent Villas, Airbnb Luxe, etc.
+   - Tarifs observés pour des châteaux de 8 à 16 chambres.
+   - Commission des plateformes.
+   - Nombre de semaines réellement louées : témoignages, rapports, presse.
+   - Exigences : piscine, salles de bains, conciergerie.
+   - Fiscalité d'un particulier : meublé de tourisme classé ou non, micro-BIC.
+5. **Copropriété ou partage d'un château entre plusieurs familles.** Exemples réels en France, gouvernance, coûts, conflits.
+
+Livrable : pour chaque mécanisme,
+- le montant de capital libéré ou le revenu annuel ;
+- les conditions ;
+- l'impact sur la propriété et la vie privée ;
+- les preuves.

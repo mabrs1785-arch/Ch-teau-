@@ -10,7 +10,7 @@ from openpyxl.styles import Alignment, Border, Font, PatternFill, Side
 from openpyxl.utils import get_column_letter
 from openpyxl.workbook.defined_name import DefinedName
 
-from noyau import CAS, LIBELLES_CAS, REGISTRE, evaluer, vers_excel
+from noyau import CAS, EXTRA, LIBELLES_CAS, REGISTRE, evaluer, vers_excel
 
 POLICE = "Arial"
 F_NORMAL = Font(name=POLICE, size=10)
@@ -107,7 +107,7 @@ def ecrire_hypotheses(wb, ids_cles=()):
     return ws
 
 
-def ecrire_tableau_gabarits(wb, nom_feuille, titre, lignes, colonnes, note=None):
+def ecrire_tableau_gabarits(wb, nom_feuille, titre, lignes, colonnes, note=None, prefixe_noms=None):
     """Écrit un tableau dont chaque cellule est une formule issue d'un gabarit.
 
     lignes   : liste de tuples (id, libellé, gabarit, catégorie, tva, nature)
@@ -146,13 +146,19 @@ def ecrire_tableau_gabarits(wb, nom_feuille, titre, lignes, colonnes, note=None)
             c = ws.cell(row=r, column=j, value=vers_excel(gab, scen, cas, adr))
             c.font = F_NORMAL
             c.border = BORD
-            c.number_format = FMT_PCT if (lid.startswith("part_") or "pct" in lid or lid.startswith("taux_")) else FMT_EUR
+            est_pct = (lid.startswith(("part_", "taux_", "couv_")) or "pct" in lid or lid.endswith("_rdt"))
+            c.number_format = FMT_PCT if est_pct else FMT_EUR
             if lid.startswith(("total", "st_")):
                 c.fill = FOND_TOTAL
                 c.font = F_GRAS
             v = evaluer(gab, scen, cas, valeurs_par_col[ent])
             valeurs_par_col[ent][lid] = v
             controle[(nom_feuille, f"{col}{r}")] = v
+            if prefixe_noms:
+                nom = prefixe_noms + lid + (f"_{scen}" if scen else "") + CAS[cas]
+                ref = f"'{nom_feuille}'!${col}${r}" if " " in nom_feuille else f"{nom_feuille}!${col}${r}"
+                wb.defined_names[nom] = DefinedName(nom, attr_text=ref)
+                EXTRA[nom] = v
     ws.freeze_panes = "E5"
     return ws, controle
 
@@ -178,3 +184,83 @@ def ecrire_sources(wb, dossier_sources):
                 r += 1
     ws.freeze_panes = "B4"
     return ws
+
+
+# ------------------------------------------------------------------------------------------------
+# Projection pluriannuelle : une colonne par année, formules identiques d'une année à l'autre
+# ------------------------------------------------------------------------------------------------
+import re as _re
+
+_REF_PREC = _re.compile(r"\[([A-Za-z0-9_]+)@-1\]")
+_REF_COUR = _re.compile(r"\[([A-Za-z0-9_]+)\]")
+
+
+def ecrire_projection(wb, nom_feuille, titre, lignes, nb_annees, annee_depart, note=None):
+    """lignes : liste de (id, libellé, gabarit_initial, gabarit_annuel, format) ; format ∈ {"eur", "pct", "nb", "an"}.
+
+    Syntaxe : [id] = même année ; [id@-1] = année précédente ; {T} = rang de l'année (1..n).
+    La colonne D est l'état initial (année 0) ; les colonnes suivantes sont les années 1..n.
+    Renvoie {(feuille, cellule): valeur Python} pour la vérification croisée.
+    """
+    from noyau import espace_noms, vers_python
+    ws = wb.create_sheet(nom_feuille)
+    ws["A1"] = titre
+    ws["A1"].font = F_TITRE
+    if note:
+        ws["A2"] = note
+        ws["A2"].font = F_NORMAL
+        ws["A2"].alignment = Alignment(wrap_text=True, vertical="top")
+        ws.merge_cells(start_row=2, start_column=1, end_row=2, end_column=12)
+        ws.row_dimensions[2].height = 66
+    ws.cell(row=3, column=3, value="Rang de l'année").font = F_NORMAL
+    for k in range(nb_annees + 1):
+        c = ws.cell(row=3, column=4 + k, value=k)
+        c.font = F_NORMAL
+    entete(ws, 4, ["Ligne", "Libellé", "Unité"] + ["Initial"] + [f"An {annee_depart + k - 1}" for k in range(1, nb_annees + 1)],
+           [24, 64, 10] + [13] * (nb_annees + 1))
+    ligne_de = {lid: 5 + i for i, (lid, *_r) in enumerate(lignes)}
+    ns_base = espace_noms()
+    controle = {}
+    valeurs = [{} for _ in range(nb_annees + 1)]
+    for k in range(nb_annees + 1):
+        col = get_column_letter(4 + k)
+        col_prec = get_column_letter(3 + k)
+        for (lid, lib, g_init, g_an, fmt) in lignes:
+            r = ligne_de[lid]
+            gab = g_init if k == 0 else g_an
+            if k == 0 and lid not in [x[0] for x in lignes]:
+                continue
+            if gab is None:
+                continue
+            # Excel
+            fx = _REF_PREC.sub(lambda m: f"{col_prec}{ligne_de[m.group(1)]}", gab)
+            fx = _REF_COUR.sub(lambda m: f"{col}{ligne_de[m.group(1)]}", fx)
+            fx = fx.replace("{T}", f"{col}$3")
+            c = ws.cell(row=r, column=4 + k, value="=" + fx)
+            c.font = F_NORMAL
+            c.border = BORD
+            c.number_format = {"pct": FMT_PCT, "nb": FMT_NB, "an": '0;-0;"-"'}.get(fmt, FMT_EUR)
+            if lid.startswith(("total", "flux", "reserve", "dotation_fin", "kpi")):
+                c.fill = FOND_TOTAL
+            # Python
+            fp = _REF_PREC.sub(lambda m: f"__P_{m.group(1)}", gab)
+            fp = _REF_COUR.sub(lambda m: f"__L_{m.group(1)}", fp)
+            fp = fp.replace("{T}", str(k))
+            ns = dict(ns_base)
+            for kk, vv in valeurs[k].items():
+                ns[f"__L_{kk}"] = vv
+            if k > 0:
+                for kk, vv in valeurs[k - 1].items():
+                    ns[f"__P_{kk}"] = vv
+            v = float(eval(vers_python(fp), {"__builtins__": {}}, ns))  # noqa: S307
+            valeurs[k][lid] = v
+            controle[(nom_feuille, f"{col}{r}")] = v
+        # libellés (une seule fois)
+    for (lid, lib, _gi, _ga, fmt) in lignes:
+        r = ligne_de[lid]
+        ws.cell(row=r, column=1, value=lid).font = F_NORMAL
+        cl = ws.cell(row=r, column=2, value=lib)
+        cl.font = F_GRAS if lid.startswith(("total", "flux", "reserve", "dotation_fin", "kpi")) else F_NORMAL
+        ws.cell(row=r, column=3, value={"pct": "%", "nb": "nombre", "an": "année"}.get(fmt, "€ 2026")).font = F_NORMAL
+    ws.freeze_panes = "D5"
+    return ws, controle, valeurs

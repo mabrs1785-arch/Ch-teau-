@@ -77,22 +77,24 @@ def construire():
     if manquants:
         raise SystemExit(f"Hypothèses manquantes dans le registre : {manquants}")
 
+    modules = []
+    for nom_module in MODULES_OPTIONNELS:
+        try:
+            modules.append(__import__(nom_module))
+        except ModuleNotFoundError:
+            continue
     wb = Workbook()
     lisez_moi(wb)
     ecrire_hypotheses(wb, ids_cles=getattr(parametres, "IDS_CLES", ()))
     colonnes = [(f"{s} {LIBELLES_CAS[c]}", s, c) for s in scenarios for c in ("fav", "cen", "def")]
     _, controle = ecrire_tableau_gabarits(
         wb, "Budget", "BUDGET ANNUEL DE FONCTIONNEMENT — trois domaines types, trois cas (€ 2026 TTC)",
-        LIGNES_BUDGET, colonnes,
+        LIGNES_BUDGET, colonnes, prefixe_noms="bud_",
         note=("Chaque cellule est une formule construite à partir des hypothèses nommées "
               "(feuille Hypotheses). La provision de gros entretien retient le maximum de deux méthodes "
               "indépendantes (composants et ratio de la valeur de restauration)."))
 
-    for nom_module in MODULES_OPTIONNELS:
-        try:
-            module = __import__(nom_module)
-        except ModuleNotFoundError:
-            continue
+    for module in modules:
         controle.update(module.ecrire(wb))
 
     ecrire_sources(wb, os.path.join(RACINE, "01_RECHERCHE", "sources"))

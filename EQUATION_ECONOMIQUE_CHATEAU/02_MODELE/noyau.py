@@ -52,6 +52,7 @@ class Param:
 
 
 REGISTRE: dict[str, Param] = {}
+EXTRA: dict[str, float] = {}   # valeurs de cellules calculées et nommées (liens entre feuilles)
 _NOM_VALIDE = re.compile(r"^[A-Za-z_][A-Za-z0-9_]*$")
 
 
@@ -89,7 +90,28 @@ def _PMT(taux, n, va):
     return -va * taux / (1 - (1 + taux) ** (-n))
 
 
-FONCTIONS = {"MAX": max, "MIN": min, "IF": _IF, "PMT": _PMT}
+def _MIN(*a):
+    return min(a[0]) if len(a) == 1 and isinstance(a[0], (list, tuple)) else min(a)
+
+
+def _MAX(*a):
+    return max(a[0]) if len(a) == 1 and isinstance(a[0], (list, tuple)) else max(a)
+
+
+def _INDEX(plage, i, j=None):
+    return plage[(j if j is not None else i) - 1]
+
+
+FONCTIONS = {"MAX": _MAX, "MIN": _MIN, "IF": _IF, "PMT": _PMT, "MOD": lambda a, b: a % b,
+             "AND": lambda *a: all(a), "OR": lambda *a: any(a), "INDEX": _INDEX,
+             "SUM": lambda x: sum(x), "AVERAGE": lambda x: sum(x) / len(x)}
+
+_EGAL = re.compile(r"(?<![<>=!])=(?!=)")
+
+
+def vers_python(expr: str) -> str:
+    """Traduit les comparaisons Excel (= et <>) en Python (== et !=)."""
+    return _EGAL.sub("==", expr.replace("<>", "!="))
 _REF_LIGNE = re.compile(r"\[([A-Za-z0-9_]+)\]")
 
 
@@ -110,6 +132,7 @@ def espace_noms(cas_global: str = "cen") -> dict:
         ns[prm.id] = prm.cen
         ns[prm.id + "_fav"] = prm.fav
         ns[prm.id + "_def"] = prm.dfv
+    ns.update(EXTRA)
     ns.update(FONCTIONS)
     return ns
 
@@ -122,7 +145,7 @@ def evaluer(gabarit: str, scen: str | None, cas: str, lignes_calculees: dict) ->
         ns[f"__L_{k}"] = v
     if "^" in expr:
         raise ValueError("opérateur ^ interdit dans les gabarits")
-    return float(eval(expr, {"__builtins__": {}}, ns))  # noqa: S307 (gabarits internes)
+    return float(eval(vers_python(expr), {"__builtins__": {}}, ns))  # noqa: S307 (gabarits internes)
 
 
 def vers_excel(gabarit: str, scen: str | None, cas: str, adresse_ligne) -> str:
@@ -136,4 +159,4 @@ def noms_utilises(gabarit: str) -> set[str]:
     """Hypothèses référencées par un gabarit (pour vérifier qu'elles existent toutes)."""
     sans_refs = _REF_LIGNE.sub("", gabarit)
     jetons = set(re.findall(r"[A-Za-z_{}][A-Za-z0-9_{}]*", sans_refs))
-    return {j for j in jetons if j not in FONCTIONS}
+    return {j for j in jetons if j not in FONCTIONS and not j.startswith(("mot_", "bud_"))}
