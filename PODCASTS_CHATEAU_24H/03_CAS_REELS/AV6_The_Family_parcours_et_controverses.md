@@ -14,13 +14,14 @@ Chaque information porte une étiquette.
 - **[DÉCLARATION]** : propos de l'intéressé lui-même, publié et attribué.
 - **[AUTO-DÉCLARATION TF]** : chiffre ou affirmation publiés par The Family sur ses propres supports.
 
-**Présomption d'innocence.** À ma connaissance, au 14/10/2026, Oussama Ammar n'a fait l'objet d'**aucune condamnation pénale en France dans l'affaire The Family**. Il conteste les accusations de détournement. Les décisions des îles Caïmans et du Royaume-Uni sont **civiles**. Deux d'entre elles ont été rendues **par défaut** : il n'a pas comparu, ou il n'a pas respecté une injonction procédurale. Seule la décision anglaise du 22/09/2026 sur l'outrage au tribunal (*contempt of court*) applique le **standard de preuve pénal** (« au-delà du doute raisonnable »). Elle porte sur le non-respect d'ordonnances de gel d'avoirs et sur deux fausses déclarations, **pas sur le détournement lui-même**. Une enquête pénale est en cours en France. Une interpellation a eu lieu en février 2025 [PRESSE], mais aucune mise en examen ne m'est connue de source sûre.
+**Présomption d'innocence.** À ma connaissance, au 14/10/2026, Oussama Ammar n'a fait l'objet d'**aucune condamnation pénale en France dans l'affaire The Family**. Il conteste les accusations de détournement. Les procédures des îles Caïmans et du Royaume-Uni sont des **procédures civiles**. Dans les deux pays, les jugements qui chiffrent le préjudice ont été obtenus **par défaut** : aux Caïmans, il n'a pas comparu ; à Londres, il n'a pas respecté une injonction procédurale. Dans ce cadre civil, la décision anglaise du 22/09/2026 sur l'outrage au tribunal (*contempt of court*) est un volet quasi pénal. C'est la seule qui applique le **standard de preuve pénal** (« au-delà du doute raisonnable »). Elle porte sur le non-respect d'ordonnances de gel d'avoirs et sur deux fausses déclarations, **pas sur le détournement lui-même**. Selon la presse, une information judiciaire et une enquête du PNF sont en cours en France. Une interpellation a eu lieu en février 2025 [PRESSE], mais aucune mise en examen ne m'est connue de source sûre.
 
 **Ce qui n'a pas pu être lu.**
 - L'article original du *Monde* sur le Domaine d'Ablon (S-30) : accès bloqué pour les robots (HTTP 402). Je n'ai pas cherché à contourner ce blocage.
 - L'enquête de *Sifted* (Chris O'Brien, 2023) : HTTP 403.
 - Le billet de The Family « Tomber et se relever » (2022) : domaine salon.thefamily.co injoignable, Medium bloqué par Cloudflare, Wayback Machine injoignable depuis l'environnement.
 - La décision anglaise [2025] EWHC 3240 (Comm) et la copie BAILII de la décision caïmanaise : protection anti-robots Anubis.
+- Une vidéo de mai 2026 environ (STONKS, « Oussama Ammar face aux nouvelles révélations du Monde », AV6-056) laisse penser que *Le Monde* a publié un second article en 2026. Je ne l'ai pas identifié (une recherche web, sans résultat).
 
 ---
 
@@ -36,11 +37,11 @@ Chaque information porte une étiquette.
 | 05/2014 | Levée de 750 000 € (Index Ventures et entrepreneurs) via un **AIR** (Accord d'Investissement Rapide, inspiré du SAFE américain). 126 startups revendiquées | [PRESSE] JDN | S-21 |
 | 23/12/2014 | Immatriculation de THE FAMILY (HOLDINGS) LTD à Londres (n° 09366188), toujours active. Ammar administrateur du 26/12/2014 au 26/11/2021 | [REGISTRE] Companies House | S-45 |
 | 2015-2016 | Création en France d'une vingtaine de sociétés-véhicules « TheFamily » baptisées de noms de divinités grecques (Chronos, Nyx, Gaïa, Ouranos, Héméra…). Associés : The Family et The Family (Holdings) Ltd | [REGISTRE] BODACC | S-42 |
-| 20/02/2018 | Zagury sur GDIY #24 : « 40+ employés dans 3 bureaux (Londres, Berlin, Paris) » ; « 1 % de 100 startups dans sa première année » | [DÉCLARATION] notes d'épisode | S-03 |
+| 20/02/2018 | Notes de l'épisode GDIY #24 avec Zagury : « 40+ employés dans 3 bureaux (Londres, Berlin et Paris) » ; « 1 % de 100 startups dans sa première année » | [DÉCLARATION rapportée] notes rédigées par l'hôte | S-03 |
 | 09/2018 | Levée auprès de LGT Capital Partners. Preqin : 15 M€ le 12/09/2018 avec Headline, Hummingbird et Project A (non vérifié). Colin, mars 2019 : « $10 million » d'un investisseur institutionnel gérant 55 Md$. *Capital*, cité par Business Cool en 2022 : LGT aurait investi 10 M€ avec la promesse de récupérer **deux fois sa mise** en priorité | [PRESSE] / [DÉCLARATION] | S-02, S-25, S-24 |
 | 27/03/2019 | Ammar administrateur de **The Family (Global Godfathers) SPC** (îles Caïmans, constituée en mars 2019) jusqu'au 17/11/2020 | [JUGEMENT] Cayman 06/08/2024 §3 | S-11 |
 | 09/05/2019 | Création de **THELEMA SAS** (SIREN 851 220 053), capital 100 €, associé unique, président Oussama Ammar, siège « le Domaine d'Ablon », 14600 Ablon. Activité : marchand de biens immobiliers | [REGISTRE] | S-46 |
-| 2019-2021 | Collecte de **3 969 422 €** auprès d'investisseurs pour des achats d'actions pré-introduction en bourse (Side, Algolia, Stripe, Airbnb, SpaceX, Unison) | [JUGEMENT] Cayman 04/12/2023 §26 | S-10 |
+| 2019-2020 (dates précises non données) | Collecte de **3 969 422 €** auprès d'investisseurs pour des achats d'actions pré-introduction en bourse (Side, Algolia, Stripe, Airbnb, SpaceX, Unison). Achat d'Algolia prévu en mars 2020 ; collecte Stripe close le 03/08/2020 | [JUGEMENT] Cayman 04/12/2023 §25-26, §36 | S-10 |
 | 10/2021 | Levée de **2,92 M€** pour le Domaine d'Ablon, « avec l'aide d'Ammar » | [PRESSE] French Tech Journal 09/05/2023, d'après un dépôt administratif | S-26 |
 | 26/11/2021 | Démission d'Ammar de The Family (Holdings) Ltd | [REGISTRE] | S-45 |
 | 22/02/2022 | Assignation aux îles Caïmans (FSD 36 of 2022) | [JUGEMENT] | S-11 |
@@ -67,7 +68,7 @@ Chaque information porte une étiquette.
 | 22/04/2026 | Liquidation judiciaire de LES TERRES D'ABLON SAS (créée en 2017 ; immobilier, séminaires, maraîchage, apiculture) et extension de la procédure | [REGISTRE] | S-47 |
 | 2026 | Le **PNF** enquêterait sur Ammar pour fraude fiscale et blanchiment, enquête préliminaire ouverte en 2023 sur plainte de Bercy (AFP). Ammar : « je n'ai pas été mis en examen » | [PRESSE] extrait de résultat de recherche ; article Sifted non accessible | S-35 |
 | 22/09/2026 | **Londres, outrage au tribunal (standard pénal)** : Ammar jugé en *contempt* sur plusieurs griefs (dépenses sur des avoirs gelés, non-communication de relevés bancaires et d'informations, deux fausses déclarations sous serment). Peine à fixer lors d'une audience ultérieure : « plainly at risk of a significant custodial sentence ». Appel possible | [JUGEMENT] | S-12 |
-| 08-10/2026 | Les véhicules français (Ouranos, Oléthros, Nyx…) sont transférés à Boulogne-Billancourt puis liquidés à l'amiable (liquidateur : The Family (Holdings) Ltd) et **radiés** : le portefeuille est géré en extinction | [REGISTRE] | S-42 |
+| 08-10/2026 | Plusieurs véhicules français sont réimmatriculés à Boulogne-Billancourt (Ouranos, Oléthros, Gaïa, Tartare, Coéos, Phanes…). Certains sont ensuite liquidés à l'amiable (liquidateur : The Family (Holdings) Ltd) et **radiés** : Ouranos et Oléthros le 08/09/2026, Nyx le 06/10/2026. Le portefeuille est géré en extinction | [REGISTRE] | S-42 |
 | 25/09/2026 | Ammar annonce arrêter ses contenus en français et ses « autres activités commerciales » pour se consacrer à Naijm, une entreprise d'IA aux Émirats | [DÉCLARATION] description YouTube, flux RSS officiel | S-50 |
 
 ---
@@ -114,7 +115,7 @@ Chaque information porte une étiquette.
 - **Jugement du 12/07/2024 obtenu sur sanction procédurale**, sans procès au fond. **Montant fixé le 03/03/2025 : 6 488 497,92 £** (§14-15).
 - **22/09/2026, outrage au tribunal** (S-12). Standard de preuve pénal. Le juge retient notamment :
   - le paiement de dépenses personnelles avec des revenus d'activités qui auraient dû alimenter les comptes gelés (« Travel with Ouss », « Better Call Ouss », un séjour au Grand Hôtel du Cap-Ferrat) ;
-  - la non-transmission de relevés de la banque Mercury (compte de Daedalium LLC) ;
+  - pour le compte de Daedalium LLC à la banque Mercury : absence du préavis de 7 jours exigé avant tout retrait de plus de 5 000 £, et relevés exigés tous les 14 jours non transmis ;
   - l'omission de parts de profit (« Better with Ouss », « Mastermind Ikigai ») ;
   - deux fausses déclarations sous serment : la carte bancaire d'un compte géorgien (Solo Bank) était utilisée par des tiers.
 

@@ -5,7 +5,7 @@ Agent AV6, cellule audiovisuelle (mission 2). Rédigé le 2026-10-14. Catalogue 
 ## Avertissements de méthode (à lire avant les fiches)
 
 - **Aucune vidéo ni aucun audio n'a été regardé ou écouté.** Aucun outil de transcription audio n'est disponible, et aucun sous-titre automatique n'a été récupéré.
-- **YouTube a bloqué les pages vidéo de l'environnement.** HTTP 429 et page « sorry » de Google dès 17 h 48, sur une adresse IP partagée avec les autres agents. Je n'ai pas contourné ce blocage. Une file de récupération espacée (35 s entre requêtes, pause de 15 min après chaque blocage) a tourné en arrière-plan sans succès jusqu'à la clôture. Conséquences :
+- **YouTube a bloqué les pages vidéo de l'environnement.** HTTP 429 et page « sorry » de Google dès 17 h 48, sur une adresse IP partagée avec les autres agents. Je n'ai pas contourné ce blocage. Une file de récupération espacée (35 s entre requêtes, pause de 15 min après chaque blocage) a tourné en arrière-plan de 17 h 54 à 18 h 24, sans succès. Je l'ai ensuite arrêtée pour ne pas ajouter de charge sur l'adresse IP partagée. Le script `build_av6.py` (scratchpad AV6) peut réintégrer automatiquement les métadonnées si les pages redeviennent accessibles. Conséquences :
   - pour la plupart des vidéos, je n'ai que les métadonnées de la **page de résultats de recherche** : titre, chaîne, durée, ancienneté relative. Elles sont classées **REPÉRÉ** ;
   - les descriptions et dates exactes n'ont été lues que pour les vidéos présentes dans les **flux RSS officiels** des chaînes (15 dernières vidéos par chaîne).
 - **Aucun horodatage YouTube n'est donné**, faute d'avoir pu lire les chapitres. Les seuls horodatages cités viennent de **notes d'épisode écrites par les hôtes** : Parlons Futur, Equity101, Silicon Carne.
@@ -124,7 +124,7 @@ Note /100 = pertinence pour un entrepreneur de 26 ans qui veut financer un domai
 
 | Chiffre | Statut |
 |---|---|
-| Levée de 10 M$ en 2018 | Préqin indique 15 M€ le 12/09/2018 menés par LGT Capital Partners ; *Capital*, repris par Business Cool, parle de 10 M€. **Montant exact non établi** |
+| Levée de 10 M$ en 2018 | Préqin, d'après un extrait de résultat de recherche (page non ouverte), indique 15 M€ le 12/09/2018 menés par LGT Capital Partners ; *Capital*, repris par Business Cool, parle de 10 M€. **Montant exact non établi** |
 | 250 sociétés en portefeuille | Auto-déclaration |
 
 **Limites.** Discours de 2019, avant la crise de 2022. Colin est partie demanderesse dans les procédures contre Ammar.
@@ -289,7 +289,7 @@ Le point « Your real target might not be the best thing to announce » correspo
 Accès : **DESCRIPTIONS LUES** (flux RSS officiel de la chaîne). Vidéos non regardées.
 
 **Résumé des descriptions (paraphrase).**
-- (1) Deux jeunes sans « les bons codes » viennent interroger Ammar après une conférence. Message : agir sans attendre d'avoir les moyens (« Anyone can be an entrepreneur »). La description reprend ses titres : startups accompagnées ayant levé « plus d'1,5 milliard de dollars », Forbes 30 Under 30. Il se présente comme « solo capitalist ». Offres payantes « Better Call Ouss » et « Seer Protocol ».
+- (1) Deux jeunes sans « les bons codes » viennent interroger Ammar après une conférence. Message : agir sans attendre d'avoir les moyens (« Anyone can be an entrepreneur »). La description reprend ses titres : startups accompagnées ayant levé « plus d'1,5 milliard de dollars », Forbes 30 Under 30. Il se présente comme « solo capitalist ». Il propose « Better Call Ouss » (appels de conseil réservables en ligne) et « Seer Protocol » (outil en construction).
 - (2) À 40 ans, il annonce arrêter ses contenus en français et ses autres activités commerciales pour se consacrer à Naijm, une entreprise d'IA aux Émirats.
 
 **Vérification.** Titres et chiffres : **auto-déclarés**, non vérifiés. À noter : le jugement anglais du 22/09/2026 retient que les revenus de « Better Call Ouss » et « Travel with Ouss » ont servi à des dépenses personnelles en violation d'un gel d'avoirs (voir cas réels §4.2).
