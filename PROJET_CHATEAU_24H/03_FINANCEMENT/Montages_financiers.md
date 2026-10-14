@@ -90,7 +90,7 @@ Ordre de grandeur pour le montage : **30 à 100 k€** de prêts d'honneur cumul
 | CGI art. 156 bis (depuis 2009) | conserver **15 ans**. **Détention directe**, ou **SCI non soumise à l'IS** agréée ou dont les associés sont **membres d'une même famille**. Pas de copropriété sauf agrément | PAGE LUE, S13 |
 | Label Fondation du patrimoine (immeuble sans recettes) | déduction de **50 %** des travaux éligibles, **100 %** si subventionnés à ≥ 20 % | PAGE LUE, S12 |
 | Subvention de la Fondation liée au label | **au moins 2 %** des travaux | EXTRAIT, S19 |
-| Dons à la Fondation pour un MH privé (art. 200 et 238 bis f) | **exclus en cas d'exploitation commerciale**. Tolérance : recettes commerciales ≤ **60 000 € HT/an**, toutes activités du lieu et de ses dépendances additionnées **« sans qu'il soit tenu compte de la personnalité juridique de l'exploitant »**. Sont exclues du calcul : la billetterie imposée en revenus fonciers, les souvenirs et 6 manifestations de bienfaisance. **Exception : MH utilisé pour une entreprise agricole.** Conservation **10 ans** | PAGE LUE, S14 |
+| Dons à la Fondation pour un MH privé (art. 200 et 238 bis f) | **exclus en cas d'exploitation commerciale**. Tolérance : recettes commerciales ≤ **60 000 € HT/an**, toutes activités du lieu et de ses dépendances additionnées **« sans qu'il soit tenu compte de la personnalité juridique de l'exploitant »**. Sont exclues du calcul : la billetterie imposée en revenus fonciers, les souvenirs et 6 manifestations de bienfaisance. **Exception : MH utilisé pour une entreprise agricole.** Conservation **10 ans** après les travaux. **Si l'immeuble est détenu par une société, les associés doivent aussi conserver leurs titres 10 ans.** Ouverture au public des parties restaurées : **50 jours/an** (dont 25 jours non ouvrables d'avril à septembre) **ou 40 jours** en juillet-septembre, pendant 10 ans. Doctrine « en vigueur du 12/09/2012 à aujourd'hui » | PAGE LUE, S14 |
 | Mécénat d'entreprise (238 bis) | **60 %** du don, plafond **20 000 € ou 0,5 % du CA**, report sur 5 ans. Particuliers : 66 % (20 % du revenu imposable). IFI : 75 % jusqu'à 50 000 € | PAGE LUE, S16 |
 | Mission Patrimoine (Loto, « Mission Bern ») | aide **plafonnée à 300 000 € par site**, en complément des aides publiques. Édition 2025 : 29,1 M€ au total. Exemple : Château d'Escorolles (15) 230 000 € | PAGE LUE, S17 |
 | Mission Patrimoine, éligibilité | édifices bâtis, parcs, jardins. Le propriétaire candidate ou délègue | PAGE LUE, S18 |
@@ -282,6 +282,9 @@ Ces exemples montrent que **des sites équestres publics changent d'opérateur**
   - **Château du Theil** : environ **1 M€** apporté par environ **300 actionnaires**, mise de base 100 €, contrepartie un accès gratuit à vie (S35, PAGE LUE).
 - **GFA** : détient les 50 ha, financé par des investisseurs patrimoniaux qui cherchent l'exonération de 75 % jusqu'à 300 000 € par bénéficiaire (S20). Il loue les terres par **bail rural à long terme** à l'**EARL ou SAS agricole équestre du fondateur**. L'équestre est une activité agricole (S45), donc le fondateur obtient un **contrôle d'usage de 18-25 ans** très protégé.
 - **Événementiel** limité à **60 000 € HT/an** de recettes commerciales sur le site, pour conserver l'éligibilité aux **dons défiscalisés** via la Fondation du patrimoine (S14). Sinon on renonce aux dons.
+- Deux contraintes supplémentaires si la SAS reçoit ces dons (S14) :
+  - **tous les associés** doivent conserver leurs titres 10 ans, donc aucune liquidité pour les co-châtelains ;
+  - les parties restaurées doivent être ouvertes au public 40 à 50 jours par an.
 
 | Sources (cas 50 k€) | Montant | Emplois | Montant |
 |---|---|---|---|
@@ -358,11 +361,12 @@ Combinaisons recommandées (ESTIMATION) :
 1. **Rendement** : le montage 2 offre environ **3 % de rendement en cash** aux actionnaires de la PropCo (ESTIMATION §4). En face :
    - une plateforme comme Anaxago affiche un **TRI net constaté de 8,7 %** sur 684 M€ d'opérations immobilières (S26, auto-déclaré) ;
    - les obligations immobilières en ligne affichent 10-12 % (S27, S30) ;
-   - les nouveaux crédits rapportent environ 3,7 % sans risque d'exploitation (S01-S02).
+   - le coût moyen du crédit bancaire aux entreprises est d'environ 3,7 % (S01-S02). C'est l'ordre de grandeur qu'obtient un prêteur sur des risques bien plus diversifiés qu'un château unique.
 2. **Liquidité** : un château n'est ni coté ni fractionnable. La revente prend des années et la sortie dépend d'un unique acheteur (INCONNU sur les délais, à fournir par l'Agent 1).
 3. **Risque opérationnel concentré** : un seul site et un fondateur de 26 ans sans historique d'exploitation documenté. Contre-exemples :
    - **Château de Lacan** : hôtel de luxe en redressement judiciaire malgré « de nombreux évènements » (S46) ;
-   - **Château de Rochegude** : liquidation judiciaire du fonds en 2023 (S47).
+   - **Château de Rochegude** : liquidation judiciaire du fonds en 2023 (S47) ;
+   - le cas le plus médiatisé de château financé par la foule, **La Mothe-Chandeniers**, racheté en 2017 avec plus de 1,6 M€ collectés : son dirigeant déclarait en décembre 2025 « On est très légèrement bénéficiaires pour la première fois » (S51, PAGE LUE), soit environ 8 ans après le rachat.
 4. **Risque du crowdfunding immobilier** : 20-25 % de retards de plus de 6 mois et 4-6 % de pertes au S1 2025 (S23). Les investisseurs particuliers sont échaudés.
 5. **Conflit d'intérêts** : le fondateur veut **habiter** le château. Les investisseurs y verront un usage privatif financé par eux.
 
@@ -403,7 +407,7 @@ Combinaisons recommandées (ESTIMATION) :
 7. **Règlement (UE) 2020/1503** : le texte EUR-Lex n'a pas pu être ouvert (bot challenge). Plafond de 5 M€ et protections des non-avertis vérifiés via 2 cabinets d'avocats (S21-S22) seulement.
 8. **Château Fontenay (Bricks)** : issue inconnue. Remboursement ? Retard ? À vérifier sur la page du projet Bricks ou au BODACC.
 9. **Mothe-Chandeniers** : je n'ai pas vérifié l'évolution juridique récente de la SAS ni la valeur actuelle des actions.
-10. **Exception agricole au mécénat** (S14) : son application à un château dont les écuries sont utilisées par une activité équestre agricole est **une interprétation**, à confirmer par **rescrit fiscal**.
+10. **Exception agricole au mécénat** (S14) : son application à un château dont les écuries sont utilisées par une activité équestre agricole est **une interprétation**, à confirmer par **rescrit fiscal**. Par ailleurs, la doctrine S14 est datée du 12/09/2012, même si elle est affichée « en vigueur ». Le seuil de 60 000 € et les autres conditions sont à recouper avec le CGI en vigueur (Legifrance inaccessible aujourd'hui : 403).
 11. **Montage 6** : les marges et prix de PME sont issus de prix **demandés** (S05) et de l'observatoire CRA 2023 (données 2022). Les observatoires 2024/2025 n'ont pas été trouvés en PDF.
 12. **Contre-exemples** : Lacan (redressement, S46) et Rochegude (liquidation, S47) confirment le risque des châteaux-hôtels. Aucune perte documentée de co-châtelains n'a été trouvée, ce qui n'est pas une preuve d'absence.
 13. Tous les montants « investisseurs », « subventions », « dons » et « collecte » des montages sont des **hypothèses non acquises**.

@@ -31,3 +31,6 @@ Contexte projet : château français > 50 ha, vie privée sur place, domaine éq
 - Idées : 04_IDEES_STRATEGIQUES/<agent>_idees.md — chaque idée : qui, contexte, fonctionnement, intérêt, coût potentiel, difficultés, adaptation au projet, sources.
 - Sources : _brut/sources_<agent>.csv (id;titre;url;type;auteur_ou_chaine;date;statut_acces;utilise_dans;fiabilite)
 - Réponse finale : résumé ≤ 15 lignes, nombre de contenus par statut, 3 découvertes les plus fortes.
+
+## Fichiers temporaires
+Utilise un sous-dossier personnel du scratchpad (ex. scratchpad/<ton_agent>/) : le dossier temporaire est partagé entre agents et des scripts ont déjà été écrasés.

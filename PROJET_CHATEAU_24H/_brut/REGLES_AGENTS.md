@@ -10,3 +10,6 @@
 7. Section finale obligatoire : « Points de doute / hypothèses non vérifiées ». Cherche aussi des contre-exemples.
 8. Aucun contact, formulaire, achat. Ne pas toucher aux fichiers des autres agents.
 9. Réponse finale : résumé ≤ 15 lignes + les 10 chiffres les plus utiles au modèle financier (avec statut).
+
+## Fichiers temporaires
+Utilise un sous-dossier personnel du scratchpad (ex. scratchpad/<ton_agent>/) : le dossier temporaire est partagé entre agents et des scripts ont déjà été écrasés.
