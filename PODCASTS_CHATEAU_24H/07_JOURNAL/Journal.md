@@ -15,3 +15,6 @@
 
 ## Contraintes
 - Pas de transcription audio (refus d'installation) ; aucun téléchargement de média.
+
+## Avancement
+- 2026-10-14 : vague A lancée (AV1 à AV6) en parallèle de la fin de la mission 1.
