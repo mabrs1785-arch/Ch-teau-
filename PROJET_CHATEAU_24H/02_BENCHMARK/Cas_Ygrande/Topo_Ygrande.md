@@ -1,6 +1,6 @@
 # Château d'Ygrande : le topo
 
-Oct 14, 2026 · @Vianney
+14/10/2026
 
 ## En bref
 
