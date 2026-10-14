@@ -263,7 +263,7 @@ Les conversions en € sont des ESTIMATIONS : SMIC annuel de 22 404,20 € × co
 | Site | Surface | Jardiniers | Ratio | Statut / source |
 |---|---|---|---|---|
 | Villandry (Indre-et-Loire), jardins Renaissance et potager décoratif | « 7 hectares de jardin », dont un potager décoratif d'un hectare ; « 30 km de buis, 10 km de charmille, 1000 tilleuls » | « Ils sont dix à s'en occuper au quotidien, même l'hiver ! » | ≈ 1,4 jardinier/ha, soit 0,7 ha par jardinier (ESTIMATION) | PAGE LUE [R2-15], article du 17/01/2024 |
-| Vaux-le-Vicomte | jardins de « 33 ha » (EXTRAIT, viamichelin) | INCONNU, moteur interne du site sans résultat chiffré | — | Vérification : dossier de presse du domaine |
+| Vaux-le-Vicomte | « 33 ha » (EXTRAIT, résultat de recherche, source exacte non identifiée) | INCONNU, moteur interne du site sans résultat chiffré | — | Vérification : dossier de presse du domaine |
 | Chantilly | parc de « 115 hectares » (EXTRAIT) | INCONNU | — | Vérification : rapport d'activité de la Fondation pour la sauvegarde et le développement du domaine de Chantilly |
 | Versailles, Courances, National Trust | — | INCONNU (pas de recherche dédiée, faute de quota) | — | — |
 

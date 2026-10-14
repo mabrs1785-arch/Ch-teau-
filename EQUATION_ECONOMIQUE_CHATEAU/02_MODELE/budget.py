@@ -27,21 +27,27 @@ LIGNES = [
      "[bati_ge]*taux_aleas_travaux{C}", "A. Bâti", 0.10, "P"),
     ("securite", "Sécurité : alarme, télésurveillance, protection incendie",
      "{S}_securite{C}", "A. Bâti", 0.20, "F"),
-    # --- B. Personnel ----------------------------------------------------------
+    # --- B. Personnel (effectifs du domaine lui-même : chevaux du propriétaire seulement) ---------
     ("pers_direction", "Personnel : régisseur ou directeur de domaine",
-     "{S}_etp_direction*cout_direction{C}", "B. Personnel", 0.0, "F"),
-    ("pers_jardins", "Personnel : jardiniers (chef jardinier compris)",
+     "{S}_etp_direction*{S}_cout_direction{C}", "B. Personnel", 0.0, "F"),
+    ("pers_admin", "Personnel : assistant(e) administratif(ve) et comptable",
+     "{S}_etp_admin*cout_admin_salarie{C}", "B. Personnel", 0.0, "F"),
+    ("pers_chef_jardinier", "Personnel : chef jardinier",
+     "{S}_etp_chef_jardinier*cout_chef_jardinier{C}", "B. Personnel", 0.0, "F"),
+    ("pers_jardins", "Personnel : jardiniers",
      "{S}_etp_jardin*cout_jardinier{C}", "B. Personnel", 0.0, "F"),
-    ("pers_entretien", "Personnel : agents d'entretien et de maintenance",
+    ("pers_entretien", "Personnel : gardien, maintenance des bâtiments",
      "{S}_etp_entretien*cout_agent_entretien{C}", "B. Personnel", 0.0, "F"),
-    ("pers_maison", "Personnel : maison (gouvernante, employés de maison)",
+    ("pers_agricole", "Personnel : ouvrier agricole et forestier (prés, clôtures, foin, bois)",
+     "{S}_etp_agricole*cout_ouvrier_agricole{C}", "B. Personnel", 0.0, "F"),
+    ("pers_equestre", "Personnel : soigneurs des chevaux du propriétaire",
+     "{S}_etp_soigneur*cout_soigneur{C}", "B. Personnel", 0.0, "F"),
+    ("pers_resp_ecurie", "Personnel : responsable d'écurie et cavalier",
+     "{S}_etp_resp_ecurie*cout_resp_ecurie{C}", "B. Personnel", 0.0, "F"),
+    ("pers_gouvernance", "Personnel de maison encadrant (gouvernante, majordome) — particulier employeur",
+     "{S}_etp_gouvernance*{S}_cout_gouvernance{C}", "B. Personnel", 0.0, "F"),
+    ("pers_maison", "Personnel : employés de maison — particulier employeur",
      "{S}_etp_maison*cout_maison{C}", "B. Personnel", 0.0, "F"),
-    ("pers_equestre", "Personnel : écurie (soigneurs, responsable d'écurie)",
-     "{S}_etp_equestre*cout_soigneur{C}", "B. Personnel", 0.0, "F"),
-    ("pers_gardien", "Personnel : gardiennage",
-     "{S}_etp_gardien*cout_gardien{C}", "B. Personnel", 0.0, "F"),
-    ("pers_admin", "Personnel : administration et comptabilité internes",
-     "{S}_etp_admin*cout_admin{C}", "B. Personnel", 0.0, "F"),
     # --- C. Jardins, parc et terres (hors personnel) ---------------------------
     ("jardins_reguliers", "Jardins réguliers et potager : fournitures, végétaux, sous-traitance",
      "{S}_ha_jardins*jardin_ha{C}", "C. Jardins et terres", 0.20, "F"),
@@ -88,10 +94,15 @@ LIGNES = [
      "{S}_admin{C}", "I. Administration", 0.20, "F"),
     ("honoraires_patrimoine", "Architecte du patrimoine : état sanitaire et suivi (hors maîtrise d'œuvre des chantiers)",
      "{S}_honoraires_patrimoine{C}", "I. Administration", 0.20, "F"),
+    ("dont_personnel_calc", "Sous-total du personnel",
+     "[pers_direction]+[pers_admin]+[pers_chef_jardinier]+[pers_jardins]+[pers_entretien]+[pers_agricole]"
+     "+[pers_equestre]+[pers_resp_ecurie]+[pers_gouvernance]+[pers_maison]", "B. Personnel", 0.0, "S"),
+    ("etp_total", "Effectif total (ETP)",
+     "{S}_etp_direction+{S}_etp_admin+{S}_etp_chef_jardinier+{S}_etp_jardin+{S}_etp_entretien+{S}_etp_agricole"
+     "+{S}_etp_soigneur+{S}_etp_resp_ecurie+{S}_etp_gouvernance+{S}_etp_maison", "B. Personnel", 0.0, "S"),
     # --- Sous-totaux -------------------------------------------------------------
     ("st_fonctionnement", "Sous-total des charges de fonctionnement",
-     "[bati_courant]+[securite]+[pers_direction]+[pers_jardins]+[pers_entretien]+[pers_maison]"
-     "+[pers_equestre]+[pers_gardien]+[pers_admin]+[jardins_reguliers]+[parc]+[prairies]"
+     "[bati_courant]+[securite]+[dont_personnel_calc]+[jardins_reguliers]+[parc]+[prairies]"
      "+[bois]+[equip_entretien]+[chevaux]+[chauffage]+[hors_gel]+[electricite]+[eau]"
      "+[assurance_bati]+[assurance_autres]+[taxe_fonciere_bati]+[taxe_fonciere_non_bati]+[admin]"
      "+[honoraires_patrimoine]",
@@ -106,9 +117,7 @@ LIGNES = [
     ("total_besoin", "BESOIN ANNUEL DE TRÉSORERIE DU DOMAINE (hors dette, hors activités)",
      "[st_fonctionnement]+[st_provisions]+[imprevus]+[invest_futurs]", "Totaux", 0.0, "S"),
     # --- Indicateurs ----------------------------------------------------------------------------------
-    ("dont_personnel", "dont personnel",
-     "[pers_direction]+[pers_jardins]+[pers_entretien]+[pers_maison]+[pers_equestre]+[pers_gardien]+[pers_admin]",
-     "Indicateurs", 0.0, "S"),
+    ("dont_personnel", "dont personnel", "[dont_personnel_calc]", "Indicateurs", 0.0, "S"),
     ("dont_bati", "dont bâti (entretien courant, gros entretien, aléas, assurance, taxe foncière bâtie, sécurité)",
      "[bati_courant]+[bati_ge]+[imprevus_travaux]+[assurance_bati]+[taxe_fonciere_bati]+[securite]",
      "Indicateurs", 0.0, "S"),

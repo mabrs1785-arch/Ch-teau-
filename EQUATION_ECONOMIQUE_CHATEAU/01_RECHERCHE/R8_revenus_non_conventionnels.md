@@ -12,8 +12,8 @@ Statuts : PAGE LUE (page ouverte avec WebFetch, citation exacte) · EXTRAIT (vu 
 ## Journal d'avancement
 
 - 2026-10-14 : lecture du contexte, des règles et de la mission. Squelette créé.
-
-- WebSearch 1 (loyers PV au sol), 2 (agrivoltaïsme + chevaux), 3 (forêt) faits. Notes ci-dessous.
+- 2026-10-14 : 15 WebSearch réalisées (PV au sol ; agrivoltaïsme et chevaux ; forêt ; chasse ; truffes ; petite hydro ; Label bas-carbone ; gardiennage et hivernage ; stockage de vin ; transformation de granges ; château de Ferrières ; dotations NACUBO ; indice Argos ; échec des reprises ; Reschio). Pages officielles ouvertes directement (CRE, ASPIM, service-public, France compétences, Label bas-carbone, data.gouv).
+- 2026-10-14 : fichier terminé ; sections remises dans l'ordre de la mission. Les sections obligatoires sont en fin de fichier.
 
 ---
 
@@ -40,42 +40,13 @@ Statuts : PAGE LUE (page ouverte avec WebFetch, citation exacte) · EXTRAIT (vu 
 - **Chevaux : aucun exemple trouvé** (recherche web + moteur interne de l'IFCE vide). INCONNU. Hypothèse de prudence : les développeurs privilégient les ovins ; la compatibilité des chevaux (taille, frottements, coups de pied, câblage, clôtures) n'est pas documentée. À vérifier auprès de l'IFCE ou d'un développeur.
 - Conséquence pour le modèle : un projet agrivoltaïque sur des prés **retire ces prés de l'usage équestre** ou impose des ovins ; il entre en conflit direct avec le projet du propriétaire et avec l'esthétique des abords d'un monument (covisibilité, avis de l'architecte des Bâtiments de France en abords MH — à confirmer par R3).
 
-### 1.5 Forêt
+### 1.3 Hangars photovoltaïques financés par un tiers
 
-- Prix du foncier forestier 2025 (Safer et Société Forestière, « Le marché des forêts en 2025 », publié le 21 mai 2026, repris par France Épargne [R8-04], PAGE LUE) : « Le prix moyen s'établit à 4 950 euros l'hectare, en hausse de 2,5 % » ; écart entre « le Massif central à 2 850 euros » et « le nord du Bassin parisien à 7 880 euros » ; 23 030 transactions.
-- Prix des bois sur pied en forêt privée [R8-05] (PAGE LUE, communiqué France Bois Forêt du 26 mai 2026) : « Le prix moyen du bois d'oeuvre, toutes essences confondues, s'établit ainsi à 86 €/m³ en 2025 contre 90 €/m³ en 2024 ». Chêne 190 €/m³ en 2025 (228 € en 2024, −17 %) ; hêtre 49 € ; douglas 93 € ; épicéa commun 69 € ; peuplier 62 € ; pin sylvestre 44 €. Base : « ventes groupées de bois sur pied réalisées par les Experts Forestiers de France » (lots commercialisés, donc pas le prix moyen de tout le bois récolté).
-- Croissance biologique (DG Trésor, note n° 399 du 3 septembre 2026, citée par [R8-04]) : la croissance « est passée de 5,8 mètres cubes par hectare et par an entre 2005 et 2013 » à un niveau inférieur (la phrase est tronquée dans l'article) ; mortalité « plus que doublé en dix ans » (IGN).
-- **Revenu net forestier en €/ha/an : non trouvé à ce stade.** L'indicateur 2020 du marché des forêts [R8-06] (64 pages, lu en entier) ne donne aucun taux de rendement ni revenu net.
-- Revenu net forestier : un indicateur courant serait le taux de rendement des groupements forestiers ou une étude de la Société Forestière ; non trouvé à ce stade (voir fin de fichier si complété).
-
-### 1.6 Location de chasse
-
-- WebSearch 4 (Sologne, €/ha/an) : **aucun prix de location à l'hectare** dans les résultats ; seulement des annonces de vente de territoires (Capifrance, Belles Demeures, Patrice Besse) et un cahier des charges préfectoral du Bas-Rhin (droit local) qui renvoie à une « moyenne » locale des loyers à l'hectare issue des adjudications. L'annonce Capifrance « Territoire de chasse de 171 hectares en Sologne » (Brinon-sur-Sauldre) est inaccessible (HTTP 403).
-- ONF [R8-07] (PAGE LUE) : « Six adjudications, correspondant à une ou plusieurs régions administratives, ont eu lieu en mars 2025. » « Les prochaines adjudications seront organisées en 2028. » **La page ne publie ni prix à l'hectare ni recettes.**
-- **Statut : INCONNU** pour le loyer de chasse en €/ha/an (Sologne ou ailleurs). Méthode pour vérifier : résultats d'adjudications ONF 2025 (catalogues régionaux), fédérations départementales des chasseurs (41, 45, 18), agences spécialisées en Sologne, préfectures d'Alsace-Moselle (baux communaux 2024-2033, droit local), rapport de la Cour des comptes sur l'ONF (recettes de chasse / surface louée).
-
-### 1.8 Truffières
-
-- Terre-net [R8-08] (PAGE LUE, article du 2 octobre 2026, chiffres attribués à la chambre d'agriculture de la Somme et Agri-Truffe) :
-  - « le coût d'implantation est estimé à 6 148 €/ha pour la truffe noire et à 11 272 €/ha pour la truffe de Bourgogne » ;
-  - « des frais d'entretien compris entre 800 et 1 500 €/ha par an » ;
-  - « les premières récoltes interviennent généralement entre 5 et 7 ans après la plantation » ;
-  - « une parcelle favorable et irriguée peut produire en moyenne entre 10 et 20 kg/ha » ;
-  - prix : « de 400 à 700 €/kg sur les marchés de gros », « plus de 1 000 €/kg pour des truffes de très belle qualité vendues au détail » ;
-  - « une marge brute moyenne à 18 500 €/ha/an, sans compter le coût du réensemencement et du chien truffier » ;
-  - risque : « Cette année, beaucoup de truffières non irriguées ne produiront pas du tout ».
-- Que Choisir [R8-09] (PAGE LUE, 18 décembre 2024) : « les rendements variant de 1 à 80 kg/ha en fonction des années » ; « rares sont ceux qui tirent un salaire de cette production ».
-- EXTRAIT (résultat de recherche 5, non vérifié) : FranceAgriMer situerait les rendements entre 0,5 et 5 kg/ha ; le ministère de l'Agriculture donnerait 500 à 900 €/kg et 5 000 à 10 000 €/ha d'installation (page agriculture.gouv.fr inaccessible, HTTP 503).
-- **Divergence majeure** : 0,5-5 kg/ha (moyenne nationale, EXTRAIT) contre 10-20 kg/ha (parcelle favorable et irriguée). La marge brute de 18 500 €/ha/an ne vaut que pour le haut de fourchette.
-- ESTIMATION pour le modèle (2 ha de truffière irriguée, sol calcaire favorable — HYPOTHÈSE forte : sol adapté, ce que l'on ne sait pas) :
-  - investissement : 2 × 6 148 ≈ 12 300 € (hors irrigation, clôture anti-sangliers et terrain) ;
-  - entretien : 1 600 à 3 000 €/an ;
-  - production année 7+ : bas = 2 ha × 2 kg × 400 € ≈ 1 600 €/an ; haut = 2 ha × 15 kg × 550 € ≈ 16 500 €/an ;
-  - contribution nette : de −1 400 € à +13 500 €/an, très aléatoire, nulle pendant 5 à 7 ans. **Piste marginale** à l'échelle d'un château ; intérêt surtout d'image (produit du domaine).
+- **INCONNU** (pas de recherche dédiée, budget de 15 recherches atteint). Méthode : comparer les offres écrites de plusieurs développeurs (forme et durée du bail, propriété du hangar en fin de contrat, loyer éventuel, assurance, démantèlement) et l'avis de la chambre d'agriculture. Point d'attention : l'insertion d'un hangar neuf près d'un monument protégé relève de l'avis de l'ABF (à confirmer par R3).
 
 ### 1.4 Petite hydroélectricité (moulin, 30 à 300 kW)
 
-- Cadre de soutien (CRE, délibération n° 2026-58 du 5 mars 2026 [R8-10], PAGE LUE) : arrêté tarifaire du 13 décembre 2016 dit « H16 » ; « les nouvelles installations d'une puissance installée strictement inférieure à 200 kW peuvent bénéficier d'un contrat d'obligation d'achat » (seuil « porté à 200 kW à partir du 1er janvier 2026 par le décret n° 2025-498 du 5 juin 2025 ») ; « les nouvelles installations d'une puissance installée strictement inférieure à 1 MW peuvent bénéficier d'un contrat de complément de rémunération » ; « les installations existantes d'une puissance installée strictement inférieure à 1 MW peuvent bénéficier d'un contrat de CR, sous réserve de l'engagement du producteur à réaliser un programme d'investissement ». Plafond de l'énergie rémunérée au tarif : « 120 000 heures équivalentes pleine puissance sur la durée du contrat de soutien pour les installations de basse chute, soit 6 000 hepp/an » ; au-delà, rachat « au prix fixe de 40 €/MWh (non indexé) ». La CRE recommande d'abaisser le plafond à 4 000 hepp/an. Les installations aidées par d'autres régimes (subventions) perdent l'éligibilité (installations neuves) ou voient leur tarif réduit (rénovées).
+- Cadre de soutien (CRE, délibération n° 2026-58 du 5 mars 2026 [R8-10], PAGE LUE) : arrêté tarifaire du 13 décembre 2016 dit « H16 » ; « les nouvelles installations d'une puissance installée strictement inférieure à 200 kW peuvent bénéficier d'un contrat d'obligation d'achat » (seuil « porté à 200 kW à partir du 1er janvier 2026 par le décret n° 2025-498 du 5 juin 2025 ») ; « les nouvelles installations d'une puissance installée strictement inférieure à 1 MW peuvent bénéficier d'un contrat de complément de rémunération » ; « les installations existantes d'une puissance installée strictement inférieure à 1 MW peuvent bénéficier d'un contrat de CR, sous réserve de l'engagement du producteur à réaliser un programme d'investissement ». Plafond de l'énergie rémunérée au tarif : « 120 000 heures équivalentes pleine puissance sur la durée du contrat de soutien pour les installations de basse chute, soit 6 000 hepp/an » ; au-delà, rachat « au prix fixe de 40 €/MWh (non indexé) ». La CRE recommande d'abaisser le plafond à 4 000 hepp/an. Selon le projet d'arrêté examiné par la CRE, les installations neuves ayant reçu d'autres aides à la construction ne sont pas éligibles, et le tarif des installations rénovées est calculé déduction faite des aides reçues.
 - Niveau du tarif (réponse ministérielle publiée au JO le 12 décembre 2023 [R8-11], PAGE LUE) : « Aujourd'hui, un producteur d'une installation d'une centaine de kilowatts peut espérer, grâce au H16, un tarif d'environ 170€/MWh produit. » Même source : 463 installations hydroélectriques de moins de 150 kW raccordées, pour « environ 43 MW » au total (soit ≈ 93 kW en moyenne, ESTIMATION par division).
 - Coûts et rentabilité (CRE, rapport du 30 janvier 2020 [R8-12], PAGE LUE) :
   - « les coûts d'investissements […] varient entre 2 100 et 5 600 €/kW pour 75 % des installations neuves » ;
@@ -91,6 +62,24 @@ Statuts : PAGE LUE (page ouverte avec WebFetch, citation exacte) · EXTRAIT (vu 
   - excédent avant amortissement : ≈ **16 000 à 68 000 €/an** ; investissement de rénovation ≥ 50 000 € (500 €/kW minimum), installation neuve 210 000 à 560 000 €.
   - Pour 30 kW : diviser par ≈ 3,3. Pour 300 kW : plus d'obligation d'achat (seuil 200 kW) ; complément de rémunération avec vente sur le marché.
 - Condition préalable : une chute d'eau et un droit d'eau existants sur le domaine. **Piste réservée aux domaines qui ont déjà un moulin ou un seuil** ; à ne pas intégrer par défaut dans S1/S2/S3.
+
+### 1.5 Forêt
+
+- Prix du foncier forestier 2025 (Safer et Société Forestière, « Le marché des forêts en 2025 », publié le 21 mai 2026, repris par France Épargne [R8-04], PAGE LUE) : « Le prix moyen s'établit à 4 950 euros l'hectare, en hausse de 2,5 % » ; écart entre « le Massif central à 2 850 euros » et « le nord du Bassin parisien à 7 880 euros » ; 23 030 transactions.
+- Prix des bois sur pied en forêt privée [R8-05] (PAGE LUE, communiqué France Bois Forêt du 26 mai 2026) : « Le prix moyen du bois d'oeuvre, toutes essences confondues, s'établit ainsi à 86 €/m³ en 2025 contre 90 €/m³ en 2024 ». Chêne 190 €/m³ en 2025 (228 € en 2024, −17 %) ; hêtre 49 € ; douglas 93 € ; épicéa commun 69 € ; peuplier 62 € ; pin sylvestre 44 €. Base : « ventes groupées de bois sur pied réalisées par les Experts Forestiers de France » (lots commercialisés, donc pas le prix moyen de tout le bois récolté).
+- Croissance biologique (DG Trésor, note n° 399 du 3 septembre 2026, citée par [R8-04]) : la croissance « est passée de 5,8 mètres cubes par hectare et par an entre 2005 et 2013 » à un niveau inférieur (la phrase est tronquée dans l'article) ; mortalité « plus que doublé en dix ans » (IGN).
+- **Revenu net forestier en €/ha/an : non trouvé à ce stade.** L'indicateur 2020 du marché des forêts [R8-06] (64 pages, lu en entier) ne donne aucun taux de rendement ni revenu net.
+- Voir 1.5 bis pour l'hypothèse de travail retenue (non sourcée).
+
+### 1.5 bis Forêt : hypothèse de revenu net
+
+- Faute de source, **HYPOTHÈSE de travail à valider** : revenu net de 50 à 100 €/ha/an (ce qui correspondrait à ≈ 1 à 2 % d'un prix moyen de 4 950 €/ha). Non sourcé : à vérifier dans l'indicateur 2025 complet de la Société Forestière ou auprès d'un expert forestier. Soit S1 (12 ha) ≈ 600-1 200 €/an ; S2 (30 ha) ≈ 1 500-3 000 €/an ; S3 (120 ha) ≈ 6 000-12 000 €/an. Revenu irrégulier (coupes), exposé au dépérissement (mortalité « plus que doublé en dix ans ») et à la baisse du chêne (−17 % en 2025).
+
+### 1.6 Location de chasse
+
+- WebSearch 4 (Sologne, €/ha/an) : **aucun prix de location à l'hectare** dans les résultats ; seulement des annonces de vente de territoires (Capifrance, Belles Demeures, Patrice Besse) et un cahier des charges préfectoral du Bas-Rhin (droit local) qui renvoie à une « moyenne » locale des loyers à l'hectare issue des adjudications. L'annonce Capifrance « Territoire de chasse de 171 hectares en Sologne » (Brinon-sur-Sauldre) est inaccessible (HTTP 403).
+- ONF [R8-07] (PAGE LUE) : « Six adjudications, correspondant à une ou plusieurs régions administratives, ont eu lieu en mars 2025. » « Les prochaines adjudications seront organisées en 2028. » **La page ne publie ni prix à l'hectare ni recettes.**
+- **Statut : INCONNU** pour le loyer de chasse en €/ha/an (Sologne ou ailleurs). Méthode pour vérifier : résultats d'adjudications ONF 2025 (catalogues régionaux), fédérations départementales des chasseurs (41, 45, 18), agences spécialisées en Sologne, préfectures d'Alsace-Moselle (baux communaux de chasse, droit local), rapport de la Cour des comptes sur l'ONF (recettes de chasse / surface louée).
 
 ### 1.7 Crédits carbone (Label bas-carbone, LBC)
 
@@ -115,6 +104,29 @@ Statuts : PAGE LUE (page ouverte avec WebFetch, citation exacte) · EXTRAIT (vu 
   - **Forêt existante gérée** (méthode « stock continu », exemple solognot) : ≈ 23 crédits/ha sur la durée du projet × 35 €/t ≈ **800 €/ha une seule fois**, soit pour S2 (30 ha de bois) ≈ 24 000 € sur la durée du projet, et pour S3 (120 ha) ≈ 97 000 €. Revenu **ponctuel**, pas annuel, et soumis à des engagements de gestion sur la durée du projet.
   - **Boisement** de terres agricoles : ≈ 170 à 370 crédits/ha × 35 € ≈ 6 000 à 13 000 €/ha, versés par des financeurs qui paient en pratique la plantation. Ce n'est **pas un revenu net** : c'est un financement du boisement. Et le boisement retire des prés à l'usage équestre.
   - Conclusion : piste d'image (RSE, mécénat d'entreprise) plus que de trésorerie récurrente.
+
+### 1.8 Truffières
+
+- Terre-net [R8-08] (PAGE LUE, article du 2 octobre 2026, chiffres attribués à la chambre d'agriculture de la Somme et Agri-Truffe) :
+  - « le coût d'implantation est estimé à 6 148 €/ha pour la truffe noire et à 11 272 €/ha pour la truffe de Bourgogne » ;
+  - « des frais d'entretien compris entre 800 et 1 500 €/ha par an » ;
+  - « les premières récoltes interviennent généralement entre 5 et 7 ans après la plantation » ;
+  - « une parcelle favorable et irriguée peut produire en moyenne entre 10 et 20 kg/ha » ;
+  - prix : « de 400 à 700 €/kg sur les marchés de gros », « plus de 1 000 €/kg pour des truffes de très belle qualité vendues au détail » ;
+  - « une marge brute moyenne à 18 500 €/ha/an, sans compter le coût du réensemencement et du chien truffier » ;
+  - risque : « Cette année, beaucoup de truffières non irriguées ne produiront pas du tout ».
+- Que Choisir [R8-09] (PAGE LUE, 18 décembre 2024) : « les rendements variant de 1 à 80 kg/ha en fonction des années » ; « rares sont ceux qui tirent un salaire de cette production ».
+- EXTRAIT (résultat de recherche 5, non vérifié) : FranceAgriMer situerait les rendements entre 0,5 et 5 kg/ha ; le ministère de l'Agriculture donnerait 500 à 900 €/kg et 5 000 à 10 000 €/ha d'installation (page agriculture.gouv.fr inaccessible, HTTP 503).
+- **Divergence majeure** : 0,5-5 kg/ha (moyenne nationale, EXTRAIT) contre 10-20 kg/ha (parcelle favorable et irriguée). La marge brute de 18 500 €/ha/an ne vaut que pour le haut de fourchette.
+- ESTIMATION pour le modèle (2 ha de truffière irriguée, sol calcaire favorable — HYPOTHÈSE forte : sol adapté, ce que l'on ne sait pas) :
+  - investissement : 2 × 6 148 ≈ 12 300 € (hors irrigation, clôture anti-sangliers et terrain) ;
+  - entretien : 1 600 à 3 000 €/an ;
+  - production année 7+ : bas = 2 ha × 2 kg × 400 € ≈ 1 600 €/an ; haut = 2 ha × 15 kg × 550 € ≈ 16 500 €/an ;
+  - contribution nette : de −1 400 € à +13 500 €/an, très aléatoire, nulle pendant 5 à 7 ans. **Piste marginale** à l'échelle d'un château ; intérêt surtout d'image (produit du domaine).
+
+### 1.9 Sapins de Noël, vente de foin, fumier, miel
+
+- **INCONNU** pour les prix et volumes (pas de recherche dédiée). La vente de foin dépend du rendement des prés et du prix local ; le prix d'achat du foin pour les chevaux doit être pris chez R2 (coût) et non compté deux fois. Le fumier de cheval et le miel (ruches prêtées à un apiculteur) relèvent de l'ordre de quelques centaines à quelques milliers d'euros (HYPOTHÈSE non sourcée, à ne pas modéliser sans vérification).
 
 ---
 
@@ -184,62 +196,8 @@ Statuts : PAGE LUE (page ouverte avec WebFetch, citation exacte) · EXTRAIT (vu 
 - **Château de Ferrières (Seine-et-Marne)** [R8-26] (Wikipédia, PAGE LUE) : propriétaire actuel « Commune de Ferrières-en-Brie » ; « légué en 1975 à la chancellerie des universités de Paris par le baron Guy de Rothschild » ; « rétrocédé en 2012 aux ayants droit des donataires », qui le rétrocèdent « à la commune de Ferrières-en-Brie » ; « En juillet 2013, le château est confié par la commune à une société privée pour y créer l'école Ferrières », ouverte « en octobre 2015 » (« gastronomie, hôtellerie et luxe ») ; parc « à l'anglaise de 125 hectares ». **Conditions financières (bail, redevance, durée, travaux) : INCONNU** — la recherche 11 n'a rien trouvé. Méthode : délibérations du conseil municipal de Ferrières-en-Brie de 2013, registre des actes.
 - **Institut Lyfe (ex-Institut Paul Bocuse), château du Vivier à Écully** [R8-27] (Wikipédia, PAGE LUE) : « Le campus de l'école gravite autour du château du Vivier situé dans le parc du Vivier de 7 hectares » ; « plus de 1 200 étudiants, de plus de 75 nationalités » (donnée signalée sans source secondaire). Propriété du château et loyer : **INCONNU** (non indiqués).
 - **École nationale supérieure de pâtisserie (Ducasse), château de Montbarnier à Yssingeaux** [R8-28] (Wikipédia, PAGE LUE) : château « racheté en 1963 par la commune d'Yssingeaux » ; « Les bâtiments restent propriété de la ville d'Yssingeaux » ; liquidation judiciaire en 2007 puis reprise par Alain Ducasse et Yves Thuriès (51 % / 49 %) ; « Elle forme plus de 1 500 personnes par an ». Loyer : **INCONNU**.
-- Constat : dans les trois cas trouvés, **le propriétaire du château est une collectivité** (ou l'école elle-même), pas un particulier, et l'école apporte l'exploitation. Aucun exemple n'a été trouvé d'un propriétaire privé qui vit dans le château tout en louant le reste à une école. Une école ou un centre de formation suppose : ERP de type R, hébergement, restauration, flux quotidien de centaines de personnes → **incompatible avec la « partie entièrement privée » et le calme** souhaités, sauf à céder l'usage de l'essentiel du domaine.
+- Constat : dans les trois cas trouvés, **le propriétaire du château est une collectivité** (ou l'école elle-même), pas un particulier, et l'école apporte l'exploitation. Aucun exemple n'a été trouvé d'un propriétaire privé qui vit dans le château tout en louant le reste à une école. Une école ou un centre de formation suppose : un établissement recevant du public (catégorie et type à confirmer par R3), hébergement, restauration, flux quotidien de centaines de personnes → **incompatible avec la « partie entièrement privée » et le calme** souhaités, sauf à céder l'usage de l'essentiel du domaine.
 - Pensionnats internationaux, colonies de vacances, centres de formation d'entreprise, studios de tournage : **non documentés ici** (budget de recherche épuisé ; tournages traités par R7). INCONNU.
-
----
-
-## 7. Moteur extérieur (capital financier, immobilier, entreprise, dotation)
-
-### 7.1 Taux de dépense soutenable d'une dotation perpétuelle
-
-- NACUBO-Commonfund, exercice 2025 (1er juillet 2024 – 30 juin 2025) [R8-34] (PAGE LUE, PDF) : 657 institutions, « $944.3 billion » d'actifs ; « Institutions' average annual effective spending rate increased moderately to 4.9 percent from 4.8 percent in FY24 » ; taux prévus par les règles de dépense (« Policy Rates ») : 4,6 % (FY24) et 4,7 % (FY25) ; « Average target nominal return » 7,3 % ; écart moyen visé au-dessus de l'inflation 4,9 % ; « The conventional approach for many endowments is to set CPI or HEPI +5% (i.e., inflation plus a spending/distribution percentage) as a return target ». Rendements moyens annualisés (graphique) : 1 an 10,9 % (FY25) ; 10 ans 7,7 % (FY25) contre 6,8 % (FY24) (lecture du graphique, confirmée par l'EXTRAIT de la recherche 12).
-- UBS Global Investment Returns Yearbook 2025 [R8-32] (PAGE LUE) : depuis 2000, « global equity investors still enjoyed an annualized real return of 3.5% and an equity risk premium relative to bills of 4.3% » ; base de « 23 marchés » de 1900 à 2024. Les rendements réels depuis 1900 ne sont pas affichés sur la page (INCONNU ici).
-- Jordà et al., « The Rate of Return on Everything, 1870–2015 » [R8-33] : le résumé NBER ne donne pas de chiffre (INCONNU ici).
-- Lecture : les grandes dotations américaines dépensent ≈ 4,5 à 5 % par an, mais visent pour cela inflation + ≈ 5 % de rendement, avec une forte part de capital-investissement, **sans impôt** (institutions exonérées) et en dollars. Un particulier ou une société française supporte l'impôt (§7.2), ce qui réduit le taux soutenable.
-- ESTIMATION (taux de retrait net soutenable pour un patrimoine financier diversifié détenu par un particulier résident français) : rendement réel avant impôt d'un portefeuille équilibré ≈ 3 à 4 % (HYPOTHÈSE, cohérente avec 3,5 % réel pour les actions mondiales depuis 2000 et une part obligataire) ; fiscalité ≈ 31,4 % sur les revenus et plus-values **nominaux** réalisés (§7.2), soit, avec 2 % d'inflation, une ponction de l'ordre de 1,0 à 1,5 point par an si tout le rendement était réalisé chaque année (moins si plus-values latentes ou enveloppes fiscales) → **taux de retrait réel net soutenable ≈ 2,5 à 3 %** du capital (HYPOTHÈSE de travail, à stress-tester).
-
-### 7.2 Fiscalité française des revenus financiers (2026)
-
-- Service-public, fiche F2613, « Vérifié le 15 avril 2026 » [R8-31] (PAGE LUE) : « Le prélèvement forfaitaire unique est constitué de l'impôt sur le revenu (12,8 %) et des prélèvements sociaux. » « Le taux des prélèvements sociaux sur les revenus de placements passe à 18,6 % à compter du 1er janvier 2026. » Des « règles particulières s'appliquent à certains placements ». Option possible pour le barème progressif (abattement de 40 % sur les dividendes).
-- ESTIMATION : taux global du PFU en 2026 = 12,8 % + 18,6 % = **31,4 %** (addition, la page n'écrit pas ce total). Le taux applicable aux revenus fonciers, à l'assurance-vie et aux plus-values immobilières n'a pas été vérifié ici (à confirmer par R3).
-
-### 7.3 Rendement des SCPI (ASPIM)
-
-- Année 2025 (ASPIM, communiqué du 9 février 2026 [R8-29], PAGE LUE) : « le taux de distribution pondéré par la capitalisation, toutes catégories confondues, s'établit à 4,91 % », « en progression de 0,19 point par rapport à 2024 » (donc ≈ 4,72 % en 2024, ESTIMATION par soustraction) ; « le prix de part moyen pondéré par la capitalisation recule de 3,45 % » ; « les SCPI affichent une performance globale de +1,46 % en 2025 » ; « 14 SCPI à capital variable ont diminué leur prix de souscription » ; 50 % des SCPI ont réduit leur dividende ; capitalisation « 89 milliards € ».
-- Premier semestre 2026 (ASPIM, 5 août 2026 [R8-30], PAGE LUE) : taux de distribution semestriel « 2,30 % » (2,29 % au 1er semestre 2025) ; « le prix de part moyen de l'ensemble des SCPI, pondéré par la capitalisation, diminue ainsi de 2,4 % » ; SCPI à capital fixe : prix moyen « en repli de 33 % depuis le début de l'année » ; capitalisation « 86 milliards d'euros ».
-- Lecture : un taux de distribution de ≈ 4,9 % brut s'accompagne d'une **érosion du capital** (−3,45 % en 2025, −2,4 % au S1 2026) : la performance globale (+1,46 % en 2025) est très inférieure au taux de distribution. Les revenus de SCPI détenues en direct sont des revenus fonciers (barème + prélèvements sociaux) et entrent dans l'IFI.
-- ESTIMATION (particulier à la tranche marginale de 45 %, prélèvements sociaux 17,2 % ou 18,6 % selon le régime applicable — à vérifier) : 4,91 % × (1 − 0,45 − 0,172) ≈ **1,9 % net** (hors IFI et hors frais d'entrée de ≈ 8-10 %, HYPOTHÈSE). Pour 1,2 M€ net par an, il faudrait ≈ 65 M€ de SCPI : **piste peu efficace pour un contribuable fortement imposé**.
-
-### 7.4 Rendements de l'immobilier commercial et résidentiel
-
-- Proxy immobilier tertiaire grand public : SCPI, ≈ 4,9 % de distribution en 2025 mais performance globale +1,46 % (§7.3).
-- Résidentiel rural : rendement brut ≈ 4 à 8 % sur des logements créés dans des communs (§3.2, ESTIMATION). Rendements « prime » des bureaux et commerces : **INCONNU** (pas de recherche dédiée ; à prendre dans les notes trimestrielles des grands conseils immobiliers).
-
-### 7.5 Reprise d'une PME comme moteur de revenus
-
-- Multiples de valorisation (Argos Index® mid-market, 2e trimestre 2026 [R8-35], PAGE LUE, PDF) : l'indice « mesure l'évolution de la valorisation des PME non cotées de la zone euro » ; « L'Argos Index® a progressé de 2,3% pour s'établir à 8,8x l'EBITDA » ; « Les multiples médians des fonds d'investissement ont augmenté à 10,2x l'EBITDA et ceux des acquéreurs stratégiques à 7,9x » ; le segment inférieur « (15 à 150 millions d'euros) est resté globalement stable » ; « La part des opérations effectuées sur des multiples inférieurs à 7x l'EBITDA a augmenté à 27% ». Le périmètre (transactions de 15 à 500 M€) est **au-dessus** de la PME qu'un particulier reprend seul ; les multiples des petites PME (valeur < 15 M€) ne sont pas dans cette source (INCONNU ici).
-- Taux d'échec des reprises :
-  - Question écrite AN n° 75244, publiée le 11 octobre 2005 [R8-36] (PAGE LUE) : « D'après une récente étude de la nouvelle banque publique d'aide aux PME (OSEO-BDPME), plus d'une transmission sur cinq échoue dans les six ans et le risque de défaillance augmente lorsque la cession est précipitée ou que le repreneur n'a aucun lien avec l'entreprise. Cette étude a pour base un échantillon de 3 000 dossiers représentatifs des 27 000 transmissions de PME référencées de 1997 à 2003 par OSEO. » Les PME reprises sont « fragilisées par le remboursement de la dette liée au financement de la reprise ».
-  - EXTRAIT (recherche 14, Banque des Territoires [R8-37], page en maintenance, non vérifié) : « 71 % des établissements repris en 2011 existent toujours cinq ans après, contre 51 % des créations de la même année ».
-  - Lecture : ≈ 20 % d'échec à 5-6 ans (donnée ancienne, 1997-2003). Pas de chiffre récent vérifié.
-- ESTIMATION — capacité de distribution d'une PME détenue sans dette d'acquisition (chaîne fiscale : IS 25 % puis PFU 31,4 % sur dividendes) : 1 € de résultat avant impôt → 0,75 € après IS → 0,75 × (1 − 0,314) ≈ **0,51 € net** pour l'actionnaire personne physique.
-  - Pour 0,3 / 0,6 / 1,2 M€ nets par an : résultat avant impôt distribuable ≈ 0,58 / 1,17 / 2,33 M€, après investissements de maintien et rémunération d'un dirigeant salarié (le propriétaire de 26 ans ne peut pas diriger à la fois l'entreprise et le domaine — leçon n° 3 du contexte).
-  - Avec un EBITDA ≈ 1,3 × le résultat avant impôt (HYPOTHÈSE : amortissements et frais financiers ≈ 25 % de l'EBITDA), EBITDA nécessaire ≈ 0,8 / 1,5 / 3,0 M€. À 7,9x (multiple médian des acquéreurs stratégiques, mid-market), valeur d'entreprise ≈ **6 / 12 / 24 M€** ; à 5x (HYPOTHÈSE pour une petite PME, non sourcée), ≈ 4 / 7,5 / 15 M€.
-  - Avec dette d'acquisition (LBO), la trésorerie sert d'abord au remboursement pendant 5 à 7 ans : **distribution quasi nulle au début** — incompatible avec un besoin annuel immédiat.
-  - Risque : ≈ 1 reprise sur 5 échoue en 6 ans (donnée ancienne) ; concentration du risque sur une seule entreprise. Un moteur crédible passe par la **diversification** (plusieurs participations ou portefeuille financier) ou par la conversion progressive des dividendes en dotation.
-
-### 1.3 Hangars photovoltaïques financés par un tiers
-
-- **INCONNU** (pas de recherche dédiée, budget de 15 recherches atteint). Méthode : conditions types des développeurs (bail emphytéotique ou droit de superficie de 20 à 30 ans, hangar livré en échange de la toiture), avis des chambres d'agriculture. Point d'attention : un hangar neuf à proximité d'un monument protégé passe par l'avis de l'ABF (à confirmer par R3).
-
-### 1.9 Sapins de Noël, vente de foin, fumier, miel
-
-- **INCONNU** pour les prix et volumes (pas de recherche dédiée). La vente de foin dépend du rendement des prés et du prix local ; le prix d'achat du foin pour les chevaux doit être pris chez R2 (coût) et non compté deux fois. Le fumier de cheval et le miel (ruches prêtées à un apiculteur) relèvent de l'ordre de quelques centaines à quelques milliers d'euros (HYPOTHÈSE non sourcée, à ne pas modéliser sans vérification).
-
-### 1.5 bis Forêt : hypothèse de revenu net
-
-- Faute de source, **HYPOTHÈSE de travail à valider** : revenu net de 50 à 100 €/ha/an (ce qui correspondrait à ≈ 1 à 2 % d'un prix moyen de 4 950 €/ha). Non sourcé : à vérifier dans l'indicateur 2025 complet de la Société Forestière ou auprès d'un expert forestier. Soit S1 (12 ha) ≈ 600-1 200 €/an ; S2 (30 ha) ≈ 1 500-3 000 €/an ; S3 (120 ha) ≈ 6 000-12 000 €/an. Revenu irrégulier (coupes), exposé au dépérissement (mortalité « plus que doublé en dix ans ») et à la baisse du chêne (−17 % en 2025).
 
 ---
 
@@ -263,7 +221,7 @@ Statuts : PAGE LUE (page ouverte avec WebFetch, citation exacte) · EXTRAIT (vu 
 - Wikipedia [R8-43] (PAGE LUE) : « In 1994, count Benedikt Bolza purchased the estate. » **Divergence** entre sources sur la date (1984 / années 1990 / 1994) et sur l'acheteur (Antonio ou Benedikt). EXTRAIT (recherche 15) : le site indiquerait un domaine de 1 500 ha.
 - Country Life [R8-42] (EXTRAIT, texte non lisible) : « of the 50 farmhouses on the estate, almost half have already been converted, and 10 remain for sale » ; ventes en pleine propriété, par Knight Frank.
 - **Prix de vente des ruines et des maisons restaurées : INCONNU.**
-- Mécanique du modèle (ESTIMATION à partir des sources) : (1) un très grand foncier (≈ 1 400-1 500 ha) avec **50 ruines dispersées** ; (2) vente des ruines avec un terrain à des acheteurs fortunés ; (3) marge sur la conception et la restauration (studio d'architecture et ateliers sur place) ; (4) services récurrents aux propriétaires et hôtel dans le château (ouvert en 2021 d'après l'EXTRAIT de Cultured) ; (5) le château et le cœur du domaine restent à la famille.
+- Mécanique du modèle (ESTIMATION à partir des sources) : (1) un très grand foncier (≈ 1 400-1 500 ha) avec **50 ruines dispersées** ; (2) vente des ruines avec un terrain à des acheteurs fortunés ; (3) marge sur la conception et la restauration (studio d'architecture et ateliers sur place) ; (4) services récurrents aux propriétaires et hôtel dans le château (ouvert en 2021 d'après le titre et l'URL d'un article de Cultured, EXTRAIT [R8-49]) ; (5) le château et le cœur du domaine restent à la famille.
 - Transposition en France (ESTIMATION) : les domaines S1-S3 n'ont pas 50 fermes dispersées ; S3 (300 ha, 4 000 m² de dépendances) pourrait en avoir quelques-unes. Chaque vente d'une dépendance avec terrain suppose : changement de destination autorisé au PLU, division (et régime du lotissement si plusieurs lots à bâtir), droit de préemption de la Safer pour les biens agricoles, abords de monument historique (ABF), servitudes de passage. **Ces règles n'ont pas pu être vérifiées ici** (service-public n'a pas de fiche Safer ; safer.fr indisponible) : à confirmer par R3. Prix des dépendances vendues : à estimer par les valeurs foncières locales (DVF), INCONNU ici.
 - Effet sur la vie privée : la vente crée des **voisins permanents** à l'intérieur du domaine ; à Reschio, c'est accepté parce que l'échelle est très grande (≈ 1 400 ha).
 
@@ -279,9 +237,51 @@ Statuts : PAGE LUE (page ouverte avec WebFetch, citation exacte) · EXTRAIT (vu 
 
 ### 6.4 Fonds de dotation ou fondation portant un domaine
 
-- Règles (Wikipédia [R8-45], PAGE LUE ; certaines sections sont signalées comme à sourcer, et la page mentionne encore l'ISF, supprimé — à recouper avec R3) : forme issue de la loi n° 2008-776 du 4 août 2008 (article 140) ; « Le fonds de dotation est une personne morale de droit privé à but non lucratif qui reçoit et gère, en les capitalisant, des biens et droits de toute nature qui lui sont apportés à titre gratuit et irrévocable » et « utilise les revenus de la capitalisation en vue de la réalisation d'une œuvre ou d'une mission d'intérêt général » ; « la dotation initiale étant fixée à 15 000 € minimum » ; fonds publics interdits sauf dérogation ; commissaire aux comptes « dès que ses ressources excèdent […] plus de 10 000 euros » ; dons des particuliers : « 66 % du montant du don est déductible de l'impôt sur le revenu, dans la limite de 20 % du revenu imposable » ; entreprises : « 60 % ». Recensement 2024 : « 4 628 fonds de dotation », « dont environ 3 000 réellement en activité ». Exemple patrimonial cité : « Fonds de dotation Marc Ladreit de Lacharrière pour l'Abbaye romane de Lubilhac ».
+- Règles (Wikipédia [R8-45], PAGE LUE ; certaines sections sont signalées comme à sourcer, et la page mentionne encore l'ISF, aujourd'hui remplacé par l'IFI — à recouper avec R3) : forme issue de la loi n° 2008-776 du 4 août 2008 (article 140) ; « Le fonds de dotation est une personne morale de droit privé à but non lucratif qui reçoit et gère, en les capitalisant, des biens et droits de toute nature qui lui sont apportés à titre gratuit et irrévocable » et « utilise les revenus de la capitalisation en vue de la réalisation d'une œuvre ou d'une mission d'intérêt général » ; « la dotation initiale étant fixée à 15 000 € minimum » ; fonds publics interdits sauf dérogation ; commissaire aux comptes « dès que ses ressources excèdent […] plus de 10 000 euros » ; dons des particuliers : « 66 % du montant du don est déductible de l'impôt sur le revenu, dans la limite de 20 % du revenu imposable » ; entreprises : « 60 % ». Recensement 2024 : « 4 628 fonds de dotation », « dont environ 3 000 réellement en activité ». Exemple patrimonial cité : « Fonds de dotation Marc Ladreit de Lacharrière pour l'Abbaye romane de Lubilhac ».
 - Exemple de domaine porté par une fondation : **Fondation de Coubertin** [R8-46] (PAGE LUE) : devenue « en 1973 la Fondation de Coubertin, immédiatement reconnue d'utilité publique » ; « Le domaine de Coubertin (80 hectares » ; « un château de la fin du XVIIe siècle » ; « fonderie de Coubertin, pour la chaudronnerie et la fonte d'art » ; « L'institution reçoit chaque année une trentaine de jeunes gens » issus des Compagnons du devoir ; exposition annuelle de sculpture et jardin de sculptures. Modèle économique et chiffres : INCONNU (non indiqués).
 - Lecture (ESTIMATION, à confirmer par R3) : l'apport est **gratuit et irrévocable** et le fonds doit poursuivre une mission d'intérêt général. C'est un outil de **transmission et de pérennisation** du domaine (et de collecte de mécénat), pas un moyen de financer une résidence privée : la jouissance privative du fondateur est a priori incompatible avec l'intérêt général. Un montage hybride (château ou parc ouvert au public porté par le fonds, logement privé conservé en propre) serait à étudier juridiquement.
+
+---
+
+## 7. Moteur extérieur (capital financier, immobilier, entreprise, dotation)
+
+### 7.1 Taux de dépense soutenable d'une dotation perpétuelle
+
+- NACUBO-Commonfund, exercice 2025 (1er juillet 2024 – 30 juin 2025) [R8-34] (PAGE LUE, PDF) : 657 institutions, « $944.3 billion » d'actifs ; « Institutions' average annual effective spending rate increased moderately to 4.9 percent from 4.8 percent in FY24 » ; taux prévus par les règles de dépense (« Policy Rates ») : 4,6 % (FY24) et 4,7 % (FY25) (lecture du graphique) ; « Average target nominal return » pour FY24 : 7,3 % ; « Average spread above the rate of inflation » pour FY24 : 4,9 % ; « The conventional approach for many endowments is to set CPI or HEPI +5% (i.e., inflation plus a spending/distribution percentage) as a return target ». Rendements moyens annualisés (graphique) : 1 an 10,9 % (FY25) ; 10 ans 7,7 % (FY25) contre 6,8 % (FY24) (lecture du graphique, confirmée par l'EXTRAIT de la recherche 12).
+- UBS Global Investment Returns Yearbook 2025 [R8-32] (PAGE LUE) : depuis 2000, « global equity investors still enjoyed an annualized real return of 3.5% and an equity risk premium relative to bills of 4.3% » ; base de « 23 marchés » de 1900 à 2024. Les rendements réels depuis 1900 ne sont pas affichés sur la page (INCONNU ici).
+- Jordà et al., « The Rate of Return on Everything, 1870–2015 » [R8-33] : le résumé NBER ne donne pas de chiffre (INCONNU ici).
+- Lecture : les grandes dotations américaines dépensent ≈ 4,5 à 5 % par an, mais visent pour cela inflation + ≈ 5 % de rendement, avec une forte part de capital-investissement, **sans impôt** (institutions exonérées) et en dollars. Un particulier ou une société française supporte l'impôt (§7.2), ce qui réduit le taux soutenable.
+- ESTIMATION (taux de retrait net soutenable pour un patrimoine financier diversifié détenu par un particulier résident français) : rendement réel avant impôt d'un portefeuille équilibré ≈ 3 à 4 % (HYPOTHÈSE, cohérente avec 3,5 % réel pour les actions mondiales depuis 2000 et une part obligataire) ; fiscalité ≈ 31,4 % sur les revenus et plus-values **nominaux** réalisés (§7.2), soit, avec 2 % d'inflation, une ponction de l'ordre de 1,0 à 1,5 point par an si tout le rendement était réalisé chaque année (moins si plus-values latentes ou enveloppes fiscales) → **taux de retrait réel net soutenable ≈ 2,5 à 3 %** du capital (HYPOTHÈSE de travail, à stress-tester).
+
+### 7.2 Fiscalité française des revenus financiers (2026)
+
+- Service-public, fiche F2613, « Vérifié le 15 avril 2026 » [R8-31] (PAGE LUE) : « Le prélèvement forfaitaire unique est constitué de l'impôt sur le revenu (12,8 %) et des prélèvements sociaux. » « Le taux des prélèvements sociaux sur les revenus de placements passe à 18,6 % à compter du 1er janvier 2026. » Des « règles particulières s'appliquent à certains placements ». Option possible pour le barème progressif (abattement de 40 % sur les dividendes).
+- ESTIMATION : taux global du PFU en 2026 = 12,8 % + 18,6 % = **31,4 %** (addition, la page n'écrit pas ce total). Le taux applicable aux revenus fonciers, à l'assurance-vie et aux plus-values immobilières n'a pas été vérifié ici (à confirmer par R3).
+
+### 7.3 Rendement des SCPI (ASPIM)
+
+- Année 2025 (ASPIM, communiqué du 9 février 2026 [R8-29], PAGE LUE) : « le taux de distribution pondéré par la capitalisation, toutes catégories confondues, s'établit à 4,91 % », « en progression de 0,19 point par rapport à 2024 » (donc ≈ 4,72 % en 2024, ESTIMATION par soustraction) ; « le prix de part moyen pondéré par la capitalisation recule de 3,45 % » ; « les SCPI affichent une performance globale de +1,46 % en 2025 » ; « 14 SCPI à capital variable ont diminué leur prix de souscription » ; 50 % des SCPI ont réduit leur dividende ; capitalisation « 89 milliards € ».
+- Premier semestre 2026 (ASPIM, 5 août 2026 [R8-30], PAGE LUE) : taux de distribution semestriel « 2,30 % » (2,29 % au 1er semestre 2025) ; « le prix de part moyen de l'ensemble des SCPI, pondéré par la capitalisation, diminue ainsi de 2,4 % » ; SCPI à capital fixe : prix moyen « en repli de 33 % depuis le début de l'année » ; capitalisation « 86 milliards d'euros ».
+- Lecture : un taux de distribution de ≈ 4,9 % brut s'accompagne d'une **érosion du capital** (−3,45 % en 2025, −2,4 % au S1 2026) : la performance globale (+1,46 % en 2025) est très inférieure au taux de distribution. Les revenus de SCPI détenues en direct relèvent des revenus fonciers (barème + prélèvements sociaux) et les parts entrent dans l'IFI (règles non vérifiées ici, à confirmer par R3).
+- ESTIMATION (particulier à la tranche marginale de 45 %, prélèvements sociaux 17,2 % ou 18,6 % selon le régime applicable — à vérifier) : 4,91 % × (1 − 0,45 − 0,172) ≈ **1,9 % net** (hors IFI et hors frais d'entrée de ≈ 8-10 %, HYPOTHÈSE). Pour 1,2 M€ net par an, il faudrait ≈ 65 M€ de SCPI : **piste peu efficace pour un contribuable fortement imposé**.
+
+### 7.4 Rendements de l'immobilier commercial et résidentiel
+
+- Proxy immobilier tertiaire grand public : SCPI, ≈ 4,9 % de distribution en 2025 mais performance globale +1,46 % (§7.3).
+- Résidentiel rural : rendement brut ≈ 4 à 8 % sur des logements créés dans des communs (§3.2, ESTIMATION). Rendements « prime » des bureaux et commerces : **INCONNU** (pas de recherche dédiée ; à prendre dans les notes trimestrielles des grands conseils immobiliers).
+
+### 7.5 Reprise d'une PME comme moteur de revenus
+
+- Multiples de valorisation (Argos Index® mid-market, 2e trimestre 2026 [R8-35], PAGE LUE, PDF) : l'indice « mesure l'évolution de la valorisation des PME non cotées de la zone euro » ; « L'Argos Index® a progressé de 2,3% pour s'établir à 8,8x l'EBITDA » ; « Les multiples médians des fonds d'investissement ont augmenté à 10,2x l'EBITDA et ceux des acquéreurs stratégiques à 7,9x » ; le segment inférieur « (15 à 150 millions d'euros) est resté globalement stable » ; « La part des opérations effectuées sur des multiples inférieurs à 7x l'EBITDA a augmenté à 27% ». Le périmètre (transactions de 15 à 500 M€) est **au-dessus** de la PME qu'un particulier reprend seul ; les multiples des petites PME (valeur < 15 M€) ne sont pas dans cette source (INCONNU ici).
+- Taux d'échec des reprises :
+  - Question écrite AN n° 75244, publiée le 11 octobre 2005 [R8-36] (PAGE LUE) : « D'après une récente étude de la nouvelle banque publique d'aide aux PME (OSEO-BDPME), plus d'une transmission sur cinq échoue dans les six ans et le risque de défaillance augmente lorsque la cession est précipitée ou que le repreneur n'a aucun lien avec l'entreprise. Cette étude a pour base un échantillon de 3 000 dossiers représentatifs des 27 000 transmissions de PME référencées de 1997 à 2003 par OSEO. » Les PME reprises sont « fragilisées par le remboursement de la dette liée au financement de la reprise ».
+  - EXTRAIT (recherche 14, Banque des Territoires [R8-37], page en maintenance, non vérifié) : « 71 % des établissements repris en 2011 existent toujours cinq ans après, contre 51 % des créations de la même année ».
+  - Lecture : ≈ 20 % d'échec à 5-6 ans (donnée ancienne, 1997-2003). Pas de chiffre récent vérifié.
+- ESTIMATION — capacité de distribution d'une PME détenue sans dette d'acquisition (chaîne fiscale : IS au taux normal de 25 % — taux non vérifié ici, à confirmer par R3 — puis PFU 31,4 % sur dividendes) : 1 € de résultat avant impôt → 0,75 € après IS → 0,75 × (1 − 0,314) ≈ **0,51 € net** pour l'actionnaire personne physique.
+  - Pour 0,3 / 0,6 / 1,2 M€ nets par an : résultat avant impôt distribuable ≈ 0,58 / 1,17 / 2,33 M€, après investissements de maintien et rémunération d'un dirigeant salarié (le propriétaire de 26 ans ne peut pas diriger à la fois l'entreprise et le domaine — leçon n° 3 du contexte).
+  - Avec un EBITDA ≈ 1,3 × le résultat avant impôt (HYPOTHÈSE : amortissements et frais financiers ≈ 25 % de l'EBITDA), EBITDA nécessaire ≈ 0,8 / 1,5 / 3,0 M€. À 7,9x (multiple médian des acquéreurs stratégiques, mid-market), valeur d'entreprise ≈ **6 / 12 / 24 M€** ; à 5x (HYPOTHÈSE pour une petite PME, non sourcée), ≈ 4 / 7,5 / 15 M€.
+  - Avec dette d'acquisition (LBO), la trésorerie sert d'abord au remboursement pendant 5 à 7 ans : **distribution quasi nulle au début** — incompatible avec un besoin annuel immédiat.
+  - Risque : ≈ 1 reprise sur 5 échoue en 6 ans (donnée ancienne) ; concentration du risque sur une seule entreprise. Un moteur crédible passe par la **diversification** (plusieurs participations ou portefeuille financier) ou par la conversion progressive des dividendes en dotation.
 
 ### 7.6 Capital ou entreprise nécessaires pour produire 0,3 / 0,6 / 1,2 M€ par an de trésorerie disponible après impôts
 
@@ -315,9 +315,9 @@ Conditions de pérennité (synthèse) :
 |---|---|---|---|---|
 | Palefrenier soigneur (RNCP38389) | CAPA | 6 324 € | 5 994 € | 6 137 € |
 | Animateur d'équitation (RNCP37414/42622) | Titre | 7 101 € | 6 731 € | 6 576 € |
-| Responsable d'entreprise hippique (RNCP40797) | BP | 7 150 € | 6 412 € | — |
-| Conduite et gestion de l'entreprise hippique (RNCP38076) | Bac pro | 8 100 € | 7 633 € | — |
-| Éducation et travail des jeunes équidés (RNCP39679/42019) | CS | 8 407 € | 8 202 € | — |
+| Responsable d'entreprise hippique (RNCP40797) | BP | 7 150 € | 6 412 € | non extrait |
+| Conduite et gestion de l'entreprise hippique (RNCP38076) | Bac pro | 8 100 € | 7 633 € | non extrait |
+| Éducation et travail des jeunes équidés (RNCP39679/42019) | CS | 8 407 € | 8 202 € | non extrait |
 | Perfectionnement sportif mention sports équestres (RNCP39573) | DEJEPS | 10 550 € | 8 663 € | 8 663 € |
 | Lad-cavalier d'entraînement (RNCP38387) | CAPA | 10 871 € | 10 871 € | 15 529 € |
 | Maréchal-ferrant (RNCP38388) | CAPA | 5 669 € | 5 669 € | 7 928 € |
@@ -340,3 +340,109 @@ Conditions de pérennité (synthèse) :
 ### 8.4 Partenariats avec des maisons de luxe
 
 - **INCONNU** (pas de recherche dédiée). Les montants des locations pour défilés, shootings ou événements de marques ne sont généralement pas publics ; R7 traite les tournages et événements.
+
+---
+
+## 9. Synthèse par piste (livrable demandé)
+
+Montants en € par an, valeur 2025-2026. **CA** = chiffre d'affaires ou loyer brut (pas l'EBE), sauf mention contraire. Toutes les fourchettes de cette table sont des **ESTIMATIONS** issues des sections ci-dessus ; la colonne « Preuves » indique la qualité des données sous-jacentes.
+
+| Piste | S1 (50 ha) | S2 (120 ha) | S3 (300 ha) | Investissement | Charge opérationnelle | Récurrence | Contraintes principales | Preuves |
+|---|---|---|---|---|---|---|---|---|
+| Loyer PV au sol / agrivoltaïsme (HYPOTHÈSE de surface : 5 / 10 / 20 ha retirés de l'usage équestre) | 7 500 – 22 500 | 15 000 – 45 000 | 30 000 – 90 000 | 0 pour le propriétaire (développeur) | quasi nulle | récurrent, bail 20-40 ans | loi APER et décret 2024 (terres incultes ou agrivoltaïsme réellement agricole) ; abords MH ; raccordement ; perte de prés ; paysage | loyers : sources commerciales seulement (faible) [R8-01] ; règles [R8-03] |
+| Petite hydro (seulement si moulin et droit d'eau existants ; 100 kW) | 16 000 – 68 000 d'excédent avant amortissement | idem | idem | ≥ 50 000 (rénovation) ; 210 000 – 560 000 (neuf) | faible à moyenne | récurrent (contrat 20 ans), variable selon l'hydraulicité | continuité écologique, autorisation loi sur l'eau, plafond d'heures | haute [R8-10] [R8-11] [R8-12] |
+| Forêt (gestion courante) | 600 – 1 200 | 1 500 – 3 000 | 6 000 – 12 000 | faible | gestionnaire forestier | irrégulier (coupes) | dépérissement, baisse du chêne | **HYPOTHÈSE non sourcée** (prix sourcés [R8-04] [R8-05]) |
+| Location de chasse | INCONNU | INCONNU | INCONNU | nul | faible, mais présence de chasseurs | récurrent | sécurité des chevaux et des cavaliers, tranquillité | aucune donnée de prix |
+| Crédits carbone LBC sur forêt existante | ≈ 9 700 une fois | ≈ 24 000 une fois | ≈ 97 000 une fois | coût du dossier : INCONNU | engagements de gestion | **ponctuel** | méthode, vérification, durée d'engagement | [R8-14] [R8-16] |
+| Truffière (2 ha, sol favorable — HYPOTHÈSE) | −1 400 à +13 500 (net, à partir de l'année 7) | idem | idem | ≈ 12 300 + irrigation + clôture | moyenne | aléatoire | eau, sol calcaire, sangliers, vols | [R8-08] [R8-09] |
+| Gardiennage de voitures de collection (par tranche de 600 m² affectés) | ≈ 31 500 – 50 400 CA TTC | idem | idem (×2 si 1 200 m²) | alarme, vidéo, déshumidification, assurance : INCONNU | faible à moyenne (accès des clients) | récurrent (mensuel) | assurance du dépositaire, demande rurale non démontrée | prix belge [R8-18] ; France INCONNU |
+| Hivernage camping-cars (par tranche de 600 m²) | 7 000 – 11 000 CA TTC | idem | idem | faible (sol, portes) | très faible | récurrent (saisonnier) | accès poids lourd, usage du bâtiment | [R8-17] |
+| Stockage de vins (cave de 100 m²) | 10 000 – 48 000 CA TTC si clientèle | idem | idem | climatisation éventuelle, sécurité | faible | récurrent | assurance de la valeur stockée, clientèle non démontrée | [R8-20] (faible) |
+| Logements locatifs dans les communs (S1 200 m², S2 600 m², S3 1 500 m²) | 16 800 – 26 400 CC | 50 400 – 79 200 CC | 126 000 – 198 000 CC | 0,32 – 0,40 M€ / 0,96 – 1,2 M€ / 2,4 – 3,0 M€ (1 600 – 2 000 €/m² TTC) | faible (gestion locative) | récurrent | changement de destination (PLU), ABF, présence de tiers | [R8-22] [R8-23] [R8-24] |
+| Locataire institutionnel (école, formation) | INCONNU | INCONNU | INCONNU | lourd (ERP, hébergement) | portée par le locataire | récurrent si bail long | incompatible avec une résidence privée calme | exemples sans loyers [R8-26] [R8-27] [R8-28] |
+| Club privé (équestre, polo, campagne) | INCONNU en zone rurale | INCONNU | INCONNU | lourd | forte | récurrent (cotisations) | tranquillité, clientèle | [R8-38] (urbain, 2010) ; contre-exemple [R8-39] |
+| Vente de dépendances ou de hameaux (modèle Reschio) | INCONNU | INCONNU | INCONNU | restauration ou vente en l'état | ponctuelle | **capital ponctuel**, pas un revenu | PLU, lotissement, Safer, ABF, voisins définitifs | Reschio sans prix [R8-40] à [R8-43] |
+| Moteur extérieur (capital dédié) | 0,3 M€ net ↔ 10 – 12 M€ | 0,6 M€ net ↔ 20 – 24 M€ | 1,2 M€ net ↔ 40 – 48 M€ | voir §7.6 | gouvernance | récurrent si règle de dépense | fiscalité, marchés, inflation | [R8-29] [R8-31] [R8-32] [R8-34] [R8-35] |
+
+Ordre de grandeur global (ESTIMATION) : en additionnant les fourchettes S2 documentées (PV sur 10 ha : 15 000-45 000 ; 600 m² de logements : 50 400-79 200 ; 600 m² de gardiennage de voitures : 31 500-50 400 ; 600 m² d'hivernage : 7 000-11 000 ; cave à vin : 10 000-48 000), un domaine S2 peut viser **≈ 110 000 à 230 000 € de CA récurrent** (hors hydro), avant charges, impôts et investissements (≈ 1 M€ pour les seuls logements), au prix d'une présence accrue de tiers, et en affectant ≈ 1 800 m² des 2 500 m² de dépendances de S2 à d'autres usages que les chevaux. C'est **un complément**, pas une solution, face à un besoin annuel de l'ordre de 0,5 à 1,5 M€ (hypothèse H1 du plan, à confirmer par R1/R2). Les seules pistes de taille suffisante sont le **moteur extérieur** (capital dédié) et, ponctuellement, la **vente d'actifs** (dépendances), cette dernière n'étant pas documentée en France.
+
+---
+
+## Contre-exemples et cas d'échec trouvés
+
+1. **Soho House** (modèle Soho Farmhouse) : « Soho House had never made a profit » ; résultat net 2023 « US$−118 million » ; rachat en 2025 pour 2,7 Md$ par un consortium mené par MCR Hotels [R8-39].
+2. **École nationale supérieure de pâtisserie (château de Montbarnier, propriété de la ville d'Yssingeaux)** : placée en liquidation judiciaire en 2007 avant sa reprise par Alain Ducasse et Yves Thuriès [R8-28]. Un locataire institutionnel peut faire défaut.
+3. **Château de Ferrières** : la Chancellerie des universités de Paris, qui l'avait reçu en 1975, « envisage dans les années 2000 d'aliéner » le domaine ; il est rétrocédé en 2012 puis donné à la commune [R8-26]. Même un propriétaire institutionnel n'a pas porté la charge.
+4. **Petite hydroélectricité** : « la moitié des installations pour lesquelles la rentabilité a pu être calculée présente des taux de rentabilité interne (TRI) avant impôt insuffisants, voire négatifs » ; TRI moyen de 2,5 % pour le neuf [R8-12].
+5. **SCPI** : prix de part moyen −3,45 % en 2025, 50 % des SCPI ont réduit leur dividende, prix des SCPI à capital fixe « en repli de 33 % » au 1er semestre 2026 [R8-29] [R8-30].
+6. **Truffières** : « beaucoup de truffières non irriguées ne produiront pas du tout » [R8-08] ; « rares sont ceux qui tirent un salaire de cette production » [R8-09].
+7. **Reprise de PME** : « plus d'une transmission sur cinq échoue dans les six ans » (OSEO-BDPME, 1997-2003) [R8-36].
+8. **Label bas-carbone** : 9 180 525 crédits « potentiels » contre 144 917 crédits « vérifiés » ; le suivi « ne reflète donc pas encore la réalité de l'état de financement des projets » [R8-13].
+9. **Forêt** : chêne −17 % en 2025 [R8-05] ; mortalité des arbres « plus que doublé en dix ans » [R8-04].
+
+---
+
+## Points de doute / hypothèses non vérifiées
+
+- **Loyers PV au sol** : seules des sources commerciales (fiabilité faible), avec une divergence de 1 000 à 10 000 €/ha/an. Aucun exemple d'agrivoltaïsme avec des **chevaux**. La possibilité d'installer du PV sur des prés de fauche ou des pâtures d'un domaine protégé n'est pas vérifiée (R3).
+- **Tarif H16** : 170 €/MWh est un ordre de grandeur ministériel de 2023 ; la formule tarifaire réelle (livret EDF OA, HTTP 403) n'a pas été lue.
+- **Forêt** : revenu net de 50 à 100 €/ha/an = HYPOTHÈSE non sourcée.
+- **Chasse** : aucun prix trouvé (INCONNU).
+- **Label bas-carbone** : crédits « potentiels » et calculés ex ante ; durée et calendrier de paiement de la méthode « stock continu » non vérifiés.
+- **Truffes** : rendements divergents (0,5-5 kg/ha en moyenne nationale, EXTRAIT, contre 10-20 kg/ha en parcelle favorable irriguée).
+- **Stockages** : aucun tarif français pour les voitures de collection ; tarif du vin issu d'un message commercial de 2020 ; demande rurale non démontrée.
+- **Loyers ruraux** : loyers d'annonce et non signés ; échantillon de 40 lignes non représentatif ; unité mensuelle implicite.
+- **Coût de transformation** : un seul cas documenté (Haute-Savoie, 2022-2023).
+- **Locataires institutionnels** : aucun loyer trouvé.
+- **Clubs** : données du Polo de Paris datées de 2010 (Wikipédia) ; cotisations de Soho House non trouvées.
+- **Reschio** : prix inconnus ; dates et acheteur divergents selon les sources.
+- **Fiscalité** : le champ exact du taux de prélèvements sociaux de 18,6 % (revenus fonciers ? assurance-vie ?) n'est pas vérifié ; à confirmer par R3.
+- **NPEC** : unité annuelle à confirmer ; la fiche BPJEPS « activités équestres » n'a pas été retrouvée par le filtre.
+- **Fonds de dotation** : page Wikipédia en partie datée (mention de l'ISF).
+- **Taux de retrait soutenable de 2,5 à 3 %** : HYPOTHÈSE de travail, à stress-tester (Monte-Carlo).
+- **Multiples des petites PME** (< 15 M€) : INCONNU ; données d'échec anciennes (1997-2003).
+
+---
+
+## Chiffres clés pour le modèle
+
+| # | Donnée | Valeur | Unité | Année | Statut | Source |
+|---|---|---|---|---|---|---|
+| 1 | Loyer d'une centrale PV au sol versé au propriétaire | 1 500 – 6 000 (moyenne citée 4 500) | €/ha/an | 2026 | PAGE LUE (site commercial, fiabilité faible) | [R8-01] |
+| 2 | Agrivoltaïsme : densité maximale des panneaux | 40 | % | décret 2024 | PAGE LUE (Wikipédia) | [R8-03] |
+| 3 | Rémunération d'un éleveur ovin pour l'entretien sous panneaux | 150 – 300 | €/ha/an | 2021 | PAGE LUE | [R8-02] |
+| 4 | Tarif H16 pour une installation hydro d'≈ 100 kW | ≈ 170 | €/MWh | 2023 | PAGE LUE | [R8-11] |
+| 5 | Productible de la petite hydro (75 % des installations) | 2 000 – 4 300 | h équivalent pleine puissance/an | 2020 | PAGE LUE | [R8-12] |
+| 6 | Coût d'investissement petite hydro neuve / coûts annuels de fonctionnement | 2 100 – 5 600 / 50 – 180 | €/kW / €/kW/an | 2020 | PAGE LUE | [R8-12] |
+| 7 | Prix moyen de la forêt | 4 950 (2 850 – 7 880 selon régions) | €/ha | 2025 | PAGE LUE | [R8-04] |
+| 8 | Prix moyen du bois d'œuvre sur pied, toutes essences (chêne) | 86 (190) | €/m³ | 2025 | PAGE LUE | [R8-05] |
+| 9 | Prix moyen payé pour un crédit Label bas-carbone | 35 | €/tCO2 | 2025 (étude I4CE) | PAGE LUE | [R8-14] |
+| 10 | Crédits LBC par hectare : forêt existante (stock continu) / boisement | ≈ 23 / ≈ 174 – 368 | crédits/ha sur la durée du projet | 2026 | ESTIMATION (registre lu) | [R8-16] |
+| 11 | Truffière : implantation / entretien / rendement favorable / prix de gros | 6 148 / 800 – 1 500 / 10 – 20 / 400 – 700 | €/ha / €/ha/an / kg/ha / €/kg | 2026 | PAGE LUE | [R8-08] |
+| 12 | Gardiennage d'une voiture de collection (Belgique) | ≈ 200 | €/mois/emplacement | 2026 | PAGE LUE | [R8-18] |
+| 13 | Hivernage d'un camping-car en intérieur / hangar agricole | 350 – 550 TTC / ≈ 350 | €/an | 2025 | PAGE LUE | [R8-17] |
+| 14 | Stockage de vin en cave individuelle (Paris) | 240 TTC/mois pour 1 200 bouteilles (≈ 2,40 €/bouteille/an) | € | 2020 | PAGE LUE + ESTIMATION | [R8-20] |
+| 15 | Loyer d'annonce d'une maison en commune rurale | 6,8 – 10,9 | €/m²/mois charges comprises | T3 2025 | PAGE LUE (échantillon) | [R8-23] |
+| 16 | Réhabilitation d'une grange en logement : travaux / opération complète | ≈ 1 556 HT / ≈ 1 953 TTC | €/m² | 2022-2023 | ESTIMATION (cas lu) | [R8-24] |
+| 17 | Polo de Paris : droit d'entrée / cotisation / membres | 15 000 par famille / 875 / 3 250 | € / €/an / membres | 2010 | PAGE LUE (Wikipédia) | [R8-38] |
+| 18 | Soho House : chiffre d'affaires / résultat net | 1,14 Md / −118 M | US$ | 2023 | PAGE LUE (Wikipedia) | [R8-39] |
+| 19 | Taux de dépense effectif moyen des dotations universitaires américaines | 4,9 | %/an | FY2025 | PAGE LUE | [R8-34] |
+| 20 | Rendement réel annualisé des actions mondiales depuis 2000 | 3,5 | %/an | 2000-2024 | PAGE LUE | [R8-32] |
+| 21 | PFU 2026 (12,8 % IR + 18,6 % prélèvements sociaux) | 31,4 | % | 2026 | PAGE LUE + ESTIMATION (addition) | [R8-31] |
+| 22 | SCPI : taux de distribution / variation du prix de part / performance globale | 4,91 / −3,45 / +1,46 | % | 2025 | PAGE LUE | [R8-29] |
+| 23 | Argos Index mid-market (fonds / acquéreurs stratégiques) | 8,8 (10,2 / 7,9) | × EBITDA | T2 2026 | PAGE LUE | [R8-35] |
+| 24 | Échec des transmissions de PME | > 20 % en 6 ans | % | 1997-2003 | PAGE LUE (question écrite citant OSEO) | [R8-36] |
+| 25 | Capital dédié pour 0,3 / 0,6 / 1,2 M€ nets par an (retrait net 2,5 – 3 %) | 10 – 12 / 20 – 24 / 40 – 48 | M€ | 2026 | ESTIMATION | §7.6 |
+| 26 | NPEC 2026 : palefrenier soigneur / DEJEPS sports équestres / tailleur de pierre-appareilleur MH | 6 324 / 10 550 / 10 132 | € par contrat (annuel à confirmer) | 1er sept. 2026 | PAGE LUE (référentiel officiel) | [R8-47] |
+| 27 | Fonds de dotation : dotation initiale minimale / nombre de fonds actifs | 15 000 / ≈ 3 000 (sur 4 628) | € / fonds | 2024 | PAGE LUE (Wikipédia) | [R8-45] |
+| 28 | Location de chasse | INCONNU | €/ha/an | — | INCONNU | — |
+| 29 | Revenu net forestier | 50 – 100 | €/ha/an | — | HYPOTHÈSE non sourcée | — |
+
+---
+
+## Bilan de l'agent R8
+
+- WebSearch utilisés : **15 / 15**.
+- WebFetch : 83 appels, dont une trentaine sans contenu exploitable (403, 404, 503, redirections, pages de maintenance, pages tronquées ou sans le chiffre cherché). Neuf PDF illisibles par WebFetch ont été convertis en texte localement (pdftotext) à partir du fichier téléchargé par WebFetch (indicateur forêts 2020, France Bois Forêt, CRE ×2, Assemblée nationale ×2, CAUE 74, NACUBO, Argos).
+- Téléchargement direct (curl) : 1 réussi (référentiel NPEC de France compétences), 3 échecs (data.gouv.fr, connexion coupée par le proxy).
+- Statut : terminé le 2026-10-14. Sections obligatoires présentes.

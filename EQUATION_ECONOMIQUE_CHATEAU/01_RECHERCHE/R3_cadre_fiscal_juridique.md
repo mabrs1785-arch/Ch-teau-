@@ -10,6 +10,7 @@ Statuts : PAGE LUE (page ouverte avec WebFetch, citation exacte) / EXTRAIT (vu d
 ## Journal de progression
 
 - 2026-10-14 : squelette créé.
+- 2026-10-14 : Q1 à Q10 rédigées ; synthèses, matrice, points à valider, contre-exemples, points de doute et chiffres clés ajoutés. 15 WebSearch utilisées sur 15 ; environ 117 WebFetch, dont une vingtaine en échec (403, 404, 503, maintenance, captcha). 63 sources : 58 pages lues, 5 extraits. Sites en erreur pendant la mission : legifrance (403), impots.gouv.fr (maintenance), ecologie.gouv.fr, associations.gouv.fr, senat.fr, préfectures (503), ADEME et DREAL (403).
 
 ## Q1. Régime fiscal des monuments historiques (propriétaire privé)
 
@@ -51,7 +52,7 @@ Bâches publicitaires sur échafaudage (C. patrimoine L. 621-29-8) : les recette
 ### 1.4 Label de la Fondation du patrimoine (immeubles non protégés)
 
 - Biens éligibles (site de la Fondation [R3-08], PAGE LUE) : biens de « propriétaires privés d'un site bâti ou non-bâti (parcs ou jardins) » ne relevant pas du régime MH ; « Visible de la voie publique ou rendu accessible au public » ; situé en zone rurale, bourg ou petite ville de « moins de 20 000 habitants », en site patrimonial remarquable (SPR) ou en site classé. Avis de l'architecte des Bâtiments de France (UDAP). Label « accordé pour une durée de 3 ans ». Aide « 2 à 20 % » (Fondation et collectivités partenaires).
-- Taux de déduction (BOFiP [R3-02], [R3-05], PAGE LUE) : immeuble labellisé non ouvert : « déduction de 50 % des dépenses d'entretien et de réparation non subventionnées, portée à 100 % si la subvention couvre au moins 20 % de leur montant » (formulation du tableau, citée fidèlement). Pour les immeubles labellisés, « les intérêts d'emprunt et les primes d'assurance ne sont pas déductibles » [R3-05 § 160-230, reformulation du résumé de la page]. L'ouverture au public n'est pas exigée : « Il n'est pas en revanche exigé qu'il soit ouvert au public. » [R3-03 § 190].
+- Taux de déduction (BOFiP [R3-02], [R3-05], PAGE LUE) : immeuble labellisé non ouvert : « déduction de 50 % des dépenses d'entretien et de réparation non subventionnées, portée à 100 % si la subvention couvre au moins 20 % de leur montant » (formulation du tableau, citée fidèlement). Pour les immeubles labellisés, les intérêts d'emprunt et les primes d'assurance ne sont pas déductibles [R3-05 § 160-230] (PAGE LUE, reformulation : citation exacte non obtenue). L'ouverture au public n'est pas exigée : « Il n'est pas en revanche exigé qu'il soit ouvert au public. » [R3-03 § 190].
 - Le site de la Fondation indique « 50 à 100 % » du montant des travaux « déduit de votre revenu global imposable ou de vos revenus fonciers » [R3-08].
 - Effet pour S1 (château non protégé) : seule voie de déduction des travaux sur le revenu global ; limitée aux travaux sur les parties extérieures visibles du label (à vérifier dans la doctrine : BOI-RFPI-SPEC-30-10 § 170 et suivants). À VALIDER.
 
@@ -91,7 +92,33 @@ Hypothèse : patrimoine immobilier taxable net = 5 M€ (château non résidence
 
 - Règle lue : l'immobilier affecté à l'activité opérationnelle d'une société est exclu de l'assiette [R3-01]. Pour un immeuble détenu en direct et loué à la société d'exploitation du propriétaire, la qualification de bien professionnel dépend des conditions de l'article 975 CGI (fonctions de direction, activité principale, part détenue). INCONNU dans le détail ; À VALIDER par un fiscaliste. Hypothèse prudente pour le modèle : la partie louée reste taxable à l'IFI si le propriétaire n'exerce pas dans la société son activité professionnelle principale.
 
-## Q5 (partie 1). Loi de finances 2026, PFU, taxe sur les holdings
+## Q4. Mécénat
+
+### 4.1 Un MH privé peut-il recevoir des dons défiscalisés ? Oui, via la Fondation du patrimoine, sous conditions strictes
+
+Source : BOFiP BOI-IR-RICI-250-10-20-30, version en vigueur depuis le 12/09/2012 [R3-10] (PAGE LUE). Le texte légal (CGI art. 200 et 238 bis ; C. patrimoine L. 143-2-1) n'a pas pu être lu sur Légifrance : vérifier qu'il n'a pas changé depuis 2012.
+- Immeubles éligibles : « classés ou inscrits au titre des monuments historiques ou ayant reçu le label de la Fondation du patrimoine » (n° 200).
+- Propriétaires : « Seuls les immeubles détenus en totalité par des personnes physiques » (n° 160) ; sociétés civiles admises seulement si elles ne comprennent que des personnes physiques et ont pour objet exclusif la gestion ou la location nue (n° 180) ; « Sont dès lors exclues toutes les sociétés commerciales » (n° 180).
+- **Exploitation commerciale** : principe d'exclusion des immeubles procurant des recettes commerciales (n° 290) ; exception : « la visite payante du monument ne permet pas de considérer que l'immeuble fait l'objet d'une exploitation commerciale » (n° 300) ; autres activités tolérées si les recettes « n'excèdent pas 60 000 euros » HT sur l'année civile précédant le versement (n° 310) ; immeubles classés ou inscrits « utilisés par leurs propriétaires pour les besoins d'une entreprise agricole » admis (n° 290).
+- Engagements (C. patrimoine L. 143-2-1, III) : « L'immeuble doit être conservé pendant au moins dix ans à compter de la date d'achèvement des travaux » (n° 430) ; parties protégées ouvertes au public pendant au moins dix ans (50 jours/an ou 40 jours en juillet-septembre), ou visibles depuis la voie publique (n° 450). Non applicables aux immeubles labellisés (n° 420).
+- Donateur : ni le propriétaire, ni un parent en ligne directe ou collatéral, ni un donateur ayant lui-même conclu une telle convention pour son propre immeuble (n° 10).
+- Avantage du donateur : IR « 66 % du montant des sommes versées dans la limite de 20 % du revenu imposable » ; entreprises 60 % (art. 238 bis) (n° 20). Selon la Fondation : 66 % IR, 60 % IS, 75 % IFI [R3-09] (PAGE LUE).
+- Frais de la Fondation du patrimoine : 6 % des dons collectés ; 94 % vont aux travaux [R3-09] (PAGE LUE).
+- Traitement chez le propriétaire : les dons reçus de la Fondation du patrimoine pour des travaux sont ajoutés aux recettes foncières de l'année de perception [R3-04 § 60] (PAGE LUE).
+- **Conséquence pour le modèle** : si le domaine dégage plus de 60 000 € HT/an de recettes commerciales (réceptions, hébergement) ou si le château appartient à une société commerciale, la collecte défiscalisée via la Fondation est fermée (doctrine 2012, À VÉRIFIER sur le texte actuel de l'article 200 CGI). Les dons financent des travaux précis, pas le fonctionnement.
+
+### 4.2 Fonds de dotation et avantage privé
+
+- Pour ouvrir droit à réduction d'impôt, l'organisme doit être d'intérêt général : pas d'activité lucrative, pas de « gestion intéressée », pas de fonctionnement « au profit d'un cercle restreint de personnes » ; définition : « Un organisme fonctionne au profit d'un cercle restreint de personnes lorsqu'il poursuit des intérêts particuliers d'une ou plusieurs personnes clairement individualisables. » [R3-43 § 90, § 130] (PAGE LUE). « tous les versements faits directement à un particulier ou à une entreprise industrielle ou commerciale sont exclus » (§ 80).
+- **Application (ESTIMATION, à valider par un avocat)** : un fonds de dotation qui porterait le château tout en logeant gratuitement son fondateur poursuivrait les intérêts particuliers d'une personne « clairement individualisable » : les dons perdraient leur caractère déductible et le fonds s'exposerait à une remise en cause. Un loyer de marché payé par le fondateur pour sa partie privée, une ouverture réelle au public et une gouvernance indépendante seraient des conditions minimales. La page associations.gouv.fr n'a pas pu être lue (erreur 503), mais la fiche service-public « Fonds de dotation » (vérifiée le 18/06/2025) l'a été [R3-58] (PAGE LUE) : « un organisme de mécénat » destiné à une œuvre ou mission d'intérêt général ; « une dotation initiale d'au moins 15 000 € » ; il « ne peut pas percevoir de subventions publiques » ; ressources : « Revenus de sa dotation », produits d'activités autorisées par les statuts, rétributions pour service rendu, appel à la générosité publique sur autorisation préfectorale ; commissaire aux comptes au-delà de 10 000 € de ressources ; comité consultatif au-delà de 1 000 000 € de dotation ; suspension possible par le préfet. La fiche ne dit rien sur l'immobilier ni sur l'avantage du fondateur. **Conséquence (ESTIMATION)** : un fonds de dotation ne peut pas recevoir de subventions publiques de travaux (DRAC, région) ; il peut porter un monument ouvert au public, mais l'usage privé par le fondateur est incompatible avec l'intérêt général sans loyer de marché ; À VALIDER par un avocat spécialisé.
+
+### 4.3 Mécénat d'entreprise [R3-42] (PAGE LUE, vérifiée le 20/07/2026)
+
+- Réduction d'impôt : 60 % du don jusqu'à 2 000 000 €, 40 % au-delà. Plafond : 20 000 € ou 5 ‰ du chiffre d'affaires HT si ce montant est plus élevé ; excédent reportable sur 5 exercices.
+- Bénéficiaires : organismes d'intérêt général dont l'activité ne profite pas à « un cercle restreint » ; la Fondation du patrimoine figure dans la liste. Mécénat « sans aucune contrepartie » ; à distinguer du parrainage (contrepartie publicitaire, charge déductible).
+- **Conséquence** : une entreprise ne peut pas faire un don défiscalisé directement au propriétaire privé ou à sa société d'exploitation ; seulement via la Fondation du patrimoine (conditions 4.1) ou un organisme d'intérêt général. Le parrainage d'événements (concours équestre) reste possible comme prestation commerciale (TVA 20 %).
+
+## Q5. Fiscalité des activités et des structures (LF 2026, PFU, holdings, IS, meublés, SCI, mère-fille)
 
 ### 5.1 Loi de finances pour 2026
 
@@ -115,7 +142,7 @@ Sources : [R3-18] et [R3-19] (PAGE LUE). Le numéro d'article du CGI (235 ter C)
 - LFSS 2026 : loi n° 2025-1403 du 30 décembre 2025, « Article 12 (hausse de la CSG) » [R3-16] (PAGE LUE, service-public vérifié le 30/06/2026).
 - Revenus de placement (dont dividendes) 2026 : CSG 10,6 %, CRDS 0,5 %, prélèvement de solidarité 7,5 %, total **18,6 %** (17,2 % pour les revenus de 2025) [R3-16].
 - Revenus fonciers et plus-values immobilières : total **17,2 %** (CSG 9,2 %) ; assurance-vie : 17,2 % [R3-16].
-- PFU : « au taux de 31,4 % (ou de 30 %) » [R3-16] ; soit 12,8 % d'IR + 18,6 % de prélèvements sociaux = 31,4 % sur les dividendes 2026 (ESTIMATION arithmétique ; le 12,8 % n'est pas cité sur la page lue).
+- PFU : « au taux de 31,4 % (ou de 30 %) » [R3-16] ; la fiche « Revenus du dirigeant d'une société » précise : « à un taux global de 31,4 %, c'est-à-dire 12,8 % au titre de l'impôt sur le revenu et 18,6 % de prélèvements sociaux. » [R3-57] (PAGE LUE).
 - Que Choisir [R3-17] (PAGE LUE) : « Sont notamment visés par cette hausse les dividendes et distributions assimilées » ; « la loi exclut les revenus fonciers perçus par les propriétaires qui donnent en location des biens non meublés » ; pour les revenus du patrimoine (plus-values mobilières, LMNP), l'augmentation « concerne les revenus perçus dès 2025 ». **Divergence** : la page service-public ne mentionne pas de taux spécifique 2025 pour les revenus du patrimoine. À vérifier.
 - Conséquence : 1 € de bénéfice d'une société à l'IS distribué au propriétaire en 2026 = 1 × (1 − 25 %) × (1 − 31,4 %) = **0,514 €** net (taux normal d'IS) ou (1 − 15 %) × (1 − 31,4 %) = 0,583 € (taux réduit). ESTIMATION arithmétique ; taux d'IS à confirmer (voir 5.4).
 
@@ -124,6 +151,52 @@ Sources : [R3-18] et [R3-19] (PAGE LUE). Le numéro d'article du CGI (235 ter C)
 - Taux normal : « imposée au taux normal de 25 % » [R3-20] (PAGE LUE, vérifiée le 17/02/2026).
 - Taux réduit de 15 % jusqu'à 42 500 € de bénéfice, si chiffre d'affaires ≤ 10 000 000 € et capital entièrement libéré et détenu à 75 % au moins par des personnes physiques (directement ou via une société elle-même détenue à 75 % par des personnes physiques) [R3-20] (PAGE LUE).
 - Contribution sociale de 3,3 % : non mentionnée sur la page lue ; INCONNU ici (concerne seulement les grandes entreprises, à vérifier).
+
+### 5.5 Meublés de tourisme, LMNP, chambres d'hôtes (loi Le Meur, LF 2025, LF 2026)
+
+Loi n° 2024-1039 du 19 novembre 2024 « visant à renforcer les outils de régulation des meublés de tourisme à l'échelle locale » (dite loi Le Meur), JO du 20/11/2024 [R3-34] (PAGE LUE).
+
+Seuils et abattements du micro-BIC (recettes HT) [R3-31], [R3-33], [R3-36] (PAGE LUE) :
+
+| Activité | Revenus 2024 (ancien régime) | Revenus 2025 | Revenus 2026 |
+|---|---|---|---|
+| Meublé de tourisme non classé | 77 700 € / 50 % | **15 000 € / 30 %** | 15 000 € / 30 % |
+| Meublé de tourisme classé | 188 700 € / 71 % | **77 700 € / 50 %** | **83 600 € / 50 %** |
+| Chambre d'hôtes | 188 700 € / 71 % | 77 700 € / 50 % | 83 600 € / 50 % |
+| Location meublée longue durée | 77 700 € / 50 % | 77 700 € / 50 % | 83 600 € / 50 % |
+| Vente de marchandises, hébergement hors meublés de tourisme (hôtellerie) | — | 188 700 € / 71 % | 203 100 € / 71 % |
+| Prestations de services BIC | — | 77 700 € / 50 % | 83 600 € / 50 % |
+
+Remarques : abattement minimal de 305 € ; le loueur classé qui dépasse 77 700 € deux années consécutives passe au réel [R3-31] ; une année de tolérance en cas de premier dépassement [R3-36].
+
+Autres règles lues :
+- Régime réel LMNP : amortissement du logement et des meubles ; « le déficit s'impute sur les revenus de location meublée non professionnelle de la même année et des 10 années suivantes », pas sur le revenu global (sauf LMP) [R3-36] (reformulation fidèle).
+- LMP : recettes du foyer > 23 000 € et supérieures aux autres revenus d'activité ; exonération de plus-value si recettes < 90 000 € HT et activité depuis 5 ans au moins (partielle entre 90 000 et 126 000 € HT ; 250 000 / 350 000 € HT pour la para-hôtellerie) [R3-32] (PAGE LUE).
+- LF 2025 : pour les ventes réalisées depuis le 15 février 2025, les amortissements déduits en LMNP sont réintégrés dans le calcul de la plus-value, « sous certaines conditions » (exceptions non détaillées sur la page) [R3-37] (PAGE LUE, reformulation). Plus-value immobilière des particuliers : IR 19 % (exonération après 22 ans), prélèvements sociaux 17,2 % (exonération après 30 ans) [R3-37].
+- Prélèvements sociaux sur les revenus LMNP : 18,6 % selon la logique de la LFSS 2026 (revenus du patrimoine hors revenus fonciers) [R3-16], [R3-17] ; la page F32744 ne donne pas le taux. ESTIMATION.
+- Cotisations sociales : meublés de tourisme, cotisations Urssaf si les recettes de courte durée dépassent 23 000 € ; chambres d'hôtes, cotisations si le revenu imposable dépasse 13 % du PASS, « 6 123 € en 2025 » selon [R3-31] et « 6 248 € de revenus imposables en 2025 » selon [R3-35]. **Divergence non résolue** (6 248 € correspond probablement à 13 % du PASS 2026 : ESTIMATION).
+- Le Meur, autres règles [R3-34] : DPE obligatoire pour les logements nouvellement proposés en meublé de tourisme soumis à changement d'usage ; « Depuis le 1er janvier 2025, les logements classés en catégorie G ne sont plus autorisés à la location » ; F exclus en 2028, seuls A à D en 2034 ; amendes jusqu'à 10 000 € (défaut d'enregistrement) et 20 000 € (fausse déclaration) ; résidences principales limitables à 90 jours ; quotas possibles. **Risque spécifique château** : des dépendances anciennes mal isolées converties en gîtes peuvent tomber sous l'interdiction DPE G puis F. ESTIMATION ; à vérifier logement par logement.
+
+Chambres d'hôtes [R3-35] (PAGE LUE, vérifiée le 21/05/2026) :
+- Définition : « chambre meublée chez l'habitant en vue d'accueillir des touristes à titre onéreux », petit-déjeuner compris ; « La capacité d'accueil ne doit pas dépasser 5 chambres ou 15 clients simultanément. »
+- Au-delà : l'appellation ne peut plus être utilisée et il faut suivre « la réglementation des établissements recevant du public (ERP) ».
+- Déclaration en mairie (cerfa n° 13566) ; activité « considérée comme une activité commerciale, quel que soit le montant des revenus générés » ; immatriculation ; micro-BIC à 50 %. Table d'hôtes facultative, menu unique, réservée aux occupants des chambres.
+- Fiscalité : BIC ; seuils micro du tableau ci-dessus. TVA : régime de l'hébergement (franchise 85 000 € ; au-delà, 10 % si prestations para-hôtelières) [R3-24], [R3-27]. ESTIMATION pour l'application aux chambres d'hôtes.
+
+### 5.6 SCI [R3-59] (PAGE LUE, vérifiée le 07/10/2025)
+
+- Par défaut, la SCI relève de l'impôt sur le revenu : « Les bénéfices réalisés par la société ... sont imposés au nom personnel de chaque associé ».
+- Option pour l'IS : « À l'expiration de ce délai, l'option est irrévocable. » ; à l'IS, les travaux d'amélioration sont amortissables ; le passage à l'IS entraîne en principe « l'imposition immédiate des bénéfices non encore taxés et des plus-values non encore imposées ».
+- Activité commerciale : « au-delà de 10 % du chiffre d'affaires hors taxes, l'activité commerciale n'est plus accessoire » et la SCI devient passible de l'IS. **Conséquence** : une SCI à l'IR qui porte le château ne doit pas exploiter elle-même réceptions, gîtes ou hébergement au-delà de 10 % de son chiffre d'affaires HT ; l'exploitation doit être logée dans une société distincte qui paie un loyer.
+- Responsabilité des associés indéfinie (non solidaire) [R3-59].
+- Occupation gratuite par un associé : citée seulement à propos de l'exonération de plus-value de résidence principale [R3-59] ; règles fiscales détaillées : voir Q9.
+- Régime MH : une SCI à l'IR n'en bénéficie que si elle est familiale (ou dans les autres exceptions) [R3-06] ; voir 1.3.
+
+### 5.7 Régime mère-fille
+
+- Régime optionnel (« Le régime fiscal des sociétés mères et filiales est optionnel. ») réservé aux sociétés soumises à l'IS au taux normal ; dividendes exonérés sauf une quote-part de frais et charges : « Cette quote-part est égale à 5 % du montant de ces produits, crédit d'impôt compris » (1 % dans certains cas de groupe) [R3-61] (PAGE LUE, version du 26/06/2024).
+- Seuil de participation : 5 % du capital (condition de droits de vote supprimée depuis le 03/02/2016) [R3-62] (EXTRAIT). Durée de conservation des titres (deux ans selon l'usage) : non lue dans une source ; INCONNU ici, à vérifier (CGI art. 145).
+- Effet chiffré (ESTIMATION) : 100 € de dividendes remontés à une holding = 5 € réintégrés × 25 % = 1,25 € d'IS, soit un coût fiscal de 1,25 %. Mais attention à la taxe sur les holdings patrimoniales (5.2) si la holding détient des actifs non professionnels.
 
 ## Q6. TVA 2025-2026
 
@@ -160,63 +233,6 @@ Source principale : BOFiP BOI-TVA-SECT-80-10-30-50, version en vigueur depuis le
 | Pose d'équipements photovoltaïques par un installateur qualifié | 5,5 % (LF 2026, art. 94) | PAGE LUE [R3-18] (synthèse d'avocats) |
 
 Franchise en base de TVA 2026 [R3-27] (PAGE LUE, vérifiée le 01/01/2026) : « Pour l'année 2026, les seuils de franchise en base de TVA française applicables restent inchangés » : commerce et hébergement 85 000 € (tolérance 93 500 €) ; prestations de services 37 500 € (tolérance 41 250 €). Le projet de seuil unique de 25 000 € a été abandonné.
-
-### 5.5 Meublés de tourisme, LMNP, chambres d'hôtes (loi Le Meur, LF 2025, LF 2026)
-
-Loi n° 2024-1039 du 19 novembre 2024 « visant à renforcer les outils de régulation des meublés de tourisme à l'échelle locale » (dite loi Le Meur), JO du 20/11/2024 [R3-34] (PAGE LUE).
-
-Seuils et abattements du micro-BIC (recettes HT) [R3-31], [R3-33], [R3-36] (PAGE LUE) :
-
-| Activité | Revenus 2024 (ancien régime) | Revenus 2025 | Revenus 2026 |
-|---|---|---|---|
-| Meublé de tourisme non classé | 77 700 € / 50 % | **15 000 € / 30 %** | 15 000 € / 30 % |
-| Meublé de tourisme classé | 188 700 € / 71 % | **77 700 € / 50 %** | **83 600 € / 50 %** |
-| Chambre d'hôtes | 188 700 € / 71 % | 77 700 € / 50 % | 83 600 € / 50 % |
-| Location meublée longue durée | 77 700 € / 50 % | 77 700 € / 50 % | 83 600 € / 50 % |
-| Vente de marchandises, hébergement hors meublés de tourisme (hôtellerie) | — | 188 700 € / 71 % | 203 100 € / 71 % |
-| Prestations de services BIC | — | 77 700 € / 50 % | 83 600 € / 50 % |
-
-Remarques : abattement minimal de 305 € ; le loueur classé qui dépasse 77 700 € deux années consécutives passe au réel [R3-31] ; une année de tolérance en cas de premier dépassement [R3-36].
-
-Autres règles lues :
-- Régime réel LMNP : amortissement du logement et des meubles ; « le déficit s'impute sur les revenus de location meublée non professionnelle de la même année et des 10 années suivantes », pas sur le revenu global (sauf LMP) [R3-36] (reformulation fidèle).
-- LMP : recettes du foyer > 23 000 € et supérieures aux autres revenus d'activité ; exonération de plus-value si recettes < 90 000 € HT et activité depuis 5 ans au moins (partielle entre 90 000 et 126 000 € HT ; 250 000 / 350 000 € HT pour la para-hôtellerie) [R3-32] (PAGE LUE).
-- LF 2025 : pour les ventes réalisées depuis le 15 février 2025, les amortissements déduits en LMNP sont réintégrés dans le calcul de la plus-value, « sous certaines conditions » (exceptions non détaillées sur la page) [R3-37] (PAGE LUE, reformulation). Plus-value immobilière des particuliers : IR 19 % (exonération après 22 ans), prélèvements sociaux 17,2 % (exonération après 30 ans) [R3-37].
-- Prélèvements sociaux sur les revenus LMNP : 18,6 % selon la logique de la LFSS 2026 (revenus du patrimoine hors revenus fonciers) [R3-16], [R3-17] ; la page F32744 ne donne pas le taux. ESTIMATION.
-- Cotisations sociales : meublés de tourisme, cotisations Urssaf si les recettes de courte durée dépassent 23 000 € ; chambres d'hôtes, cotisations si le revenu imposable dépasse 13 % du PASS, « 6 123 € en 2025 » selon [R3-31] et « 6 248 € de revenus imposables en 2025 » selon [R3-35]. **Divergence non résolue** (6 248 € correspond probablement à 13 % du PASS 2026 : ESTIMATION).
-- Le Meur, autres règles [R3-34] : DPE obligatoire pour les logements nouvellement proposés en meublé de tourisme soumis à changement d'usage ; « Depuis le 1er janvier 2025, les logements classés en catégorie G ne sont plus autorisés à la location » ; F exclus en 2028, seuls A à D en 2034 ; amendes jusqu'à 10 000 € (défaut d'enregistrement) et 20 000 € (fausse déclaration) ; résidences principales limitables à 90 jours ; quotas possibles. **Risque spécifique château** : des dépendances anciennes mal isolées converties en gîtes peuvent tomber sous l'interdiction DPE G puis F. ESTIMATION ; à vérifier logement par logement.
-
-Chambres d'hôtes [R3-35] (PAGE LUE, vérifiée le 21/05/2026) :
-- Définition : « chambre meublée chez l'habitant en vue d'accueillir des touristes à titre onéreux », petit-déjeuner compris ; « La capacité d'accueil ne doit pas dépasser 5 chambres ou 15 clients simultanément. »
-- Au-delà : l'appellation ne peut plus être utilisée et il faut suivre « la réglementation des établissements recevant du public (ERP) ».
-- Déclaration en mairie (cerfa n° 13566) ; activité « considérée comme une activité commerciale, quel que soit le montant des revenus générés » ; immatriculation ; micro-BIC à 50 %. Table d'hôtes facultative, menu unique, réservée aux occupants des chambres.
-- Fiscalité : BIC ; seuils micro du tableau ci-dessus. TVA : régime de l'hébergement (franchise 85 000 € ; au-delà, 10 % si prestations para-hôtelières) [R3-24], [R3-27]. ESTIMATION pour l'application aux chambres d'hôtes.
-
-## Q4. Mécénat
-
-### 4.1 Un MH privé peut-il recevoir des dons défiscalisés ? Oui, via la Fondation du patrimoine, sous conditions strictes
-
-Source : BOFiP BOI-IR-RICI-250-10-20-30, version en vigueur depuis le 12/09/2012 [R3-10] (PAGE LUE). Le texte légal (CGI art. 200 et 238 bis ; C. patrimoine L. 143-2-1) n'a pas pu être lu sur Légifrance : vérifier qu'il n'a pas changé depuis 2012.
-- Immeubles éligibles : « classés ou inscrits au titre des monuments historiques ou ayant reçu le label de la Fondation du patrimoine » (n° 200).
-- Propriétaires : « Seuls les immeubles détenus en totalité par des personnes physiques » (n° 160) ; sociétés civiles admises seulement si elles ne comprennent que des personnes physiques et ont pour objet exclusif la gestion ou la location nue (n° 180) ; « Sont dès lors exclues toutes les sociétés commerciales » (n° 180).
-- **Exploitation commerciale** : principe d'exclusion des immeubles procurant des recettes commerciales (n° 290) ; exception : « la visite payante du monument ne permet pas de considérer que l'immeuble fait l'objet d'une exploitation commerciale » (n° 300) ; autres activités tolérées si les recettes « n'excèdent pas 60 000 euros » HT sur l'année civile précédant le versement (n° 310) ; immeubles classés ou inscrits « utilisés par leurs propriétaires pour les besoins d'une entreprise agricole » admis (n° 290).
-- Engagements (C. patrimoine L. 143-2-1, III) : « L'immeuble doit être conservé pendant au moins dix ans à compter de la date d'achèvement des travaux » (n° 430) ; parties protégées ouvertes au public pendant au moins dix ans (50 jours/an ou 40 jours en juillet-septembre), ou visibles depuis la voie publique (n° 450). Non applicables aux immeubles labellisés (n° 420).
-- Donateur : ni le propriétaire, ni un parent en ligne directe ou collatéral, ni un donateur ayant lui-même conclu une telle convention pour son propre immeuble (n° 10).
-- Avantage du donateur : IR « 66 % du montant des sommes versées dans la limite de 20 % du revenu imposable » ; entreprises 60 % (art. 238 bis) (n° 20). Selon la Fondation : 66 % IR, 60 % IS, 75 % IFI [R3-09] (PAGE LUE).
-- Frais de la Fondation du patrimoine : 6 % des dons collectés ; 94 % vont aux travaux [R3-09] (PAGE LUE).
-- Traitement chez le propriétaire : les dons reçus de la Fondation du patrimoine pour des travaux sont ajoutés aux recettes foncières de l'année de perception [R3-04 § 60] (PAGE LUE).
-- **Conséquence pour le modèle** : si le domaine dégage plus de 60 000 € HT/an de recettes commerciales (réceptions, hébergement) ou si le château appartient à une société commerciale, la collecte défiscalisée via la Fondation est fermée (doctrine 2012, À VÉRIFIER sur le texte actuel de l'article 200 CGI). Les dons financent des travaux précis, pas le fonctionnement.
-
-### 4.2 Fonds de dotation et avantage privé
-
-- Pour ouvrir droit à réduction d'impôt, l'organisme doit être d'intérêt général : pas d'activité lucrative, pas de « gestion intéressée », pas de fonctionnement « au profit d'un cercle restreint de personnes » ; définition : « Un organisme fonctionne au profit d'un cercle restreint de personnes lorsqu'il poursuit des intérêts particuliers d'une ou plusieurs personnes clairement individualisables. » [R3-43 § 90, § 130] (PAGE LUE). « tous les versements faits directement à un particulier ou à une entreprise industrielle ou commerciale sont exclus » (§ 80).
-- **Application (ESTIMATION, à valider par un avocat)** : un fonds de dotation qui porterait le château tout en logeant gratuitement son fondateur poursuivrait les intérêts particuliers d'une personne « clairement individualisable » : les dons perdraient leur caractère déductible et le fonds s'exposerait à une remise en cause. Un loyer de marché payé par le fondateur pour sa partie privée, une ouverture réelle au public et une gouvernance indépendante seraient des conditions minimales. La page associations.gouv.fr sur les fonds de dotation n'a pas pu être lue (erreur 503) : dotation minimale, interdiction des fonds publics et contrôle préfectoral restent INCONNUS ici (loi n° 2008-776 du 4 août 2008, art. 140, à vérifier).
-
-### 4.3 Mécénat d'entreprise [R3-42] (PAGE LUE, vérifiée le 20/07/2026)
-
-- Réduction d'impôt : 60 % du don jusqu'à 2 000 000 €, 40 % au-delà. Plafond : 20 000 € ou 5 ‰ du chiffre d'affaires HT si ce montant est plus élevé ; excédent reportable sur 5 exercices.
-- Bénéficiaires : organismes d'intérêt général dont l'activité ne profite pas à « un cercle restreint » ; la Fondation du patrimoine figure dans la liste. Mécénat « sans aucune contrepartie » ; à distinguer du parrainage (contrepartie publicitaire, charge déductible).
-- **Conséquence** : une entreprise ne peut pas faire un don défiscalisé directement au propriétaire privé ou à sa société d'exploitation ; seulement via la Fondation du patrimoine (conditions 4.1) ou un organisme d'intérêt général. Le parrainage d'événements (concours équestre) reste possible comme prestation commerciale (TVA 20 %).
 
 ## Q7. Statut agricole, bail rural, risque de requalification
 
@@ -308,3 +324,161 @@ Source : commentaire d'avocat [R3-44] (PAGE LUE) ; les textes officiels (C. éne
 
 - Aucune source lue ne traite du classement ICPE des écuries. INCONNU. À vérifier : nomenclature ICPE (rubriques 21xx « élevages ») sur aida.ineris.fr ; en l'absence de rubrique équine, les écuries relèvent du règlement sanitaire départemental (distances aux habitations, fumières), à confirmer auprès de la DDPP. Ne pas modéliser de coût ICPE sans vérification.
 
+### 8.10 Photovoltaïque au sol en secteur protégé
+
+- Hors secteur protégé : déclaration préalable de 3 kW à moins de 3 000 kW ; permis de construire à partir de 3 000 kW [R3-63] (PAGE LUE, vérifiée le 17/01/2025).
+- En secteur protégé (sites patrimoniaux remarquables, abords d'un monument historique, sites classés, réserves naturelles, parcs nationaux) : « Vous devez déposer un permis de construire (PC). » dès 3 kW [R3-63]. Avec l'accord de l'ABF en abords (voir 8.2). **Conséquence** : un projet solaire au sol visible depuis un château protégé est exposé à un refus ; à traiter comme une option incertaine (voir R8 pour les revenus).
+
+## Q9. Occupation privée d'un bien détenu par une société
+
+| Structure | Règle lue | Conséquence | Statut |
+|---|---|---|---|
+| SCI non soumise à l'IS qui loge gratuitement un associé | Ces sociétés sont « considérées comme se réservant la jouissance de ces logements » : la valeur locative n'est pas une recette, mais « les charges afférentes au logement ne sont pas admises en déduction » (§ 170) | Pas de revenu foncier imposé, mais aucune charge déductible sur la partie privée (hors régime MH propre, voir 1.2) | PAGE LUE [R3-55] |
+| Société à l'IS qui loue ou met à disposition un logement à un associé gratuitement ou sous le prix du marché | Revenus distribués (CGI art. 109) : attribution gratuite ou à prix réduit aux associés, notamment la jouissance d'un appartement consentie par une société immobilière soumise à l'IS (§ 70, reformulation du résumé de la page) ; « commet un acte anormal de gestion » sans contrepartie (§ 160) ; l'administration peut « réintégrer le montant dans les bénéfices sociaux » (§ 140) ; l'avantage est imposé chez l'associé comme « un revenu distribué » (§ 200) ; les charges d'un immeuble utilisé par le dirigeant « à des fins exclusivement privées » sont des revenus distribués (§ 110) | Double peine : IS sur le loyer manquant + imposition de l'avantage chez l'associé (31,4 % ou barème) | PAGE LUE [R3-56] |
+| Holding patrimoniale à l'IS (≥ 5 M€ d'actifs, revenus passifs > 50 %) | Taxe de 20 % sur la valeur des « logements dont une personne physique associée se réserve la jouissance » (gratuit ou loyer sous le marché), à compter des exercices clos le 31/12/2026 | Coût annuel = 20 % de la valeur vénale du logement | PAGE LUE [R3-18], [R3-19] |
+| Société d'exploitation (SAS, SARL) qui loge son dirigeant | Avantages en nature (« logement, voiture, etc. ») imposables comme traitements et salaires ; en SAS, cotisations sur la rémunération « et de ses avantages » | Avantage en nature soumis à IR et cotisations sociales | PAGE LUE [R3-57] |
+| Abus de biens sociaux (C. com. L. 241-3 et L. 242-6) | Aucune page lue ne le détaille (la fiche [R3-57] ne mentionne que l'« abus de majorité ») | Risque pénal si l'usage privé est contraire à l'intérêt social ; montants des peines : INCONNU ici | INCONNU |
+
+**Recommandation de structure (ESTIMATION, À VALIDER par un avocat fiscaliste)** : (1) partie privée détenue en direct ou via une SCI familiale à l'IR, sans exploitation commerciale (< 10 % du CA) ; (2) activités (réceptions, hébergement, écurie) dans une ou plusieurs sociétés d'exploitation qui paient un loyer de marché pour les seuls espaces exploités ; (3) si le propriétaire habite un bien détenu par une société à l'IS, il paie un loyer de marché, ce qui suppose un revenu personnel réel (leçon n° 2 du contexte). Dividendes : PFU de 31,4 % en 2026 [R3-57] (« à un taux global de 31,4 %, c'est-à-dire 12,8 % au titre de l'impôt sur le revenu et 18,6 % de prélèvements sociaux ») ; gérant majoritaire de SARL : pas de cotisations sur les dividendes tant qu'ils ne dépassent pas 10 % du capital social [R3-57].
+
+## Q10. Droit du travail (essentiel)
+
+- TO-DE (exonération de cotisations patronales pour l'embauche de travailleurs occasionnels par un employeur agricole) : « Ce dispositif appelé TO-DE est désormais pérenne. » [R3-60] (PAGE LUE, vérifiée le 23/12/2025). Plafonds (SMIC) et activités éligibles (dont, éventuellement, les activités équestres agricoles) non détaillés sur la page : INCONNU ici ; à vérifier sur msa.fr.
+- Déclaration d'embauche en CDD agricole : titre emploi service agricole simplifié (Tesa-S) (fiche R17842 vue en résultat de recherche interne, non ouverte).
+- Conventions collectives (production agricole, centres équestres), durée du travail, CDD saisonniers : non lus dans le cadre de cette mission. INCONNU ; sujet partagé avec R2 (coût du travail, RGDU 2026).
+- Point de vigilance (ESTIMATION) : une écurie de pension ou de préparation est une activité agricole (Q7) ; ses salariés relèvent du régime agricole (MSA) et de la convention collective applicable aux centres équestres ou à la production agricole, à confirmer.
+
+## Synthèse 1. Ce que la fiscalité MH vaut réellement pour l'équation économique
+
+Formule (ESTIMATION, fondée sur [R3-02], [R3-04], [R3-05]) : économie d'impôt annuelle = charges éligibles × taux de déduction (100 % si ouvert, 50 % si fermé, ou règle 75 % / 25 % si habité et ouvert avec recettes) × taux marginal d'imposition du propriétaire.
+
+Exemple (HYPOTHÈSES : 200 000 €/an de charges foncières éligibles sur un château inscrit habité ; taux marginal de 45 %, non vérifié dans une page lue) :
+- fermé au public : 200 000 × 50 % × 45 % = **45 000 €/an** d'impôt en moins ;
+- ouvert 50 jours par an sans droits d'entrée : 200 000 × 100 % × 45 % = **90 000 €/an** ;
+- l'excédent de charges sur le revenu global n'est pas reportable quand le château ne procure aucune recette [R3-05 § 1].
+
+Points critiques pour le modèle :
+1. **Ce n'est pas un revenu du domaine.** C'est une réduction de l'impôt personnel du propriétaire. Elle ne vaut que s'il a un revenu imposable élevé au barème. Un propriétaire de 26 ans sans gros revenu personnel n'en tire presque rien. Cela contredit en partie l'objectif « sans fortune personnelle » : l'avantage MH profite surtout à un propriétaire riche en revenus.
+2. Les dividendes taxés au PFU (31,4 %) ne passent pas par le barème : des charges déductibles du revenu global ne les réduisent pas, sauf option globale pour le barème. ESTIMATION fondée sur la nature forfaitaire du PFU ; À VALIDER par un fiscaliste.
+3. Les loyers versés par une société d'exploitation au propriétaire (en direct ou via une SCI familiale à l'IR) sont des revenus fonciers : les charges MH s'y imputent et le déficit éventuel est « imputable sur le revenu global sans limite de montant » [R3-04 § 10]. C'est le montage le plus cohérent avec la doctrine lue, sous réserve de l'exclusion des parties « utilisées par leurs propriétaires pour les besoins d'une entreprise » [R3-04 § 40] et du risque de requalification d'une location équipée en BIC. À VALIDER.
+4. L'ouverture 50 jours par an (6 heures par jour) est le prix de la déduction à 100 % et de l'exonération de droits de succession (795 A) : elle réduit la tranquillité de la résidence privée.
+
+## Synthèse 2. Matrice « dispositif / effet chiffré / conditions / risque »
+
+| Dispositif | Effet chiffré | Conditions principales | Risque ou limite | Sources |
+|---|---|---|---|---|
+| Déduction des charges MH (CGI 156) | 100 % des charges si ouvert au public, 50 % si fermé ; travaux subventionnés 100 % nets ; déficit foncier imputable sans limite si recettes | Classé ou inscrit ; ouverture 50 j/an (dont 25 non ouvrables avril-septembre) ou 40 j juillet-septembre, 6 h/j ; conservation 15 ans ; détention directe ou SCI familiale | Valeur nulle sans revenu imposable ; réintégration d'un tiers des charges sur 3 ans si vente avant 15 ans ; exclusion des parties affectées à une entreprise | [R3-02] [R3-04] [R3-05] [R3-06] |
+| Abattement frais de visite | 1 525 € ou 2 290 € (avec parc ou jardin) sur les recettes brutes | Visites payantes | Ne peut créer un déficit sur la visite | [R3-04] |
+| Label Fondation du patrimoine (non protégé) | 50 % des travaux déductibles, 100 % si subvention ≥ 20 % | Visible de la voie publique ; commune < 20 000 hab., SPR ou site classé ; avis ABF ; label 3 ans | Pas d'intérêts ni d'assurance déductibles ; travaux extérieurs | [R3-02] [R3-05] [R3-08] |
+| Exonération DMTG (795 A) | 100 % des droits sur le château et le mobilier historique | Convention à durée indéterminée ; ouverture au public ; maintien des meubles ; entretien | Droits exigibles sur la valeur au jour du manquement ; contrainte perpétuelle | [R3-13] [R3-14] |
+| Dons via la Fondation du patrimoine | Donateur : 66 % IR (plafond 20 % du revenu imposable), 60 % IS, 75 % IFI ; frais de la Fondation 6 % | Propriétaire personne physique ou SC de personnes physiques ; recettes commerciales ≤ 60 000 € HT/an (visites payantes non comptées) ; conservation 10 ans ; ouverture 10 ans | Financement de travaux, pas du fonctionnement ; doctrine de 2012 à vérifier | [R3-09] [R3-10] |
+| Mécénat d'entreprise | 60 % du don (40 % au-delà de 2 M€) ; plafond 20 000 € ou 5 ‰ du CA | Bénéficiaire d'intérêt général, pas de cercle restreint | Impossible directement vers le propriétaire privé | [R3-42] [R3-43] |
+| IFI | 0,5 % à 1,5 % au-delà de 800 000 € (seuil 1,3 M€) ; 30 % d'abattement résidence principale | Aucune exonération MH | Charge personnelle récurrente (ex. ≈ 36 000 €/an pour 5 M€) | [R3-01] [R3-15] |
+| IS | 15 % jusqu'à 42 500 €, puis 25 % | PME : CA ≤ 10 M€, 75 % personnes physiques | — | [R3-20] |
+| PFU 2026 | 31,4 % (12,8 % IR + 18,6 % PS) | Dividendes et produits de placement 2026 | 1 € de bénéfice IS distribué ≈ 0,51 € net | [R3-16] [R3-57] |
+| Taxe sur les holdings patrimoniales (LF 2026) | 20 % par an de la valeur des logements occupés par un associé et des chevaux de course ou de concours non affectés à une activité opérationnelle | Holding IS ≥ 5 M€ d'actifs, contrôlée à 50 % par une personne physique, revenus passifs > 50 % ; exercices clos à partir du 31/12/2026 | Rend coûteux le château-résidence logé dans une holding | [R3-18] [R3-19] |
+| TVA équestre | 5,5 % : enseignement, pratique, accès aux installations, pension accessoire à l'équitation ; 20 % : pension de valorisation ou de retraite, location de boxes sans entretien, vente de chevaux de sport | Depuis le 01/01/2024 (CGI 278-0 bis, O) | Frontière « accessoire » fragile | [R3-22] [R3-26] |
+| TVA autres | Visites 10 % ; hébergement hôtelier 10 % ; restauration 10 % ; alcool 20 % ; location de salle pour événement : hors 10 % (donc 20 %, ESTIMATION) ; franchise 85 000 € / 37 500 € | — | Prix publics TTC à convertir | [R3-23] [R3-24] [R3-27] [R3-29] |
+| Micro-BIC 2026 | Meublé classé et chambres d'hôtes : 83 600 € / 50 % ; meublé non classé : 15 000 € / 30 % | Loi Le Meur ; DPE (G interdit depuis 2025) | Dépendances mal isolées exclues de la location | [R3-31] [R3-33] [R3-34] [R3-36] |
+| Chambres d'hôtes | ≤ 5 chambres et ≤ 15 clients | Chez l'habitant, petit-déjeuner, déclaration en mairie | Au-delà : ERP et autre statut | [R3-35] |
+| Bail rural (risque) | Bail 9 ans minimum, renouvelable, fermage plafonné | Mise à disposition onéreuse d'un immeuble pour une activité agricole, y compris équestre (hors spectacle) | Perte durable de la maîtrise d'écuries et de prés | [R3-28] [R3-45] [R3-47] [R3-48] |
+| ERP 5e catégorie | Salle de réunion ≤ 200 pers. ; spectacle ≤ 50 ; chapiteau ≤ 50 ; restaurant ≤ 200 ; hôtel ≤ 100 ; plein air ≤ 300 | Extincteurs, alarme, registre, vérifications | Visites périodiques CCDSA si hébergement | [R3-38] [R3-39] |
+| Accessibilité | Amende 45 000 € (225 000 € personne morale) | Mesures de substitution, dérogation patrimoine possible | Fermeture administrative | [R3-40] |
+| Musique amplifiée | 102 dB(A) et 118 dB(C) sur 15 min ; émergence 3 dB(A) ; EINS si diffusion habituelle | Lieux recevant du public, clos ou ouverts | Limiteur, isolation, conflits avec voisins et chevaux | [R3-52] |
+| SCI à l'IR | Transparence ; activité commerciale ≤ 10 % du CA HT | Exploitation logée ailleurs | Bascule à l'IS au-delà | [R3-59] |
+| Occupation gratuite d'un bien de société à l'IS | Loyer manquant réintégré + revenu distribué chez l'associé | — | Acte anormal de gestion ; risque pénal (abus de biens sociaux) non chiffré | [R3-56] [R3-57] |
+| TO-DE | Exonération de cotisations patronales pour les saisonniers agricoles, « désormais pérenne » | Employeur agricole | Plafonds non lus | [R3-60] |
+
+## Points à faire valider par un professionnel
+
+Avocat fiscaliste :
+1. Montage « château détenu en direct ou par SCI familiale à l'IR + société d'exploitation locataire » : les loyers sont-ils des revenus fonciers ouvrant droit au régime MH (déficit imputable sans limite) ou une location équipée imposable en BIC ? Portée de l'exclusion « besoins d'une entreprise » [R3-04 § 40].
+2. Imputation des charges MH lorsque le propriétaire est imposé au PFU sur ses dividendes (option barème ou non).
+3. Application de la taxe sur les holdings patrimoniales (LF 2026) à une société détenant le château et des chevaux de concours ; articulation avec l'IFI ; QPC éventuelles.
+4. Texte actuel de l'article 200 CGI pour les dons via la Fondation du patrimoine (seuil de 60 000 € de recettes commerciales, doctrine de 2012).
+5. Taux de TVA d'une pension « mixte » (travail et pré), d'une location de lieu pour événement avec prestations, et d'un forfait mariage (hébergement + salle + restauration).
+6. Fonds de dotation portant tout ou partie du domaine : compatibilité avec l'occupation privée du fondateur.
+7. IFI : qualification de bien professionnel pour la partie louée à la société d'exploitation (CGI art. 975), et quotités pour bois et biens ruraux (art. 976).
+
+Notaire :
+8. Convention 795 A : obligations concrètes, compatibilité avec une exploitation commerciale partielle, transmission aux héritiers.
+9. Choix entre détention directe, SCI familiale et société à l'IS au regard de l'engagement de conservation de 15 ans et de la transmission.
+10. Contrats d'occupation des prés et écuries (pension, convention d'occupation précaire, petites parcelles, bail commercial) pour éviter le statut du fermage.
+
+Expert-comptable :
+11. Ventilation des charges entre partie privée et parties exploitées (règle pratique 75 % / 25 %, prorata de surfaces).
+12. Régimes micro ou réel, franchise de TVA et options pour chaque activité ; impact de la contribution différentielle sur les hauts revenus.
+13. Coût social du propriétaire-dirigeant (SAS ou SARL) et des avantages en nature.
+
+Avocat en droit rural ou de l'urbanisme, bureau de contrôle, acousticien :
+14. Désignation des bâtiments dans le PLU pour un changement de destination (L151-11), avis CDPENAF ou CDNPS ; accord de l'ABF.
+15. Classement ERP des salles (type L, N, CTS), accessibilité et dérogation patrimoniale.
+16. Étude d'impact des nuisances sonores et limiteur pour les réceptions.
+
+## Contre-exemples et cas d'échec trouvés
+
+1. **Requalification d'écuries en bail rural** : le tribunal paritaire de Senlis, confirmé par la CA d'Amiens le 6 décembre 2016, a fait droit à une demande de requalification portant sur 14 boxes, une sellerie et un paddock [R3-47] (EXTRAIT ; motivation non lue). Cas d'échec typique pour un propriétaire qui loue ses écuries à un professionnel.
+2. **Boxes de chevaux de course bloqués par le fermage** : la question écrite n° 31336 (2020) décrit « de nombreuses installations restées vacantes » faute de pouvoir sous-louer des boxes sous bail rural ; le ministère de la Justice confirme l'interdiction d'ordre public [R3-48] (PAGE LUE).
+3. **Requalification refusée aux preneurs** (contre-exemple favorable au propriétaire) : Cass. 3e civ., 13 mai 2009, n° 08-16.421 : simple gardiennage de chevaux, pas d'activité agricole prouvée [R3-46] (PAGE LUE).
+4. **Puissance hydroélectrique réduite** : un propriétaire de moulin demandait 273 kW et s'est vu fixer 39 kW (TA Poitiers, 26/12/2024) [R3-54] (EXTRAIT) ; 67 kW reconnus pour 75 kW revendiqués (CAA Nantes, 2017) [R3-53] (PAGE LUE).
+5. **Exonération d'IFI des MH ouverts refusée** : amendement au PLF 2026 rejeté [R3-12] (EXTRAIT).
+6. **TVA équestre** : en 2023, le Gouvernement refusait l'extension du taux réduit à toute la filière (coût estimé à 35 M€) [R3-21] ; extension partielle seulement depuis 2024 ; la vente de chevaux de sport et la pension de valorisation restent à 20 % [R3-22].
+7. **Holdings patrimoniales** : la taxe de 20 % (LF 2026) rend coûteux un schéma courant (château et chevaux logés dans une holding qui loge l'associé) [R3-18].
+
+## Points de doute / hypothèses non vérifiées
+
+- Légifrance inaccessible : aucun article de loi lu dans sa version consolidée. Les règles viennent du BOFiP, de service-public.gouv.fr et de synthèses d'avocats. Plusieurs pages BOFiP datent de 2012 à 2018 (régime MH, dons Fondation du patrimoine) : leur maintien en vigueur est affiché, mais un changement législatif non encore commenté reste possible.
+- LF 2026 : décrite d'après deux synthèses de cabinets (Simon Associés, Eurex) ; le numéro d'article CGI de la taxe sur les holdings (235 ter C) n'est qu'un EXTRAIT ; le header de la lettre Simon Associés indique « art. 7 » et le texte « L'article 3 » (numérotation du projet de loi probable).
+- Prélèvements sociaux sur revenus LMNP et plus-values mobilières 2025 : divergence entre Que Choisir (hausse dès les revenus 2025) et la page service-public (pas de taux 2025 spécifique).
+- Seuil de cotisations des chambres d'hôtes : 6 123 € [R3-31] contre 6 248 € [R3-35] pour 2025.
+- Fiche F36065 : « Vérifié le 26 avril 2024 » mais contenu à jour du PFU 2026 (31,4 %) ; je retiens le contenu.
+- Régime mère-fille : durée de détention de deux ans non lue.
+- Location de salle pour événement à 20 % : déduit de l'exclusion du taux de 10 % [R3-23 § 45], pas lu explicitement.
+- Exonération de TVA des locations de terres nues : non lue.
+- Agrivoltaïsme avec chevaux : éligibilité non trouvée.
+- ICPE des écuries : non trouvée.
+- Fondation du patrimoine : seuil de 60 000 € de recettes commerciales tiré d'une doctrine de 2012.
+- Crédits MH du PLF 2026 (-34 % en AE, -21 % en CP) : EXTRAIT, PDF du Sénat en erreur 503.
+- Taux marginal de 45 % utilisé dans l'exemple de la synthèse 1 : HYPOTHÈSE non vérifiée dans une page lue.
+
+## Chiffres clés pour le modèle
+
+| Donnée | Valeur | Unité | Année | Statut | Source |
+|---|---|---|---|---|---|
+| Déduction des charges MH, immeuble ouvert au public | 100 | % des charges | règle en vigueur 2026 | PAGE LUE | [R3-02] [R3-05] |
+| Déduction des charges MH, immeuble fermé au public | 50 | % des charges | 2026 | PAGE LUE | [R3-02] [R3-05] |
+| Ouverture minimale pour être « ouvert au public » | 50 j/an dont 25 non ouvrables (avril-sept.) ou 40 j (juillet-sept.) ; 6 h/j | jours, heures | 2026 | PAGE LUE | [R3-04] |
+| Règle pratique MH habité et ouvert avec recettes | 75 / 25 | % revenus fonciers / revenu global | 2026 | PAGE LUE | [R3-02] |
+| Abattement forfaitaire frais de visite | 1 525 (sans parc ni jardin) / 2 290 (avec) | € par an | 2026 | PAGE LUE | [R3-04] |
+| Engagement de conservation MH | 15 | ans | depuis 2009 | PAGE LUE | [R3-06] |
+| Label Fondation du patrimoine : déduction des travaux | 50 (100 si subvention ≥ 20 %) | % | 2026 | PAGE LUE | [R3-02] [R3-08] |
+| Dons via Fondation du patrimoine : plafond de recettes commerciales tolérées | 60 000 | € HT par an | doctrine 2012 | PAGE LUE (à vérifier) | [R3-10] |
+| Frais de gestion Fondation du patrimoine sur collecte | 6 | % des dons | 2026 | PAGE LUE | [R3-09] |
+| Réduction d'impôt du donateur particulier | 66 (plafond 20 % du revenu imposable) | % | 2026 | PAGE LUE | [R3-10] [R3-09] |
+| Mécénat d'entreprise | 60 (40 au-delà de 2 M€) ; plafond 20 000 € ou 5 ‰ du CA | % | 2026 | PAGE LUE | [R3-42] |
+| Seuil d'IFI | 1 300 000 | € patrimoine net taxable | 2026 | PAGE LUE | [R3-01] |
+| Barème IFI | 0,5 / 0,7 / 1 / 1,25 / 1,5 | % par tranche (au-delà de 800 000 €) | 2026 | PAGE LUE | [R3-15] |
+| Abattement IFI résidence principale | 30 | % | 2026 | PAGE LUE | [R3-01] |
+| IS taux normal / taux réduit | 25 / 15 (jusqu'à 42 500 €) | % | 2026 | PAGE LUE | [R3-20] |
+| PFU sur dividendes | 31,4 (12,8 IR + 18,6 PS) | % | revenus 2026 | PAGE LUE | [R3-16] [R3-57] |
+| Prélèvements sociaux revenus fonciers | 17,2 | % | 2026 | PAGE LUE | [R3-16] |
+| Taxe sur les holdings patrimoniales | 20 | % de la valeur vénale des actifs visés par an | exercices clos ≥ 31/12/2026 | PAGE LUE (synthèses d'avocats) | [R3-18] [R3-19] |
+| Seuil d'actifs de la taxe holdings | 5 | M€ | 2026 | PAGE LUE | [R3-18] |
+| TVA enseignement, pratique de l'équitation, pension accessoire | 5,5 | % | depuis 01/01/2024 | PAGE LUE | [R3-22] |
+| TVA pension de valorisation ou de retraite, vente de chevaux de sport, location de boxes sans entretien | 20 | % | 2026 | PAGE LUE | [R3-22] |
+| TVA droits d'entrée château, parc, jardin | 10 | % | 2026 | PAGE LUE | [R3-23] |
+| TVA hébergement hôtelier / restauration | 10 / 10 | % | 2026 | PAGE LUE | [R3-24] [R3-29] |
+| TVA location de lieu pour événement | 20 | % | 2026 | ESTIMATION | [R3-23 § 45] |
+| Franchise en base de TVA | 85 000 (hébergement, ventes) / 37 500 (services) | € HT | 2026 | PAGE LUE | [R3-27] |
+| Micro-BIC meublé classé et chambres d'hôtes | 83 600 / abattement 50 % | € / % | revenus 2026 | PAGE LUE | [R3-33] [R3-36] |
+| Micro-BIC meublé non classé | 15 000 / abattement 30 % | € / % | revenus 2025-2026 | PAGE LUE | [R3-31] [R3-36] |
+| Chambres d'hôtes : capacité maximale | 5 chambres ou 15 clients | unités | 2026 | PAGE LUE | [R3-35] |
+| ERP 5e catégorie, salle de réunion polyvalente | 200 | personnes (hors personnel) | 2025 | PAGE LUE | [R3-38] |
+| ERP 5e catégorie, salle de spectacle ou chapiteau | 50 | personnes | 2025 | PAGE LUE | [R3-38] |
+| Gîte classé ERP au-delà de | 15 | places de couchage | 2025 | PAGE LUE | [R3-38] |
+| Niveau sonore maximal (musique amplifiée) | 102 dB(A) et 118 dB(C) | sur 15 min | depuis 2018 | PAGE LUE | [R3-52] |
+| SCI à l'IR : activité commerciale maximale | 10 | % du CA HT | 2025 | PAGE LUE | [R3-59] |
+| Régime mère-fille : quote-part de frais et charges | 5 | % des dividendes | 2024-2026 | PAGE LUE | [R3-61] |
+| Fonds de dotation : dotation minimale | 15 000 | € | 2025 | PAGE LUE | [R3-58] |
+| Bail rural : durée minimale | 9 | ans | 2025 | PAGE LUE | [R3-28] [R3-45] |
+| Exemple IFI pour 5 M€ (hors RP) / 3,5 M€ (RP) / 10 M€ | 35 690 / 20 690 / 98 190 | € par an | 2026 | ESTIMATION | [R3-15] |

@@ -1,6 +1,6 @@
 # R4 — Domaines français : modèles réels, comptes, réussites, échecs
 
-Agent R4 — démarré le 2026-10-14. Fichier écrit au fur et à mesure (état : EN COURS).
+Agent R4 — 2026-10-14. Fichier écrit au fur et à mesure (état : TERMINÉ, 21 cas documentés, 24 liquidations sourcées, 3 échantillons de comptes).
 Sources : `01_RECHERCHE/sources/sources_R4.csv` (identifiants [R4-xx]).
 
 ## 0. Méthode et outils
@@ -11,9 +11,7 @@ Sources : `01_RECHERCHE/sources/sources_R4.csv` (identifiants [R4-xx]).
 - Pappers renvoie 403 : non utilisé. Les extraits Pappers/societe.com vus en résultat de recherche ont le statut EXTRAIT.
 - Rappel : le CA et le résultat d'une société d'exploitation ne disent rien de la fortune du propriétaire, et inversement.
 
-## 1. Fiches par cas
-
-(en cours de rédaction)
+## 1. Données de registre, échantillons et premières fiches
 
 ### 1.A Constat transversal sur les comptes publiés (registre officiel)
 
@@ -96,7 +94,7 @@ Domaines équestres privés (registre, PAGE LUE) [R4-92] [R4-93] :
 - DOMAINE EQUESTRE DE LA BONDE (Saint-Denis-le-Ferment, 27 ; NAF 55.10Z hôtel ; 10 à 19 salariés) : CA 2024 = 2 120 767 € ; résultat net = +105 361 € (≈ 5 %). Exemple rare d'hébergement équestre rentable (modestement).
 - VILLAGE EQUESTRE (Le Val-Doré, 27 ; NAF 93.29Z ; 10 à 19 salariés) : CA 2023 = 1 304 982 € ; résultat net = -183 409 €.
 
-Lecture (ESTIMATION) : les grandes structures équestres « vitrines » de propriétaires fortunés affichent des pertes de 1,8 à 3,8 M€ par an, soit plus que leur CA dans deux cas. C'est de la consommation de fortune, pas un modèle d'autofinancement. Les structures rentables sont des entreprises de taille moyenne (1 à 2,5 M€ de CA), spécialisées (élevage, valorisation, pension), sans château à porter.
+Lecture (ESTIMATION) : trois grandes structures équestres « vitrines » affichent des pertes de 1,8 à 3,8 M€ par an, supérieures à leur CA dans deux cas. Des pertes de cette ampleur ne peuvent être couvertes que par les associés : c'est de la consommation de fortune, pas un modèle d'autofinancement. Les structures rentables sont des entreprises de taille moyenne (1 à 2,5 M€ de CA), spécialisées (élevage, valorisation, pension), sans château à porter.
 
 ### 1.E Fiches détaillées par cas
 
@@ -126,7 +124,7 @@ Lecture (ESTIMATION) : les grandes structures équestres « vitrines » de propr
 #### Cas 3 — Château d'Ygrande (Allier) : hôtel + centre équestre, liquidation en 2025 (ÉCHEC)
 
 - **Le lieu** : « un domaine de quarante hectares », « 26 boxes », chambres « à partir de » 90 € à 190 €, « Séjour équestre : 126 € par personne » (site du domaine consulté le 2026-10-14) [R4-23]. PAGE LUE.
-- **Structure** : deux sociétés au même siège (« Le Mont, 03160 Ygrande ») et avec le même gérant (Pierre-Marie Tissier) :
+- **Structure** : deux sociétés au même siège (« Le Mont, 03160 Ygrande ») et avec le même gérant (Pierre-Marie Tissier) [R4-09] [R4-11] :
   - GROUPE COEUR ET DETENTE (SAS, SIREN 421318247, créée le 1998-12-21, NAF 55.10Z hôtels, tranche 12 = 20 à 49 salariés en 2024, catégorie PME ; dernier résultat publié : -102 330 € en 2022, CA non publié) [R4-22]. PAGE LUE.
   - EARL ECURIES DU CHATEAU D'YGRANDE (SIREN 820732873, NAF 85.51Z enseignement sportif, 6 à 9 salariés), éditrice du site internet [R4-10] [R4-24]. PAGE LUE.
 - **Procédure collective** (BODACC) [R4-18] PAGE LUE : « Jugement d'ouverture de liquidation judiciaire » du **28/10/2025**, tribunal de commerce de Cusset ; « date de cessation des paiements le 01 Septembre 2025 » ; liquidateur SELARL MJ de l'Allier ; état des créances déposé le 16/09/2026. Le BODACC liste 17 avis de dépôt des comptes publiés entre 2009 et 2025 (pas d'avis en 2011, 2013, 2015 ni 2024). Un moteur juridique privé titre « GROUPE COEUR ET DETENTE (CHATEAU D'YGRANDE) Liquidation judiciaire » [R4-25] (EXTRAIT), ce qui confirme le rattachement de la société au château.
@@ -147,25 +145,27 @@ Documents de plaidoyer (donc orientés), mais ce sont les seules données agrég
 #### Cas 4 — Château de la Motte-Husson (Martigné-sur-Mayenne, 53) : le château comme décor d'une entreprise de médias
 
 - **Achat** : « In 2015, for £280,000 (equivalent to £386,777 in 2025), they purchased a chateau » ; « on a 12-acre (4.9-hectare) property, that listed forty-five rooms, seven outbuildings and a walled garden » (Wikipedia EN, phrase sans note) [R4-44]. PAGE LUE, fiabilité moyenne.
-- **Activités** : lieu de mariages et d'événements dont la notoriété vient en partie de l'émission ; activité d'accueil d'Angel (« The Vintage Patisserie ») transférée au château en 2015 ; séries dérivées (« Escape to the Chateau DIY », où le couple conseille d'autres expatriés « trying to run businesses from châteaux ») ; podcast ; livres [R4-44]. L'émission a été présentée comme terminée après la saison 9, puis « in October 2025, a tenth series was announced » [R4-44]. PAGE LUE.
+- **Activités** : lieu de mariages et d'événements dont la notoriété vient en partie de l'émission ; activité d'accueil d'Angel (« The Vintage Patisserie ») transférée au château en 2015 ; séries dérivées (« Escape to the Chateau DIY », où le couple conseille d'autres expatriés « trying to run businesses from châteaux ») ; podcast ; livres [R4-44] ; l'éditeur présente le lancement de leur « wedding business » [R4-61] (EXTRAIT, texte promotionnel). L'émission a été présentée comme terminée après la saison 9, puis « in October 2025, a tenth series was announced » [R4-44]. PAGE LUE.
 - **Structure (registres)** :
   - Royaume-Uni [R4-55] à [R4-60], PAGE LUE : CHATEAU-DE-LA-MOTTE HUSSON LIMITED (n° 10674609), constituée le 16/03/2017, **dissoute le 08/08/2023**, derniers comptes au 30/09/2021, mode de dissolution non indiqué ; ESCAPE TO THE CHATEAU LIMITED (n° 12032099), constituée le 04/06/2019, SIC 58110 « Book publishing », ex-« The Chateau Publishing Limited » jusqu'au 24/06/2025 ; CHATEAU TELEVISION LIMITED (n° 12462133), constituée le 13/02/2020, comptes « Total exemption full accounts » (comptes abrégés, sans compte de résultat public), contrôlée depuis le 05/04/2023 par la holding « Da2Ad Limited ».
   - France [R4-21], PAGE LUE : SARL DA2AD (SIREN 912302825, créée le 06/04/2022, NAF 93.29Z, gérants Angela et Richard Strawbridge), résultat net 2023 = 5 632 € (CA non publié) ; Angela Strawbridge en entreprise individuelle de location (NAF 68.20B).
 - **Chiffre d'affaires, rentabilité des mariages** : **INCONNU**. Les comptes britanniques sont abrégés et le document des comptes n'a pas pu être ouvert (redirection vers un stockage signé). Vérification : télécharger manuellement les comptes de Chateau Television Ltd sur Companies House.
-- **Difficultés publiques** : je n'ai trouvé **aucune source** sur des difficultés financières ou judiciaires (deux recherches). La dissolution en 2023 de la société britannique portant le nom du château est un fait de registre, sans cause connue. Je ne conclus pas à un échec.
+- **Difficultés publiques** (The Independent, 20/05/2023) [R4-94] PAGE LUE : l'émission a duré « nine seasons beginning in 2016 and ending in December 2022 » ; Channel 4 a annoncé : « Following a review, we have taken the decision not to work with Dick and Angel on any new productions in the future », après une « independent HR investigation » demandée à la suite d'inquiétudes du producteur Two Rivers Media ; des sources évoquaient « a deteriorating relationship between Two Rivers and Dick and Angel's Chateau TV » ; en 2021, d'anciens membres de la société de production Spark Media avaient accusé le couple de harcèlement (« anxiety-inducing ordeal »), ce que le couple a démenti. Aucune procédure judiciaire ni difficulté financière n'est mentionnée. La même rupture est titrée « Channel 4 drops Escape to the Chateau stars Dick and Angel Strawbridge after bullying claims » par la presse régionale britannique [R4-95] (EXTRAIT). Une dixième saison a été annoncée en octobre 2025 (Wikipedia, citant le site du couple thechateau.tv) [R4-44] : le couple semble être passé à une diffusion par ses propres moyens (ESTIMATION). La dissolution le 08/08/2023 de la société britannique portant le nom du château est un fait de registre, sans cause connue [R4-60].
+- **Risque révélé** (ESTIMATION) : un modèle fondé sur la notoriété télévisuelle dépend d'un **diffuseur** et de relations de travail tendues avec des équipes de tournage ; la rupture avec Channel 4 en 2023 a coupé le canal principal. Ce n'est pas une faillite, mais c'est la fragilité principale du modèle.
 - **Leçon** (ESTIMATION) : le moteur économique n'est pas le château mais la **notoriété audiovisuelle** (télévision, livres, produits, podcast). Les mariages profitent de cette notoriété. Ce modèle n'est pas transposable à un propriétaire qui veut préserver sa vie privée : il exige une exposition médiatique permanente de la famille.
 
 #### Cas 5 — Château de Gudanes (Château-Verdun, 09) : restauration financée par un revenu professionnel extérieur
 
 - **Origine** : Karina et Craig Waters, australiens, arrivés en 2013 ; château « classified as a ruin and listed as a class one historic building » ; « the roof had collapsed, taking out five storeys in places » ; 12 acres (≈ 4,9 ha) de terrain ; travaux commencés en décembre 2013 (The Connexion, 2022, mis à jour 2025) [R4-54]. PAGE LUE. Prix d'achat : non communiqué par les propriétaires (INCONNU).
 - **Financement** : « Craig, a doctor, spends most of his time in Australia working so we can pay for it all » ; recettes d'un livre (publié en octobre 2018, « nearly over 10,000 copies ») réinvesties : « The money goes towards ongoing works » ; depuis 2018, séjours de trois à sept nuits et ateliers [R4-54]. Audience : « 380,000 followers on Instagram and 408,000 on Facebook » [R4-54]. PAGE LUE.
+- Wikipédia FR n'a pas d'article sur ce château (404) [R4-43].
 - **Registre** [R4-20] PAGE LUE : SAS CHATEAU DE GUDANES (SIREN 106121783) créée seulement le **22/05/2026**, NAF 55.20Z (hébergement touristique de courte durée), présidée par Karina Waters ; SCI LES TORRENTS D'ASTON (2013) au nom du couple.
 - **Difficultés** : aucune source trouvée sur des dettes, un arrêt du chantier ou une vente (une recherche). Le seul obstacle documenté est administratif (visa) [R4-54]. Pas d'échec démontré.
 - **Leçon** (ESTIMATION) : le château est porté par un **moteur extérieur** (revenu médical en Australie) complété par la notoriété numérique ; c'est une illustration de l'hypothèse H8 (moteur hors domaine), mais avec une dépendance totale au travail d'une seule personne.
 
 #### Cas 6 — Château de la Mothe-Chandeniers (Les Trois-Moutiers, 86) : le financement participatif
 
-- **Acquisition** : « Le prix d'achat du château est de 500 000 euros, somme atteinte le 1er décembre 2017 » (Wikipédia, citant Le Point du 04/12/2017) ; clôture de la campagne le 25/12/2017 avec « plus de 1 617 000 euros et 18 558 contributeurs de 115 pays » ; deuxième campagne (chapelle et ≈ 2,1 ha de parc) close en juin 2018 « avec plus de 474 000 euros récoltés » ; troisième campagne en décembre 2020 [R4-41]. PAGE LUE (source secondaire). Fin 2024 : « près de 4 400 000 € » collectés au total et « 25000 co-châtelains de 183 pays » (Paris ZigZag, mis à jour le 09/12/2024) [R4-62]. PAGE LUE.
+- **Acquisition** : « Le prix d'achat du château est de 500 000 euros, somme atteinte le 1er décembre 2017 » (Wikipédia, citant Le Point du 04/12/2017) ; clôture de la campagne le 25/12/2017 avec « plus de 1 617 000 euros et 18 558 contributeurs de 115 pays » ; deuxième campagne (chapelle et ≈ 2,1 ha de parc) close en juin 2018 « avec plus de 474 000 euros récoltés » ; troisième campagne en décembre 2020 [R4-41] (article de France 3 cité par Wikipédia, non accessible [R4-64]). PAGE LUE (source secondaire). Fin 2024 : « près de 4 400 000 € » collectés au total et « 25000 co-châtelains de 183 pays » (Paris ZigZag, mis à jour le 09/12/2024) [R4-62]. PAGE LUE.
 - **Structure** : SAS CHATEAU DE LA MOTHE-CHANDENIERS (SIREN 835113820), présidée par la société Dartagnans, commissaire aux comptes nommé, 6 à 9 salariés (2024) [R4-19]. **Capital social inscrit : 1 050 € (2018), 5 529,45 € (2019), 12 943,05 € (avril 2026)** [R4-63] : l'essentiel des sommes versées par les « co-châtelains » n'est donc pas du capital social (prime d'émission ou autre forme ; la ventilation est INCONNUE). Comptes 2024 déposés avec une « déclaration de confidentialité » [R4-63]. PAGE LUE.
 - **Travaux** : phase 1 avec « un budget prévisionnel de 850 000 euros » (mise en sécurité, cour, tour de l'horloge, escalier d'honneur), démarrée en janvier 2019 ; durée totale des travaux estimée à 7 ans (projection de 2019) [R4-41]. Avancement réel depuis 2019 : INCONNU.
 - **Exploitation** : visites ouvertes fin juin 2018 ; 4 296 visiteurs en 2018 et 15 000 en 2019 [R4-41] ; « quatre écolodges » « à partir de 135€ la nuit » ; « des milliers de visiteurs chaque année » [R4-62]. PAGE LUE. CA et résultat : INCONNUS (comptes confidentiels).
@@ -244,16 +244,16 @@ Lecture (ESTIMATION) :
 
 #### Cas 11 — Vaux-le-Vicomte (Maincy, 77) : le grand monument privé « autofinancé » à 300 000 visiteurs
 
-- **Propriété** : branche cadette des Vogüé ; propriétaire inscrit « Société privée (SCI Valterre) », gérée par Ascanio de Vogüé avec ses frères Alexandre et Jean-Charles [R4-30] ; SCI VALTERRE : 50 à 99 salariés en 2024, commissaire aux comptes, comptes non publiés [R4-02]. PAGE LUE. Parc d'environ 500 ha « clos par un mur d'enceinte de 13 km » [R4-30]. Domaine acheté en 1875 (près de 1 000 ha) par Alfred Sommier, ancêtre des propriétaires actuels [R4-30]. Ouvert au public en 1968 à l'initiative de Patrice de Vogüé (EXTRAIT [R4-86], source exacte non identifiée).
+- **Propriété** : branche cadette des Vogüé ; propriétaire inscrit « Société privée (SCI Valterre) », gérée par Ascanio de Vogüé avec ses frères Alexandre et Jean-Charles [R4-30] ; SCI VALTERRE : 50 à 99 salariés en 2024, commissaire aux comptes, comptes non publiés [R4-02]. PAGE LUE. Parc d'environ 500 ha « clos par un mur d'enceinte de 13 km » [R4-30]. Domaine de « près de 1 000 hectares » acheté en 1875 par Alfred Sommier [R4-30]. Ouvert au public en 1968 à l'initiative de Patrice de Vogüé (EXTRAIT [R4-86], source exacte non identifiée).
 - **Budget et emploi** : « Soit 9 millions d'euros à trouver chaque année pour son entretien » ; « 10 % du budget annuel sont consacrés à l'entretien des jardins à la française » ; « seulement 4 % proviennent d'aides de l'État » (dossier de presse France 5, 2016) [R4-31]. Wikipédia : « un budget annuel de 8 millions d'euros, emploie 75 salariés à temps plein » (sans date ni note) [R4-30]. PAGE LUE. **Divergence 8 / 9 M€ conservée.** Un compte rendu universitaire indique que les charges de personnel représentent environ 41 % des dépenses et que billetterie, boutiques et restaurants sont la première ressource [R4-32] : EXTRAIT, fiabilité faible.
 - **Fréquentation** : 261 000 visiteurs en 2008 [R4-30] ; « 300 000 visiteurs par an » (2016) [R4-31] ; objectif de 400 000 en 2020 (EXTRAIT [R4-86]).
 - **Activités** : visite, soirées aux chandelles, restauration (« 600 personnes par jour en 2018 » [R4-30]), privatisations (mariages, dîners d'entreprise), tournages (plus de 30 films listés, de 1952 à 2026, et la série *Versailles*) [R4-30] [R4-31] ; mécénat de statues, de mobilier et parrainage d'arbres [R4-31] ; association des Amis (prêt de 60 objets grâce à 2 700 membres) [R4-30]. Société de restauration SERV : CA 2025 = 2 674 622 €, résultat net -2 475 € [R4-02].
 - **Ratios (ESTIMATION)** : 8 à 9 M€ de budget pour ≈ 300 000 visiteurs, soit **27 à 30 € de dépense annuelle par visiteur** ; jardins ≈ 0,8 à 0,9 M€/an (10 %) ; personnel ≈ 3,3 à 3,7 M€/an si la part de 41 % est juste (non vérifié).
-- **Transposable ?** Le modèle repose sur une notoriété mondiale (Fouquet, Le Nôtre), 50 km de Paris, 300 000 visiteurs et 75 salariés : **inaccessible** à un domaine sans ce rang. À retenir : même ici, l'aide publique ne couvre que ≈ 4 % des besoins, et la famille sépare monument, restauration, agriculture et immobilier dans des sociétés distinctes. La résidence privée cohabite avec une exploitation de masse, ce que le propriétaire de la mission ne souhaite pas.
+- **Transposable ?** Le modèle repose sur une notoriété mondiale (Fouquet, Le Nôtre), la proximité de Paris (Seine-et-Marne), 300 000 visiteurs et 75 salariés : **inaccessible** à un domaine sans ce rang. À retenir : même ici, l'aide publique ne couvre que ≈ 4 % des besoins, et la famille sépare monument, restauration, agriculture et immobilier dans des sociétés distinctes. La résidence privée cohabite avec une exploitation de masse, ce que le propriétaire de la mission ne souhaite pas.
 
 #### Cas 12 — Chenonceau (37) : premier château privé de la Loire, gouvernance sous administration provisoire
 
-- **Propriété** : famille Menier depuis 1913 (Wikipédia, partie historique) [R4-33]. Société civile CHATEAU DE CHENONCEAU (SIREN 775702509, créée en 1955) : 50 à 99 salariés (2024), associés Laure, Cosima, Henri et Pauline Menier (gérante), **administrateur provisoire inscrit : la société TRAJECTOIRE** [R4-05]. PAGE LUE.
+- **Propriété** : famille Menier depuis 1913 (Wikipédia, partie historique) [R4-33]. Société civile CHATEAU DE CHENONCEAU (SIREN 775702509, créée en 1955) : 50 à 99 salariés (2024), associés Laure, Cosima, Henri et Pauline Menier (gérante), **administrateur provisoire inscrit : la société TRAJECTOIRE** [R4-05] [R4-01]. PAGE LUE.
 - **Satellite publié** : CHENONCEAU CASTELLUM (restauration sur le site, gérante Pauline Menier) : **CA 2025 = 5 638 275 € ; résultat net = 1 108 319 €** (marge nette ≈ 19,7 %, ESTIMATION) [R4-05]. C'est le seul satellite de grand château privé trouvé avec une rentabilité nette élevée.
 - **Fréquentation** : « appréciés chaque année par près de 900 000 visiteurs », « dont 40 % de visiteurs étrangers issus de 150 nationalités » (ministère de la Culture, DRAC Centre-Val de Loire, 11/07/2017) [R4-87]. PAGE LUE. Un résultat de recherche donne environ 800 000 visiteurs en 2007 (EXTRAIT). **CA du monument : INCONNU** (société civile, comptes non publiés). Deux recherches n'ont rien donné sur la gouvernance. Ratio (ESTIMATION) : le restaurant seul réalise ≈ 6,3 € de CA par visiteur (5,64 M€ / ≈ 900 000).
 - **Difficultés** : la présence d'un administrateur provisoire au registre signale un blocage de gouvernance (ESTIMATION) ; cause et date : INCONNUES. Vérification : extrait Kbis / annonces BODACC de la société civile, presse régionale (La Nouvelle République).
@@ -280,7 +280,7 @@ Lecture (ESTIMATION) :
 
 #### Cas 16 — Brissac (49) : le château-résidence ducal, événements et tournages
 
-- **Faits** [R4-83] PAGE LUE : propriété et résidence des ducs de Brissac (Charles-André de Cossé-Brissac) ; classé MH ; ouvert au public ; marché de Noël, chasse aux œufs, festival de fleurs, départs de montgolfières (dont le championnat de France) ; tournages télévisés et cinéma (*Secrets d'Histoire* 2016 et 2018, film sorti en 2026).
+- **Faits** [R4-83] PAGE LUE : propriété et résidence des ducs de Brissac (Charles-André de Cossé-Brissac) ; classé MH ; ouvert au public ; marché de Noël, chasse aux œufs, festival de fleurs, départs de montgolfières (dont le championnat de France) ; tournages télévisés et cinéma (*Secrets d'Histoire* 2016 et 2018, un long métrage annoncé pour 2026).
 - **Registre** [R4-06] PAGE LUE : exploitation en entreprise individuelle (CHARLES DE BRISSAC, NAF 91.03Z, 3 à 5 salariés) ; GROUPEMENT FORESTIER DOMAINE DE BRISSAC (1 à 2 salariés).
 - **Fréquentation, CA** : **INCONNU**.
 - **Lecture** (ESTIMATION) : structure très légère (3 à 5 salariés), revenus événementiels ponctuels et bois logés dans un groupement forestier (outil classique de transmission). Rien ne permet de juger l'équilibre financier.
@@ -302,7 +302,7 @@ Lecture (ESTIMATION) :
 
 - **Faits** [R4-77] PAGE LUE : « racheté en 1991 pour 250 millions de francs par Daniel Cathiard » ; « Le domaine de 130 hectares, dont 78 sont plantés de vignes » ; ≈ 200 000 bouteilles par an.
 - **Registre** [R4-27] PAGE LUE : SOCIETE CIVILE DU CHATEAU SMITH HAUT LAFITTE (comptes non publiés) ; **CAUDALIE (SAS, tranche 41 = 500 à 999 salariés en 2024)**, directrice générale Mathilde Thomas (née Cathiard), comptes non publiés dans le registre.
-- **Lecture** (ESTIMATION) : le domaine est financé par un **produit de grande valeur** (grand cru classé), et la famille a créé à côté une entreprise de cosmétiques devenue bien plus grosse que le domaine. Caudalie n'est pas une activité « du domaine » : c'est une entreprise autonome, née d'une idée liée au lieu. Cas d'école de l'hypothèse H8 (moteur extérieur), mais avec un fondateur entrepreneur et un capital de départ très élevé (250 MF en 1991). Non transposable sans ces deux conditions.
+- **Lecture** (ESTIMATION) : le domaine vit d'un **produit de grande valeur** (son vin), et la famille dirige à côté une entreprise de cosmétiques qui emploie 500 à 999 salariés selon le registre. Caudalie n'est pas une activité « du domaine » : c'est une entreprise autonome. Le lien d'origine entre la marque et le vignoble n'a pas été vérifié dans les pages lues (HYPOTHÈSE courante, non sourcée ici). Cas d'école de l'hypothèse H8 (moteur extérieur), mais avec des entrepreneurs aguerris et un capital de départ très élevé (250 MF en 1991). Non transposable sans ces deux conditions.
 
 #### Cas 20 — Château de Pommard (21) : domaine viticole et œnotourisme racheté par un entrepreneur de la tech, en perte
 
@@ -314,3 +314,142 @@ Lecture (ESTIMATION) :
 
 - **Faits** [R4-42] PAGE LUE (Wikipédia, lecture partielle) : 81 000 visiteurs la première année (1978) pour un point mort visé à 40 000 ; 2,8 millions de visiteurs en 2024 et environ 3 millions en 2025 ; CA de 112 M€ en 2018 et 114 M€ en 2019 ; en 2020, CA en baisse d'environ 43 % à 70,7 M€ et perte de 23 M€ ; prêts garantis de 34 M€ (21 M€ de l'État, 13 M€ de la BEI) en 2020 ; environ 4 000 bénévoles « Puyfolais » pour la Cinéscénie ; propriétaire : SAS Puy du Fou France. Château Renaissance inachevé, racheté au département de la Vendée en 2012 et restauré en 2013-2014.
 - **Lecture** (ESTIMATION) : le château n'est qu'un prétexte historique ; le modèle est un parc à spectacles de masse, porté par une communauté de bénévoles. Il montre la **sensibilité aux chocs** (2020 : -43 % de CA et 23 M€ de pertes en une saison) même pour un leader. Aucun élément transposable à une résidence privée calme.
+
+## 4. Tableau comparatif des cas
+
+Légende « Transposable » : au projet de la mission (château > 50 ha, résidence privée calme, chevaux, sans recours à la fortune du propriétaire). CA et résultats en M€ ; « n.p. » = non publié. La colonne « Qui finance l'équilibre ? » est une interprétation (ESTIMATION) à partir des faits cités dans les fiches.
+
+| # | Cas | Type | Échelle | CA connu | Résultat net connu | Effectif | Qui finance l'équilibre ? | Statut principal | Transposable |
+|---|---|---|---|---|---|---|---|---|---|
+| 1 | Chantilly (60) | fondation, monument + écuries | parc 140 ha ; 658 000 visiteurs (2025) | 12,7 recettes (2025) | déficit 6 (2020, EXTRAIT) | n.p. | mécène unique 2006-2020/2025, puis État 0,8/an + dons | PAGE LUE / EXTRAIT | non (échelle) ; leçon sur la dépendance |
+| 2 | Domaine des Étangs (16) | hôtel ultra-luxe + élevage | 1 012 ha ; 17 clés | 3,47 hôtel (2025) + 1,82 agri (2024) | -3,20 et -4,36 | 20-49 + 10-19 | fortune familiale (Primat) | PAGE LUE | non |
+| 3 | Ygrande (03) | hôtel + écuries | 40 ha ; 26 boxes | n.p. | -0,10 (2022) | 20-49 | — | PAGE LUE | ÉCHEC (liquidation 2025) |
+| 4 | Motte-Husson (53) | mariages + médias | 4,9 ha | n.p. | n.p. | n.p. | notoriété TV, livres | PAGE LUE | non (exposition médiatique) |
+| 5 | Gudanes (09) | restauration + séjours | ≈ 4,9 ha | n.p. | n.p. | n.p. | revenu médical extérieur, livre | PAGE LUE | partiel (logique de moteur extérieur) |
+| 6 | Mothe-Chandeniers (86) | SAS participative | ruine + parc | n.p. (confidentiel) | n.p. | 6-9 | 25 000 co-châtelains (≈ 4,4 M€ collectés) | PAGE LUE | non (pas d'usage privé) |
+| 7 | Haras du Pin (61) | haras public historique | ≈ 1 100 ha (EXTRAIT) ; ≈ 50 000 visiteurs (2012) | budget ≈ 1,16 (2016, EXTRAIT) | INCONNU | INCONNU | État puis collectivités | PAGE LUE / EXTRAIT | non |
+| 8 | Pôle international du cheval (14) | SEM d'événements équestres | site public | 1,94 (2024) | -0,26 | 10-19 | collectivités actionnaires | PAGE LUE | non |
+| 9 | Jardy (92) | centre équestre public + golf | 75-90 ha ; 2 500 cavaliers | INCONNU | INCONNU | n.p. | département | PAGE LUE (faible) | non |
+| 10 | Haras normands (Étreham, Logis St-Germain…) | élevage pur-sang | — | 12,96 ; 0,83 | -0,38 ; -0,72 | 20-49 ; 10-19 | associés | PAGE LUE | non (métier de spécialiste) |
+| 11 | Vaux-le-Vicomte (77) | monument privé, visite de masse | parc ≈ 500 ha ; ≈ 300 000 visiteurs | budget 8-9 | n.p. | 75 ETP (50-99) | recettes propres et mécénat (aides de l'État ≈ 4 %) | PAGE LUE | non (rang mondial) |
+| 12 | Chenonceau (37) | monument privé, visite de masse | ≈ 900 000 visiteurs (2017) | restaurant 5,64 (2025) | restaurant +1,11 | 50-99 + 20-49 | INCONNU (recettes propres probables) | PAGE LUE | non |
+| 13 | Cheverny (41) | visite + vènerie + événements | ≈ 100 ha ; ≈ 350 000 visiteurs | n.p. | orangerie +0,15 (2024) | 20-49 + 20-49 | INCONNU (recettes propres probables) | PAGE LUE | non |
+| 14 | Villandry (37) | jardins | 6 ha de jardins | n.p. | restaurant +0,02 | 20-49 | INCONNU | PAGE LUE | non |
+| 15 | Breteuil (78) | visite familiale + réceptions | 75 ha ; 120 000 visiteurs | n.p. (divisé par 2 en 2020) | n.p. | ≈ 10 | recettes + vente d'un meuble classé (2014) | PAGE LUE | partiel |
+| 16 | Brissac (49) | résidence ducale + événements | INCONNU | n.p. | n.p. | 3-5 | INCONNU | PAGE LUE | partiel |
+| 17 | Courances (91) | parc + agriculture + polo + séjours | parc 86 ha ; ≈ 1 800 ha (EXTRAIT) | n.p. | n.p. | 6-9 (SCI du parc) | foncier agricole + activités + opérateur de séminaires | PAGE LUE / EXTRAIT | **le plus proche** (logique), chiffres inconnus |
+| 18 | Champ de Bataille (27) | jardins + événements privés | 180 ha | n.p. | n.p. | n.p. | activité professionnelle du propriétaire | PAGE LUE | non |
+| 19 | Smith Haut Lafitte / Caudalie (33) | vin + marque de cosmétiques | 130 ha (78 de vignes) | n.p. | n.p. | Caudalie 500-999 | produit (vin) + entreprise séparée | PAGE LUE | partiel (logique H8) |
+| 20 | Château de Pommard (21) | vin + œnotourisme + vente à distance | clos de 20 ha ; 35 000 visiteurs (2014) | 6 (2014) | -4,37 cumulé (2025) | 20-49 + 10-19 | actionnaire américain | PAGE LUE | non |
+| 21 | Puy du Fou (85) | parc à spectacles | 2,8 M visiteurs (2024) | 114 (2019) ; 70,7 (2020) | -23 (2020) | n.p. | recettes, bénévoles, prêts garantis | PAGE LUE (Wikipédia) | non |
+| — | 33 châteaux-hôtels (échantillon) | hôtels | CA médian 2,18 | — | 61 % en perte ; marge médiane -6,3 % | — | associés | ESTIMATION | défavorable |
+| — | 24 liquidations BODACC 2023-2026 | hôtels, réceptions, équestre | — | — | — | — | — | PAGE LUE | contre-exemples |
+
+## 5. Mécanismes économiques : ce qui marche, ce qui échoue
+
+### Ce qui marche (avec preuves)
+1. **La visite de masse d'un monument de rang mondial** finance l'essentiel du fonctionnement : Vaux (≈ 300 000 visiteurs, aides de l'État ≈ 4 % des besoins) [R4-31] ; Chenonceau (≈ 900 000 visiteurs ; restaurant rentable : +1,11 M€ pour 5,64 M€ de CA) [R4-87] [R4-05]. Conditions : notoriété exceptionnelle, proximité d'un grand bassin touristique, 50 à 100 salariés. Incompatible avec une résidence calme.
+2. **Le séminaire d'entreprise à grande échelle près de Paris**, exploité de façon professionnelle : Château de Villiers-le-Mahieu (CA 11,1 M€, +1,25 M€) ; Château Saint-Just (CA 10,2 M€, +2,27 M€) ; réseau Châteauform' (CA 186 M€, marge ≈ 1,8 %) [R4-34] [R4-37]. C'est un métier d'opérateur, avec un fort volume.
+3. **La séparation juridique des activités** (monument / restauration / agriculture / immobilier / écuries) : Vaux, Cheverny, Courances, Brissac (groupement forestier), Ygrande [R4-02] [R4-03] [R4-07] [R4-06] [R4-24]. À Ygrande, l'EARL équestre a survécu à la liquidation de la société hôtelière.
+4. **Le grand foncier agricole et forestier** comme socle (Courances ≈ 1 800 ha, 600 ha de plaine cultivée ; Vaux SCEA ; Brissac groupement forestier) [R4-88] [R4-89] [R4-02] [R4-06]. Les revenus n'en sont pas publiés (INCONNU), mais ce socle est présent chez les familles qui durent.
+5. **Un moteur économique extérieur au domaine** : revenu professionnel (Gudanes) [R4-54] ; entreprise séparée (Caudalie) [R4-27] ; activité du propriétaire (Jacques Garcia) [R4-14] ; médias (Motte-Husson) [R4-44]. C'est l'hypothèse H8, mais chaque exemple dépend d'une personne ou d'une marque.
+6. **Le financement participatif pour l'acquisition et les urgences** (Mothe-Chandeniers : ≈ 4,4 M€ en sept ans) [R4-62] : efficace pour un récit collectif de sauvetage, sans usage privé.
+7. **Les activités annexes à fort volume** (restauration sur site) : rentables si la fréquentation est très élevée (Chenonceau, marge nette ≈ 20 %), proches de l'équilibre sinon (Vaux : -2 475 € pour 2,67 M€ de CA) [R4-05] [R4-02].
+
+### Ce qui échoue (avec preuves)
+1. **Le château-hôtel isolé de taille moyenne** : 61 % de l'échantillon en perte, marge nette médiane -6,3 % ; au moins 15 châteaux-hôtels ou hébergements de château en liquidation dans le BODACC 2023-2026 [R4-34] [R4-35] [R4-74] [R4-75] [R4-76].
+2. **Le lieu de réception / mariages / chambres d'hôtes** : liquidations de Rêve de Château, Un Passage au Château, Esprit de Château, Château des Lys, Château de Saint-Priest… [R4-74] à [R4-76] ; coûts ERP élevés et procédures longues (cas « Monsieur N. » : plus de 100 000 € et plus de deux ans) [R4-52].
+3. **L'hôtellerie ultra-luxe sur très grand domaine** (Domaine des Étangs : perte ≈ CA) [R4-08].
+4. **L'équestre « vitrine »** : Haras de Hus (-2,94 M€ pour 1,77 M€ de CA), Bouquetot (-3,83 M€ pour 2,10 M€), Beaumont (-1,78 M€), Logis Saint-Germain (-0,72 M€ pour 0,83 M€), Étreham (-0,38 M€) [R4-39] [R4-70] [R4-26] ; équipements publics déficitaires (Pôle international du cheval : -0,26 M€) [R4-15] ; Haras du Pin abandonné par l'État comme « non rentable » [R4-65] ; centre équestre de Trie-Château liquidé [R4-74].
+5. **La dépendance à un mécène unique** (Chantilly) [R4-45] [R4-46].
+6. **La dépendance à un diffuseur** (Motte-Husson après la rupture avec Channel 4 en 2023) [R4-94].
+7. **Le domaine viticole comme « produit »** n'est pas une garantie : Château de Pommard (-4,37 M€ en 2025) ; vague de liquidations de châteaux viticoles en 2025-2026 [R4-28] [R4-74] [R4-75].
+8. **La gouvernance familiale est un risque** : administrateur provisoire à Chenonceau [R4-05]. À Courances, la gestion est partagée entre dix cousins (EXTRAIT [R4-89]) : ce n'est pas un échec, mais cela montre qu'un grand domaine transmis devient vite une copropriété familiale.
+9. **Les structures de dotation sans ressources** : fonds de dotation du château royal de Montargis liquidé (2025) [R4-74].
+10. **La détention courte** : ≈ 7 ans en moyenne selon La Demeure Historique, contre un engagement fiscal de 15 ans [R4-51] [R4-52].
+
+### Conséquences pour la mission (ESTIMATION)
+- Aucun cas français trouvé ne montre un domaine de type S2 qui finance durablement son fonctionnement **avec une résidence privée calme et sans fortune extérieure**. Les domaines qui s'autofinancent le font par la visite de masse (incompatible avec la tranquillité) ; les autres reposent sur une fortune, un mécène, un moteur extérieur ou un grand foncier.
+- Les hypothèses H3 (activités classiques insuffisantes) et H4 (l'équestre finance au mieux ses installations) sont **confortées** par les comptes publiés. H8 (moteur extérieur) est illustrée par plusieurs cas durables qui ne vivent pas de la visite de masse (Gudanes, Smith Haut Lafitte et Caudalie, Champ de Bataille, Motte-Husson), mais chaque exemple repose sur une personne ou une marque.
+
+## Contre-exemples et cas d'échec trouvés
+
+Échecs et difficultés sourcés (au moins 5 exigés ; ici plus de 30) :
+1. **Château d'Ygrande** (03) : hôtel + écuries, liquidation judiciaire le 28/10/2025, cessation des paiements le 01/09/2025 [R4-18] [R4-22] [R4-23] [R4-24] [R4-25].
+2. **24 liquidations BODACC 2023-2026** de châteaux-hôtels, d'hébergements, de lieux de réception, d'un centre équestre et d'un fonds de dotation de château (tableau § 2) [R4-74] [R4-75] [R4-76].
+3. **Domaine des Étangs** : pertes de 3,2 M€ (hôtel, 2025) et 4,4 M€ (agriculture, 2024) [R4-08].
+4. **Château de Pommard** : -4,37 M€ de pertes nettes cumulées en 2025 [R4-28].
+5. **Haras de Hus, Écurie Haras Bouquetot, Haras de Beaumont, Haras du Logis Saint-Germain, SARL de Chambure (Étreham)** : pertes 2024-2025 [R4-26] [R4-39] [R4-70].
+6. **Domaine de Chantilly** : départ du mécène, besoin de 68 M€ sur dix ans, déficit d'exploitation de 6 M€ en 2020 (EXTRAIT) [R4-45] [R4-46] [R4-47].
+7. **Haras national du Pin** : missions jugées « non rentables », EPA fermé en 2022, syndicat mixte créé en 2024 [R4-16] [R4-65].
+8. **Pôle international du cheval** : -0,26 M€ en 2024 [R4-15].
+9. **Motte-Husson** : rupture avec Channel 4 en mai 2023 après une enquête RH ; société britannique au nom du château dissoute en 2023 [R4-94] [R4-60].
+10. **Reventes rapides de monuments historiques** : ≈ 7 ans de détention moyenne, 800 puis 1 500 MH en vente selon la DH (chiffre déclaratif) [R4-51] [R4-52].
+11. **Échantillon de 33 châteaux-hôtels** : 20 en perte [R4-34] [R4-35].
+12. **Breteuil** : CA divisé par deux en 2020 ; vente d'un trésor national au Louvre en 2014 [R4-82].
+13. **Puy du Fou** : -43 % de CA et 23 M€ de pertes en 2020 [R4-42].
+14. **Chenonceau** : administrateur provisoire inscrit au registre (cause inconnue) [R4-05].
+
+Contre-exemples (réussites qui nuancent le constat) :
+- Château de la Messardière (CA 58,1 M€, +7,9 M€), Château Saint-Martin & Spa (11,4 M€, +0,9 M€), Château de Villiers-le-Mahieu (11,1 M€, +1,25 M€), Château Saint-Just (10,2 M€, +2,27 M€) [R4-34] [R4-35] [R4-37] : la rentabilité existe, à grande échelle, avec un opérateur professionnel et sur un marché porteur (luxe littoral, séminaires franciliens).
+- Chenonceau Castellum (+1,11 M€ pour 5,64 M€) [R4-05] : restauration très rentable sur un site à ≈ 900 000 visiteurs.
+- Domaine équestre de la Bonde (CA 2,12 M€, +0,11 M€), Haras du Cadran (+0,23 M€), Haras du Berlais (+0,30 M€) [R4-39] [R4-93] : des entreprises équestres moyennes et spécialisées peuvent être rentables, sans château à porter.
+- Gudanes : aucun échec documenté ; le projet avance grâce à un revenu extérieur [R4-54].
+- Mothe-Chandeniers : réussite du financement participatif de l'acquisition et des premières tranches [R4-41] [R4-62].
+
+## Points de doute / hypothèses non vérifiées
+
+1. **« CA = 0 » dans le registre** : interprété comme un compte de résultat confidentiel ou absent, pas comme un CA nul (ESTIMATION).
+2. **Rattachements société ↔ domaine** déduits du nom, du siège et des dirigeants, non confirmés par un document : SARL de Chambure = Haras d'Étreham ; Haras de S.A. l'Aga Khan = Bonneval ; Fresnay le Buffard UAE = haras de Fresnay-le-Buffard ; Chenonceau Castellum = restauration du château ; Domaine des Étoiles = volet agricole du Domaine des Étangs (lien confirmé par le registre : présidente de la société hôtelière).
+3. **Divergences conservées** : Vaux 8 M€ (Wikipédia, sans date) contre 9 M€ (France 5, 2016) ; Chantilly 30 M€ d'engagement (source officielle) contre 70 M€ injectés (presse, EXTRAIT) ; Domaine des Étangs 17 clés (2023) contre 29 (Country Life, EXTRAIT) ; Chenonceau ≈ 800 000 visiteurs (2007, EXTRAIT) contre ≈ 900 000 (2017).
+4. **Durée moyenne de détention de 7 ans** : chiffre de plaidoyer de La Demeure Historique, méthode non publiée. Un rapport public sur les monuments privés (vie-publique.fr) n'a pas pu être ouvert (HTTP 503) [R4-53].
+5. **BODACC** : lecture d'environ 250 annonces sur 327 ; activités résumées par l'outil de lecture ; seules les sociétés dont le nom contient « château » ; causes des défaillances non recherchées.
+6. **Échantillon de châteaux-hôtels** : biais de sélection (comptes publiés, nom, tri par pertinence), années hétérogènes (2017-2025) ; le résultat net n'est ni l'EBE ni la trésorerie.
+7. **Sources secondaires** : plusieurs faits viennent de Wikipédia (fiabilité moyenne à faible) ; les chiffres 2025 de Chantilly viennent de The Independent, repris par Time Out.
+8. **Chenonceau** : la signification exacte de l'administrateur provisoire (date, juridiction, motif) est inconnue.
+9. **Haras du Pin** : budget, déficit et effectif actuels inconnus ; chiffres 2016 au statut EXTRAIT.
+10. **Jardy** : mode de gestion et budget inconnus.
+11. **Aucun compte d'exploitation complet** d'un domaine privé de type S2 n'a été trouvé : les budgets S1/S2 devront être construits poste par poste (R1, R2) et non par analogie avec ces cas.
+12. Les recettes de l'agriculture, de la forêt et des locations dans les grands domaines familiaux (Courances, Brissac, Vaux) sont **INCONNUES** : leurs sociétés ne publient pas de comptes.
+
+## Chiffres clés pour le modèle
+
+| # | Donnée | Valeur | Unité | Année | Statut | Source |
+|---|---|---|---|---|---|---|
+| 1 | Budget annuel d'entretien de Vaux-le-Vicomte | 9 (8 selon Wikipédia) | M€/an | 2016 (n.d.) | PAGE LUE | [R4-31] [R4-30] |
+| 2 | Part des aides de l'État dans ce budget (Vaux) | 4 | % | 2016 | PAGE LUE | [R4-31] |
+| 3 | Part des jardins à la française dans le budget (Vaux) | 10 | % | 2016 | PAGE LUE | [R4-31] |
+| 4 | Salariés de Vaux-le-Vicomte | 75 ETP (tranche 50-99) | ETP | n.d. / 2024 | PAGE LUE | [R4-30] [R4-02] |
+| 5 | Dépense annuelle par visiteur à Vaux | 27 à 30 | €/visiteur | 2016 | ESTIMATION | [R4-30] [R4-31] |
+| 6 | Recettes et visiteurs de Chantilly | 12,7 M€ pour 658 000 visiteurs (≈ 19 €/visiteur) | M€ ; visiteurs | 2025 | PAGE LUE (secondaire) | [R4-46] |
+| 7 | Besoin de restauration de Chantilly | 68 sur 10 ans (≈ 6,8/an) | M€ | 2026 | PAGE LUE | [R4-46] |
+| 8 | Charges annuelles et déficit d'exploitation de Chantilly | 13 ; -6 | M€ | 2020 | EXTRAIT | [R4-47] |
+| 9 | Fréquentation moyenne d'un monument privé ouvert | ≈ 6 000 | visiteurs/an | 2022 | ESTIMATION (9 M / 1 500) | [R4-51] |
+| 10 | Dépense fiscale MH par monument privé | < 1 750 | €/an | PLF 2022 | PAGE LUE | [R4-51] |
+| 11 | Durée moyenne de détention d'un MH privé | ≈ 7 | ans | 2017 et 2022 | PAGE LUE (chiffre déclaratif) | [R4-51] [R4-52] |
+| 12 | Châteaux-hôtels (CA ≥ 1 M€) en perte | 61 % (20/33) ; marge nette médiane -6,3 % ; CA médian 2,18 M€ | % ; € | 2017-2025 | ESTIMATION | [R4-34] [R4-35] |
+| 13 | Domaine des Étangs, société hôtelière | CA 3,47 ; RN -3,20 | M€ | 2025 | PAGE LUE | [R4-08] |
+| 14 | Domaine des Étangs, société agricole | CA 1,82 ; RN -4,36 | M€ | 2024 | PAGE LUE | [R4-08] |
+| 15 | Restauration de Chenonceau (Chenonceau Castellum) | CA 5,64 ; RN +1,11 | M€ | 2025 | PAGE LUE | [R4-05] |
+| 16 | Fréquentation de Chenonceau | ≈ 900 000 | visiteurs/an | 2017 | PAGE LUE | [R4-87] |
+| 17 | Fréquentation de Cheverny | 349 200 | visiteurs | 2016 | PAGE LUE (Wikipédia) | [R4-84] |
+| 18 | Breteuil : visiteurs et équipe | 120 000 ; 10 salariés | visiteurs/an ; salariés | avant 2020 | PAGE LUE (Wikipédia) | [R4-82] |
+| 19 | Séminaires en château, grande échelle (Villiers-le-Mahieu) | CA 11,13 ; RN +1,25 | M€ | 2025 | PAGE LUE | [R4-34] |
+| 20 | Opérateur Châteauform' France | CA 186,4 ; RN +3,4 (≈ 1,8 %) | M€ | 2025 | PAGE LUE | [R4-37] |
+| 21 | Pôle international du cheval (SEM) | CA 1,94 ; RN -0,26 | M€ | 2024 | PAGE LUE | [R4-15] |
+| 22 | Haras d'Étreham (SARL de Chambure) | CA 12,96 ; RN -0,38 | M€ | 2024 | PAGE LUE (rattachement : ESTIMATION) | [R4-26] |
+| 23 | Haras de Hus | CA 1,77 ; RN -2,94 | M€ | 2024 | PAGE LUE | [R4-39] |
+| 24 | Domaine équestre de la Bonde (hôtel équestre) | CA 2,12 ; RN +0,105 | M€ | 2024 | PAGE LUE | [R4-93] |
+| 25 | Château de Pommard (deux sociétés) | RN cumulé -4,37 | M€ | 2025 | PAGE LUE | [R4-28] |
+| 26 | Mothe-Chandeniers : achat ; collecte totale | 0,5 ; ≈ 4,4 (25 000 co-châtelains) | M€ | 2017 ; 2017-2024 | PAGE LUE | [R4-41] [R4-62] |
+| 27 | Mise aux normes ERP d'une salle de réception (cas DH) | > 100 000 € ; > 2 ans de procédure | € ; ans | 2017 | PAGE LUE | [R4-52] |
+| 28 | Choc de type 2020 sur un leader (Puy du Fou) | CA -43 % ; perte 23 M€ | % ; M€ | 2020 | PAGE LUE (Wikipédia) | [R4-42] |
+| 29 | Ygrande (hôtel + écurie liquidé en 2025) : domaine, écurie, effectif | 40 ha ; 26 boxes ; 20-49 salariés (société hôtelière) | ha ; boxes ; salariés | effectif 2024 ; site consulté en 2026 | PAGE LUE | [R4-23] [R4-22] |
+| 30 | Soutien de l'État à Chantilly | 0,8 M€/an = 40 % des travaux prévus | M€/an | 2016-2026 | PAGE LUE | [R4-45] |
+
+## 6. Bilan d'outillage
+
+- WebSearch : 15 sur 15 autorisées.
+- WebFetch : 99 appels (dont environ 16 sans contenu exploitable : 403, 404, 502, 503, DNS, redirection, page fermée). Les moteurs internes utilisés sont ceux de sites officiels (API Recherche d'entreprises, API BODACC de la DILA, Companies House), conformément aux règles.
+- Deux PDF de La Demeure Historique ont été extraits localement (pdftotext) après téléchargement par WebFetch, dans un dossier isolé du scratchpad.
+- Aucune commande git, aucun contact, aucun formulaire.

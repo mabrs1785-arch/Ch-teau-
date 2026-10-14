@@ -436,3 +436,69 @@ Pour chaque piste :
 - les preuves.
 
 Pour le moteur extérieur : le capital ou l'entreprise nécessaires pour produire 0,3, 0,6 ou 1,2 M€ par an de trésorerie disponible après impôts, avec les conditions de pérennité.
+
+---
+
+# Vague 2 — recherches ciblées (lancées après la synthèse de la vague 1)
+
+Contexte acquis en vague 1 (à ne pas refaire) :
+- Besoin annuel central estimé : S1 ≈ 0,33 M€, S2 ≈ 1,23 M€, S3 ≈ 3,4 M€.
+- Les activités sur place (équestre, mariages, hébergement, dépendances, foncier) ne couvrent que de petites fractions de ce besoin.
+- Les seuls mécanismes à la bonne échelle trouvés sont :
+  - les revenus immobiliers des grands domaines britanniques ;
+  - un capital dédié ou une entreprise extérieure ;
+  - une activité de très grande échelle : visite de masse, séminaires industriels.
+
+Budget web vague 2 : **10 WebSearch maximum par agent**, sans plafond de WebFetch. Mêmes règles que la vague 1, notamment Regles_agents.md.
+
+## V2A — Bail à un exploitant (« locataire d'ancrage ») : séminaires, hôtel, club
+
+Fichier : `01_RECHERCHE/V2A_bail_exploitant.md`. Sources : `sources/sources_V2A.csv` (identifiants V2A-xx).
+
+Questions :
+1. **Châteauform' et ses concurrents** (Domaines de Fontenille, Esprit de France, Millésime, Les Maisons de Campagne…). Possèdent-ils les châteaux ou les louent-ils ? Par quel type de contrat : bail commercial, contrat de gestion, crédit-bail ?
+   - Le propriétaire touche-t-il un loyer fixe ou un pourcentage du chiffre d'affaires ? À combien ?
+   - Durée du bail ? Qui paie les travaux ?
+   - Sources à privilégier : comptes publiés via recherche-entreprises.api.gouv.fr (cette API marche par intermittence), rapports annuels, presse économique, annonces de cession, délibérations publiques quand le bailleur est une collectivité.
+2. **Comparables** : loyers des baux hôteliers en France, en % du chiffre d'affaires ou en €/chambre (hôtels de campagne, châteaux-hôtels, résidences de tourisme). Données publiques de sociétés foncières hôtelières ou d'experts : MKG, In Extenso, Cushman, BNP Paribas RE.
+3. **Propriétaires privés** qui louent leur château (ou une grande partie) à un exploitant tout en continuant à vivre sur le domaine. Exemples réels, conditions connues, difficultés, cohabitation. Courances est-il un cas (séminaires confiés à un opérateur) ?
+4. **Conditions d'entrée** pour qu'un exploitant de séminaires s'intéresse à un domaine :
+   - distance de Paris ou d'une métropole ;
+   - nombre de chambres minimal ;
+   - investissements à la charge de qui ;
+   - durée.
+5. **Risques** : défaillance de l'exploitant (procédures collectives), clause de renouvellement du bail commercial, indemnité d'éviction, statut des baux commerciaux, déplafonnement.
+
+Livrable :
+- un tableau des modèles de contrat (loyer, durée, travaux, risques) ;
+- une estimation argumentée du loyer qu'un domaine S2 ou S3 pourrait percevoir, ou INCONNU si les données manquent.
+
+## V2C — Budgets réels déclarés et leviers de « prestige efficace »
+
+Fichier : `01_RECHERCHE/V2C_budgets_reels_et_leviers.md`. Sources : `sources/sources_V2C.csv` (identifiants V2C-xx).
+
+Questions :
+1. **Budgets annuels déclarés** par des propriétaires de châteaux ou de grands domaines en France et en Belgique : interviews de presse, livres, documentaires, enquêtes de La Demeure Historique ou des VMF, « enquête Tournelle ».
+   - Montants, postes, effectifs, surfaces, hectares.
+   - Distinguer « dépensé » et « nécessaire ».
+   - Objectif : confronter notre budget calculé (S1 ≈ 0,33 M€, S2 ≈ 1,23 M€, S3 ≈ 3,4 M€ par an, tout compris avec provisions) à des cas réels.
+2. **Leviers de réduction du coût sans perte de prestige**, chiffrés si possible :
+   - gestion différenciée des espaces verts, avec gain de temps ou de coût ;
+   - fauche tardive ;
+   - éco-pâturage, notamment par des chevaux ou des moutons dans un parc ;
+   - remplacement des buis malades (pyrale) ;
+   - mutualisation de personnel entre domaines, groupements d'employeurs ;
+   - sous-traitance contre salariat ;
+   - chaudière bois ou plaquettes issues des bois du domaine, réseaux de chaleur ;
+   - isolation des combles ;
+   - zonage du chauffage.
+3. **Ratios réels jardiniers/hectare** dans des domaines privés (Vaux-le-Vicomte, Courances, Chantilly, Villandry, Château de Breteuil…) ou des parcs publics, et coûts au m² des espaces verts des collectivités : marchés publics, Plante & Cité, observatoires.
+4. **Évolution de long terme des coûts** :
+   - salaires du paysage et de l'agriculture ;
+   - indice BT01 sur 20 ans ;
+   - prix de l'énergie, assurance des monuments (hausse récente).
+   Il s'agit de calibrer les dérives réelles du modèle sur 20 ans.
+
+Livrable :
+- un tableau des cas réels ;
+- un tableau des leviers, avec effet chiffré, source et conditions.

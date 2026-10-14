@@ -143,3 +143,109 @@ p("dette_taux", "Taux d'intérêt de l'emprunt", 0.042, fav=0.035, dfv=0.055, un
   note="Crédits immobiliers aux particuliers : 3,27 % sur 20 ans (août 2026). Prime ajoutée pour un "
        "bien atypique ou un emprunteur professionnel.")
 p("dette_duree", "Durée de l'emprunt", 20, fav=25, dfv=15, unite="années", statut="HYPOTHÈSE", groupe=G)
+
+# =============================================================================
+# PERSONNEL (sources : agent R2 — coûts employeur issus du simulateur officiel URSSAF, 2026)
+# Effectifs = HYPOTHÈSES : domaine et chevaux du propriétaire seulement (pas d'activité commerciale).
+# =============================================================================
+G = "Personnel — coûts employeur annuels"
+NOTE_URSSAF = ("Coût employeur annuel calculé par R2 avec le simulateur officiel URSSAF (RGDU 2026, SMIC à "
+               "12,31 €/h depuis le 01/06/2026). Le niveau de salaire en multiple du SMIC est une HYPOTHÈSE, "
+               "faute de salaires de marché publiés.")
+p("S2_cout_direction", "S2 — régisseur de domaine (2,0 / 2,5 / 3,0 SMIC)", 79253, fav=62277, dfv=96730,
+  unite="€/ETP/an", statut="ESTIMATION", sources="R2-11; R2-07", groupe=G, note=NOTE_URSSAF)
+p("S3_cout_direction", "S3 — directeur de domaine (2,5 / 3,0 / 3,5 SMIC)", 96730, fav=79253, dfv=115000,
+  unite="€/ETP/an", statut="ESTIMATION", sources="R2-11", groupe=G,
+  note=NOTE_URSSAF + " Valeur défavorable extrapolée (au-delà des points du simulateur).")
+p("S1_cout_direction", "S1 — régisseur (sans objet)", 0, unite="€/ETP/an", statut="HYPOTHÈSE", groupe=G)
+p("cout_admin_salarie", "Assistant(e) administratif(ve) / comptable (1,4 / 1,5 / 1,6 SMIC)", 44289,
+  fav=40479, dfv=48000, unite="€/ETP/an", statut="ESTIMATION", sources="R2-11; R2-05", groupe=G,
+  note=NOTE_URSSAF)
+p("cout_chef_jardinier", "Chef jardinier (1,5 / 1,75 / 2,0 SMIC)", 53470, fav=44289, dfv=62277,
+  unite="€/ETP/an", statut="ESTIMATION", sources="R2-11; R2-07", groupe=G, note=NOTE_URSSAF)
+p("cout_jardinier", "Jardinier qualifié (1,1 / 1,2 / 1,3 SMIC)", 32531, fav=28346, dfv=36566,
+  unite="€/ETP/an", statut="ESTIMATION", sources="R2-11; R2-07", groupe=G,
+  note=NOTE_URSSAF + " Grille du paysage O.4 à O.6 = 12,59 à 13,56 €/h.")
+p("cout_agent_entretien", "Gardien, homme d'entretien (1,2 / 1,3 / 1,4 SMIC)", 36566, fav=32531,
+  dfv=40479, unite="€/ETP/an", statut="ESTIMATION", sources="R2-11", groupe=G, note=NOTE_URSSAF)
+p("cout_ouvrier_agricole", "Ouvrier agricole qualifié (1,1 / 1,2 / 1,3 SMIC)", 32531, fav=28346,
+  dfv=36566, unite="€/ETP/an", statut="ESTIMATION", sources="R2-11; R2-09", groupe=G, note=NOTE_URSSAF)
+p("cout_soigneur", "Soigneur, palefrenier (1,0 / 1,0 / 1,1 SMIC)", 23973, fav=23853, dfv=28216,
+  unite="€/ETP/an", statut="ESTIMATION", sources="R2-11; R2-05", groupe=G, note=NOTE_URSSAF)
+p("cout_resp_ecurie", "Responsable d'écurie, cavalier (1,3 / 1,4 / 1,5 SMIC)", 40479, fav=36566,
+  dfv=44289, unite="€/ETP/an", statut="ESTIMATION", sources="R2-11; R2-05", groupe=G, note=NOTE_URSSAF)
+p("cout_maison", "Employé(e) de maison, particulier employeur (1,0 / 1,1 / 1,2 SMIC × 1,30)", 32038,
+  fav=29125, dfv=34950, unite="€/ETP/an", statut="ESTIMATION", sources="R2-03; R2-12", groupe=G,
+  note="Particulier employeur : pas de RGDU ; coût estimé à brut × 1,30 par R2 (fragile, à vérifier "
+       "avec le simulateur CESU).")
+p("S1_cout_gouvernance", "S1 — gouvernante (sans objet)", 0, unite="€/ETP/an", statut="HYPOTHÈSE", groupe=G)
+p("S2_cout_gouvernance", "S2 — gouvernante (1,3 / 1,4 / 1,5 SMIC × 1,30)", 40776, fav=37863, dfv=43688,
+  unite="€/ETP/an", statut="ESTIMATION", sources="R2-03; R2-12", groupe=G)
+p("S3_cout_gouvernance", "S3 — majordome et gouvernante, coût moyen par ETP", 58251, fav=50000,
+  dfv=66000, unite="€/ETP/an", statut="ESTIMATION", sources="R2-03; R2-12", groupe=G,
+  note="Moyenne d'un majordome à 2,5 SMIC (72 814 €) et d'une gouvernante à 1,5 SMIC (43 688 €), selon R2 § 9.4.")
+
+G = "Personnel — effectifs (ETP) du domaine"
+NOTE_ETP = ("HYPOTHÈSE d'effectif pour le domaine et les chevaux du propriétaire uniquement. R2 compte "
+            "13 ETP en S2 et 29 ETP en S3 avec une écurie pleine de 40 à 50 chevaux : l'excédent relève "
+            "d'une activité de pension, modélisée à part comme moteur de revenus.")
+for scen, vals in {
+    "S1": dict(direction=0, admin=0, chef_jardinier=0, jardin=1.0, entretien=0, agricole=0, soigneur=0.6,
+               resp_ecurie=0, gouvernance=0, maison=0.5),
+    "S2": dict(direction=1, admin=0, chef_jardinier=1, jardin=2, entretien=1, agricole=1, soigneur=1,
+               resp_ecurie=1, gouvernance=1, maison=1),
+    "S3": dict(direction=1, admin=1, chef_jardinier=1, jardin=11, entretien=2, agricole=2, soigneur=1.5,
+               resp_ecurie=1, gouvernance=2, maison=2),
+}.items():
+    for role, etp in vals.items():
+        p(f"{scen}_etp_{role}", f"{scen} — ETP {role.replace('_', ' ')}", etp, unite="ETP",
+          statut="HYPOTHÈSE", sources="R2", groupe=G, note=NOTE_ETP)
+
+# =============================================================================
+# JARDINS, TERRES, ÉQUIPEMENTS, CHEVAUX (sources : agent R2)
+# =============================================================================
+G = "Jardins, terres, équipements, chevaux"
+p("jardin_ha", "Jardins réguliers : fournitures, végétaux, traitements, sous-traitance (hors personnel)",
+  5000, fav=3000, dfv=8000, unite="€/ha/an TTC", statut="HYPOTHÈSE", sources="R2", groupe=G,
+  note="Coûts au m² introuvables (Plante & Cité réservé aux adhérents). Hypothèse à remplacer par des devis.")
+p("parc_ha", "Parc : fauche, élagage par arboriste, replantation (hors personnel)", 800, fav=500,
+  dfv=1500, unite="€/ha/an TTC", statut="HYPOTHÈSE", sources="R2", groupe=G)
+p("prairie_ha", "Prairies : entretien hors récolte", 180, fav=120, dfv=250, unite="€/ha/an",
+  statut="ESTIMATION", sources="R2-17; R2-26", groupe=G,
+  note="Repères : 120 €/ha (2012, entretien par un professionnel) et 185 €/ha/an (2008, hors récolte).")
+p("cloture_ml", "Clôture équestre de qualité posée", 35, fav=20, dfv=60, unite="€/ml",
+  statut="HYPOTHÈSE", sources="R2", groupe=G, note="Fourchette proposée par R2 sans source (20 à 60 €/ml).")
+p("cloture_vie", "Durée de vie des clôtures", 20, fav=25, dfv=15, unite="années", statut="HYPOTHÈSE",
+  sources="R2", groupe=G)
+p("bois_cout_ha", "Bois : gestion courante", 30, fav=15, dfv=60, unite="€/ha/an", statut="HYPOTHÈSE",
+  groupe=G, note="À recouper avec R8 (revenu forestier net).")
+p("S1_valeur_equip", "S1 — parc de matériel à neuf (tracteur compact, broyeur, épandeur, tondeuses, utilitaire)",
+  170000, unite="€ HT", statut="ESTIMATION", sources="R2-30", groupe=G,
+  note="≈ 130 000 € selon le guide des cuma 2025-2026, plus ≈ 40 000 € de tondeuses et d'utilitaire (hypothèse).")
+p("S2_valeur_equip", "S2 — parc de matériel à neuf (2 tracteurs, télescopique, fenaison, épandeur, tondeuses, utilitaires)",
+  500000, unite="€ HT", statut="ESTIMATION", sources="R2-30", groupe=G,
+  note="≈ 436 000 € selon le guide des cuma, plus ≈ 60 000 € de tondeuses et de véhicules (hypothèse).")
+p("S3_valeur_equip", "S3 — parc de matériel à neuf", 665000, unite="€ HT", statut="ESTIMATION",
+  sources="R2-30", groupe=G, note="≈ 565 000 € selon le guide des cuma, plus ≈ 100 000 € (hypothèse).")
+p("equip_vie", "Durée de renouvellement moyenne du matériel", 10, fav=12, dfv=8, unite="années",
+  statut="SOURCÉ", sources="R2-30", groupe=G, note="Durées d'amortissement des cuma : 8,2 à 10,7 ans.")
+p("equip_entretien_taux", "Entretien, réparations et carburant du matériel, en % de sa valeur", 0.06,
+  fav=0.04, dfv=0.08, unite="% par an", statut="HYPOTHÈSE", sources="R2-30", groupe=G)
+p("cheval_an", "Coût annuel d'un cheval au box hors personnel (alimentation, litière, maréchal, vétérinaire, assurance, eau)",
+  4000, fav=2900, dfv=5500, unite="€/cheval/an TTC", statut="ESTIMATION",
+  sources="R2-17; R2-18; R2-24; R2-21", groupe=G,
+  note="Alimentation + litière 1 000 à 2 000 € ; maréchal 525 à 1 040 € ; soins 270 à 500 € ; aléas 300 à "
+       "500 € ; assurance 450 à 750 € (prix de 2012 majorés d'environ 20 %). Hors compétition.")
+p("sol_cout_m2", "Réfection des sols équestres (sable fibré, nivellement)", 12, fav=8, dfv=18,
+  unite="€/m²", statut="ESTIMATION", sources="R2-27", groupe=G,
+  note="Sable classique 3 à 8 €/m², fibré 10 à 15 €/m² (site commercial, fiabilité faible).")
+p("sol_vie", "Durée de vie d'un sol équestre", 10, fav=12, dfv=8, unite="années", statut="HYPOTHÈSE",
+  groupe=G, note="Durée de vie introuvable (R2).")
+p("box_entretien", "Entretien et renouvellement d'un box", 500, fav=300, dfv=900, unite="€/box/an",
+  statut="ESTIMATION", sources="R2-28", groupe=G, note="Box de 8 000 à 25 000 € sur 25 ans.")
+p("manege_cout_m2", "Manège couvert : coût de construction", 180, fav=150, dfv=250, unite="€/m²",
+  statut="ESTIMATION", sources="R2-27", groupe=G, note="220 000 à 305 000 € pour 60 × 25 m (fiabilité faible).")
+p("manege_vie", "Durée de vie d'un manège", 30, fav=35, dfv=25, unite="années", statut="SOURCÉ",
+  sources="R2-27", groupe=G, note="Acier galvanisé 30 à 40 ans ; bois 20 à 30 ans.")
+p("tfnb_ha", "Taxe foncière sur le non bâti", 12, fav=6, dfv=25, unite="€/ha/an", statut="HYPOTHÈSE",
+  groupe=G, note="Aucune donnée trouvée ; exonérations partielles possibles pour les terres agricoles (à vérifier, R3).")

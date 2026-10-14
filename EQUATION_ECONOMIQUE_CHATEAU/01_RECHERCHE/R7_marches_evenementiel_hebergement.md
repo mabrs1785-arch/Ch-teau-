@@ -8,11 +8,11 @@ S'y ajoutent environ 100 WebFetch, dont une vingtaine en échec (erreurs 403, 40
 
 **Résumé en 8 points** (détails et sources dans le corps du texte) :
 1. Environ 251 000 mariages en 2025 (INSEE), dont 59 % de juin à septembre et 82 % le samedi. Budget moyen de 19 293 € (Mariages.net) ; 12 % des réceptions en château dans ce panel.
-2. Forte concurrence : 1 382 châteaux et 3 769 domaines sur Mariages.net. Les monuments publics du CMN louent un week-end de mariage autour de 3 750 € HT.
+2. Forte concurrence : 1 382 châteaux et 3 769 domaines sur Mariages.net. Les monuments publics du CMN louent un mariage de 2 425 € HT (samedi) à 3 750 € HT (week-end de 3 jours) à La Motte Tilly.
 3. La location d'un château pour un mariage, sans traiteur, se situe autour de 4 000 à 10 000 € (HT/TTC rarement précisé). Les sociétés d'exploitation font 60 000 à 600 000 € de chiffre d'affaires, avec une marge nette de 0 à 6 %.
 4. Séminaires en château : 95 à 100 € HT par personne pour une journée d'étude, 160 à 275 € HT par personne et par jour en résidentiel. Le leader, Châteauform' France, fait 186 M€ de chiffre d'affaires avec une marge nette de 1,8 %.
 5. Tournages : grille officielle du CMN de 2 500 à 9 000 € HT par jour pour la fiction selon la catégorie. Fréquence inconnue, donc revenu occasionnel.
-6. Châteaux-hôtels : RevPAR haut de gamme de 100 à 180 € HT dans les départements de châteaux (2025) ; investissement de 350 000 à 700 000 € par chambre ; environ 1,65 salarié par chambre ; échecs nombreux (BODACC).
+6. Châteaux-hôtels : RevPAR haut de gamme de 100 à 160 € HT dans les départements de châteaux hors littoral (184 € dans le Calvados, 2025) ; investissement de 350 000 à 700 000 € par chambre ; environ 1,65 salarié par chambre ; échecs nombreux (BODACC).
 7. Gîtes : environ 45 % d'occupation par an. Location de luxe d'un château de 16 chambres : environ 56 000 à 62 000 € par semaine. Glamping : environ 22 000 € par module et par an.
 8. Visites : 15 à 20 € par adulte dans les grands sites, mais environ 6 000 visiteurs en moyenne par monument privé ouvert. Les visites ne financent pas un domaine.
 
@@ -114,7 +114,7 @@ La TVA n'est pas précisée dans la plupart des grilles. Le caractère HT ou TTC
 
 Source : CMN, « Grilles tarifaires privatisation » (PDF créé en novembre 2025) [R7-13]. Ce sont des **prix planchers HT et TTC**. Le PDF précise : « Tous les tarifs donnés sont des prix planchers et sont susceptibles d'évoluer selon la nature des évènements. »
 
-Ces tarifs publics, bas, fixent un **plafond de prix** pour un château privé de gamme moyenne situé à proximité d'un monument du CMN qui accepte les mariages.
+Ces tarifs publics, bas, fixent un **plafond de prix** pour un château privé de gamme moyenne situé à proximité d'un monument du CMN qui accepte les mariages. C'est une ESTIMATION.
 
 | Monument du CMN | Espace et durée | HT (à partir de) | TTC (à partir de) | Statut |
 |---|---|---|---|---|
@@ -198,12 +198,12 @@ Source : API officielle « recherche-entreprises.api.gouv.fr », qui reprend les
 
 | Société (commune, code NAF) | Année | Chiffre d'affaires | Résultat net | Marge nette (ESTIMATION, calcul) | Effectif (tranche INSEE) |
 |---|---|---|---|---|---|
-| SARL Château du Vau Réception (Ballan-Miré, 37 ; 93.29Z) | 2022 | 129 521 € | 443 € | 0,3 % | 1 à 2 salariés |
+| SARL Château du Vau Réception (Ballan-Miré ; 93.29Z) | 2022 | 129 521 € | 443 € | 0,3 % | 1 à 2 salariés |
 | Château du Taillis (Duclair, 76 ; 82.30Z) | 2021 | 77 147 € | 20 879 € | 27,1 % | 3 à 5 |
 | Château de Vauloge Promotion (Fercé-sur-Sarthe, 72 ; 82.30Z) | 2023 | 128 589 € | 3 823 € | 3,0 % | 1 à 2 |
 | Sté du Château de Chambly (siège à Rueil-Malmaison, 92 ; 82.30Z) | 2022 | 272 531 € | 14 594 € | 5,4 % | 3 à 5 |
 | Château Blanc (Neuville-Bosc, 60 ; 82.30Z) | 2020 | 64 178 € | 1 599 € | 2,5 % | non renseigné |
-| Chevillon Réception (Auxerre, 89 ; 93.29Z) | 2016 | 595 971 € | 38 265 € | 6,4 % | 3 à 5 |
+| Chevillon Réception (Auxerre ; 93.29Z) | 2016 | 595 971 € | 38 265 € | 6,4 % | 3 à 5 |
 | Châteauform' France (82.30Z), leader des séminaires | 2025 | 186 366 960 € | 3 406 336 € | 1,8 % | code « 42 » |
 | Groupe Châteauform (70.22Z, holding) | 2025 | 18 155 685 € | 5 608 044 € | — | — |
 
@@ -230,9 +230,9 @@ Le code « 42 » correspond à 1 000 à 1 999 salariés dans la nomenclature INS
 | Intentions des entreprises | « 44 % des entreprises utilisatrices prévoient d'investir dans les événements professionnels en 2026 » | PAGE LUE | [R7-24] |
 | **Taille du marché des séminaires résidentiels en France** | **INCONNU** : aucune donnée publique trouvée. Pour vérifier : Event Data Book d'Unimev (PDF non lié sur la page), études Xerfi (payantes), Coesio | INCONNU | — |
 | Châteauform', leader des séminaires en « maisons » : chiffre d'affaires en 2024 | « Ce sera notre meilleure année, avec un chiffre d'affaires proche des 300 millions d'euros. » (propos du dirigeant, 06/01/2025, donc avant la clôture des comptes) | PAGE LUE | [R7-25] |
-| Châteauform' : chiffre d'affaires 2019 et 2020 | « un chiffre d'affaires de 80 millions d'euros en 2020, contre 255 millions en 2019 ». Divergence : un résultat de recherche donne 237,6 M€ pour 2019 | PAGE LUE (255 M€) / EXTRAIT (237,6 M€) | [R7-26] |
+| Châteauform' : chiffre d'affaires 2019 et 2020 | « un chiffre d'affaires de 80 millions d'euros en 2020, contre 255 millions en 2019 » [R7-26]. Divergence : TourMaG (23/03/2022) écrit « le chiffre d'affaires s'est en effet réduit à 80 M€ contre 237,6 M€ en 2019 » [R7-74] | PAGE LUE (les deux) | [R7-26], [R7-74] |
 | Châteauform' : nombre de séminaires | « 7 000 séminaires l'an dernier [2020], contre 20 000 un an auparavant [2019] » | PAGE LUE | [R7-26] |
-| Châteauform' : parc de maisons | « près de 70 adresses » en 2021, dont 36 à Paris et en Île-de-France. Chiffre de 2021, non actualisé ; la croissance continue en Allemagne (« six maisons aujourd'hui, et donc neuf très bientôt ») | EXTRAIT (70 adresses) / PAGE LUE (Allemagne) | [R7-25] |
+| Châteauform' : parc de maisons | « près 70 adresses réparties en France (36 adresses à Paris et en Ile-de-France) et en Europe (23 lieux) » (mars 2022) ; maisons de grande taille, par exemple Marseille Longchamp « 51 chambres », Château de Herces « 59 chambres », Landhuis Marienheuvel « 67 chambres ». La croissance continue en Allemagne : « six maisons aujourd'hui, et donc neuf très bientôt » (janvier 2025) | PAGE LUE | [R7-74], [R7-25] |
 | Tendance des formats | Clients cherchant à « pouvoir réunir 50 ou 80 personnes » ; « les gens veulent la moitié de l'espace pour le double d'expérience » | PAGE LUE | [R7-25] |
 
 **ESTIMATIONS** :
@@ -253,7 +253,7 @@ Le code « 42 » correspond à 1 000 à 1 999 salariés dans la nomenclature INS
 | Centre des monuments nationaux, Château de Maisons | Salles pour un événement d'entreprise, le mardi de 9 h à 18 h | 3 500 € HT / 4 200 € TTC (prix plancher) | PAGE LUE (PDF) | [R7-13] |
 
 **Lecture pour le modèle** (ESTIMATION) :
-- **Journée d'étude** en château : environ 70 à 100 € HT par personne. Elle inclut la restauration, donc une marge brute limitée si le château n'a pas de cuisine propre.
+- **Journée d'étude** en château : environ 95 à 100 € HT par personne dans les châteaux observés (69 € HT dans un hôtel 4 étoiles). Elle inclut la restauration, donc une marge brute limitée si le château n'a pas de cuisine propre.
 - **Séminaire résidentiel** : environ 160 à 275 € HT par personne et par jour, avec une nuit.
 - Un séminaire résidentiel de 25 personnes sur 2 jours rapporte environ 25 × 2 × 200 à 275 €, soit **10 000 à 14 000 € HT**. C'est cohérent avec la moyenne d'environ 12 000 € par séminaire chez Châteauform'.
 - Il faut au moins une vingtaine de chambres, une cuisine professionnelle et du personnel de service. C'est une activité **hôtelière**, pas une simple location.
@@ -261,9 +261,9 @@ Le code « 42 » correspond à 1 000 à 1 999 salariés dans la nomenclature INS
 **Saisonnalité** : pas de statistique trouvée. Qualitativement, les séminaires se tiennent en semaine, hors juillet-août et hors fêtes de fin d'année. Ils sont donc complémentaires des mariages, qui ont lieu le samedi en été. C'est une HYPOTHÈSE classique non sourcée ici.
 
 **Concurrence** :
-- Le leader, Châteauform', exploite environ 70 lieux en propre (donnée de 2021) avec une marque nationale.
+- Le leader, Châteauform', exploite environ 70 lieux (donnée de mars 2022) avec une marque nationale. Ses maisons comptent souvent 50 à 70 chambres [R7-74] : c'est une échelle hors de portée d'un château privé.
 - Les plateformes (Funbooker, 1001 Salles, Bird Office) référencent de nombreux châteaux. Je n'ai pas de compteur lu ; c'est INCONNU.
-- Un château isolé à plus de 1 h 30 de Paris ou d'une métropole a peu de chances de capter des séminaires résidentiels réguliers. C'est une HYPOTHÈSE à vérifier, par exemple par la répartition géographique des maisons Châteauform', dont 36 sur 70 sont en Île-de-France [R7-25].
+- Un château isolé à plus de 1 h 30 de Paris ou d'une métropole a peu de chances de capter des séminaires résidentiels réguliers. C'est une HYPOTHÈSE à vérifier, par exemple par la répartition géographique des maisons Châteauform', dont 36 sur environ 70 sont à Paris et en Île-de-France [R7-74].
 
 ---
 
@@ -310,7 +310,7 @@ Statut de toutes les valeurs : PAGE LUE (PDF) [R7-12].
 |---|---|---|---|
 | Giggster, catégorie « Château » en France : 20 annonces visibles | De 60 €/h (manoir à Barzy-sur-Marne) à 1 235 €/h (grand domaine près de Pouancé) ; château de luxe à Bouffémont 1 000 €/h ; château en Provence (Sarrians) 895 €/h ; « Petit château » (Abjat-sur-Bandiat) 150 €/h. HT ou TTC non précisé | PAGE LUE | [R7-32] |
 | Giggster, coût moyen sur toute la plateforme | 273 €/h | PAGE LUE | [R7-32] |
-| Château de Gudanes (Ariège) : tournages et photos | Aucun tarif publié : frais « sur mesure ». Clients cités : Zimmermann, Cire Trudon, Dôen, Sézane, Mango Home… Chaque réservation inclut la « privatisation exclusive du château » | PAGE LUE | [R7-33] |
+| Château de Gudanes (Occitanie, d'après un EXTRAIT) : tournages et photos | Aucun tarif publié : frais « sur mesure ». Clients cités : Zimmermann, Cire Trudon, Dôen, Sézane, Mango Home… Chaque réservation inclut la « privatisation exclusive du château » | PAGE LUE | [R7-33] |
 | Château de Picomtal : photos en intérieur | 150 € par séance de 1 h 30 | PAGE LUE | [R7-07] |
 | Fondation du Château de Chillon (Suisse, pour comparaison) | CHF 1 000 par journée de tournage non promotionnel (2025) ; CHF 500 en 2020 | EXTRAIT | [R7-34] |
 | « Château lambda » : 4 500 € par jour (article de Slate, ancien) | 4 500 € par jour | EXTRAIT (page en 403) | [R7-35] |
@@ -390,7 +390,7 @@ In Extenso, bilan 2025 publié le 09/02/2026 [R7-39], [R7-40], PAGE LUE :
 |---|---|---|---|---|---|
 | Château Louise de La Vallière (Reugny, Indre-et-Loire), Relais & Châteaux, ouvert le 15/10/2022, parc de 19 ha | « 13,5 M€ y ont été investis » | « 20 chambres et suites » | **≈ 675 000 € par chambre** | PAGE LUE | [R7-41] |
 | Même établissement : effectif et prix | « L'effectif total projeté compte 33 personnes » ; « Les prix des chambres varient de 440 € pour une chambre à 850 € pour une suite » (TTC implicite, prix public) | — | ≈ 1,65 salarié par chambre | PAGE LUE | [R7-41] |
-| Château de Lignan (Hérault), LJ Hôtels, montée en gamme vers le 5 étoiles | « plus de 20 millions d'euros » | 37 clés (4 étoiles avant les travaux) | ≈ 540 000 € par clé ou plus | EXTRAIT (page en 503) | [R7-42] |
+| Château de Lignan (Hérault), LJ Hôtels, montée en gamme vers le 5 étoiles | « plus de 20 millions d'euros » | 37 clés (4 étoiles avant les travaux ; nombre de clés après travaux inconnu) | ≈ 540 000 € par clé ou plus | EXTRAIT (page en 503) | [R7-42] |
 | Château de Portereau (Vertou), futur 4 étoiles | 9 à 10 M€ | 26 chambres | ≈ 350 000 à 385 000 € par chambre | EXTRAIT (page en 503) | [R7-43] |
 | Château d'Eza (Alpes-Maritimes), passage au 5 étoiles en 2011 | 2 M€ | 11 chambres et suites | ≈ 180 000 € par chambre (rénovation partielle, 2011) | EXTRAIT | [R7-44] |
 
@@ -520,7 +520,6 @@ Le site revendique « 2 300 propriétés à louer », toutes destinations confon
 - **INCONNU** : la répartition des monuments privés par tranche de fréquentation. Je n'ai trouvé aucune statistique publique ; la recherche a été faite.
   - Pour vérifier, consulter l'enquête de La Demeure Historique auprès de ses adhérents (non publiée en ligne d'après mes recherches) ou les données de fréquentation du ministère de la Culture (publication « Patrimostat »).
 
-
 ### 7.2 Prix des billets observés (octobre 2026)
 
 | Site | Billet | Prix | HT/TTC | Statut | Source |
@@ -547,7 +546,7 @@ Le taux de TVA applicable aux droits d'entrée relève de R3 et n'est pas vérif
   - Ouverture d'environ 100 jours par an : juillet-août et week-ends de mai, juin et septembre.
   - Personnel : 2 agents d'accueil ou guides saisonniers pendant environ 4 mois, plus billetterie, assurance de responsabilité civile, sanitaires, signalétique et communication. Coût direct d'environ **40 000 à 60 000 € par an**. C'est une HYPOTHÈSE non sourcée.
   - Recette nette par visiteur d'environ 9 € HT, pour un billet de 10 à 12 € TTC, après TVA, gratuités et réductions. C'est une HYPOTHÈSE.
-  - **Seuil de rentabilité direct d'environ 4 500 à 6 500 visiteurs par an**, soit environ la moyenne estimée des monuments adhérents de La Demeure Historique (environ 6 000, §7).
+  - **Seuil de rentabilité direct d'environ 4 500 à 6 500 visiteurs par an**, soit environ la moyenne estimée des monuments adhérents de La Demeure Historique (environ 6 000, §7.1).
   - Conclusion : pour un château « ordinaire », les visites couvrent au mieux leurs propres coûts. Elles **ne financent pas** le domaine.
   - Leur intérêt est surtout **fiscal**, par le régime des monuments historiques ouverts au public (voir R3), et lié à l'**image**.
 - Pour la tranquillité, l'ouverture fait entrer le public dans la propriété pendant les jours d'ouverture. Elle est incompatible avec l'usage privé des pièces visitées pendant ces jours.
@@ -584,7 +583,7 @@ Conventions :
 | Activité | Chiffre d'affaires par unité | Marge contributive | Investissement | Personnel | Saisonnalité | Impact sur la tranquillité | Concurrence |
 |---|---|---|---|---|---|---|---|
 | **Mariages, location du lieu « nu » ou avec couchage** | 4 000 à 10 000 € par week-end sans hébergement (HT/TTC non précisé) [R7-07][R7-09][R7-10] ; 6 000 à 20 000 € avec 10 à 25 couchages (E) ; référence publique du CMN 2 400 à 4 400 € HT [R7-13]. Volume réaliste de 15 à 25 par an (E) | ? Marge nette des sociétés d'exploitation : 0 à 6 % [R7-63]. Marge contributive avant frais fixes : ? | Salle ERP : 100 000 € ou plus (1 cas, [R7-23]) ; sanitaires, parking, limiteur de son (?) | 0,5 à 1 ETP de coordination, plus des extras (H) | 59 % des mariages de juin à septembre ; 82 % le samedi [R7-15] | **Fort** : jusqu'à 3 h 30 du matin [R7-07], 60 à 150 invités, conflit avec les chevaux et la résidence | **Forte** : 1 382 châteaux et 3 769 domaines sur Mariages.net [R7-05][R7-06] ; environ 22 mariages par château et par an (E) |
-| **Séminaires** | Journée d'étude : 70 à 100 € HT par personne ; résidentiel : 160 à 275 € HT par personne et par jour [R7-27][R7-28][R7-29] ; environ 10 000 à 14 000 € par séminaire résidentiel (E) | Marge nette de Châteauform' France : 1,8 % (2025) [R7-63] ; marge contributive : ? | Lourd : 20 chambres ou plus, cuisine professionnelle, salles équipées (H) | Hôtelier : environ 93 000 à 186 000 € de chiffre d'affaires par salarié chez Châteauform' France (E : 186,4 M€ ÷ 1 000 à 1 999 salariés, tranche INSEE « 42 » à vérifier) | Semaine, hors juillet-août (H) | **Moyen** : en semaine, avec des soirées possibles | **Forte** : leader d'environ 70 lieux, dont 36 en Île-de-France (2021) [R7-25] ; la proximité de Paris est décisive (H) |
+| **Séminaires** | Journée d'étude : 95 à 100 € HT par personne en château (69 € en hôtel 4 étoiles) ; résidentiel : 160 à 275 € HT par personne et par jour [R7-27][R7-28][R7-29] ; environ 10 000 à 14 000 € par séminaire résidentiel (E) | Marge nette de Châteauform' France : 1,8 % (2025) [R7-63] ; marge contributive : ? | Lourd : 20 chambres ou plus, cuisine professionnelle, salles équipées (H) | Hôtelier : environ 93 000 à 186 000 € de chiffre d'affaires par salarié chez Châteauform' France (E : 186,4 M€ ÷ 1 000 à 1 999 salariés, tranche INSEE « 42 » à vérifier) | Semaine, hors juillet-août (H) | **Moyen** : en semaine, avec des soirées possibles | **Forte** : leader d'environ 70 lieux de 50 à 70 chambres, dont 36 à Paris et en Île-de-France (2022) [R7-74] ; la proximité de Paris est décisive (H) |
 | **Tournages et shootings** | Fiction : 2 500 à 5 500 € HT par jour ; catalogue : 1 700 à 3 000 € HT par jour (CMN B/C) [R7-12] ; Giggster : 60 à 1 235 € par heure [R7-32] | Élevée, avec peu de coûts directs (H) | Quasi nul : assurance, référencement | Présence du régisseur (H) | Irrégulière (?) | **Moyen** : ponctuel mais intense, avec camions et équipes | Plus de 2 300 décors en Île-de-France [R7-37] ; plus de 50 % des tournages en Île-de-France [R7-36] ; fréquence ? (H : 0 à 6 jours par an) |
 | **Château-hôtel** | RevPAR haut de gamme de 100 à 160 € HT dans les départements de châteaux hors littoral [R7-38], soit 36 500 à 58 400 € HT par chambre et par an (hébergement seul, E) ; prix publics de 440 à 850 € (Louise de La Vallière) [R7-41] | GOP : ? ; contrat de gestion : base de 2 à 4 % du chiffre d'affaires et incentive d'environ 10 % du GOP [R7-45] | **350 000 à 700 000 € par chambre** [R7-41][R7-42][R7-43] | Environ 1,65 salarié par chambre (Louise de La Vallière) [R7-41] | Annuelle, avec un creux en hiver hors fêtes (H) | **Très fort** : flux permanent ; compatible seulement avec une séparation stricte | Environ 150 créations d'hôtels par an [R7-40] ; échecs nombreux (Brindos, La Barge, Bricquebec…) [R7-64] |
 | **Gîtes et grandes maisons dans les communs** | Occupation des Gîtes de France : 44 à 47 % par an (environ 23 semaines) [R7-48][R7-50] ; 86 % en juillet-août [R7-49] ; prix moyen : ? | ? | Rénovation des communs (voir R1, R8) ; DPE de A à E exigé dans les communes à enregistrement, de A à D en 2034 [R7-52] | Ménage et accueil, sous-traitables (H) | Été très fort, ailes de saison moyennes | **Faible à moyen** si l'unité est autonome et éloignée | 4 900 meublés en Ardèche, par exemple [R7-50] ; marché très diffus |
@@ -633,18 +632,18 @@ Source : API open data du BODACC (DILA) [R7-64]. Statut : PAGE LUE, données off
 | S.A.S. Château de Brindos (Anglet, hôtel ; SIREN 431 703 610) | Liquidation judiciaire : liste des créances publiée le 13/09/2026 | 2018 : chiffre d'affaires de 1 809 262 €, **résultat net de −869 031 €** | [R7-64], [R7-63] |
 | Château de la Barge (Chaintré, hôtel-restaurant ; SIREN 450 011 820) | Liquidation judiciaire : liste des créances publiée le 07/06/2024. Sa holding a été clôturée pour insuffisance d'actif le 11/10/2024 | 2017 : chiffre d'affaires de 1 363 739 €, résultat net de −62 541 € | [R7-64], [R7-63] |
 | Groupe Cœur et Détente (Ygrande, Allier, 55.10Z, 20 à 49 salariés ; « Château d'Ygrande » selon un EXTRAIT [R7-66]) | « Jugement d'ouverture de liquidation judiciaire » le 28/10/2025 ; cessation des paiements le « 01 Septembre 2025 » ; activité « Hôtels et hébergement similaire », séminaires, séjours à thème | 2022 : résultat net de −102 330 € (chiffre d'affaires publié à 0, probablement non communiqué) | [R7-64], [R7-63] |
-| Château de Lucheux (Somme, acquisition, mise en valeur, exploitation, location) | Redressement judiciaire le 25/10/2024 (cessation au 25/04/2023), converti en liquidation le 20/12/2024, clôturé pour insuffisance d'actif le 19/12/2025 | — | [R7-64] |
+| Château de Lucheux (Lucheux : acquisition, mise en valeur, exploitation, location) | Redressement judiciaire le 25/10/2024 (cessation au 25/04/2023), converti en liquidation le 20/12/2024, clôturé pour insuffisance d'actif le 19/12/2025 | — | [R7-64] |
 | Rêve de Château (Barsac : chambres d'hôtes, séminaires, réceptions, mariages) | Clôture pour insuffisance d'actif le 05/01/2026 | — | [R7-64] |
 | Un Passage au Château (Varennes-lès-Mâcon : restaurant, séminaires, mariages, réceptions, chambres d'hôtes) | Liquidation judiciaire : liste des créances du 22/12/2025 | — | [R7-64] |
 | Château Saint-Michel et SCI homonyme (Rully, hôtel) | Liquidation judiciaire : liste des créances du 29/07/2025 | — | [R7-64] |
-| Le Château de Bricquebec (Manche, hôtel) | Clôture pour insuffisance d'actif le 09/09/2024, puis liste des créances en liquidation le 02/10/2024. Données incohérentes, à vérifier | — | [R7-64] |
+| Le Château de Bricquebec (Bricquebec-en-Cotentin, hôtel) | Clôture pour insuffisance d'actif le 09/09/2024, puis liste des créances en liquidation le 02/10/2024. Données incohérentes, à vérifier | — | [R7-64] |
 | Château-Hôtel Le Boisniard et Relais du Château Boisniard (Chambretaud : hôtel, restaurant, séminaires, réceptions, spa) | Dépôt de l'état des créances le 19/09/2025 | — | [R7-64] |
-| Château de Collias (Gard, hôtel-restaurant) | Redressement judiciaire le 04/06/2025, cessation au 15/04/2025 | — | [R7-64] |
-| Ragny le Château (Yonne : hébergement touristique, réceptions, mariages) | Redressement judiciaire le 05/10/2026, cessation au 05/04/2025 | — | [R7-64] |
-| Le Château de Busset (Allier, hôtel) | Liquidation judiciaire : liste des créances du 25/01/2024 | — | [R7-64] |
+| Château de Collias (Collias, hôtel-restaurant) | Redressement judiciaire le 04/06/2025, cessation au 15/04/2025 | — | [R7-64] |
+| Ragny le Château (Savigny-en-Terre-Plaine : hébergement touristique, réceptions, mariages) | Redressement judiciaire le 05/10/2026, cessation au 05/04/2025 | — | [R7-64] |
+| Le Château de Busset (Busset, hôtel) | Liquidation judiciaire : liste des créances du 25/01/2024 | — | [R7-64] |
 | Château de Charge (Razines, Indre-et-Loire) | Liquidation judiciaire le 07/05/2024, cessation au 07/11/2022 | — | [R7-64] |
 | Laetitia Bataillé Events (Var : mariages, location de salles, séminaires ; société récente) | Liquidation judiciaire le 28/07/2026, cessation au 23/07/2026 | — | [R7-65] |
-| **Issues non fatales** : Château de Quinéville (Manche, hôtel) ; Château Floridis (Deauville) ; Château du Bois-Guy (chambres d'hôtes) | Quinéville : liquidation puis « clôture pour extinction du passif » le 04/11/2024. Floridis : plan de sauvegarde de 10 ans le 03/09/2025. Bois-Guy : plan de redressement le 27/06/2025 | — | [R7-64] |
+| **Issues non fatales** : Château de Quinéville (Quinéville, hôtel) ; Château Floridis (Deauville) ; Château du Bois-Guy (chambres d'hôtes) | Quinéville : liquidation puis « clôture pour extinction du passif » le 04/11/2024. Floridis : plan de sauvegarde de 10 ans le 03/09/2025. Bois-Guy : plan de redressement le 27/06/2025 | — | [R7-64] |
 
 **Lecture** : les échecs touchent surtout des **châteaux-hôtels et restaurants** de 1 à 2 M€ de chiffre d'affaires, en perte récurrente (Brindos, La Barge), et de petits lieux mixtes (chambres d'hôtes, réceptions, mariages). Le modèle « château + hôtellerie-restauration » n'est **pas** une garantie de pérennité.
 
@@ -666,7 +665,7 @@ Source : API open data du BODACC (DILA) [R7-64]. Statut : PAGE LUE, données off
 4. **Données MKG** : la définition de la catégorie « Haut de Gamme » n'est pas donnée dans le PDF. L'échantillon est majoritairement urbain ; les chiffres départementaux ne décrivent pas les châteaux-hôtels de campagne.
 5. **Divergences conservées** :
    - taux d'occupation 2025 de 63 % ou 64 % selon les articles sur In Extenso ;
-   - chiffre d'affaires 2019 de Châteauform' de 255 M€ (page lue) ou 237,6 M€ (extrait) ;
+   - chiffre d'affaires 2019 de Châteauform' de 255 M€ [R7-26] ou 237,6 M€ [R7-74], deux pages lues ;
    - mariages 2024 : 247 000 (bilan provisoire) ou 248 174 (série révisée).
 6. **Tranches d'effectif INSEE** (« 42 » = 1 000 à 1 999 salariés, « 12 » = 20 à 49) : correspondance de mémoire, à vérifier dans la nomenclature INSEE.
 7. **API recherche-entreprises** : un chiffre d'affaires publié à « 0 » peut signifier des comptes non communiqués ou confidentiels, pas une activité nulle. Les comptes sont parfois anciens (2016-2023). L'API a été intermittente (erreurs 503).
