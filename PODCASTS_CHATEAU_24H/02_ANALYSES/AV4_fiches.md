@@ -152,7 +152,7 @@ Points d'écart avec le projet du client :
 - l'habitation privée sur place doit être isolée juridiquement des investisseurs (voir idées I1 et I8) ;
 - l'échelle de 12 ha et la cible de séminaires B2B à 1h20 de Paris sont des facteurs de succès à reproduire.
 
-### Passages importants (chapitres YouTube de la vidéo intégrale)
+### Passages importants (chapitres YouTube de la vidéo intégrale ; minutage identique à la timeline audio publiée par l'auteur dans le flux RSS, donc origine auteur confirmée)
 
 - 10:15 — Les critères principaux pour ce type de projet : https://www.youtube.com/watch?v=-sDU8zOpqXQ&t=615s
 - 18:49 — Le choix du positionnement et son impact : https://www.youtube.com/watch?v=-sDU8zOpqXQ&t=1129s
@@ -717,3 +717,932 @@ Il faut se faire connaître des **administrateurs et mandataires judiciaires** e
 - #296, 00:59:25 — Lancer en plein confinement
 
 **Note : 65/100.**
+
+---
+
+## F13 — Acquired « LVMH » : Bernard Arnault et la reprise de Boussac (1984)
+
+### Identification
+
+- **Réf.** : AV4-115.
+- **Intervenants** : Ben Gilbert et David Rosenthal (hôtes).
+- **Chaîne** : Acquired.
+- **Date** : 21/02/2023 (flux RSS).
+- **Durée** : 3:25:04.
+- **URL** : https://www.acquired.fm/episodes/lvmh
+- **Niveau d'accès** : TRANSCRIPTION TEXTE LUE (partielle). Transcription publiée par l'émission ; passages Boussac, Lazard, structure de holdings et coentreprise Guinness lus après recherche par mots-clés.
+
+### Analyse
+
+**Résumé du passage utile** (paraphrase fidèle).
+- L'empire textile Boussac, propriétaire de Christian Dior, fait faillite en 1978, passe aux frères Willot, puis retombe sous administration publique.
+- Bernard Arnault, issu d'une entreprise familiale de construction et passé par les États-Unis, monte une offre avec la banque Lazard (Antoine Bernheim).
+- Selon Acquired : **offre d'environ 60 M$**, dont **15 M$ apportés par la famille Arnault** et **45 M$ réunis par Lazard** auprès d'investisseurs. Boussac réalisait alors plus d'un milliard de dollars de chiffre d'affaires, mais perdait de l'argent.
+- Arnault restructure : environ 9 000 suppressions de postes sur 20 000, selon les hôtes. Le groupe redevient rentable en deux ans.
+- Il **revend les actifs non stratégiques** : la division couches Peaudouce pour environ 400 M$, plus de 500 M$ au total. Il ne garde que Dior et Le Bon Marché.
+- Il empile une **structure en « poupées russes »** : holding familiale (Groupe Arnault), puis Agache (ancienne holding de Boussac), puis Dior. En cotant des minorités à chaque étage, il lève des capitaux sans perdre le contrôle.
+- En 1987-1988, une **coentreprise avec Guinness** (60/40, contrôlée par Arnault) lui sert de levier pour monter au capital de LVMH. Les hôtes résument : « le capital de Guinness n'est plus que du levier pour Arnault ».
+- Conclusion des hôtes : le levier « marche quand on a raison ». Mais, ajoute l'un d'eux, la plupart des histoires de levier finissent mal et ne sont jamais racontées.
+
+**Recoupement** (Wikipédia FR, Boussac Saint-Frères, qui cite Libération du 04/11/2010).
+- L'État (gouvernement Fabius) apporte **745 MF**.
+- Arnault doit réunir **400 MF** qu'il « ne possède pas ». La fortune familiale mobilisable est de **90 MF**.
+- Le tour de table d'Antoine Bernheim (Lazard, Banque Worms, Total, Elf Aquitaine) apporte **plus des trois quarts**.
+- Il emprunte ensuite **400 MF au Crédit lyonnais** (banque publique) pour racheter discrètement les parts des Willot et devenir majoritaire « au détriment de ses partenaires financiers ».
+- Condition de la reprise : conserver l'intégralité du groupe. Il revendra pourtant l'essentiel.
+
+**Statut : RECOUPÉ.** Ordre de grandeur cohérent : environ 20-25 % de fonds propres familiaux, le reste en argent des autres.
+
+**Mécanismes identifiés.**
+1. Un **vendeur public aux objectifs non financiers** (emplois, éviter une faillite symbolique) accepte un repreneur en échange d'engagements.
+2. **Argent des partenaires** réuni par une banque d'affaires de confiance.
+3. **Deuxième étage de levier** (dette) pour racheter les coactionnaires et prendre le contrôle.
+4. **Revente d'actifs non stratégiques** pour rembourser.
+5. **Cascade de holdings** pour lever des minoritaires sans perdre le contrôle.
+
+**Limites.**
+- Récit d'hôtes américains, montants en dollars approximatifs.
+- Contexte de 1984 (nationalisations, politique industrielle) non reproductible.
+- Engagements envers l'État non tenus, avec un coût de réputation.
+- Biais du survivant reconnu par les hôtes eux-mêmes.
+
+**Application au projet** (à petite échelle).
+- **(a)** Chercher des **vendeurs à motivation non financière** : commune, État (ventes du Domaine), hôpital, diocèse, famille sans successeur. Négocier sur les **conditions** (cahier des charges, ouverture au public, emplois, entretien) plutôt que sur le seul prix.
+- **(b)** **Revendre le non-stratégique** : forêt, terres excédentaires, dépendances, mobilier. Voir l'idée I9.
+- **(c)** Garder le **contrôle via la holding** quand on accueille des minoritaires dans la SCI et la société d'exploitation (voir Fontenay, F01).
+- **(d)** Ne jamais prendre d'engagements qu'on ne tiendra pas : sur un patrimoine local, la réputation est un actif.
+
+### Passages importants
+
+La transcription publiée n'a pas d'horodatage : aucun minutage n'est cité.
+
+**Note : 85/100.**
+
+---
+
+## F14 — La Martingale × Fundora : LBO, échecs et réussites du private equity (hors-séries #2, #5, #6)
+
+### Identification
+
+| Réf. | Contenu | Date | Durée |
+|---|---|---|---|
+| AV4-061 | #2 « 55 milliards pour Electronic Arts : anatomie du plus gros LBO de l'histoire » (page : « LBO : comment fonctionne vraiment l'effet de levier en private equity ? ») | 31/08/2026 | 35:40 |
+| AV4-062 | #5 « Comment ce deal a failli faire disparaître la Ligue 1 » | 21/09/2026 | 33:18 |
+| AV4-063 | #6 « L'opération légendaire qui a sauvé Burger King de la faillite » | 28/09/2026 | 38:11 |
+
+- **Intervenants** : Bradley Lafond (directeur général de Fundora, plateforme d'investissement) ; hôte Matthieu Stefani.
+- **URL** : https://lamartingale.io/tous/lbo-comment-fonctionne-vraiment-leffet-de-levier-en-private-equity/ (et pages #5 et #6).
+- **Niveau d'accès** : DESCRIPTION/CHAPITRES LUS (notes détaillées pour #2, timelines de l'auteur pour #2, #5 et #6). Série sponsorisée par une plateforme qui vend du non-coté.
+
+### Analyse
+
+**Mécanique LBO** (page #2) :
+- **LBO minoritaire** : un fondateur à 100 % d'une société valorisée 10 M€ vend 30 %, encaisse 3 M€ (« cash-out ») et garde 70 %. Le fonds peut aussi injecter de l'argent dans la société (« cash-in »).
+- **LBO majoritaire** : le fonds prend le contrôle.
+- La dette amplifie les gains et les pertes. Cas **TXU** : environ 45 Md$, dont environ 8 Md$ de fonds propres et 37 Md$ de dette. La chute des prix du gaz l'a mené au Chapter 11.
+- Distinction **TRI** (taux de rendement interne annuel) et **multiple** : le temps compte.
+
+**#5** : accord CVC-LFP après Mediapro ; gérer une erreur d'investissement ; risque acceptable.
+
+**#6** : 3G Capital rachète Burger King en 2010. « Investissement multiplié par 28 », selon l'épisode : DÉCLARATIF, non vérifié.
+
+**Limites** : contenu pédagogique et sponsorisé, sans rapport direct avec l'immobilier ou les PME.
+
+**Application au projet.**
+- La levée de Fontenay est en fait un **« cash-in minoritaire »** : 22 % cédés aux investisseurs.
+- La promesse faite aux investisseurs, « doubler la mise » entre 2030 et 2035 (soit 7 à 12 ans après 2023), équivaut à un **TRI d'environ 6 à 10 % par an** (calcul AV4 : 2^(1/12) − 1 ≈ 5,9 % ; 2^(1/7) − 1 ≈ 10,4 %).
+- C'est l'ordre de grandeur à proposer à des investisseurs patrimoniaux, à comparer aux 10 % visés par les club deals hôteliers (F17).
+- Le cas TXU rappelle qu'un domaine à revenus saisonniers ne supporte pas une dette calibrée sur un scénario optimiste.
+
+### Passages importants (timelines audio des auteurs)
+
+- #2, 00:05:19 — Comment les grandes entreprises se font racheter
+- #2, 00:14:00 — Les avantages et les risques d'un LBO
+- #2, 00:25:51 — La liquidité et le rendement du non coté
+- #5, 00:05:39 — Comment gérer une erreur d'investissement ?
+- #5, 00:13:55 — Private equity : quel est le risque acceptable ?
+- #6, 00:04:49 — Rachat par des fonds : l'alignement d'intérêts
+- #6, 00:29:50 — L'horizon d'investissement
+
+**Note : 60/100.**
+
+---
+
+## F15 — Family offices (corpus FR) : Stérin (Otium), Benabou, Biousse, Mulliez, Afflelou, Agami, Weil, Herrmann
+
+### Identification
+
+| Réf. | Contenu | Date | Durée | Accès |
+|---|---|---|---|---|
+| AV4-065 | GDIY #284, Pierre-Édouard Stérin (Otium Capital) | 16/10/2022 | 2:27:56 | notes et timeline (flux RSS GDIY) |
+| AV4-066 | GDIY #252, Michaël Benabou (Financière Saint James) | 06/04/2022 | 3:04:28 | notes et timeline |
+| AV4-067 | GDIY #249, Frédéric Biousse (Experienced Capital, Domaines de Fontenille) | 20/03/2022 | 2:37:36 | notes et timeline |
+| AV4-069 | GDIY #499, Alexandre Mulliez (FC Versailles) | 26/10/2025 | 2:55:19 | notes et timeline |
+| AV4-077 | Finscale HS #12, Romain Afflelou (AA&Sons) | 17/12/2022 | 37:00 | notes |
+| AV4-078 | Finscale HS #6, Laurent de Swarte (Agami) | 01/01/2022 | 30:10 | notes |
+| AV4-075 | LEVERAGE MEDIA, Pierre-Emmanuel Weil | inconnue (« il y a 8 mois ») | 1:10:08 | REPÉRÉ |
+| AV4-079 | Jérémy Nabais × Thierry Herrmann (foncière familiale) | 11/10/2026 | 48:49 | description complète et chapitres |
+| AV4-064 | La Martingale #269, Eric Tréguier | 12/06/2025 | 1:21:26 | notes |
+
+### Analyse
+
+**Ce que disent les descriptions.**
+- **Stérin** : fortune faite avec Smartbox, puis investissement via Otium Capital. Philanthropie : sa fortune est léguée au Fonds du Bien Commun. Chapitres « La vente de Smartbox » et « Otium Capital ».
+- **Benabou** : cofondateur de Vente-Privée. Il crée une **holding patrimoniale** (Financière Saint James) pour « revaloriser le potentiel des biens immobiliers ». Business angel.
+- **Biousse** : codirige le fonds **Experienced Capital** (marques de consommation) et crée **des hôtels dans des domaines** avec son conjoint Guillaume Foucher. Chapitre « Décomplexer le luxe en hôtellerie ». La Caisse des Dépôts cofinance ces domaines, selon un résultat de recherche (voir F21).
+- **Mulliez** (petit-fils de Gérard Mulliez) rachète le FC Versailles, qui perdait 7,5 M€ par saison selon la description. Il **documente tout** (série « Le Club ») : « build in public ».
+- **Afflelou** : family office familial. Philosophie, gouvernance, suivi des participations ; « le maître mot, c'est la transmission ».
+- **Agami** : multi family office. Différence single/multi, honoraires, montée du non-coté.
+- **Herrmann** : foncière familiale fondée en 1946. Description : « 100 M€ d'acquisitions et de cessions par an ». Club deals et co-investissement, effet de levier et diversification vers l'hôtellerie, achat d'indivisions décotées revendues « x2 », vente à perte pour couper ses pertes.
+
+**Critères implicites des family offices** (synthèse AV4 à partir des descriptions, non une citation) :
+- horizon long et transmission ;
+- gouvernance et alignement avec l'entrepreneur ;
+- préférence pour des **actifs tangibles avec un opérateur fort** (Herrmann, Biousse, Gloaguen en F20) ;
+- co-investissement en club deal plutôt que fonds aveugle.
+
+**Limites** : aucune interview n'est accessible en texte ; ce sont des intentions déclarées.
+
+**Application au projet.** Un family office peut financer un domaine équestre si trois conditions sont réunies :
+- **(a)** un opérateur crédible ;
+- **(b)** un actif patrimonial transmissible (foncier, bâti historique) ;
+- **(c)** un **usage** possible : chevaux, séminaires, réceptions familiales. La mission 1 parlait déjà d'« investisseur-usager ».
+
+Les cibles naturelles : foncières familiales régionales (type Herrmann), holdings d'entrepreneurs ayant vendu leur société (Benabou ; Anne-Laure Constanza, AV4-058, qui a repris Toulemonde Bochart après la vente d'Envie de Fraise), family offices passionnés de cheval (à identifier). La « transparence totale » (Mulliez, Nabais) sert d'outil de confiance.
+
+### Passages importants (timelines audio des auteurs ; chapitres YouTube pour Herrmann)
+
+- #284, 00:21:00 — La vente de Smartbox ; 00:46:00 — Otium Capital
+- #252, 01:46:06 — Business angel : comment aider les entrepreneurs à réussir
+- #249, 01:55:20 — Décomplexer le luxe en hôtellerie
+- #499, 01:29:32 — Le rachat express du FC Versailles ; 01:38:11 — Assumer son ambition et choisir de TOUT montrer
+- Herrmann, 11:06 — Club deals et co-investissement : https://www.youtube.com/watch?v=OoLm1Lt5-ug&t=666s
+- Herrmann, 15:03 — Effet de levier et diversification d'actifs : https://www.youtube.com/watch?v=OoLm1Lt5-ug&t=903s
+- Herrmann, 20:46 — Indivision : acheter décoté, revendre x2 : https://www.youtube.com/watch?v=OoLm1Lt5-ug&t=1246s
+
+**Note : 60/100.**
+
+---
+
+## F16 — GDIY #461 « Sébastien Bazin - PDG du groupe Accor » : séparer les murs de l'exploitation
+
+### Identification
+
+- **Réf.** : AV4-070.
+- **Intervenants** : Sébastien Bazin ; hôte Matthieu Stefani.
+- **Date** : 06/04/2025.
+- **Durée** : 2:18:46.
+- **URL** : https://www.gdiy.fr/podcast/sebastien-bazin/
+- **Niveau d'accès** : DESCRIPTION/CHAPITRES LUS (flux RSS).
+
+### Analyse
+
+- Accor s'est séparé de son immobilier pour se concentrer sur l'exploitation (stratégie « asset light »). Selon la description, ce choix lui a permis de survivre au Covid.
+- Le montant cité dans la description (« 180 milliards d'actifs immobiliers ») **n'est pas vérifié et paraît peu plausible**. À ne pas reprendre.
+- Chapitres sur les facteurs clés de succès en hôtellerie et sur l'impact d'Airbnb et de Booking.
+
+**Application au projet.** Le cœur de l'hôtellerie moderne repose sur la **dissociation entre propriétaires de murs et exploitants**. Pour un domaine, cela rend crédible :
+- **(a)** un montage où des investisseurs détiennent les murs et le porteur l'exploitation (mais l'habitation privée se complique) ;
+- **(b)** l'inverse : le porteur garde les murs et confie l'exploitation hôtelière à un opérateur sous bail ou contrat de gestion.
+
+Le choix dépend du profil du client (opérateur ou propriétaire).
+
+### Passages importants (timeline audio de l'auteur)
+
+- 00:31:01 — Le pari qui a sauvé Accor pendant le Covid
+- 01:19:21 — Les facteurs clé de succès en hôtellerie
+- 01:22:46 — Ce que Airbnb et Booking ont changé pour toujours
+
+**Note : 50/100.**
+
+---
+
+## F17 — La Martingale #311 « Investir dans l'hôtellerie à partir de 1000€ » (Steve Lepine, Monolithe)
+
+### Identification
+
+- **Réf.** : AV4-080.
+- **Intervenants** : Steve Lepine (fondateur de Monolithe, plateforme d'investissement hôtelier) ; hôte Matthieu Stefani.
+- **Date** : 02/04/2026.
+- **Durée** : 1:00:30.
+- **URL** : https://lamartingale.io/tous/investir-dans-lhotellerie-a-partir-de-1-000e/ (et site https://monolithe.co/).
+- **Niveau d'accès** : DESCRIPTION/CHAPITRES LUS (notes détaillées du site de l'émission). Site de Monolithe lu (PAGE LUE).
+
+### Analyse
+
+**Résumé.** Plaidoyer pour l'investissement hôtelier en « murs + fonds » : les investisseurs détiennent les murs **et** l'exploitation. Ils encaissent donc le chiffre d'affaires et captent la hausse de rendement liée à une meilleure gestion. Le risque est plus élevé que dans un bail classique.
+
+**Règles d'or** (selon l'invité) :
+
+| Critère | Repère |
+|---|---|
+| Segment | 2 à 4 étoiles |
+| Taille idéale | **20 à 50 chambres** (moins de 20 : pas d'économies d'échelle ; plus de 50-60 : concurrence des chaînes, prix d'acquisition élevés) |
+| Taux d'occupation minimal | 70-75 % en ville, 50-60 % en station saisonnière |
+| Coût par chambre | **environ 100 000 € en province** (exemple : Narbonne, nuitées à 80-100 €) ; 350 000 à 500 000 € à Paris en 3 étoiles |
+
+**Montage type** (notes de l'épisode) :
+- environ **2 M€ de fonds propres** d'investisseurs, plus **50-60 % de dette bancaire**, pour des actifs de **4-5 M€** ;
+- horizon de 5 ans ;
+- objectif d'environ **10 % par an**, soit environ 5 % distribués et 5 % capitalisés à la revente ;
+- frais : 3-4 % à l'entrée, une part du chiffre d'affaires pour la gestion, et un « carried » (intéressement du gérant) de 15-20 % au-delà de l'objectif.
+
+**Site de Monolithe** (S-AV4-46) :
+- chaque club deal est une émission obligataire (document d'information AMF), hors IFI ;
+- « la plupart des investissements » seraient éligibles au **150-0 B ter** (réinvestissement du produit de cession par les entrepreneurs qui vendent leur société) ;
+- pour posséder seul un hôtel, il faut **20 à 30 % d'apport**, soit au moins 1,5 M€ à Paris, ou « à partir de 500 k€ » en région pour « quelques rares hôtels ».
+
+**Statut.**
+- Repères et rendements : DÉCLARATIF (plateforme intéressée).
+- La règle 150-0 B ter est VÉRIFIÉE sur le BOFiP (version 2026). Depuis le 21/02/2026, le réinvestissement doit atteindre **70 % en 3 ans** (et non plus 60 % en 2 ans), avec conservation 5 ans. L'activité doit être commerciale, agricole, etc. La **gestion de son propre patrimoine immobilier, y compris la location meublée, est exclue**. Les biens immobiliers nécessaires à l'exploitation sont admis.
+- Le site de Monolithe n'a pas été vérifié sur l'éligibilité de chaque opération.
+
+**Application au projet.**
+1. Pour être « investissable » par des **club deals hôteliers**, la partie hébergement du domaine doit viser **au moins 20 chambres** et un exploitant crédible.
+2. Avec environ 100 k€ par chambre en province, 20-25 chambres représentent 2-2,5 M€ de valeur hôtelière. C'est l'ordre de grandeur d'un montage « 1 M€ de fonds propres d'investisseurs + 1-1,5 M€ de dette » (ESTIMATION AV4).
+3. L'objectif d'environ 10 % par an des investisseurs donne le **coût du capital** à battre.
+4. Le **150-0 B ter** ouvre un vivier d'investisseurs (voir l'idée I8), à condition que la société soit **exploitante intégrée** et que **l'habitation privée en soit exclue**.
+
+### Passages importants
+
+Aucun horodatage publié (ni page ni flux RSS).
+
+**Note : 80/100.**
+
+---
+
+## F18 — Extendam : un fonds qui achète des hôtels avec leurs exploitants (Kapi Club EP.5 et HospitalityON)
+
+### Identification
+
+| Réf. | Contenu | Date | Durée |
+|---|---|---|---|
+| AV4-081 | Kapi Club EP.5, « Créer le leader européen de l'investissement hôtelier et gérer plus de 350 hôtels - JM Palhon » (hôte Lauren Dannay) | inconnue (« il y a 2 ans ») | 47:50 |
+| AV4-083 | HospitalityON, « EXTENDAM, Bpifrance et Solanet signent le plus gros deal de l'année » | inconnue (« il y a 5 ans ») | 5:12 |
+
+- **URL** : https://www.youtube.com/watch?v=Fi433rXPRks et https://www.youtube.com/watch?v=Qi484fH4wVM (site https://www.extendam.com/).
+- **Niveau d'accès** : chapitres YouTube (origine non confirmée). Site d'Extendam lu.
+
+### Analyse
+
+**Modèle.** Site lu : Extendam acquiert « les murs et fonds de commerce d'hôtels » de milieu et de haut de gamme en Europe, et prend des participations « dans des PME propriétaires d'hôtels ». Ses équipes interviennent du sourcing à l'exploitation.
+
+Le reportage HospitalityON décrit un **rachat de la holding familiale SCSP** (plusieurs hôtels) par un trio : fonds hôtelier, Bpifrance et exploitant (Solanet Gestion Hôtelière).
+
+Chapitres de l'entretien : du fonds PME généraliste au fonds hôtelier, modèle Extendam, avantages « murs et exploitation », cycles, taux d'occupation, **rendement cible d'un hôtel**.
+
+**Limites.** Aucun chiffre accessible. « Leader européen » et « 350 hôtels » sont des affirmations de l'intéressé.
+
+**Application au projet.** Le montage **fonds spécialisé + exploitant + Bpifrance** est la voie institutionnelle pour racheter un **hôtel ou un domaine familial à transmettre**. Le porteur apporte l'exploitation et une petite part du capital ; le fonds porte l'essentiel des fonds propres.
+
+Pour un domaine équestre, il faudrait :
+- un **volet hôtelier significatif** (plus de 20 chambres) ;
+- un exploitant hôtelier associé, si le client n'en a pas l'expérience.
+
+### Passages importants
+
+- Kapi Club, 15:05 — Le modèle Extendam : https://www.youtube.com/watch?v=Fi433rXPRks&t=905s
+- Kapi Club, 20:20 — Les avantages de l'investissement en hôtellerie : murs et exploitation : https://www.youtube.com/watch?v=Fi433rXPRks&t=1220s
+- Kapi Club, 28:20 — Les cycles dans l'hôtellerie : https://www.youtube.com/watch?v=Fi433rXPRks&t=1700s
+- Kapi Club, 35:30 — Quel est le rendement cible d'un investissement dans un hôtel ? : https://www.youtube.com/watch?v=Fi433rXPRks&t=2130s
+- HospitalityON, 3:35 — Pourquoi vos deux sociétés se sont alliées ? : https://www.youtube.com/watch?v=Qi484fH4wVM&t=215s
+
+**Note : 70/100.**
+
+---
+
+## F19 — Kapi Club EP.3 « Créer un groupe de 12 hôtels parisiens en partant de 0 ! » (Yohann Benhamou, Malone Hotels)
+
+### Identification
+
+- **Réf.** : AV4-082.
+- **Date** : inconnue (« il y a 2 ans »).
+- **Durée** : 49:57.
+- **URL** : https://www.youtube.com/watch?v=Jfd_r9VcNUc
+- **Niveau d'accès** : chapitres et extrait de description (« néophyte dans le secteur et sans réseau »).
+
+### Analyse
+
+Entrepreneur entré dans l'hôtellerie **sans expérience ni réseau**, à la tête de 12 hôtels parisiens selon le titre.
+
+Chapitres :
+- étudier les dossiers avant d'investir ;
+- **TRI cibles pour un hôtel** ;
+- impact des Jeux olympiques ;
+- lutte avec Booking, Expedia et Google ;
+- **« Le ratio financement bancaire sur les dossiers »** ;
+- comment se lancer.
+
+**Limites** : aucun chiffre accessible. Contexte parisien (valeurs très supérieures à la province).
+
+**Application.** Contre-exemple au préjugé « il faut venir du métier ». À écouter pour les ratios bancaires réels (chapitre 41:30) avant de bâtir le plan de financement d'un volet hôtelier.
+
+### Passages importants
+
+- 7:00 — Comment étudier les dossiers avant d'investir : https://www.youtube.com/watch?v=Jfd_r9VcNUc&t=420s
+- 17:20 — Quels sont les TRI cibles pour un hôtel ? : https://www.youtube.com/watch?v=Jfd_r9VcNUc&t=1040s
+- 41:30 — Le ratio financement bancaire sur les dossiers : https://www.youtube.com/watch?v=Jfd_r9VcNUc&t=2490s
+- 45:20 — Comment se lancer dans l'hôtellerie ? : https://www.youtube.com/watch?v=Jfd_r9VcNUc&t=2720s
+
+**Note : 70/100** (pertinence élevée, accès faible).
+
+---
+
+## F20 — BUILD : « Entrepreneuriat hôtelier : comment bâtir une marque d'hôtels design à Paris » (Adrien Gloaguen, Touriste et Campings Liberté)
+
+### Identification
+
+- **Réf.** : AV4-084.
+- **Intervenants** : Adrien Gloaguen ; hôte Xavier Rodriguez (PDG du groupe Jarnias).
+- **Chaîne** : BUILD (Ausha et YouTube 3jeYoAxFhPA).
+- **Date** : 01/10/2025 (flux RSS). La vidéo YouTube est indiquée « il y a 1 an ».
+- **Durée** : 1:17:03.
+- **URL** : https://podcast.ausha.co/build/adrien-gloaguen-comment-il-est-devenu-le-proprietaire-des-hotels-les-plus-styles-de-paris
+- **Niveau d'accès** : DESCRIPTION/CHAPITRES LUS. Les chapitres YouTube, détaillés, sont d'origine non confirmée. Article TourMaG lu pour la vérification.
+
+### Analyse
+
+**Points de la description** :
+- refuser la standardisation ;
+- **« s'associer à des family office plutôt qu'à des gros fonds »** ;
+- le premium à prix accessible ;
+- viser **au moins 40 % d'EBITDA par hôtel**.
+
+**Vérification** (TourMaG, page lue) :
+- groupe Touriste **fondé en 2008** ;
+- 4 hôtels parisiens (Panache, Bienvenue, Beaurepaire, Deux Gares) et un hôtel en cours d'ouverture à Londres ;
+- **première ouverture de capital : 2,4 M€ apportés par Bpifrance**. Un résultat de recherche (CFNews) indique que le groupe était détenu à 100 % par son dirigeant jusque-là : non vérifié.
+
+**Statuts** :
+- 2,4 M€ de Bpifrance : VÉRIFIÉ ;
+- family offices et 40 % d'EBITDA : DÉCLARATIF.
+
+**Chapitres YouTube utiles** :
+- financement du premier hôtel ;
+- partenariat avec des family offices ;
+- achat du fonds de commerce ou des murs ;
+- diversification dans les campings et **intérêt pour les campings municipaux**.
+
+**Limites** : le récit du financement du premier hôtel n'est pas accessible en texte.
+
+**Application au projet.**
+1. Le modèle **« opérateur + family offices au capital des murs »** est la version hôtelière du club deal de Fontenay.
+2. **Bpifrance investit en fonds propres minoritaires** dans des groupes touristiques en croissance.
+3. Les **campings municipaux** (délégation de service public) sont une porte d'entrée peu capitalistique, voir F25.
+4. L'objectif de 40 % d'EBITDA donne la mesure de l'exigence opérationnelle attendue par ces partenaires.
+
+### Passages importants (chapitres YouTube, origine non confirmée)
+
+- 4:21 — Premier hôtel repris : https://www.youtube.com/watch?v=3jeYoAxFhPA&t=261s
+- 6:08 — Financement du premier hôtel : https://www.youtube.com/watch?v=3jeYoAxFhPA&t=368s
+- 17:26 — Retour sur investissement et business model : https://www.youtube.com/watch?v=3jeYoAxFhPA&t=1046s
+- 20:33 — Financement des hôtels et partenariat avec des family offices : https://www.youtube.com/watch?v=3jeYoAxFhPA&t=1233s
+- 53:02 — Achat du fonds de commerce ou des murs : https://www.youtube.com/watch?v=3jeYoAxFhPA&t=3182s
+- 56:36 — Diversification avec les campings : https://www.youtube.com/watch?v=3jeYoAxFhPA&t=3396s
+- 59:27 — Intérêt pour les campings municipaux : https://www.youtube.com/watch?v=3jeYoAxFhPA&t=3567s
+
+**Note : 80/100.**
+
+---
+
+## F21 — Banque des Territoires : l'investisseur public au capital des sociétés immobilières touristiques
+
+### Identification
+
+- **Réf.** : AV4-085, « Financement d'un hôtel – Région Normandie ».
+- **Chaîne** : Banque des Territoires (YouTube).
+- **Date** : inconnue (« il y a 4 ans »).
+- **Durée** : 1:42.
+- **URL** : https://www.youtube.com/watch?v=MCJRqI0nbZo
+- **Niveau d'accès** : REPÉRÉ (extrait de description). Sources complémentaires : pages de la Caisse des Dépôts et de la Banque des Territoires **INACCESSIBLES (maintenance)** le 14/10/2026. Leur contenu n'est connu que par des **résumés de résultats de recherche** (S-AV4-56 à 58).
+
+### Analyse
+
+**Extrait de la description** : la Banque des Territoires « a investi dans le programme hôtelier en montant au capital de la SCI qui porte le projet ». Le montant est tronqué dans l'extrait.
+
+**Informations secondaires** (résultats de recherche, **à confirmer**) :
+- la Banque des Territoires se positionne en **co-investisseur minoritaire en fonds propres** dans des sociétés propriétaires d'hébergements touristiques ;
+- elle a créé une **société commune avec Les Domaines de Fontenille** pour la croissance externe du groupe. Première acquisition : le Manoir du Sphinx (Perros-Guirec), financé par ses fonds propres et un prêt du Crédit Agricole ;
+- en **Bourgogne-Franche-Comté**, une **foncière hôtelière** (SAS de 5 M€) a été créée : Banque des Territoires 39 %, Région 20 %, Batifranc 20 %, banques régionales 21 %. Elle investit dans des murs d'hôtels ou dans des sociétés immobilières à objet hôtelier ;
+- à Bayeux, la Banque des Territoires a **prêté** 498 290 € à une SCI pour rénover un hôtel (projet de 2,8 M€).
+
+**Limites** : sources inaccessibles. À revérifier quand les sites seront rétablis.
+
+**Application au projet.** Si le domaine comprend un **volet hébergement touristique exploité par un opérateur qui porte le risque commercial**, une **foncière publique ou parapublique** peut réduire de manière significative les fonds propres à trouver. Le montant exact dépend de chaque dossier.
+
+**Le choix de la région** (encore inconnu, mission 1) peut tenir compte de l'existence de ces outils. La Bourgogne-Franche-Comté en a un, selon le résultat de recherche.
+
+### Passages importants
+
+Aucun (vidéo de 1:42 non accessible).
+
+**Note : 65/100** (piste institutionnelle forte, à confirmer).
+
+---
+
+## F22 — La Vie : « HÔTELLERIE : Comment reprendre un petit hôtel de campagne ? » (documentaire)
+
+### Identification
+
+- **Réf.** : AV4-087.
+- **Chaîne** : La Vie (YouTube).
+- **Date** : inconnue (« il y a 5 mois »).
+- **Durée** : 54:49.
+- **URL** : https://www.youtube.com/watch?v=JZzrqb6uIec
+- **Niveau d'accès** : chapitres YouTube (origine non confirmée).
+
+### Analyse
+
+Portraits de repreneurs de petits hôtels ruraux :
+- « Auvergne : l'investissement de 60 000 € de Laura et Richard » ;
+- un hôtel de 150 ans relancé ;
+- un 3 étoiles familial sur trois générations ;
+- des reconversions ;
+- cabanes finlandaises en kit ;
+- **« Chantier : quand le budget travaux triple »** ;
+- diversification en club de vacances.
+
+**Limites** : la nature de l'investissement de 60 000 € (fonds de commerce, apport, travaux ?) est inconnue.
+
+**Application.**
+- Le multiplicateur de dépassement de budget (×3 dans un cas filmé) rejoint les dépassements de Fontenay (F02). Il faut prévoir **une réserve pour imprévus d'au moins 30 %** (repère AV4) dans le plan de financement.
+- Des **hébergements légers** (cabanes en kit) permettent d'ajouter des couchages à faible coût.
+
+### Passages importants
+
+- 0:00 — Auvergne : l'investissement de 60 000 € de Laura et Richard : https://www.youtube.com/watch?v=JZzrqb6uIec&t=0s
+- 17:33 — Bretagne : construire ses cabanes finlandaises en kit : https://www.youtube.com/watch?v=JZzrqb6uIec&t=1053s
+- 22:05 — Chantier : quand le budget travaux triple : https://www.youtube.com/watch?v=JZzrqb6uIec&t=1325s
+- 28:33 — Diversification : transformer un hôtel en club de vacances : https://www.youtube.com/watch?v=JZzrqb6uIec&t=1713s
+
+**Note : 65/100.**
+
+---
+
+## F23 — S'endetter jeune : Jonathan Anguelov (#119) et Léo Nardecchia (#197), « Ça fait un bail ! »
+
+### Identification
+
+| Réf. | Contenu | Date | Durée |
+|---|---|---|---|
+| AV4-092 | « Acheter des hôtels et monter des licornes - Jonathan Anguelov (Aircall, Aguesseau Capital) #119 » | 25/06/2023 | 51:00 |
+| AV4-094 | « Investir à 25 ans avec 1 Million d'euros de dette - Léo Nardecchia #197 » | 18/11/2025 | 53:47 |
+
+- **Niveau d'accès** : DESCRIPTION/CHAPITRES LUS (notes du flux RSS).
+
+### Analyse
+
+**Anguelov.** À 19 ans, « plusieurs prêts étudiants » pour acheter 10 chambres de bonne à Paris exploitées en location saisonnière. Puis marchand de biens, achat de plusieurs hôtels (Maison Barbès, ouverte en plein Covid). Cofondateur d'Aircall. Montée en gamme des hôtels (gagner des étoiles).
+
+**Nardecchia.** À 25 ans, **1 M€ de dette levée**. Plus de 30 biens locatifs, des dizaines d'opérations de marchand de biens, plus de 300 investisseurs accompagnés comme chasseur immobilier. Il évoque une « levée de dettes intelligente ».
+
+**Statut** : DÉCLARATIF pour l'ensemble.
+
+**Limites.**
+- Contextes de taux bas, au moins pour le premier.
+- Le prêt étudiant détourné vers l'immobilier est un montage risqué, à ne pas recommander.
+
+**Application au projet.** À 26 ans, le levier bancaire reste accessible si **chaque opération est autoportante**. Une **activité de chasse ou de marchand de biens** constitue à la fois un historique bancaire, une épargne et un **réseau d'investisseurs** : c'est le même schéma que Nabais. Ce peut être une étape 2026-2029 avant le château.
+
+### Passages importants
+
+Aucun horodatage publié.
+
+**Note : 55/100.**
+
+---
+
+## F24 — Outils de financement du foncier : club deals (Wevest #250), marchand de biens (#258), terres agricoles (Hectarea #279), home equity (#290), Kapi (#268)
+
+### Identification
+
+| Réf. | Contenu | Date |
+|---|---|---|
+| AV4-096 | La Martingale #250 | 30/01/2025 |
+| AV4-095 | La Martingale #258 | 27/03/2025 |
+| AV4-098 | La Martingale #279 | 21/08/2025 |
+| AV4-100 | La Martingale #290 | 06/11/2025 |
+| AV4-097 | La Martingale #268 | 05/06/2025 |
+| AV4-099 | La Martingale #326 (forêt) | 16/07/2026 (repéré) |
+
+- **URL** : voir le catalogue.
+- **Niveau d'accès** : DESCRIPTION/CHAPITRES LUS (notes du site) sauf #326.
+
+### Analyse
+
+**Club deal immobilier** (#250, Hugo Wind, Wevest) :
+- une **société dédiée par projet** ;
+- l'analyse porte sur le porteur (expérience, capacité financière, implication), la structure financière (dette, apport, garanties) et le projet ;
+- **fonds débloqués par étapes** : acte notarié pour l'achat, devis pour les travaux ;
+- garanties : **hypothèque de 1er rang ou fiducie-sûreté** ;
+- risques : perte, retard, illiquidité ;
+- rendements « parfois 10-12 % » (DÉCLARATIF).
+
+**Marchand de biens** (#258, Yoni Buchsbaum) :
+- valeur créée par les travaux, le **changement de destination**, la **division** et le déblocage juridique ou administratif ;
+- marges « pouvant dépasser 20 % » (DÉCLARATIF, formateur).
+
+**Terres agricoles** (#279, Paul Rodrigues, Hectarea) :
+- investissement fractionné **dès 500 €** via des **obligations garanties par une hypothèque de 1er rang** ;
+- rendement global visé 4-7 % ;
+- prix moyen **6 000 à 8 000 €/ha** ;
+- passage obligé par la **SAFER** (droit de préemption) ;
+- « 30 % des terres acquises par des non-agriculteurs » : DÉCLARATIF.
+
+**Home equity** (#290) : un financeur paie la rénovation contre une part de la valeur future.
+
+**Kapi** (#268) : cercle privé d'investissement immobilier (club deals, crowdfunding, fractionné).
+
+**Limites.** Discours de plateformes qui vendent leurs produits. Les garanties de 1er rang réclamées par les club deals **entrent en concurrence** avec celles des banques.
+
+**Application au projet.**
+1. **Découper le financement par nature d'actif.** Le foncier agricole (une partie des 50 ha et plus) peut être porté par des investisseurs « terres », remboursés par un fermage payé par l'activité équestre agricole. Les bâtiments le sont par la SCI, l'exploitation par la SAS.
+2. **Revendre ou valoriser l'excédent** (logique de marchand de biens, idée I9).
+3. Si un club deal intervient, le **rang des sûretés** doit être négocié dès l'origine : la banque voudra le 1er rang.
+
+### Passages importants
+
+Aucun horodatage publié sur ces pages.
+
+**Note : 60/100.**
+
+---
+
+## F25 — Campings : Huttopia (délégations de service public), Radio Camping, reportages
+
+### Identification
+
+- **Réf.** : AV4-101 à 113 (Huttopia : 101 à 103 ; Radio Camping : 105 à 110 ; « Vous avez dit petit camping » : 104 ; reportages : 111 à 113).
+- **Dates** : flux Radio Camping de 2022 à 2025 ; YouTube relatives.
+- **Niveau d'accès** : DESCRIPTION LUE pour Radio Camping, REPÉRÉ pour les vidéos. Article TourMaG lu.
+
+### Analyse
+
+**Huttopia** (TourMaG, page lue) :
+- Huttopia reprend le réseau **OnlyCamp** (8 campings en Centre-Val de Loire et Pays de la Loire, créé par Récréa, spécialiste des délégations de service public) ;
+- Huttopia annonce développer ce réseau « par la reprise de campings via des **délégations de service public** ou par rachat ». « Trois campings ont déjà été repris dans ce cadre ».
+
+Autres éléments, seulement repérés :
+- un résultat de recherche (Modern Campground) mentionne un projet sur un **terrain privé de 27 ha avec un bail de 50 ans** (4-6 M€ d'investissement annoncés) ;
+- le reportage TVBA montre le **camping municipal d'Arcachon** devenu un Huttopia après un an de travaux.
+
+**Radio Camping** :
+- courtier spécialisé dans le **financement de l'achat de campings** (Coventis) ;
+- vente et valorisation de campings (Concerto, Cabinet Cantais, BDO) ;
+- **parcs résidentiels de loisirs (PRL)**, où les vacanciers sont propriétaires de leur parcelle ;
+- couple en reconversion ayant acheté un camping.
+
+**Limites** : aucun chiffre (descriptions sans montants).
+
+**Application au projet.**
+1. **Exploiter sans acheter.** Délégation de service public, concession ou bail emphytéotique sur un domaine public : la mission 1 a déjà relevé des exemples de baux emphytéotiques. Un château communal à restaurer peut se négocier ainsi.
+2. **Bail de longue durée sur le terrain d'autrui** (50 ans, Huttopia) : adaptable aux prairies et aux dépendances d'un domaine dont le propriétaire ne veut pas vendre.
+3. L'hôtellerie de plein air est un **secteur bancable** avec ses courtiers spécialisés. Un volet « glamping » ou cabanes adossé au domaine sera plus facile à financer que le château lui-même (voir aussi les lodges du château de Villeneuve, AV4-019).
+4. Le modèle **PRL** (parcelles vendues à des propriétaires) peut financer des équipements. Il suppose des autorisations d'urbanisme lourdes, point non vérifié.
+
+### Passages importants
+
+Aucun horodatage publié dans les descriptions consultées.
+
+**Note : 55/100.**
+
+---
+
+## F26 — Acquiring Minds « Buying a $7.3m Golf Course with No Money Down » (Kyle Holmes, Quail Ridge Golf Club)
+
+### Identification
+
+- **Réf.** : AV4-116.
+- **Intervenants** : Kyle Holmes (directeur, puis copropriétaire) ; hôte Will Smith.
+- **Chaîne** : Acquiring Minds.
+- **Date** : 24/09/2026.
+- **Durée** : 1:30:04.
+- **URL** : https://acquiringminds.co/articles/kyle-holmes-quail-ridge-golf-club
+- **Niveau d'accès** : TRANSCRIPTION TEXTE LUE (partielle : passages sur le financement, la valeur du terrain et les motivations des vendeurs), plus le résumé détaillé publié par l'hôte.
+
+### Analyse
+
+**Résumé.**
+- Kyle Holmes dirige depuis des années le golf public de Quail Ridge, près de Grand Rapids (Michigan). Le golf a été construit en 1998 par 23 investisseurs ; au moment de la vente, il en restait 8, dont 3 majoritaires.
+- Les propriétaires lui proposent de racheter. Avec le surintendant du parcours (Tim), il achète pour **7,3 M$ sans argent personnel**. Closing le 27/01/2025.
+
+**L'actif.**
+- 275 acres (environ 111 ha), dont environ 160 acres de parcours, un club-house, une structure événementielle et un atelier ;
+- environ 45 000 parcours par an ;
+- recettes : environ 70 % golf, 10 % practice, 6-7 % restaurant, le reste en événements.
+
+**Le prix.**
+- Cash-flow avant vente : 500 à 700 k$ par an les meilleures années.
+- Les golfs se vendent 4 à 9 fois l'EBITDA.
+- **Le terrain seul vaudrait au moins 10 M$** selon l'invité, mais il n'est pas entièrement constructible (zones humides, moitié d'un lac).
+- Offre à 6,5 M$, contre-offre à 7,3 M$ acceptée. Expertise d'un évaluateur spécialisé à exactement 7,3 M$ après trois semaines d'attente.
+
+**Plan de financement (capital stack).**
+
+| Brique | Part | Remarque |
+|---|---|---|
+| Prêt SBA 504 | 40 % | programme fédéral américain |
+| Prêt bancaire classique | 50 % | |
+| Crédit-vendeur (seller note) | 10 % | |
+| Amortissement | 25 ans, étendu à la part bancaire | environ 42 k$/mois, soit environ 500 k$/an. Des durées classiques de 5 à 10 ans auraient rendu l'opération impossible |
+
+**Première année** (DÉCLARATIF) :
+- 3,3 M$ de recettes et 2,1 M$ de charges, soit 1,2 M$ de résultat d'exploitation (NOI) ;
+- un peu moins de 700 k$ de cash après intérêts, amortissements et location des voiturettes ;
+- soit l'équivalent de la meilleure année des vendeurs, malgré 350-400 k$ d'intérêts supplémentaires.
+
+**Motivation des vendeurs** : ils ont préféré leurs deux cadres à un groupe local de rachat de golfs, pour que le club reste indépendant et local. Selon l'hôte, le prix « optimisé » aurait été la vente du terrain à un promoteur.
+
+**Gouvernance** :
+- 50/50 entre les deux associés, Holmes ayant la voix prépondérante ;
+- **aucune distribution de dividendes pendant 5 ans**, inscrite dans les statuts (operating agreement) : salaires de marché seulement.
+
+**Développement prévu** :
+- simulateurs autofinancés pour l'hiver ;
+- salle de banquet ouverte toute l'année pour tripler les événements ;
+- **promotion résidentielle sur 30 acres inutilisés** ;
+- objectif : multiplier le chiffre d'affaires par 2,5 d'ici 2031-2032.
+
+**Statuts.**
+- Tous les montants sont DÉCLARATIFS (invité et hôte). Aucune source indépendante consultée.
+- Les règles du programme SBA 504 (apport exigé, crédit-vendeur compté comme apport) n'ont **pas** été vérifiées.
+- Contexte : le durcissement du programme SBA 7(a) au 01/06/2025 (Whiteford, page lue) est postérieur à ce closing.
+
+**Limites.** Récit d'un succès, programme public américain, un seul cas.
+
+**Transposabilité en France.**
+
+Ce qui ne se transpose pas : il n'existe **pas d'équivalent au SBA 504** (prêt garanti par l'État fédéral, amorti sur 25 ans, sur un actif d'exploitation). Les équivalents partiels, vérifiés par la mission 1 ou par AV4 :
+- prêts hypothécaires de 15 ans (Bpifrance, durée normative avec hypothèque) ;
+- crédit-bail immobilier de 8 à 15 ans ;
+- garantie Bpifrance de 50 à 70 % sur les reprises ;
+- crédit-vendeur de 30 à 50 % sur 1 à 5 ans (CRA), sécurisé par l'**hypothèque légale spéciale du vendeur**. Comme celle-ci prime le prêteur de deniers, une subordination est à négocier (notaire, page lue).
+
+Ce qui se transpose :
+- **devenir l'exploitant avant d'être l'acheteur** ;
+- **viser des vendeurs attachés à la continuité** ;
+- **faire valoir la valeur foncière supérieure au prix** comme garantie auprès des banques françaises (qui prêtent sur la valeur du bien) ;
+- **interdire les distributions** pendant la phase de remboursement ;
+- **monétiser le foncier inutilisé**, sous réserve du PLU.
+
+**Application au projet.**
+- Une famille propriétaire d'un domaine équestre ou d'un château-hôtel sans successeur est la cible idéale.
+- Le client se positionne d'abord comme **directeur ou gérant** (voir l'idée I3). Il négocie ensuite un rachat progressif avec crédit-vendeur et dette longue adossée aux murs.
+
+### Passages importants
+
+La transcription publiée n'a pas d'horodatage : aucun minutage n'est cité.
+
+**Note : 90/100.** Montage le plus proche de « gros actif foncier de loisirs acquis sans argent personnel par un opérateur ».
+
+---
+
+## F27 — Acquiring Minds « How 1 SBA Loan Brought Down 2 Businesses » (Edgar Galindo) : l'échec
+
+### Identification
+
+- **Réf.** : AV4-117.
+- **Date** : 30/07/2026.
+- **Durée** : 1:34:37.
+- **URL** : https://acquiringminds.co/articles/edgar-galindo-structure-landscapes
+- **Niveau d'accès** : TRANSCRIPTION TEXTE LUE (partielle) et résumé de l'hôte.
+
+### Analyse
+
+**Faits** (DÉCLARATIFS) :
+
+| Étape | Détail |
+|---|---|
+| 1er rachat (Austin, paysagiste) | CA de 4,8 M$, environ 900 k$ de bénéfice disponible pour le propriétaire (SDE). Prix d'environ 3,15 M$ (3,5 fois le SDE), dont 500 k$ de crédit-vendeur. Galindo apporte 50 k$ pour 25 % (option jusqu'à 50 %) et **signe une caution personnelle** sur le prêt SBA |
+| 2e rachat, six mois plus tard (Dallas) | CA d'environ 6 M$, SDE de 950 k$ |
+| Problèmes du 2e rachat | commission cachée de 100 k$ (soit environ 350 k$ surpayés au multiple), litige avec le vendeur (plus de 160 k$ d'avocats), départs de salariés, clients détournés, concurrent créé |
+| Issue | la dette du 2e rachat pèse sur le 1er. **Les deux sociétés ferment**, faillite personnelle |
+
+**Leçons tirées par l'invité** :
+- interroger les salariés pendant l'audit (due diligence) ;
+- se méfier du vendeur qui refuse cet accès ;
+- « le plus grand risque n'était pas d'acheter la mauvaise entreprise, mais de faire confiance au mauvais vendeur » (paraphrase).
+
+**Application au projet** (transposition française, analyse AV4) :
+- **Caution personnelle** : la garantie Bpifrance limite les cautions à 50 % (mission 1) mais ne les supprime pas. La garantie couvre la banque, pas l'emprunteur (Bpifrance Création).
+- **Contamination entre sociétés** : ne jamais faire garantir la dette de l'exploitation par la SCI qui détient le château, ni l'inverse, sans mesurer le risque de perdre le domaine.
+- **Audit et garantie d'actif et de passif** : un crédit-vendeur peut servir de levier de négociation en cas de passif caché. L'articulation entre les deux est à faire valider par un avocat.
+
+### Passages importants
+
+Aucun horodatage publié.
+
+**Note : 60/100.**
+
+---
+
+## F28 — BiggerPockets Business #68 « Buy Then Build Your Business With Best-Selling Author Walker Deibel »
+
+### Identification
+
+- **Réf.** : AV4-119.
+- **Intervenants** : Walker Deibel ; hôtes J Scott et Carol Scott.
+- **Date** : 11/08/2020 (date de publication de la page).
+- **Durée** : 1:26:39 (YouTube).
+- **URL** : https://www.biggerpockets.com/blog/biggerpockets-business-podcast-68-walker-deibel
+- **Niveau d'accès** : TRANSCRIPTION TEXTE LUE (partielle ciblée).
+
+### Analyse
+
+**Thèses de Deibel** (paraphrase) :
+- racheter une entreprise apporte à l'entrepreneuriat la **mécanique de l'immobilier** : apport, dette, revenus des clients qui remboursent la dette, plus la croissance que l'on contrôle ;
+- grille de lecture en quatre familles : rentable durable, redressement, forte croissance, plateforme ;
+- la prospection directe de vendeurs est difficile : un cédant met 9 à 18 mois à « s'éduquer » sur la valeur de son entreprise ;
+- l'intermédiaire représente le vendeur ;
+- « si vous ne faites pas confiance au vendeur, partez » ;
+- on peut acheter « à 3x avec un prêt bancaire et 10 % d'apport » (contexte SBA de 2020) ;
+- commencer par une seule entreprise et la diriger environ 7 ans.
+
+Il revendique un **rendement annuel composé de 52 %** sur sa mise en 4,5 ans : DÉCLARATIF, non vérifié.
+
+**Témoignage de l'hôte (J Scott)** : rachat d'une entreprise de travaux.
+- Acompte égal à la **valeur du stock (environ 30 % du prix)**, 70 % payés sur 2 ans au vendeur.
+- Le vendeur reste titulaire de la licence professionnelle pendant 18 mois.
+- Ce choix a été fait parce que le prêt SBA aurait demandé environ 6 mois (embouteillage lié aux prêts Covid).
+- L'hôte souligne que le « no money down » n'est pas la norme.
+
+**Limites.** Contexte américain de 2020 (SBA, taux bas). Promotion d'un livre et d'un programme.
+
+**Application.**
+- Le **crédit-vendeur court (2 ans), adossé à un acompte de 30 %**, est cohérent avec les repères français du CRA (30-50 % sur 1-5 ans).
+- La logique « dette remboursée par les revenus de l'actif » est celle que le client doit démontrer à ses banques.
+
+### Passages importants
+
+Transcription sans horodatage.
+
+**Note : 70/100.**
+
+---
+
+## F29 — BiggerPockets Real Estate Rookie 375 « Making $160K/Year From ONE "Rare" Property Thanks to Seller Financing » (Adam Howard, motel de 13 unités)
+
+### Identification
+
+- **Réf.** : AV4-120.
+- **Intervenants** : Adam Howard ; hôtes Ashley Kehr et Tony J. Robinson.
+- **Date** : 04/03/2024.
+- **Durée** : inconnue.
+- **URL** : https://www.biggerpockets.com/blog/rookie-375
+- **Niveau d'accès** : TRANSCRIPTION TEXTE LUE (partielle ciblée).
+
+### Analyse
+
+**Faits** (DÉCLARATIFS) :
+- ancien entraîneur de football universitaire, investisseur depuis 3 ans, 49 ans ;
+- repère un **motel de 13 unités** au bord d'un lac (État de New York), mal référencé comme maison individuelle (« 1.3 million » affiché) ;
+- le vendeur, dernier actif à liquider, encaissait beaucoup d'espèces : ses comptes ne justifiaient pas un prêt bancaire. D'où le **financement par le vendeur** ;
+- **50 k$ d'arrhes, puis 250 k$ d'apport, soit 300 k$** ;
+- un associé financier apporte une partie de l'apport ;
+- objectif : **refinancer auprès d'une banque après environ 2 ans** de comptes propres ;
+- après rénovation (climatisation, kitchenettes), le prix moyen par nuit passe de 70-80 $ à 149-189 $ ;
+- l'actif est aussi un lieu de vie familial.
+
+**Limites.**
+- Montants non vérifiés.
+- L'**argument « espèces non déclarées »** est inutilisable en France : c'est de la fraude, à exclure absolument.
+
+**Application.** Ce qui se transpose : **le vendeur finance une période de transition**, puis la banque refinance une fois l'historique d'exploitation constitué (comptes certifiés, 2 exercices). C'est exactement le problème de Fontenay, qui veut refinancer ses obligations par une banque.
+
+Pour un domaine sans historique commercial, il faut négocier avec le vendeur :
+- un crédit-vendeur de 2-3 ans ;
+- ou une location avec option d'achat (idée I5).
+
+### Passages importants
+
+Transcription sans horodatage.
+
+**Note : 70/100.**
+
+---
+
+## F30 — Defining Hospitality #100 « Joie de Vivre - Chip Conley » : un motel en faillite racheté à 26 ans
+
+### Identification
+
+- **Réf.** : AV4-135 (et AV4-136, AV4-137).
+- **Intervenants** : Chip Conley ; hôte Dan Ryan.
+- **Date** : 05/04/2023.
+- **Durée** : 1:06:00 (YouTube i_sah7Jx150).
+- **URL** : https://defininghospitality.transistor.fm/100/transcript
+- **Niveau d'accès** : TRANSCRIPTION TEXTE LUE (partielle). Recoupement sur Wikipédia (page lue).
+
+### Analyse
+
+**Ce que dit Conley** (paraphrase de la transcription) :
+- à 26 ans, il achète un **motel délabré, loué à l'heure, en faillite**, et le transforme en hôtel « rock and roll » rebaptisé le Phoenix ;
+- avant cela, il travaillait dans une société de promotion immobilière. Il y a découvert l'hôtellerie de charme en analysant un dossier hôtelier en 1985. Son patron refusant de créer une division dédiée, il part ;
+- **il possède toujours l'immobilier du Phoenix** 35-36 ans plus tard. Il a vendu en 2010 la **marque et la société de gestion**, pas les murs ;
+- son nouveau projet (Modern Elder Academy) prévoit un **ranch équestre « régénératif » de 2 600 acres** près de Santa Fe, avec deux centres de séminaires et du résidentiel.
+
+**Recoupement** (Wikipédia EN, page lue) :
+- Joie de Vivre est fondée en 1987, quand Conley a 26 ans ;
+- **1 M$ levé en 1987** pour acheter le Phoenix (référence au San Francisco Chronicle) ;
+- 2010 : participation majoritaire cédée à **Geolo Capital** (société d'investissement de John Pritzker, héritier Hyatt), avec un fonds de 150 M$ pour acheter d'autres hôtels.
+
+**Statut** : RECOUPÉ (âge, faillite, 1 M$ levé, cession de 2010).
+
+**Limites.** San Francisco des années 1980. Le montage exact (dette, investisseurs) n'est pas détaillé.
+
+**Application au projet.**
+1. Un **actif hôtelier en faillite**, racheté jeune avec l'argent d'investisseurs, devient le socle d'une chaîne.
+2. Le **schéma de sortie « vendre l'exploitation, garder les murs »** protège le patrimoine du fondateur. C'est l'inverse d'Accor (F16) et le pendant de la séparation SCI / SAS de Fontenay.
+3. Le **ranch équestre transformé en lieu de séminaires et de transmission** (Modern Elder Academy) est un modèle hybride « cheval + formation + hébergement » à creuser par AV5 et AV7.
+
+### Passages importants
+
+La transcription comporte des marqueurs [00:02:00], [00:35:00], etc. :
+- entre [00:02:00] et [00:03:00] — rachat du motel en faillite à 26 ans, rebaptisé Phoenix ;
+- [00:35:00] environ — de 26 ans « fresh out of Stanford business school » à la vente ;
+- [01:00:00] environ — l'origine dans la promotion immobilière et le refus de son patron.
+
+Ces marqueurs sont ceux de la transcription publiée (version audio).
+
+**Note : 70/100.**
+
+---
+
+## F31 — Corpus anglophone « no money down » : Codie Sanchez, Sieva Kozinsky, Acquisitions Anonymous, BiggerPockets #799, Walker Deibel 2.0
+
+### Identification
+
+- **Réf.** : AV4-122 à AV4-131.
+- **Chaînes** : Codie Sanchez (Contrarian Thinking), POWERS Pod, Flippa, Acquisitions Anonymous, BiggerPockets, Walker Deibel.
+- **Dates** : relatives (de 4 mois à 11 ans).
+- **Niveau d'accès** : chapitres YouTube (AV4-122, 124, 126, 128, 131) ou REPÉRÉ.
+
+### Analyse
+
+**Promesses.**
+- Codie Sanchez, 0,3 à 1 million de vues par vidéo : « How to Buy a Business With No Money in 2024 », « How to Buy a Business for $0 in a Week? », « with Other Peoples Money ».
+- Les chapitres portent sur la **prospection** (réseau, bases de données, « Expertise to Equity »), la **conversation avec le vendeur** et le « Venmo Challenge ».
+- Les liens de description mènent à une consultation payante et à un guide « Buy a Biz for $0 ».
+
+**Vérification** (Whiteford, page lue). Le SOP 50 10 8 de la SBA, en vigueur au **01/06/2025**, a durci les règles des prêts 7(a) :
+- **apport minimal de 10 %** pour les rachats ;
+- le crédit-vendeur ne compte que s'il est en **standby total (ni intérêts ni capital) pendant toute la durée** du prêt (généralement 10 ans), et pour **au plus la moitié** de l'apport ;
+- les rachats partiels doivent se faire par achat de titres, avec caution de tous les associés pendant 2 ans ;
+- le vendeur qui reste associé doit se porter caution.
+
+Les contenus « $0 » de 2022-2024 sont donc **dépassés pour les prêts 7(a)**. Le chapitre « Seller-note on full standby » de Kozinsky (49:29) est cohérent avec cette contrainte.
+
+**Ce qui reste utile.**
+- La méthode de **prospection hors marché** (réseau, bases de données, transformer une expertise en part de capital).
+- La **holding à capital permanent** de Kozinsky : acheter des entreprises et les garder.
+
+**Application.** Rien de directement transposable sur le financement. Utile comme méthode de **recherche de vendeurs** (familles propriétaires de domaines) et comme mise en garde contre le marketing.
+
+### Passages importants (chapitres YouTube, origine non confirmée)
+
+- Codie Sanchez, 3:49 — How to Have The Conversation : https://www.youtube.com/watch?v=3Gy33tFXmJE&t=229s
+- Codie Sanchez, 11:42 — The Personal P&L Review : https://www.youtube.com/watch?v=3Gy33tFXmJE&t=702s
+- Codie Sanchez, 46:06 — Expertise to Equity : https://www.youtube.com/watch?v=acEy2I7__Uc&t=2766s
+- Kozinsky, 47:25 — How do you incentivize someone to stay on in a long-term hold scenario? : https://www.youtube.com/watch?v=9IyYN3_O80Q&t=2845s
+- Kozinsky, 49:29 — Seller-note on full standby : https://www.youtube.com/watch?v=9IyYN3_O80Q&t=2969s
+- Acquisitions Anonymous, 25:54 — Working Capital Adjustment : https://www.youtube.com/watch?v=mfhX-LiOfmI&t=1554s
+- BiggerPockets #799, 21:45 — 3 Simple Steps to Seller Financing : https://www.youtube.com/watch?v=ifOTmf12uGw&t=1305s
+
+**Note : 45/100.**
+
+---
+
+## Récapitulatif des fiches
+
+| Fiche | Contenu | Note |
+|---|---|---|
+| F01 | La Martingale #336, Domaine de Fontenay | 95 |
+| F26 | Acquiring Minds, golf Quail Ridge (rachat par le directeur, 0 $ personnel) | 90 |
+| F02 | Corpus « Ça fait un bail ! », Fontenay | 85 |
+| F04 | Hospitality Insiders #183, Fontenay | 85 |
+| F08 | GDIY #525, Joseph Lasserre (reprises de PME du BTP) | 85 |
+| F13 | Acquired, LVMH (Boussac 1984) | 85 |
+| F03 | Richissime #120, Fontenay | 80 |
+| F05 | Documentaire Fontenay | 80 |
+| F17 | La Martingale #311, Monolithe (hôtellerie murs et fonds) | 80 |
+| F20 | BUILD, Adrien Gloaguen (Touriste) | 80 |
+| F09 | Bpifrance : financer une reprise | 75 |
+| F18 | Extendam | 70 |
+| F19 | Kapi Club, Yohann Benhamou | 70 |
+| F28 | BiggerPockets, Walker Deibel | 70 |
+| F29 | BiggerPockets Rookie 375, motel | 70 |
+| F30 | Chip Conley, Phoenix Hotel | 70 |
+| F06 | Sans Pression, Nicolas Tommasini | 65 |
+| F10 | Search funds | 65 |
+| F12 | Rachat d'entreprises en difficulté | 65 |
+| F21 | Banque des Territoires | 65 |
+| F22 | La Vie, petits hôtels de campagne | 65 |
+| F11 | Corpus FR « sans apport » | 60 |
+| F14 | La Martingale × Fundora (LBO) | 60 |
+| F15 | Family offices FR | 60 |
+| F24 | Outils de financement du foncier | 60 |
+| F27 | Galindo (échec) | 60 |
+| F07 | La Martingale #95, monuments historiques | 55 |
+| F23 | Anguelov et Nardecchia | 55 |
+| F25 | Campings | 55 |
+| F16 | Sébastien Bazin, Accor | 50 |
+| F31 | Corpus anglophone « no money down » | 45 |
