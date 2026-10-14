@@ -15,7 +15,7 @@ Aucun contenu n'a été écouté ou regardé (voir `02_ANALYSES/AV1_fiches.md`).
 
 | # | Cas | Acquéreur au départ | Prix d'achat | Apport des fondateurs | Financement principal | Résultat vérifié |
 |---|---|---|---|---|---|---|
-| 1 | Domaine de Fontenay (72) | 2 investisseurs immobiliers et podcasteurs, 29-30 ans environ | inconnu (valeur ≈ 2 M€ [AFFIRMÉ]) | 10 000 € [AFFIRMÉ], cohérent avec le capital | club deal de 550 k€ [AFFIRMÉ] + obligations Bricks de 690 k€ à 7 % [VÉRIFIÉ] | SAS créée en 2023, établissement ouvert fin 2024 ; Bevouac (société de l'associé) liquidée en 2025 |
+| 1 | Domaine de Fontenay (72) | 2 investisseurs immobiliers et podcasteurs (âge non vérifié) | inconnu (valeur ≈ 2 M€ [AFFIRMÉ]) | 10 000 € [AFFIRMÉ], cohérent avec le capital | club deal de 550 k€ [AFFIRMÉ] + obligations Bricks de 690 k€ à 7 % [VÉRIFIÉ] | SAS créée en 2023, établissement ouvert fin 2024 ; Bevouac (société de l'associé) liquidée en 2025 |
 | 2 | Château du Theil (19) | 3 Ussellois (deux amis et un père) | ≈ 160 000 € [AFFIRMÉ] | inconnu | capital public de 1,73 M€ + Crédit Agricole 1 M€ + La Première Brique 605 k€ | ouverture 09-10/2024 ; perte 2024 de −276 k€ ; bilan de 6,13 M€ |
 | 3 | Château de Dampierre (10) | médecin de 35 ans, fils d'agriculteur | **675 000 €** aux enchères notariales [VÉRIFIÉ] | inconnu | inconnu | restauration engagée ; décès du propriétaire en 2026 |
 | 4 | Château de Charmes (26) | 20 ans en 2017, fonds familial de mobilier | inconnu | inconnu | « tout seul, sans subvention » [VÉRIFIÉ presse] | mis en vente en 2026 ; vente du mobilier (200-300 k€ espérés) |
@@ -70,7 +70,7 @@ Sources : AV1-020, AV1-021, AV1-146 ; S-07 à S-10.
   - **Crédit Agricole : 1 000 k€** (février 2024, 156 mois), hypothèque sur le château. **Un actionnaire s'est engagé à bloquer 1,2 M€ en compte courant pendant 7 ans.**
   - **La Première Brique : 605 k€** (août 2024, prêt participatif), hypothèque de second rang et **cautions personnelles et solidaires des trois fondateurs**.
   - Crédit-bail mobilier : 351 k€. Subvention d'investissement : 215 k€.
-- **Travaux :** constructions immobilisées pour 4,42 M€ brut. Le total du bilan est de 6,13 M€ fin 2024, contre un projet présenté à « 4 millions » [VÉRIFIÉ / AFFIRMÉ]. Une aile a dû être démolie pour sauver le reste (S-08, d'après un résumé de recherche) [NON VÉRIFIÉ].
+- **Travaux :** constructions immobilisées pour 4,42 M€ brut. Le total du bilan est de 6,13 M€ fin 2024, contre un projet présenté à « 4 millions » [VÉRIFIÉ / AFFIRMÉ]. Une aile aurait dû être démolie pour sauver le reste (résumé de recherche, source non identifiée) [NON VÉRIFIÉ].
 - **Stratégie :** hôtel 4 étoiles de 14 chambres, restaurant gastronomique, 7 logements insolites semi-troglodytes, parc de 6,5 ha, ferme pédagogique. Communication par une chaîne YouTube (une vidéo atteint ≈ 26 M de vues).
 - **Résultats :** restaurant ouvert le 12/09/2024, hôtel le 08/10/2024. **Résultat 2024 : −276 413 €** (2023 : −15 664 €) [VÉRIFIÉ]. Compte de résultat confidentiel.
 - **À retenir :**

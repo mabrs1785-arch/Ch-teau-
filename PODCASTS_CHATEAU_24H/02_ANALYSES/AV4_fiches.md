@@ -954,7 +954,7 @@ Le choix dépend du profil du client (opérateur ou propriétaire).
 
 **Statut.**
 - Repères et rendements : DÉCLARATIF (plateforme intéressée).
-- La règle 150-0 B ter est VÉRIFIÉE sur le BOFiP (version 2026). Depuis le 21/02/2026, le réinvestissement doit atteindre **70 % en 3 ans** (et non plus 60 % en 2 ans), avec conservation 5 ans. L'activité doit être commerciale, agricole, etc. La **gestion de son propre patrimoine immobilier, y compris la location meublée, est exclue**. Les biens immobiliers nécessaires à l'exploitation sont admis.
+- La règle 150-0 B ter est VÉRIFIÉE sur le BOFiP (version 2026). Depuis le 21/02/2026, le réinvestissement doit atteindre **70 % en 3 ans** (contre 60 % auparavant selon la version antérieure de la doctrine vue en résultat de recherche ; l'ancien délai n'a pas été revérifié), avec conservation 5 ans. L'activité doit être commerciale, agricole, etc. La **gestion de son propre patrimoine immobilier, y compris la location meublée, est exclue**. Les biens immobiliers nécessaires à l'exploitation sont admis.
 - Le site de Monolithe n'a pas été vérifié sur l'éligibilité de chaque opération.
 
 **Application au projet.**

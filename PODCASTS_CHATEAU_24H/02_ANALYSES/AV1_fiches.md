@@ -34,7 +34,7 @@ Une affirmation d'un intervenant n'est pas un fait vérifié. Chaque chiffre por
 **Analyse**
 - **Résumé (notes de l'éditeur, paraphrase) :** acheter un château « avec seulement 10 000 euros d'apport », lever « près de 700 000 euros en urgence », rénover 420 m², puis transformer un monument historique en lieu rentable (séminaires, mariages, événements). L'épisode suit le projet de bout en bout : financement, administratif, travaux, exploitation.
 - **Informations entrepreneuriales :**
-  - Deux associés issus de l'investissement locatif : Jérémy Nabais et Martin Menez, fondateur de Bevouac.
+  - Deux associés issus de l'investissement locatif : Jérémy Nabais et Martin Menez, cofondateur de Bevouac.
   - La société d'exploitation est **SARTHE SOCIETY SAS** (SIREN 980 419 436), créée le 05/10/2023 au capital de 10 000 € **[VÉRIFIÉ]**. Président : Jérémy Nabais. Directeur général : Martin Menez.
   - Le capital passe à 12 755 € le 19/12/2023 **[VÉRIFIÉ]**.
   - Un établissement est ouvert le 15/11/2024 au 1 chemin du Logis, 72350 Fontenay-sur-Vègre **[VÉRIFIÉ]**.
@@ -177,7 +177,7 @@ Une affirmation d'un intervenant n'est pas un fait vérifié. Chaque chiffre por
 
 **Identification**
 - Intervenants : Charlotte et Grégoire, jeunes propriétaires d'un château ; Alexandre Wemaere, courtier CAFPI (Angers).
-- Animateur : Grégoire Plaut (podcast « Objectif Château »).
+- Podcast « Objectif Château » publié par Grégoire Plaut, vraisemblablement le Grégoire du couple (non vérifié).
 - YouTube publié le 2025-05-19 (1:18:12). Podcast Acast publié le 2025-05-20 (1:18:11).
 - URL : https://www.youtube.com/watch?v=Tz7gd84Xtwc
 - Niveau d'accès : DESCRIPTION/CHAPITRES LUS (flux RSS YouTube officiel). La page vidéo est INACCESSIBLE (429).
