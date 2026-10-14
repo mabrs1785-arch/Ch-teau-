@@ -1,0 +1,10 @@
+idu;Département;Code Direction;Code Commune;Nom de la commune;Préfixe;Section;N° plan;Bâtiment;Entrée;Niveau;Porte;N° voirie;Indice de répétition;Code voie MAJIC;Code voie Rivoli;Nature voie;Nom voie;Code droit;N° Majic;N° SIREN;Groupe personne;Forme juridique;Forme juridique abrégée;Dénomination
+03036000YE0003;03;0;036;BOURBON-L ARCHAMBAULT;;YE;0003;A;01;00;01001;5001; ;00034;B034;;LA BUSSIERE VALLET;P - Propriétaire;P998MW;444608442;0 - Personnes morales non remarquables ;5699;SA;ENEDIS
+03036000YE0003;03;0;036;BOURBON-L ARCHAMBAULT;;YE;0003;A;01;00;01001;5001; ;00034;B034;;LA BUSSIERE VALLET;G - Gérant, mandataire, gestionnaire;PBBLP5;U10903506;0 - Personnes morales non remarquables ;9900;AUPM;ENEDIS AGENCE DE TULLE
+033200000C0093;03;0;320;YGRANDE;; C;0093;A;01;00;01001;5326; ;00032;B032;;LE CHATEAU DU MONT;P - Propriétaire;PBBD33;322579483;0 - Personnes morales non remarquables ;6534;GFA;DOMAINE DU MONT
+033200000C0093;03;0;320;YGRANDE;; C;0093;A;01;00;01002;5326; ;00032;B032;;LE CHATEAU DU MONT;P - Propriétaire;PBBD33;322579483;0 - Personnes morales non remarquables ;6534;GFA;DOMAINE DU MONT
+033200000C0093;03;0;320;YGRANDE;; C;0093;A;01;00;01003;5326; ;00032;B032;;LE CHATEAU DU MONT;P - Propriétaire;PBBD33;322579483;0 - Personnes morales non remarquables ;6534;GFA;DOMAINE DU MONT
+033200000C1245;03;0;320;YGRANDE;; C;1245;A;01;00;01001;5325; ;00032;B032;;LE CHATEAU DU MONT;P - Propriétaire;PBBD33;322579483;0 - Personnes morales non remarquables ;6534;GFA;DOMAINE DU MONT
+033200000C0093;03;0;320;YGRANDE;; C;0093;B;01;00;01001;5326; ;00032;B032;;LE CHATEAU DU MONT;P - Propriétaire;PBBD33;322579483;0 - Personnes morales non remarquables ;6534;GFA;DOMAINE DU MONT
+033200000C1249;03;0;320;YGRANDE;; C;1249;B;01;00;01001;5325;A;00032;B032;;LE CHATEAU DU MONT;P - Propriétaire;PBBD33;322579483;0 - Personnes morales non remarquables ;6534;GFA;DOMAINE DU MONT
+033200000C1134;03;0;320;YGRANDE;; C;1134;A;01;00;01001;5328; ;00142;B142;;LE PRESSOIR;P - Propriétaire;PBBFS3;399674431;0 - Personnes morales non remarquables ;6534;GFA;DU PRESSOIR

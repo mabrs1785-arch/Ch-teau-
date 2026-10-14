@@ -1,0 +1,14 @@
+date;id_mutation;valeur;nb_parcelles;surface_terrain_m2;surface_bati_m2;locaux;cultures;voies;dist_min_km_chateau
+2021-05-15;2021-35515;650000;6;77533;0;;"terres:74413;prés:3120";LA FEURTRIE|LE GRAND VILLIER;5.11
+2022-11-25;2022-38634;472200;7;37655;240;"Dépendancex1;Maisonx2";"terres:31515;jardins:1385;sols:2150;terrains d'agrément:2605";LES CHAUMES|LES GRANDES CHAUMES;4.98
+2025-11-21;2025-30802;427060;18;95629;146;"Maisonx2;Dépendancex1";"terrains d'agrément:5274;sols:1376;eaux:135;prés:48925;terres:38740;jardins:1179";COUPIED;4.87
+2024-09-13;2024-27265;350000;24;98530;210;"Dépendancex1;Appartementx1;Maisonx1";"taillis sous futaie:3740;terres:58314;prés:13058;eaux:1732;sols:2173;jardins:1286;taillis simples:18227";FAYARD|LA MAILLERIE|LES TROIS SAPINS;5.49
+2024-12-06;2024-29373;280000;2;3567;220;Local industriel. commercial ou assimiléx1;"jardins:1280;sols:2287";RTE DE BOURBON;2.36
+2021-11-04;2021-33885;240000;3;26198;10142;"Local industriel. commercial ou assimiléx1;Maisonx1;Dépendancex1";"terres:14470;sols:11728";LES GAROTS|RUE DE LA NOCE;2.41
+2024-12-19;2024-29631;214850;5;14870;93;"Dépendancex1;Maisonx1";"terres:9170;jardins:650;sols:535;prés:3000;terrains d'agrément:1515";LE LAC|LIEU BUSSEROLLE;4.27
+2025-07-15;2025-27663;200000;4;16849;98;Maisonx1;"terres:12584;jardins:905;sols:3360";LES BOILETS;4.32
+2022-09-14;2022-35574;198550;4;16849;98;Maisonx1;"terres:12584;jardins:905;sols:3360";LES BOILETS;4.32
+2023-10-02;2023-30492;182000;5;4441;38;Maisonx1;"sols:257;jardins:436;terres:3748";LES VIGNES;2.20
+2024-08-20;2024-26933;155000;8;1405;56;"Dépendancex1;Maisonx1";"sols:547;jardins:600;prés:258";LE LIEU METENIER;3.71
+2025-09-02;2025-28735;150850;1;703;115;Maisonx1;sols:703;LOT LES VIGNES;2.29
+2021-11-29;2021-34455;150000;5;2298;883;Local industriel. commercial ou assimiléx3;"jardins:1382;sols:916";RUE ANATOLE FRANCE|RUE HENRI BARBUSSE;3.06
