@@ -12,7 +12,7 @@ PHASE 1 — Exploration (agents 1, 2, 3, 4, 6, 7 lancés en parallèle).
 - [ ] Agent 2 Ingénierie financière
 - [x] Agent 3 Économie équestre (inconnus : commissions Arqana, loyer box pro, budget CSO)
 - [x] Agent 4 Activités complémentaires (trous : fermage, forêt, PV, chasse, charges château)
-- [ ] Agent 6 Juridique/fiscal
+- [x] Agent 6 Juridique/fiscal (10 points NON VÉRIFIÉS, cf. document)
 - [x] Agent 7 Benchmark (16 cas + 7 contre-exemples)
 - [ ] Agent 5 Modèle financier (Excel, directeur)
 - [ ] Agent 8 Audit contradictoire + stress tests
