@@ -1,15 +1,15 @@
 # AV2 — Fiches d'analyse : grands domaines britanniques/irlandais et haras historiques
 
 Agent AV2 (cellule audiovisuelle, mission 2). Spécialités : (3) modèles économiques des grands domaines privés anglo-saxons ; (4) acquisitions, transformations et exploitation de haras et propriétés équestres.
-Date de travail : 2026-10-14. Catalogue complet : `_brut/catalogue_AV2.csv` (170 contenus). Sources : `_brut/sources_AV2.csv`.
+Date de travail : 2026-10-14. Catalogue complet : `_brut/catalogue_AV2.csv` (171 contenus). Sources : `_brut/sources_AV2.csv`.
 
 ## Méthode et limites (à lire avant les fiches)
 
-- **Ce qui a été réellement lu.** 8 transcriptions publiées par l'auteur ou l'hébergeur (1 lue en entier : Sammy Leslie, 2 h 09 ; 1 complète courte : Lord et Lady Carnarvon ; 6 lues partiellement, par extraction des passages économiques : Skip the Queue). 65 descriptions ou notes d'épisode (dont 5 avec chapitres horodatés écrits par l'auteur). 4 fiches techniques de flux RSS sans description. 93 contenus seulement **repérés** (titres, durées et dates relatives vus sur la page de recherche YouTube ou Apple Podcasts).
+- **Ce qui a été réellement lu.** 8 transcriptions publiées par l'auteur ou l'hébergeur (1 lue en entier : Sammy Leslie, 2 h 09 ; 1 complète courte : Lord et Lady Carnarvon ; 6 lues partiellement, par extraction des passages économiques : Skip the Queue). 67 descriptions ou notes d'épisode (dont 5 avec chapitres horodatés écrits par l'auteur). 5 contenus au statut MÉTADONNÉES LUES (flux RSS sans description, ou début de description sur la page Apple). 91 contenus seulement **repérés** (titres, durées et dates relatives vus sur la page de recherche YouTube ou Apple Podcasts).
 - **Aucune vidéo ni aucun audio n'a été regardé ou écouté.** Il n'y a pas d'outil de transcription audio, et aucun outil tiers de sous-titres n'a été utilisé.
-- **Blocage YouTube.** Les pages de recherche YouTube restaient accessibles. En revanche, toutes les pages vidéo (`watch?v=`) ont renvoyé un captcha « trafic inhabituel » tout au long de la session (IP partagée entre agents). Je n'ai pas contourné cette protection. Les contenus YouTube restent donc au statut REPÉRÉ : durée et date relative (« il y a 9 mois ») lues sur la page de recherche, mais description et chapitres non lus. Aucun lien horodaté `&t=` n'est proposé, faute de chapitres vérifiés.
+- **Blocage YouTube.** Les pages de recherche YouTube restaient accessibles. En revanche, toutes les pages vidéo (`watch?v=`) ont renvoyé un captcha « trafic inhabituel », puis une erreur HTTP 429 sur l'IP partagée (information du directeur). Je n'ai pas contourné cette protection. Les contenus YouTube restent donc au statut REPÉRÉ, avec la mention « page vidéo INACCESSIBLE ». Seules la durée et la date relative ont été lues sur la page de recherche. Sur consigne du directeur, j'ai utilisé le flux RSS officiel des chaînes (`/feeds/videos.xml?channel_id=`), en limitant les requêtes. Ce flux ne contient que les 15 dernières vidéos : il a permis de lire la description de AV2-170 (Irish Horse Board), mais pas celle de la vidéo GALORAMA sur Fresnay-le-Buffard, plus ancienne. Aucun lien horodaté `&t=` n'est proposé, faute de chapitres vérifiés.
 - **Recoupement chiffré.** Les principaux chiffres ont été vérifiés dans des comptes déposés à Companies House et lus moi-même : Juddmonte, Goodwood, Castle Howard, Burghley Horse Trials, Burghley House Preservation Trust, Blenheim Palace Heritage Foundation, Chatsworth House Trust, Badminton Horse Trials. Les PDF scannés ont été rendus en image et lus page par page ; les iXBRL, lus en texte. Une affirmation d'intervenant reste marquée « affirmation » tant qu'elle n'est pas recoupée.
-- **Budget WebSearch.** 10 recherches utilisées sur 25. Le reste de la recherche a été fait par les moteurs internes des plateformes (YouTube, API Apple Podcasts) et par l'ouverture directe des pages et flux RSS.
+- **Budget WebSearch.** 11 recherches utilisées sur 25. Le reste de la recherche a été fait par les moteurs internes des plateformes (YouTube, API Apple Podcasts) et par l'ouverture directe des pages et flux RSS.
 
 ---
 
@@ -335,7 +335,7 @@ Note : une interview Knight Frank (2019) citée par le moteur de recherche donne
 
 **Contenus liés.** AV2-123 (YouTube : une « Elite Auction » de chevaux organisée pendant le concours 2018, repéré).
 
-**Vérification.** Bolesworth Events Ltd et Bolesworth Estate Company Ltd déposent des comptes abrégés **sans compte de résultat**. Aucune donnée de chiffre d'affaires.
+**Vérification.** Bolesworth Events Ltd (Companies House 12394680) dépose des comptes abrégés **sans compte de résultat**, donc aucune donnée de chiffre d'affaires. Bolesworth Estate Company Ltd (00569378) a été repérée mais ses comptes n'ont pas été consultés.
 
 **Application au projet.** C'est le modèle le plus proche du « château + concours international + vente de chevaux ». La vente aux enchères intégrée à un concours est à transmettre à AV3.
 
