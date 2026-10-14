@@ -78,7 +78,7 @@ Statuts : **PAGE LUE** (page ou registre ouvert et lu), **EXTRAIT** (résultat d
 - **Achat :** en 2015 pour **£280 000** : 12 acres (4,9 ha), 45 pièces, 7 dépendances, potager clos, douves. Château inhabité depuis quarante ans [S41].
 - **Financement et chronologie :** Channel 4 diffuse la série « Escape to the Chateau » à partir de juin 2016. La chaîne a payé pour filmer le chantier, ce qui « a couvert une partie des dépenses », et l'émission a fait la publicité de l'activité mariages [S41]. Pas de mariages en 2020-2021 (Covid), reprise en 2022 [S41].
 - **Structures (registres) :**
-  - Chateau-De-La-Motte Husson Ltd (UK, 2017, aujourd'hui dissoute) : capitaux propres de **-£19 230** en 2021, quasi dormante [S28].
+  - Chateau-De-La-Motte Husson Ltd (UK, 2017, aujourd'hui dissoute ; mandat de Richard Strawbridge [S29]) : capitaux propres de **-£19 230** en 2021, quasi dormante [S28].
   - **Chateau Television Ltd** (UK, 2020) : au 31/12/2025, capitaux propres **£845 298** (contre £793 796 un an plus tôt, soit **+£51,5 k**), trésorerie **£1,84 M**, 2 salariés. Le compte de résultat n'est pas déposé [S27, OCR].
   - **DA2AD SARL** (FR, créée en avril 2022, capital 2 400 €, gérants Richard et Angela Strawbridge) : événements, gîtes, chambres d'hôtes, contenus audiovisuels [S23]. Compte de résultat confidentiel. **Résultat net 2022 : +811 446 €. 2023 : +5 632 €** [S13]. Le chiffre 2023 est confirmé par societe.com [S26].
 - **Leçon :** une entrée très bon marché, des années de travaux faits en grande partie par le couple, et surtout un **revenu média** qu'un projet ordinaire ne peut pas reproduire. Les résultats visibles proviennent pour partie de la société de télévision. Le CA de l'activité château reste INCONNU.
@@ -241,7 +241,7 @@ Statuts : **PAGE LUE** (page ou registre ouvert et lu), **EXTRAIT** (résultat d
 
 ### CE7 — Ballyfin Demesne (Co. Laois, Irlande)
 - Domaine acheté en 2002 par Fred et Kay Krehbiel (américains), aujourd'hui détenu par leurs fils. Plus de 600 acres [S51, PAGE LUE].
-- Comptes 2025 cités par l'Irish Times : CA **8,1 M€** (+24 %), dont hébergement ≈5 M€, restauration 2,3 M€ et activités de plein air 0,77 M€. **Bénéfice 32 078 €** contre une perte de 389 281 € en 2024. 106 salariés, masse salariale 3,6 M€, taux d'occupation 60 %. **Pertes cumulées : 37,6 M€** [S51].
+- Comptes 2025 cités par l'Irish Times : CA **8,1 M€** (+24 %), dont hébergement ≈5 M€, restauration 2,3 M€ et activités de plein air 0,77 M€. **Bénéfice 32 078 €** contre une perte de 389 281 € en 2024. 106 salariés, masse salariale 3,6 M€, taux d'occupation 60 %. **Pertes cumulées : 37,6 M€** [S51]. Selon la presse, le domaine avait déjà été bénéficiaire en 2021 (786 923 € avant impôts) [S66, EXTRAIT], puis la perte de 2024 est confirmée [S67, EXTRAIT] : un profil en dents de scie.
 - **Ce que ça contredit :** l'idée que le luxe garantisse la rentabilité. Plus de 20 ans après l'achat, le domaine reste en pertes cumulées.
 
 ### CE8 — Adare Manor (Co. Limerick, Irlande)
@@ -310,6 +310,7 @@ Statuts : **PAGE LUE** (page ou registre ouvert et lu), **EXTRAIT** (résultat d
 - **Castle Leslie, Ballyfin, Adare** : le registre irlandais (CRO) est bloqué (403). La méthode serait d'acheter les documents déposés sur core.cro.ie (≈ quelques euros par document).
 - **Chatsworth, Burghley et Blenheim (comptes de groupe détaillés)** : les PDF sont scannés (plus de 60 pages). Seuls les résumés de la Charity Commission ont été exploités.
 - **Fondation de Chantilly** : comptes à chercher au Journal officiel des associations et fondations (non consulté).
+- **Entités sans données dans le jeu INPI** (confidentialité ou absence de dépôt) : Mothe-Chandeniers, Dartagnans, The Riding Stable Corp, EARL Écuries du Château [S75].
 
 ## 6. Points de doute / hypothèses non vérifiées
 1. **Strawbridge.** Le résultat 2022 de DA2AD (+811 k€) provient du jeu INPI (résultat publié au bilan, compte de résultat confidentiel). Seul le chiffre 2023 (5 632 €) a été recoupé sur societe.com. La part qui vient de la télévision ou de l'activité château est INCONNUE.
