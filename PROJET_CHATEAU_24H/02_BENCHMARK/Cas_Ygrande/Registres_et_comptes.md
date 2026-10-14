@@ -12,7 +12,7 @@ Toutes les données ci-dessous viennent d'API publiques officielles, lues le 14/
 | 883876195 | ASSOCIATION ESPRIT NATTITUDE | association (RNA W032003664) | 21/09/2018 | Siège « Château d'Ygrande, lieu-dit Le Mont » ; objet : réseau de prestataires touristiques de la marque « Nattitude » [YD-07] |
 
 - Même dirigeant (personne physique, nom au registre) pour GROUPE COEUR ET DETENTE (gérant, puis président en 2024) et EARL ECURIES DU CHATEAU (gérant). Gérante distincte pour l'EARL du haras depuis 2013. Les noms ne sont pas repris dans le doc (rôles seulement).
-- **GFA DOMAINE DU MONT (322579483)** : groupement foncier agricole créé le 02/09/1981, siège au lieu-dit Le Mont, NAF 68.20B (location de terrains et autres biens immobiliers), actif. Deux gérants : le dirigeant de la société hôtelière et la cofondatrice du château (même couple que l'achat de 1998 selon Mon Bourbonnais). Aucun avis BODACC en données ouvertes. C'est la structure la plus probable pour la propriété des 40 ha (et peut-être des bâtiments), à confirmer au service de la publicité foncière [YD-01].
+- **GFA DOMAINE DU MONT (322579483)** : groupement foncier agricole créé le 02/09/1981, siège au lieu-dit Le Mont, NAF 68.20B (location de terrains et autres biens immobiliers), actif. Deux gérants : le dirigeant de la société hôtelière et la cofondatrice du château (même couple que l'achat de 1998 selon Mon Bourbonnais). Aucun avis BODACC en données ouvertes [YD-01]. Propriétaire du domaine selon les fichiers fonciers DGFiP des personnes morales (note Y3, page lue) : 33 parcelles (39,66 ha) et 6 locaux au 01/01/2025, dont la parcelle « Le Château du Mont » ; il l'était déjà en 2019 et 2021. Deux petites parcelles bâties (C1246 et C1248, 958 m²) en sont sorties entre 2021 et 2025 ; leur propriétaire n'est pas une personne morale (INCONNU).
 - Autre entité homonyme non liée établie : SCEA HARAS DU MONT (352867410), lieu-dit La Feurtrie, Ygrande, 1989, en liquidation amiable (dirigeant « liquidateur ») — lien non établi.
 
 ## BODACC — GROUPE COEUR ET DETENTE (21 avis) [YD-02]
@@ -45,18 +45,21 @@ Toutes les données ci-dessous viennent d'API publiques officielles, lues le 14/
 | 2021 | partielle | n.p. | n.p. | n.p. | n.p. | 47 506 | 4,75 % | 1 467,4 % | 22,1 % |
 | 2022 | partielle | n.p. | n.p. | n.p. | n.p. | −102 330 | −10,99 % | −718,5 % (FP négatifs) | 19,1 % |
 
-Formules officielles (YD-06) : taux d'endettement = (DS+DT+DU+DV+YS)/(DL+DO) ; autonomie = (DL+DO)/EE ; couverture des intérêts = GU/EBE ; capacité de remboursement = (DS+DT+DU+DV−EH)/CAF ; « ratio de vétusté » = valeur nette/valeur brute des immobilisations corporelles.
+Formules officielles (YD-06) : taux d'endettement = (DS+DT+DU+DV+YS)/(DL+DO) ; autonomie = (DL+DO)/EE ; couverture des intérêts = GU/EBE ; capacité de remboursement = (DS+DT+DU+DV−EH)/CAF ; « ratio de vétusté » = valeur nette/valeur brute des immobilisations corporelles. Attention : marge d'EBE, CAF sur CA et RCAI sur CA sont rapportés à **FL+FO, c'est-à-dire le CA plus les subventions d'exploitation**, et non au CA seul.
 
 ## Calculs (statut : calcul à partir des ratios publiés)
+Version corrigée le 14/10/2026 après vérification indépendante. La première version rapportait les ratios au CA seul et ignorait les subventions d'exploitation (dette 187/164/215 k€, autres charges −240,5 k€ dans le pont) : ne plus utiliser ces chiffres.
+- Subventions d'exploitation (FO = EBE ÷ marge d'EBE − CA) : ≈ 38,1 k€ (2017), ≈ 24,4 k€ (2018), ≈ 3,1 k€ (2019). Nature non publiée. Sans elles, l'EBE 2017 serait d'environ 23,7 k€ (2,3 % du CA).
+- Contrôle : avec ces subventions, les produits financiers implicites (RCAI − EBIT + charges financières) valent environ 0 € les trois années (5 €, −12 €, 9 €) ; avec le CA seul, ils seraient de −358 € en 2017, ce qui est impossible.
 - Charges financières (GU = couverture × EBE) : 9,8 k€ (2017), 5,9 k€ (2018), 8,4 k€ (2019).
-- CAF (caf_sur_ca × CA, subventions d'exploitation supposées nulles) : 59,5 k€ (2017), 5,2 k€ (2018), −106,3 k€ (2019).
-- Dette financière hors concours bancaires (capacité × CAF) : ≈ 187 k€ (2017), ≈ 164 k€ (2018), ≈ 215 k€ (2019). Peut inclure des comptes courants d'associés (DV).
-- Fonds propres implicites (dette/taux, concours bancaires supposés nuls) : ≈ 43 k€ (2017), ≈ 11 k€ (2018), ≈ 18 k€ (2019) ; total bilan ≈ 0,39 / 0,31 / 0,40 M€. Ordre de grandeur seulement.
-- Pont d'EBE 2017 → 2019 : +109,9 k€ (CA) ; −31,8 k€ (achats consommés = Δ(CA − marge brute)) ; −240,5 k€ (autres charges nettes = Δ(marge brute − EBE)) ; = −100,6 k€ ✔.
-- 2019 : RCAI = −13,352 % × CA = −151,3 k€ ; résultat net +23,5 k€ ⇒ résultat exceptionnel net d'impôt ≈ +175 k€ (origine INCONNUE).
-- Correction d'une hypothèse du directeur : l'idée d'un gros emprunt en 2018 (déduite du seul taux d'endettement) est contredite par la capacité de remboursement (dette stable vers 0,16-0,22 M€). Ne pas la reprendre.
+- CAF (caf_sur_ca × (CA + subventions)) : 61,7 k€ (2017), 5,4 k€ (2018), −106,5 k€ (2019).
+- Dette financière hors concours bancaires (capacité × CAF) : ≈ 194 k€ (2017), ≈ 167 k€ (2018), ≈ 216 k€ (2019). Peut inclure des comptes courants d'associés (DV).
+- Fonds propres implicites (dette/taux, concours bancaires supposés nuls) : ≈ 44 k€ (2017), ≈ 11 k€ (2018), ≈ 18 k€ (2019) ; total bilan ≈ 0,41 / 0,31 / 0,40 M€. Ordre de grandeur seulement.
+- Pont d'EBE 2017 (61,8 k€) → 2019 (−100,6 k€), soit −162,4 k€ : +109,9 k€ (CA) ; −31,8 k€ (achats consommés = Δ(CA − marge brute)) ; −35,0 k€ (baisse des subventions d'exploitation) ; −205,4 k€ (autres charges nettes = Δ(marge brute − EBE + subventions)) ✔. Ces autres charges passent d'environ 0,82 à 1,03 M€ (+25 %) pendant que le CA progresse de 11 %.
+- 2019 : RCAI = −13,352 % × (CA + subventions) = −151,7 k€ ; résultat net +23,5 k€ ⇒ résultat exceptionnel net d'impôt ≈ +175 k€ (origine INCONNUE). Même calcul : ≈ +28 k€ en 2017 et ≈ +21 k€ en 2018.
+- Correction d'une hypothèse du directeur : l'idée d'un gros emprunt en 2018 (déduite du seul taux d'endettement) est contredite par la capacité de remboursement (dette stable vers 0,17-0,22 M€). Ne pas la reprendre.
 
 ## Inconnus
 - Comptes 2020 et 2023 (confidentiels), 2024 (non déposés) ; montant du passif déclaré à la liquidation (état des créances déposé au greffe de Cusset le 16/09/2026, consultable au greffe).
-- Propriétaire exact des murs et des terres : GFA Domaine du Mont probable pour les terres ; le château lui-même n'est pas documenté (la société hôtelière a un bilan de ≈ 0,3-0,4 M€, ce qui rend peu probable qu'elle le porte à sa valeur de marché).
+- Associés du GFA Domaine du Mont (non publiés) ; propriétaire des deux parcelles C1246 et C1248 sorties du GFA ; loyer ou bail entre le GFA et la société hôtelière. Aucune des sociétés liquidées ne possède de parcelle ni de local dans l'Allier en 2025 (note Y3), ce qui concorde avec un bilan hôtelier de ≈ 0,3-0,4 M€.
 - Comptes des EARL (non publiés).

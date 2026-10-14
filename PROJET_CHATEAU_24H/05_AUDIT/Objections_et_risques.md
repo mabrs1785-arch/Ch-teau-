@@ -434,7 +434,7 @@ Barème :
 10. **Fiscalité MH personnelle** : l'ordre de grandeur de l'économie d'impôt (« plusieurs dizaines de k€/an ») est une **ESTIMATION** qui dépend du TMI, de l'ouverture au public et de la protection du bien. Non modélisée.
 11. **Esquisse « petit château »** : toutes ses hypothèses sont celles de l'auditeur [EST]. Elle ne constitue pas un scénario recommandé.
 12. **Variantes [CALC]** : elles réutilisent la mécanique du directeur. Une erreur commune au modèle, non détectée ici, se retrouverait dans mes tests. J'ai vérifié manuellement le compte de résultat de B_central (CA 318 k€ en euros 2026, marge 230,7 k€, charges fixes 232,4 k€), ainsi que les échéanciers de dette et l'IS.
-13. **Ygrande** : le lien entre l'exploitant liquidé et l'enseigne repose en partie sur un extrait [A7 CE2]. Le statut actuel de l'annonce SAFER n'a pas été revérifié par l'auditeur.
+13. **Ygrande** : le lien entre l'exploitant liquidé et l'enseigne repose en partie sur un extrait [A7 CE2]. Le statut actuel de l'annonce SAFER n'a pas été revérifié par l'auditeur. *Mise à jour du 14/10/2026 (étude de cas `02_BENCHMARK/Cas_Ygrande/`) : le lien est confirmé par France 3 (29/10/2025, page lue) ; le domaine est en vente en 2026 par quatre canaux, dont la SAFER.*
 14. **Sécheresse 2026** : le −33 % de pousse des prairies est cité par la presse d'après le ministère [A8-07]. Le prix du foin (> 200 €/t) est un **EXTRAIT** (la page Réussir renvoyait une erreur 404).
 15. **Contre-exemples cherchés et non trouvés** :
     - un château vendu avec un crédit-vendeur important ;
