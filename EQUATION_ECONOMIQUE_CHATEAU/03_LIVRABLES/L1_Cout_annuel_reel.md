@@ -3,7 +3,7 @@
 > **Statut de ce document**
 > - Estimation argumentée, en euros constants 2026, TTC pour un propriétaire particulier.
 > - Les identifiants entre crochets ([R1-05], [R2-11]…) renvoient au registre des sources (`04_SOURCES/Registre_sources.csv`).
-> - Les calculs sont dans `02_MODELE/sorties/Modele_equation_chateau.xlsx`, feuilles Hypotheses et Budget. Chaque cellule est une formule, vérifiée par un calcul Python indépendant (10 500 formules, 0 écart).
+> - Les calculs sont dans `02_MODELE/sorties/Modele_equation_chateau.xlsx`, feuilles Hypotheses et Budget. Chaque cellule est une formule, vérifiée par un calcul Python indépendant (11 301 formules, 0 écart).
 > - Statuts des hypothèses : SOURCÉ, ESTIMATION (raisonnement sur sources), HYPOTHÈSE (choix de modélisation à valider).
 
 ---
@@ -14,7 +14,7 @@
 |---|---|---:|---:|
 | **S1 — relativement économique** | Château de 900 m², 600 m² de dépendances, 50 ha, 12 boxes, 2,1 salariés | **≈ 0,33 M€** | 0,19 – 0,56 M€ |
 | **S2 — grand domaine équestre haut de gamme** | Château inscrit de 2 000 m², 2 500 m² de dépendances, 120 ha, manège, 40 boxes, 10 salariés | **≈ 1,24 M€** | 0,78 – 2,06 M€ |
-| **S3 — domaine historique ultra-premium** | Château classé de 4 500 m² avec décors, 4 000 m² de dépendances, 300 ha, 10 ha de jardins réguliers, 24,5 salariés | **≈ 3,47 M€** | 2,02 – 6,20 M€ |
+| **S3 — domaine historique ultra-premium** | Château classé de 4 500 m² avec décors, 4 000 m² de dépendances, 300 ha, 10 ha de jardins réguliers, 29,5 salariés | **≈ 3,64 M€** | 2,17 – 6,41 M€ |
 
 Ce besoin couvre tout ce que le brief demande de financer :
 - entretien courant et gros entretien du bâti ;
@@ -35,13 +35,13 @@ Il exclut l'achat, la restauration initiale et le train de vie personnel du prop
 
 1. **Un château entretenu sans retard coûte chaque année environ 8 à 10 % de sa valeur de reconstruction.** Pour S2, c'est environ un tiers du prix d'achat retenu (3,5 M€), **chaque année**. Sur 20 ans, le propriétaire dépense donc environ 7 fois le prix du château. La valeur de marché d'un château est très inférieure à son coût de reconstruction : selon un courtier, celui-ci peut valoir 10 fois le prix d'achat [R1-26]. C'est le « piège du château » : on l'achète au prix du marché, mais on l'entretient au prix de la reconstruction.
 2. **Deux postes font l'essentiel.**
-   - Le **bâti** représente 37 à 49 % du besoin. La provision de gros entretien en constitue la plus grande part.
+   - Le **bâti** représente 37 à 47 % du besoin. La provision de gros entretien en constitue la plus grande part.
    - Le **personnel** représente 19 à 33 % du besoin.
    - Énergie, taxes et assurances, réunies, n'en représentent qu'environ 10 à 15 %.
 3. **Le gros entretien est le poste le plus incertain et le plus souvent sous-estimé.**
    - Les maisons historiques britanniques dépensent en moyenne ≈ 156 000 à 161 000 £ TTC par an pour leur seul bâtiment principal. Elles accumulent pourtant un retard d'entretien moyen d'environ 2 M£ chacune [R1-05].
    - Une dépense « normale » ne suffit donc pas à maintenir un état d'exception.
-4. **La trésorerie n'est pas lisse.** Les provisions de gros entretien se dépensent par campagnes de travaux. En S2, la projection donne des campagnes d'environ 1,26 à 1,37 M€ tous les quatre ans. Il faut un **fonds de travaux** distinct de la trésorerie courante.
+4. **La trésorerie n'est pas lisse.** Les provisions de gros entretien se dépensent par campagnes de travaux. En S2, la projection donne des campagnes d'environ 1,27 à 1,43 M€ tous les quatre ans. Il faut un **fonds de travaux** distinct de la trésorerie courante.
 5. **Les « budgets déclarés » sont trompeurs.** Un vendeur de petit château MH (512 m² habitables) déclare environ 14 600 €/an de charges, mais sans aucun gros entretien [R1-32]. La Demeure Historique avance un plancher de 40 000 €/an par monument, **hors restauration** [R1-01]. Ces chiffres mesurent ce que les propriétaires dépensent, pas ce que coûte un état d'exception.
 6. **Les deux paramètres qui font varier le résultat** sont la valeur de reconstruction au m² et le taux annuel de gros entretien. Pour S2, ils déplacent chacun le besoin d'environ ±0,1 à 0,16 M€ (§ 6). Ce sont les premières données à faire chiffrer par un architecte du patrimoine et un assureur sur un bien réel.
 
@@ -67,11 +67,15 @@ Il exclut l'achat, la restauration initiale et le train de vie personnel du prop
 | Toitures développées (estimation géométrique) | ≈ 1 200 m² | ≈ 3 300 m² | ≈ 6 000 m² |
 | Foncier | 50 ha (35 de prés, 12 de bois, 3 de parc) | 120 ha (80 prés, 30 bois, 8 parc, 2 jardins réguliers) | 300 ha (120 prés, 120 bois, 50 parc, 10 jardins réguliers) |
 | Équestre | 12 boxes, carrière ; 4 chevaux du propriétaire | 40 boxes, manège, 2 carrières ; 8 chevaux | 50 boxes, manège ; 12 chevaux |
-| Personnel du domaine (hors activité commerciale) | 2,1 ETP | 10 ETP | 24,5 ETP |
+| Personnel du domaine (hors activité commerciale) | 2,1 ETP | 10 ETP | 29,5 ETP |
 
 **Effectifs.** Les effectifs ne couvrent que le domaine et les chevaux du propriétaire.
 - L'agent R2 obtient 13 ETP pour S2 et 29 ETP pour S3 s'il compte une écurie pleine de 40 à 50 chevaux. Cet excédent relève d'une activité de pension, traitée comme un moteur de revenus (livrable L2).
 - La composition des effectifs (régisseur, chef jardinier, jardiniers, maintenance, ouvrier agricole, soigneur, responsable d'écurie, gouvernance de maison, employés de maison) est détaillée dans la feuille Hypotheses.
+- **Jardiniers, après la vague 2.** L'agent V2C a appliqué aux surfaces des scénarios les temps d'entretien mesurés par la Ville de Rennes [V2C-21]. Ces temps vont de 2 800 h/ha/an pour un jardin très fleuri à 90 h/ha/an pour une prairie fauchée.
+  - En S2, les 2 jardiniers et le chef jardinier suffisent à condition de gérer 6 des 10 ha du parc en prairie ou en pelouse champêtre (gestion différenciée). Un parc soigné partout demanderait environ 5,5 ETP.
+  - En S3, les 11 jardiniers retenus par R2 étaient sous-estimés. Il en faut au moins 15,7 dans la variante la plus extensive. Le modèle retient désormais **16 jardiniers**, plus le chef. Le besoin de S3 passe de 3,47 à 3,64 M€.
+  - Le budget suppose donc partout une **gestion différenciée** : soin maximal près du château et sur les perspectives, prairies au-delà. C'est d'ailleurs la composition classique d'un domaine (Vaux-le-Vicomte : 33 ha de jardins dans un parc de 500 ha [V2C-25]).
 
 ---
 
@@ -84,7 +88,7 @@ Tableau généré depuis le modèle (`02_MODELE/tableaux.py`) :
 | Bâti : entretien courant | 27 k€ | 90 k€ | 341 k€ |
 | Bâti : provision de gros entretien et aléas de chantier | 93 k€ | 311 k€ | 1 177 k€ |
 | Sécurité | 2 k€ | 7 k€ | 25 k€ |
-| Personnel | 63 k€ | 404 k€ | 948 k€ |
+| Personnel | 63 k€ | 404 k€ | 1 110 k€ |
 | Jardins, parc, prairies, clôtures, bois (hors personnel) | 16 k€ | 44 k€ | 133 k€ |
 | Équipements (renouvellement, entretien, carburant) | 27 k€ | 80 k€ | 106 k€ |
 | Chevaux du propriétaire et installations équestres | 24 k€ | 70 k€ | 91 k€ |
@@ -92,18 +96,18 @@ Tableau généré depuis le modèle (`02_MODELE/tableaux.py`) :
 | Assurances | 14 k€ | 45 k€ | 156 k€ |
 | Impôts et taxes (foncières, IFI) | 7 k€ | 29 k€ | 91 k€ |
 | Administration et suivi patrimonial | 8 k€ | 31 k€ | 85 k€ |
-| Imprévus d'exploitation | 6 k€ | 23 k€ | 59 k€ |
-| Investissements futurs | 12 k€ | 47 k€ | 131 k€ |
-| **Besoin annuel total (central)** | **325 k€** | **1 239 k€** | **3 469 k€** |
-| Fourchette favorable – défavorable | 195 – 562 k€ | 777 – 2 058 k€ | 2 020 – 6 204 k€ |
-| Effectif salarié (ETP) | 2,1 | 10,0 | 24,5 |
-| Part du personnel / part du bâti | 19 % / 43 % | 33 % / 37 % | 27 % / 49 % |
+| Imprévus d'exploitation | 6 k€ | 23 k€ | 64 k€ |
+| Investissements futurs | 12 k€ | 47 k€ | 138 k€ |
+| **Besoin annuel total (central)** | **325 k€** | **1 239 k€** | **3 643 k€** |
+| Fourchette favorable – défavorable | 195 k€ – 562 k€ | 777 k€ – 2 058 k€ | 2 167 k€ – 6 407 k€ |
+| Effectif salarié (ETP) | 2,1 | 10,0 | 29,5 |
+| Part du personnel / part du bâti | 19,3 % / 43,1 % | 32,6 % / 37,2 % | 30,5 % / 47,1 % |
 | Valeur de reconstruction retenue | 3,6 M€ | 12,0 M€ | 45,5 M€ |
-| Besoin en % de la valeur de reconstruction | 9,0 % | 10,3 % | 7,6 % |
-| Besoin par m² bâti | 217 €/m² | 275 €/m² | 408 €/m² |
-| Si une société assujettie portait les charges (TVA récupérée) | 296 k€ | 1 151 k€ | 3 226 k€ |
-| Scénario complémentaire : annuité de dette (70 % du prix, 20 ans, 4,2 %) | + 63 k€ | + 183 k€ | + 472 k€ |
-| **Total avec dette d'acquisition** | **388 k€** | **1 423 k€** | **3 941 k€** |
+| Besoin en % de la valeur de reconstruction | 9,0 % | 10,3 % | 8,0 % |
+| Besoin par m² bâti | 217 €/m² | 275 €/m² | 429 €/m² |
+| Si porté par une société assujettie (TVA récupérée) | 296 k€ | 1 151 k€ | 3 399 k€ |
+| Scénario complémentaire : + annuité de dette (70 % du prix, 20 ans, 4,2 %) | 63 k€ | 183 k€ | 472 k€ |
+| Total avec dette | 388 k€ | 1 423 k€ | 4 115 k€ |
 
 ### 4.1 Justification des principaux postes
 
@@ -125,14 +129,16 @@ Tableau généré depuis le modèle (`02_MODELE/tableaux.py`) :
 - Les niveaux de salaire (multiples du SMIC) sont des hypothèses : aucun salaire de marché publié n'a été trouvé pour les régisseurs, chefs jardiniers ou majordomes [R2, § 2.2].
 - Repères d'effectifs :
   - Villandry : 10 jardiniers pour 7 ha de jardins réguliers, soit environ 1,4 par ha, un plafond [R2-15] ;
-  - Chatsworth : 29 jardiniers et 32 agents de maintenance en moyenne [R5-05].
+  - Chatsworth : 29 jardiniers et 32 agents de maintenance en moyenne [R5-05] ;
+  - jardins de Vaux-le-Vicomte : environ 24 000 à 27 000 € par hectare et par an, bassins compris, ce qui correspond au code 2 « jardin structuré » des temps de Rennes [V2C-24] [V2C-21].
 
 **Énergie.**
 - Surfaces chauffées : 450 / 1 000 / 1 800 m².
 - Consommation : 220 kWh/m², une hypothèse, car aucune mesure de château n'a été trouvée.
 - Prix de la chaleur : 0,15 € TTC/kWh, entre les granulés (10,4 c€ en 2023 [R1-22]) et le gaz (19,49 c€ au 1er novembre 2026 [R1-25]).
 - Électricité : 0,238 € TTC/kWh [R1-24].
-- L'énergie pèse peu (5 à 7 % du besoin), mais un changement de combustible fait varier la facture d'un facteur 2.
+- L'énergie pèse peu (3 à 7 % du besoin), mais un changement de combustible fait varier la facture d'un facteur 2.
+- Le prix repère du gaz (19,49 c€) est celui du seul mois de novembre 2026, après deux hausses successives [V2V].
 
 **Assurances.**
 - Taux retenu : 3 ‰ de la valeur de reconstruction. Il se situe entre deux repères qui divergent :
@@ -165,6 +171,8 @@ Tableau généré depuis le modèle (`02_MODELE/tableaux.py`) :
 | Vaux-le-Vicomte [R4-30][R4-31] | Budget de 8 à 9 M€/an, 75 ETP, tourisme compris | Monument hors norme : le budget inclut l'exploitation touristique. |
 | Chantilly [R4-46][R4-47] | Charges ≈ 13 M€ (2020, extrait) ; besoin de restauration de 68 M€ sur 10 ans | Échelle d'un monument national. |
 | Petit château MH, 512 m² habitables, charges déclarées par le vendeur [R1-32] | ≈ 14 600 €/an, sans gros entretien | Illustre l'écart entre charges déclarées et coût complet. |
+| Rapport IGF-IGAC sur les monuments historiques privés (février 2020) [V2C-07] | Dépense des propriétaires privés : au moins 535 M€/an, soit environ 24 000 € par monument ; modèle jugé « de plus en plus difficilement viable » | Seule évaluation publique d'ensemble. Le profil « résident », le plus proche de notre propriétaire, ne finance pas sa part des gros travaux sans revenus extérieurs. |
+| Charges courantes déclarées pour de petits châteaux (annonces, courtier, plancher de La Demeure Historique) [V2C] | 15 000 à 80 000 €/an, hors gros travaux | S1 (325 k€) est 4 à 22 fois au-dessus : c'est un budget **nécessaire**, pas un budget **observé**. |
 
 **Lecture.** Le modèle est **plus exigeant que les dépenses réellement observées**. C'est voulu : le brief demande un château restauré et maintenu dans un état d'exception. Les dépenses observées correspondent à des propriétaires qui, en moyenne, accumulent du retard d'entretien. Un propriétaire réel peut dépenser 40 à 60 % de ce budget pendant quelques années, mais il **consomme alors son patrimoine** : le retard s'accumule et se paiera plus tard.
 
@@ -172,7 +180,7 @@ Tableau généré depuis le modèle (`02_MODELE/tableaux.py`) :
 
 ## 6. Ce qui fait varier le besoin
 
-Les hypothèses sont modifiées **une à une**, de leur valeur favorable à leur valeur défavorable. L'écart est mesuré par rapport au besoin central. Fichier : `02_MODELE/sorties/sensibilite_budget.json`.
+Les hypothèses sont modifiées **une à une**, de leur valeur favorable à leur valeur défavorable. L'écart est mesuré par rapport au besoin central. Script : `02_MODELE/sensibilite.py` ; résultats : `02_MODELE/sorties/sensibilite_budget.json`.
 
 | Hypothèse | S1 | S2 | S3 |
 |---|---:|---:|---:|
@@ -180,8 +188,9 @@ Les hypothèses sont modifiées **une à une**, de leur valeur favorable à leur
 | Taux de gros entretien (1,5 % – 3 %) | ±32 k€ | ±108 k€ | ±408 k€ |
 | Valeur des dépendances (40 – 60 % du château) | ±7 k€ | ±35 k€ | ±107 k€ |
 | Entretien courant (0,5 – 1 %) | ±10 k€ | ±32 k€ | ±122 k€ |
-| Investissements futurs (2 – 6 %) | ±6 k€ | ±23 k€ | ±66 k€ |
+| Investissements futurs (2 – 6 %) | ±6 k€ | ±23 k€ | ±69 k€ |
 | Taux d'assurance (1,5 – 5 ‰) | −6 / +8 k€ | −19 / +26 k€ | −73 / +97 k€ |
+| Coût d'un jardinier (1,1 – 1,3 SMIC) | ±4 k€ | ±9 k€ | −72 / +69 k€ |
 | Prix et consommation de chauffage | ±6 k€ chacun | ±13 k€ chacun | — |
 
 **Les effectifs ne sont pas un paramètre incertain : c'est un choix de train de vie.** Chaque ETP ajouté coûte de 24 k€ (soigneur) à 79 k€ (régisseur). Supprimer le poste de gouvernante (≈ 41 k€) et celui d'ouvrier agricole (≈ 33 k€, diminué du coût de la fenaison sous-traitée) réduirait le besoin S2 d'environ 50 à 70 k€/an (livrable L2, leviers « prestige efficace »).
@@ -194,9 +203,11 @@ La projection sur 20 ans (feuilles `Proj_*`) verse chaque année la provision da
 
 | | Provision annuelle (an 1 → an 20) | Campagnes projetées |
 |---|---|---|
-| S1 | 94 → 103 k€ | ≈ 0,38 à 0,41 M€ tous les 4 ans |
-| S2 | 313 → 344 k€ | ≈ 1,26 à 1,37 M€ tous les 4 ans |
-| S3 | 1 183 → 1 301 k€ | ≈ 4,8 à 5,2 M€ tous les 4 ans |
+| S1 | 94 → 108 k€ | ≈ 0,38 à 0,43 M€ tous les 4 ans |
+| S2 | 313 → 361 k€ | ≈ 1,27 à 1,43 M€ tous les 4 ans |
+| S3 | 1 186 → 1 367 k€ | ≈ 4,8 à 5,4 M€ tous les 4 ans |
+
+La provision augmente de 0,75 % par an au-delà de l'inflation, au rythme de l'indice INSEE de l'entretien-amélioration des bâtiments sur 2005-2025 [V2C-03]. La couverture a dérivé plus vite (+1,26 % par an), et les métiers des monuments historiques n'ont pas d'indice public.
 
 Chaque campagne dépense quatre années de provisions, ce qui suppose un fonds constitué à temps. Si la réserve tombe sous un an de besoin, les règles de pilotage du modèle reportent 30 % de la campagne (L6).
 
@@ -204,7 +215,7 @@ Chaque campagne dépense quatre années de provisions, ce qui suppose un fonds c
 - Il faut constituer le fonds **avant** la première campagne, ou acheter un bien déjà restauré.
 - Les subventions des DRAC s'ajoutent rarement, avec retard, et ne sont jamais acquises :
   - taux moyen de 20 % pour un monument inscrit et 40 % pour un classé [R1-34] ;
-  - crédits en baisse de 29 % en 2026 [R1-33][R1-34] ;
+  - crédits en baisse dans le projet de loi de finances pour 2026 : −29 % en crédits de paiement selon le Sénat ; −13 % (de 128,7 à 112 M€) sur un périmètre plus étroit selon l'Assemblée nationale [R1-33][R1-34]. Les deux chiffres ne portent pas sur le même périmètre [V2V] ;
   - aucune subvention si les travaux ont commencé [R1-03].
 
 ---

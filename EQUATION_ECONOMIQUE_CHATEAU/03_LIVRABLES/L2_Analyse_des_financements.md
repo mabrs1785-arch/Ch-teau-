@@ -1,7 +1,7 @@
 # L2 — Comment financer durablement ces coûts ? Analyse des solutions possibles
 
 > **Statut et conventions**
-> - Analyse fondée sur 8 agents de recherche (vague 1), 4 recherches ciblées (vague 2) et le modèle `02_MODELE/sorties/Modele_equation_chateau.xlsx`, feuilles Moteurs et Modeles.
+> - Analyse fondée sur 8 agents de recherche (vague 1), 4 recherches ciblées (vague 2 : V2A, V2C, V2D, V2V) et le modèle `02_MODELE/sorties/Modele_equation_chateau.xlsx`, feuilles Moteurs et Modeles (11 301 formules, 0 écart avec le calcul Python).
 > - Montants en € 2026. Les activités sont en HT, le besoin du domaine en TTC (propriétaire particulier).
 > - Identifiants de sources entre crochets ; registre complet dans `04_SOURCES/`.
 
@@ -51,7 +51,7 @@ Le tout doit tenir **chaque année**, y compris en crise. Une réserve absorbe l
 
 | Mécanisme | Preuves |
 |---|---|
-| Château-hôtel exploité | Sur 33 sociétés avec un CA ≥ 1 M€, 61 % sont en perte ; marge nette médiane de −6,3 % [R4-34][R4-35]. Au moins 15 liquidations de 2023 à 2026, et au moins 41 entités « château » de l'hôtellerie ou de la réception en procédure collective depuis 2024 [R4][R7-64]. Ygrande (hôtel et 26 boxes) en liquidation depuis le 28/10/2025 [R4][R7]. |
+| Château-hôtel exploité | Sur 33 sociétés avec un CA ≥ 1 M€, 61 % sont en perte ; marge nette médiane de −6,3 % [R4-34][R4-35]. Sur les seuls comptes 2023-2025 (26 sociétés) : 54 % en perte, marge médiane de −4,5 % [V2V]. Au moins 15 liquidations de 2023 à 2026, et au moins 41 entités « château » de l'hôtellerie ou de la réception en procédure collective depuis 2024 [R4][R7-64]. Ygrande (hôtel et 26 boxes) en liquidation depuis le 28/10/2025 [R4][R7]. |
 | Lieux de réception | Marge nette de 0 à 6 % ; 1 382 châteaux et 3 769 domaines référencés sur une seule plateforme [R7-05][R7-06][R7-63]. |
 | Ouverture à la visite | « Pour 99,8 % des propriétaires, la seule activité d'ouverture à la visite n'est donc pas rentable » ; résultat toujours négatif sous 10 000 visiteurs payants [R1-01]. |
 | Haras « vitrines », grands événements équestres | Haras de Hus : CA de 1,77 M€, résultat de −2,94 M€ (2024) ; Pôle international du cheval : −0,26 M€ [R4-39][R4-15]. Burghley Horse Trials : 6,3 M£ de CA pour 0,13 M£ de résultat d'exploitation [R5-08]. Haras national de Lamballe : déficitaire de 130 673 € en 2025 et 3 écuries résidentes parties [R6-17]. |
@@ -81,6 +81,8 @@ Contribution nette annuelle de chaque activité, à l'échelle d'un domaine S2, 
 | Bail solaire (5 ha hors champ de visibilité) | A | 60 k€ | 15 k€ | 0 | — |
 | Forêt (30 ha) | A | 3 k€ | 2 k€ | 2 k€ | — |
 | Château-hôtel exploité (15 chambres) | B/C | 623 k€ | **−388 k€** | −1 095 k€ | 7 500 k€ |
+| Bail d'ancrage à un exploitant de séminaires (50 chambres, si les conditions sont réunies, § 3.4) | A | 521 k€ | **350 k€** | 0 | à la charge de l'exploitant |
+| Location de luxe de la partie privée (3 semaines par an, § 3.5) | C | 182 k€ | 39 k€ | −18 k€ | 300 k€ |
 
 ### 3.1 Activités équestres [R6]
 
@@ -116,12 +118,12 @@ Contribution nette annuelle de chaque activité, à l'échelle d'un domaine S2, 
 - **Hébergement.**
   - Gîtes : 44 à 47 % d'occupation sur l'année [R7-48][R7-50].
   - Les logements classés G ne peuvent plus être loués (F dès 2028) : risque pour des communs anciens [R3-34].
-  - Château-hôtel : 350 000 à 700 000 € d'investissement par chambre et ≈ 1,65 salarié par chambre [R7-41][R7-42][R7-43]. Projeté à 15 chambres, il **perd de l'argent dans le cas central**, ce que confirment les comptes réels (§ 2.2).
+  - Château-hôtel : 350 000 à 700 000 € d'investissement par chambre, hors prix d'achat [R7-41][R7-42][R7-43]. Environ 1,65 personne par chambre, restaurant compris : c'est un effectif projeté de 33 personnes, dont 19 en cuisine, restaurant et bar [V2V]. Projeté à 15 chambres, il **perd de l'argent dans le cas central**, ce que confirment les comptes réels (§ 2.2).
 
 ### 3.3 Foncier, énergie, dépendances [R8]
 
 - **Logements dans les communs.**
-  - Loyer de 6,8 à 10,9 €/m²/mois charges comprises en commune rurale [R8-22][R8-23].
+  - Loyer de 6,8 à 10,9 €/m²/mois charges comprises en commune rurale [R8-22][R8-23]. Cette fourchette couvre 75 % des communes ; la médiane des petites communes est de 8,63 €/m² [V2V].
   - Transformation : ≈ 1 600 à 2 200 € TTC/m² [R8-24].
   - Rendement net de **3 % environ** (central). C'est surtout un moyen de faire entretenir et occuper des bâtiments qui coûteraient de toute façon.
 - **Solaire.**
@@ -135,17 +137,72 @@ Contribution nette annuelle de chaque activité, à l'échelle d'un domaine S2, 
 - **Petite hydroélectricité.** 16 000 à 68 000 €/an pour 100 kW, mais seulement s'il existe un moulin avec un droit fondé en titre. La moitié des installations ont une rentabilité insuffisante [R8-11][R8-12][R3-53].
 - **Stockage** (camping-cars, voitures de collection) : quelques milliers à quelques dizaines de milliers d'euros. Demande rurale non démontrée [R8-17][R8-18].
 
-### 3.4 Bail à un exploitant (« locataire d'ancrage »)
+### 3.4 Bail à un exploitant (« locataire d'ancrage ») [V2A]
 
-*Section complétée avec la recherche V2A (voir § 8).*
+**Qui exploite, qui possède.**
+- Châteauform', principal exploitant de maisons de séminaires, est surtout **exploitant**. Dans les cas où le propriétaire des murs est identifiable, ce sont des tiers : une foncière du groupe Batipart, une foncière du groupe Eurosic, Icade, une SA immobilière, un trust [V2A-01] [V2A-03] [V2A-14] [V2A-54].
+- Contrats observés :
+  - rachat du fonds de commerce (350 000 et 500 000 € en 2017) [V2A-02] [V2A-03] ;
+  - bail commercial ;
+  - concessions de 5 ans (Institut de France) et de 12 ans (Belgique, où l'exploitant investit plus de 1,1 M€) [V2A-10] [V2A-54].
+- Son dirigeant indique signer « pour des périodes de 15 ou 30 ans » [V2A-54]. **Aucun montant de loyer n'est publié.**
 
-### 3.5 Libération de capital et location de luxe
+**Conditions d'entrée** (données du site de l'exploitant, PAGE LUE, et calculs de V2A) :
+- **Au moins 40 chambres** : c'est le minimum des maisons françaises de Châteauform', la médiane étant de 61 [V2A-13].
+- **Une localisation proche de Paris ou d'une gare.** 24 maisons sur 29 sont à 88 km ou moins de Paris. Les 5 autres sont à 35-50 minutes d'une gare TGV ou d'un aéroport de Lyon, Bordeaux ou Aix-Marseille. La proximité d'une gare devient un critère important [V2A-13] [V2A-54].
+- Conséquences par scénario (HYPOTHÈSES de capacité) :
+  - S1 est hors champ ;
+  - S2 est à la limite, car il faudrait mobiliser l'essentiel des bâtiments ;
+  - S3 est plausible, en gardant une aile privée.
 
-*Section complétée avec la recherche V2D (voir § 8).*
+**Loyer possible** (ESTIMATION fragile : aucun loyer réel de château loué à un exploitant n'a été trouvé) :
+- chiffre d'affaires de l'exploitant : environ 70 000 € HT par chambre et par an (Méry 72 400 €, Saint-Just 68 800 €) [V2A-14] [V2A-01] ;
+- loyer : 8 à 15 % de ce chiffre d'affaires, selon les usages hôteliers et la capacité de paiement de l'exploitant [V2A-29] [V2A-31] ;
+- soit 0,22 à 0,63 M€ brut par an pour S2 (40 à 60 chambres), et 0,34 à 1,05 M€ pour S3 (60 à 100 chambres).
+- Si l'exploitant finance la transformation, le loyer se place en bas de fourchette. Le modèle retient 10 % du chiffre d'affaires et 50 chambres, soit 0,35 M€ de loyer brut. Après les frais du bailleur (10 %) et avec les charges du domaine reprises par l'exploitant (énergie et entretien courant de la zone louée, environ 35 k€), la contribution centrale reste d'environ 0,35 M€. Le cas défavorable vaut 0 : sans localisation adéquate, aucun exploitant de cette taille ne viendra.
+
+**Cadre juridique** (fiches Service Public, à valider par un avocat) :
+- le bail commercial dure au moins 9 ans et donne droit au renouvellement ;
+- refuser ce renouvellement coûte une indemnité d'éviction de l'ordre de la valeur du fonds [V2A-36] [V2A-41] ;
+- les **grosses réparations** (toiture, murs porteurs) restent **toujours** à la charge du bailleur [V2A-38] ;
+- en cas de procédure collective, le bail est en principe cédé avec l'entreprise, à un repreneur que le propriétaire n'a pas choisi [V2A-39].
+
+**Contre-exemples** :
+- la société d'exploitation du château de Méry a perdu 0,56 M€ en 2024, perte portée par son actionnaire foncier [V2A-14] ;
+- loyers variables de Covivio : −67 % au premier semestre 2020 [V2A-31] ;
+- des gestionnaires de résidences Pierre et Vacances ont suspendu leurs loyers ; près de 20 000 bailleurs étaient sans paiement depuis janvier 2021 [V2A-62] ;
+- des exploitants hôteliers se sont succédé aux Mesnuls, au Tremblay et à Herces [V2A-51] [V2A-52].
+
+**Cohabitation.**
+- **Aucun cas documenté** d'un propriétaire vivant au château à côté d'un exploitant de 40 chambres ou plus n'a été trouvé.
+- Le cas le plus proche est Courances. Un opérateur y exploite les dépendances (7 maisons, 39 personnes) pendant que le château reste privé, mais le contrat est inconnu [V2A-21].
+- Ce format de location de dépendances génère environ 12 000 € de chiffre d'affaires par chambre côté opérateur, soit six fois moins qu'une maison de séminaires [V2A-17].
+
+**Verdict.**
+- C'est la seule activité sur place qui change l'ordre de grandeur : un revenu de classe A de 20 à 50 % du besoin.
+- Elle exige trois conditions cumulatives : la localisation, au moins 40 chambres et un exploitant qui finance la transformation.
+- Elle immobilise l'essentiel des bâtiments pendant 15 à 30 ans, au détriment de la partie privée et du calme.
+- **Option sérieuse pour un grand domaine (S3) bien situé ; incompatible avec le cahier des charges de S2.** Elle est évaluée comme modèle M7.
+
+### 3.5 Libération de capital et location de luxe [V2D]
+
+| Mécanisme | Ce qu'il rapporte | Conditions et coûts | Verdict |
+|---|---|---|---|
+| **Vendre des dépendances à un opérateur « Monument historique »** qui les divise en logements défiscalisés | Capital ponctuel, **montant INCONNU**. Le prix payé au propriétaire d'origine n'est publié nulle part. La part « foncier » revendue aux investisseurs, marge de l'opérateur comprise, vaut 13 à 38 % de leur prix [V2D-05] [V2D-09] [V2D-13] | Deux opérateurs vérifiés (Histoire & Patrimoine, Buildinvest), dont tous les programmes sont en ville ou à 10-30 minutes d'une métropole [V2D-07] [V2D-13]. L'immeuble divisé doit être à 75 % en habitation dans les 2 ans, locaux commerciaux exclus [V2D-16]. Pertes cumulées d'environ −86 M€ en 2025 pour les sociétés du leader (simple somme) [V2D-42]. Opérations politiquement sensibles (Grignon) [V2D-17] | **Aucun exemple** d'un propriétaire qui vend ses communs et garde le château. Perte définitive des bâtiments ; 7 à 125 ménages voisins |
+| **Vendre la nue-propriété** et garder l'usufruit à vie | Valeur fiscale de la nue-propriété à 26 ans : **20 %** du bien (barème de l'article 669) [V2D-19] ; prix de marché inconnu, sans doute plus bas | Aucun marché identifié pour des châteaux [V2D-30] ; IFI encore dû sur 80 % [V2D-20] | Perte définitive pour les héritiers, pour au mieux 20 % de la valeur |
+| **Céder un usufruit temporaire** d'une partie (10 à 30 ans) | Valeur fiscale : 23 % par période de 10 ans [V2D-19] | Le prix est **imposé comme un revenu** l'année de l'encaissement [V2D-21] | Juridiquement compatible avec « garder la propriété », mais fiscalement coûteux ; aucun exemple |
+| **Copropriété ou partage entre familles** | Vente de lots ; seuls prix trouvés : 640 000 à 960 000 € **affichés** par logement à Monboucher [V2D-44] | Indivision instable ; SCI qui loue en saisonnier jugée commerciale [V2D-34] | Les exemples (Panat, Monboucher) reposent sur des pièces communes : incompatible avec une partie entièrement privée |
+| **Location de luxe de la partie privée** à la semaine | 12 755 à 61 850 € par semaine pour 8 à 16 chambres [V2D-35] à [V2D-38] [R7-54] ; commission de 20 à 22 % [V2D-24] [V2D-25] | Environ 2 réservations par propriété et par an chez la plateforme leader [V2D-26] ; piscine et une salle de bains par chambre [V2D-40] [V2D-41] ; 6 semaines disponibles en juillet-août chez un autre acteur [V2D-28] ; location d'une résidence principale limitée à 90-120 jours dans certaines communes [V2D-32] | Seul revenu récurrent, mais modeste. Le modèle retient 3 semaines à 30 000 € : **39 k€ de contribution centrale** (−18 à +182 k€). Le propriétaire doit quitter sa maison l'été. Évaluée comme modèle M8 |
+| **Dette participative** (obligations) | Exemple : 690 000 € à 7 % sur 5 ans pour un château classé [V2D-45] | Environ 48 000 € d'intérêts par an | C'est une dette, pas un financement du fonctionnement |
+
+**Conclusion.**
+- Aucun de ces mécanismes ne finance durablement le fonctionnement.
+- Ceux qui libèrent du capital le font une seule fois, en cédant une partie de la propriété ou de la tranquillité, et pour un montant que les sources ne permettent pas de chiffrer.
+- Leur seul usage cohérent : **verser le capital libéré à la dotation** (§ 6). Chaque million d'euros versé finance environ 27 500 € de besoin par an (règle de dépense de 2,75 %).
 
 ### 3.6 Résultat : les activités sur place ne couvrent qu'une petite part du besoin
 
-Six combinaisons comparées au besoin du domaine S2 (1,24 M€/an), après fuite fiscale :
+Huit combinaisons comparées au besoin du domaine S2 (1,24 M€/an), après fuite fiscale :
 
 | Modèle | Contribution disponible (central) | Couverture du besoin S2 (fav. / central / déf.) | Écart à financer (central) | Investissement |
 |---|---:|---:|---:|---:|
@@ -154,8 +211,14 @@ Six combinaisons comparées au besoin du domaine S2 (1,24 M€/an), après fuite
 | M3 — Équestre haut de gamme et services | 42 k€ | 21 % / **3 %** / −5 % | 1 197 k€ | 0 |
 | M4 — Château-hôtel exploité + réceptions | −361 k€ | 88 % / **−29 %** / −57 % | 1 601 k€ | 7 900 k€ |
 | M5 et M6 — Socle minimal + moteur extérieur | 5 k€ | 6 % / **0,4 %** / −2 % | 1 234 k€ | 0 |
+| M7 — Locataire d'ancrage + socle foncier (§ 3.4) | 264 k€ | 67 % / **21 %** / −0,2 % | 975 k€ | à la charge de l'exploitant |
+| M8 — Socle M1 + location de luxe de la partie privée (§ 3.5) | 77 k€ | 45 % / **6 %** / −2 % | 1 163 k€ | 1 400 k€ |
 
-**Lecture.** Le cas favorable cumule toutes les hypothèses heureuses. Même alors, aucune combinaison compatible avec une résidence calme ne couvre plus de la moitié du besoin. Dans le cas central, elles en couvrent **3 à 7 %**. Le château-hôtel peut couvrir l'essentiel dans le meilleur cas, mais il creuse le déficit dans le cas central, et les comptes réels confirment ce risque.
+**Lecture.**
+- Le cas favorable cumule toutes les hypothèses heureuses. Même alors, aucune combinaison compatible avec une résidence calme ne couvre plus de la moitié du besoin.
+- Dans le cas central, elles en couvrent **3 à 7 %**.
+- Le château-hôtel peut couvrir l'essentiel dans le meilleur cas, mais il creuse le déficit dans le cas central, et les comptes réels confirment ce risque.
+- Le locataire d'ancrage (M7) est la seule exception : 21 % dans le cas central, jusqu'à 67 % dans le meilleur cas. Il suppose de confier l'essentiel des bâtiments à un exploitant pendant 15 à 30 ans, et il tombe à zéro si la localisation ne convient pas.
 
 ---
 
@@ -164,7 +227,7 @@ Six combinaisons comparées au besoin du domaine S2 (1,24 M€/an), après fuite
 | Levier | Effet | Conditions | Limites |
 |---|---|---|---|
 | **Régime fiscal des MH** (CGI art. 156) | Charges foncières déductibles du **revenu global** : 100 % si le château est ouvert au public, 50 % s'il est fermé. Travaux subventionnés : 100 % [R3-02][R3-05] | Classé ou inscrit ; ouverture de 50 jours par an dont 25 non ouvrables d'avril à septembre, ou de 40 jours de juillet à septembre, 6 h par jour [R3-04] ; détention directe ou SCI familiale ; conservation 15 ans [R3-06] | Réduit l'**impôt personnel** : suppose des revenus imposables au barème. Exclut les parties exploitées commercialement [R3-04 § 40]. Pas d'excédent reportable si l'immeuble ne produit pas de recettes |
-| **Subventions des DRAC** | 20 % (inscrit) à 40 % (classé) des travaux éligibles en moyenne [R1-34] | Dossier avant tout commencement de travaux [R1-03] | Crédits −29 % en 2026 [R1-33] ; versement avec plusieurs années de retard ; **jamais acquises** : à exclure du scénario central |
+| **Subventions des DRAC** | 20 % (inscrit) à 40 % (classé) des travaux éligibles en moyenne [R1-34] | Dossier avant tout commencement de travaux [R1-03] | Crédits en baisse dans le projet de loi de finances 2026 : −29 % en crédits de paiement selon le Sénat, −13 % sur un périmètre plus étroit selon l'Assemblée [R1-33][R1-34][V2V] ; versement avec plusieurs années de retard ; **jamais acquises** : à exclure du scénario central |
 | **Loto du patrimoine, Fondation du patrimoine** | 148 000 à 280 000 € pour un site sélectionné, **une seule fois** [R1-12][R1-13][R1-16] | Sélection concurrentielle | Pas un revenu récurrent |
 | **Mécénat via la Fondation du patrimoine** | Les donateurs déduisent 66 % de leur don de l'IR | Propriétaire personne physique ; **recettes commerciales ≤ 60 000 € HT par an** ; conservation et ouverture 10 ans [R3-10] | Fermé dès qu'il y a une vraie activité commerciale ; finance des travaux précis, pas le fonctionnement |
 | **Exonération de droits de succession** (CGI art. 795 A) | 100 % de la valeur transmise exonérée | Convention perpétuelle : ouverture 50 jours par an, maintien du mobilier [R3-13][R3-14] | Pèse durablement sur la tranquillité ; sert la transmission, pas le fonctionnement |
@@ -177,14 +240,29 @@ Six combinaisons comparées au besoin du domaine S2 (1,24 M€/an), après fuite
 
 ---
 
-## 5. Leviers de réduction du besoin (« prestige efficace »)
+## 5. Leviers de réduction du besoin (« prestige efficace ») [V2C]
 
-*Section complétée avec la recherche V2C (voir § 8).*
+**Le premier levier est le niveau de soin choisi pour chaque zone.**
+- Les temps d'entretien mesurés par la Ville de Rennes vont de 2 800 h/ha/an (jardin très fleuri) à 90 h/ha/an (prairie fauchée), soit un facteur 30 [V2C-21].
+- La main-d'œuvre représente 80 à 99 % du coût des espaces verts [V2C-21].
+- Les jardins de Vaux-le-Vicomte coûtent environ 24 000 à 27 000 € par hectare et par an, ce qui correspond au code « jardin structuré » de Rennes [V2C-24].
 
-Leviers déjà quantifiés par le modèle :
-- **Personnel.** Chaque ETP coûte de 24 k€ (soigneur) à 79 k€ (régisseur) [R2-11]. Gouvernante et ouvrier agricole supprimés, avec fenaison sous-traitée : −50 à 70 k€/an en S2.
-- **Jardins.** Les jardins réguliers concentrent le personnel : jusqu'à 1,4 jardinier par hectare [R2-15]. Ramener 2 ha de jardins réguliers à 0,5 ha, autour du château, et traiter le reste en parc pâturé réduit le besoin d'environ 1 à 2 ETP.
-- **Énergie.** Zonage du chauffage (chauffer 700 m² au lieu de 1 000 m²) et bois ou plaquettes du domaine : −10 à 20 k€/an.
+| Levier | Effet chiffré | Statut | Conditions et risques pour le prestige |
+|---|---|---|---|
+| **Gestion différenciée** (soin maximal près du château et sur les perspectives, prairies au-delà) | Passer 1 ha de « jardin d'accompagnement » à « jardin champêtre » économise 550 h/an, soit environ 11 100 €. Par rapport à un parc soigné partout : environ −67 k€/an en S2 et −445 k€/an en S3 [V2C-21] [V2C-11] | ESTIMATION | Plan de gestion écrit ; accepter le « naturel » au loin, ce qui est la composition classique d'un domaine |
+| **Fauche tardive** (prairies au lieu de pelouses) | −710 h/ha/an par rapport à un jardin d'accompagnement, soit environ 14 400 €/ha [V2C-21] | ESTIMATION | Sous-traiter la fauche, ou la faire avec le matériel de fenaison des chevaux |
+| **Éco-pâturage** par un éleveur | Environ −920 €/ha/an (Avignon : plus de 12 000 €/an sur 13 ha, coût nul pour la Ville) [V2C-13] | ESTIMATION | Risque de requalification en bail rural [R3] ; protection des arbres ; cohabitation avec les chevaux non étudiée |
+| **Chaufferie à plaquettes** du bois du domaine | −7 700 à −10 900 €/an pour 90-110 kW ; investissement de 80 000 à 245 000 € HT [V2C-32] [V2C-33] | EXTRAIT | Silo, réseau, autorisations en abords de monument ; le bois a dérivé de +0,9 %/an réel contre +1,9 % (fioul) et +4,8 % (gaz) [V2C-04] |
+| **Régulation et zonage du chauffage** | Jusqu'à −15 % de l'énergie de chauffage (ADEME), soit −3,9 à −5,9 k€/an en S2 [V2C-26] | ESTIMATION | Protéger les décors et le mobilier de l'humidité |
+| **Isolation des combles** | Au plus −60 % de l'énergie selon un propos oral, sans étude [R1-09] ; les monuments historiques sont exclus de l'obligation d'isoler [V2C-27] | ESTIMATION (borne) | Faisabilité contestée sur un bâti protégé [R1-05] |
+| **Personnel** | Supprimer la gouvernante et l'ouvrier agricole, et sous-traiter la fenaison : −50 à 70 k€/an en S2 [R2-11] | ESTIMATION | Choix de train de vie |
+| **Sous-traitance des tâches saisonnières** (fauche, élagage, broyage) | Coût horaire du matériel divisé par 2 à 4 quand il est bien employé [R2-30] ; prix des entreprises du paysage INCONNU | PAGE LUE / INCONNU | Garder en interne le soin quotidien des zones de prestige |
+
+**Lecture.**
+- Seuls les leviers d'espaces verts changent l'ordre de grandeur, et seulement par rapport à un parc soigné partout. Le budget de L1 les **intègre déjà** : il suppose une gestion différenciée en S2, et 16 jardiniers au lieu de 33 en S3. Ils sont la **condition** pour que ces effectifs suffisent, pas une économie supplémentaire.
+- Les leviers énergétiques pèsent moins de 2 % du besoin de S2 et de S3.
+- Au-delà, réduire le besoin relève de **choix de train de vie** : moins de jardins réguliers, moins de personnel de maison. Ces choix contredisent en partie le brief, qui demande des jardins impeccables et un personnel suffisant.
+- Par rapport au budget central, les leviers vérifiés représentent environ **5 à 8 % du besoin de S2**. La variante « leviers » du § 6, qui suppose un besoin réduit de 15 %, est donc une **borne optimiste**.
 
 ---
 
@@ -208,26 +286,28 @@ Le capital de la dotation est investi en actifs financiers diversifiés, avec un
 
 **Échec** = réserve de trésorerie négative.
 
-| Domaine | Besoin annuel | Dotation : 1 chance sur 2 de tenir 30 ans | Dotation : 95 % de chances | Variante leviers (MH + besoin −15 %) : 50 % / 95 % |
+| Domaine | Besoin annuel | Dotation : 1 chance sur 2 de tenir 30 ans | Dotation : 95 % de chances | Variante leviers (MH + besoin −15 %, borne optimiste) : 50 % / 95 % |
 |---|---:|---:|---:|---:|
-| S1 | 0,33 M€ | 9 M€ (≈ 28 × le besoin) | 22 M€ (≈ 67 ×) | 7 M€ / 16 M€ |
-| S2 | 1,24 M€ | 35 M€ (≈ 28 ×) | 82 M€ (≈ 66 ×) | 26 M€ / 61 M€ |
-| S3 | 3,47 M€ | 101 M€ (≈ 29 ×) | 255 M€ (≈ 73 ×) | 75 M€ / 193 M€ |
+| S1 | 0,33 M€ | 9,6 M€ (≈ 29 × le besoin) | 22,9 M€ (≈ 70 ×) | 7,2 M€ / 17,1 M€ |
+| S2 | 1,24 M€ | 36,5 M€ (≈ 29 ×) | 85,5 M€ (≈ 69 ×) | 27,3 M€ / 64,0 M€ |
+| S3 | 3,64 M€ | 108,7 M€ (≈ 30 ×) | 271,3 M€ (≈ 74 ×) | 82,0 M€ / 204,0 M€ |
 
 Fichier `02_MODELE/sorties/mc_dotation_necessaire.json`, produit par `calculer_mc.py`. Le seuil de 95 % est estimé par dichotomie sur 6 000 trajectoires, avec une précision d'environ ±5 %.
 
 **Règle d'or qui en découle :**
 - il faut environ **30 fois le besoin annuel** pour avoir une chance sur deux de tenir 30 ans ;
-- il en faut environ **65 à 70 fois** pour être raisonnablement sûr (95 %).
+- il en faut environ **70 fois** pour être raisonnablement sûr (95 %).
 
-Le multiple dépasse le simple « besoin ÷ 2,75 % » (36 ×) pour deux raisons :
-- les coûts du domaine montent plus vite que l'inflation (salaires +0,5 % réel par an [D-01], énergie, travaux) ;
-- les mauvaises années de marché arrivent parfois au mauvais moment.
+Deux précisions :
+- **Le seuil d'une chance sur deux n'est pas un objectif.** À 30 fois le besoin, le plafond normal de retrait (2,75 % du capital) ne couvre qu'environ 80 % du besoin. Le domaine vit alors en mode de tension, sur des retraits d'urgence (L6, § 4.3).
+- **Pour 95 %, le multiple dépasse nettement le simple « besoin ÷ 2,75 % » (36 fois).** D'une part, les coûts du domaine montent plus vite que l'inflation : salaires +0,5 %, travaux +0,75 %, énergie +2 % et assurances +1,85 % réels par an, d'après les séries de l'INSEE [V2C-03] [V2C-04] [V2C-05] [V2C-19]. D'autre part, les mauvaises années de marché arrivent parfois au mauvais moment.
+
+**Le risque principal est l'erreur de budget.** Si le besoin réel se situe au haut de la fourchette de L1, il faut environ 70 fois ce besoin plus élevé : environ 40 M€ en S1, 143 M€ en S2 et 480 M€ en S3 (L6, § 4.2). Le budget doit donc être validé sur un bien réel avant de dimensionner le capital.
 
 ### 6.2 Entreprise extérieure ou holding de PME
 
 - **Rendement brut plus élevé.** Une PME reprise sans dette rapporte au propriétaire ≈ 0,40 € net de dividende par euro d'EBITDA (IS puis PFU) [R8-35][R3-16][R3-20]. Rachetée à 5 à 8 fois l'EBITDA, elle rend donc 5 à 8 % du capital investi, contre 2,75 % pour une dotation financière.
-- **Mais elle est fragile seule.** Plus d'une transmission de PME sur cinq échoue dans les six ans (données OSEO 1997-2003) [R8-36]. Modélisé à 3,5 % de défaillance par entreprise et par an, une holding de 5 PME qui ne fait que distribuer ses dividendes échoue dans 65 à 87 % des cas sur 30 ans : les entreprises disparaissent une à une (`mc_holding_hybride.json`).
+- **Mais elle est fragile seule.** Plus d'une transmission de PME sur cinq échoue dans les six ans (données OSEO 1997-2003) [R8-36]. Avec 3,5 % de défaillance par entreprise et par an, une holding de 1 à 6 PME qui ne fait que distribuer ses dividendes, avec une petite dotation de 2 à 10 M€, échoue dans 67 à 91 % des cas sur 30 ans : les entreprises disparaissent une à une (`mc_holding_hybride.json`).
 - **Elle dépend du fondateur.** Il faut des dirigeants salariés, des réinvestissements et une surveillance permanente.
 - **Elle doit être sans dette d'acquisition** au moment où elle finance le domaine. Une PME en LBO ne distribue presque rien pendant 5 à 7 ans [R8].
 
@@ -258,12 +338,23 @@ Le multiple dépasse le simple « besoin ÷ 2,75 % » (36 ×) pour deux raisons 
 | Pensions de chevaux | ≈ 0 à 0,1 M€ | Élevée (classe B), très résistante en crise | Très bonne | Bonne | Moyenne | Autofinance une partie de la passion |
 | Réceptions, séminaires, tournages, grande maison | 0 à 0,25 M€, très variable | Faible (classe C) | Mauvaise (−80 % en crise) | Médiocre | Moyenne à forte | Option plafonnée, jamais pour les charges fixes |
 | Château-hôtel exploité | −1,1 à +0,6 M€ | Moyenne | Mauvaise | **Incompatible** | Forte | Rejeté comme moteur |
+| Locataire d'ancrage (bail à un exploitant de séminaires) | 0,2 à 0,6 M€ brut en S2, 0,3 à 1,0 M€ en S3, si les conditions sont réunies ; 0 sinon | Élevée (classe A), sauf défaillance de l'exploitant | Moyenne : loyers variables −67 % en 2020 | **Faible** : 40 à 60 chambres d'hôtes, 15 à 30 ans | Faible | Option pour un grand domaine bien situé (S3) ; incompatible avec la partie privée de S2 |
+| Location de luxe de la partie privée | −0,02 à +0,18 M€ (S2) | Faible (classe C) | Mauvaise | Le propriétaire quitte sa maison l'été | Moyenne | Complément marginal |
+| Libération de capital (vente de communs, démembrement, copropriété) | Ponctuelle, montant INCONNU | Non | — | Voisins permanents, perte définitive | Faible | À verser à la dotation si l'opération a lieu |
 | Visites | ≈ 0 ou négatif hors monuments célèbres | Saisonnière | Mauvaise | Médiocre | Moyenne | Rejeté comme moteur |
 | Avantage fiscal MH | ≈ 9 % du besoin (S2, propriétaire très imposé) | Annuel | Dépend des revenus du propriétaire | Ouverture de 50 j/an pour 100 % | — | Levier, pas une recette |
 | Subventions, Loto du patrimoine | Ponctuel | Non | — | — | — | Jamais dans le scénario central |
 
 ---
 
-## 8. Compléments de la vague 2
+## 8. Ce que la vague 2 a changé
 
-*Cette section intègre les recherches ciblées V2A (bail à un exploitant), V2C (budgets réels et leviers) et V2D (opérations MH, démembrement, location de luxe, copropriété).*
+| Recherche | Apport | Effet sur le modèle et les conclusions |
+|---|---|---|
+| **V2A — bail à un exploitant** | Conditions d'entrée des exploitants de séminaires, loyer estimé, cadre juridique, contre-exemples (§ 3.4) | Nouveau moteur « bail d'ancrage » et modèle M7. Seule activité sur place à la bonne échelle, mais conditionnée par la localisation et incompatible avec une partie entièrement privée en S2 |
+| **V2C — budgets réels et leviers** | Aucun budget complet de domaine privé de taille S2 publié ; rapport IGF-IGAC de 2020 ; temps d'entretien des jardins ; dérives INSEE sur 20 ans (§ 5) | Jardiniers de S3 portés de 11 à 16 (besoin de S3 de 3,47 à 3,64 M€) ; dérives réelles des travaux (+0,75 %/an), de l'énergie (+2 %/an) et des assurances (+1,85 %/an) recalées ; dotations recalculées (§ 6.1) |
+| **V2D — libérer du capital, louer** | Opérations MH, démembrement, copropriété, location de luxe, dette participative (§ 3.5) | Nouveau moteur « location de luxe » et modèle M8. Aucun mécanisme ne finance durablement le fonctionnement ; le capital libéré une fois doit aller à la dotation |
+| **V2V — vérification** | 90 chiffres clés vérifiés à la source : 81 confirmés, 9 nuancés, aucun faux | Notes et statuts corrigés dans le modèle (effectif du château-hôtel, échantillon des châteaux-hôtels, crédits des DRAC, prix du gaz, loyers ruraux) ; aucune valeur centrale modifiée |
+| **V2R — équipe rouge** | Attaque du modèle et des livrables (fichier `01_RECHERCHE/V2R_equipe_rouge.md`) | Ses constats sont traités dans les livrables L3 à L8 |
+
+**Ce que la vague 2 confirme.** Les activités compatibles avec une résidence calme couvrent quelques pour cent du besoin. Le fonctionnement durable d'un grand domaine repose sur un **capital affecté**, constitué une fois puis géré avec une règle de dépense. Le dimensionnement de ce capital dépend d'abord de la justesse du budget.

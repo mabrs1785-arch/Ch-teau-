@@ -232,6 +232,8 @@ Le tableau suivant porte sur une dotation seule, sans dividendes, avec les règl
 - le besoin est réduit de 15 % par le « prestige efficace » (L2, § 5) ;
 - l'avantage fiscal lié au régime des monuments historiques est activé (L2, § 4).
 
+C'est une **borne optimiste**. Les leviers vérifiés par V2C représentent environ 5 à 8 % du besoin de S2, et l'avantage fiscal suppose de gros revenus imposables au barème (L2, § 4 et § 5).
+
 Règle simple à retenir :
 - **environ 30 fois le besoin annuel** pour une chance sur deux de tenir 30 ans ;
 - **environ 70 fois** pour 95 % de chances ;

@@ -178,14 +178,14 @@
   ]
  },
  "S3": {
-  "base": 3468858,
+  "base": 3642899,
   "tornado": [
    [
     "S3_vr_m2",
     "S3 — valeur de reconstruction à l'identique du château",
     -495885,
-    743827,
-    1239712
+    743828,
+    1239713
    ],
    [
     "taux_gros_entretien",
@@ -216,11 +216,18 @@
     170398
    ],
    [
+    "cout_jardinier",
+    "Jardinier qualifié (1,1 / 1,2 / 1,3 SMIC)",
+    -71647,
+    69079,
+    140726
+   ],
+   [
     "taux_invest_futurs",
     "Investissements futurs, en % des charges et provisions",
-    -65570,
-    65570,
-    131140
+    -68823,
+    68823,
+    137646
    ],
    [
     "taux_aleas_travaux",
@@ -228,13 +235,6 @@
     -53235,
     53235,
     106470
-   ],
-   [
-    "cout_jardinier",
-    "Jardinier qualifié (1,1 / 1,2 / 1,3 SMIC)",
-    -49257,
-    47492,
-    96749
    ],
    [
     "S3_admin",
@@ -246,9 +246,9 @@
    [
     "taux_imprevus",
     "Imprévus d'exploitation, en % des charges de fonctionnement",
-    -19742,
-    39484,
-    59225
+    -21368,
+    42737,
+    64105
    ],
    [
     "jardin_ha",
