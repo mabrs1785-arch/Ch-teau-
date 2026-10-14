@@ -6,3 +6,5 @@
 | D2 | 2026-10-14 | Le modèle financier (Agent 5) est construit par le directeur après réception des hypothèses des agents 3, 4, 2 | Éviter des chiffres inventés : le modèle doit s'appuyer sur des hypothèses sourcées. |
 | D3 | 2026-10-14 | Trois scénarios d'apport explicites (50 k€ / 250 k€ / 1 M€) | Apport réel inconnu (brief §1). |
 | D4 | 2026-10-14 | Ajout de deux documents non prévus : 02_BENCHMARK/Activites_complementaires.md et 05_AUDIT/Cadre_juridique_fiscal.md | Les livrables des agents 4 et 6 n'avaient pas d'emplacement dans l'arborescence imposée. |
+| D5 | 2026-10-14 | Toutes les données web sont issues d'extraits de moteur de recherche, pas de pages consultées | Constaté : WebFetch et curl bloqués par la politique réseau de l'environnement (ENOTFOUND / proxy 403, ex. www.insee.fr). Fiabilité des chiffres plafonnée à « moyenne » ; vérification manuelle des pages requise. |
+| D6 | 2026-10-14 | Prévoir une 2e vague de recherche ciblée pour les trous | Quota de recherches web (≈200 par tour, partagé entre agents) atteint pendant la 1re vague. |

@@ -8,10 +8,10 @@ PHASE 1 — Exploration (agents 1, 2, 3, 4, 6, 7 lancés en parallèle).
 ## Terminé
 - [x] Inspection de l'environnement (Internet OK, sous-agents OK, openpyxl OK, persistance = git).
 - [x] Création arborescence + CONTEXTE_PERMANENT.md + règles communes agents.
-- [ ] Agent 1 Chasse immobilière
+- [x] Agent 1 Chasse immobilière (20 fiches, non vérifiées sur page)
 - [ ] Agent 2 Ingénierie financière
 - [ ] Agent 3 Économie équestre
-- [ ] Agent 4 Activités complémentaires
+- [x] Agent 4 Activités complémentaires (trous : fermage, forêt, PV, chasse, charges château)
 - [ ] Agent 6 Juridique/fiscal
 - [ ] Agent 7 Benchmark
 - [ ] Agent 5 Modèle financier (Excel, directeur)
