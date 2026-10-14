@@ -201,13 +201,16 @@ p("lux_capex", "Location de luxe : mise aux standards (piscine, une salle de bai
        "chambre. Coût INCONNU (V2D) : ordre de grandeur à remplacer par des devis.")
 
 G = "Moteurs — extérieurs"
-p("dot_taux_net", "Dotation financière : taux de retrait réel net d'impôt soutenable", 0.0275,
-  fav=0.03, dfv=0.025, unite="% du capital", statut="ESTIMATION", sources="R8-31; R8-32; R8-34", groupe=G,
-  note="Dotations américaines (exonérées) : 4,9 % ; actions mondiales : 3,5 % réel par an depuis 2000 ; "
-       "fiscalité française de 31,4 % sur les revenus nominaux. Fourchette de R8 : 2,5 à 3 %.")
-p("ent_conversion", "Entreprise extérieure : dividende net par euro d'EBITDA", 0.396, fav=0.45, dfv=0.33,
-  unite="€/€", statut="ESTIMATION", sources="R3-16; R3-20; R8-35", groupe=G,
-  note="EBITDA → résultat avant impôt ≈ 0,77 (hypothèse de R8) × (1 − IS 25 %) × (1 − PFU 31,4 %).")
+p("dot_taux_net", "Capital affecté : taux de retrait réel net d'impôt soutenable (règle de dépense)", 0.0175,
+  fav=0.0225, dfv=0.0125, unite="% du capital", statut="HYPOTHÈSE",
+  sources="R8-31; R8-32; R8-34; V2R-03; V2R-04; V2R-05; V2R-08; V2R-16", groupe=G,
+  note="Fixé 0,25 point sous le rendement réel net retenu (2 %, voir dot_rendement). Les dotations américaines "
+       "dépensent 4,9 %, mais elles sont exonérées d'impôt. Version précédente : 2,75 %, jugée incompatible avec "
+       "la fiscalité et les frais par l'équipe rouge (V2R C2).")
+p("ent_conversion", "Entreprise extérieure : dividende net par euro d'EBITDA", 0.355, fav=0.40, dfv=0.33,
+  unite="€/€", statut="ESTIMATION", sources="R3-16; R3-20; R8-35; V2R-04; V2R-05", groupe=G,
+  note="EBITDA → résultat avant impôt ≈ 0,77 (hypothèse de R8) × (1 − IS 25 %) × (1 − 38,6 %) : PFU 31,4 % "
+       "plus contribution exceptionnelle et contribution différentielle sur les hauts revenus (V2R m2).")
 
 G = "Moteurs — château-hôtel"
 p("hot_chambres", "Château-hôtel : nombre de chambres", 15, unite="chambres", statut="HYPOTHÈSE", groupe=G)

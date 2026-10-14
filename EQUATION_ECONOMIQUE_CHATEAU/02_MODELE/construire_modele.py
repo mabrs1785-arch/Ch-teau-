@@ -91,8 +91,9 @@ def construire():
         wb, "Budget", "BUDGET ANNUEL DE FONCTIONNEMENT — trois domaines types, trois cas (€ 2026 TTC)",
         LIGNES_BUDGET, colonnes, prefixe_noms="bud_",
         note=("Chaque cellule est une formule construite à partir des hypothèses nommées "
-              "(feuille Hypotheses). La provision de gros entretien retient le maximum de deux méthodes "
-              "indépendantes (composants et ratio de la valeur de restauration)."))
+              "(feuille Hypotheses). La provision de gros entretien applique un taux à la valeur de "
+              "reconstruction (règle du NRC) ; la méthode par composants n'a pas pu être sourcée. Les honoraires "
+              "de maîtrise d'œuvre et l'assurance dommages-ouvrage sont ajoutés en pourcentage du gros entretien."))
 
     for module in modules:
         controle.update(module.ecrire(wb))
@@ -111,8 +112,10 @@ def recalculer_et_verifier(controle, tolerance=0.5):
         obtenu = wb[feuille][cellule].value
         if obtenu is None or abs((obtenu or 0) - attendu) > tolerance + 1e-9 * abs(attendu):
             ecarts.append({"feuille": feuille, "cellule": cellule, "python": attendu, "excel": obtenu})
+    import monte_carlo   # contrôle du jumeau : la simulation sans chocs doit reproduire les projections
     sortie = {"recalcul": rapport, "cellules_comparees": len(controle),
-              "ecarts": ecarts[:50], "nb_ecarts": len(ecarts)}
+              "ecarts": ecarts[:50], "nb_ecarts": len(ecarts),
+              "jumeau_monte_carlo_ecart_max_eur": monte_carlo.verifier_jumeau(FICHIER)}
     with open(os.path.join(SORTIES, "verification.json"), "w", encoding="utf-8") as f:
         json.dump(sortie, f, ensure_ascii=False, indent=2)
     return sortie
@@ -125,12 +128,5 @@ if __name__ == "__main__":
           json.dumps(s["recalcul"], ensure_ascii=False)[:300])
     if s["nb_ecarts"]:
         print("ÉCARTS :", json.dumps(s["ecarts"][:10], ensure_ascii=False, indent=1))
-    import monte_carlo
-    jumeau = monte_carlo.verifier_jumeau(FICHIER)
-    print("Jumeau Monte-Carlo sans chocs, écart maximal (€) :", json.dumps(jumeau, ensure_ascii=False))
-    with open(os.path.join(SORTIES, "verification.json"), "r+", encoding="utf-8") as f:
-        v = json.load(f)
-        v["jumeau_monte_carlo_ecart_max_eur"] = jumeau
-        f.seek(0)
-        json.dump(v, f, ensure_ascii=False, indent=2)
-        f.truncate()
+    print("Jumeau Monte-Carlo sans chocs, écart maximal (€) :",
+          json.dumps(s["jumeau_monte_carlo_ecart_max_eur"], ensure_ascii=False))

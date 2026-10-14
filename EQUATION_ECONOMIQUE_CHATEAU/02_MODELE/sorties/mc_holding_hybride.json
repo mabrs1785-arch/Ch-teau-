@@ -1,65 +1,65 @@
 {
  "S1_div300k_3pme_dot3M": {
-  "p_echec_20": 0.5492,
-  "p_echec_30": 0.7508,
-  "reserve_min_p05": -4400000.0,
-  "dotation_20_p05": 1000000.0,
-  "dotation_20_p50": 3100000.0,
-  "dotation_fin_p05": 700000.0,
-  "dotation_fin_p50": 2900000.0
+  "p_echec_20": 0.7629,
+  "p_echec_30": 0.9211,
+  "reserve_min_p05": -5500000.0,
+  "dotation_20_p05": 700000.0,
+  "dotation_20_p50": 2100000.0,
+  "dotation_fin_p05": 500000.0,
+  "dotation_fin_p50": 1700000.0
  },
  "S1_div400k_3pme_dot2M": {
-  "p_echec_20": 0.4545,
-  "p_echec_30": 0.6672,
-  "reserve_min_p05": -4600000.0,
-  "dotation_20_p05": 800000.0,
-  "dotation_20_p50": 2900000.0,
-  "dotation_fin_p05": 600000.0,
-  "dotation_fin_p50": 2800000.0
+  "p_echec_20": 0.6333,
+  "p_echec_30": 0.8454,
+  "reserve_min_p05": -5600000.0,
+  "dotation_20_p05": 600000.0,
+  "dotation_20_p50": 1800000.0,
+  "dotation_fin_p05": 400000.0,
+  "dotation_fin_p50": 1500000.0
  },
  "S1_div250k_1pme_dot3M": {
-  "p_echec_20": 0.5783,
-  "p_echec_30": 0.754,
-  "reserve_min_p05": -6200000.0,
-  "dotation_20_p05": 1000000.0,
-  "dotation_20_p50": 3000000.0,
-  "dotation_fin_p05": 700000.0,
-  "dotation_fin_p50": 2800000.0
+  "p_echec_20": 0.756,
+  "p_echec_30": 0.9089,
+  "reserve_min_p05": -7100000.0,
+  "dotation_20_p05": 700000.0,
+  "dotation_20_p50": 2000000.0,
+  "dotation_fin_p05": 500000.0,
+  "dotation_fin_p50": 1700000.0
  },
  "S2_div1000k_5pme_dot10M": {
-  "p_echec_20": 0.7677,
-  "p_echec_30": 0.9051,
-  "reserve_min_p05": -17100000.0,
-  "dotation_20_p05": 2800000.0,
-  "dotation_20_p50": 8500000.0,
-  "dotation_fin_p05": 2000000.0,
-  "dotation_fin_p50": 7700000.0
+  "p_echec_20": 0.8961,
+  "p_echec_30": 0.9754,
+  "reserve_min_p05": -19500000.0,
+  "dotation_20_p05": 2200000.0,
+  "dotation_20_p50": 6400000.0,
+  "dotation_fin_p05": 1500000.0,
+  "dotation_fin_p50": 5300000.0
  },
  "S2_div1200k_5pme_dot8M": {
-  "p_echec_20": 0.7036,
-  "p_echec_30": 0.878,
-  "reserve_min_p05": -16900000.0,
-  "dotation_20_p05": 2500000.0,
-  "dotation_20_p50": 7600000.0,
-  "dotation_fin_p05": 1800000.0,
-  "dotation_fin_p50": 7000000.0
+  "p_echec_20": 0.8332,
+  "p_echec_30": 0.9627,
+  "reserve_min_p05": -19200000.0,
+  "dotation_20_p05": 1800000.0,
+  "dotation_20_p50": 5400000.0,
+  "dotation_fin_p05": 1200000.0,
+  "dotation_fin_p50": 4400000.0
  },
  "S2_div1000k_1pme_dot10M": {
-  "p_echec_20": 0.5841,
-  "p_echec_30": 0.7621,
-  "reserve_min_p05": -24900000.0,
-  "dotation_20_p05": 3300000.0,
-  "dotation_20_p50": 10000000.0,
-  "dotation_fin_p05": 2400000.0,
-  "dotation_fin_p50": 9400000.0
+  "p_echec_20": 0.6987,
+  "p_echec_30": 0.8763,
+  "reserve_min_p05": -26700000.0,
+  "dotation_20_p05": 2300000.0,
+  "dotation_20_p50": 6800000.0,
+  "dotation_fin_p05": 1500000.0,
+  "dotation_fin_p50": 5600000.0
  },
  "S2_div1400k_6pme_dot5M": {
-  "p_echec_20": 0.7025,
-  "p_echec_30": 0.8965,
-  "reserve_min_p05": -16700000.0,
-  "dotation_20_p05": 1700000.0,
-  "dotation_20_p50": 5500000.0,
-  "dotation_fin_p05": 1300000.0,
-  "dotation_fin_p50": 5000000.0
+  "p_echec_20": 0.8198,
+  "p_echec_30": 0.9669,
+  "reserve_min_p05": -18700000.0,
+  "dotation_20_p05": 1100000.0,
+  "dotation_20_p50": 3500000.0,
+  "dotation_fin_p05": 800000.0,
+  "dotation_fin_p50": 2800000.0
  }
 }

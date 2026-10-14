@@ -1,0 +1,29 @@
+{
+ "S1": {
+  "dividendes": 400000,
+  "annees_dividendes": 10,
+  "reserve": 400000,
+  "besoin": 346000.0,
+  "dotation_5pct_30ans": 33700000.0,
+  "dotation_5pct_20ans": 23700000.0,
+  "dotation_actuelle": 34000000
+ },
+ "S2": {
+  "dividendes": 1000000,
+  "annees_dividendes": 10,
+  "reserve": 1500000,
+  "besoin": 1273000.0,
+  "dotation_5pct_30ans": 119800000.0,
+  "dotation_5pct_20ans": 86000000.0,
+  "dotation_actuelle": 120000000
+ },
+ "S3": {
+  "dividendes": 0,
+  "annees_dividendes": 0,
+  "reserve": 4000000,
+  "besoin": 3771000.0,
+  "dotation_5pct_30ans": 475700000.0,
+  "dotation_5pct_20ans": 379200000.0,
+  "dotation_actuelle": 480000000
+ }
+}

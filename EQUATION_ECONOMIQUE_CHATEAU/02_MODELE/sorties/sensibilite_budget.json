@@ -1,20 +1,20 @@
 {
  "S1": {
-  "base": 325306,
+  "base": 345675,
   "tornado": [
    [
     "S1_vr_m2",
     "S1 — valeur de reconstruction à l'identique du château",
-    -27464,
-    45774,
-    73238
+    -29486,
+    49144,
+    78630
    ],
    [
     "taux_gros_entretien",
     "Provision de gros entretien, en % de la valeur de reconstruction",
-    -32292,
-    32292,
-    64584
+    -35662,
+    35662,
+    71323
    ],
    [
     "taux_entretien_courant",
@@ -26,9 +26,9 @@
    [
     "vr_dep_ratio",
     "Valeur de reconstruction des dépendances / celle du château (au m²)",
-    -6866,
-    6866,
-    13732
+    -7372,
+    7372,
+    14743
    ],
    [
     "assurance_taux",
@@ -40,9 +40,9 @@
    [
     "taux_invest_futurs",
     "Investissements futurs, en % des charges et provisions",
-    -6150,
-    6150,
-    12300
+    -6536,
+    6536,
+    13072
    ],
    [
     "prix_chaleur_kwh",
@@ -89,28 +89,28 @@
   ]
  },
  "S2": {
-  "base": 1239356,
+  "base": 1273122,
   "tornado": [
    [
     "S2_vr_m2",
     "S2 — valeur de reconstruction à l'identique du château",
-    -111574,
-    161163,
-    272737
+    -119788,
+    173026,
+    292814
    ],
    [
     "taux_gros_entretien",
     "Provision de gros entretien, en % de la valeur de reconstruction",
-    -107864,
-    107864,
-    215728
+    -119120,
+    119120,
+    238239
    ],
    [
     "vr_dep_ratio",
     "Valeur de reconstruction des dépendances / celle du château (au m²)",
-    -35284,
-    35284,
-    70568
+    -37882,
+    37882,
+    75763
    ],
    [
     "taux_entretien_courant",
@@ -122,9 +122,9 @@
    [
     "taux_invest_futurs",
     "Investissements futurs, en % des charges et provisions",
-    -23396,
-    23396,
-    46792
+    -24045,
+    24045,
+    48091
    ],
    [
     "assurance_taux",
@@ -148,6 +148,13 @@
     28138
    ],
    [
+    "taux_moe_do",
+    "Maîtrise d'œuvre, diagnostics, coordination SPS et assurance dommages-ouvrage, en % du gros entretien",
+    -11255,
+    16883,
+    28138
+   ],
+   [
     "prix_chaleur_kwh",
     "Prix de l'énergie de chauffage livrée",
     -13375,
@@ -167,32 +174,25 @@
     -8320,
     16640,
     24960
-   ],
-   [
-    "chauffage_kwh_m2",
-    "Consommation de chauffage et d'eau chaude par m² chauffé",
-    -11235,
-    12840,
-    24075
    ]
   ]
  },
  "S3": {
-  "base": 3642899,
+  "base": 3770663,
   "tornado": [
    [
     "S3_vr_m2",
     "S3 — valeur de reconstruction à l'identique du château",
-    -495885,
-    743828,
-    1239713
+    -532389,
+    798584,
+    1330973
    ],
    [
     "taux_gros_entretien",
     "Provision de gros entretien, en % de la valeur de reconstruction",
-    -408135,
-    408135,
-    816270
+    -450723,
+    450723,
+    901446
    ],
    [
     "taux_entretien_courant",
@@ -204,9 +204,9 @@
    [
     "vr_dep_ratio",
     "Valeur de reconstruction des dépendances / celle du château (au m²)",
-    -106806,
-    106806,
-    213612
+    -114668,
+    114668,
+    229337
    ],
    [
     "assurance_taux",
@@ -216,6 +216,13 @@
     170398
    ],
    [
+    "taux_invest_futurs",
+    "Investissements futurs, en % des charges et provisions",
+    -71280,
+    71280,
+    142560
+   ],
+   [
     "cout_jardinier",
     "Jardinier qualifié (1,1 / 1,2 / 1,3 SMIC)",
     -71647,
@@ -223,17 +230,17 @@
     140726
    ],
    [
-    "taux_invest_futurs",
-    "Investissements futurs, en % des charges et provisions",
-    -68823,
-    68823,
-    137646
-   ],
-   [
     "taux_aleas_travaux",
     "Aléas de chantier et découvertes, en % du gros entretien",
     -53235,
     53235,
+    106470
+   ],
+   [
+    "taux_moe_do",
+    "Maîtrise d'œuvre, diagnostics, coordination SPS et assurance dommages-ouvrage, en % du gros entretien",
+    -42588,
+    63882,
     106470
    ],
    [
@@ -255,13 +262,6 @@
     "Jardins réguliers : fournitures, végétaux, traitements, sous-traitance (hors personnel)",
     -21400,
     32100,
-    53500
-   ],
-   [
-    "parc_ha",
-    "Parc : fauche, élagage par arboriste, replantation (hors personnel)",
-    -16050,
-    37450,
     53500
    ]
   ]

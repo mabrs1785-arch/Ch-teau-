@@ -37,22 +37,22 @@ MOTEURS = {  # code : (nom de la contribution sur la feuille Moteurs, classe, in
 }
 
 MODELES = {
-    "M1": ("Socle contractuel et équestre standard (résidence calme)",
-           ["EQ_STD", "EQ_RET", "LOG", "STOCK", "PV", "BOIS", "TOURN"]),
+    "M1": ("Socle contractuel et pension de retraite au pré (résidence calme)",
+           ["EQ_RET", "LOG", "STOCK", "PV", "BOIS", "TOURN"]),
     "M2": ("Lieu d'exception à quota (M1 + réceptions, séminaires, grande maison)",
-           ["EQ_STD", "EQ_RET", "LOG", "STOCK", "PV", "BOIS", "TOURN", "EVT", "SEMJ", "GITE"]),
+           ["EQ_RET", "LOG", "STOCK", "PV", "BOIS", "TOURN", "EVT", "SEMJ", "GITE"]),
     "M3": ("Équestre haut de gamme et services (pension, retraite, reproduction)",
            ["EQ_HDG", "EQ_RET", "REPRO", "BOIS", "TOURN"]),
     "M4": ("Château-hôtel opéré (15 chambres) + réceptions et séminaires",
            ["HOTEL", "EVT", "SEMJ", "EQ_STD", "BOIS", "TOURN"]),
     "M5": ("Socle minimal + dotation financière extérieure",
-           ["EQ_STD", "BOIS", "TOURN"]),
+           ["EQ_RET", "BOIS", "TOURN"]),
     "M6": ("Socle minimal + entreprise extérieure",
-           ["EQ_STD", "BOIS", "TOURN"]),
+           ["EQ_RET", "BOIS", "TOURN"]),
     "M7": ("Locataire d'ancrage : bail à un exploitant de séminaires + socle foncier",
            ["ANC", "EQ_RET", "PV", "BOIS"]),
     "M8": ("Socle M1 + location de luxe de la partie privée quelques semaines par an",
-           ["EQ_STD", "EQ_RET", "LOG", "STOCK", "PV", "BOIS", "TOURN", "LUX"]),
+           ["EQ_RET", "LOG", "STOCK", "PV", "BOIS", "TOURN", "LUX"]),
 }
 
 G = "Configuration des modèles"
@@ -62,10 +62,12 @@ for m, (titre, retenus) in MODELES.items():
           unite="coefficient", statut="HYPOTHÈSE", groupe=G, note=f"{m} : {titre}")
 
 p("fuite_fiscale", "Fuite fiscale sur les contributions sur place utilisées pour des coûts privés",
-  0.30, fav=0.15, dfv=0.486, unite="%", statut="ESTIMATION", sources="R3-16; R3-20; R3-57", groupe=G,
-  note="Chaîne complète IS 25 % puis PFU 31,4 % = 48,6 % (défavorable). Une part des contributions finance "
-       "des coûts professionnels déductibles (loyers payés à la SCI, entretien des espaces exploités) et "
-       "subit moins d'impôt : 15 à 30 %. Calcul consolidé exact dans la projection sur 20 ans.")
+  0.40, fav=0.25, dfv=0.54, unite="%", statut="ESTIMATION", sources="R3-16; R3-20; R3-57; V2R-04; V2R-05",
+  groupe=G,
+  note="Chaîne complète IS 25 % puis PFU 31,4 % = 48,6 %, et 54 % avec les contributions sur les hauts revenus "
+       "(défavorable). Une part des contributions finance des coûts professionnels déductibles (loyers payés à "
+       "la SCI, entretien des espaces exploités) et subit moins d'impôt. Valeur centrale relevée de 30 à 40 % "
+       "(V2R m3).")
 
 
 def _lignes():

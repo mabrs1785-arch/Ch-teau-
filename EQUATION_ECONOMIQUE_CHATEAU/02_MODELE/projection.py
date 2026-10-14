@@ -48,12 +48,17 @@ p("campagne_periode", "Périodicité des campagnes de gros entretien", 4, unite=
   sources="R1-11; R1-14", groupe=G, note="Les toitures de châteaux privés sont refaites par tranches successives.")
 p("rampe_an1", "Montée en charge des activités : année 1", 0.4, unite="%", statut="HYPOTHÈSE", groupe=G)
 p("rampe_an2", "Montée en charge des activités : année 2", 0.75, unite="%", statut="HYPOTHÈSE", groupe=G)
-p("taux_reserve", "Rendement réel de la réserve de trésorerie", 0.0, unite="% par an", statut="HYPOTHÈSE",
-  groupe=G, note="Placement liquide ≈ inflation.")
-p("dot_rendement", "Rendement réel net de frais et d'impôts de la dotation (moyenne)", 0.03, fav=0.035,
-  dfv=0.0225, unite="% par an", statut="ESTIMATION", sources="R8-32; R8-34; R8-31", groupe=G,
-  note="Actions mondiales : 3,5 % réel par an depuis 2000 (UBS 2025), avant impôt ; dotations américaines "
-       "exonérées : cible inflation + 5 %. Portefeuille diversifié d'un résident français, après impôt : ≈ 3 %.")
+p("taux_reserve", "Rendement réel de la réserve de trésorerie", -0.005, fav=0.0, dfv=-0.01, unite="% par an",
+  statut="ESTIMATION", sources="V2R-08", groupe=G,
+  note="Depuis 2000, les actions ont rapporté 3,5 % réel avec une prime de 4,3 points sur les bons du Trésor : "
+       "la trésorerie a donc rapporté environ −0,8 % réel par an (V2R m4).")
+p("dot_rendement", "Rendement réel net de frais et d'impôts du capital affecté (moyenne géométrique)", 0.02,
+  fav=0.025, dfv=0.015, unite="% par an", statut="ESTIMATION",
+  sources="R8-32; R8-31; V2R-03; V2R-04; V2R-05; V2R-08; V2R-16", groupe=G,
+  note="Seule donnée : actions mondiales 3,5 % réel par an depuis 2000, avant frais et impôts (UBS 2025). "
+       "Frais de 0,4 à 0,6 point ; impôt de 30 à 38,6 % sur les revenus nominaux (PFU, contributions sur les "
+       "hauts revenus), en partie différé. L'équipe rouge estime 1,1 à 1,8 % en détention directe et presque 0 "
+       "via une holding à l'IS (V2R C2). Valeur précédente : 3 %.")
 p("part_surplus_dotation", "Part des excédents annuels versée à la dotation", 1.0, unite="%",
   statut="HYPOTHÈSE", groupe=G)
 p("subvention_taux", "Subventions de travaux : part moyenne des campagnes (scénario favorable seulement)",
@@ -74,7 +79,9 @@ p("mh_taux_deduction", "Avantage MH : taux de déduction (50 % fermé au public,
 # ---------------------------------------------------------------------------------------------------
 # Moteurs sur place de la solution recommandée, par classe ; chaque moteur porte un facteur d'échelle
 # par scénario (les contributions de la feuille Moteurs sont calculées à l'échelle d'un domaine S2).
-SOLUTION_MOTEURS = {"A": ["log", "stock", "pv", "bois"], "B": ["eq_std", "eq_ret"], "C": ["tourn"]}
+SOLUTION_MOTEURS = {"A": ["log", "stock", "pv", "bois"], "B": ["eq_ret"], "C": ["tourn"]}
+# La pension standard (30 boxes) est retirée de la solution : contribution nulle dans le cas central, −40 k€
+# dans le cas défavorable, et 25 à 30 propriétaires de chevaux présents chaque semaine (V2R m8).
 NOM_CONTRIB = {"log": "mot_log_cn", "stock": "mot_stock_cn", "pv": "mot_pv_cn", "bois": "mot_bois_cn",
                "eq_std": "mot_eq_std_cn", "eq_ret": "mot_eq_ret_cn", "tourn": "mot_tourn_cn"}
 SOLUTION_INVEST = {"log": "mot_log_inv", "stock": "stock_capex"}
@@ -127,20 +134,21 @@ p("lissage_depense", "Règle de dépense lissée : poids du plafond de l'année 
   statut="HYPOTHÈSE", sources="R8-34", groupe=G,
   note="Plafond(t) = 80 % × plafond(t−1) + 20 % × taux × dotation(t−1). Lisse les chocs de marché, sur le "
        "modèle des règles de dépense des grands fonds de dotation (cités par R8, sans détail de la règle).")
-p("S2_sol_dotation0", "S2 — dotation affectée disponible à l'année 1", 60_000_000, unite="€",
+p("S2_sol_dotation0", "S2 — capital affecté disponible à l'année 1", 120_000_000, unite="€",
   statut="HYPOTHÈSE", groupe=G,
-  note="Dimensionnement REQUIS, pas une ressource acquise : avec 1 M€/an de dividendes pendant 10 ans, environ "
-       "96 % de chances de tenir 20 ans et 89 % de tenir 30 ans selon le Monte-Carlo (sorties/mc_ruptures_S2.json).")
+  note="Dimensionnement REQUIS, pas une ressource acquise : plus petite valeur ronde qui, avec 1 M€/an de dividendes "
+       "pendant 10 ans, limite l'échec à 5 % sur 20 et 30 ans (critère n° 6 du Cadre ; sorties/mc_dimensionnement.json). "
+       "Valeur précédente : 60 M€, qui échouait dans 11 % des cas à 30 ans (V2R M3).")
 p("S2_sol_div", "S2 — dividendes nets annuels de l'entreprise extérieure pendant la transition", 1_000_000,
   unite="€/an", statut="HYPOTHÈSE", groupe=G)
 p("S2_sol_div_annees", "S2 — durée de la transition (années de dividendes)", 10, unite="années",
   statut="HYPOTHÈSE", groupe=G)
 p("S2_sol_reserve0", "S2 — réserve de trésorerie initiale (≈ 1,2 an de besoin)", 1_500_000,
   unite="€", statut="HYPOTHÈSE", groupe=G)
-p("S1_sol_dotation0", "S1 — dotation affectée disponible à l'année 1", 15_000_000, unite="€",
+p("S1_sol_dotation0", "S1 — capital affecté disponible à l'année 1", 34_000_000, unite="€",
   statut="HYPOTHÈSE", groupe=G,
-  note="Dimensionnement REQUIS : avec 0,4 M€/an de dividendes pendant 10 ans, environ 96 % de chances de tenir "
-       "20 ans et 89 % de tenir 30 ans (sorties/mc_ruptures_S1.json).")
+  note="Dimensionnement REQUIS : avec 0,4 M€/an de dividendes pendant 10 ans, échec limité à 5 % sur 20 et 30 ans "
+       "(critère n° 6 du Cadre ; sorties/mc_dimensionnement.json). Valeur précédente : 15 M€.")
 p("S1_sol_div", "S1 — dividendes nets annuels pendant la transition", 400_000, unite="€/an",
   statut="HYPOTHÈSE", groupe=G)
 p("S1_sol_div_annees", "S1 — durée de la transition", 10, unite="années", statut="HYPOTHÈSE", groupe=G)
@@ -157,10 +165,10 @@ p("flex_report", "Pilotage : part de la campagne de gros entretien reportée", 0
   groupe=G, note="Le report est remis dans le fonds de travaux : il ne disparaît pas.")
 p("retrait_urgence", "Pilotage : retrait d'urgence maximal sur la dotation (en % du capital)", 0.04, unite="%",
   statut="HYPOTHÈSE", groupe=G)
-p("S3_sol_dotation0", "S3 — dotation affectée disponible à l'année 1", 210_000_000, unite="€",
+p("S3_sol_dotation0", "S3 — capital affecté disponible à l'année 1", 480_000_000, unite="€",
   statut="HYPOTHÈSE", groupe=G,
-  note="Dimensionnement REQUIS, sans dividendes de transition : environ 95 % de chances de tenir 20 ans et 88 % "
-       "de tenir 30 ans (sorties/mc_ruptures_S3.json), le même niveau de risque que S1 et S2.")
+  note="Dimensionnement REQUIS, sans dividendes de transition : échec limité à 5 % sur 20 et 30 ans (critère n° 6 "
+       "du Cadre ; sorties/mc_dimensionnement.json). Valeur précédente : 210 M€.")
 p("S3_sol_div", "S3 — dividendes nets annuels pendant la transition", 0, unite="€/an", statut="HYPOTHÈSE", groupe=G)
 p("S3_sol_div_annees", "S3 — durée de la transition", 0, unite="années", statut="HYPOTHÈSE", groupe=G)
 p("S3_sol_reserve0", "S3 — réserve de trésorerie initiale (≈ 1,1 an de besoin)", 4_000_000, unite="€", statut="HYPOTHÈSE", groupe=G,
@@ -196,8 +204,8 @@ def _lignes(scen: str, tid: str, avec_moteur: bool = True):
     a(("idx_cpi", "Indice des prix à la consommation (pour la dette)", "1", "[idx_cpi@-1]*(1+inflation)", "nb"))
     a(("crise", "Année de crise (1) ou de reprise (2)", None,
        f"IF({st('crise_an')}>0,IF({{T}}={st('crise_an')},1,IF({{T}}={st('crise_an')}+1,2,0)),0)", "nb"))
-    a(("tension", "Tension de trésorerie (1 = réserve sous le seuil de pilotage)", None,
-       f"pilotage_actif*IF([reserve@-1]<flex_seuil*bud_total_besoin_{scen},1,0)", "nb"))
+    a(("tension", "Tension de trésorerie (1 = réserve sous un an de charges de l'année précédente)", None,
+       f"pilotage_actif*IF([reserve@-1]<flex_seuil*MAX([total_charges@-1],bud_total_besoin_{scen}),1,0)", "nb"))
     # ---- besoin du domaine
     a(("b_pers", "Personnel du domaine", None, f"bud_dont_personnel_{scen}*[idx_sal]", "eur"))
     a(("b_energie", "Énergie", None,
@@ -206,20 +214,21 @@ def _lignes(scen: str, tid: str, avec_moteur: bool = True):
     a(("b_assur", "Assurances", None, f"(bud_assurance_bati_{scen}+bud_assurance_autres_{scen})*[idx_ass]", "eur"))
     a(("b_autres", "Autres charges courantes (entretien courant, jardins, matériel, chevaux, taxes, administration, imprévus, investissements futurs)",
        None, f"bud_total_besoin_{scen}-bud_dont_personnel_{scen}-bud_bati_ge_{scen}-bud_imprevus_travaux_{scen}"
-             f"-bud_chauffage_{scen}-bud_hors_gel_{scen}-bud_electricite_{scen}"
+             f"-bud_moe_do_{scen}-bud_chauffage_{scen}-bud_hors_gel_{scen}-bud_electricite_{scen}"
              f"-bud_assurance_bati_{scen}-bud_assurance_autres_{scen}", "eur"))
-    a(("b_ge_prov", "Provision de gros entretien versée au fonds de travaux", None,
-       f"(bud_bati_ge_{scen}+bud_imprevus_travaux_{scen})*[idx_trav]", "eur"))
-    a(("total_charges", "TOTAL DU BESOIN ANNUEL DU DOMAINE", None, "[b_pers]+[b_energie]+[b_assur]+[b_autres]+[b_ge_prov]", "eur"))
+    a(("b_ge_prov", "Provision de gros entretien versée au fonds de travaux (aléas et maîtrise d'œuvre compris)", None,
+       f"(bud_bati_ge_{scen}+bud_imprevus_travaux_{scen}+bud_moe_do_{scen})*[idx_trav]", "eur"))
+    a(("total_charges", "TOTAL DU BESOIN ANNUEL DU DOMAINE", f"bud_total_besoin_{scen}",
+       "[b_pers]+[b_energie]+[b_assur]+[b_autres]+[b_ge_prov]", "eur"))
     # ---- fonds de gros entretien
     a(("campagne", "Campagne de gros entretien (dépense du fonds)", None,
        f"IF(MOD({{T}},campagne_periode)=0,([fonds_ge@-1]+[b_ge_prov])*{st('mult_campagne')}*(1-[tension]*flex_report),0)", "eur"))
     a(("choc_trav", "Sinistre ou découverte non assurés", None,
        f"IF({{T}}={st('choc_trav_an')},{st('choc_trav_montant')},0)", "eur"))
-    a(("depassement_trav", "Dépassement de travaux à financer hors fonds", None,
-       "MAX(0,[campagne]+[choc_trav]-[fonds_ge@-1]-[b_ge_prov])", "eur"))
+    a(("depassement_trav", "Dépassement de travaux et sinistres à financer hors fonds", None,
+       "MAX(0,[campagne]-[fonds_ge@-1]-[b_ge_prov])+[choc_trav]", "eur"))
     a(("fonds_ge", "Fonds de gros entretien (fin d'année)", "0",
-       "MAX(0,[fonds_ge@-1]+[b_ge_prov]-[campagne]-[choc_trav])", "eur"))
+       "MAX(0,[fonds_ge@-1]+[b_ge_prov]-[campagne])", "eur"))
     a(("subvention", "Subventions de travaux encaissées (option)", None, "sub_actif*subvention_taux*[campagne]", "eur"))
     # ---- activités sur place
     a(("rampe", "Montée en charge des activités", None, "IF({T}=1,rampe_an1,IF({T}=2,rampe_an2,1))", "pct"))
@@ -254,12 +263,16 @@ def _lignes(scen: str, tid: str, avec_moteur: bool = True):
        f"dot_rendement+{st('dot_rdt_delta')}+IF([crise]=1,-0.25,0)", "pct"))
     a(("plafond", "Plafond de retrait de la règle de dépense lissée", f"dot_taux_net*{dot0}",
        "lissage_depense*[plafond@-1]+(1-lissage_depense)*dot_taux_net*MAX(0,[dotation_fin@-1])", "eur"))
-    a(("retrait", "Retrait sur la dotation (plafonné par la règle de dépense)", None,
-       "MIN(MAX(0,[besoin_net]-[dividendes]),IF([tension]=1,MAX([plafond],retrait_urgence*MAX(0,[dotation_fin@-1])),[plafond]))", "eur"))
+    a(("reserve_cible", "Réserve visée (réserve initiale indexée sur les charges)", None,
+       f"{res0}*MAX([total_charges@-1],bud_total_besoin_{scen})/bud_total_besoin_{scen}", "eur"))
+    a(("manque_reserve", "Montant à reverser à la réserve pour atteindre la cible", None,
+       "MAX(0,[reserve_cible]-[reserve@-1]*(1+taux_reserve))", "eur"))
+    a(("retrait", "Retrait sur la dotation (besoin, puis reconstitution de la réserve, plafonné par la règle de dépense)", None,
+       "MIN(MAX(0,[besoin_net]-[dividendes]+[manque_reserve]),IF([tension]=1,MAX([plafond],retrait_urgence*MAX(0,[dotation_fin@-1])),[plafond]))", "eur"))
     a(("flux_solde", "SOLDE DE TRÉSORERIE DE L'ANNÉE (après moteur extérieur)", None,
        "[dividendes]+[retrait]-[besoin_net]", "eur"))
-    a(("apport_dot", "Excédent versé à la dotation", None,
-       "IF(AND([flux_solde]>0,[reserve@-1]>0),[flux_solde]*part_surplus_dotation,0)", "eur"))
+    a(("apport_dot", "Excédent versé à la dotation (au-delà de la réserve visée)", None,
+       "IF([flux_solde]>0,part_surplus_dotation*MAX(0,[reserve@-1]*(1+taux_reserve)+[flux_solde]-[reserve_cible]),0)", "eur"))
     a(("dotation_fin", "DOTATION (fin d'année)", dot0,
        "MAX(0,[dotation_fin@-1])*(1+[rdt_dot])-[retrait]+[apport_dot]-[capex_dot]", "eur"))
     a(("reserve", "RÉSERVE DE TRÉSORERIE (fin d'année)", res0,
@@ -304,7 +317,7 @@ def ecrire(wb):
         # noms de plages pour la synthèse (années 1 à 20)
         ligne_de = {lid: 5 + i for i, (lid, *_r) in enumerate(lignes)}
         for lid in ("reserve", "dotation_fin", "flux_solde", "kpi_couverture", "kpi_deficit", "total_charges",
-                    "act_nette", "kpi_liquidite"):
+                    "act_nette", "kpi_liquidite", "tension"):
             r = ligne_de[lid]
             nom_plage = f"prj_{nom}_{lid}"
             wb.defined_names[nom_plage] = DefinedName(nom_plage, attr_text=f"'{nom}'!$E${r}:$X${r}")
@@ -324,6 +337,7 @@ def _ecrire_synthese(wb):
             (f"{nom}_dot20", f"{nom} — dotation en année 20", f"INDEX(prj_{nom}_dotation_fin,1,20)", nom, 0, "S"),
             (f"{nom}_def", f"{nom} — nombre d'années avec réserve négative", f"SUM(prj_{nom}_kpi_deficit)", nom, 0, "S"),
             (f"{nom}_act", f"{nom} — contribution moyenne des activités sur place", f"AVERAGE(prj_{nom}_act_nette)", nom, 0, "S"),
+            (f"{nom}_tension", f"{nom} — nombre d'années en tension (règles de pilotage appliquées)", f"SUM(prj_{nom}_tension)", nom, 0, "S"),
         ]
     colonnes = [("Valeur", None, "cen")]
     _, controle = ecrire_tableau_gabarits(

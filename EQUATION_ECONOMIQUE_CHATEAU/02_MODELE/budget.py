@@ -25,6 +25,8 @@ LIGNES = [
      "[valeur_reconstruction]*taux_gros_entretien{C}", "A. Bâti", 0.10, "P"),
     ("imprevus_travaux", "Aléas de chantier et découvertes (en % du gros entretien)",
      "[bati_ge]*taux_aleas_travaux{C}", "A. Bâti", 0.10, "P"),
+    ("moe_do", "Maîtrise d'œuvre, diagnostics, coordination SPS et dommages-ouvrage des campagnes (en % du gros entretien)",
+     "[bati_ge]*taux_moe_do{C}", "A. Bâti", 0.20, "P"),
     ("securite", "Sécurité : alarme, télésurveillance, protection incendie",
      "{S}_securite{C}", "A. Bâti", 0.20, "F"),
     # --- B. Personnel (effectifs du domaine lui-même : chevaux du propriétaire seulement) ---------
@@ -117,7 +119,7 @@ LIGNES = [
      "+[honoraires_patrimoine]",
      "Totaux", 0.0, "S"),
     ("st_provisions", "Sous-total des provisions (gros entretien, aléas de chantier, renouvellements)",
-     "[bati_ge]+[imprevus_travaux]+[clotures]+[equip_renouv]+[installations_eq]", "Totaux", 0.0, "S"),
+     "[bati_ge]+[imprevus_travaux]+[moe_do]+[clotures]+[equip_renouv]+[installations_eq]", "Totaux", 0.0, "S"),
     # --- J. Imprévus et K. Investissements futurs -----------------------------------------------
     ("imprevus", "Imprévus d'exploitation (en % des charges de fonctionnement)",
      "[st_fonctionnement]*taux_imprevus{C}", "J. Imprévus", 0.0, "F"),
@@ -128,7 +130,7 @@ LIGNES = [
     # --- Indicateurs ----------------------------------------------------------------------------------
     ("dont_personnel", "dont personnel", "[dont_personnel_calc]", "Indicateurs", 0.0, "S"),
     ("dont_bati", "dont bâti (entretien courant, gros entretien, aléas, assurance, taxe foncière bâtie, sécurité)",
-     "[bati_courant]+[bati_ge]+[imprevus_travaux]+[assurance_bati]+[taxe_fonciere_bati]+[securite]",
+     "[bati_courant]+[bati_ge]+[imprevus_travaux]+[moe_do]+[assurance_bati]+[taxe_fonciere_bati]+[securite]",
      "Indicateurs", 0.0, "S"),
     ("part_personnel", "Part du personnel dans le besoin total",
      "[dont_personnel]/[total_besoin]", "Indicateurs", 0.0, "S"),
@@ -136,7 +138,7 @@ LIGNES = [
      "[dont_bati]/[total_besoin]", "Indicateurs", 0.0, "S"),
     ("besoin_ht_societe", "Besoin si les charges sont portées par une société assujettie (TVA récupérée, ordre de grandeur)",
      "[total_besoin]-([bati_courant]+[bati_ge]+[imprevus_travaux]+[eau]+[invest_futurs])*0.1/1.1"
-     "-([securite]+[jardins_reguliers]+[parc]+[prairies]+[clotures]+[bois]+[equip_renouv]+[equip_entretien]"
+     "-([moe_do]+[securite]+[jardins_reguliers]+[parc]+[prairies]+[clotures]+[bois]+[equip_renouv]+[equip_entretien]"
      "+[chevaux]+[installations_eq]+[chauffage]+[hors_gel]+[electricite]+[admin]+[honoraires_patrimoine])*0.2/1.2",
      "Indicateurs", 0.0, "S"),
     ("besoin_par_m2", "Besoin total par m² de plancher bâti (château + dépendances), en €/m²",

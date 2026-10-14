@@ -43,6 +43,11 @@ p("taux_gros_entretien", "Provision de gros entretien, en % de la valeur de reco
 p("taux_aleas_travaux", "Aléas de chantier et découvertes, en % du gros entretien", 0.15, fav=0.10,
   dfv=0.20, unite="% du gros entretien", statut="HYPOTHÈSE", sources="R1-05", groupe=G,
   note="Dépassement observé de +29 % sur un chantier britannique (devis 42 k£, facture 54 k£).")
+p("taux_moe_do", "Maîtrise d'œuvre, diagnostics, coordination SPS et assurance dommages-ouvrage, en % du gros entretien",
+  0.12, fav=0.08, dfv=0.18, unite="% du gros entretien", statut="HYPOTHÈSE", sources="V2R-09", groupe=G,
+  note="Sur un monument classé : architecte obligatoire, diagnostic préalable, honoraires calculés sur l'enveloppe "
+       "des travaux, assurance dommages-ouvrage obligatoire (guide de la DRAC, V2R M8). Aucun barème public : taux "
+       "à remplacer par des devis. On ignore si la règle du NRC inclut déjà ces coûts ; ils sont donc ajoutés.")
 p("S1_securite", "S1 — sécurité (télésurveillance, détection incendie, maintenance)", 2500, fav=1500,
   dfv=4000, unite="€/an TTC", statut="HYPOTHÈSE", sources="R1-26", groupe=G,
   note="Coûts introuvables (R1 § 8). Les courtiers recommandent ces dispositifs pour modérer la prime.")
@@ -199,7 +204,7 @@ NOTE_ETP = ("HYPOTHÈSE d'effectif pour le domaine et les chevaux du propriétai
             "13 ETP en S2 et 29 ETP en S3 avec une écurie pleine de 40 à 50 chevaux : l'excédent relève "
             "d'une activité de pension, modélisée à part comme moteur de revenus.")
 for scen, vals in {
-    "S1": dict(direction=0, admin=0, chef_jardinier=0, jardin=1.0, entretien=0, agricole=0, soigneur=0.6,
+    "S1": dict(direction=0, admin=0, chef_jardinier=0, jardin=1.0, entretien=0, agricole=0, soigneur=1.0,
                resp_ecurie=0, gouvernance=0, maison=0.5),
     "S2": dict(direction=1, admin=0, chef_jardinier=1, jardin=2, entretien=1, agricole=1, soigneur=1,
                resp_ecurie=1, gouvernance=1, maison=1),

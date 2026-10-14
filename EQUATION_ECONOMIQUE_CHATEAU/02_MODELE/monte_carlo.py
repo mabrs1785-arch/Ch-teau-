@@ -37,9 +37,10 @@ def parametres_solution(scen: str, dotation0=None, div=None, div_annees=None, re
     P = {
         "pers": _v(f"bud_dont_personnel_{scen}") * mult_besoin,
         "energie": (_v(f"bud_chauffage_{scen}") + _v(f"bud_hors_gel_{scen}") + _v(f"bud_electricite_{scen}")) * mult_besoin,
-        "ge": (_v(f"bud_bati_ge_{scen}") + _v(f"bud_imprevus_travaux_{scen}")) * mult_besoin,
+        "ge": (_v(f"bud_bati_ge_{scen}") + _v(f"bud_imprevus_travaux_{scen}") + _v(f"bud_moe_do_{scen}")) * mult_besoin,
         "autres": (_v(f"bud_total_besoin_{scen}") - _v(f"bud_dont_personnel_{scen}") - _v(f"bud_bati_ge_{scen}")
-                   - _v(f"bud_imprevus_travaux_{scen}") - _v(f"bud_chauffage_{scen}") - _v(f"bud_hors_gel_{scen}")
+                   - _v(f"bud_imprevus_travaux_{scen}") - _v(f"bud_moe_do_{scen}")
+                   - _v(f"bud_chauffage_{scen}") - _v(f"bud_hors_gel_{scen}")
                    - _v(f"bud_electricite_{scen}") - _v(f"bud_assurance_bati_{scen}")
                    - _v(f"bud_assurance_autres_{scen}")) * mult_besoin,
         "assur": (_v(f"bud_assurance_bati_{scen}") + _v(f"bud_assurance_autres_{scen}")) * mult_besoin,
@@ -77,7 +78,16 @@ def simuler(P: dict, annees: int = 30, n: int = 20000, graine: int = 2026, chocs
             sigma_sinistre: float = 0.8, sigma_campagne: float = 0.20, sigma_energie: float = 0.20,
             sigma_g_sal: float = 0.004, p_defaillance_ent: float = 0.035, ent_n: int = 1,
             sigma_ent: float = 0.15,
-            sigma_classes=(0.05, 0.10, 0.35), detail: bool = False):
+            sigma_classes=(0.05, 0.10, 0.35), detail: bool = False,
+            rdt_debut: float | None = None, n_debut: int = 10,
+            choc_dot_an: int | None = None, choc_dot_taux: float = 0.0):
+    """Simule `n` trajectoires du domaine sur `annees` ans.
+
+    Options de stress (V2R) :
+    - `rdt_debut`, `n_debut` : rendement réel moyen des `n_debut` premières années (« décennie perdue ») ;
+    - `choc_dot_an`, `choc_dot_taux` : perte d'une part de la dotation une année donnée (décès et droits de
+      succession, par exemple).
+    """
     rng = np.random.default_rng(graine)
     T = annees
     idx_sal = np.ones(n); idx_trav = 1.0; idx_en = 1.0; idx_rec = 1.0; idx_cpi = 1.0; idx_ass = 1.0
@@ -87,14 +97,16 @@ def simuler(P: dict, annees: int = 30, n: int = 20000, graine: int = 2026, chocs
     ent_vivantes = np.full(n, ent_n, dtype=float)   # nombre de PME encore en vie dans la holding
     crise_prec = np.zeros(n, dtype=bool)
     premier_deficit = np.full(n, -1)
-    traj = {k: np.zeros((n, T)) for k in ("reserve", "dotation", "solde", "total_charges", "act")}
+    total_prec = np.full(n, P["B0"], dtype=float)     # charges de l'année précédente (seuil de tension, réserve visée)
+    traj = {k: np.zeros((n, T)) for k in ("reserve", "dotation", "solde", "total_charges", "act", "tension")}
     impact = {"A": (0.05, 0.02), "B": (0.15, 0.05), "C": (0.80, 0.30)}
     for t in range(1, T + 1):
         idx_sal = idx_sal * (1 + g_sal); idx_trav *= (1 + P["g_trav"]); idx_en *= (1 + P["g_en"])
         idx_rec *= (1 + P["g_rec"]); idx_cpi *= (1 + P["inflation"]); idx_ass *= (1 + P["g_ass"])
         crise = (rng.random(n) < p_crise) if chocs else np.zeros(n, dtype=bool)
         reprise = crise_prec & ~crise
-        tension = (P["pilotage"] * (res < P["flex_seuil"] * P["B0"])).astype(float)
+        reference = np.maximum(total_prec, P["B0"])
+        tension = (P["pilotage"] * (res < P["flex_seuil"] * reference)).astype(float)
         pers = P["pers"] * idx_sal
         en = P["energie"] * idx_en * (rng.lognormal(-0.5 * sigma_energie ** 2, sigma_energie, n) if chocs else 1.0)
         ge = P["ge"] * idx_trav
@@ -114,8 +126,9 @@ def simuler(P: dict, annees: int = 30, n: int = 20000, graine: int = 2026, chocs
                 sinistre[i] = rng.lognormal(np.log(P["ge"]), sigma_sinistre, nb[i]).sum()
         else:
             sinistre = np.zeros(n)
-        depassement = np.maximum(0, campagne + sinistre - fonds - ge)
-        fonds = np.maximum(0, fonds + ge - campagne - sinistre)
+        # les sinistres sont payés en plus du fonds de travaux, sans annuler de travaux (V2R M1)
+        depassement = np.maximum(0, campagne - fonds - ge) + sinistre
+        fonds = np.maximum(0, fonds + ge - campagne)
         subvention = P["sub"] * campagne
         # activités
         rampe = P["rampe1"] if t == 1 else (P["rampe2"] if t == 2 else 1.0)
@@ -141,27 +154,35 @@ def simuler(P: dict, annees: int = 30, n: int = 20000, graine: int = 2026, chocs
                * np.where(crise, 0.5, 1.0))
         # rendement : la moyenne de long terme inclut déjà les crises ; on relève donc la moyenne des années
         # normales de 0,25 × p_crise pour ne pas compter deux fois le choc de crise.
+        mu = rdt_debut if (rdt_debut is not None and t <= n_debut) else P["dot_rdt"]
         if chocs:
             # `dot_rdt` est un rendement réel ANNUALISÉ (moyenne géométrique de long terme, crises comprises).
             # Moyenne arithmétique ≈ géométrique + variance / 2 ; variance = bruit normal + sauts de crise.
             var = sigma_dot ** 2 + p_crise * (1 - p_crise) * 0.25 ** 2
-            rdt = rng.normal(P["dot_rdt"] + var / 2 + 0.25 * p_crise, sigma_dot, n) + np.where(crise, -0.25, 0.0)
+            rdt = rng.normal(mu + var / 2 + 0.25 * p_crise, sigma_dot, n) + np.where(crise, -0.25, 0.0)
         else:
-            rdt = np.full(n, P["dot_rdt"])
+            rdt = np.full(n, mu)
         if t > 1:
             plafond = P["lissage"] * plafond + (1 - P["lissage"]) * P["dot_taux"] * np.maximum(0, dot)
         plafond_eff = np.where(tension == 1, np.maximum(plafond, P["urgence"] * np.maximum(0, dot)), plafond)
-        retrait = np.minimum(np.maximum(0, besoin_net - div), plafond_eff)
+        # la réserve est reconstituée jusqu'à sa cible, indexée sur les charges (V2R M2)
+        cible = P["res0"] * reference / P["B0"]
+        manque = np.maximum(0, cible - res * (1 + P["taux_res"]))
+        retrait = np.minimum(np.maximum(0, besoin_net - div + manque), plafond_eff)
         solde = div + retrait - besoin_net
-        apport = np.where((solde > 0) & (res > 0), solde * P["part_surplus"], 0.0)
+        apport = np.where(solde > 0, P["part_surplus"] * np.maximum(0, res * (1 + P["taux_res"]) + solde - cible), 0.0)
         # l'investissement est prélevé sur la dotation, et sur la réserve pour ce qui dépasse
         capex_dot = np.minimum(capex, np.maximum(0, dot))
         dot = np.maximum(0, dot) * (1 + rdt) - retrait + apport - capex_dot
+        if choc_dot_an is not None and t == choc_dot_an:
+            dot = dot * (1 - choc_dot_taux)
         res = res * (1 + P["taux_res"]) + solde - apport - (capex - capex_dot)
+        total_prec = total
         nouveaux = (res < 0) & (premier_deficit < 0)
         premier_deficit[nouveaux] = t
         crise_prec = crise
-        for k, v in (("reserve", res), ("dotation", dot), ("solde", solde), ("total_charges", total), ("act", act_nette)):
+        for k, v in (("reserve", res), ("dotation", dot), ("solde", solde), ("total_charges", total), ("act", act_nette),
+                     ("tension", tension)):
             traj[k][:, t - 1] = v
     def q(a, x):
         return float(np.percentile(a, x))
@@ -176,6 +197,9 @@ def simuler(P: dict, annees: int = 30, n: int = 20000, graine: int = 2026, chocs
         "dotation_fin_p05": q(traj["dotation"][:, -1], 5),
         "dotation_fin_p50": q(traj["dotation"][:, -1], 50),
         "pire_solde_p05": q(traj["solde"].min(axis=1), 5),
+        "p_tension_20": float((traj["tension"][:, :min(20, T)].sum(axis=1) > 0).mean()),
+        "part_annees_tension_20": float(traj["tension"][:, :min(20, T)].mean()),
+        "part_annees_tension_30": float(traj["tension"].mean()),
     }
     if detail:
         sortie["traj"] = traj

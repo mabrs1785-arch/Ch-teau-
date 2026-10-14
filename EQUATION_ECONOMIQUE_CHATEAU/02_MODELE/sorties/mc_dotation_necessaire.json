@@ -1,56 +1,56 @@
 {
  "S1_pure": {
-  "besoin_B": 325000.0,
-  "dotation_95": 22900000.0,
-  "dotation_50": 9600000.0,
-  "ratio_95_sur_B": 70.4,
-  "ratio_50_sur_B": 29.4,
-  "p_echec_20_a_k95": 0.0151,
-  "p_echec_30_a_k95": 0.0473
+  "besoin_B": 346000.0,
+  "dotation_95": 37900000.0,
+  "dotation_50": 14100000.0,
+  "ratio_95_sur_B": 109.8,
+  "ratio_50_sur_B": 40.9,
+  "p_echec_20_a_k95": 0.0199,
+  "p_echec_30_a_k95": 0.0469
  },
  "S1_leviers": {
-  "besoin_B": 325000.0,
-  "dotation_95": 17100000.0,
-  "dotation_50": 7200000.0,
-  "ratio_95_sur_B": 52.6,
-  "ratio_50_sur_B": 22.1,
-  "p_echec_20_a_k95": 0.0143,
-  "p_echec_30_a_k95": 0.0476
+  "besoin_B": 346000.0,
+  "dotation_95": 35100000.0,
+  "dotation_50": 13000000.0,
+  "ratio_95_sur_B": 101.6,
+  "ratio_50_sur_B": 37.7,
+  "p_echec_20_a_k95": 0.0198,
+  "p_echec_30_a_k95": 0.0465
  },
  "S2_pure": {
-  "besoin_B": 1239000.0,
-  "dotation_95": 85500000.0,
-  "dotation_50": 36500000.0,
-  "ratio_95_sur_B": 69.0,
-  "ratio_50_sur_B": 29.4,
-  "p_echec_20_a_k95": 0.0153,
-  "p_echec_30_a_k95": 0.0483
+  "besoin_B": 1273000.0,
+  "dotation_95": 132200000.0,
+  "dotation_50": 50100000.0,
+  "ratio_95_sur_B": 103.9,
+  "ratio_50_sur_B": 39.3,
+  "p_echec_20_a_k95": 0.018,
+  "p_echec_30_a_k95": 0.0454
  },
  "S2_leviers": {
-  "besoin_B": 1239000.0,
-  "dotation_95": 64000000.0,
-  "dotation_50": 27300000.0,
-  "ratio_95_sur_B": 51.6,
-  "ratio_50_sur_B": 22.1,
-  "p_echec_20_a_k95": 0.0134,
-  "p_echec_30_a_k95": 0.0479
+  "besoin_B": 1273000.0,
+  "dotation_95": 122100000.0,
+  "dotation_50": 46300000.0,
+  "ratio_95_sur_B": 95.9,
+  "ratio_50_sur_B": 36.3,
+  "p_echec_20_a_k95": 0.0179,
+  "p_echec_30_a_k95": 0.0454
  },
  "S3_pure": {
-  "besoin_B": 3643000.0,
-  "dotation_95": 271300000.0,
-  "dotation_50": 108700000.0,
-  "ratio_95_sur_B": 74.5,
-  "ratio_50_sur_B": 29.8,
-  "p_echec_20_a_k95": 0.0174,
-  "p_echec_30_a_k95": 0.0468
+  "besoin_B": 3771000.0,
+  "dotation_95": 491600000.0,
+  "dotation_50": 165900000.0,
+  "ratio_95_sur_B": 130.4,
+  "ratio_50_sur_B": 44.0,
+  "p_echec_20_a_k95": 0.0214,
+  "p_echec_30_a_k95": 0.0423
  },
  "S3_leviers": {
-  "besoin_B": 3643000.0,
-  "dotation_95": 204000000.0,
-  "dotation_50": 82000000.0,
-  "ratio_95_sur_B": 56.0,
-  "ratio_50_sur_B": 22.5,
-  "p_echec_20_a_k95": 0.0162,
-  "p_echec_30_a_k95": 0.0466
+  "besoin_B": 3771000.0,
+  "dotation_95": 454300000.0,
+  "dotation_50": 153400000.0,
+  "ratio_95_sur_B": 120.5,
+  "ratio_50_sur_B": 40.7,
+  "p_echec_20_a_k95": 0.0213,
+  "p_echec_30_a_k95": 0.0422
  }
 }

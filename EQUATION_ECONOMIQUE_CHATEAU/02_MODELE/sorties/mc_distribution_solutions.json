@@ -1,74 +1,74 @@
 {
  "S1": {
-  "p_echec_20": 0.042,
-  "p_echec_30": 0.109,
-  "annee_mediane_premier_echec": 22.0,
-  "part_traj_au_moins_1_annee_tension_20ans": 0.251,
-  "nb_moyen_annees_tension_20ans": 1.65,
+  "p_echec_20": 0.018,
+  "p_echec_30": 0.046,
+  "annee_mediane_premier_echec": 23.0,
+  "part_traj_au_moins_1_annee_tension_20ans": 0.172,
+  "nb_moyen_annees_tension_20ans": 0.33,
   "dotation_an20_M": {
-   "p05": 6.9,
-   "p25": 14.4,
-   "p50": 22.5,
-   "p75": 34.2,
-   "p95": 58.4
+   "p05": 14.7,
+   "p25": 29.6,
+   "p50": 45.2,
+   "p75": 67.7,
+   "p95": 113.9
   },
   "dotation_an30_M": {
-   "p05": 5.2,
-   "p25": 13.9,
-   "p50": 26.1,
-   "p75": 45.1,
-   "p95": 88.8
+   "p05": 11.1,
+   "p25": 28.9,
+   "p50": 50.6,
+   "p75": 84.9,
+   "p95": 161.8
   },
-  "dotation0_M": 15.0,
-  "part_dotation_an20_sous_dotation0": 0.269,
-  "part_dotation_an20_sous_moitie": 0.063
+  "dotation0_M": 34.0,
+  "part_dotation_an20_sous_dotation0": 0.322,
+  "part_dotation_an20_sous_moitie": 0.072
  },
  "S2": {
-  "p_echec_20": 0.045,
-  "p_echec_30": 0.112,
-  "annee_mediane_premier_echec": 22.0,
-  "part_traj_au_moins_1_annee_tension_20ans": 0.25,
-  "nb_moyen_annees_tension_20ans": 1.7,
+  "p_echec_20": 0.018,
+  "p_echec_30": 0.048,
+  "annee_mediane_premier_echec": 23.0,
+  "part_traj_au_moins_1_annee_tension_20ans": 0.195,
+  "nb_moyen_annees_tension_20ans": 0.41,
   "dotation_an20_M": {
-   "p05": 25.0,
-   "p25": 53.4,
-   "p50": 84.1,
-   "p75": 128.7,
-   "p95": 221.3
+   "p05": 48.7,
+   "p25": 99.9,
+   "p50": 153.5,
+   "p75": 230.9,
+   "p95": 390.6
   },
   "dotation_an30_M": {
-   "p05": 19.1,
-   "p25": 51.3,
-   "p50": 97.2,
-   "p75": 170.2,
-   "p95": 337.1
+   "p05": 36.3,
+   "p25": 96.2,
+   "p50": 170.9,
+   "p75": 288.5,
+   "p95": 553.1
   },
-  "dotation0_M": 60.0,
-  "part_dotation_an20_sous_dotation0": 0.306,
-  "part_dotation_an20_sous_moitie": 0.077
+  "dotation0_M": 120.0,
+  "part_dotation_an20_sous_dotation0": 0.345,
+  "part_dotation_an20_sous_moitie": 0.081
  },
  "S3": {
-  "p_echec_20": 0.057,
-  "p_echec_30": 0.119,
-  "annee_mediane_premier_echec": 21.0,
-  "part_traj_au_moins_1_annee_tension_20ans": 0.336,
-  "nb_moyen_annees_tension_20ans": 3.18,
+  "p_echec_20": 0.025,
+  "p_echec_30": 0.05,
+  "annee_mediane_premier_echec": 20.0,
+  "part_traj_au_moins_1_annee_tension_20ans": 0.178,
+  "nb_moyen_annees_tension_20ans": 0.3,
   "dotation_an20_M": {
-   "p05": 78.0,
-   "p25": 171.0,
-   "p50": 272.0,
-   "p75": 418.5,
-   "p95": 723.7
+   "p05": 196.5,
+   "p25": 397.7,
+   "p50": 607.2,
+   "p75": 910.0,
+   "p95": 1535.3
   },
   "dotation_an30_M": {
-   "p05": 60.5,
-   "p25": 168.4,
-   "p50": 317.0,
-   "p75": 557.6,
-   "p95": 1107.0
+   "p05": 155.7,
+   "p25": 396.4,
+   "p50": 690.5,
+   "p75": 1154.5,
+   "p95": 2190.5
   },
-  "dotation0_M": 210.0,
-  "part_dotation_an20_sous_dotation0": 0.349,
-  "part_dotation_an20_sous_moitie": 0.096
+  "dotation0_M": 480.0,
+  "part_dotation_an20_sous_dotation0": 0.35,
+  "part_dotation_an20_sous_moitie": 0.08
  }
 }

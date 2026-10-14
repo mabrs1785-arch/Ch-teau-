@@ -23,11 +23,13 @@ def dotations():
     res = {}
     for scen, r0 in RESERVES.items():
         B = EXTRA[f"bud_total_besoin_{scen}"]
+        # « leviers » = leviers vérifiés par V2C (−7,5 % du besoin), sans l'avantage fiscal MH (V2R M4)
         for nom, kw, mult in (("pure", dict(div=0, div_annees=0), 1.0),
-                              ("leviers", dict(div=0, div_annees=0, mh_actif=1), 0.85)):
-            P = mc.parametres_solution(scen, reserve0=r0, mult_besoin=mult, **kw)
-            k95 = mc.dotation_necessaire(P, cible=0.05, horizon=30, n=6000, borne_haute=4e8)
-            k50 = mc.dotation_necessaire(P, cible=0.50, horizon=30, n=6000, borne_haute=4e8)
+                              ("leviers", dict(div=0, div_annees=0, mh_actif=0), 0.925)):
+            P = mc.parametres_solution(scen, reserve0=r0 * mult, mult_besoin=mult, **kw)
+            k95 = mc.dotation_necessaire(P, cible=0.05, horizon=30, n=6000, borne_haute=1.5e9)
+            k50 = mc.dotation_necessaire(P, cible=0.50, horizon=30, n=6000, borne_haute=1.5e9)
+            assert k95 < 1.4e9, "borne haute atteinte : relever borne_haute"
             s = mc.simuler(dict(P, dot0=k95), annees=30, n=20000)
             res[f"{scen}_{nom}"] = {"besoin_B": round(B, -3), "dotation_95": round(k95, -5),
                                     "dotation_50": round(k50, -5), "ratio_95_sur_B": round(k95 / B, 1),
@@ -39,8 +41,8 @@ def dotations():
 
 def grille():
     out = {}
-    for scen, divs, k0s in (("S1", [0, 250_000, 400_000], [6e6, 8e6, 10e6, 12e6, 15e6, 20e6]),
-                            ("S2", [0, 1_000_000, 1_500_000], [25e6, 35e6, 45e6, 55e6, 60e6, 70e6, 80e6])):
+    for scen, divs, k0s in (("S1", [0, 250_000, 400_000], [10e6, 15e6, 20e6, 25e6, 30e6, 35e6, 40e6]),
+                            ("S2", [0, 1_000_000, 1_500_000], [40e6, 60e6, 80e6, 100e6, 120e6, 140e6, 160e6])):
         for div in divs:
             ligne = {}
             for k0 in k0s:
@@ -60,13 +62,14 @@ def ruptures():
 
         def pe(P, **kw):
             s = mc.simuler(P, annees=30, n=N, ent_n=5, **kw)
-            return {"echec_20": round(s["p_echec_20"], 3), "echec_30": round(s["p_echec_30"], 3)}
+            return {"echec_20": round(s["p_echec_20"], 3), "echec_30": round(s["p_echec_30"], 3),
+                    "annees_tension_20": round(s["part_annees_tension_20"], 3)}
         k = base["dot0"] / 1e6
         out = {"configuration": f"{scen} : dotation {k:.0f} M€, dividendes {base['div'] / 1e6:.2f} M€/an pendant "
                                 f"{base['div_n']:.0f} ans, réserve {base['res0'] / 1e6:.2f} M€",
                "reference": pe(base)}
         out["dotation_initiale"] = {f"{f * k:.0f} M€": pe(dict(base, dot0=f * base["dot0"])) for f in (0.5, 0.67, 0.83, 1.0, 1.17, 1.33)}
-        out["rendement_reel_net"] = {str(r): pe(dict(base, dot_rdt=r)) for r in (0.02, 0.025, 0.03, 0.035)}
+        out["rendement_reel_net"] = {str(r): pe(dict(base, dot_rdt=r)) for r in (0.015, 0.02, 0.025, 0.03)}
         out["derive_salaires_reelle"] = {str(g): pe(dict(base, g_sal=g)) for g in (0.0, 0.005, 0.01, 0.015)}
         out["sans_regles_de_pilotage"] = pe(dict(base, pilotage=0))
         out["frequence_des_crises"] = {"1 tous les 20 ans": pe(base, p_crise=1 / 20), "1 tous les 12 ans": pe(base, p_crise=1 / 12),
@@ -78,6 +81,8 @@ def ruptures():
                                             autres=base["autres"] * m, assur=base["assur"] * m, B0=base["B0"] * m,
                                             res0=base["res0"] * m))
         out["sans_dividendes_de_transition"] = pe(dict(base, div=0, div_n=0))
+        out["decennie_perdue_0pct_10ans"] = pe(base, rdt_debut=0.0, n_debut=10)
+        out["deces_annee_15_droits_44pct"] = pe(base, choc_dot_an=15, choc_dot_taux=0.443)
         Bc = EXTRA[f"bud_total_besoin_{scen}"]
         out["besoin_fourchette_L1"] = {
             nom: dict(pe(mc.parametres_solution(scen, mult_besoin=EXTRA[f"bud_total_besoin_{scen}{suf}"] / Bc,
@@ -118,8 +123,8 @@ def distribution():
     for scen in ("S1", "S2", "S3"):
         P = mc.parametres_solution(scen)
         s = mc.simuler(P, annees=30, n=20000, ent_n=5, detail=True)
-        res, dot = s["traj"]["reserve"], s["traj"]["dotation"]
-        tension = res[:, :20] < P["B0"]   # réserve sous un an de besoin : tension l'année suivante
+        dot = s["traj"]["dotation"]
+        tension = s["traj"]["tension"][:, :20] > 0   # années où les règles de pilotage s'appliquent
         d20, d30 = dot[:, 19], dot[:, 29]
         out[scen] = {
             "p_echec_20": round(s["p_echec_20"], 3), "p_echec_30": round(s["p_echec_30"], 3),
@@ -198,6 +203,20 @@ def sensibilite_rendement():
                                                "k50": round(k50, -5), "k95": round(k95, -5)}
             print(r, nom, out[f"rendement_{r:.3f}_{nom}"])
     json.dump(out, open("sorties/mc_sensibilite_rendement.json", "w"), indent=1, ensure_ascii=False)
+
+
+def dimensionnement():
+    """Dotation des solutions telle que l'échec reste sous 5 % sur 20 ET 30 ans (critère n° 6 du Cadre)."""
+    out = {}
+    for scen in ("S1", "S2", "S3"):
+        P = mc.parametres_solution(scen)
+        k30 = mc.dotation_necessaire(P, cible=0.05, horizon=30, n=10000, borne_haute=1.5e9, ent_n=5)
+        k20 = mc.dotation_necessaire(P, cible=0.05, horizon=20, n=10000, borne_haute=1.5e9, ent_n=5)
+        out[scen] = {"dividendes": P["div"], "annees_dividendes": P["div_n"], "reserve": P["res0"],
+                     "besoin": round(P["B0"], -3), "dotation_5pct_30ans": round(k30, -5),
+                     "dotation_5pct_20ans": round(k20, -5), "dotation_actuelle": P["dot0"]}
+        print(scen, out[scen])
+    json.dump(out, open("sorties/mc_dimensionnement.json", "w"), indent=1, ensure_ascii=False)
 
 
 if __name__ == "__main__":

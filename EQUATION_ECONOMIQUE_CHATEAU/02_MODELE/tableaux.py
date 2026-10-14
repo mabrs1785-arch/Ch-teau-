@@ -10,6 +10,9 @@ import os
 
 from openpyxl import load_workbook
 
+import moteurs  # noqa: F401  (registre des hypothèses, pour les investissements saisis comme hypothèses)
+import parametres  # noqa: F401
+
 ICI = os.path.dirname(os.path.abspath(__file__))
 XL = os.path.join(ICI, "sorties", "Modele_equation_chateau.xlsx")
 
@@ -39,7 +42,7 @@ def lire(ws, col_debut=5, nb=9):
 def tableau_budget(b):
     cats = [
         ("Bâti : entretien courant", ["bati_courant"]),
-        ("Bâti : provision de gros entretien et aléas de chantier", ["bati_ge", "imprevus_travaux"]),
+        ("Bâti : provision de gros entretien, aléas de chantier et maîtrise d'œuvre", ["bati_ge", "imprevus_travaux", "moe_do"]),
         ("Sécurité", ["securite"]),
         ("Personnel", ["dont_personnel_calc"]),
         ("Jardins, parc, prairies, clôtures, bois (hors personnel)", ["jardins_reguliers", "parc", "prairies", "clotures", "bois"]),
@@ -82,18 +85,25 @@ def tableau_moteurs(mo):
             ("hot_cn", "Château-hôtel opéré (15 chambres)", "B/C"),
             ("anc_cn", "Bail d'ancrage à un exploitant de séminaires (50 chambres, si conditions réunies)", "A"),
             ("lux_cn", "Location de luxe de la partie privée (3 semaines par an)", "C")]
-    inv = {"evt_cn": "evt_inv", "gite_cn": "gite_inv", "log_cn": "log_inv", "hot_cn": "hot_inv"}
+    inv = {"evt_cn": "evt_inv", "gite_cn": "gite_inv", "log_cn": "log_inv", "hot_cn": "hot_inv",
+           "stock_cn": "stock_capex", "auto_cn": "auto_capex", "lux_cn": "lux_capex"}
     lignes = ["| Moteur (échelle S2) | Classe | Favorable | Central | Défavorable | Investissement central |",
               "|---|:---:|---:|---:|---:|---:|"]
     for lid, lib, cl in noms:
         v = mo[lid]
-        i = k(mo[inv[lid]][1]) if lid in inv else "—"
+        if lid not in inv:
+            i = "—"
+        elif inv[lid] in mo:
+            i = k(mo[inv[lid]][1])
+        else:   # investissement saisi comme hypothèse (feuille Hypotheses), pas comme ligne calculée
+            from noyau import REGISTRE
+            i = k(REGISTRE[inv[lid]].cen) if inv[lid] in REGISTRE else "—"
         lignes.append(f"| {lib} | {cl} | {k(v[0])} | {k(v[1])} | {k(v[2])} | {i} |")
     return "\n".join(lignes)
 
 
 def tableau_modeles(md):
-    titres = {"M1": "Socle contractuel et équestre standard", "M2": "Lieu d'exception à quota",
+    titres = {"M1": "Socle contractuel et pension retraite", "M2": "Lieu d'exception à quota",
               "M3": "Équestre haut de gamme et services", "M4": "Château-hôtel opéré + réceptions",
               "M5": "Socle minimal + dotation", "M6": "Socle minimal + entreprise extérieure",
               "M7": "Locataire d'ancrage + socle foncier", "M8": "Socle M1 + location de luxe"}
@@ -113,10 +123,11 @@ def tableau_stress(ws):
         if lid:
             d[lid] = ws.cell(row=r, column=5).value
     feuilles = [x[: -len("_min_res")] for x in d if x.endswith("_min_res")]
-    lignes = ["| Projection (20 ans) | Réserve minimale | Réserve en année 20 | Dotation en année 20 | Années en déficit | Contribution moyenne des activités |",
-              "|---|---:|---:|---:|---:|---:|"]
+    lignes = ["| Projection (20 ans) | Réserve minimale | Réserve en année 20 | Dotation en année 20 | Années en déficit | Années en tension | Contribution moyenne des activités |",
+              "|---|---:|---:|---:|---:|---:|---:|"]
     for f in feuilles:
-        lignes.append(f"| {f} | {m(d[f + '_min_res'])} | {m(d[f + '_res20'])} | {m(d[f + '_dot20'], 1)} | {d[f + '_def']:.0f} | {k(d[f + '_act'])} |")
+        lignes.append(f"| {f} | {m(d[f + '_min_res'])} | {m(d[f + '_res20'])} | {m(d[f + '_dot20'], 1)} | {d[f + '_def']:.0f} | "
+                      f"{d.get(f + '_tension', 0):.0f} | {k(d[f + '_act'])} |")
     return "\n".join(lignes)
 
 
@@ -130,8 +141,9 @@ def main():
            "## Moteurs de revenus", "", tableau_moteurs(mo), "",
            "## Modèles", "", tableau_modeles(md), "",
            "## Projections et stress tests", "", tableau_stress(wb["Stress_synthese"]), ""]
-    for f in ("mc_dotation_necessaire.json", "mc_grille_hybride.json", "mc_holding_hybride.json",
-              "mc_ruptures_S2.json", "mc_ruptures_S1.json"):
+    for f in ("mc_dimensionnement.json", "mc_dotation_necessaire.json", "mc_grille_hybride.json",
+              "mc_holding_hybride.json", "mc_ruptures_S2.json", "mc_ruptures_S1.json", "mc_ruptures_S3.json",
+              "mc_distribution_solutions.json", "mc_comparaison_modeles.json", "mc_sensibilite_rendement.json"):
         chemin = os.path.join(ICI, "sorties", f)
         if os.path.exists(chemin):
             out += [f"## {f}", "", "```json", open(chemin, encoding="utf-8").read(), "```", ""]

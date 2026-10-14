@@ -1,126 +1,162 @@
 {
- "configuration": "S1 : dotation 15 M€, dividendes 0.40 M€/an pendant 10 ans, réserve 0.40 M€",
+ "configuration": "S1 : dotation 34 M€, dividendes 0.40 M€/an pendant 10 ans, réserve 0.40 M€",
  "reference": {
-  "echec_20": 0.042,
-  "echec_30": 0.107
+  "echec_20": 0.018,
+  "echec_30": 0.047,
+  "annees_tension_20": 0.017
  },
  "dotation_initiale": {
-  "8 M€": {
-   "echec_20": 0.321,
-   "echec_30": 0.475
+  "17 M€": {
+   "echec_20": 0.119,
+   "echec_30": 0.247,
+   "annees_tension_20": 0.158
   },
-  "10 M€": {
-   "echec_20": 0.15,
-   "echec_30": 0.277
+  "23 M€": {
+   "echec_20": 0.056,
+   "echec_30": 0.132,
+   "annees_tension_20": 0.072
   },
-  "12 M€": {
-   "echec_20": 0.077,
-   "echec_30": 0.173
+  "28 M€": {
+   "echec_20": 0.029,
+   "echec_30": 0.077,
+   "annees_tension_20": 0.035
   },
-  "15 M€": {
-   "echec_20": 0.042,
-   "echec_30": 0.107
+  "34 M€": {
+   "echec_20": 0.018,
+   "echec_30": 0.047,
+   "annees_tension_20": 0.017
   },
-  "18 M€": {
-   "echec_20": 0.023,
-   "echec_30": 0.068
+  "40 M€": {
+   "echec_20": 0.012,
+   "echec_30": 0.03,
+   "annees_tension_20": 0.008
   },
-  "20 M€": {
-   "echec_20": 0.014,
-   "echec_30": 0.047
+  "45 M€": {
+   "echec_20": 0.008,
+   "echec_30": 0.02,
+   "annees_tension_20": 0.005
   }
  },
  "rendement_reel_net": {
+  "0.015": {
+   "echec_20": 0.021,
+   "echec_30": 0.061,
+   "annees_tension_20": 0.021
+  },
   "0.02": {
-   "echec_20": 0.068,
-   "echec_30": 0.183
+   "echec_20": 0.018,
+   "echec_30": 0.047,
+   "annees_tension_20": 0.017
   },
   "0.025": {
-   "echec_20": 0.053,
-   "echec_30": 0.144
+   "echec_20": 0.015,
+   "echec_30": 0.036,
+   "annees_tension_20": 0.013
   },
   "0.03": {
-   "echec_20": 0.042,
-   "echec_30": 0.107
-  },
-  "0.035": {
-   "echec_20": 0.032,
-   "echec_30": 0.081
+   "echec_20": 0.013,
+   "echec_30": 0.027,
+   "annees_tension_20": 0.01
   }
  },
  "derive_salaires_reelle": {
   "0.0": {
-   "echec_20": 0.038,
-   "echec_30": 0.101
+   "echec_20": 0.017,
+   "echec_30": 0.046,
+   "annees_tension_20": 0.016
   },
   "0.005": {
-   "echec_20": 0.042,
-   "echec_30": 0.107
+   "echec_20": 0.018,
+   "echec_30": 0.047,
+   "annees_tension_20": 0.017
   },
   "0.01": {
-   "echec_20": 0.044,
-   "echec_30": 0.117
+   "echec_20": 0.019,
+   "echec_30": 0.05,
+   "annees_tension_20": 0.018
   },
   "0.015": {
-   "echec_20": 0.048,
-   "echec_30": 0.128
+   "echec_20": 0.019,
+   "echec_30": 0.051,
+   "annees_tension_20": 0.019
   }
  },
  "sans_regles_de_pilotage": {
-  "echec_20": 0.108,
-  "echec_30": 0.21
+  "echec_20": 0.056,
+  "echec_30": 0.14,
+  "annees_tension_20": 0.0
  },
  "frequence_des_crises": {
   "1 tous les 20 ans": {
-   "echec_20": 0.033,
-   "echec_30": 0.087
+   "echec_20": 0.016,
+   "echec_30": 0.038,
+   "annees_tension_20": 0.014
   },
   "1 tous les 12 ans": {
-   "echec_20": 0.042,
-   "echec_30": 0.107
+   "echec_20": 0.018,
+   "echec_30": 0.047,
+   "annees_tension_20": 0.017
   },
   "1 tous les 8 ans": {
-   "echec_20": 0.054,
-   "echec_30": 0.13
+   "echec_20": 0.022,
+   "echec_30": 0.056,
+   "annees_tension_20": 0.02
   }
  },
  "sinistres_par_an": {
   "0.05": {
-   "echec_20": 0.034,
-   "echec_30": 0.094
+   "echec_20": 0.012,
+   "echec_30": 0.031,
+   "annees_tension_20": 0.013
   },
   "0.1": {
-   "echec_20": 0.042,
-   "echec_30": 0.107
+   "echec_20": 0.018,
+   "echec_30": 0.047,
+   "annees_tension_20": 0.017
   },
   "0.2": {
-   "echec_20": 0.051,
-   "echec_30": 0.118
+   "echec_20": 0.031,
+   "echec_30": 0.068,
+   "annees_tension_20": 0.023
   }
  },
  "besoin_plus_20_pct": {
-  "echec_20": 0.094,
-  "echec_30": 0.19
+  "echec_20": 0.031,
+  "echec_30": 0.081,
+  "annees_tension_20": 0.038
  },
  "sans_dividendes_de_transition": {
-  "echec_20": 0.103,
-  "echec_30": 0.196
+  "echec_20": 0.03,
+  "echec_30": 0.068,
+  "annees_tension_20": 0.031
+ },
+ "decennie_perdue_0pct_10ans": {
+  "echec_20": 0.028,
+  "echec_30": 0.078,
+  "annees_tension_20": 0.032
+ },
+ "deces_annee_15_droits_44pct": {
+  "echec_20": 0.04,
+  "echec_30": 0.141,
+  "annees_tension_20": 0.029
  },
  "besoin_fourchette_L1": {
   "favorable": {
    "echec_20": 0.003,
-   "echec_30": 0.014,
-   "besoin": 195000.0
+   "echec_30": 0.007,
+   "annees_tension_20": 0.001,
+   "besoin": 208000.0
   },
   "defavorable": {
-   "echec_20": 0.335,
-   "echec_30": 0.483,
-   "besoin": 562000.0
+   "echec_20": 0.113,
+   "echec_30": 0.226,
+   "annees_tension_20": 0.145,
+   "besoin": 603000.0
   }
  },
- "dotation_95_si_besoin_defavorable_sans_dividendes": 40100000.0,
+ "dotation_95_si_besoin_defavorable_sans_dividendes": 66900000.0,
  "une_seule_entreprise": {
-  "p_echec_20": 0.0445,
-  "p_echec_30": 0.1078
+  "p_echec_20": 0.02,
+  "p_echec_30": 0.0468
  }
 }

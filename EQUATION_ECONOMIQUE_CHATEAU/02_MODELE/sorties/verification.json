@@ -3,9 +3,15 @@
     "status": "success",
     "total_errors": 0,
     "error_summary": {},
-    "total_formulas": 11301
+    "total_formulas": 11814
   },
-  "cellules_comparees": 11301,
+  "cellules_comparees": 11814,
   "ecarts": [],
-  "nb_ecarts": 0
+  "nb_ecarts": 0,
+  "jumeau_monte_carlo_ecart_max_eur": {
+    "Proj_S2_sans_moteur": 3.725290298461914e-08,
+    "Proj_S2_solution": 5.066394805908203e-07,
+    "Proj_S1_solution": 5.21540641784668e-08,
+    "Proj_S3_solution": 4.172325134277344e-07
+  }
 }
