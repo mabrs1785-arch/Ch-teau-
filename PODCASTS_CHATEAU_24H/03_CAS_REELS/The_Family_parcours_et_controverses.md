@@ -2,7 +2,7 @@
 
 **Agent** : vérificateur de preuves et analyste des échecs · **Date** : 2026-10-14
 **Méthode** : 38 recherches WebSearch (quota de 45 respecté). WebFetch était bloqué : **aucun article n'a été ouvert en entier**. Chaque fait ci-dessous repose sur des **extraits de résultats de recherche** qui résument ou citent des articles de presse. Statut d'accès de toutes les sources : « analysé partiellement via texte de tiers » au mieux, et souvent « repéré (métadonnées seulement) ». Aucune décision de justice n'a été lue dans son texte intégral.
-**Sources** : `_brut/sources_verif.csv` (identifiants V01 à V36, cités entre crochets).
+**Sources** : `_brut/sources_verif.csv` (identifiants V01 à V49, cités entre crochets ; V15, V39, V46-V49 = sources repérées non citées).
 
 > **Présomption d'innocence.** Aucune condamnation **pénale** n'a été trouvée contre Oussama Ammar dans l'affaire The Family à la date du 14/10/2026. Les décisions obtenues aux îles Caïmans et au Royaume-Uni sont des décisions **civiles**. Celle du Royaume-Uni a été rendue **par défaut**, et M. Ammar la conteste. Les procédures pénales françaises (plainte de 2022, garde à vue de 2025, enquête préliminaire du PNF) **n'ont pas abouti à un jugement** connu. M. Ammar nie les accusations.
 
