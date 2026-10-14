@@ -11,9 +11,15 @@ Flux disponible(t) = Σ CN_i(t)  +  RD(t)  +  SUB(t)  −  B(t)  −  DETTE(t)
 
 Réserve(t) = Réserve(t−1) × (1 + r_réserve)  +  Flux disponible(t)
 
-Contraintes : Réserve(t) ≥ Réserve_minimale (par exemple 12 mois de charges fixes),
-              et ce chaque année, y compris dans les années de crise.
+Contraintes : Réserve(t) ≥ 0 chaque année, y compris dans les années de crise.
+              Une réserve négative est un ÉCHEC (critère n° 6 du § 5).
+Objectif de gestion : Réserve(t) ≥ Réserve_minimale (12 mois de charges de l'année précédente).
+              Passer sous ce seuil n'est pas un échec mais une TENSION, qui déclenche les règles de pilotage
+              (coupe des dépenses discrétionnaires, report partiel des travaux, retrait d'urgence plafonné),
+              puis la reconstitution de la réserve.
 ```
+
+Précision ajoutée après l'équipe rouge (V2R M3) : la version précédente de cette ligne faisait de la réserve minimale de 12 mois une contrainte, alors que le modèle et le critère n° 6 définissent l'échec comme une réserve négative. Les deux notions sont désormais distinctes, et le modèle publie à la fois la probabilité d'échec et la fréquence des tensions.
 
 | Terme | Définition |
 |---|---|

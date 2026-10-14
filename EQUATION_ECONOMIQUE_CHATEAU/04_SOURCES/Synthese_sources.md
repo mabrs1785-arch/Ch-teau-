@@ -1,6 +1,6 @@
 # Synthèse du registre des sources (généré par consolider.py)
 
-**636 sources** dans `Registre_sources.csv`, issues de 13 lots.
+**652 sources** dans `Registre_sources.csv`, issues de 14 lots.
 
 | Lot | Sources |
 |---|---:|
@@ -16,18 +16,19 @@
 | V2A | 63 |
 | V2C | 35 |
 | V2D | 47 |
+| V2R | 16 |
 | V2V | 49 |
 
 | Statut | Sources |
 |---|---:|
-| page_lue | 548 |
-| extrait | 88 |
+| page_lue | 562 |
+| extrait | 90 |
 
 | Fiabilité | Sources |
 |---|---:|
-| haute | 332 |
-| moyenne | 235 |
-| faible | 69 |
+| haute | 343 |
+| moyenne | 239 |
+| faible | 70 |
 
 ## Anomalies de format
 

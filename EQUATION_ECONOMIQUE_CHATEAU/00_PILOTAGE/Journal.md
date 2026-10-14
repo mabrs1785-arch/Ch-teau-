@@ -68,3 +68,26 @@
   - S3 : 210 M€.
 - **Livrables rédigés** : L1 et L2 mis à jour, L3, L4, L5, L6, L7 et le README.
 - **Équipe rouge (V2R)** lancée ; ses constats doivent être intégrés avant L8.
+
+## 2026-10-14 (fin) — équipe rouge intégrée, livrables révisés
+
+- **Rapport V2R reçu** : 29 constats (2 critiques, 10 majeurs, 17 mineurs), 16 sources nouvelles.
+- **Décision** : accepter le fond des 29 constats.
+  - **C1 change le discours** : aucun véhicule français ne sépare le capital de la fortune du propriétaire tout en lui laissant la jouissance du château. La réponse au brief devient : « aucune solution indépendante d'un capital personnel ou familial n'a été trouvée ».
+  - **C2 et les constats majeurs changent les chiffres**.
+- **Modèle corrigé** :
+  - rendement réel net de 3 à 2 % ; retrait de 2,75 à 1,75 % ;
+  - sinistres payés en plus du fonds de travaux (M1) ;
+  - réserve reconstituée jusqu'à une cible indexée sur les charges (M2) ;
+  - seuil de tension indexé (m5) ; trésorerie à −0,5 % réel (m4) ;
+  - maîtrise d'œuvre et dommages-ouvrage : 12 % du gros entretien (M8) ;
+  - conversion EBITDA → dividende de 0,355 (m2) ; fuite fiscale de 40 % (m3) ;
+  - pension standard retirée de la solution (m8) ; soigneur de S1 à 1 ETP (m13) ;
+  - variante « leviers vérifiés −7,5 %, sans MH » (M4) ;
+  - tests ajoutés : décennie perdue (M9), décès en année 15 avec 44 % de droits (M5) ;
+  - contrôle du jumeau rétabli dans `verification.json` (m16) ;
+  - nouvelle sortie `mc_tension_seuils.json` : fréquence des tensions à 50 % et 95 % de chances.
+- **Solutions redimensionnées** au critère n° 6 (≤ 5 % d'échec sur 20 et 30 ans, M3) : S1 34 M€ + 0,4 M€/an ; S2 120 M€ + 1 M€/an ; S3 480 M€. Échec à 30 ans : 4,6 à 5,0 %.
+- **Livrables révisés** : L1 à L8 et README ; L8 § 6 détaille le traitement de chaque constat. Ligne 14 du cadre analytique précisée.
+- **Registre des sources** : 652 sources ; tous les identifiants cités existent.
+- **Non fait** : holding gérée activement (m1) ; IFI détaillé par nature de bien (m11) ; ligne budgétaire des infrastructures (m10, coût INCONNU).
