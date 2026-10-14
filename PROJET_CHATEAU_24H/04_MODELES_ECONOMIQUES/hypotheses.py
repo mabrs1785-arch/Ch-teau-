@@ -18,11 +18,12 @@ LISEZMOI = [
     "Scénario A — Château équestre « sport » : pension travail avec cavalier professionnel, valorisation et vente de jeunes chevaux, concours, pension premium. Financement bancaire classique (apport 1 M€).",
     "Scénario B — Château multiactivité : pension premium + pré + retraite, mariages plafonnés, gîte, séminaires, tournages. Financement bancaire classique (apport 1 M€).",
     "Variantes de financement de B : B_club_deal (apport 250 k€ + investisseurs majoritaires), B_credit_vendeur (apport 250 k€ + crédit-vendeur 1,5 M€), B_sans_dette (diagnostic de l'exploitation seule).",
-    "Scénario C — Le capital d'abord : holding de reprise de PME 2026-2030 (hors modèle), achat en année 5 (2031) presque sans dette, exploitation frugale. Les fonds propres viennent de la holding (NON acquis).",
+    "Scénario C — Le capital d'abord : holding de reprise de PME 2026-2030, achat en année 5 (2031) presque sans dette, exploitation frugale. Les fonds propres viennent de la holding (NON acquis). C_holding_realiste : la holding n'apporte que ce qu'une reprise unique dégage. Feuilles H1-H3 : moteur de capital (ce que 1 à 3 reprises de PME produisent réellement).",
     "Scénario E — Bail emphytéotique : contrôle d'un domaine public pendant 50-99 ans sans propriété ; travaux à la charge du preneur ; redevance INCONNUE ; aucune valeur de sortie (améliorations au bailleur).",
     "Cas prudent / optimiste : dérivés du central (volumes, prix, charges, travaux, montée en charge) — voir Sources_hypotheses. Stress tests (feuilles S_*) : appliqués aux configurations non déficitaires.",
     "Simplifications : IS 25 % sans taux réduit ni plafonnement des déficits ; montants HT ; amortissements bâti 30 ans / travaux 15 ans ; pas de dividendes avant la sortie ; valeur de sortie = % du coût historique moins frais de cession ; loyer privé du fondateur hors CA d'exploitation.",
-    "Verdict : VIABLE si trésorerie jamais négative, trésorerie an 10 ≥ réserve, DSCR (après gros entretien) ≥ 1,2 sur les années 4-10, cash-flow libre ≥ 0 sur les années 4-10, TRI des investisseurs extérieurs ≥ 6 % et dirigeant payé. Sinon FRAGILE ou NON VIABLE.",
+    "Verdict : VIABLE si trésorerie jamais négative, trésorerie an 10 ≥ réserve, DSCR (après gros entretien) ≥ 1,2 et cash-flow libre ≥ 0 dès la 2e année d'exploitation, TRI des investisseurs extérieurs ≥ 6 % et dirigeant payé par le domaine. NON AUTOFINANCÉ si tout passe sauf la rémunération du dirigeant. Sinon FRAGILE ou NON VIABLE.",
+    "Corrections après audit (agent 8) : loyer privé retiré ; prix de pension ramenés au 3e quartile hors IdF (box 450 € TTC) ; 3 ETP pour ~54 équidés ; assurance 12 k€ ; gros entretien sur bâti + travaux ; IS 15 %/25 % ; crédit-vendeur aux conditions de marché ; prêts d'honneur comptés en dette ; C négocié limité à −20 % sur le prix ; valeur de sortie hors gros entretien ; indexation des charges = prix.",
 ]
 
 # ------------------------------------------------------------------ bloc commun (B central)
@@ -36,11 +37,11 @@ B_INPUTS = {
     "capex_equestre": (150_000, "EST : remise à niveau d'écuries existantes (une écurie neuve de 30 box coûterait 0,78-0,83 M€ HT [A3 H20])"),
     "capex_evenementiel": (250_000, "EST : mise aux normes d'une salle existante + aménagement du gîte (neuf : 570 k€-1,24 M€ [A4 §13.2])"),
     "capex_rep1": (0.6, EST), "capex_rep2": (0.3, EST), "capex_rep3": (0.1, EST),
-    "gros_entretien_pct": (0.012, "≈ 40 k€/an de provision : Barnes 20-80 k€/an [A4 §11, PL] ; démarre en année d'acquisition + 3"),
+    "gros_entretien_pct": (0.018, "≈ 41 k€/an sur (bâti + travaux) : Demeure Historique ≥ 40 k€/an hors restauration (PL [A8]) ; Barnes 20-80 k€/an [A4 §11] ; démarre en année d'acquisition + 3"),
     "valo_sortie_pct": (0.8, "EST : Haras de Hus affiché 20 → 12,9 M€ ; les châteaux se revendent sous leur coût [A1, A7]"),
     "loyer_avant_acq": (0, "Sans objet"),
     "frais_cession_pct": (0.05, EST),
-    "loyer_prive": (18_000, "EST : loyer de marché de la partie privée, payé par le fondateur sur revenus extérieurs (risque d'abus de biens sociaux sinon)"),
+    "loyer_prive": (0, "Correction audit M1 : aucun loyer privé compté — le logis doit être détenu à part (SCI à l'IR, hors taxe 235 ter C [A6]) et payé par le fondateur personnellement"),
     "apport_fondateur": (1_000_000, "Scénario d'apport S3 (hypothèse ; apport réel inconnu)"),
     "fp_invest": (0, "Aucun investisseur"),
     "fp_fondateur": (0, ""),
@@ -57,16 +58,18 @@ B_INPUTS = {
     "tri_cible": (0.06, "EST : rendement minimal d'un investisseur en fonds propres illiquide (Anaxago affiche 8,7 % net, PL [A2])"),
     "dirigeant_paye": (1, "Rémunération du dirigeant incluse"),
     "ramp1": (0.5, "A4 : mariages 40/70/100 % ; gîte 50/80/100 %"), "ramp2": (0.8, EST), "ramp3": (1.0, EST),
-    "infl_prix": (0.02, EST), "infl_ch": (0.025, EST),
+    "infl_prix": (0.02, EST), "infl_ch": (0.02, "EST : indexation identique aux prix (correction audit, biais pessimiste retiré)"),
     "bfr_pct": (-0.03, "Acomptes (mariages, pensions payées d'avance) — EST"),
-    "is_taux": (0.25, "Taux normal (équestre en BA hors société : non modélisé)"),
+    "is_taux": (0.25, "PL : IS 25 % au-delà de 42 500 € [A6]"),
+    "is_reduit": (0.15, "PL : 15 % jusqu'à 42 500 € (PME) [A6]"),
+    "is_seuil": (42_500, "PL [A6]"),
 }
 
 # (libellé, volume à maturité, prix unitaire annuel HT, coût variable %, événement ?, équestre ?, source)
-PENSION_BOX = ("Pension box premium (places occupées)", 22, 5_915, 0.20, False, True,
-               "PL : 520 € TTC/mois (premium régional ; IdF 540-650) → 493 € HT à TVA 5,5 % [A3 H1-H2, H8] ; 24 box × 92 % ; coûts directs 1 200 €/an EST (réf. 613-1 729) [A3 §4]")
-PENSION_PRE = ("Pension au pré (places occupées)", 23, 2_616, 0.23, False, True,
-               "PL : 230 € TTC/mois → 218 € HT [A3 H3] ; 25 places × 92 % ; coûts 613 €/an [A3 §4]")
+PENSION_BOX = ("Pension box premium (places occupées)", 22, 5_118, 0.23, False, True,
+               "PL : 450 € TTC/mois = 3e quartile hors IdF (médiane 375 €, 10 % des offres ≥ 520 €) [A3, recalcul A8] → 426,5 € HT à TVA 5,5 % ; 24 box × 92 % ; coûts directs 1 200 €/an EST")
+PENSION_PRE = ("Pension au pré (places occupées)", 23, 2_502, 0.245, False, True,
+               "PL : 220 € TTC/mois (médianes 200-240 €) → 208,5 € HT [A3 H3] ; 25 places × 92 % ; coûts 613 €/an [A3 §4]")
 PENSION_RETRAITE = ("Pension retraite / convalescence (places occupées)", 9, 2_100, 0.24, False, True,
                     "PL : 210 € TTC/mois, TVA 20 % → 175 € HT [A3 H4] ; 10 places × 90 %")
 MARIAGES = ("Mariages (location du lieu + hébergement 15 couchages)", 12, 4_197, 0.43, True, False,
@@ -82,13 +85,13 @@ B_REV = [PENSION_BOX, PENSION_PRE, PENSION_RETRAITE, MARIAGES, GITE, SEMINAIRES,
 # (libellé, montant annuel, dès l'acquisition ?, source)
 CH_CHATEAU = [
     ("Taxe foncière", 6_000, True, "EX : 2,6-4,0 k€ sur 3 annonces ; EST 4-8 k€ [A4 §11]"),
-    ("Assurance multirisque château", 7_000, True, "PL : « rarement < 2 500 € », hausse 2026 de 7,5-8 % [A4 §11] ; EST 5-10 k€"),
+    ("Assurance multirisque château", 12_000, True, "Correction audit : courtier spécialisé 15-30 k€ (fiabilité moyenne), annonces ≥ 2,5 k€ [A4 §11, A8] ; EST 12 k€"),
     ("Énergie (chauffage partiel, électricité, eau)", 20_000, True, "PL : Meung, Louvignies ; EX annonce Montluçon 18-25 k€ [A1, A4 §11] ; EST"),
     ("Jardinier / agent d'entretien (1 ETP au Smic chargé)", 27_000, True, "PL : Smic 2026 22 404 € brut/an [A4 §11] ; EST charges"),
     ("Divers (abonnements, petit matériel, véhicule, honoraires)", 8_000, True, EST),
 ]
 CH_EQUESTRE_B = [
-    ("Soigneurs (2 ETP au Smic chargés)", 60_000, False, "PL : Smic 1 867 €/mois, grille IDCC 7026 inférieure ; 1 ETP / 17-20 équidés [A3 H13-H14] ; ~54 équidés"),
+    ("Soigneurs (3 ETP au Smic chargés)", 90_000, False, "PL : Smic 1 867 €/mois, grille IDCC 7026 inférieure ; 1 ETP / 17-20 équidés [A3 H13-H14] ; ~54 équidés → 3 ETP (correction audit M5)"),
     ("Autres charges de structure équestres (entretien installations, matériel, assurance RC, énergie écuries)", 30_000, False,
      "Calibré pour un EBE équestre ≈ 37 % (réf. pension hébergement 36-38 %, PL [A3 H10])"),
 ]
@@ -108,8 +111,8 @@ A_INPUTS.update({
     "capex_evenementiel": (80_000, "EST : salon de réception pour ventes privées, pas de salle ERP > 50 pers."),
 })
 A_REV = [
-    ("Pension travail (chevaux de sport, places occupées)", 18, 6_560, 0.26, False, True,
-     "PL : 656 € TTC/mois (cas-type CSO 2025) → 547 € HT à TVA 20 % (entraînement/valorisation, BOFiP) [A3 H5, H9] ; 20 places × 90 % ; coûts op. 1 729 €/an [A3 §4]"),
+    ("Pension travail (chevaux de sport, places occupées)", 18, 6_000, 0.29, False, True,
+     "PL : 600 € TTC/mois (médiane hors IdF 535 €, 3e quartile 612 €) [A3, recalcul A8] → 500 € HT à TVA 20 % (entraînement/valorisation) ; 20 places × 90 % ; coûts op. 1 729 €/an"),
     ("Pension box premium (places occupées)", 9, 5_915, 0.20, False, True, "Cf. B ; 10 places × 90 %"),
     ("Pension au pré (places occupées)", 14, 2_616, 0.23, False, True, "Cf. B ; 15 places × 92 %"),
     ("Valorisation et vente de jeunes chevaux (marge nette par cheval vendu)", 3, 9_975, 0.10, False, True,
@@ -123,7 +126,7 @@ A_REV = [
 ]
 A_CH = CH_CHATEAU + [
     ("Cavalier professionnel / responsable d'écurie (chargé)", 45_000, False, "PL : grille 2 108-2 678 € brut (coef. 130-167) [A3 H15] ; EST charges"),
-    ("Soigneurs (2 ETP au Smic chargés)", 60_000, False, "PL [A3 H13-H14] ; 10 chevaux au travail / ETP"),
+    ("Soigneurs / cavaliers-soigneurs (2,5 ETP chargés)", 78_000, False, "PL [A3 H13-H14] ; 10 chevaux au travail / ETP ; ~45 équidés"),
     ("Autres charges de structure équestres", 35_000, False, "EST : réf. structure pension travail 2 471 €/équidé [A3 §4] (salaires inclus) → calibrage"),
     ("Coûts fixes du gîte", 4_400, False, "EST [A4 §13.1]"),
     ("Commercial, site, salons", 12_000, False, EST),
@@ -181,8 +184,8 @@ def frugal(p, titre):
             continue
         if lab.startswith("Jardinier"):
             lab, amt, src = "Jardinier à mi-temps / prestataire", 14_000, "Variante frugale — EST"
-        if lab.startswith("Soigneurs (2"):
-            lab, amt, src = "Soigneur (1 ETP + extras week-end)", 36_000, "Variante frugale : le fondateur assure une partie des soins"
+        if lab.startswith(("Soigneurs (3", "Soigneurs / cavaliers")):
+            lab, amt, src = "Soigneurs (2 ETP chargés)", 60_000, "Variante frugale : le fondateur est le 3e ETP de l'écurie (non payé)"
         ch.append((lab, amt, acq, src))
     q["charges"] = ch
     q["inputs"]["dirigeant_paye"] = (0, "Variante frugale : fondateur non rémunéré par le domaine")
@@ -213,13 +216,13 @@ def feuilles():
     out.append(("B_club_deal", cd))
 
     cvd = copy.deepcopy(base["B"])
-    cvd["titre"] = "B — Crédit-vendeur : apport 250 k€, crédit-vendeur 1,5 M€ sur 12 ans (montage 3) — cas central"
+    cvd["titre"] = "B — Crédit-vendeur : apport 250 k€, crédit-vendeur 1,0 M€ sur 5 ans aux conditions de marché (montage 3) — cas central"
     cvd["inputs"].update({
-        "apport_fondateur": (330_000, "S2 250 k€ + prêts d'honneur 80 k€ [A2 montage 3]"),
-        "dette": (1_100_000, "NON ACQUIS — banque 15 ans (750 k€) + prêt OpCo garanti (350 k€) regroupés [A2]"),
+        "apport_fondateur": (250_000, "S2 (les prêts d'honneur sont comptés en dette — correction audit)"),
+        "dette": (1_680_000, "NON ACQUIS — banque 15 ans + prêt OpCo garanti + prêts d'honneur 80 k€ regroupés [A2]"),
         "duree": (15, "A2"),
-        "cv": (1_500_000, "NON ACQUIS — vendeur coopératif à trouver ; clause résolutoire [A2 montage 3]"),
-        "cv_taux": (0.03, "A2"), "cv_duree": (12, "A2"),
+        "cv": (1_000_000, "NON ACQUIS — 40 % du prix : usage 30-50 %, 1-5 ans, taux ≥ banque (PL [A8]) ; clause résolutoire"),
+        "cv_taux": (0.045, "PL [A8] : taux ≥ banque"), "cv_duree": (5, "PL [A8]"),
         "oc": (500_000, "NON ACQUIS — obligations PSFP in fine 5 ans [A2]"), "oc_taux": (0.08, "A2 : 7-9 %"), "oc_ech": (6, "Remboursement in fine en année 6"),
     })
     out.append(("B_credit_vendeur", cvd))
@@ -245,26 +248,50 @@ def feuilles():
     out.append(("C_prudent", derive(c, "prudent")))
     out.append(("C_optimiste", derive(c, "optimiste")))
     cn = copy.deepcopy(c)
-    cn["titre"] = "C négocié — vendeur en difficulté : prix −20 %, travaux −30 % (équipements existants)"
+    cn["titre"] = "C négocié — vendeur en difficulté : prix −20 % (travaux inchangés)"
     cn["inputs"]["prix"] = (2_000_000, "Prix −20 % : vendeur en difficulté (Ygrande vendu par la SAFER, Hus −35 %) — NON acquis")
-    for k in ("capex_restauration", "capex_equestre", "capex_evenementiel"):
-        v, src = cn["inputs"][k]
-        cn["inputs"][k] = (round(v * 0.7), "−30 % : équipements existants — EST")
     cn["inputs"]["fp_invest"] = (2_600_000, "Fonds propres HOLDING — NON acquis")
     out.append(("C_negocie", cn))
+    cr = copy.deepcopy(c)
+    cr["titre"] = "C réaliste — la holding n'apporte que ce qu'une reprise de PME dégage d'ici 2031 (≈ 0,7 M€), dette 0,4 M€"
+    cr["inputs"]["fp_invest"] = (700_000, "Haut de fourchette d'une reprise unique (0,2-0,7 M€) [A2 montage 6, A8] — NON acquis")
+    out.append(("C_holding_realiste", cr))
+    # Variante D : château modeste à rénover, > 50 ha, prix bas (profil Sainte-Hermine, 85)
+    d = copy.deepcopy(c)
+    d["titre"] = "D — Château modeste > 50 ha à rénover (profil Sainte-Hermine 85 : 1,15 M€, 56,5 ha, gîtes existants, écuries à rénover), achat 2031 via holding"
+    d["inputs"].update({
+        "prix": (1_150_000, "PL : annonce SAFER Sainte-Hermine (85), 56,5 ha, 670 m², hors frais SAFER [A1] — exemple, disponibilité 2031 inconnue"),
+        "frais_acq_pct": (0.09, "PL : frais SAFER ~8-10 % [A1] ; exonération de droits possible si destination agricole"),
+        "part_bati": (0.5, EST),
+        "capex_restauration": (300_000, "EST sans visite : château 670 m² (état inconnu)"),
+        "capex_equestre": (350_000, "EST : écuries/sellerie 300 m² à rénover + 18 box + carrière (35 €/m², PL [A3 H19])"),
+        "capex_evenementiel": (100_000, "EST : gîtes existants (2 logements restaurés)"),
+        "fp_invest": (2_000_000, "Fonds propres HOLDING — NON acquis"),
+        "dette": (300_000, "NON ACQUIS"),
+    })
+    d["revenus"] = [
+        ("Pension box premium (places occupées)", 17, 5_118, 0.23, False, True, "Cf. B ; 18 box neufs × 92 %"),
+        PENSION_PRE, PENSION_RETRAITE,
+        ("Mariages / réceptions (location + hébergement)", 8, 4_197, 0.43, True, False, "Cf. B ; 8/an (château plus petit, annonce : « activité de réception »)"),
+        ("Gîtes existants hors événements (nuits)", 120, 220, 0.45, False, False, "EST : 2 logements de 88-98 m² ; prix/nuit EST"),
+        TOURNAGES, HERBE,
+    ]
+    d["charges"] = [(l, (round(a * 0.7) if l.startswith(("Énergie", "Assurance", "Taxe foncière")) else a), acq, src)
+                    for (l, a, acq, src) in d["charges"]]
+    out.append(("D_chateau_modeste", d))
 
     # Scénario E : bail emphytéotique
     e = frugal(scen("Scénario E — Bail emphytéotique d'un domaine public (contrôle sans propriété) — cas central",
                     B_INPUTS, B_REV, B_CH + [("Redevance emphytéotique", 20_000, True,
-                                              "INC : Montfort 22,9 k€/an, Neuenbourg 1 €/an (exemples, PL v1) ; Maison Fournaise 80 k€ + 7 % du CA")]),
+                                              "INC : aucun montant de redevance trouvé dans les sources v2 (Villa Valmer, Gaillon : non publiés) ; 20 k€ = hypothèse arbitraire")]),
                "Scénario E — Bail emphytéotique d'un domaine public (contrôle sans propriété) — cas central")
     e["inputs"].update({
         "prix": (0, "Pas d'achat : droit réel de 50-99 ans ; droit d'entrée INCONNU"),
         "frais_acq_pct": (0.0, ""),
         "capex_restauration": (1_200_000, "A2 montage 4 : travaux à la charge du preneur 1,5 M€, dont ~0,3 M€ subventionnés côté propriétaire public (non acquis)"),
         "capex_equestre": (150_000, EST), "capex_evenementiel": (150_000, EST),
-        "apport_fondateur": (330_000, "S2 250 k€ + prêts d'honneur 80 k€"),
-        "dette": (900_000, "NON ACQUIS — prêt hypothéqué sur le droit réel (si le bailleur l'autorise) [A2 montage 4]"),
+        "apport_fondateur": (250_000, "S2"),
+        "dette": (980_000, "NON ACQUIS — prêt hypothéqué sur le droit réel (si le bailleur l'autorise) + prêts d'honneur 80 k€ [A2 montage 4]"),
         "duree": (15, "A2"),
         "oc": (400_000, "NON ACQUIS — obligations PSFP [A2 montage 4]"), "oc_taux": (0.07, EST), "oc_ech": (7, EST),
         "valo_sortie_pct": (0.0, "Améliorations reviennent au bailleur en fin de bail"),
@@ -296,6 +323,41 @@ def feuilles():
             p["titre"] = p["titre"] + f" — STRESS {nm}"
             out.append((f"S_{k}_{nm}", p))
     return out
+
+
+HOLDING_BASE = {
+    "apport": (250_000, "Scénario d'apport S2"),
+    "pret_honneur": (80_000, "PL : prêts d'honneur 1 000-80 000 € [A2]"),
+    "frais": (0.05, EST),
+    "part_dette": (0.70, "PL : critère CRA — prêt ≤ 70 % du prix, ≤ 7 ans [A2]"),
+    "taux": (0.045, "EST : crédits aux PME 3,64 % (PL) + prime LBO"),
+    "duree": (7, "PL : CRA [A2]"),
+    "capex": (0.10, EST),
+    "g": (0.02, EST),
+    "is": (0.25, "PL [A6] (taux réduit ignoré : prudent)"),
+    "frais_holding": (15_000, EST),
+    "salaire": (0, "Le fondateur est rémunéré comme dirigeant de la PME (déjà dans l'EBITDA)"),
+    "mult_sortie": (4.5, "EST non sourcé : multiple prudent pour une PME (à valider par un expert en transmission)"),
+    "annee_cible": (5, "2031"),
+    "besoin": (3_400_000, "Fonds propres du scénario C central (feuille C_central)"),
+}
+
+
+def holdings():
+    h1 = {"titre": "Moteur de capital H1 — une reprise de PME (valeur ≈ 1 M€) en 2027", "inputs": dict(HOLDING_BASE),
+          "reprises": [("Reprise 1", 1, 220_000, 4.5, "EST : prix ≈ 1 M€ comme l'exemple de l'agent 2 (montage 6) ; multiple 4,5 non sourcé"),
+                       ("Reprise 2", 0, 0, 4.5, ""), ("Reprise 3", 0, 0, 4.5, "")]}
+    h2 = {"titre": "Moteur de capital H2 — deux reprises (2027 puis 2029)", "inputs": dict(HOLDING_BASE),
+          "reprises": [("Reprise 1", 1, 220_000, 4.5, "EST"),
+                       ("Reprise 2", 3, 300_000, 4.5, "EST : fonds propres à trouver dans la trésorerie de la holding"),
+                       ("Reprise 3", 0, 0, 4.5, "")]}
+    i3 = dict(HOLDING_BASE)
+    i3["apport"] = (1_000_000, "Scénario d'apport S3")
+    h3 = {"titre": "Moteur de capital H3 — trajectoire ambitieuse : apport 1 M€, trois reprises (2027, 2029, 2030)", "inputs": i3,
+          "reprises": [("Reprise 1", 1, 450_000, 4.5, "EST"),
+                       ("Reprise 2", 3, 500_000, 4.5, "EST"),
+                       ("Reprise 3", 4, 600_000, 4.5, "EST")]}
+    return [("H1_une_reprise", h1), ("H2_deux_reprises", h2), ("H3_ambitieux", h3)]
 
 
 SOURCES = [

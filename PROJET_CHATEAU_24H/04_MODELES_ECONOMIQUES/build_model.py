@@ -183,7 +183,9 @@ def build_scenario(wb, name, p):
         ("infl_prix", "Indexation annuelle des prix", "%"),
         ("infl_ch", "Inflation annuelle des charges", "%"),
         ("bfr_pct", "BFR en % du CA (négatif = acomptes clients)", "%"),
-        ("is_taux", "Taux d'IS (simplifié, taux normal)", "%"),
+        ("is_taux", "Taux normal d'IS", "%"),
+        ("is_reduit", "Taux réduit d'IS (PME, jusqu'au seuil)", "%"),
+        ("is_seuil", "Seuil du taux réduit d'IS", "€"),
     ]:
         v, sc = p["inputs"][k]
         s.inp(k, lab, v, unit, sc)
@@ -281,10 +283,12 @@ def build_scenario(wb, name, p):
     s.line("capex_init", "Travaux et équipements initiaux",
            lambda i, c: f"({I['capex_restauration']}+{I['capex_equestre']}+{I['capex_evenementiel']})*{I['capex_mult']}*"
                         f"IF({y(c)}={I['annee_acq']},{I['capex_rep1']},IF({y(c)}={I['annee_acq']}+1,{I['capex_rep2']},IF({y(c)}={I['annee_acq']}+2,{I['capex_rep3']},0)))*{s.R('idx_c', c)}")
+    s.line("cum_init", "Travaux initiaux cumulés",
+           lambda i, c: (s.R('capex_init', c) if i == 1 else f"{s.R('cum_init', s.prev(c))}+{s.R('capex_init', c)}"), total=False)
     s.line("acq", "Acquisition (prix + frais)",
            lambda i, c: f"IF({y(c)}={I['annee_acq']},{I['prix']}*(1+{I['frais_acq_pct']}),0)")
-    s.line("ge", "Gros entretien patrimonial récurrent",
-           lambda i, c: f"IF({y(c)}>={I['annee_acq']}+3,{I['gros_entretien_pct']}*({I['prix']}+({I['capex_restauration']}+{I['capex_equestre']}+{I['capex_evenementiel']})*{I['capex_mult']})*{s.R('idx_c', c)},0)")
+    s.line("ge", "Gros entretien patrimonial récurrent (% de la valeur du bâti + travaux)",
+           lambda i, c: f"IF({y(c)}>={I['annee_acq']}+3,{I['gros_entretien_pct']}*({I['prix']}*{I['part_bati']}+({I['capex_restauration']}+{I['capex_equestre']}+{I['capex_evenementiel']})*{I['capex_mult']})*{s.R('idx_c', c)},0)")
     s.line("cum_capex", "Investissements amortissables cumulés",
            lambda i, c: (f"{s.R('capex_init', c)}+{s.R('ge', c)}" if i == 1 else
                          f"{s.R('cum_capex', s.prev(c))}+{s.R('capex_init', c)}+{s.R('ge', c)}"), total=False)
@@ -328,8 +332,8 @@ def build_scenario(wb, name, p):
            lambda i, c: (f"MAX(0,-{s.R('rai', c)})" if i == 1 else
                          f"MAX(0,{s.R('def', s.prev(c))}-{s.R('rai', c)})"), total=False)
     s.line("is", "Impôt sur les sociétés",
-           lambda i, c: (f"-MAX(0,{s.R('rai', c)})*{I['is_taux']}" if i == 1 else
-                         f"-MAX(0,{s.R('rai', c)}-{s.R('def', s.prev(c))})*{I['is_taux']}"))
+           lambda i, c: (lambda base: f"-(MIN({base},{I['is_seuil']})*{I['is_reduit']}+MAX(0,{base}-{I['is_seuil']})*{I['is_taux']})")(
+               f"MAX(0,{s.R('rai', c)})" if i == 1 else f"MAX(0,{s.R('rai', c)}-{s.R('def', s.prev(c))})"))
     s.line("rn", "Résultat net", lambda i, c: f"{s.R('rai', c)}+{s.R('is', c)}", bold=True)
 
     # BFR et flux
@@ -368,7 +372,7 @@ def build_scenario(wb, name, p):
     s.line("dette_tot", "Dettes financières totales fin d'année",
            lambda i, c: f"{s.R('d_fin', c)}+{s.R('cv_fin', c)}+{s.R('oc_enc', c)}-{s.R('oc_rmb', c)}", total=False)
     s.line("v_actif", "Valeur estimée de l'actif (si cédé cette année)",
-           lambda i, c: f"{s.R('possede', c)}*({I['prix']}+{s.R('cum_capex', c)})*{I['valo_sortie_pct']}*(1-{I['frais_cession_pct']})", total=False)
+           lambda i, c: f"{s.R('possede', c)}*({I['prix']}+{s.R('cum_init', c)})*{I['valo_sortie_pct']}*(1-{I['frais_cession_pct']})", total=False)
     s.line("v_eq", "Valeur des fonds propres (actif + trésorerie − dettes)",
            lambda i, c: f"{s.R('v_actif', c)}+{s.R('treso', c)}-{s.R('dette_tot', c)}", total=False)
     s.line("flux_inv", "Flux des investisseurs (entrée an d'acq., sortie an 10)",
@@ -399,8 +403,8 @@ def build_scenario(wb, name, p):
          f"=IF({I['fp_invest']}*(1-{I['fp_fondateur']})=0,\"sans objet\",IFERROR(IRR(C{I['flux_inv']}:L{I['flux_inv']},-0.05),\"perte quasi totale (TRI non calculable)\"))", PCT),
         ("k_tri_fond", "TRI fondateur (sortie théorique an 10)",
          f"=IFERROR(IRR(C{I['flux_fond']}:L{I['flux_fond']},-0.05),\"perte quasi totale (TRI non calculable)\")", PCT),
-        ("k_dette_sout", "Dette bancaire soutenable estimée (DSCR 1,2 sur (EBITDA − gros entretien) an 10, taux et durée du scénario)",
-         f"=MAX(0,PV({I['taux']},{I['duree']},-(L{I['ebitda']}+L{I['lp']}-L{I['ge']})/1.2))", EUR),
+        ("k_dette_sout", "Dette bancaire soutenable estimée (DSCR 1,2 sur (EBITDA − IS − gros entretien) an 10, hors loyer privé ; taux et durée du scénario)",
+         f"=MAX(0,PV({I['taux']},{I['duree']},-(L{I['ebitda']}+L{I['is']}-L{I['ge']})/1.2))", EUR),
         ("k_fp_nec", "Fonds propres nécessaires (emplois + réserve + pertes d'exploitation cumulées − dette soutenable)",
          f"={I['prix']}*(1+{I['frais_acq_pct']})+SUM(C{I['capex_init']}:L{I['capex_init']})+{I['treso_min']}-SUMIF(C{I['cfo']}:L{I['cfo']},\"<0\")-B{{DS}}", EUR),
         ("k_part", "Part du capital du fondateur", f"={I['part_fondateur']}", PCT),
@@ -413,15 +417,126 @@ def build_scenario(wb, name, p):
         s.put(s.row, 2, f, fmt=fmt, font=BOLD)
         I[key] = f"$B${s.row}"
         s.row += 1
-    s.put(s.row, 1, "Verdict (trésorerie ≥ 0 et ≥ réserve an 10, DSCR ≥ 1,2, cash-flow libre ≥ 0 dès la 2e année d'exploitation, TRI investisseurs extérieurs ≥ cible, dirigeant payé)", font=BOLD)
+    s.put(s.row, 1, "Verdict (trésorerie ≥ 0 et ≥ réserve an 10, DSCR ≥ 1,2, cash-flow libre ≥ 0 dès la 2e année d'exploitation, TRI investisseurs extérieurs ≥ cible ; sinon NON AUTOFINANCÉ si le dirigeant n'est pas payé par le domaine)", font=BOLD)
     ok_inv = f"OR({I['k_tri_inv']}=\"sans objet\",AND(ISNUMBER({I['k_tri_inv']}),N({I['k_tri_inv']})>={I['tri_cible']}))"
     s.put(s.row, 2,
           f"=IF({I['k_tmin']}<0,\"NON VIABLE (trésorerie négative)\","
           f"IF(AND({I['k_t10']}>={I['treso_min']},OR({I['k_dscr']}=\"n/a\",{I['k_dscr']}>=1.2),{I['k_fcfneg']}=0),"
-          f"IF(NOT({ok_inv}),\"FRAGILE (investisseurs non rémunérés)\",IF({I['dirigeant_paye']}=0,\"VIABLE seulement avec dirigeant bénévole\",\"VIABLE sous hypothèses\")),"
+          f"IF(NOT({ok_inv}),\"FRAGILE (investisseurs non rémunérés)\",IF({I['dirigeant_paye']}=0,\"NON AUTOFINANCÉ (dirigeant non payé par le domaine)\",\"VIABLE sous hypothèses\")),"
           f"\"FRAGILE\"))", font=BOLD)
     I["k_verdict"] = f"$B${s.row}"
     s.row += 1
+    ws.freeze_panes = "B2"
+    return s
+
+
+def build_holding(wb, name, h):
+    """Moteur de capital : holding qui reprend 1 à 3 PME en LBO ; trésorerie disponible année par année."""
+    ws = wb.create_sheet(name)
+    ws.column_dimensions["A"].width = 58
+    ws.column_dimensions["B"].width = 15
+    for c in YC:
+        ws.column_dimensions[c].width = 12
+    s = Sheet(ws)
+    s.title(h["titre"])
+    s.put(s.row, 1, "Cellules jaunes = hypothèses éditables. Année 1 = 2027. Tout le reste est calculé. "
+          "EBITDA des PME supposé APRÈS rémunération de marché d'un dirigeant opérationnel.", font=Font(italic=True))
+    s.row += 1
+    s.section("1. Hypothèses générales")
+    for k, lab, unit in [
+        ("apport", "Apport initial du fondateur dans la holding (année 1)", "€"),
+        ("pret_honneur", "Prêts d'honneur (à rembourser sur 5 ans, 0 %)", "€"),
+        ("frais", "Frais d'acquisition d'une PME (% de la valeur)", "%"),
+        ("part_dette", "Part financée par dette senior (% du prix + frais)", "%"),
+        ("taux", "Taux de la dette LBO", "%"),
+        ("duree", "Durée de la dette LBO", "ans"),
+        ("capex", "Investissements de maintien (% de l'EBITDA)", "%"),
+        ("g", "Croissance annuelle de l'EBITDA", "%"),
+        ("is", "Taux d'IS de la PME", "%"),
+        ("frais_holding", "Frais annuels de la holding (comptable, juridique)", "€"),
+        ("salaire", "Rémunération du fondateur versée par la holding (chargée)", "€"),
+        ("mult_sortie", "Multiple de valorisation à la revente (VE/EBITDA)", "x"),
+        ("annee_cible", "Année où l'on mesure la capacité d'apport (5 = 2031)", "année"),
+        ("besoin", "Fonds propres nécessaires pour le château (scénario C)", "€"),
+    ]:
+        v, src = h["inputs"][k]
+        s.inp(k, lab, v, unit, src, fmt=('0.0' if unit == "x" else None))
+    s.section("2. Reprises de PME (année d'acquisition 0 = pas de reprise)")
+    s.put(s.row, 1, "Reprise", font=BOLD); s.put(s.row, 2, "Année", font=BOLD)
+    s.put(s.row, 3, "EBITDA (€)", font=BOLD); s.put(s.row, 4, "Multiple VE/EBITDA", font=BOLD)
+    s.put(s.row, 7, "Source / statut", font=BOLD)
+    s.row += 1
+    acq_rows = []
+    for (lab, an, ebitda, mult, src) in h["reprises"]:
+        r = s.row
+        s.put(r, 1, lab)
+        s.put(r, 2, an, fmt='0', font=BLUE, fill=INP)
+        s.put(r, 3, ebitda, fmt=EUR, font=BLUE, fill=INP)
+        s.put(r, 4, mult, fmt='0.0', font=BLUE, fill=INP)
+        s.put(r, 7, src)
+        acq_rows.append(r)
+        s.row += 1
+    I = s.ref
+    s.section("3. Calcul annuel")
+    s.years_header()
+    yr = I["yr"]
+
+    def y(col):
+        return f"{col}${yr}"
+    fcf_rows, eq_rows, val_rows, debt_rows = [], [], [], []
+    for n, r in enumerate(acq_rows, start=1):
+        A, E, M = f"$B${r}", f"$C${r}", f"$D${r}"
+        prix = f"({E}*{M})"
+        dette0 = f"({prix}*(1+{I['frais']})*{I['part_dette']})"
+        s.put(s.row, 1, f"PME {n}", font=BOLD); s.row += 1
+        act = s.line(f"act{n}", f"  Active (1/0)", lambda i, c, A=A: f"IF(AND({A}>0,{y(c)}>={A}),1,0)", fmt='0', total=False)
+        s.line(f"k{n}", f"  Rang de l'année de détention", lambda i, c, A=A, n=n: f"IF({s.R(f'act{n}', c)}=1,{y(c)}-{A}+1,0)", fmt='0', total=False)
+        s.line(f"eb{n}", f"  EBITDA", lambda i, c, E=E, n=n: f"{s.R(f'act{n}', c)}*{E}*(1+{I['g']})^MAX(0,{s.R(f'k{n}', c)}-1)")
+        # capital restant après k annuités (formule fermée)
+        s.line(f"crd{n}", f"  Dette restante fin d'année", lambda i, c, n=n, d0=dette0:
+               f"IF({s.R(f'act{n}', c)}=0,0,IF({s.R(f'k{n}', c)}>={I['duree']},0,{d0}*((1+{I['taux']})^{I['duree']}-(1+{I['taux']})^{s.R(f'k{n}', c)})/((1+{I['taux']})^{I['duree']}-1)))",
+               total=False)
+        s.line(f"ann{n}", f"  Annuité de dette", lambda i, c, n=n, d0=dette0:
+               f"IF(AND({s.R(f'act{n}', c)}=1,{s.R(f'k{n}', c)}<={I['duree']}),PMT({I['taux']},{I['duree']},-{d0}),0)")
+        s.line(f"int{n}", f"  dont intérêts", lambda i, c, n=n, d0=dette0:
+               f"IF(AND({s.R(f'act{n}', c)}=1,{s.R(f'k{n}', c)}<={I['duree']}),{d0}*((1+{I['taux']})^{I['duree']}-(1+{I['taux']})^({s.R(f'k{n}', c)}-1))/((1+{I['taux']})^{I['duree']}-1)*{I['taux']},0)")
+        s.line(f"is{n}", f"  Impôt sur les sociétés", lambda i, c, n=n:
+               f"MAX(0,{s.R(f'eb{n}', c)}*(1-{I['capex']})-{s.R(f'int{n}', c)})*{I['is']}")
+        fcf = s.line(f"fcf{n}", f"  Cash-flow remonté à la holding (EBITDA − maintien − IS − annuité)", lambda i, c, n=n:
+                     f"{s.R(f'eb{n}', c)}*(1-{I['capex']})-{s.R(f'is{n}', c)}-{s.R(f'ann{n}', c)}", bold=True)
+        eq = s.line(f"eq{n}", f"  Fonds propres à apporter l'année de la reprise", lambda i, c, A=A, d0=dette0, prix=prix:
+                    f"IF(AND({A}>0,{y(c)}={A}),{prix}*(1+{I['frais']})-{d0},0)")
+        val = s.line(f"val{n}", f"  Valeur nette des titres (VE de sortie − dette restante)", lambda i, c, n=n:
+                     f"MAX(0,{s.R(f'eb{n}', c)}*{I['mult_sortie']}-{s.R(f'crd{n}', c)})", total=False)
+        fcf_rows.append(fcf); eq_rows.append(eq); val_rows.append(val); debt_rows.append(s.ref[f"crd{n}"])
+    s.row += 1
+    s.put(s.row, 1, "Holding", font=BOLD); s.row += 1
+    s.line("flux", "Flux net de la holding",
+           lambda i, c: f"IF({y(c)}=1,{I['apport']}+{I['pret_honneur']},0)-IF(AND({y(c)}>=1,{y(c)}<=5),{I['pret_honneur']}/5,0)"
+                        f"-{I['frais_holding']}-{I['salaire']}+" + "+".join(f"{c}{r}" for r in fcf_rows) + "-(" + "+".join(f"{c}{r}" for r in eq_rows) + ")",
+           bold=True)
+    s.line("cash", "Trésorerie de la holding fin d'année",
+           lambda i, c: (s.R('flux', c) if i == 1 else f"{s.R('cash', s.prev(c))}+{s.R('flux', c)}"), total=False, bold=True)
+    s.line("val_tot", "Valeur nette des participations (si revente)",
+           lambda i, c: "+".join(f"{c}{r}" for r in val_rows), total=False)
+    s.line("cap_tot", "Capacité d'apport si revente des PME (trésorerie + valeur nette)",
+           lambda i, c: f"{s.R('cash', c)}+{s.R('val_tot', c)}", total=False, bold=True)
+    s.section("4. Indicateurs")
+    tgt = f"INDEX(C{I['cash']}:L{I['cash']},{I['annee_cible']})"
+    tgt_cap = f"INDEX(C{I['cap_tot']}:L{I['cap_tot']},{I['annee_cible']})"
+    for lab, f, fmt in [
+        ("Trésorerie minimale de la holding (négative = apport manquant)", f"=MIN(C{I['cash']}:L{I['cash']})", EUR),
+        ("Trésorerie disponible l'année cible (sans revendre les PME)", f"={tgt}", EUR),
+        ("Capacité d'apport l'année cible en revendant toutes les PME", f"={tgt_cap}", EUR),
+        ("Fonds propres nécessaires pour le château (scénario C)", f"={I['besoin']}", EUR),
+        ("Couverture du besoin sans revente", f"=IF({I['besoin']}=0,\"n/a\",{tgt}/{I['besoin']})", PCT),
+        ("Couverture du besoin avec revente", f"=IF({I['besoin']}=0,\"n/a\",{tgt_cap}/{I['besoin']})", PCT),
+        ("Année où la trésorerie (sans revente) atteint le besoin",
+         f"=IFERROR(MATCH(TRUE,INDEX(C{I['cash']}:L{I['cash']}>={I['besoin']},0),0),\"pas avant l'an 10\")", '0'),
+    ]:
+        s.put(s.row, 1, lab); s.put(s.row, 2, f, fmt=fmt, font=BOLD)
+        s.ref["kpi_" + str(s.row)] = s.row
+        s.row += 1
     ws.freeze_panes = "B2"
     return s
 
@@ -440,6 +555,9 @@ def build():
     sheets = []
     for sheet_name, params in H.feuilles():
         sheets.append((sheet_name, params, build_scenario(wb, sheet_name, params)))
+
+    for hname, hparams in getattr(H, "holdings", lambda: [])():
+        build_holding(wb, hname, hparams)
 
     comp = wb.create_sheet("Comparaison", 1)
     comp.column_dimensions["A"].width = 30
