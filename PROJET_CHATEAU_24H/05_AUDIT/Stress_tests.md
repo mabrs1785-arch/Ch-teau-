@@ -1,70 +1,81 @@
-# Stress tests — Opération Château
+# Stress tests — Opération Château (version corrigée après audit)
 
-Source des chiffres : `04_MODELES_ECONOMIQUES/Previsionnels_10_ans.xlsx`, recalculé avec LibreOffice le 2026-10-14 (0 erreur de formule). Tous les montants sont des **sorties de modèle fondées sur des hypothèses en grande partie non vérifiées** (cf. `Hypotheses_non_verifiees.md`). Ils servent à comparer les scénarios entre eux, pas à prédire un résultat.
+Source : `04_MODELES_ECONOMIQUES/Previsionnels_10_ans.xlsx`, **version corrigée** (corrections d'audit E1 à E4 et suivantes : prix convertis en HT, loyer privé du fondateur sorti du CA, capital du fondateur calculé au prorata des apports, DSCR après gros entretien, frais de cession, verdict exigeant un TRI investisseur ≥ 6 % et un dirigeant payé). Recalculé avec LibreOffice le 2026-10-14, 0 erreur de formule.
 
-Règle du verdict automatique : VIABLE si la trésorerie n'est jamais négative, si la trésorerie de l'an 10 atteint au moins la réserve cible (150 k€), si le DSCR reste ≥ 1,2 et si le cash-flow libre d'exploitation est ≥ 0 sur les années 4 à 10. FRAGILE si la trésorerie reste positive sans remplir les autres conditions. NON VIABLE sinon.
+Tous les montants sont des **sorties de modèle fondées sur des hypothèses en grande partie non vérifiées** (voir `Hypotheses_non_verifiees.md`). Ils servent à comparer, pas à prédire.
+
+Verdict automatique :
+- **VIABLE** : trésorerie jamais négative ; trésorerie an 10 ≥ réserve de 150 k€ ; DSCR (après gros entretien) ≥ 1,2 ; cash-flow libre ≥ 0 sur les années 4 à 10 ; TRI des investisseurs extérieurs ≥ 6 % ; dirigeant payé par le domaine.
+- **FRAGILE** : trésorerie positive, mais au moins une autre condition manque.
+- **NON VIABLE** : trésorerie négative à un moment.
 
 ---
 
-## 1. Résultat préalable : les scénarios « classiques » échouent avant tout stress
+## 1. Avant tout stress : les scénarios « classiques » échouent déjà
 
-| Feuille | CA an 5 | EBITDA an 5 | Trésorerie min. sur 10 ans | Verdict |
-|---|---|---|---|---|
-| A_central (équestre événementiel, ~4,25 M€ levés dont 2,7 M€ de dettes) | 416 k€ | −47 k€ | −3,28 M€ | NON VIABLE |
-| A_optimiste | 510 k€ | +34 k€ | −2,47 M€ | NON VIABLE |
-| B_central (multiactivité) | 441 k€ | −5 k€ | −2,96 M€ | NON VIABLE |
-| B_optimiste | 542 k€ | +82 k€ | −2,10 M€ | NON VIABLE |
-| C_central (location puis achat an 5) | 383 k€ | −44 k€ | −2,15 M€ | NON VIABLE |
-| B_sans_dette (B financé à 100 % en fonds propres) | 441 k€ | −5 k€ | −0,49 M€ | NON VIABLE |
-
-**Lecture.** Avec une équipe salariée normale (12 postes de charges fixes, dont 3,5 ETP et une rémunération du dirigeant), l'exploitation d'un domaine de ce type dégage un EBITDA proche de zéro, **même sans dette**. Ce n'est donc pas un problème de montage financier : c'est un problème de modèle économique. Les stress tests n'ont de sens que sur les configurations qui passent sans stress.
-
-## 2. Les deux seules configurations qui passent
-
-| Feuille | Description | EBITDA an 5 | Cash-flow libre an 5 | Trésorerie an 10 | Verdict |
+| Feuille | Montage | CA an 5 (HT) | EBITDA an 5 | Trésorerie min. | Verdict |
 |---|---|---|---|---|---|
-| **B_frugal_sans_dette** | Exploitation B ; le fondateur tient l'écurie et les événements sans salaire ; 1,5 soigneur ; jardinier à mi-temps ; acquisition et travaux (~4,2 M€) financés **à 100 % en fonds propres** | 125 k€ | 83 k€ | 732 k€ | VIABLE sous hypothèses |
-| **C_cible** | Location d'un domaine années 1 à 4, achat en an 5 ; holding du fondateur qui apporte **2,9 M€** ; dette limitée à 0,9 M€ ; exploitation frugale | 85 k€ | 45 k€ (puis −27 k€ dès l'an 8) | 8 k€ | FRAGILE |
+| A_central | Équestre événementiel ; 4,25 M€ levés dont 2,7 M€ de dettes | 379 k€ | −75 k€ | −3,30 M€ | NON VIABLE |
+| A_optimiste | idem, volumes +15 %, prix +8 % | 470 k€ | +3 k€ | −2,53 M€ | NON VIABLE |
+| B_central | Multiactivité ; 4,45 M€ levés dont 2,8 M€ de dettes | 386 k€ | −50 k€ | −3,12 M€ | NON VIABLE |
+| B_optimiste | | 479 k€ | +29 k€ | −2,35 M€ | NON VIABLE |
+| C_central | Location puis achat an 5 ; dette 1,9 M€ | 335 k€ | −82 k€ | −2,41 M€ | NON VIABLE |
+| B_sans_dette | B financé à 100 % en fonds propres | 386 k€ | −50 k€ | −0,65 M€ | NON VIABLE |
 
-**Lecture.** L'exploitation « frugale » dégage environ 85 à 130 k€ d'EBITDA pour 3,9 à 4,2 M€ immobilisés, soit environ 2 à 3 % de rendement brut sur l'actif, avant gros entretien. Elle peut porter au maximum **0,8 à 0,9 M€ de dette** (DSCR 1,2, 4,5 %, 20 ans). Il reste donc **3,1 à 3,5 M€ de fonds propres** à trouver pour un domaine à 2,65 M€.
+**Lecture.** Avec une équipe salariée normale (environ 3,5 ETP plus un dirigeant payé), l'exploitation est **déficitaire avant toute dette**. Le problème n'est pas le montage, c'est le modèle économique : 12 postes de charges fixes (environ 290 k€/an) face à environ 390 k€ de CA HT, dont environ 30 % de coûts variables.
+
+## 2. Les configurations qui ne sont pas en trésorerie négative
+
+| Feuille | Description | EBITDA an 5 | Cash-flow libre an 8-10 | Trésorerie an 10 | Verdict |
+|---|---|---|---|---|---|
+| B_frugal_sans_dette | Fondateur bénévole ; 1,5 soigneur ; jardinier à mi-temps ; 4,2 M€ en fonds propres externes | 80 k€ | ≈ +56 k€ | 570 k€ | **FRAGILE** (TRI investisseurs ≈ −3 %) |
+| C_cible | Bail modéré (40 k€/an) années 1-4, achat an 5 ; holding 3,4 M€ ; dette 0,4 M€ ; fondateur payé par la holding, pas par le domaine | 48 k€ | ≈ −6 k€ | 218 k€ | **FRAGILE** |
+| C_cible_negocie | Idem, prix −20 % (2,12 M€), travaux −30 % ; holding 2,6 M€ | 48 k€ | ≥ 0 | 336 k€ | **FRAGILE** (DSCR 1,12) |
+
+**Enseignement central.** Dans la meilleure configuration, le domaine **s'autofinance tout juste** : son exploitation couvre le fonctionnement et le gros entretien, avec un fondateur non payé et une dette quasi nulle. **Dette soutenable** (DSCR 1,2 après gros entretien, an 10) : **0,28 à 0,60 M€**. **Fonds propres nécessaires** : environ **2,9 M€** (bien négocié à 2,1 M€) à **3,8 M€** (bien à 2,65 M€), réserve comprise.
 
 ## 3. Stress tests sur B frugal sans dette (feuilles S_Bfsd_*)
 
 | Stress | EBITDA an 5 | Trésorerie min. | Trésorerie an 10 | Verdict |
 |---|---|---|---|---|
-| Référence | 125 k€ | 185 k€ | 732 k€ | VIABLE |
-| CA −30 % | 30 k€ | −71 k€ | −71 k€ | **NON VIABLE** (cash-flow libre négatif 7 ans sur 7) |
-| Travaux +30 % | 125 k€ | −219 k€ | 296 k€ | **NON VIABLE** (trou de trésorerie pendant les travaux, à couvrir par +0,4 M€ de fonds propres) |
-| Ouverture retardée de 12 mois | 93 k€ | 38 k€ | 509 k€ | VIABLE (de justesse) |
-| Taux +2 points | 125 k€ | 185 k€ | 732 k€ | VIABLE (sans dette, aucun effet) |
-| Retrait de 50 % des investisseurs | 125 k€ | −1,91 M€ | −1,37 M€ | **NON VIABLE** (rédhibitoire) |
-| Annulation de 40 % des événements | 80 k€ | 130 k€ | 350 k€ | VIABLE |
-| Cumul (CA −15 %, travaux +15 %, retard 12 mois, taux +1 pt) | 50 k€ | −220 k€ | −65 k€ | **NON VIABLE** |
+| Référence | 80 k€ | 201 k€ | 570 k€ | FRAGILE |
+| CA −30 % | 1 k€ | −93 k€ | −93 k€ | **NON VIABLE** |
+| Travaux +30 % | 80 k€ | −203 k€ | 134 k€ | **NON VIABLE** (trou pendant les travaux) |
+| Ouverture retardée de 12 mois | 53 k€ | 88 k€ | 400 k€ | FRAGILE |
+| Taux +2 points | 80 k€ | 201 k€ | 570 k€ | FRAGILE (sans dette, aucun effet) |
+| Retrait de 50 % des investisseurs | 80 k€ | −1,90 M€ | −1,53 M€ | **NON VIABLE** (rédhibitoire) |
+| Annulation de 40 % des événements | 41 k€ | 152 k€ | 247 k€ | FRAGILE |
+| Cumul (CA −15 %, travaux +15 %, retard 12 mois, taux +1 point) | 18 k€ | −172 k€ | −112 k€ | **NON VIABLE** |
 
 ## 4. Stress tests sur C cible (feuilles S_Ccib_*)
 
 | Stress | EBITDA an 5 | DSCR min. | Trésorerie min. | Verdict |
 |---|---|---|---|---|
-| Référence | 85 k€ | 1,21 | 8 k€ | FRAGILE |
-| CA −30 % | 2 k€ | −0,04 | −785 k€ | **NON VIABLE** |
-| Travaux +30 % | 85 k€ | 1,21 | −321 k€ | **NON VIABLE** |
-| Ouverture retardée de 12 mois | 85 k€ | 1,21 | −8 k€ | **NON VIABLE** (de justesse) |
-| Taux +2 points | 85 k€ | 1,03 | −72 k€ | **NON VIABLE** |
-| Holding n'apporte que 50 % | 85 k€ | 1,21 | −1,44 M€ | **NON VIABLE** (rédhibitoire) |
-| Annulation de 40 % des événements | 56 k€ | 0,79 | −272 k€ | **NON VIABLE** |
-| Cumul | 44 k€ | 0,56 | −569 k€ | **NON VIABLE** |
+| Référence | 48 k€ | 0,80 | 186 k€ | FRAGILE |
+| CA −30 % | −21 k€ | −1,60 | −440 k€ | **NON VIABLE** |
+| Travaux +30 % | 48 k€ | 0,69 | −111 k€ | **NON VIABLE** |
+| Ouverture retardée de 12 mois | 48 k€ | 0,80 | 142 k€ | FRAGILE |
+| Taux +2 points | 48 k€ | 0,68 | 182 k€ | FRAGILE |
+| Holding n'apporte que 50 % | 48 k€ | 0,80 | −1,48 M€ | **NON VIABLE** (rédhibitoire) |
+| Annulation de 40 % des événements | 22 k€ | −0,09 | −26 k€ | **NON VIABLE** |
+| Cumul | 13 k€ | −0,42 | −332 k€ | **NON VIABLE** |
 
-## 5. Conclusions des stress tests
+## 5. Conclusions
 
-1. **Aucun scénario financé principalement par de la dette ou par des investisseurs extérieurs ne résiste**, même sans stress. Le service d'une dette de 2 à 2,9 M€ (environ 170 à 270 k€/an) dépasse durablement l'EBITDA atteignable (estimé à moins de 130 k€).
-2. **Les variables qui tuent** sont, dans l'ordre : (a) la disponibilité des fonds propres (retrait d'investisseur = rédhibitoire), (b) le chiffre d'affaires (−30 % = rédhibitoire), (c) le dépassement de travaux (+30 % = trou de trésorerie de 0,2 à 0,3 M€), (d) le coût de la masse salariale. Le taux d'intérêt compte peu, parce que la dette soutenable est de toute façon faible.
-3. **La condition de survie est une réserve de liquidité de 0,4 à 0,6 M€** en plus des fonds propres d'acquisition, ou une ligne de crédit garantie par la holding.
-4. **L'annulation d'événements est mieux absorbée que la baisse de la base récurrente** (pensions, gîte). Cela plaide pour une base de revenus récurrents équestres plutôt que pour un modèle dominé par l'événementiel (le scénario A pur est le plus exposé).
-5. Le stress « hausse du coût de financement » est quasi neutre dans les configurations viables. Ce n'est pas une bonne nouvelle : cela signifie qu'elles ne sont viables **que parce qu'elles n'empruntent presque pas**.
+1. **Aucun scénario financé principalement par de la dette ou par des investisseurs extérieurs ne survit, même sans stress.** La dette demandée (2 à 2,9 M€) est 4 à 10 fois supérieure à la dette soutenable.
+2. **Les variables qui tuent**, dans l'ordre :
+   - (a) la disponibilité réelle des fonds propres : un retrait d'investisseur ou une holding qui apporte moitié moins est rédhibitoire ;
+   - (b) le chiffre d'affaires : −30 % est rédhibitoire ;
+   - (c) le dépassement de travaux : +30 % crée un trou de 0,1 à 0,2 M€ ;
+   - (d) la masse salariale : c'est la différence entre « central » et « frugal ».
 
-## 6. Limites du modèle (rappel)
+   Le taux d'intérêt compte peu, **parce que les configurations survivantes n'empruntent presque pas**.
+3. **Réserve indispensable** : 0,4 à 0,6 M€ de liquidités ou une ligne garantie par la holding, au-delà des fonds propres d'acquisition.
+4. **Les événements sont le revenu le plus volatil.** Correction suite à l'audit : le scénario A (86 % de CA équestre, peu de mariages) est *moins* exposé à l'annulation des mariages que B ou C. Il est en revanche exposé à la défection d'un cavalier professionnel locataire et à l'absence de preuve de demande pour les showcases. Dans tous les cas, la base récurrente (pensions) doit primer.
+5. Prendre un vendeur en difficulté (−20 % sur le prix) et réutiliser l'existant (−30 % de travaux) font plus pour la viabilité que tout montage financier : ils réduisent les fonds propres nécessaires d'environ 0,9 à 1 M€.
 
-- Charges indexées à 2,5 % et prix à 2 % : l'effet de ciseau est volontairement prudent.
-- IS simplifié (25 %, sans taux réduit, sans plafonnement des déficits) ; TVA neutre.
-- Le gros entretien (1 %/an de la valeur) est une règle empirique non sourcée ; un diagnostic d'architecte du patrimoine peut le multiplier ou le diviser par deux.
-- La valeur de sortie (80 % du coût) est arbitraire ; voir les critiques de l'auditeur dans `Objections_et_risques.md`.
+## 6. Limites
+- Charges indexées à 2,5 % contre 2 % pour les prix (effet ciseau prudent).
+- IS simplifié (25 %, sans taux réduit ni plafonnement des déficits) ; montants HT, TVA neutre.
+- Gros entretien = 1 %/an de (prix + travaux) : règle empirique, à remplacer par un diagnostic d'architecte du patrimoine. La Demeure Historique cite « au moins 40 k€/an hors travaux » par monument (A8-04), ordre de grandeur cohérent.
+- Modèle annuel : le creux de trésorerie de janvier à avril (saisonnalité) n'est pas visible, d'où la réserve.

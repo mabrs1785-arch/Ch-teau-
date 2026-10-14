@@ -11,7 +11,7 @@ Château avec écuries existantes, 40 à 60 ha de prairies, dans un bassin cheva
 
 ## 3. Structure juridique envisagée
 - Holding du fondateur → SAS d'exploitation (activités équestres, en principe des bénéfices agricoles) + SCI ou SAS foncière propriétaire des murs, avec un bail entre les deux (cf. `05_AUDIT/Cadre_juridique_fiscal.md`).
-- Partie privée louée au fondateur à un loyer de marché (24 k€/an dans le modèle) pour éviter l'abus de biens sociaux et l'avantage en nature non déclaré.
+- Partie privée louée au fondateur à un loyer de marché (18 k€/an dans le modèle, hors CA) pour éviter l'abus de biens sociaux et l'avantage en nature non déclaré.
 - Risque spécifique : une écurie louée à un cavalier professionnel peut être requalifiée en **bail rural** (statut du fermage, très protecteur pour le preneur). C'est à valider par un avocat en droit rural.
 
 ## 4. Sources et emplois (cas central, an 1) — ESTIMATIONS
@@ -26,17 +26,20 @@ Château avec écuries existantes, 40 à 60 ha de prairies, dans un bassin cheva
 | Réserve | ~230 000 | | | |
 | **Total** | **~4,25 M€** | **Total** | **4,25 M€** | |
 
-## 5. Résultats du modèle
+## 5. Résultats du modèle (version corrigée après audit : prix HT, loyer privé hors CA)
 
 | Indicateur | Prudent | Central | Optimiste | Frugal* |
 |---|---|---|---|---|
-| CA an 5 | 313 k€ | 416 k€ | 510 k€ | 416 k€ |
-| EBITDA an 5 | −151 k€ | −47 k€ | +34 k€ | +74 k€ |
-| Trésorerie minimale | −4,53 M€ | −3,28 M€ | −2,47 M€ | −2,14 M€ |
-| Dette soutenable (DSCR 1,2) | 0 | 0 | 0 | ~0,34 M€ |
+| CA an 5 (HT) | 279 k€ | 379 k€ | 470 k€ | 379 k€ |
+| EBITDA an 5 | −175 k€ | −75 k€ | +3 k€ | +46 k€ |
+| Trésorerie minimale | −4,50 M€ | −3,30 M€ | −2,53 M€ | −2,16 M€ |
+| Dette soutenable (DSCR 1,2 après gros entretien) | 0 | 0 | 0 | ≈ 0,22 M€ |
+| Capital du fondateur (prorata + 10 % d'industrie) | 26 % | 26 % | 26 % | 26 % |
 | Verdict | NON VIABLE | NON VIABLE | NON VIABLE | NON VIABLE |
 
-*Frugal : le fondateur tient l'écurie sans salaire, 2 soigneurs au lieu de 3, pas de responsable d'écurie.
+*Frugal : le fondateur tient l'écurie sans salaire ; 2 soigneurs au lieu de 3 ; pas de responsable d'écurie.
+
+Note de l'auditeur : le scénario A prévoit des stages (enseignement contre rémunération, diplôme obligatoire, art. L.212-1 du Code du sport) sans salarié diplômé dans les charges. Il prévoit aussi des réceptions sans salle ERP au-delà de 50 personnes. Ces deux corrections dégraderaient encore A.
 
 ## 6. Pourquoi A échoue
 1. **L'événementiel équestre ne produit pas de cash.** L'agent 3 estime le résultat d'un concours entre −5 et +10 k€ par événement. Le contre-exemple Hubside (impayés) et Chantilly (déficit de 6 M€ en 2020 malgré du mécénat) vont dans le même sens. Les ventes de chevaux se font dans des sites publics (Deauville, Grand Parquet) : **aucune preuve** qu'un château privé soit loué pour des ventes.
