@@ -391,9 +391,10 @@ def build_scenario(wb, name, p):
         ("k_equ5", "Part équestre du CA année 5", f"=G{I['part_equ']}", PCT),
         ("k_tmin", "Trésorerie minimale sur 10 ans", f"=MIN(C{I['treso']}:L{I['treso']})", EUR),
         ("k_t10", "Trésorerie fin année 10", f"=L{I['treso']}", EUR),
-        ("k_dscr", "DSCR minimal (années 4 à 10)", f"=IF(COUNT(F{I['dscr']}:L{I['dscr']})=0,\"n/a\",MIN(F{I['dscr']}:L{I['dscr']}))", '0.00'),
-        ("k_fcfneg", "Nb d'années à cash-flow libre d'exploitation négatif (an 4–10)",
-         f"=COUNTIF(F{I['fcf_exp']}:L{I['fcf_exp']},\"<0\")", '0'),
+        ("k_dscr", "DSCR minimal (à partir de la 2e année d'exploitation)",
+         f"=IF(COUNTIFS(C{I['dscr']}:L{I['dscr']},\">-1E+300\",C{I['n_exp']}:L{I['n_exp']},\">=2\")=0,\"n/a\",_xlfn.MINIFS(C{I['dscr']}:L{I['dscr']},C{I['n_exp']}:L{I['n_exp']},\">=2\"))", '0.00'),
+        ("k_fcfneg", "Nb d'années à cash-flow libre d'exploitation négatif (à partir de la 2e année d'exploitation)",
+         f"=COUNTIFS(C{I['fcf_exp']}:L{I['fcf_exp']},\"<0\",C{I['n_exp']}:L{I['n_exp']},\">=2\")", '0'),
         ("k_tri_inv", "TRI investisseurs (sortie théorique an 10)",
          f"=IF({I['fp_invest']}*(1-{I['fp_fondateur']})=0,\"sans objet\",IFERROR(IRR(C{I['flux_inv']}:L{I['flux_inv']},-0.05),\"perte quasi totale (TRI non calculable)\"))", PCT),
         ("k_tri_fond", "TRI fondateur (sortie théorique an 10)",
@@ -412,7 +413,7 @@ def build_scenario(wb, name, p):
         s.put(s.row, 2, f, fmt=fmt, font=BOLD)
         I[key] = f"$B${s.row}"
         s.row += 1
-    s.put(s.row, 1, "Verdict (trésorerie ≥ 0 et ≥ réserve an 10, DSCR ≥ 1,2, cash-flow libre ≥ 0 an 4–10, TRI investisseurs extérieurs ≥ cible, dirigeant payé)", font=BOLD)
+    s.put(s.row, 1, "Verdict (trésorerie ≥ 0 et ≥ réserve an 10, DSCR ≥ 1,2, cash-flow libre ≥ 0 dès la 2e année d'exploitation, TRI investisseurs extérieurs ≥ cible, dirigeant payé)", font=BOLD)
     ok_inv = f"OR({I['k_tri_inv']}=\"sans objet\",AND(ISNUMBER({I['k_tri_inv']}),N({I['k_tri_inv']})>={I['tri_cible']}))"
     s.put(s.row, 2,
           f"=IF({I['k_tmin']}<0,\"NON VIABLE (trésorerie négative)\","
@@ -445,8 +446,8 @@ def build():
     keys = [("k_besoin", "Emplois totaux", EUR), ("k_ress", "Ressources prévues", EUR),
             ("k_ca5", "CA an 5", EUR), ("k_ebitda5", "EBITDA an 5", EUR), ("k_ebitda10", "EBITDA an 10", EUR),
             ("k_equ5", "Part équestre CA an 5", PCT), ("k_tmin", "Trésorerie min.", EUR),
-            ("k_t10", "Trésorerie an 10", EUR), ("k_dscr", "DSCR min. an 4–10", '0.00'),
-            ("k_fcfneg", "Années FCF < 0", '0'), ("k_dette_sout", "Dette soutenable", EUR),
+            ("k_t10", "Trésorerie an 10", EUR), ("k_dscr", "DSCR min. (exploitation an 2+)", '0.00'),
+            ("k_fcfneg", "Années FCF < 0 (exploitation an 2+)", '0'), ("k_dette_sout", "Dette soutenable", EUR),
             ("k_fp_nec", "Fonds propres nécessaires", EUR), ("k_tri_inv", "TRI investisseurs", PCT),
             ("k_tri_fond", "TRI fondateur", PCT), ("k_part", "Capital fondateur", PCT),
             ("k_votes", "Votes fondateur", PCT), ("k_verdict", "Verdict", None)]
