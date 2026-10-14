@@ -59,7 +59,7 @@
 ### 2.1 Règles
 - **SCI de droit commun, à l'IR** (CGI art. 8, 1°). Les associés sont imposés sur leur quote-part. Une société civile qui exerce une activité commerciale (art. 34-35) est soumise à l'IS de plein droit (CGI art. 206-2). Le BOFiP admet qu'une société civile non agricole reste à l'IR tant que ses recettes commerciales hors taxes ne dépassent pas **10 % de ses recettes totales**. Pour les sociétés civiles agricoles, ce sont les seuils de l'art. 75 qui s'appliquent. [A6-55 ; A6-60 BOFiP BOI-BIC-CHAMP-40-20 du 19/08/2026, PAGE LUE]
 - **Occupation gratuite par les associés d'une société non soumise à l'IS** : la société est « réputée se réserver la jouissance » du logement, ce qui n'entraîne pas de revenu foncier imposable. [A6-61, BOFiP BOI-RFPI-CHAMP-20-20, PAGE LUE]
-- **SCI à l'IS (option, CGI 239), SAS ou holding** : IS, régime mère-fille (145/216), intégration fiscale (223 A), Dutreil pour une holding animatrice (787 B). Ces structures sont en revanche exposées à la taxe 235 ter C et à l'acte anormal de gestion (§ 3).
+- **SCI à l'IS (sur option), SAS ou holding** : IS, régime mère-fille (145/216), intégration fiscale (223 A), Dutreil pour une holding animatrice (787 B). Ces structures sont en revanche exposées à la taxe 235 ter C et à l'acte anormal de gestion (§ 3).
 - **OpCo/PropCo** : la PropCo détient les murs, l'OpCo exploite. Le bail est un bail commercial pour l'hôtellerie et l'événementiel, mais peut être requalifié en **bail rural** pour la partie équestre (§ 9). C'est une convention réglementée si un dirigeant ou un actionnaire est commun (§ 4).
 - **Démembrement** : en droits d'enregistrement, l'usufruit viager vaut 80 % et la nue-propriété 20 % lorsque l'usufruitier a moins de 31 ans. Un usufruit temporaire vaut 23 % par période de 10 ans (CGI 669). La SAFER peut préempter l'usufruit ou la nue-propriété de biens agricoles (L.143-1). L'administration peut écarter un montage à but exclusivement ou principalement fiscal (LPF L.64 et L.64 A). [A6-15, A6-43, A6-18, A6-19]
 - **GFA** (groupement foncier agricole) : ses parts sont exonérées de droits de mutation à titre gratuit à hauteur de 75 % de la fraction correspondant aux biens loués par bail à long terme ou bail cessible (CGI 793 1 4°). Au-delà de 600 000 € par bénéficiaire, l'exonération tombe à 50 %. Le plafond passe à 20 M€ si le bien est conservé 13 ans de plus que les 5 ans de base (CGI 793 bis). En IFI, l'exonération est totale si le bail et le preneur remplissent les conditions du 976 III (bail d'au moins 18 ans, preneur familial exerçant à titre principal). Sinon, elle est de 75 % jusqu'à 101 897 € de parts, puis de 50 % au-delà (CGI 976 IV). Contrepartie : les terres doivent être données à **bail rural à long terme**. [A6-13, A6-14, A6-12b]
@@ -118,7 +118,7 @@
 **Chevaux du fondateur** : des chevaux de concours logés dans une holding et montés à titre privé sont taxables à 20 % par an. S'ils servent à l'activité équestre (école, commerce, valorisation), ils sont exclus au prorata de cet usage.
 
 ### 3.3 Risques
-- Redressement d'IS et imposition d'un revenu distribué chez l'associé (bases de 31,4 % de PFU, EXTRAIT, ou barème de l'IR).
+- Redressement d'IS et imposition d'un revenu distribué chez l'associé (au PFU de 31,4 % [EXTRAIT] ou au barème de l'IR).
 - Pénal (ABS) si des minoritaires ou des créanciers sont lésés.
 - Taxe de 20 % par an.
 
@@ -168,7 +168,7 @@ Responsabilité du dirigeant, conflit avec les minoritaires et, en cas d'abus, A
 - **Abords** : la protection couvre, en l'absence de périmètre délimité, tout immeuble **visible du monument ou visible en même temps que lui, dans un rayon de 500 m** (L.621-30). Les travaux qui modifient l'aspect extérieur sont soumis à autorisation préalable, avec avis ou accord de l'ABF selon les régimes (L.621-32). Dans les abords, même les petites constructions de 20 m² ou moins sont soumises à déclaration préalable (C. urb. R.421-11). [A6-23, A6-24, A6-36b]
 - **Subventions de l'État** (page nationale du ministère de la Culture) :
   - taux indicatifs de **40 % pour un immeuble classé** et **20 % pour un inscrit** ;
-  - plafond légal de 40 % de la dépense pour un inscrit (L.621-29) ;
+  - plafond légal de 40 % de la dépense pour un inscrit (L.621-29, cité par la page du ministère, article non lu) ;
   - les travaux de confort, d'accessibilité et de mise aux normes ne sont pas éligibles ;
   - l'aide dépend des crédits disponibles et n'est pas versée de plein droit. [A6-26, PAGE LUE]
 - **Impôt sur le revenu** :
@@ -244,7 +244,7 @@ Responsabilité du dirigeant, conflit avec les minoritaires et, en cas d'abus, A
 | N restaurant | 200 personnes |
 | **O** hôtel | 100 personnes |
 | R avec locaux de sommeil | 30 personnes |
-| X établissement sportif couvert (cas d'un manège ouvert au public) | 200 personnes |
+| X établissement sportif couvert (un manège recevant du public en relèverait a priori **[ESTIMATION]**) | 200 personnes |
 | Y musée | 200 personnes |
 | **PA** plein air | **300 personnes** |
 | **CTS** chapiteau ou tente | **50 personnes** |
@@ -264,7 +264,7 @@ Responsabilité du dirigeant, conflit avec les minoritaires et, en cas d'abus, A
 
 ### 7.2 Conséquences pratiques
 - Au-delà de 5 chambres ou 15 personnes, on sort du statut de chambres d'hôtes pour entrer dans l'**hôtellerie**, ERP de type O.
-- Une grange de réception de plus de 200 personnes est un ERP de type L de 4e catégorie : passage en commission de sécurité et règles plus lourdes.
+- Une grange de réception de type L accueillant 200 à 300 personnes est un ERP de 4e catégorie, et de 3e catégorie au-delà de 300 : passage en commission de sécurité et règles plus lourdes.
 - Un concours sous tente de plus de 50 personnes relève du type CTS.
 - Chambres d'hôtes de la catégorie « fourniture de logement » au micro : régime simple jusqu'à 203 100 € de chiffre d'affaires. **[ESTIMATION à confirmer]**
 
@@ -338,7 +338,7 @@ Plaintes du voisinage, fermeture administrative, amendes, et dégradation de la 
   - exploitation directe par le propriétaire ;
   - convention de mise à disposition SAFER (L.142-6, non lu) ;
   - contrats de **prestation** (pension), sans mise à disposition du foncier ;
-  - à l'inverse, recherche volontaire du **bail à long terme** pour bénéficier des exonérations d'IFI et de droits de mutation (CGI 793 1 3°, 976 III).
+  - à l'inverse, recherche volontaire du **bail à long terme** pour bénéficier des exonérations d'IFI et de droits de mutation (CGI 793 2 3°, 976 III).
 - Le fondateur est un **entrepreneur pluriactif, probablement à hauts revenus**. Exploiter lui-même 50 ha déclencherait vraisemblablement le **contrôle des structures**, avec une autorisation préfectorale à obtenir. **[ESTIMATION à partir de L.331-2 ; seuils régionaux INCONNUS]**
 - **Le modèle financier doit distinguer les taux de TVA** : 5,5 % pour les cours, la pension avec pratique et l'accès aux installations ; 20 % pour la valorisation, le commerce de chevaux et la location de boxes nus.
 
@@ -424,7 +424,7 @@ Perte des terres, révision du prix, nullité ou amende pour défaut de notifica
 ### 11.3 Risques
 Nullité des souscriptions, sanctions de l'AMF, requalification en FIA ou en biens divers, et litiges entre associés.
 
-**À valider par** : avocat en droit financier, PSFP agréé (si financement participatif), notaire (crédit-vendeur), AMF (rescrit, si doute).
+**À valider par** : avocat en droit financier, PSFP agréé (si financement participatif), notaire (crédit-vendeur), AMF (demande de position, si doute).
 
 ---
 
@@ -457,7 +457,7 @@ Nullité des souscriptions, sanctions de l'AMF, requalification en FIA ou en bie
   - assujettissement au-delà de **1,3 M€** d'actifs immobiliers nets ; barème de 0,50 % à **1,50 %** (CGI 964, 977) ;
   - **abattement de 30 % sur la résidence principale** détenue directement (973) ;
   - exonération des biens professionnels (973, 975) ;
-  - exonérations de 75 % pour les bois et forêts et les groupements forestiers, et pour les biens ruraux loués par bail à long terme ou les GFA, sous conditions (976). [A6-12, A6-12b, A6-12c]
+  - exonération de 75 % pour les bois et forêts et les groupements forestiers ; exonération totale ou partielle pour les biens ruraux loués par bail à long terme et les parts de GFA, sous conditions (976). [A6-12, A6-12b, A6-12c]
 - **Régime mère-fille** (CGI 145, 216) : détention d'au moins 5 % du capital pendant 2 ans. Quote-part de frais et charges de **5 %**, ramenée à 1 % dans certains cas (groupes intégrés, etc.). [A6-34b]
 - **Intégration fiscale** (CGI 223 A) : détention d'au moins **95 %**. Elle devient incompatible avec des investisseurs minoritaires au-delà de 5 % dans la filiale. [A6-35b]
 - **Dutreil 2026** (CGI 787 B) : exonération de 75 % avec engagement collectif d'au moins 2 ans, **engagement individuel de 6 ans** et fonction de direction pendant 3 ans. Les **logements et résidences** et les **chevaux de course ou de concours** sont exclus, sauf affectation exclusive à l'activité. Une holding animatrice reste éligible. [A6-02]
