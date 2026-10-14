@@ -29,6 +29,7 @@
 ## Erreurs et incidents
 - Collisions de fichiers temporaires entre agents (scripts écrasés) : règle ajoutée (sous-dossier personnel).
 - AV8 a corrigé plusieurs chiffres d'agents (Fontenay, Dampierre, Strawbridge, Fresnay, Blenheim, Castillon, Arqana) : les recommandations finales utilisent les valeurs corrigées.
+- Relecture du directeur avant publication : la mention « aucune condamnation pénale connue en France » était trop large dans la découverte n° 18 et dans l'index des cas. Elle est précisée en « dans l'affaire The Family », avec un renvoi à la condamnation de 2018 (affaire Be Sport) rapportée par la presse mais non vérifiée et contredite (AV6 §4.3, AV8 §6). Même correction dans le rapport exécutif de la mission 1.
 
 ## Reprise
 - Pour enrichir : relancer en vague C l'analyse des contenus « repérés » à forte pertinence quand YouTube sera de nouveau accessible, ou, si l'utilisateur l'autorise, installer un outil de transcription locale pour les podcasts diffusés par flux RSS public.

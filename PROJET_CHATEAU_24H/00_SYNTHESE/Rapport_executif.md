@@ -46,7 +46,7 @@ Un château équestre de plus de 50 ha **ne finance ni son achat ni son entretie
    - SAFER renforcée ;
    - risque de bail rural sur les écuries louées ;
    - TVA de 5,5 % sur la pension liée aux installations, 20 % sinon.
-7. **Garde-fou de gouvernance** : The Family et le Domaine d'Ablon (décisions civiles et BODACC vérifiés ; aucune condamnation pénale connue en France). Ne jamais mêler l'argent des investisseurs, l'exploitation et le domaine habité.
+7. **Garde-fou de gouvernance** : The Family et le Domaine d'Ablon (décisions civiles et BODACC vérifiés ; aucune condamnation pénale connue en France dans l'affaire The Family ; une condamnation de 2018 dans une autre affaire, rapportée par la presse, reste non vérifiée et contredite). Ne jamais mêler l'argent des investisseurs, l'exploitation et le domaine habité.
 
 ## 5. Recommandation
 Voir `Recommandation_finale.md` :

@@ -68,7 +68,7 @@ Les vérifications indépendantes de l'agent AV8 sont dans `02_ANALYSES/AV8_veri
 ## 6. Exemples d'échec
 | Cas | Cause | Fichier |
 |---|---|---|
-| The Family / Domaine d'Ablon | Mélange des fonds, gouvernance ; décisions civiles ✅, aucune condamnation pénale connue en France | AV6 |
+| The Family / Domaine d'Ablon | Mélange des fonds, gouvernance ; décisions civiles ✅, aucune condamnation pénale connue en France dans l'affaire The Family | AV6 |
 | Prello | Copropriété fractionnée : stock acheté avant revente, rachat garanti, perte de 3,04 M€ ✅ | AV7 E-01 |
 | Haras de Divona | Exploitation puis foncière liquidées | AV7 |
 | Addington Manor | Trois exploitants en 13 ans pour un site équestre de référence | AV7 E-03 |

@@ -14,3 +14,4 @@
 | D10 | Les notes de l'auditeur sont publiées telles quelles ; pas de re-notation par le directeur | Indépendance de l'audit (brief §14). |
 | D11 | Intégration des découvertes de la cellule audiovisuelle vérifiées par AV8 (valeurs corrigées) | Brief mission 2 : transmettre les découvertes à l'équipe de recherche. |
 | D12 | Horizon annoncé : 2031-2033 (château modeste ou lot) / 2033-2036 (domaine type) | Moteur de capital H1-H3 ; besoin de 2,4 à 3,9 M€ de fonds propres. |
+| D13 | Formulation sur The Family précisée : « aucune condamnation pénale connue en France **dans l'affaire The Family** » ; condamnation de 2018 (autre affaire) signalée comme non vérifiée et contredite | Exactitude et présomption d'innocence : la formule générale contredisait la fiche AV6 §4.3. |
