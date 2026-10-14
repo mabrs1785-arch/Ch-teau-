@@ -1,31 +1,12 @@
-# CONTEXTE PERMANENT — Opération Château
+# CONTEXTE PERMANENT — Opération Château (version 2, repartie de zéro le 2026-10-14)
 
-> Fichier de reprise. À lire en premier par tout agent ou toute session qui reprend la mission.
-> Brief complet : `08_JOURNAL/Brief_mission_original.txt`. État d'avancement : `08_JOURNAL/Etat_recherche.md`.
+Brief complet : 08_JOURNAL/Brief_mission_original.txt. État : 08_JOURNAL/Etat_recherche.md.
+La version 1 (sans accès web) reste dans l'historique git de la branche (commit « Synthèse finale… ») ; elle n'est PAS réutilisée comme source.
 
-## Mission
-Trouver le chemin entrepreneurial et financier le plus crédible pour qu'un entrepreneur français de 26 ans, passionné d'équitation, à apport personnel limité (montant inconnu), devienne propriétaire ou contrôle durablement un château français (> 50 ha si possible), y vive au milieu des chevaux à l'horizon 2030-2031, avec un domaine qui s'autofinance (entretien, dette, investisseurs).
+Mission : chemin entrepreneurial et financier le plus crédible pour qu'un entrepreneur français de 26 ans, passionné d'équitation, à apport limité (montant inconnu), possède ou contrôle durablement un château (> 50 ha si possible), y vive au milieu des chevaux vers 2030-2031, domaine autofinancé.
 
-## Contraintes non négociables
-- Vivre dans un château entouré de chevaux (seule hypothèse non contestable).
-- Le cheval doit être structurant (pas forcément majoritaire dans le CA).
-- Honnêteté : aucune source, chiffre, annonce, transaction ou investisseur inventé. « Je ne sais pas » + méthode de vérification si inconnu.
-- Ne jamais présenter subvention / financement / intérêt d'investisseur comme acquis.
-- EBITDA positif mais cash-flow négatif = non viable.
-- Aucun contact de tiers, aucun achat, aucune signature, aucune donnée privée transmise.
+Non négociable : vivre dans un château entouré de chevaux. Honnêteté absolue (aucune source/chiffre/annonce/investisseur inventé ; « Je ne sais pas » + méthode de vérification). EBITDA positif mais cash-flow négatif = non viable. Aucun contact de tiers, achat, signature.
 
-## Données manquantes (à fournir par le porteur)
-- Apport personnel disponible ; revenus actuels ; capacité d'emprunt personnelle.
-- Région(s) préférée(s) ; disponibilité géographique.
-- Nature exacte de l'expérience équestre (niveau, discipline, réseau).
-- Entreprises détenues aujourd'hui (holding existante ? trésorerie ?).
+Données manquantes : apport, revenus, région, expérience équestre détaillée, entreprises détenues. Scénarios d'apport : 50 k€ / 250 k€ / 1 M€.
 
-## Scénarios d'apport utilisés (hypothèses explicites)
-- S1 : 50 k€ ; S2 : 250 k€ ; S3 : 1 M€ (via holding après reprises d'entreprises).
-
-## Organisation technique réelle (constatée le 2026-10-14)
-- Environnement : session Claude Code cloud, conteneur éphémère. Persistance = commits git sur la branche `ccr-f4e4139a-4lc31x`.
-- Internet : WebSearch / WebFetch disponibles (vérifié).
-- Sous-agents : outil Agent disponible, exécution parallèle en arrière-plan.
-- Excel : Python + openpyxl 3.1.5 (formules conservées). Recalcul vérifié via LibreOffice si présent.
-- Pas d'exécution continue garantie de 24 h : les « heures » du brief sont des jalons logiques.
+Environnement (vérifié) : accès web ouvert (WebSearch + WebFetch + YouTube/pages). Quota de recherches web limité par tour (≈200 partagées) → privilégier WebFetch des pages. Pas d'outil de transcription audio installé (refus utilisateur). Excel via openpyxl + recalcul LibreOffice. Persistance = git.
