@@ -101,3 +101,78 @@ Lecture (ESTIMATION) : le projet de la mission (résidence privée calme, sans v
 - **Château de Trazegnies (Corroy-le-Château, Belgique)** [V2C-08], PAGE LUE : « La restauration du pont menant au château pourrait coûter un million d'euros » ; l'aide publique wallonne « peut couvrir jusqu'à 75% des travaux » si le château est classé comme patrimoine exceptionnel et accessible au public.
 - **Agence Barnes (Belgique)** [V2C-08], PAGE LUE : « ces charges annuelles varient entre 20.000 et 80.000 euros, en fonction de l'état et de la taille du bien ». Estimation d'agence immobilière, sans surface ni postes : fiabilité faible, et vraisemblablement hors gros entretien (HYPOTHÈSE de lecture).
 
+---
+
+## 3. Ratios réels jardiniers / hectare et temps d'entretien au m²
+
+### 3.1 La référence la plus solide : temps de travaux par code de gestion différenciée (Ville de Rennes) [V2C-21] — PAGE LUE
+
+Source : Plante & Cité, Baromètres, « Parcs et jardins : Temps de travaux pour l'entretien », données de la Ville de Rennes (« Coûts de maintenance », 2012), issues de la comptabilité analytique. Citations :
+> « En espaces verts, la main d'œuvre représente 80 à 99% des coûts d'entretien. »
+> Les temps « correspondent au temps annuel cumulé des équipes de terrain sur les espaces concernés, et des services "support" de la Ville (notamment élagage et transport, et dans une moindre mesure production de végétaux, surveillance, magasin etc.). L'ensemble représente environ 95 % des coûts de maintenance des parcs et jardins. »
+> « Ces chiffres sont donnés à titre indicatif, les références sur les coûts d'entretien en espaces verts étant rares. »
+
+| Code de gestion (Rennes, 2012) | Moyenne h/ha/an (min – max) | Nombre de sites | ETP/ha (ESTIMATION, 1 607 h/ETP) | Hectares par ETP | Main-d'œuvre €/ha/an (ESTIMATION, 20,24 €/h) |
+|---|---|---|---|---|---|
+| Code 1 — jardins structurés très fleuris | 2 800 (2 500 – 4 600) | 7 | 1,74 | 0,6 | ≈ 56 700 |
+| Code 2 — jardins structurés | 1 200 (750 – 1 200) | 80 | 0,75 | 1,3 | ≈ 24 300 |
+| Code 3 — jardins d'accompagnement | 800 (450 – 1 400) | 979 | 0,50 | 2,0 | ≈ 16 200 |
+| Code 4 — jardins champêtres | 250 (200 – 450) | 198 | 0,16 | 6,4 | ≈ 5 100 |
+| Code 5 — jardins de nature | 90 (70 – 200) | 39 | 0,06 | 17,9 | ≈ 1 800 |
+
+Conventions (HYPOTHÈSES, identiques à R2) : 1 607 heures travaillées par ETP et par an ; coût horaire d'un jardinier à 1,2 SMIC = 32 531 € / 1 607 h ≈ 20,24 €/h (coût employeur R2 § 9.3). La valeur maximale du code 2 (1 200) égale sa moyenne : c'est ce que la page affiche, sans explication.
+
+Limites : parcs **publics urbains** (propreté, aires de jeux, fréquentation, services support), mesurés en 2012. Un parc privé fermé au public demande probablement moins de temps à code égal (HYPOTHÈSE non vérifiée). Les codes de Rennes ne correspondent pas exactement aux zones d'un château.
+
+### 3.2 Ratios observés (sites réels)
+
+| Site | Surface | Effectif | ETP/ha (ESTIMATION) | h/ha/an équivalent | Type d'entretien | Statut / source |
+|---|---|---|---|---|---|---|
+| Jardins de Villandry (37), privé | 7 ha | 10 jardiniers | 1,43 | ≈ 2 300 | jardin Renaissance et potager décoratif (≈ code 1-2) | PAGE LUE [R2-15] |
+| Jardin du Luxembourg (Sénat, Paris) | 23 ha | « 60 jardiniers en 2016 » | 2,6 | ≈ 4 200 | jardin public très fleuri, serres et collections | PAGE LUE, « réf. nécessaire » [V2C-28], fiabilité faible |
+| Chatsworth (Royaume-Uni), charity | jardin de 105 acres (≈ 42,5 ha), plus parc et bois | 29 (personnel « jardins ») | 0,68 | ≈ 1 100 | grand jardin ouvert à ≈ 630 000 visiteurs | PAGE LUE [R5-05] |
+| Château de Robersart (Wambrechies, 59), municipal | parc de 9 ha + jardin de 5 500 m² (ancien potager) | « quatre jardiniers » depuis 2016 | 0,42 | ≈ 670 | parc de château et potager | PAGE LUE (Wikipédia) [V2C-17] |
+| Ville de Thouars (79), label 4 fleurs | 65 ha d'espaces verts | 34 jardiniers | 0,52 | ≈ 840 | ville très fleurie | PAGE LUE (Wikipédia, 2025) [V2C-16] |
+| Ville de Marmande (47), tous espaces | 193,21 ha | 32 agents | 0,17 | ≈ 270 | mélange (voir détail) | PAGE LUE [V2C-12] |
+| — dont espaces verts urbains | 10,35 ha | 17 | 1,64 | ≈ 2 640 | fleurissement, désherbage, production florale | idem |
+| — dont cimetières | 8,85 ha | 4 | 0,45 | ≈ 730 | — | idem |
+| — dont terrains de sport et golf | 72,9 ha | 7 (3 + 4) | 0,10 | ≈ 150 | tonte de grandes surfaces | idem |
+| — dont parcs (Filhole, Carroussel, Trec) | 67,8 ha | 4 | 0,06 | ≈ 95 | grands parcs extensifs | idem |
+| Ville d'Avignon, surfaces tondues ou fauchées | ≈ 100 ha | 8 agents, passages toutes les 2 à 4 semaines | 0,08 | ≈ 130 | tonte et fauche extensives | PAGE LUE [V2C-13] |
+| Vaux-le-Vicomte (77), privé | 33 ha de jardins (parc de 500 ha) | INCONNU (75 salariés au total selon Wikipédia [R4-30] ; « 70 personnes » en 2016 [V2C-24]) | — | ≈ 1 200 à 1 350 si les 10 % du budget étaient entièrement de la main-d'œuvre (ESTIMATION) | jardins structurés et « vingtaine de bassins » | PAGE LUE [V2C-24] [V2C-25] |
+| Versailles | 830 ha (Wikipédia) | INCONNU (« une quarantaine aujourd'hui » selon un extrait d'Hérodote, non vérifié) | — | — | — | EXTRAIT [V2C-18], fiabilité faible |
+| Chantilly, Courances, Breteuil | 115 ; 75 à 86 ; 75 ha (R2, R4) | INCONNU | — | — | — | sites ouverts sans chiffre (503 ou 404 pour Chantilly et Courances) |
+
+**Budget des jardins de Vaux-le-Vicomte** [V2C-24], PAGE LUE (dossier de presse France 5, 2016) : « 10 % du budget annuel sont consacrés à l'entretien des jardins à la française et de la vingtaine de bassins qui subsistent », pour « 9 millions d'euros à trouver chaque année ». ESTIMATION : ≈ 0,8 à 0,9 M€/an pour 33 ha, soit **≈ 24 000 à 27 000 € par hectare et par an**, bassins compris. Ce niveau correspond au **code 2** de Rennes (≈ 24 300 €/ha/an de main-d'œuvre) : les deux sources indépendantes se recoupent.
+
+Lecture (ESTIMATION) :
+1. Les ratios s'étagent de **0,06 ETP/ha** (grand parc extensif) à **1,4-1,7 ETP/ha** (jardin très fleuri ou potager décoratif), soit un facteur 25 à 30. Le niveau de soin choisi pèse donc plus que la surface.
+2. Un jardin régulier « de prestige » sans fleurissement saisonnier se situe autour de **0,7 à 0,8 ETP/ha** (Rennes code 2, Chatsworth, équivalent Vaux). Villandry (1,4) est bien un plafond, comme l'indiquait R2.
+3. Un parc paysager fauché tardivement ou pâturé se situe autour de **0,06 à 0,16 ETP/ha** (codes 4-5, parcs de Marmande, Avignon).
+
+### 3.3 Application aux surfaces des scénarios (ESTIMATION sur HYPOTHÈSES de répartition)
+
+Main-d'œuvre de jardinage hors chef jardinier, hors matériel, au coût R2 (20,24 €/h) :
+
+| Scénario et répartition (HYPOTHÈSE) | Heures/an | ETP | €/an | Effectif retenu par R2 (§ 9) |
+|---|---|---|---|---|
+| S1 — parc 3 ha : 0,5 ha code 3 + 2,5 ha code 4 | 1 025 | 0,6 | ≈ 20 700 | 1,0 (jardinier-homme d'entretien) |
+| S1 — variante soignée : 0,5 ha code 2 + 2,5 ha code 3 | 2 600 | 1,6 | ≈ 52 600 | idem |
+| S2 — 10 ha : 2 ha code 2 + 8 ha code 3 (tout le parc soigné) | 8 800 | 5,5 | ≈ 178 000 | 2 jardiniers + 1 chef |
+| S2 — 2 ha code 2 + 2 ha code 3 + 6 ha code 4 | 5 500 | 3,4 | ≈ 111 000 | idem |
+| S2 — 2 ha code 2 + 2 ha code 3 + 6 ha code 5 (prairie fauchée ou pâturée) | 4 540 | 2,8 | ≈ 92 000 | idem |
+| S3 — 60 ha : 1 ha code 1 (potager décoratif) + 9 ha code 2 + 50 ha code 3 | 53 600 | 33,4 | ≈ 1 085 000 | 8 + 3 jardiniers + 1 chef |
+| S3 — 1 ha code 1 + 9 ha code 2 + 10 ha code 3 + 40 ha code 4 | 31 600 | 19,7 | ≈ 640 000 | idem |
+| S3 — 1 ha code 1 + 9 ha code 2 + 10 ha code 3 + 40 ha code 5 | 25 200 | 15,7 | ≈ 510 000 | idem |
+
+Conséquences pour le modèle (ESTIMATION) :
+- **S2** : les 2 jardiniers et le chef de R2 ne suffisent que si 6 ha du parc sont en prairie (code 4-5). Un parc soigné partout demande ≈ 5,5 ETP.
+- **S3** : les 11 jardiniers de R2 sont **sous-estimés** d'au moins 40 % (15,7 ETP dans la variante la plus extensive), et du triple si le parc est entretenu comme un jardin d'accompagnement. Le surcoût par rapport à R2 va de ≈ +150 000 à +700 000 €/an (ESTIMATION : (15,7 − 11) × 32 531 ≈ 153 000 € ; (33,4 − 11) × 32 531 ≈ 729 000 €).
+- Ces chiffres sont des ordres de grandeur : parc public urbain, données 2012, conversion au coût R2.
+
+### 3.4 Coût au m² des espaces verts des collectivités
+
+- **Coût global au m² : INCONNU.** L'observatoire des coûts de Plante & Cité est réservé aux adhérents (R2). Les avis du BOAMP ouverts [V2C-35] donnent des montants de marchés (par exemple un accord-cadre de 600 000 € au maximum à Panazol) mais **ni surfaces ni prix unitaires** : ils ne permettent pas de calculer un €/m². Pour vérifier : télécharger le BPU ou la DPGF d'un dossier de consultation sur un profil acheteur, ou rapprocher le budget d'un service espaces verts de ses surfaces.
+- **Ordre de grandeur indirect (ESTIMATION)** : la main-d'œuvre représente 80 à 99 % du coût [V2C-21]. Le coût complet vaut donc 1,01 à 1,25 fois les montants de main-d'œuvre du tableau 3.1, soit ≈ 0,18 à 0,23 €/m²/an (code 5) et ≈ 5,7 à 7,1 €/m²/an (code 1), au coût salarial R2.
+- **Désherbage des allées** [V2C-22], PAGE LUE (observations 2011, coûts 2013) : désherbage total d'une allée de parc, coût annuel moyen **23 €/100 m²** en chimique (1 à 173), **130 €/100 m²** en manuel (9 à 658), **101 €/100 m²** au brûleur (6 à 453) ; « la main d'œuvre représente 60 à 99 % des coûts » [V2C-23]. ESTIMATION : 1 ha d'allées gravillonnées tenues « zéro herbe » à la main ≈ 13 000 €/an (valeur 2013), contre ≈ 2 300 €/an en chimique. Le cadre légal applicable à un parc privé (usage des produits phytosanitaires) n'a pas été vérifié ici : à confirmer par R3.
+

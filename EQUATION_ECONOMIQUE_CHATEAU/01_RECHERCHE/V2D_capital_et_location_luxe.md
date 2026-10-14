@@ -24,7 +24,20 @@ Avertissement : ce document n'est pas un avis juridique ou fiscal. Tout montage 
 Un opérateur identifié et vérifié : **Histoire & Patrimoine**, filiale du groupe Altarea.
 - Présentation : « Spécialiste de la rénovation et de la réhabilitation de l'immobilier ancien du groupe ALTAREA » [V2D-03] (PAGE LUE). Dispositifs proposés : Monument historique, Malraux, Denormandie, déficit foncier [V2D-03].
 - Taille revendiquée : « + de 500 Demeures déjà sauvées de l'oubli », « + de 10 000 logements réhabilités », « + de 1,5 milliard d'euros déjà investis », « + de 30ans d'expérience » [V2D-04] (PAGE LUE ; chiffres déclaratifs de l'opérateur, non audités).
-- Société de gestion du groupe : ALTAREA GESTION IMMOBILIERE (HISTOIRE & PATRIMOINE GESTION), SIREN 401165089, code NAF 68.32A, créée le 20/04/1995 ; chiffre d'affaires 2025 publié : **11 347 170 €** ; résultat net 2025 : **−298 458 €** [V2D-10] (PAGE LUE, API officielle). C'est la société de gestion locative des lots, pas la société de promotion ; le chiffre d'affaires de la promotion elle-même reste INCONNU (à chercher dans le document d'enregistrement universel d'Altarea).
+- Société de gestion du groupe : ALTAREA GESTION IMMOBILIERE (HISTOIRE & PATRIMOINE GESTION), SIREN 401165089, code NAF 68.32A, créée le 20/04/1995 ; chiffre d'affaires 2025 publié : **11 347 170 €** ; résultat net 2025 : **−298 458 €** [V2D-10] (PAGE LUE, API officielle). C'est la société de gestion locative des lots.
+- **Comptes 2025 publiés des autres sociétés du groupe** (API Recherche d'entreprises, champ « finances », année « 2025 ») [V2D-42] (PAGE LUE) :
+
+| Société | SIREN | Activité (NAF) | Chiffre d'affaires 2025 | Résultat net 2025 |
+|---|---|---|---|---|
+| HISTOIRE & PATRIMOINE | 480309731 | 41.10A (promotion immobilière) | 13 307 € | −31 598 228 € |
+| HISTOIRE & PATRIMOINE PROMOTION | 792751992 | 68.31Z | 14 805 200 € | −18 926 589 € |
+| HISTOIRE & PATRIMOINE MANAGEMENT (créée en 2023) | 977624931 | 68.10Z | 29 057 956 € | −25 964 960 € |
+| HISTOIRE & PATRIMOINE VAUBAN | 490743101 | 68.10Z | 2 579 213 € | −2 413 501 € |
+| HISTOIRE & PATRIMOINE MANSART | 825208093 | 68.10Z | 449 183 € | −4 319 155 € |
+| HISTOIRE & PATRIMOINE GUIMARD | 788652568 | 68.10Z | 586 175 € | −2 167 851 € |
+| HISTOIRE & PATRIMOINE VIOLLET-LE-DUC | 803307354 | 68.10Z | 21 250 € | −238 633 € |
+
+  Total des résultats nets de ces sept sociétés et de la société de gestion : environ **−86 M€** en 2025 (ESTIMATION, simple somme ; des flux internes au groupe, des provisions ou des dépréciations peuvent expliquer une partie des pertes, et la consolidation n'est pas connue). **Lecture prudente** : l'opérateur leader vérifié a publié de lourdes pertes en 2025. Son appétit pour de nouvelles acquisitions, et donc la possibilité de lui vendre des dépendances, n'est pas acquis. Les causes sont INCONNUES ; il faudrait lire le document d'enregistrement universel 2025 d'Altarea.
 - Un lien « Proposer un bâtiment » renvoie vers altarea-partenaires.com [V2D-03]. Cette page ne donne **aucun critère** d'achat (type de bien, surface, localisation, prix) : c'est un portail pour les partenaires commerciaux (conseillers en gestion de patrimoine), joignable par courriel [V2D-11] (PAGE LUE). Les critères d'acquisition de l'opérateur restent INCONNUS.
 - Autre diffuseur vu : Euodia, site de conseil en défiscalisation, qui commercialise un programme au « Château de Chassagny » à Montagny (Rhône) : T1 « à partir de 84 800 € », T2 « à partir de 129 500 € », livraison « 4ème trimestre 2024 » ; l'opérateur et le vendeur du château ne sont pas nommés ; la page mélange « Monument Historique » et « loi Malraux » [V2D-01] (PAGE LUE, fiabilité faible).
 - D'autres opérateurs existent sans doute (le marché MH est animé par des promoteurs et des réseaux de conseillers), mais je n'en ai pas vérifié d'autre : INCONNU au-delà d'Histoire & Patrimoine.
@@ -239,4 +252,49 @@ Points nouveaux [V2D-32] (PAGE LUE, fiche F33175 « Vérifié le 21 mai 2026 »)
   - Le seuil de franchise de TVA et l'option des services para-hôteliers sont à examiner (R3 § 6).
 - **Interaction avec le régime MH** (À VALIDER) : la doctrine exclut du régime les parties d'immeuble utilisées « pour les besoins d'une entreprise industrielle, commerciale » [R3-04 § 40]. La location meublée relève des BIC. Je ne sais pas si quelques semaines de location meublée de la partie privée suffisent à faire sortir cette partie du régime MH ou à changer la règle de déduction (100 %, 75 % ou 50 %). INCONNU, question pour un fiscaliste.
 - **Société civile** : si le château est détenu par une SCI, la location meublée saisonnière peut être jugée commerciale. Le notaire Wargny-Lelong écrit : l'objet de la SCI « ne doit pas être commercial – attention notamment à la location en meublé saisonnière, qui peut être considérée comme telle » [V2D-34] (PAGE LUE). Au-delà de 10 % du chiffre d'affaires, la SCI devient passible de l'IS [R3-59].
+
+## Q5. Copropriété ou partage d'un château entre plusieurs familles
+
+### 5.1 Exemples réels trouvés en France
+
+| Cas | Montage | Chiffres | Gouvernance, difficultés | Statut | Source |
+|---|---|---|---|---|---|
+| **Château de Panat**, L'Isle-Jourdain (Gers), XIXe siècle | Collectif lié à l'association Alter-Habitat Lislois (créée en 2011), acquisition le 10 septembre 2019 ; « coopérative d'habitants », présentée comme la première du Gers | « 14 logements » sur « 1 500 m² » intérieurs, avec espaces communs ; travaux « 1,5 million d'euros », en partie en auto-réhabilitation ; prix d'achat non publié | Propriété collective, gestion non lucrative, loyers selon les revenus ; le projet a connu « 7 ans de reports et de revirements » avant de se porter sur le château | PAGE LUE | [V2D-43] |
+| **Château Monboucher**, à 10 km de Bergerac (Dordogne) | Château divisé en copropriété de 12 logements vendus à des particuliers, avec des pièces communes dans le château | Du « 50 m² » à la maison de « 270 m² » ; prix affichés 640 000 € (appartement) et 960 000 € (maison) ; surfaces incohérentes dans le texte (160 m² et 240 m²) | Salon, salle à manger, cuisine et salle de réception partagés ; concierge pour les jardins ; parcelle privative à louer ; charges et règlement non publiés | PAGE LUE (contenu d'agence, fiabilité faible) | [V2D-44] |
+| **Domaine de Courances** (Essonne) | Domaine familial géré par dix cousins copropriétaires (rappel R4) | Environ 1 800 ha (EXTRAIT R4) | Partage de la gestion ; séminaires confiés à un opérateur ; appartements loués dans la ferme (« La Ferme - Les Appartements INSEAD », intitulé du menu du site) | EXTRAIT [R4-89] ; menu du site lu, pages internes en erreur 404 | [R4-89], [V2D-47] |
+| **Chenonceau** (rappel R4) | Propriété familiale | — | Conflit familial, administrateur provisoire | voir R4 | [R4-05] |
+
+Modèles commerciaux de « résidence secondaire partagée » (pas des châteaux) : Lazazu propose l'achat à plusieurs de maisons de luxe en France, en Espagne et au Portugal, via une SCI ; « une maison égale 8 parts », entrée « à partir de 250 000 € » ; charges, impôts et travaux au prorata des parts, sauf le ménage ; calendrier d'occupation par saison et algorithme en cas de litige [V2D-33] (PAGE LUE). Je n'ai trouvé **aucun château** proposé dans ce modèle : INCONNU.
+
+### 5.2 Gouvernance : ce que dit un notaire [V2D-34] (PAGE LUE)
+
+- **Indivision** :
+  - « Nul ne peut être contraint à demeurer dans l'indivision » ; « Le partage peut toujours être provoqué (article 815 du C.C) ».
+  - Décisions importantes à « l'unanimité des indivisaires ».
+  - Actes d'administration à « une majorité des 2/3 » (article 815-3).
+  - Une convention d'indivision « est par ailleurs conclue pour une durée de 5 années maximum », et « L'unanimité sera nécessaire pour la renouveler ».
+- **SCI** :
+  - Elle permet « d'acquérir, à plusieurs, un bien immobilier en évitant les inconvénients de l'indivision ».
+  - Les clauses d'agrément contrôlent « toute entrée dans le capital ».
+  - Le gérant peut recevoir « les pouvoirs les plus larges ».
+  - Contreparties : « Les droits des minoritaires sont moins protégés » ; les associés répondent du passif « sans limite de montant », chacun à proportion de sa part.
+  - Un associé qui veut sortir peut être bloqué ; si l'agrément est refusé, les associés doivent racheter les parts.
+- **Usage** : assemblée générale annuelle, « répartition du temps selon la méthode du « mini-timeshare » », rotation conseillée du gérant.
+- **Limite importante pour un château qui loue** : l'objet de la SCI « ne doit pas être commercial – attention notamment à la location en meublé saisonnière, qui peut être considérée comme telle ».
+
+### 5.3 Ce que cela vaut pour le projet (ESTIMATION)
+
+- **Partager la propriété du château entre plusieurs familles** libère du capital (vente de lots ou de parts), mais contredit l'objectif d'une partie « entièrement privée » et d'un domaine calme. Les exemples trouvés ont des **pièces communes partagées** (Monboucher) ou une **vie collective** (Panat).
+- Le capital libéré dépend du prix de marché des lots. Le seul repère trouvé est Monboucher, avec des prix affichés de 640 000 € à 960 000 € par logement, sans preuve de vente : INCONNU pour les prix réels. Ces prix pourraient être vérifiés dans DVF après les ventes.
+- La forme la plus compatible avec le projet serait la cession de **bâtiments séparés**, communs ou maisons du domaine, avec un règlement strict : accès séparés, servitudes limitées, interdiction des nuisances, pacte de préférence. Mais aucun exemple chiffré n'a été trouvé. Les règles de copropriété (lot du propriétaire, charges du parc) et de l'association syndicale libre sont à faire rédiger par un notaire.
+- Si les bâtiments sont protégés MH et que les acheteurs veulent déduire leurs travaux, il faut respecter la règle des 75 % d'habitation [V2D-16] (§ 1.4).
+
+## 6. Autre mécanisme rencontré : la dette participative (financement participatif en obligations)
+
+Château Fontenay (Sarthe), communiqué du 12/12/2023 [V2D-45] (PAGE LUE, source promotionnelle, fiabilité faible) :
+- Montage : la société « Sarthe Society SAS » lève « 690.000 € » auprès de particuliers sur la plateforme Bricks.co, « sous forme d'obligations (investissement minimum de 10 €) », à « 7% de taux d'intérêt fixes », avec une liquidité fixée au « 31 janvier 2029 ».
+- Le titre du fichier annonce 310 000 € levés en 12 heures (non vérifié dans le texte).
+- Le bien : château « classé au titre des monuments historiques », « D'une valeur d'environ 2 millions d'euros », sur « 11,6 hectares ». Projet de 200 convives, hôtel, tentes et cabanes.
+- BODACC : la société (SIREN 980419436), créée en 2023, a déposé ses comptes en 2025 et 2026 ; **aucune procédure collective** publiée [V2D-46] (PAGE LUE). Résultat économique du projet : INCONNU.
+- **Lecture** (ESTIMATION) : ce n'est pas une libération de capital, c'est une **dette** à 7 % par an, remboursable en 5 ans. Elle peut financer un investissement productif (hébergement, salle), jamais le déficit de fonctionnement courant. Pour notre domaine, emprunter 700 000 € à 7 % coûte environ 49 000 € d'intérêts par an, avant remboursement.
 
