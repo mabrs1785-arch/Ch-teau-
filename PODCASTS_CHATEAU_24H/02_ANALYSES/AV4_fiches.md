@@ -415,3 +415,305 @@ Hospitality Insiders mentionne 18 sites visités.
 
 **Note : 55/100.**
 
+---
+
+## F08 — GDIY #525 « Joseph Lasserre - Groupe Doumer - Racheter des entreprises dont personne ne veut »
+
+### Identification
+
+- **Réf.** : AV4-026.
+- **Intervenants** : Joseph Lasserre (Groupe Doumer) ; hôte Matthieu Stefani.
+- **Chaîne** : Génération Do It Yourself (GDIY).
+- **Date** : 25/02/2026.
+- **Durée** : 2:40:52 (audio), 2:42:30 (YouTube, « Les "BORING BUSINESSES" qui rapportent des MILLIONS », 209 000 vues).
+- **URL** : https://www.gdiy.fr/podcast/joseph-lasserre/ et https://www.youtube.com/watch?v=ncsFmxXWiRs
+- **Niveau d'accès** : DESCRIPTION/CHAPITRES LUS. Notes du site et du flux RSS, timeline de l'auteur, chapitres YouTube aux mêmes intitulés (origine auteur confirmée).
+
+### Analyse
+
+**Résumé.**
+- 2009 : licencié d'un cabinet de conseil.
+- Se lance dans le photovoltaïque avec deux associés, embauche des couvreurs et découvre les métiers du bâtiment.
+- 2014 : rachète une première PME de plomberie.
+- Aujourd'hui, selon l'épisode : Groupe Doumer, 7 entreprises du bâtiment (de la couverture à la métallerie), 150 salariés, 25 M€ de chiffre d'affaires.
+
+**Infos entrepreneuriales** (sommaire de l'auteur) :
+- valoriser et financer le rachat d'une PME du bâtiment ;
+- trois critères d'une bonne acquisition ;
+- mesurer et réduire les risques ;
+- ce qu'on change et ce qu'on garde le premier jour ;
+- danger d'une croissance trop rapide ;
+- vérifier la valeur d'une entreprise sur le terrain.
+
+Sujets cités : la « clause d'earn-out dans la transmission d'entreprise », le besoin en fonds de roulement, l'« opportunité de la décennie : les Boomer Boring Business ».
+
+**Vérification au registre** (API annuaire des entreprises) :
+- DOUMER HOLDING : SAS créée le 28/07/2014, Paris 16e, présidée par Joseph Lasserre.
+- Elle préside des sociétés anciennes :
+  - DOUMER SOLS, créée en 1966 ;
+  - RIALLAND, créée en 1991, CA 2023 de 3,87 M€ pour un résultat net de 472 k€ ;
+  - DOUMER ELECTRICITE / PERELEC, créée en 1998 ;
+  - GECAPE, créée en 1976.
+- Une SCI GROUPE DOUMER (2022) est gérée par Lasserre.
+
+**La structure « holding de reprise qui rachète des PME anciennes » est VÉRIFIÉE.** Les chiffres consolidés (7 sociétés, 150 salariés, 25 M€) sont DÉCLARATIFS : les comptes ne sont pas tous publics et ceux du groupe n'ont pas été consultés.
+
+**Modèle économique.** Racheter des PME artisanales rentables sans successeur, dans des secteurs jugés « peu attractifs » et donc moins chers. Créer de la valeur par la gestion, la mutualisation et la transformation des concurrents en partenaires.
+
+**Financement.** Le détail n'est pas accessible en texte. Le chapitre « Combien ça coûte une entreprise de BTP ? » et la mention de l'earn-out indiquent un montage classique : holding, dette d'acquisition, complément de prix. Repère de place : les critères bancaires CRA (dette au plus égale à 70 % du prix, sur 7 ans) sont détaillés par la mission 1.
+
+**Difficultés** : croissance trop rapide, direction d'équipes de métiers manuels « sans savoir faire ».
+
+**Limites.** Récit de réussite, sans les échecs éventuels. Il a fallu 12 ans pour constituer le groupe.
+
+**Application au projet.**
+1. **Reprendre une PME de la filière patrimoine ou équestre** pour bâtir revenus, compétences et réseau avant l'achat du château. Exemples : couverture, charpente, menuiserie de restauration, sellerie, transport de chevaux.
+2. Une entreprise de couverture ou de charpente donne un **accès privilégié aux artisans du bâti ancien**. Elle doit facturer le château **au prix de marché**, sinon il y a risque d'abus de biens sociaux. Point d'analyse AV4, non évoqué par l'invité.
+3. **Rythme réaliste** : 1 PME en 2014, 7 en 2026. La mission 1 a montré qu'une seule reprise en LBO libère peu de cash avant 2031.
+
+### Passages importants
+
+Chapitres YouTube (minutage de la vidéo) :
+- 17:59 — Combien ça coûte une entreprise de BTP ? : https://www.youtube.com/watch?v=ncsFmxXWiRs&t=1079s
+- 33:51 — Le premier levier de la rentabilité pour les petites entreprises : https://www.youtube.com/watch?v=ncsFmxXWiRs&t=2031s
+- 53:35 — Les 3 seuls critères qui comptent pour diriger une entreprise : https://www.youtube.com/watch?v=ncsFmxXWiRs&t=3215s
+- 1:01:47 — Sa meilleure stratégie pour reprendre une entreprise : https://www.youtube.com/watch?v=ncsFmxXWiRs&t=3707s
+- 1:13:04 — Transformer ses concurrents en partenaires long terme : https://www.youtube.com/watch?v=ncsFmxXWiRs&t=4384s
+- 1:46:10 — Le danger d'une croissance trop rapide : https://www.youtube.com/watch?v=ncsFmxXWiRs&t=6370s
+- 1:52:35 — Comment vérifier la valeur d'une boîte sur le terrain : https://www.youtube.com/watch?v=ncsFmxXWiRs&t=6755s
+- 2:18:29 — Le conseil de Joseph pour les repreneurs d'entreprise : https://www.youtube.com/watch?v=ncsFmxXWiRs&t=8309s
+
+Équivalences sur la version audio (timeline de l'auteur) : 00:19:02, 00:34:54, 01:02:50, 01:53:01, 02:18:55.
+
+**Note : 85/100.**
+
+---
+
+## F09 — Bpifrance : financer une reprise (webinaire « Comment financer un projet de reprise d'entreprise ? » et Big 2026 « Reprendre une entreprise, l'autre voie pour entreprendre »)
+
+### Identification
+
+- **Réf.** : AV4-027 et AV4-030 (AV4-028, Big 2025 avec Pascal Legros, seulement repéré).
+- **Intervenants** : intervenants Bpifrance et Réseau Entreprendre (AV4-027, noms non lus) ; Gabriel Strauss (entrepreneur et conseiller) et Fabrice Lundy (AV4-030).
+- **Chaîne** : Bpifrance (YouTube).
+- **Date** : AV4-027 inconnue (YouTube : « il y a 4 ans ») ; AV4-030 : environ le 08/10/2026 (« il y a 6 jours »).
+- **Durée** : 1:15:55 et 31:11.
+- **URL** : https://www.youtube.com/watch?v=g0soqDEdWRw et https://www.youtube.com/watch?v=NHqYBl21GJw
+- **Niveau d'accès** : chapitres. Pour g0soqDEdWRw, le « Sommaire » horodaté figure dans la description, l'origine auteur est donc confirmée. AV4-027 compte 165 000 vues.
+
+### Analyse
+
+**Contenu.**
+- AV4-027 suit le parcours de financement : business plan, renforcement de l'apport personnel (prêts d'honneur, Réseau Entreprendre), choix des prêteurs, financements et garanties Bpifrance.
+- AV4-030 couvre les profils de repreneurs (cadres, jeunes, femmes), le « marché caché », la façon de convaincre le banquier et de préparer son apport, la « séduction du cédant » et la négociation du prix.
+
+**Faits vérifiés sur les garanties** (Bpifrance Création, page lue, S-AV4-35) :
+- garantie de Bpifrance sur les reprises **jusqu'à 70 % en cas d'intervention conjointe de la Région** ;
+- opérations éligibles : **achat de titres de sociétés, achat de fonds de commerce, caution bancaire d'un crédit-vendeur** ;
+- autres garants : SIAGI, SOCAMA, fonds de France Active (garantie Égalité femmes à 80 %) ;
+- **avertissement de Bpifrance** : la garantie « ne réduit pas votre propre risque ». Elle couvre la banque, qui se tourne d'abord vers la caution personnelle de l'emprunteur.
+
+Signal à suivre : la fiche « Garantie transmission » du catalogue bpifrance.fr affiche « Désolé, cette offre n'est plus disponible » au 14/10/2026 (S-AV4-36). Le produit est à reconfirmer auprès d'un chargé d'affaires.
+
+**Limites.**
+- Webinaire ancien pour AV4-027 (barèmes de 2022 environ).
+- Aucun texte des interventions.
+- Prêts d'honneur, quotités et critères bancaires (dette au plus égale à 70 % du prix sur 7 ans) déjà vérifiés par la mission 1 : ne pas dupliquer.
+
+**Application au projet.**
+- Si le château est acheté **via une société d'exploitation existante** (rachat des titres d'une SAS propriétaire-exploitante d'un domaine événementiel ou équestre), les outils de la **reprise d'entreprise** s'appliquent : garantie Bpifrance, prêts d'honneur, crédit-vendeur garanti.
+- Un **pur achat immobilier** (SCI) n'y donne en principe pas accès. Point non tranché par la mission 1 (« INCONNU »).
+- Le montage « reprise de titres d'un exploitant » est donc à privilégier (idée I4).
+
+### Passages importants
+
+Sommaire de l'auteur (AV4-027) :
+- 6:23 — Le business plan de reprise : https://www.youtube.com/watch?v=g0soqDEdWRw&t=383s
+- 11:14 — Comment renforcer son apport personnel ? : https://www.youtube.com/watch?v=g0soqDEdWRw&t=674s
+- 26:09 — L'offre d'accompagnement de Réseau Entreprendre : https://www.youtube.com/watch?v=g0soqDEdWRw&t=1569s
+- 43:10 — Vers qui vous tourner pour emprunter de l'argent ? : https://www.youtube.com/watch?v=g0soqDEdWRw&t=2590s
+- 53:40 — Les solutions de financement et de garantie de Bpifrance : https://www.youtube.com/watch?v=g0soqDEdWRw&t=3220s
+
+Chapitres YouTube (AV4-030) :
+- 10:22 — Où trouver les entreprises ? Le marché caché : https://www.youtube.com/watch?v=NHqYBl21GJw&t=622s
+- 11:55 — Convaincre le banquier et préparer son apport : https://www.youtube.com/watch?v=NHqYBl21GJw&t=715s
+- 13:00 — La séduction du cédant : https://www.youtube.com/watch?v=NHqYBl21GJw&t=780s
+- 29:48 — Négocier le prix : https://www.youtube.com/watch?v=NHqYBl21GJw&t=1788s
+
+**Note : 75/100.**
+
+---
+
+## F10 — Search funds : corpus FR et EN, et chiffres de l'étude Stanford
+
+### Identification
+
+- **Réf.** : AV4-029, 032, 033, 034, 035, 118, 132, 133, 134.
+
+| Réf. | Contenu | Date | Durée | Accès |
+|---|---|---|---|---|
+| AV4-029 | Bpifrance Big 2025, « Search fund : premier bilan… » (Ariane Olive, Spark Avocats) | inconnue (« il y a 1 an ») | 46:10 | REPÉRÉ |
+| AV4-032 | Investisseurs 4.0 #207 (Ariane Olive) | inconnue | 1:19:28 | REPÉRÉ |
+| AV4-033 | Pierre-Emmanuel Drochon | inconnue | 50:19 | chapitres |
+| AV4-034 | Trophée CRA 2024, David Lescure | inconnue | 5:07 | REPÉRÉ |
+| AV4-035 | Newfund, fonds minoritaire (Marjolaine Catil) | inconnue | 1:27:55 | chapitres |
+| AV4-132 | Think Like an Owner EP.232 (Sara Heston, étude Stanford 2024) | 16/07/2024 | 38:33 | notes et topics horodatés |
+| AV4-133 | EP.231 (Ruback et Yudkoff, Harvard) | 09/07/2024 | 49:55 | notes et topics horodatés |
+| AV4-134 | Stanford GSB, panel « Search Funds » | inconnue (« il y a 17 ans ») | 1:14:17 | chapitres |
+| AV4-118 | Acquiring Minds, Jenna Whigham | inconnue | 1:22:14 | chapitres |
+
+- **URL** : voir le catalogue.
+- **Niveau d'accès** : mixte (tableau ci-dessus).
+
+### Analyse
+
+**Définition** (Stanford GSB, page lue). Un search fund est un véhicule d'investissement, conçu en 1984. Des investisseurs y financent la recherche, puis le rachat et le développement d'une entreprise non cotée par un entrepreneur. Le modèle offre à des entrepreneurs « relativement inexpérimentés » et « aux ressources limitées » un accès rapide à la direction d'une entreprise dont ils détiennent une part significative.
+
+**Chiffres VÉRIFIÉS** (étude Stanford 2026, page Insights lue, S-AV4-33). Périmètre : États-Unis et Canada, données au 31/12/2025.
+
+| Indicateur | Valeur |
+|---|---|
+| Taux d'acquisition agrégé depuis 1996 | **58 %** |
+| Fonds lancés en 2021-2024 ayant acquis | environ la moitié |
+| Délai d'acquisition | environ **20 mois** |
+| Prix médian d'acquisition (2024-25) | **16 M$** |
+| TRI agrégé | **33,9 %** |
+| Multiple | **4,75x** |
+| PME (comparaison au marché coté) | 2,88 |
+
+Il s'agit de rendements **agrégés pour les investisseurs**, tirés par les meilleurs cas. 42 % des searchers n'acquièrent rien.
+
+**Adaptation française.**
+- Le Big 2025 fait un « premier bilan d'un modèle en développement » ; l'extrait évoque un futur « France Search Fund » pour structurer les investisseurs.
+- Newfund titre un chapitre « Pourquoi le Search Fund ne colle pas au système français ». Sa thèse alternative : un **fonds minoritaire** aux côtés d'un repreneur majoritaire, sur des « belles endormies », avec roll-up.
+
+**Limites.**
+- Aucun texte des interventions françaises.
+- Les chiffres Stanford concernent des PME de services et de logiciels à environ 16 M$, très loin d'un château.
+
+**Application au projet.**
+- Le search fund classique ne finance **pas un château**, faute d'EBITDA stable et de taille suffisante.
+- La logique est transposable sous deux formes :
+  - **(a)** une « recherche financée » par quelques family offices pour trouver puis racheter un **domaine équestre ou événementiel déjà rentable**. Le porteur reçoit une part de capital liée à la réussite ;
+  - **(b)** le modèle « fonds minoritaire et repreneur majoritaire » (Newfund), qui protège le contrôle du fondateur.
+- Pour un jeune de 26 ans, le passage par un search fund d'une **PME classique** reste la voie la plus documentée pour devenir dirigeant-actionnaire vite. Le château vient après (idée I11).
+
+### Passages importants
+
+- Drochon, 13:29 — Sourcing, due diligence, stratégie terrain : https://www.youtube.com/watch?v=nVtY98zPGfg&t=809s
+- Drochon, 27:55 — Montage Search Fund : https://www.youtube.com/watch?v=nVtY98zPGfg&t=1675s
+- Newfund, 8:00 — Panorama des structures de financement en equity : https://www.youtube.com/watch?v=g19tFXfNpWc&t=480s
+- Newfund, 18:00 — Pourquoi le Search Fund ne colle pas au système français : https://www.youtube.com/watch?v=g19tFXfNpWc&t=1080s
+- Newfund, 1:12:00 — Roll-up assisté par un fonds minoritaire : https://www.youtube.com/watch?v=g19tFXfNpWc&t=4320s
+- Stanford, 13:28 — Raising a search fund : https://www.youtube.com/watch?v=35rnr9Qcsxc&t=808s
+- Stanford, 53:08 — Watch the seller : https://www.youtube.com/watch?v=35rnr9Qcsxc&t=3188s
+- Whigham, 27:26 — Acquisition price & PE-backed structure : https://www.youtube.com/watch?v=MfJ44K8wjEU&t=1646s
+- Think Like an Owner EP.232 (audio, topics de l'auteur) :
+  - 00:03:13 — principaux enseignements de l'étude ;
+  - 00:04:26 — pourquoi le nombre d'investisseurs a baissé ;
+  - 00:26:24 — cohorte 2017-2020.
+
+**Note : 65/100.**
+
+---
+
+## F11 — Corpus FR « reprendre sans apport / crédit-vendeur » : ce qui tient et ce qui ne tient pas
+
+### Identification
+
+- **Réf.** : AV4-038 à 049, AV4-052 à 054.
+- **Chaînes** : Reprisedentreprise (Pedro Da Fonseca), Reprenariat, Alexandre Barthelemy, David Bonhomme, AH-STRATEGIS, Dougs Compta, Aurélien Schneider, Documentaire Société, Instinct d'entrepreneur, Boring Business.
+- **Dates** : relatives (de 2 mois à 6 ans) sauf AV4-048, publié le 14/10/2026.
+- **Durées** : de 7:18 à 1:14:26.
+- **URL** : voir le catalogue.
+- **Niveau d'accès** : chapitres YouTube (8 contenus) ou REPÉRÉ (les autres).
+
+### Analyse
+
+**Ce que promettent les titres** : « sans apport », « sans cash perso », « sans caution », « 0 € d'apport », « 20-30 k€ suffisent ». Plusieurs chaînes vendent des formations ou du coaching (« Mastermind des repreneurs », guide « rachat SANS APPORT », bootcamp).
+
+**Ce qui a été vérifié.**
+1. **Ordres de grandeur de place** (CRA, page lue, S-AV4-38) :
+   - le crédit-vendeur couvre généralement **30 à 50 % du prix**, sur **1 à 5 ans**, à un taux proche des taux bancaires ;
+   - l'acheteur règle souvent **50 à 70 % au closing** ;
+   - garanties possibles : caution personnelle ou nantissement des titres ; acte notarié ;
+   - exemple du CRA : boulangerie à 200 000 €, 100 000 € comptant et 100 000 € sur 4 ans à 3 %.
+2. **Garantie Bpifrance** : elle peut couvrir la caution bancaire d'un crédit-vendeur (F09).
+3. **Pérennité des reprises** (INSEE, pages lues) : 70 % à 5 ans pour les entreprises reprises, contre 61 % pour l'ensemble des entreprises classiques (Centre-Val de Loire). L'avantage existe, mais il est **sans commune mesure avec les « 85 % vs 40 % »** du webinaire Boring Business.
+4. **Témoignages « sans apport »** : sociétés non nommées, donc non vérifiables (voir le tableau de vérification en tête de fichier).
+
+**Ce qui est utile** :
+- **AH-STRATEGIS** démonte la « technique internet » du « full crédit-vendeur » en trois problèmes (chapitres). C'est le seul contenu du corpus qui prend le contre-pied du marketing.
+- **Dougs** (chapitres) : achat de titres ou de fonds, passif hérité en cas de rachat de titres, fiscalité du vendeur (art. 238 quindecies, « levier caché de la négo »), EBE retraité multiplié par un coefficient, capacité de la cible à rembourser la banque. Exemple : « 1,5 M€ de machines mais 870 k€ finançables ».
+- **Boring Business** : les chapitres listent les aides (Bpifrance, prêts d'honneur, garanties). Les chiffres d'accroche restent à vérifier un par un.
+
+**Limites** : aucun montage chiffré vérifiable dans ce corpus.
+
+**Application au projet.**
+1. **Ne pas croire au rachat 100 % vendeur** : un cédant prudent exige un acompte et des garanties.
+2. La négociation fiscale avec le vendeur est un vrai levier : **abattements et exonérations du cédant** (par exemple le 238 quindecies cité par Dougs pour les entreprises). Pour un château détenu en direct, la fiscalité des plus-values immobilières est différente, à étudier avec un notaire.
+3. Pour le client, le crédit-vendeur n'a de sens qu'adossé à un **apport réel**, à une **dette senior** et à des **quasi-fonds propres** (prêts d'honneur), selon les proportions du CRA.
+
+### Passages importants
+
+- AH-STRATEGIS, 4:06 — Le full crédit-vendeur : la technique internet : https://www.youtube.com/watch?v=X5MyvdIAUzY&t=246s
+- AH-STRATEGIS, 10:46 — Le deuxième problème avec le « full crédit-vendeur » : https://www.youtube.com/watch?v=X5MyvdIAUzY&t=646s
+- AH-STRATEGIS, 13:59 — Le troisième problème : https://www.youtube.com/watch?v=X5MyvdIAUzY&t=839s
+- AH-STRATEGIS, 3:31, 8:59, 12:06 — Leviers financier, juridique et fiscal du LBO : https://www.youtube.com/watch?v=42TEFrVIIfM&t=211s
+- Dougs, 3:50 — Fonds de commerce ou titres : https://www.youtube.com/watch?v=yfCYq2uuM2A&t=230s
+- Dougs, 5:59 — Fiscalité du vendeur (238 quindecies) : https://www.youtube.com/watch?v=yfCYq2uuM2A&t=359s
+- Dougs, 9:14 — EBE retraité et multiple : https://www.youtube.com/watch?v=yfCYq2uuM2A&t=554s
+- Dougs, 11:10 — Ta future boîte pourra-t-elle vraiment rembourser la banque ? : https://www.youtube.com/watch?v=yfCYq2uuM2A&t=670s
+- Dougs, 12:25 — 1,5 M€ de machines mais 870 k€ finançables : https://www.youtube.com/watch?v=yfCYq2uuM2A&t=745s
+- Da Fonseca, 5:05 — Prix et financement (témoignage de Martin) : https://www.youtube.com/watch?v=BJ7fzqV3EpQ&t=305s
+- Boring Business, 8:18 — « Cas réel : racheter une boîte avec 0 € d'apport » (affirmation à vérifier) : https://www.youtube.com/watch?v=gkiorJ_hWi4&t=498s
+- Boring Business, 1:02:16 — Aides disponibles : BPI, prêts d'honneur, garanties : https://www.youtube.com/watch?v=gkiorJ_hWi4&t=3736s
+- Boring Business, 1:04:19 — « 85 % de survie en reprise vs 40 % en création » (contredit par l'INSEE) : https://www.youtube.com/watch?v=gkiorJ_hWi4&t=3859s
+
+**Note : 60/100** (pour le corpus : utile surtout par la vérification négative).
+
+---
+
+## F12 — Racheter des entreprises en difficulté : GDIY #554 (Patrick Sayer), GDIY #296 (Marion Carrette), Trophée CRA SN Alugo
+
+### Identification
+
+| Réf. | Contenu | Date | Durée | Accès |
+|---|---|---|---|---|
+| AV4-068 | GDIY #554, « Patrick Sayer - Président du Tribunal de Commerce de Paris - Comprendre les 70 000 faillites qui tuent la France » | 12/07/2026 | 2:21:38 | timeline de l'auteur (flux RSS) |
+| AV4-057 | GDIY #296, « Marion Carrette - OuiCar & Anny Blatt » | 18/12/2022 | 2:29:54 | timeline de l'auteur (flux RSS) |
+| AV4-036 | Trophée CRA, SN Alugo (YouTube dxU0jl7kiSw) | relative (« il y a 7 ans ») | 4:20 | REPÉRÉ |
+
+### Analyse
+
+**Patrick Sayer** : ancien banquier de Lazard, président du directoire d'Eurazeo pendant 16 ans, puis président du tribunal de commerce de Paris depuis 2023. Selon la description :
+- environ **70 000 procédures collectives par an**, en hausse en 2026 (DÉCLARATIF) ;
+- l'« arsenal juridique » français (sauvegarde accélérée, cessation des paiements et délai de 45 jours) est mal utilisé ;
+- deux chapitres clés : « Les techniques pour (bien) racheter une entreprise en difficulté » et « L'importance de savoir déposer le bilan à temps » ;
+- l'ouverture « On a inventé l'outil qui a permis à B. Arnault de prendre le contrôle de LVMH » renvoie au rôle de Lazard (voir F13).
+
+**Marion Carrette** : reprise de la marque de tricot historique **Anny Blatt en liquidation judiciaire**, « avant que cette marque historique ne disparaisse ». L'épisode traite des erreurs à ne pas commettre en reprise et du décalage entre le web et un produit historique.
+
+**SN Alugo** : société reprise « à la barre du tribunal », dont le repreneur a été primé par le CRA en 2019, cinq ans après la reprise selon l'extrait.
+
+**Limites** : aucun prix ni montage chiffré accessible.
+
+**Application au projet.** Les **procédures collectives** sont une source d'actifs décotés : châteaux-hôtels, domaines événementiels, centres équestres ou haras en redressement ou en liquidation. Trois voies :
+- l'offre de reprise dans un plan de cession ;
+- l'adjudication des immeubles en liquidation ;
+- les ventes de l'État (déjà citées par Nabais).
+
+Le revers : délais très courts, actifs dégradés, absence de garantie de passif, conditions sociales imposées.
+
+Il faut se faire connaître des **administrateurs et mandataires judiciaires** et des chambres des commissaires de justice de la région cible. Les règles précises (articles du Code de commerce, conditions de l'offre) **n'ont pas été vérifiées** par AV4 et sont à faire valider par un avocat en procédures collectives.
+
+### Passages importants (timelines audio des auteurs)
+
+- #554, 00:00:00 — « On a inventé l'outil qui a permis à B. Arnault de prendre le contrôle de LVMH »
+- #554, 00:47:53 — Pourquoi les entreprises font faillite
+- #554, 01:56:04 — Les techniques pour (bien) racheter une entreprise en difficulté
+- #554, 02:06:44 — L'importance de savoir déposer le bilan à temps
+- #296, 00:17:32 — Rachat d'Anny Blatt
+- #296, 00:59:25 — Lancer en plein confinement
+
+**Note : 65/100.**
