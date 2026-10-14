@@ -179,7 +179,7 @@ def comparaison_modeles():
         out[f"C_ancrage_{scen}"] = {"contribution_brute_activites": round(PC["A"] + PC["B"], -3),
                                     "k50": k(PC, 0.50), "k95": k(PC, 0.05)}
         # D — leviers vérifiés (−7,5 % du besoin), sans avantage MH
-        PD = mc.parametres_solution(scen, div=0, div_annees=0, reserve0=r0, mult_besoin=0.925, mh_actif=0)
+        PD = mc.parametres_solution(scen, div=0, div_annees=0, reserve0=r0 * 0.925, mult_besoin=0.925, mh_actif=0)
         out[f"D_leviers_verifies_{scen}"] = {"k50": k(PD, 0.50), "k95": k(PD, 0.05)}
         for cle in [c for c in out if c.endswith(scen)]:
             print(cle, out[cle])
