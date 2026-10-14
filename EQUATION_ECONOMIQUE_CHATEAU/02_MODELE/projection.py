@@ -1,14 +1,16 @@
 """Projection sur 20 ans (euros constants 2026) et stress tests.
 
 Les feuilles « Proj_* » partagent la même logique, écrite une seule fois ci-dessous :
-- besoin du domaine : budget central du scénario, avec des dérives réelles (salaires, travaux, énergie) ;
+- besoin du domaine : budget central du scénario, avec des dérives réelles (salaires, travaux, énergie, assurances) ;
 - gros entretien : provision annuelle versée dans un fonds dédié, dépensé par campagnes tous les
   `campagne_periode` ans (travaux réels par à-coups, pas lissés) ;
 - activités sur place : contributions des moteurs retenus (feuille Moteurs, cas central), avec montée
   en charge et multiplicateurs de stress par classe (A contractuel, B récurrent, C occasionnel) ;
 - moteur extérieur : dividendes nets d'une entreprise pendant une période de transition, puis dotation
-  financière avec une règle de dépense (retrait plafonné à `dot_taux_net` × capital de l'année précédente) ;
-- réserve de trésorerie : absorbe les écarts ; les excédents alimentent la dotation ;
+  financière avec une règle de dépense lissée (plafond = `lissage_depense` × plafond précédent
+  + (1 − `lissage_depense`) × `dot_taux_net` × capital de l'année précédente) ;
+- réserve de trésorerie : absorbe les écarts, puis est reconstituée jusqu'à une cible indexée sur les charges ;
+  les excédents alimentent la dotation ; une réserve négative est un échec ;
 - options : dette d'acquisition (annuité nominale, donc décroissante en euros constants), avantage fiscal MH.
 
 Chaque test de résistance a sa propre feuille, avec ses paramètres `st_<test>_*` nommés.

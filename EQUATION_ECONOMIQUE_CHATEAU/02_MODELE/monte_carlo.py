@@ -5,16 +5,19 @@ verifier_jumeau). Avec `chocs=True`, elle tire au sort, chaque année et pour ch
 
 1. Crises macroéconomiques : probabilité annuelle `p_crise`, 1/12 par défaut (HYPOTHÈSE : deux crises
    majeures, 2008 et 2020, en environ 25 ans). Impacts identiques à la projection : classe C −80 %,
-   B −15 %, A −5 %, dotation −25 % et dividendes −50 % l'année de crise ; reprise partielle l'année suivante.
-2. Rendement de la dotation : loi normale (moyenne = rendement réel net, écart-type `sigma_dot`).
+   B −15 %, A −5 %, rendement de la dotation −25 points et dividendes −50 % l'année de crise ; reprise partielle
+   l'année suivante.
+2. Rendement de la dotation : loi normale d'écart-type `sigma_dot`, dont la moyenne est relevée pour que le
+   rendement réel annualisé de long terme, crises comprises, égale le rendement réel net (moyenne géométrique).
 3. Bruit propre aux activités : lognormal de moyenne 1 (σ = 5 % pour A, 10 % pour B, 35 % pour C).
 4. Sinistres ou découvertes non assurés : processus de Poisson (λ par an), montant lognormal de médiane
-   égale à une année de provision de gros entretien.
+   égale à une année de provision de gros entretien, payés en plus du fonds de travaux (V2R M1).
 5. Dépassement des campagnes de travaux : lognormal de médiane 1 (σ = 20 %).
 6. Prix de l'énergie : choc lognormal annuel (σ = 20 %).
 7. Dérive réelle des salaires : tirée une fois par trajectoire, N(g_salaires ; 0,4 point).
-8. Défaillance de l'entreprise extérieure : probabilité annuelle `p_defaillance_ent`, 3,5 % par défaut,
-   soit environ 1 sur 5 en 6 ans [R8-36]. Les dividendes cessent alors définitivement.
+8. Défaillance des entreprises de la holding (`ent_n` entreprises) : probabilité annuelle `p_defaillance_ent`
+   par entreprise, 3,5 % par défaut, soit environ 1 sur 5 en 6 ans [R8-36]. Les dividendes baissent en
+   proportion des entreprises disparues, définitivement.
 """
 from __future__ import annotations
 
