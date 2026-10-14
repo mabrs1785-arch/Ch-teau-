@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Cellule audiovisuelle Château</title>
+<style>
+/* Mise en page : console de recherche — barre d'onglets fixe, panneau de filtres, liste de fiches ; fonctionne hors ligne */
+:root{
+  --bg:#f3f4ef; --surface:#ffffff; --fg:#1c2420; --muted:#5d6861; --line:#d7ddd3;
+  --accent:#1f4d3a; --accent-fg:#f2f5ef; --brass:#86651f; --soft:#e4ece6;
+  --ok:#2e6a3e; --ok-bg:#e1efe3; --mid:#7a5a06; --mid-bg:#f5ebd2; --low:#7b3131; --low-bg:#f4e2df; --none:#59626d; --none-bg:#e7eaee;
+  --display:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif;
+  --body:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  --mono:ui-monospace,"SFMono-Regular",Menlo,Consolas,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#111513; --surface:#191f1c; --fg:#e5eae5; --muted:#9ba69f; --line:#2b342f;
+  --accent:#86c4a2; --accent-fg:#0f1512; --brass:#d3b15f; --soft:#1e2b25;
+  --ok:#93d3a2; --ok-bg:#1c3123; --mid:#e7c171; --mid-bg:#382d14; --low:#f0a198; --low-bg:#3a1d1b; --none:#aeb6c0; --none-bg:#262c33;
+  color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#111513; --surface:#191f1c; --fg:#e5eae5; --muted:#9ba69f; --line:#2b342f;
+  --accent:#86c4a2; --accent-fg:#0f1512; --brass:#d3b15f; --soft:#1e2b25;
+  --ok:#93d3a2; --ok-bg:#1c3123; --mid:#e7c171; --mid-bg:#382d14; --low:#f0a198; --low-bg:#3a1d1b; --none:#aeb6c0; --none-bg:#262c33;
+  color-scheme:dark}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{background:var(--bg);color:var(--fg);font-family:var(--body);font-size:15px;line-height:1.55}
+.wrap{max-width:1180px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+header.top{background:var(--accent);color:var(--accent-fg)}
+header.top .wrap{padding-block:22px 14px;display:grid;gap:6px}
+header.top h1{font-family:var(--display);font-weight:600;font-size:clamp(26px,4vw,36px);margin:0;line-height:1.1}
+header.top p{margin:0;opacity:.9;max-width:80ch}
+nav.tabs{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--surface);border-bottom:1px solid var(--line)}
+nav.tabs .wrap{display:flex;gap:4px;overflow-x:auto;padding-block:6px}
+nav.tabs button{font:inherit;border:0;background:transparent;color:var(--muted);padding:8px 12px;border-radius:6px;cursor:pointer;white-space:nowrap}
+nav.tabs button[aria-selected="true"]{background:var(--soft);color:var(--fg);font-weight:600}
+nav.tabs button:focus-visible,button:focus-visible,select:focus-visible,input:focus-visible,a:focus-visible{outline:2px solid var(--brass);outline-offset:2px}
+main .wrap{padding-block:20px 48px}
+section[hidden]{display:none!important}
+h2{font-family:var(--display);font-weight:600;font-size:26px;margin:0 0 12px;color:var(--accent)}
+h3,h4,h5{margin:18px 0 6px}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:10px;margin-bottom:18px}
+.kpi{background:var(--surface);border:1px solid var(--line);padding:14px;display:grid;gap:2px}
+.kpi .n{font-family:var(--display);font-size:32px;font-weight:700;color:var(--accent);font-variant-numeric:tabular-nums;line-height:1.1}
+.kpi .l{font-size:13px;color:var(--muted)}
+.grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:16px}
+.panel{background:var(--surface);border:1px solid var(--line);padding:16px;min-width:0}
+.bars{display:grid;gap:6px}
+.bar{display:grid;grid-template-columns:minmax(120px,40%) 1fr auto;gap:8px;align-items:center;font-size:13px}
+.bar>span:first-child{min-width:0;overflow-wrap:anywhere}
+.bar .track{background:var(--soft);height:12px;border-radius:2px;overflow:hidden}
+.bar .fill{height:100%;background:var(--accent)}
+.bar .v{font-variant-numeric:tabular-nums;color:var(--muted);min-width:3ch;text-align:right}
+.note{background:var(--soft);padding:12px 14px;border-left:3px solid var(--brass);margin:12px 0;font-size:14px}
+.filters{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:10px;background:var(--surface);border:1px solid var(--line);padding:12px;margin-bottom:12px}
+.filters label{display:grid;gap:3px;font-size:12px;color:var(--muted)}
+.filters input,.filters select{font:inherit;color:var(--fg);background:var(--bg);border:1px solid var(--line);border-radius:6px;padding:7px 8px;min-width:0}
+.count{font-size:13px;color:var(--muted);margin:6px 0 10px}
+.list{display:grid;gap:8px}
+.item{background:var(--surface);border:1px solid var(--line);padding:12px 14px;display:grid;gap:4px;min-width:0}
+.item .t{font-weight:600}
+.item .t a{color:var(--fg);text-decoration:none}
+.item .t a:hover{text-decoration:underline}
+.meta{display:flex;flex-wrap:wrap;gap:6px 12px;font-size:12.5px;color:var(--muted)}
+.pill{display:inline-block;font-size:11.5px;font-weight:600;padding:1px 7px;border-radius:3px;white-space:nowrap}
+.s-full{color:var(--ok);background:var(--ok-bg)} .s-part{color:var(--mid);background:var(--mid-bg)} .s-desc{color:var(--accent);background:var(--soft)} .s-rep{color:var(--none);background:var(--none-bg)} .s-sec{color:var(--low);background:var(--low-bg)}
+.score{font-family:var(--mono);font-size:12px;font-variant-numeric:tabular-nums}
+.res{font-size:14px;overflow-wrap:anywhere}
+.docsel{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:12px}
+.docsel button{font:inherit;font-size:13px;border:1px solid var(--line);background:var(--surface);color:var(--fg);padding:6px 10px;border-radius:6px;cursor:pointer}
+.docsel button[aria-pressed="true"]{background:var(--accent);color:var(--accent-fg);border-color:var(--accent)}
+.doc{background:var(--surface);border:1px solid var(--line);padding:6px 18px 18px;min-width:0;overflow-wrap:anywhere}
+.doc p,.doc li{max-width:90ch}
+.tw{overflow-x:auto;margin:10px 0}
+table{border-collapse:collapse;width:100%;font-size:13.5px}
+th,td{border-bottom:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top}
+th{font-size:12px;color:var(--muted);font-weight:600}
+code{font-family:var(--mono);font-size:12.5px;background:var(--soft);padding:0 3px;border-radius:3px}
+blockquote{margin:8px 0;padding:6px 12px;border-left:3px solid var(--line);color:var(--muted)}
+a{color:var(--accent)}
+.pass{display:grid;grid-template-columns:auto 1fr;gap:4px 10px;font-size:14px}
+.pass .ts{font-family:var(--mono);color:var(--brass);white-space:nowrap}
+footer .wrap{padding-block:16px 32px;color:var(--muted);font-size:13px;border-top:1px solid var(--line)}
+@media (prefers-reduced-motion: reduce){*{scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<header class="top"><div class="wrap">
+  <h1>Cellule audiovisuelle — Château équestre</h1>
+  <p>Podcasts, vidéos, interviews et documentaires étudiés pour le projet. Aucun contenu n'a été regardé ni écouté : chaque fiche indique ce qui a réellement été lu (transcription publiée, description, métadonnées ou simple repérage).</p>
+</div></header>
+<nav class="tabs" aria-label="Sections"><div class="wrap" role="tablist" id="tabs"></div></nav>
+<main><div class="wrap">
+  <section id="t-bord"></section>
+  <section id="t-contenus" hidden></section>
+  <section id="t-passages" hidden></section>
+  <section id="t-idees" hidden></section>
+  <section id="t-cas" hidden></section>
+  <section id="t-analyses" hidden></section>
+  <section id="t-recos" hidden></section>
+  <section id="t-sources" hidden></section>
+</div></main>
+<footer><div class="wrap">Généré par build_interface.py à partir des fichiers du dossier PODCASTS_CHATEAU_24H. Les affirmations des intervenants ne sont pas des faits vérifiés, sauf mention contraire (voir l'onglet Recommandations et la vérification AV8).</div></footer>
+<script>
+const DATA = /*__DATA__*/null;
+const AGENTS = {AV1:"Châteaux français et patrimoine",AV2:"Domaines britanniques et irlandais, haras",AV3:"Business du cheval",AV4:"Acquisition et financement",AV5:"Modèles premium",AV6:"The Family",AV7:"Idées originales et échecs",AV8:"Vérification des preuves"};
+const TABS = [["t-bord","Tableau de bord"],["t-contenus","Contenus"],["t-passages","Passages horodatés"],["t-idees","Idées"],["t-cas","Cas réels"],["t-analyses","Fiches d'analyse"],["t-recos","Recommandations"],["t-sources","Sources"]];
+const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const num = v => { const n = parseFloat(String(v).replace(",", ".")); return isNaN(n) ? 0 : n; };
+function statutClass(s){ s = (s||"").toUpperCase();
+  if (s.includes("COMPL")) return "s-full"; if (s.includes("PARTIEL")) return "s-part";
+  if (s.includes("DESCRIPTION") || s.includes("MÉTADONN") || s.includes("TEXTE LU")) return "s-desc";
+  if (s.includes("SECONDAIRE")) return "s-sec"; return "s-rep"; }
+function langue(d){ const l=(d.langue||"").toLowerCase(); if(!l) return "inconnue"; if(/[\/+]/.test(l.split(" ")[0])) return "multilingue"; const m=l.match(/^[a-z]{2}/); return m?m[0]:"inconnue"; }
+function agentsOf(a){ return String(a||"").split("+"); }
+
+// ---------- onglets
+const tabsEl = document.getElementById("tabs");
+TABS.forEach(([id,lab],i)=>{ const b=document.createElement("button"); b.textContent=lab; b.setAttribute("role","tab"); b.id="b-"+id;
+  b.setAttribute("aria-selected", i===0 ? "true":"false"); b.onclick=()=>show(id); tabsEl.appendChild(b); });
+function show(id){ TABS.forEach(([t])=>{ document.getElementById(t).hidden = t!==id; document.getElementById("b-"+t).setAttribute("aria-selected", t===id?"true":"false"); });
+  try{ localStorage.setItem("onglet", id); }catch(e){} }
+
+// ---------- tableau de bord
+function bars(counter, total){ const max = Math.max(1,...Object.values(counter));
+  return '<div class="bars">'+Object.entries(counter).sort((a,b)=>b[1]-a[1]).map(([k,v])=>
+    `<div class="bar"><span>${esc(k)}</span><span class="track"><span class="fill" style="display:block;width:${(v/max*100).toFixed(1)}%"></span></span><span class="v">${v}</span></div>`).join("")+'</div>'; }
+function renderBord(){
+  const c = DATA.catalogue, by = (f)=>c.reduce((m,d)=>{ const k=f(d); m[k]=(m[k]||0)+1; return m; },{});
+  const tFull = c.filter(d=>/COMPL/.test((d.statut_normalise||"").toUpperCase()) && /TRANSCRIPTION/.test((d.statut_normalise||"").toUpperCase())).length;
+  const tPart = c.filter(d=>/PARTIEL/.test((d.statut_normalise||"").toUpperCase())).length;
+  const desc = c.filter(d=>/DESCRIPTION|MÉTADONN|TEXTE LU/.test((d.statut_normalise||"").toUpperCase())).length;
+  const rep = c.filter(d=>/REPÉRÉ/.test((d.statut_normalise||"").toUpperCase())).length;
+  const top = [...c].sort((a,b)=>num(b.pertinence_0_100)-num(a.pertinence_0_100)).slice(0,15);
+  const parAgent = {}; c.forEach(d=>agentsOf(d.agent).forEach(a=>{ const k=a+" · "+(AGENTS[a]||""); parAgent[k]=(parAgent[k]||0)+1; }));
+  document.getElementById("t-bord").innerHTML = `
+  <h2>Tableau de bord</h2>
+  <div class="kpis">
+    <div class="kpi"><span class="n">${c.length}</span><span class="l">contenus identifiés (dédoublonnés)</span></div>
+    <div class="kpi"><span class="n">${tFull}</span><span class="l">transcriptions publiées lues en entier</span></div>
+    <div class="kpi"><span class="n">${tPart}</span><span class="l">transcriptions lues en partie</span></div>
+    <div class="kpi"><span class="n">${desc}</span><span class="l">descriptions, chapitres ou métadonnées lus</span></div>
+    <div class="kpi"><span class="n">${rep}</span><span class="l">seulement repérés (dont pages YouTube bloquées)</span></div>
+    <div class="kpi"><span class="n">${DATA.passages.length}</span><span class="l">passages horodatés relevés</span></div>
+  </div>
+  <div class="note">Lecture honnête : <strong>aucune vidéo n'a été regardée et aucun audio écouté</strong> (pas d'outil de transcription installé, aucun téléchargement de média). Les horodatages viennent uniquement des transcriptions et chapitres publiés par les auteurs. YouTube a bloqué l'accès (erreur 429) pendant la mission : beaucoup de vidéos restent au statut « repéré ».</div>
+  <div class="grid2">
+    <div class="panel"><h3>Par statut de traitement</h3>${bars(by(d=>d.statut_normalise||"inconnu"))}</div>
+    <div class="panel"><h3>Par agent</h3>${bars(parAgent)}</div>
+    <div class="panel"><h3>Par type</h3>${bars(by(d=>d.famille||"autre"))}</div>
+    <div class="panel"><h3>Par langue</h3>${bars(by(d=>langue(d)))}</div>
+  </div>
+  <h3 style="margin-top:22px">Les 15 contenus les plus pertinents</h3>
+  <div class="list">${top.map(item).join("")}</div>`;
+}
+function item(d){ return `<div class="item">
+  <div class="t">${d.url ? `<a href="${esc(d.url)}" target="_blank" rel="noopener">${esc(d.titre)}</a>` : esc(d.titre)}</div>
+  <div class="meta"><span class="pill ${statutClass(d.statut_normalise)}">${esc(d.statut_normalise)}</span>
+    <span class="score">${esc(d.pertinence_0_100)}/100</span><span>${esc(d.intervenant)}</span><span>${esc(d.chaine_ou_emission)}</span>
+    <span>${esc(d.date)}</span><span>${esc(d.duree)}</span><span>${esc(d.famille)} · ${esc(d.langue)}</span><span>${esc(d.agent)}</span></div>
+  ${d.resume_court ? `<div class="res">${esc(d.resume_court)}</div>` : ""}
+  ${d.sujets ? `<div class="meta">Sujets : ${esc(d.sujets)}</div>` : ""}</div>`; }
+
+// ---------- contenus
+function renderContenus(){
+  const c = DATA.catalogue;
+  const sujets = {}; c.forEach(d=>String(d.sujets||"").split(/[,;\/|]/).map(s=>s.trim().toLowerCase()).filter(s=>s && s.length<40).forEach(s=>sujets[s]=(sujets[s]||0)+1));
+  const sujetsTop = Object.entries(sujets).sort((a,b)=>b[1]-a[1]).slice(0,80).map(x=>x[0]).sort();
+  const opts = (arr)=>arr.map(v=>`<option value="${esc(v)}">${esc(v)}</option>`).join("");
+  const statuts = [...new Set(c.map(d=>d.statut_normalise))].sort();
+  const langues = [...new Set(c.map(langue))].sort();
+  const el = document.getElementById("t-contenus");
+  el.innerHTML = `<h2>Contenus</h2>
+  <div class="filters">
+    <label>Recherche<input id="f-q" type="search" placeholder="titre, intervenant, résumé…"></label>
+    <label>Équipe / agent<select id="f-a"><option value="">Tous</option>${Object.entries(AGENTS).map(([k,v])=>`<option value="${k}">${k} · ${esc(v)}</option>`).join("")}</select></label>
+    <label>Sujet<select id="f-s"><option value="">Tous</option>${opts(sujetsTop)}</select></label>
+    <label>Type<select id="f-f"><option value="">Tous</option>${opts(["vidéo","podcast","autre"])}</select></label>
+    <label>Statut<select id="f-st"><option value="">Tous</option>${opts(statuts)}</select></label>
+    <label>Langue<select id="f-l"><option value="">Toutes</option>${opts(langues)}</select></label>
+    <label>Pertinence minimale<input id="f-p" type="number" min="0" max="100" step="5" value="0"></label>
+    <label>Tri<select id="f-o"><option value="p">Pertinence</option><option value="d">Date (récent d'abord)</option><option value="t">Titre</option></select></label>
+  </div><div class="count" id="f-n"></div><div class="list" id="f-list"></div>`;
+  const ids = ["f-q","f-a","f-s","f-f","f-st","f-l","f-p","f-o"];
+  ids.forEach(i=>document.getElementById(i).addEventListener("input", apply));
+  apply();
+  function apply(){
+    const q=document.getElementById("f-q").value.toLowerCase(), a=document.getElementById("f-a").value, s=document.getElementById("f-s").value,
+      f=document.getElementById("f-f").value, st=document.getElementById("f-st").value, l=document.getElementById("f-l").value,
+      p=num(document.getElementById("f-p").value), o=document.getElementById("f-o").value;
+    let r = c.filter(d=>(!a||agentsOf(d.agent).includes(a)) && (!f||d.famille===f) && (!st||d.statut_normalise===st) && (!l||langue(d)===l)
+      && num(d.pertinence_0_100)>=p && (!s||String(d.sujets||"").toLowerCase().includes(s))
+      && (!q||[d.titre,d.intervenant,d.chaine_ou_emission,d.resume_court,d.sujets].join(" ").toLowerCase().includes(q)));
+    r.sort(o==="p"?(x,y)=>num(y.pertinence_0_100)-num(x.pertinence_0_100):o==="d"?(x,y)=>String(y.date).localeCompare(String(x.date)):(x,y)=>String(x.titre).localeCompare(String(y.titre),"fr"));
+    document.getElementById("f-n").textContent = r.length+" contenu(s) affiché(s) sur "+c.length;
+    document.getElementById("f-list").innerHTML = r.slice(0,400).map(item).join("") + (r.length>400?'<div class="count">Affichage limité aux 400 premiers résultats : affinez les filtres.</div>':"");
+  }
+}
+
+// ---------- passages horodatés
+function renderPassages(){
+  const el = document.getElementById("t-passages"), P = DATA.passages;
+  el.innerHTML = `<h2>Passages horodatés</h2>
+  <div class="note">Horodatages relevés uniquement dans des transcriptions ou des chapitres publiés par les auteurs, puis paraphrasés par les agents. Les liens horodatés YouTube n'ont pas pu être vérifiés (accès bloqué).</div>
+  <div class="filters"><label>Recherche<input id="p-q" type="search" placeholder="mot-clé"></label>
+  <label>Agent<select id="p-a"><option value="">Tous</option>${Object.keys(AGENTS).map(k=>`<option>${k}</option>`).join("")}</select></label></div>
+  <div class="count" id="p-n"></div><div id="p-list"></div>`;
+  const go=()=>{ const q=document.getElementById("p-q").value.toLowerCase(), a=document.getElementById("p-a").value;
+    const r=P.filter(x=>(!a||x.agent===a)&&(!q||(x.contenu+" "+x.passage).toLowerCase().includes(q)));
+    const g={}; r.forEach(x=>{ (g[x.agent+" — "+x.contenu]=g[x.agent+" — "+x.contenu]||[]).push(x.passage); });
+    document.getElementById("p-n").textContent=r.length+" passage(s)";
+    document.getElementById("p-list").innerHTML=Object.entries(g).map(([k,v])=>`<div class="item"><div class="t">${esc(k)}</div><div class="res">${v.map(p=>{
+      const m=p.match(/\d{1,2}:\d{2}(?::\d{2})?/); return `<div class="pass"><span class="ts">${m?esc(m[0]):""}</span><span>${esc(p)}</span></div>`; }).join("")}</div></div>`).join("");
+  };
+  ["p-q","p-a"].forEach(i=>document.getElementById(i).addEventListener("input",go)); go();
+}
+
+// ---------- documents (idées, cas, analyses, recommandations)
+function renderDocs(id, titre, docs, intro){
+  const el=document.getElementById(id);
+  if(!docs.length){ el.innerHTML=`<h2>${titre}</h2><p>Aucun document pour l'instant.</p>`; return; }
+  el.innerHTML=`<h2>${titre}</h2>${intro?`<div class="note">${intro}</div>`:""}<div class="docsel" role="group" aria-label="Documents"></div><div class="doc"></div>`;
+  const sel=el.querySelector(".docsel"), box=el.querySelector(".doc");
+  docs.forEach((d,i)=>{ const b=document.createElement("button"); b.textContent=d.nom; b.setAttribute("aria-pressed",i===0?"true":"false");
+    b.onclick=()=>{ sel.querySelectorAll("button").forEach(x=>x.setAttribute("aria-pressed","false")); b.setAttribute("aria-pressed","true"); box.innerHTML=d.html; };
+    sel.appendChild(b); });
+  box.innerHTML=docs[0].html;
+}
+
+// ---------- sources
+function renderSources(){
+  const el=document.getElementById("t-sources"), S=DATA.sources;
+  if(!S.length){ el.innerHTML="<h2>Sources</h2><p>Registre non encore consolidé.</p>"; return; }
+  const cols=Object.keys(S[0]);
+  el.innerHTML=`<h2>Sources</h2><div class="filters"><label>Recherche<input id="s-q" type="search" placeholder="titre, auteur, URL…"></label></div><div class="count" id="s-n"></div><div class="tw"><table><thead><tr>${cols.map(c=>`<th>${esc(c)}</th>`).join("")}</tr></thead><tbody id="s-b"></tbody></table></div>`;
+  const go=()=>{ const q=document.getElementById("s-q").value.toLowerCase(); const r=S.filter(x=>!q||Object.values(x).join(" ").toLowerCase().includes(q));
+    document.getElementById("s-n").textContent=r.length+" source(s)";
+    document.getElementById("s-b").innerHTML=r.slice(0,600).map(x=>"<tr>"+cols.map(c=>{ const v=x[c]||""; return `<td>${/^https?:\/\//.test(v)?`<a href="${esc(v)}" target="_blank" rel="noopener">${esc(v.slice(0,60))}${v.length>60?"…":""}</a>`:esc(v)}</td>`; }).join("")+"</tr>").join(""); };
+  document.getElementById("s-q").addEventListener("input",go); go();
+}
+
+renderBord(); renderContenus(); renderPassages();
+renderDocs("t-idees","Idées stratégiques",DATA.idees,"Idées extraites par chaque agent, avec qui l'a appliquée, comment, à quel coût, les difficultés et l'adaptation au projet.");
+renderDocs("t-cas","Cas réels",DATA.cas,"Parcours d'acquéreurs, d'entrepreneurs et de propriétaires, recoupés autant que possible avec les registres et comptes publiés.");
+renderDocs("t-analyses","Fiches d'analyse",DATA.analyses,"Fiches par contenu : identification, niveau d'accès, analyse, chiffres et passages importants.");
+renderDocs("t-recos","Recommandations",DATA.recos,"");
+renderSources();
+try{ const t=localStorage.getItem("onglet"); if(t && document.getElementById(t)) show(t); }catch(e){}
+</script>
+</body>
+</html>
