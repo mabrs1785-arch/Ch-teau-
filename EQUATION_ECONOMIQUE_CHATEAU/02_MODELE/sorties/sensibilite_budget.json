@@ -1,0 +1,269 @@
+{
+ "S1": {
+  "base": 325306,
+  "tornado": [
+   [
+    "S1_vr_m2",
+    "S1 — valeur de reconstruction à l'identique du château",
+    -27464,
+    45774,
+    73238
+   ],
+   [
+    "taux_gros_entretien",
+    "Provision de gros entretien, en % de la valeur de reconstruction",
+    -32292,
+    32292,
+    64584
+   ],
+   [
+    "taux_entretien_courant",
+    "Entretien courant annuel, en % de la valeur de reconstruction",
+    -9630,
+    9630,
+    19260
+   ],
+   [
+    "vr_dep_ratio",
+    "Valeur de reconstruction des dépendances / celle du château (au m²)",
+    -6866,
+    6866,
+    13732
+   ],
+   [
+    "assurance_taux",
+    "Prime d'assurance des bâtiments, en ‰ de la valeur de reconstruction",
+    -5778,
+    7704,
+    13482
+   ],
+   [
+    "taux_invest_futurs",
+    "Investissements futurs, en % des charges et provisions",
+    -6150,
+    6150,
+    12300
+   ],
+   [
+    "prix_chaleur_kwh",
+    "Prix de l'énergie de chauffage livrée",
+    -6019,
+    6019,
+    12038
+   ],
+   [
+    "cheval_an",
+    "Coût annuel d'un cheval au box hors personnel (alimentation, litière, maréchal, vétérinaire, assurance, eau)",
+    -4708,
+    6420,
+    11128
+   ],
+   [
+    "chauffage_kwh_m2",
+    "Consommation de chauffage et d'eau chaude par m² chauffé",
+    -5056,
+    5778,
+    10834
+   ],
+   [
+    "cout_jardinier",
+    "Jardinier qualifié (1,1 / 1,2 / 1,3 SMIC)",
+    -4478,
+    4317,
+    8795
+   ],
+   [
+    "S1_admin",
+    "S1 — administration (comptabilité, banque, informatique, télécoms)",
+    -3210,
+    5350,
+    8560
+   ],
+   [
+    "taux_aleas_travaux",
+    "Aléas de chantier et découvertes, en % du gros entretien",
+    -4212,
+    4212,
+    8424
+   ]
+  ]
+ },
+ "S2": {
+  "base": 1239356,
+  "tornado": [
+   [
+    "S2_vr_m2",
+    "S2 — valeur de reconstruction à l'identique du château",
+    -111574,
+    161163,
+    272737
+   ],
+   [
+    "taux_gros_entretien",
+    "Provision de gros entretien, en % de la valeur de reconstruction",
+    -107864,
+    107864,
+    215728
+   ],
+   [
+    "vr_dep_ratio",
+    "Valeur de reconstruction des dépendances / celle du château (au m²)",
+    -35284,
+    35284,
+    70568
+   ],
+   [
+    "taux_entretien_courant",
+    "Entretien courant annuel, en % de la valeur de reconstruction",
+    -32167,
+    32167,
+    64334
+   ],
+   [
+    "taux_invest_futurs",
+    "Investissements futurs, en % des charges et provisions",
+    -23396,
+    23396,
+    46792
+   ],
+   [
+    "assurance_taux",
+    "Prime d'assurance des bâtiments, en ‰ de la valeur de reconstruction",
+    -19300,
+    25734,
+    45034
+   ],
+   [
+    "S2_cout_direction",
+    "S2 — régisseur de domaine (2,0 / 2,5 / 3,0 SMIC)",
+    -18164,
+    18700,
+    36865
+   ],
+   [
+    "taux_aleas_travaux",
+    "Aléas de chantier et découvertes, en % du gros entretien",
+    -14069,
+    14069,
+    28138
+   ],
+   [
+    "prix_chaleur_kwh",
+    "Prix de l'énergie de chauffage livrée",
+    -13375,
+    13375,
+    26750
+   ],
+   [
+    "S2_admin",
+    "S2 — administration",
+    -10700,
+    16050,
+    26750
+   ],
+   [
+    "box_entretien",
+    "Entretien et renouvellement d'un box",
+    -8320,
+    16640,
+    24960
+   ],
+   [
+    "chauffage_kwh_m2",
+    "Consommation de chauffage et d'eau chaude par m² chauffé",
+    -11235,
+    12840,
+    24075
+   ]
+  ]
+ },
+ "S3": {
+  "base": 3468858,
+  "tornado": [
+   [
+    "S3_vr_m2",
+    "S3 — valeur de reconstruction à l'identique du château",
+    -495885,
+    743827,
+    1239712
+   ],
+   [
+    "taux_gros_entretien",
+    "Provision de gros entretien, en % de la valeur de reconstruction",
+    -408135,
+    408135,
+    816270
+   ],
+   [
+    "taux_entretien_courant",
+    "Entretien courant annuel, en % de la valeur de reconstruction",
+    -121712,
+    121712,
+    243425
+   ],
+   [
+    "vr_dep_ratio",
+    "Valeur de reconstruction des dépendances / celle du château (au m²)",
+    -106806,
+    106806,
+    213612
+   ],
+   [
+    "assurance_taux",
+    "Prime d'assurance des bâtiments, en ‰ de la valeur de reconstruction",
+    -73028,
+    97370,
+    170398
+   ],
+   [
+    "taux_invest_futurs",
+    "Investissements futurs, en % des charges et provisions",
+    -65570,
+    65570,
+    131140
+   ],
+   [
+    "taux_aleas_travaux",
+    "Aléas de chantier et découvertes, en % du gros entretien",
+    -53235,
+    53235,
+    106470
+   ],
+   [
+    "cout_jardinier",
+    "Jardinier qualifié (1,1 / 1,2 / 1,3 SMIC)",
+    -49257,
+    47492,
+    96749
+   ],
+   [
+    "S3_admin",
+    "S3 — administration",
+    -32100,
+    42800,
+    74900
+   ],
+   [
+    "taux_imprevus",
+    "Imprévus d'exploitation, en % des charges de fonctionnement",
+    -19742,
+    39484,
+    59225
+   ],
+   [
+    "jardin_ha",
+    "Jardins réguliers : fournitures, végétaux, traitements, sous-traitance (hors personnel)",
+    -21400,
+    32100,
+    53500
+   ],
+   [
+    "parc_ha",
+    "Parc : fauche, élagage par arboriste, replantation (hors personnel)",
+    -16050,
+    37450,
+    53500
+   ]
+  ]
+ }
+}

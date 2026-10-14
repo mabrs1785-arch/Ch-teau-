@@ -63,18 +63,18 @@
 
 | Projection (20 ans) | Réserve minimale | Réserve en année 20 | Dotation en année 20 | Années en déficit | Contribution moyenne des activités |
 |---|---:|---:|---:|---:|---:|
-| Proj_S2_sans_moteur | -21,26 M€ | -21,26 M€ | 0,0 M€ | 20 | 47 k€ |
-| Proj_S2_solution | 1,00 M€ | 1,00 M€ | 31,7 M€ | 0 | 47 k€ |
-| ST_S2_ca30 | 1,00 M€ | 1,00 M€ | 31,3 M€ | 0 | 34 k€ |
-| ST_S2_crise | -1,14 M€ | -1,14 M€ | 21,7 M€ | 5 | 47 k€ |
-| ST_S2_travaux | 1,00 M€ | 1,00 M€ | 31,7 M€ | 0 | 47 k€ |
-| ST_S2_energie | 1,00 M€ | 1,00 M€ | 31,4 M€ | 0 | 47 k€ |
-| ST_S2_salaires | 0,98 M€ | 0,98 M€ | 30,5 M€ | 0 | 47 k€ |
-| ST_S2_moteur | -1,42 M€ | -1,42 M€ | 20,4 M€ | 6 | 47 k€ |
-| ST_S2_cumul | -2,15 M€ | -2,15 M€ | 21,4 M€ | 7 | 33 k€ |
-| Proj_S1_solution | 0,30 M€ | 0,30 M€ | 9,3 M€ | 0 | 14 k€ |
-| ST_S1_cumul | -0,40 M€ | -0,40 M€ | 6,0 M€ | 7 | 10 k€ |
-| Proj_S3_solution | 2,50 M€ | 2,50 M€ | 128,3 M€ | 0 | 88 k€ |
+| Proj_S2_sans_moteur | -20,88 M€ | -20,88 M€ | 0,0 M€ | 19 | 47 k€ |
+| Proj_S2_solution | 1,50 M€ | 1,50 M€ | 88,7 M€ | 0 | 47 k€ |
+| ST_S2_ca30 | 1,50 M€ | 1,50 M€ | 88,4 M€ | 0 | 34 k€ |
+| ST_S2_crise | 1,50 M€ | 1,50 M€ | 62,4 M€ | 0 | 47 k€ |
+| ST_S2_travaux | 1,50 M€ | 1,50 M€ | 86,4 M€ | 0 | 47 k€ |
+| ST_S2_energie | 1,50 M€ | 1,50 M€ | 88,5 M€ | 0 | 47 k€ |
+| ST_S2_salaires | 1,50 M€ | 1,50 M€ | 87,5 M€ | 0 | 47 k€ |
+| ST_S2_moteur | 1,50 M€ | 1,50 M€ | 60,4 M€ | 0 | 47 k€ |
+| ST_S2_cumul | 1,50 M€ | 1,50 M€ | 60,9 M€ | 0 | 33 k€ |
+| Proj_S1_solution | 0,40 M€ | 0,40 M€ | 24,2 M€ | 0 | 14 k€ |
+| ST_S1_cumul | 0,40 M€ | 0,40 M€ | 16,3 M€ | 0 | 10 k€ |
+| Proj_S3_solution | 3,50 M€ | 3,50 M€ | 227,3 M€ | 0 | 88 k€ |
 
 ## mc_dotation_necessaire.json
 
