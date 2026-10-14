@@ -38,7 +38,7 @@ Pendant 10 ans, des **dividendes d'entreprises** complètent ce capital et le la
   - aucune année de déficit ;
   - le capital passe de 120 M€ à **158 M€** en euros constants en année 20 ;
   - la capacité de financement (activités et plafond de retrait) dépasse les charges de 65 à 88 % selon les années.
-- **Huit stress tests** : aucun déficit sur 20 ans. Dans le pire cas, le cumul des chocs, le capital finit à 112 M€ (L6, § 3).
+- **Sept stress tests** : aucun déficit sur 20 ans. Dans le pire cas, le cumul des chocs, le capital finit à 112 M€ (L6, § 3).
 - **Simulation sur 30 ans avec des chocs tirés au hasard** : 1,8 % d'échec avant 20 ans et environ 5 % avant 30 ans. Le critère n° 6 du cadre analytique est respecté (L6, § 4).
 
 **Les quatre conditions sans lesquelles la solution ne tient pas :**
@@ -88,7 +88,7 @@ Cette architecture reprend les recommandations de R3 (questions 1, 7 et 9) et le
 **Les impôts.**
 - Les contributions des activités qui paient des coûts privés perdent environ 40 % en impôts dans le modèle : de 25 à 54 % selon la structure (L2, § 1).
 - Le rendement du capital est déjà compté **net** d'impôt et de frais : 2 % réel, pour un retrait de 1,75 %.
-- Une structure qui ferait perdre davantage réduirait ce rendement. Pour S2, un demi-point de rendement en moins ajoute environ 20 à 30 % au capital nécessaire (L6, § 4.2).
+- Une structure qui ferait perdre davantage réduirait ce rendement. Pour S2, un demi-point de rendement en moins ajoute 20 à 28 % au capital nécessaire (L6, § 4.3).
 
 ---
 
@@ -258,7 +258,7 @@ Calcul : nombre d'années n tel que versement × ((1,02ⁿ − 1) ÷ 0,02) = 120
 | Dividendes de transition | 0,4 M€ par an pendant 10 ans | aucun |
 | Réserve | 0,4 M€ | 4 M€ |
 | Capital en année 20 (cas central) | 46,8 M€ | 614,1 M€ |
-| Pire stress test | Cumul : capital à 33,1 M€ en année 20, aucun déficit, mais une marge de seulement 4 % l'année du sinistre de 600 k€ | Non testé ; même niveau de risque simulé que S1 et S2 |
+| Pire stress test | Cumul : capital à 33,1 M€ en année 20, aucun déficit, mais un retrait qui atteint 95 % du plafond l'année du sinistre de 600 k€ | Non testé ; même niveau de risque simulé que S1 et S2 |
 | Échec simulé avant 20 / 30 ans | 1,8 % / environ 5 % | 2,5 % / environ 5 % |
 | Sur 20 ans : activités / dividendes / retraits | 0,25 / 4,0 / 3,7 M€, plus 0,5 M€ d'excédents de dividendes versés au capital | 1,5 / 0 / 79,3 M€ |
 | Option propre au scénario | Peu d'activités possibles ; pas de locataire d'ancrage (moins de 40 chambres) | Locataire d'ancrage possible si la localisation s'y prête : environ −5 % de capital nécessaire (L3, modèle 4) |
@@ -274,7 +274,7 @@ S3 demande un multiple plus élevé. Dans le modèle, la taille d'un sinistre no
 | Point | Pourquoi c'est décisif | Qui peut le valider |
 |---|---|---|
 | Budget du bien réel (gros entretien, valeur de reconstruction, personnel, maîtrise d'œuvre, infrastructures) | C'est le premier facteur de risque : le haut de la fourchette multiplie le risque d'échec à 30 ans par plus de 4 | Architecte du patrimoine, assureur, régisseur ; un an d'exploitation réelle |
-| Rendement réel net du capital et véhicule | 2 % retenu (1,5 à 2,5 %) ; chaque demi-point change le capital nécessaire de 20 à 30 % | Avocat fiscaliste, conseiller en investissement indépendant |
+| Rendement réel net du capital et véhicule | 2 % retenu (1,5 à 2,5 %) ; un demi-point de moins ajoute 20 à 28 % au capital nécessaire | Avocat fiscaliste, conseiller en investissement indépendant |
 | Affectation réelle du capital (statuts contraignants, fiducie) | Sans elle, la discipline ne repose que sur la volonté du propriétaire | Notaire, avocat |
 | Transmission et régime matrimonial | Environ 44 % de droits par génération sans montage ; un divorce peut partager la part réinvestie | Notaire |
 | Structure de détention (SCI, SAS, holding) et régime MH | Accès à la déduction, taxe sur les holdings, IFI, bail rural | Avocat fiscaliste, notaire, expert-comptable |

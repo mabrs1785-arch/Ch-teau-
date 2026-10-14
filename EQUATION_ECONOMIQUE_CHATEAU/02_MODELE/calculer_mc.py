@@ -39,6 +39,24 @@ def dotations():
     json.dump(res, open("sorties/mc_dotation_necessaire.json", "w"), indent=1, ensure_ascii=False)
 
 
+def tension_aux_seuils():
+    """Fréquence des années de tension pour un capital seul dimensionné à 50 % et à 95 % (lu dans mc_dotation_necessaire.json)."""
+    k = json.load(open("sorties/mc_dotation_necessaire.json"))
+    out = {}
+    for scen, r0 in RESERVES.items():
+        P = mc.parametres_solution(scen, reserve0=r0, div=0, div_annees=0)
+        for seuil in ("50", "95"):
+            dot0 = k[f"{scen}_pure"][f"dotation_{seuil}"]
+            s = mc.simuler(dict(P, dot0=dot0), annees=30, n=20000)
+            out[f"{scen}_capital_seul_{seuil}pct"] = {
+                "dotation": dot0, "p_echec_20": round(s["p_echec_20"], 3), "p_echec_30": round(s["p_echec_30"], 3),
+                "part_traj_au_moins_1_annee_tension_20ans": round(s["p_tension_20"], 3),
+                "part_annees_tension_20": round(s["part_annees_tension_20"], 3),
+                "part_annees_tension_30": round(s["part_annees_tension_30"], 3)}
+            print(scen, seuil, out[f"{scen}_capital_seul_{seuil}pct"])
+    json.dump(out, open("sorties/mc_tension_seuils.json", "w"), indent=1, ensure_ascii=False)
+
+
 def grille():
     out = {}
     for scen, divs, k0s in (("S1", [0, 250_000, 400_000], [10e6, 15e6, 20e6, 25e6, 30e6, 35e6, 40e6]),
@@ -221,6 +239,7 @@ def dimensionnement():
 
 if __name__ == "__main__":
     dotations()
+    tension_aux_seuils()
     grille()
     ruptures()
     holding()

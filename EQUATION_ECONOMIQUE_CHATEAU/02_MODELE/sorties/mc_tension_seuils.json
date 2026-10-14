@@ -1,0 +1,50 @@
+{
+ "S1_capital_seul_50pct": {
+  "dotation": 14100000.0,
+  "p_echec_20": 0.332,
+  "p_echec_30": 0.503,
+  "part_traj_au_moins_1_annee_tension_20ans": 1.0,
+  "part_annees_tension_20": 0.557,
+  "part_annees_tension_30": 0.585
+ },
+ "S1_capital_seul_95pct": {
+  "dotation": 37900000.0,
+  "p_echec_20": 0.02,
+  "p_echec_30": 0.047,
+  "part_traj_au_moins_1_annee_tension_20ans": 0.197,
+  "part_annees_tension_20": 0.018,
+  "part_annees_tension_30": 0.037
+ },
+ "S2_capital_seul_50pct": {
+  "dotation": 50100000.0,
+  "p_echec_20": 0.336,
+  "p_echec_30": 0.507,
+  "part_traj_au_moins_1_annee_tension_20ans": 1.0,
+  "part_annees_tension_20": 0.574,
+  "part_annees_tension_30": 0.603
+ },
+ "S2_capital_seul_95pct": {
+  "dotation": 132200000.0,
+  "p_echec_20": 0.018,
+  "p_echec_30": 0.046,
+  "part_traj_au_moins_1_annee_tension_20ans": 0.203,
+  "part_annees_tension_20": 0.02,
+  "part_annees_tension_30": 0.041
+ },
+ "S3_capital_seul_50pct": {
+  "dotation": 165900000.0,
+  "p_echec_20": 0.34,
+  "p_echec_30": 0.504,
+  "part_traj_au_moins_1_annee_tension_20ans": 1.0,
+  "part_annees_tension_20": 0.546,
+  "part_annees_tension_30": 0.569
+ },
+ "S3_capital_seul_95pct": {
+  "dotation": 491600000.0,
+  "p_echec_20": 0.021,
+  "p_echec_30": 0.042,
+  "part_traj_au_moins_1_annee_tension_20ans": 0.16,
+  "part_annees_tension_20": 0.013,
+  "part_annees_tension_30": 0.026
+ }
+}

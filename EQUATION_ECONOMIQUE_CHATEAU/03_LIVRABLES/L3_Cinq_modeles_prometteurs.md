@@ -130,7 +130,7 @@ Le seuil d'une chance sur deux n'est pas un objectif : à ce niveau, le domaine 
 - Il exige un capital considérable, environ 100 fois le besoin annuel, qui reste **la fortune du propriétaire** (L2, § 6.3).
 - Le rendement réel net de 2 % est la deuxième hypothèse la plus sensible après le budget. Pour S2 :
   - à 1,5 %, il faut 168,6 M€ ;
-  - à 2,5 %, 109,5 M€ (L6, § 4.2).
+  - à 2,5 %, 109,5 M€ (L6, § 4.3).
 - Sans montage successoral, environ 44 % du capital part en droits à chaque génération [V2R-06]. Sans contrat de mariage adapté, les revenus réinvestis peuvent devenir communs [V2R-07].
 
 ### 3.3 Modèle 3 — Dimensionner le domaine à son capital (sobriété choisie)
