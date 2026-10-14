@@ -10,10 +10,10 @@ PHASE 1 — Exploration (agents 1, 2, 3, 4, 6, 7 lancés en parallèle).
 - [x] Création arborescence + CONTEXTE_PERMANENT.md + règles communes agents.
 - [x] Agent 1 Chasse immobilière (20 fiches, non vérifiées sur page)
 - [ ] Agent 2 Ingénierie financière
-- [ ] Agent 3 Économie équestre
+- [x] Agent 3 Économie équestre (inconnus : commissions Arqana, loyer box pro, budget CSO)
 - [x] Agent 4 Activités complémentaires (trous : fermage, forêt, PV, chasse, charges château)
 - [ ] Agent 6 Juridique/fiscal
-- [ ] Agent 7 Benchmark
+- [x] Agent 7 Benchmark (16 cas + 7 contre-exemples)
 - [ ] Agent 5 Modèle financier (Excel, directeur)
 - [ ] Agent 8 Audit contradictoire + stress tests
 - [ ] Synthèse, recommandation, plan d'action, registre des sources
