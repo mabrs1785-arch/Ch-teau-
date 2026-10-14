@@ -72,3 +72,22 @@ Statuts : PAGE LUE (page ouverte avec WebFetch, citation exacte) · EXTRAIT (vu 
   - entretien : 1 600 à 3 000 €/an ;
   - production année 7+ : bas = 2 ha × 2 kg × 400 € ≈ 1 600 €/an ; haut = 2 ha × 15 kg × 550 € ≈ 16 500 €/an ;
   - contribution nette : de −1 400 € à +13 500 €/an, très aléatoire, nulle pendant 5 à 7 ans. **Piste marginale** à l'échelle d'un château ; intérêt surtout d'image (produit du domaine).
+
+### 1.4 Petite hydroélectricité (moulin, 30 à 300 kW)
+
+- Cadre de soutien (CRE, délibération n° 2026-58 du 5 mars 2026 [R8-10], PAGE LUE) : arrêté tarifaire du 13 décembre 2016 dit « H16 » ; « les nouvelles installations d'une puissance installée strictement inférieure à 200 kW peuvent bénéficier d'un contrat d'obligation d'achat » (seuil « porté à 200 kW à partir du 1er janvier 2026 par le décret n° 2025-498 du 5 juin 2025 ») ; « les nouvelles installations d'une puissance installée strictement inférieure à 1 MW peuvent bénéficier d'un contrat de complément de rémunération » ; « les installations existantes d'une puissance installée strictement inférieure à 1 MW peuvent bénéficier d'un contrat de CR, sous réserve de l'engagement du producteur à réaliser un programme d'investissement ». Plafond de l'énergie rémunérée au tarif : « 120 000 heures équivalentes pleine puissance sur la durée du contrat de soutien pour les installations de basse chute, soit 6 000 hepp/an » ; au-delà, rachat « au prix fixe de 40 €/MWh (non indexé) ». La CRE recommande d'abaisser le plafond à 4 000 hepp/an. Les installations aidées par d'autres régimes (subventions) perdent l'éligibilité (installations neuves) ou voient leur tarif réduit (rénovées).
+- Niveau du tarif (réponse ministérielle publiée au JO le 12 décembre 2023 [R8-11], PAGE LUE) : « Aujourd'hui, un producteur d'une installation d'une centaine de kilowatts peut espérer, grâce au H16, un tarif d'environ 170€/MWh produit. » Même source : 463 installations hydroélectriques de moins de 150 kW raccordées, pour « environ 43 MW » au total (soit ≈ 93 kW en moyenne, ESTIMATION par division).
+- Coûts et rentabilité (CRE, rapport du 30 janvier 2020 [R8-12], PAGE LUE) :
+  - « les coûts d'investissements […] varient entre 2 100 et 5 600 €/kW pour 75 % des installations neuves » ;
+  - « Les coûts annuels de fonctionnement (charges d'exploitation et fiscales) se situent quant à eux entre 50 et 180 €/kW pour 75 % des installations », hors gros entretien et renouvellement, qui représentent « de l'ordre de 2 à 4 % des coûts d'investissements initiaux », « 2 à 3 fois au cours des 15 premières années » ;
+  - productible « entre 2 000 et 4 300 heures annuelles d'équivalent pleine puissance pour 75 % des installations » ;
+  - LCOE des installations neuves « de 37 à plus de 200 €/MWh » ; rénovées « quasi-exclusivement en dessous de la barre des 100 €/MWh » ;
+  - « la moitié des installations pour lesquelles la rentabilité a pu être calculée présente des taux de rentabilité interne (TRI) avant impôt insuffisants, voire négatifs » ; « le TRI moyen étant de 14,1 % pour ces installations [rénovées] contre 2,5 % pour les installations neuves » ;
+  - l'arrêté H16 « impose un montant minimum d'investissements de rénovation de 500 €/kW ».
+- ESTIMATION (moulin existant rénové de 100 kW, droit d'eau supposé valide — HYPOTHÈSE) :
+  - production : 100 kW × 2 000 à 4 300 h = 200 à 430 MWh/an ;
+  - chiffre d'affaires HT : × ≈ 170 €/MWh (ordre de grandeur 2023 pour ≈ 100 kW ; le tarif réel d'une rénovation dépend de l'investissement) = **34 000 à 73 000 €/an** ;
+  - charges de fonctionnement : 100 kW × 50 à 180 €/kW = 5 000 à 18 000 €/an ;
+  - excédent avant amortissement : ≈ **16 000 à 68 000 €/an** ; investissement de rénovation ≥ 50 000 € (500 €/kW minimum), installation neuve 210 000 à 560 000 €.
+  - Pour 30 kW : diviser par ≈ 3,3. Pour 300 kW : plus d'obligation d'achat (seuil 200 kW) ; complément de rémunération avec vente sur le marché.
+- Condition préalable : une chute d'eau et un droit d'eau existants sur le domaine. **Piste réservée aux domaines qui ont déjà un moulin ou un seuil** ; à ne pas intégrer par défaut dans S1/S2/S3.
