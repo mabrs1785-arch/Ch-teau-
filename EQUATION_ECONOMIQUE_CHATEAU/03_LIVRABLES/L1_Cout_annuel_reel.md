@@ -30,7 +30,7 @@ Ce besoin couvre tout ce que le brief demande de financer :
 - imprévus ;
 - investissements futurs.
 
-Il exclut l'achat, la restauration initiale et le train de vie personnel du propriétaire.
+Il exclut l'achat, la restauration initiale et le train de vie personnel du propriétaire. Deux postes n'ont pas pu être chiffrés et n'y figurent pas non plus : les chevaux de sport (achat, renouvellement, transport, concours) et les infrastructures du domaine (murs d'enceinte, allées, réseaux, étangs, ponts) (§ 8).
 
 **Six enseignements :**
 
