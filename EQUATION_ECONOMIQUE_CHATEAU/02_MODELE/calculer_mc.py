@@ -92,7 +92,7 @@ def ruptures():
         md = EXTRA[f"bud_total_besoin_{scen}_def"] / Bc
         Pd = mc.parametres_solution(scen, mult_besoin=md, reserve0=base["res0"] * md, div=0, div_annees=0)
         out["dotation_95_si_besoin_defavorable_sans_dividendes"] = round(
-            mc.dotation_necessaire(Pd, cible=0.05, horizon=30, n=6000, borne_haute=8e8), -5)
+            mc.dotation_necessaire(Pd, cible=0.05, horizon=30, n=6000, borne_haute=3e9), -5)
         out["une_seule_entreprise"] = pe(base) if base["div"] == 0 else {
             k2: v for k2, v in mc.simuler(base, annees=30, n=N, ent_n=1).items() if k2 in ("p_echec_20", "p_echec_30")}
         print(scen, json.dumps(out, ensure_ascii=False)[:600])

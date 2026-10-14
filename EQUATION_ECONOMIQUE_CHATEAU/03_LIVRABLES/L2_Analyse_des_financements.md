@@ -1,7 +1,7 @@
 # L2 — Comment financer durablement ces coûts ? Analyse des solutions possibles
 
 > **Statut et conventions**
-> - Analyse fondée sur 8 agents de recherche (vague 1), 4 recherches ciblées (vague 2 : V2A, V2C, V2D, V2V) et le modèle `02_MODELE/sorties/Modele_equation_chateau.xlsx`, feuilles Moteurs et Modeles (11 301 formules, 0 écart avec le calcul Python).
+> - Analyse fondée sur 8 agents de recherche (vague 1), 4 recherches ciblées (vague 2 : V2A, V2C, V2D, V2V), une équipe rouge (V2R) et le modèle `02_MODELE/sorties/Modele_equation_chateau.xlsx`, feuilles Moteurs et Modeles (11 814 formules, 0 écart avec le calcul Python).
 > - Montants en € 2026. Les activités sont en HT, le besoin du domaine en TTC (propriétaire particulier).
 > - Identifiants de sources entre crochets ; registre complet dans `04_SOURCES/`.
 
@@ -18,7 +18,7 @@ Contributions nettes des activités  +  revenu net d'un moteur extérieur  +  ai
 
 Le tout doit tenir **chaque année**, y compris en crise. Une réserve absorbe les écarts. Trois distorsions, détaillées dans `00_PILOTAGE/Cadre_analytique.md`, changent la lecture des chiffres.
 
-1. **Le coin fiscal.** Le château est un lieu de vie : l'essentiel de son coût est privé. Il se paie donc avec de l'argent déjà taxé. Un euro de bénéfice d'une société à l'IS ne laisse que ≈ 0,51 € au propriétaire après IS (25 %) et PFU (31,4 % en 2026) [R3-16][R3-20][R3-57]. Le modèle applique une « fuite fiscale » de 30 % (15 à 49 %) aux bénéfices des activités qui servent à payer des coûts privés.
+1. **Le coin fiscal.** Le château est un lieu de vie : l'essentiel de son coût est privé. Il se paie donc avec de l'argent déjà taxé. Un euro de bénéfice d'une société à l'IS ne laisse que ≈ 0,51 € au propriétaire après IS (25 %) et PFU (31,4 % en 2026) [R3-16][R3-20][R3-57]. Avec les contributions sur les hauts revenus, il ne reste même qu'environ 0,46 € [V2R-04][V2R-05]. Le modèle applique une « fuite fiscale » de 40 % (25 à 54 %) aux bénéfices des activités qui servent à payer des coûts privés.
 2. **Le coin de tranquillité.** Chaque activité fait venir des tiers, du bruit, de la circulation. Le propriétaire veut une partie « entièrement privée » et un domaine calme : cela plafonne mariages, hôtellerie et visites.
 3. **Le coin de prestige.** Le niveau d'entretien exigé (jardins impeccables, personnel suffisant) fait le besoin. Certaines activités en profitent (réceptions, tournages), d'autres pas (forêt, loyers).
 
@@ -70,7 +70,7 @@ Contribution nette annuelle de chaque activité, à l'échelle d'un domaine S2, 
 | Pension haut de gamme (30 boxes) | B | 102 k€ | 21 k€ | −98 k€ | — |
 | Écuries louées à un professionnel (20 boxes) | A | 22 k€ | 9 k€ | −5 k€ | — |
 | Pension retraite au pré (30 chevaux) | B | 31 k€ | 10 k€ | −6 k€ | — |
-| Centre de reproduction (si vétérinaire et étalon) | B | 30 k€ | 21 k€ | 0 | 35 k€ |
+| Centre de reproduction (si vétérinaire et étalon) | B | 30 k€ | 21 k€ | 0 | INCONNU |
 | Réceptions privées plafonnées (10 par an) | C | 78 k€ | 6 k€ | −46 k€ | 400 k€ |
 | Tournages et prises de vue (2 jours par an) | C | 28 k€ | 6 k€ | 0 | — |
 | Séminaires de jour (20 jours par an) | C | 45 k€ | 13 k€ | 0 | — |
@@ -198,27 +198,27 @@ Contribution nette annuelle de chaque activité, à l'échelle d'un domaine S2, 
 **Conclusion.**
 - Aucun de ces mécanismes ne finance durablement le fonctionnement.
 - Ceux qui libèrent du capital le font une seule fois, en cédant une partie de la propriété ou de la tranquillité, et pour un montant que les sources ne permettent pas de chiffrer.
-- Leur seul usage cohérent : **verser le capital libéré à la dotation** (§ 6). Chaque million d'euros versé finance environ 27 500 € de besoin par an (règle de dépense de 2,75 %).
+- Leur seul usage cohérent : **verser le capital libéré au capital affecté** (§ 6). Chaque million d'euros versé finance environ 17 500 € de besoin par an (règle de dépense de 1,75 %).
 
 ### 3.6 Résultat : les activités sur place ne couvrent qu'une petite part du besoin
 
-Huit combinaisons comparées au besoin du domaine S2 (1,24 M€/an), après fuite fiscale :
+Huit combinaisons comparées au besoin du domaine S2 (1,27 M€/an), après une fuite fiscale de 40 %. La pension standard ne fait plus partie du socle : elle ne rapporte rien dans le cas central et fait venir 25 à 30 propriétaires de chevaux chaque semaine (V2R m8).
 
 | Modèle | Contribution disponible (central) | Couverture du besoin S2 (fav. / central / déf.) | Écart à financer (central) | Investissement |
 |---|---:|---:|---:|---:|
-| M1 — Socle contractuel et équestre standard | 49 k€ | 25 % / **4 %** / −1,5 % | 1 190 k€ | 1 100 k€ |
-| M2 — Lieu d'exception à quota (M1 + réceptions, séminaires, grande maison) | 87 k€ | 53 % / **7 %** / −4 % | 1 152 k€ | 2 100 k€ |
-| M3 — Équestre haut de gamme et services | 42 k€ | 21 % / **3 %** / −5 % | 1 197 k€ | 0 |
-| M4 — Château-hôtel exploité + réceptions | −361 k€ | 88 % / **−29 %** / −57 % | 1 601 k€ | 7 900 k€ |
-| M5 et M6 — Socle minimal + moteur extérieur | 5 k€ | 6 % / **0,4 %** / −2 % | 1 234 k€ | 0 |
-| M7 — Locataire d'ancrage + socle foncier (§ 3.4) | 264 k€ | 67 % / **21 %** / −0,2 % | 975 k€ | à la charge de l'exploitant |
-| M8 — Socle M1 + location de luxe de la partie privée (§ 3.5) | 77 k€ | 45 % / **6 %** / −2 % | 1 163 k€ | 1 400 k€ |
+| M1 — Socle contractuel et pension de retraite au pré | 43 k€ | 20 % / **3 %** / 0,2 % | 1 231 k€ | 1 100 k€ |
+| M2 — Lieu d'exception à quota (M1 + réceptions, séminaires, grande maison) | 75 k€ | 44 % / **6 %** / −2 % | 1 198 k€ | 2 100 k€ |
+| M3 — Équestre haut de gamme et services | 36 k€ | 19 % / **3 %** / −5 % | 1 237 k€ | 0 |
+| M4 — Château-hôtel exploité + réceptions | −361 k€ | 76 % / **−28 %** / −55 % | 1 635 k€ | 7 900 k€ |
+| M5 et M6 — Socle minimal + moteur extérieur | 11 k€ | 6 % / **0,9 %** / −0,2 % | 1 262 k€ | 0 |
+| M7 — Locataire d'ancrage + socle foncier (§ 3.4) | 227 k€ | 59 % / **18 %** / −0,2 % | 1 046 k€ | à la charge de l'exploitant |
+| M8 — Socle M1 + location de luxe de la partie privée (§ 3.5) | 66 k€ | 37 % / **5 %** / −0,4 % | 1 207 k€ | 1 400 k€ |
 
 **Lecture.**
 - Le cas favorable cumule toutes les hypothèses heureuses. Même alors, aucune combinaison compatible avec une résidence calme ne couvre plus de la moitié du besoin.
-- Dans le cas central, elles en couvrent **3 à 7 %**.
+- Dans le cas central, elles en couvrent **1 à 6 %**.
 - Le château-hôtel peut couvrir l'essentiel dans le meilleur cas, mais il creuse le déficit dans le cas central, et les comptes réels confirment ce risque.
-- Le locataire d'ancrage (M7) est la seule exception : 21 % dans le cas central, jusqu'à 67 % dans le meilleur cas. Il suppose de confier l'essentiel des bâtiments à un exploitant pendant 15 à 30 ans, et il tombe à zéro si la localisation ne convient pas.
+- Le locataire d'ancrage (M7) est la seule exception : 18 % dans le cas central, jusqu'à 59 % dans le meilleur cas. Il suppose de confier l'essentiel des bâtiments à un exploitant pendant 15 à 30 ans, et il tombe à zéro si la localisation ne convient pas.
 
 ---
 
@@ -236,7 +236,12 @@ Huit combinaisons comparées au besoin du domaine S2 (1,24 M€/an), après fuit
 | **Taxe de 20 % sur les holdings patrimoniales** (LF 2026) | — | Holding ≥ 5 M€ d'actifs, revenus passifs > 50 % [R3-18] | Vise les **logements réservés à l'associé** et les **chevaux de concours**. Ne jamais loger le château habité ni les chevaux personnels dans une telle holding |
 | **Structure** | Partie privée en direct ou en SCI familiale à l'IR ; activités en société d'exploitation payant un loyer de marché [R3, Q9] | SCI à l'IR : activité commerciale < 10 % de son CA [R3-59] | Logement gratuit dans une société à l'IS : acte anormal de gestion et revenu distribué [R3-56] |
 
-**Effet chiffré du levier MH.** Hypothèses : taux marginal de 41 %, 45 % du besoin en charges déductibles, déduction de 50 % (château fermé au public). L'économie d'impôt est d'environ 9 % du besoin, soit ≈ 115 k€/an en S2. C'est un levier réel **pour un propriétaire qui a de gros revenus imposables**. Ce n'est pas une recette du domaine. Le Monte-Carlo l'intègre dans la variante « leviers » (§ 6).
+**Effet chiffré du levier MH.**
+- Hypothèses : taux marginal de 41 %, 45 % du besoin en charges déductibles, déduction de 50 % (château fermé au public).
+- L'économie d'impôt est d'environ 9 % du besoin, soit environ 115 k€ par an en S2.
+- C'est un levier réel, mais **seulement pour un propriétaire qui a de gros revenus imposés au barème** : il faut environ 0,36 M€ de revenus au barème pour absorber la déduction (ESTIMATION, V2R M4). Or, dans la solution, les revenus du propriétaire sont surtout des revenus de capitaux imposés au PFU, qui n'entrent pas dans ce calcul.
+- L'excédent de déduction ne se reporte pas [R3-05]. L'effet de la contribution différentielle sur les hauts revenus est INCONNU.
+- Ce levier n'est donc **plus compté** dans les capitaux nécessaires du § 6. Il reste une option, sous condition de revenus.
 
 ---
 
@@ -266,65 +271,104 @@ Huit combinaisons comparées au besoin du domaine S2 (1,24 M€/an), après fuit
 
 ---
 
-## 6. Le moteur extérieur : dotation affectée ou entreprise
+## 6. Le moteur extérieur : un capital affecté, éventuellement constitué par des entreprises
 
 ### 6.1 Combien faut-il ?
 
-Le modèle simule 30 ans de vie du domaine, 6 000 à 20 000 trajectoires par cas. Aléas tirés au sort :
+Le modèle simule 30 ans de vie du domaine, avec 6 000 à 20 000 trajectoires par cas. Aléas tirés au sort :
 - crises (une tous les 12 ans en moyenne) ;
 - rendements de marché ;
 - bruit propre aux activités ;
-- sinistres non assurés ;
+- sinistres non assurés, payés en plus du fonds de travaux ;
 - dépassements de travaux ;
 - prix de l'énergie ;
 - dérive des salaires.
 
-Le capital de la dotation est investi en actifs financiers diversifiés, avec un rendement réel net de 3 % annualisé [R8-32][R8-34]. Retraits encadrés par une **règle de dépense lissée** (plafond de 2,75 % du capital), plus des **règles de pilotage** en période de tension :
-- coupe temporaire de 10 % des dépenses discrétionnaires ;
-- report de 30 % d'une campagne de travaux ;
-- retrait d'urgence plafonné à 4 %.
+**Hypothèses retenues pour le capital :**
+- **Rendement réel net de 2 % par an** (ESTIMATION, fourchette de 1,5 à 2,5 %).
+  - La seule donnée sourcée est le rendement des actions mondiales depuis 2000 : 3,5 % réel par an, avant frais et impôts [R8-32] [V2R-08].
+  - Il faut en retirer des frais de 0,4 à 0,6 point et un impôt de 30 à 38,6 % sur les revenus nominaux. Le PFU est de 31,4 % ; s'y ajoutent les contributions sur les hauts revenus [V2R-03] [V2R-04] [V2R-05] [V2R-16].
+  - La version précédente de ce dossier retenait 3 %. L'équipe rouge l'a jugé incompatible avec la fiscalité et les frais (V2R C2).
+- **Retrait annuel encadré par une règle de dépense lissée.** Le plafond vaut 1,75 % du capital, soit 0,25 point sous le rendement attendu.
+- **Règles de pilotage en période de tension**, déclenchées quand la réserve passe sous un an de charges :
+  - coupe temporaire de 10 % des dépenses discrétionnaires ;
+  - report de 30 % d'une campagne de travaux ;
+  - retrait d'urgence plafonné à 4 %.
+- La réserve est ensuite **reconstituée**.
 
-**Échec** = réserve de trésorerie négative.
+**Échec** = réserve de trésorerie négative. C'est la définition du critère n° 6 du cadre analytique.
 
-| Domaine | Besoin annuel | Dotation : 1 chance sur 2 de tenir 30 ans | Dotation : 95 % de chances | Variante leviers (MH + besoin −15 %, borne optimiste) : 50 % / 95 % |
+| Domaine | Besoin annuel | Capital pour 1 chance sur 2 de tenir 30 ans | Capital pour 95 % de chances | Avec les leviers vérifiés (besoin −7,5 %) : 50 % / 95 % |
 |---|---:|---:|---:|---:|
-| S1 | 0,33 M€ | 9,6 M€ (≈ 29 × le besoin) | 22,9 M€ (≈ 70 ×) | 7,2 M€ / 17,1 M€ |
-| S2 | 1,24 M€ | 36,5 M€ (≈ 29 ×) | 85,5 M€ (≈ 69 ×) | 27,3 M€ / 64,0 M€ |
-| S3 | 3,64 M€ | 108,7 M€ (≈ 30 ×) | 271,3 M€ (≈ 74 ×) | 82,0 M€ / 204,0 M€ |
+| S1 | 0,35 M€ | 14,1 M€ (≈ 41 fois le besoin) | 37,9 M€ (≈ 110 fois) | 13,0 / 35,1 M€ |
+| S2 | 1,27 M€ | 50,1 M€ (≈ 39 fois) | 132,2 M€ (≈ 104 fois) | 46,3 / 122,1 M€ |
+| S3 | 3,77 M€ | 165,9 M€ (≈ 44 fois) | 491,6 M€ (≈ 130 fois) | 153,4 / 454,3 M€ |
 
-Fichier `02_MODELE/sorties/mc_dotation_necessaire.json`, produit par `calculer_mc.py`. Le seuil de 95 % est estimé par dichotomie sur 6 000 trajectoires, avec une précision d'environ ±5 %.
+Fichier `02_MODELE/sorties/mc_dotation_necessaire.json`, produit par `calculer_mc.py`. Le capital nécessaire est estimé par dichotomie sur 6 000 trajectoires, avec une précision d'environ ±5 %.
+
+S3 demande un multiple plus élevé que S1 et S2. Dans le modèle, la taille d'un sinistre non assuré est proportionnelle au gros entretien, qui pèse davantage dans le budget d'un grand monument classé.
 
 **Règle d'or qui en découle :**
-- il faut environ **30 fois le besoin annuel** pour avoir une chance sur deux de tenir 30 ans ;
-- il en faut environ **70 fois** pour être raisonnablement sûr (95 %).
+- il faut environ **40 fois le besoin annuel** pour avoir une chance sur deux de tenir 30 ans ;
+- il en faut environ **100 fois** pour être raisonnablement sûr (95 %), et jusqu'à 130 fois pour un grand monument classé.
 
-Deux précisions :
-- **Le seuil d'une chance sur deux n'est pas un objectif.** À 30 fois le besoin, le plafond normal de retrait (2,75 % du capital) ne couvre qu'environ 80 % du besoin. Le domaine vit alors en mode de tension, sur des retraits d'urgence (L6, § 4.3).
-- **Pour 95 %, le multiple dépasse nettement le simple « besoin ÷ 2,75 % » (36 fois).** D'une part, les coûts du domaine montent plus vite que l'inflation : salaires +0,5 %, travaux +0,75 %, énergie +2 % et assurances +1,85 % réels par an, d'après les séries de l'INSEE [V2C-03] [V2C-04] [V2C-05] [V2C-19]. D'autre part, les mauvaises années de marché arrivent parfois au mauvais moment.
+Trois précisions :
+- **Le seuil d'une chance sur deux n'est pas un objectif.** À 40 fois le besoin, le plafond normal de retrait (1,75 % du capital) ne couvre que 70 % du besoin. Le domaine vit alors en mode de tension, sur des retraits d'urgence (L6, § 4.3).
+- **Le multiple dépend surtout du rendement.** Pour S2, avec un capital seul et 95 % de chances de tenir 30 ans, il faut :
+  - 94,8 M€ à 3 % de rendement réel net ;
+  - 109,5 M€ à 2,5 % ;
+  - 132,2 M€ à 2 % ;
+  - 168,6 M€ à 1,5 % (`sorties/mc_sensibilite_rendement.json`).
+- **Les coûts montent plus vite que l'inflation** : salaires +0,5 %, travaux +0,75 %, énergie +2 % et assurances +1,85 % réels par an, d'après les séries de l'INSEE [V2C-03] [V2C-04] [V2C-05] [V2C-19].
 
-**Le risque principal est l'erreur de budget.** Si le besoin réel se situe au haut de la fourchette de L1, il faut environ 70 fois ce besoin plus élevé : environ 40 M€ en S1, 143 M€ en S2 et 480 M€ en S3 (L6, § 4.2). Le budget doit donc être validé sur un bien réel avant de dimensionner le capital.
+**Le risque principal reste l'erreur de budget.** Si le besoin réel se situe au haut de la fourchette de L1, il faut environ 67 M€ en S1, 225 M€ en S2 et 890 M€ en S3, avec un capital seul (L6, § 4.2). Le budget doit donc être validé sur un bien réel avant de dimensionner le capital.
 
 ### 6.2 Entreprise extérieure ou holding de PME
 
-- **Rendement brut plus élevé.** Une PME reprise sans dette rapporte au propriétaire ≈ 0,40 € net de dividende par euro d'EBITDA (IS puis PFU) [R8-35][R3-16][R3-20]. Rachetée à 5 à 8 fois l'EBITDA, elle rend donc 5 à 8 % du capital investi, contre 2,75 % pour une dotation financière.
-- **Mais elle est fragile seule.** Plus d'une transmission de PME sur cinq échoue dans les six ans (données OSEO 1997-2003) [R8-36]. Avec 3,5 % de défaillance par entreprise et par an, une holding de 1 à 6 PME qui ne fait que distribuer ses dividendes, avec une petite dotation de 2 à 10 M€, échoue dans 67 à 91 % des cas sur 30 ans : les entreprises disparaissent une à une (`mc_holding_hybride.json`).
+- **Rendement plus élevé que celui d'un portefeuille.** Une PME reprise sans dette rapporte à son propriétaire environ 0,355 € net de dividende par euro d'EBITDA [R8-35] [R3-16] [R3-20] [V2R-04] [V2R-05] (ESTIMATION). C'est ce qui reste après l'IS, le PFU et les contributions sur les hauts revenus. Rachetée 5 à 8 fois son EBITDA, elle rend donc 4,4 à 7,1 % du capital investi. Un portefeuille financier permet de retirer environ 1,75 % par an.
+- **Mais elle est fragile seule.** Plus d'une transmission de PME sur cinq échoue dans les six ans (données OSEO 1997-2003, souvent des reprises endettées) [R8-36]. Le modèle suppose 3,5 % de défaillance par entreprise et par an. Une holding **passive** de 1 à 6 PME, qui ne fait que distribuer ses dividendes, sans réinvestir, remplacer les entreprises disparues ni les revendre, échoue alors dans 85 à 98 % des cas sur 30 ans, même avec une petite dotation de 2 à 10 M€ (`mc_holding_hybride.json`). Un groupe géré activement ferait mieux, mais ce cas n'est pas modélisé.
 - **Elle dépend du fondateur.** Il faut des dirigeants salariés, des réinvestissements et une surveillance permanente.
 - **Elle doit être sans dette d'acquisition** au moment où elle finance le domaine. Une PME en LBO ne distribue presque rien pendant 5 à 7 ans [R8].
 
-**Conséquence.** L'entreprise est le meilleur **outil pour construire le capital**, mais pas une rente perpétuelle. La pérennité vient de la **conversion progressive des dividendes en dotation diversifiée** (§ 6.3).
+**Conséquence.** L'entreprise est le meilleur **outil pour construire le capital**, mais pas une rente perpétuelle. La pérennité vient de la **conversion progressive des dividendes en capital diversifié** (§ 6.3).
 
-### 6.3 Conditions de pérennité d'un moteur extérieur
+### 6.3 Le capital affecté reste la fortune du propriétaire : aucun véhicule ne l'en sépare
 
-1. **Séparation et affectation.** Le capital est logé dans une structure dédiée au domaine. Ce n'est pas la fortune personnelle au sens courant : c'est une dotation affectée, sur le modèle des « maintenance funds » britanniques [R5-17][R5-18].
-2. **Règle de dépense écrite** : plafond lissé de 2,75 % du capital, pas plus en temps normal.
-3. **Réserve de liquidité** d'au moins un an de besoin, et **fonds de travaux** séparé.
-4. **Diversification** : actifs financiers diversifiés, pas une seule entreprise ni un seul immeuble. Ces actifs **ne sont pas soumis à l'IFI**, contrairement à l'immobilier locatif.
-5. **Gouvernance indépendante du fondateur** : mandat de gestion, comité, règles écrites. L'objectif est que le domaine survive à une incapacité du propriétaire.
-6. **Fiscalité organisée** :
+C'est la principale correction apportée par l'équipe rouge (V2R C1). Aucun outil français ne réunit à la fois trois propriétés : une affectation réelle au domaine, la jouissance privée du propriétaire et des revenus défiscalisés.
+
+| Véhicule | Peut-il financer la partie privée d'un domaine habité ? | Fiscalité des revenus du capital | L'affectation au domaine est-elle réelle ? |
+|---|---|---|---|
+| Fonds de dotation, fondation | **Non.** Apport « à titre gratuit et irrévocable », revenus utilisés pour une mission d'intérêt général [V2R-02] [R8-45] ; un logement gratuit du fondateur profite à un cercle restreint [R3-43] | Pas d'IS si la gestion est désintéressée | Oui, mais au profit de l'intérêt général, plus du propriétaire |
+| Holding à l'IS (société de portefeuille) | Seulement par distribution : payer des charges privées sans distribuer est un acte anormal de gestion [R3-56] | IS puis PFU : 48,6 %, jusqu'à 54 % avec les contributions sur les hauts revenus [R3-20] [R3-57] [V2R-05] | Faible : l'associé majoritaire peut changer les statuts |
+| Compte-titres personnel | Oui | Jusqu'à 38,6 % des revenus nominaux [V2R-04] [V2R-05] [V2R-16] | Aucune |
+| Société civile de portefeuille à l'IR | Oui | Transparente, comme le compte-titres (HYPOTHÈSE) | Faible : dépend des statuts et de la gérance |
+| Assurance-vie, contrat de capitalisation | Oui | Gains imposés au rachat (12,8 % ou 7,5 %, plus 17,2 % de prélèvements sociaux) ; imposition différée [V2R-03] | Aucune ; rachats limitables jusqu'à 6 mois en crise systémique [V2R-10] |
+| Fiducie-gestion | Probablement (le constituant peut être bénéficiaire) ; régime actuel INCONNU | Transparente [V2R-14] | **Réelle** : « patrimoine d'affectation » confié à un fiduciaire [V2R-13] ; coût INCONNU |
+| « Maintenance fund » britannique (pour comparaison) | Pas d'équivalent en droit français. Au Royaume-Uni, il exige un accès du public et interdit tout contrôle du constituant ainsi que le logement gratuit [V2R-01] | Revenus imposés ; exonération de droits de succession | Totale, sous contrôle de l'administration fiscale |
+
+**Ce que cela change.**
+- Le « capital affecté » de ce dossier reste **juridiquement le patrimoine du propriétaire**, ou d'une société qu'il contrôle.
+- Son affectation au domaine ne repose que sur une **discipline volontaire** : une charte, un comité, des statuts contraignants. Une fiducie pourrait la rendre réelle, mais son coût reste à établir.
+- **La solution suppose donc de disposer d'une fortune d'environ 100 fois le besoin annuel du domaine.** C'est précisément la dépendance à la fortune personnelle que le brief voulait éviter. Aucune solution qui s'en affranchisse n'a été trouvée (L8).
+
+### 6.4 Conditions de pérennité d'un capital affecté
+
+1. **Règle de dépense écrite** : plafond lissé de 1,75 % du capital en temps normal.
+2. **Réserve de liquidité** d'au moins un an de charges, reconstituée après usage et placée hors des contrats d'assurance, dont les rachats peuvent être gelés [V2R-10]. Un **fonds de travaux** séparé.
+3. **Diversification** : des actifs financiers diversifiés, pas une seule entreprise ni un seul immeuble. Ces actifs ne sont pas soumis à l'IFI, contrairement à l'immobilier [R3-01].
+4. **Une structure à statuts contraignants**, pour que la discipline ne dépende pas de la seule volonté du propriétaire : société civile avec un gérant indépendant, ou fiducie. À valider par un notaire et un avocat.
+5. **Une gouvernance qui survit au fondateur** : comité avec au moins une personne indépendante, mandat de gestion, plan en cas d'incapacité.
+6. **Une transmission organisée.**
+   - Sans montage, les droits de succession en ligne directe prélèveraient environ **44 %** du capital à chaque génération [V2R-06] (ESTIMATION).
+   - L'exonération de l'article 795 A ne vise que le monument et son mobilier [R3-13].
+   - Dans la simulation, un décès en année 15 fait passer le risque d'échec à 30 ans de 5 % à 16 % (L6).
+   - Pistes à étudier avec un notaire : démembrement, assurance-vie, donation-partage.
+7. **Un contrat de mariage adapté.** En communauté réduite aux acquêts, les revenus réinvestis deviennent des biens communs [V2R-07] (à valider par un notaire).
+8. **Une fiscalité organisée** :
    - château habité en direct ou en SCI familiale ;
-   - jamais dans une holding patrimoniale (taxe de 20 % [R3-18]) ;
-   - enveloppes de capitalisation pour la dotation, à valider par un fiscaliste.
-7. **Seuil de déclenchement.** N'engager le niveau de dépense d'un domaine que lorsque le moteur en place couvre au moins 100 % du besoin résiduel avec la règle de dépense, plus la réserve.
+   - jamais de logement de l'associé ni de chevaux de concours dans une holding patrimoniale (taxe de 20 %, dont l'assiette a déjà changé en cours de vote [R3-18] [V2R-11] [V2R-12]) ;
+   - choix du véhicule du capital validé par un avocat fiscaliste.
+9. **Un seuil de déclenchement.** N'engager le niveau de dépense d'un domaine que lorsque le capital en place, avec sa règle de dépense, couvre le besoin, réserve comprise.
 
 ---
 
@@ -332,8 +376,8 @@ Deux précisions :
 
 | Source | Échelle de contribution | Récurrence | Résistance aux crises | Tranquillité | Dépendance au fondateur | Verdict |
 |---|---|---|---|---|---|---|
-| Dotation affectée (actifs financiers) | **Illimitée** (≈ 2,75 % du capital) | Élevée (règle de dépense) | Moyenne : baisse des marchés, amortie par la réserve | Totale | Faible une fois constituée | **Socle de la solution** |
-| Holding de PME | Élevée (5 à 8 % du capital) | Moyenne | Faible à moyenne | Totale | **Forte** | **Moteur de constitution du capital** |
+| Capital affecté (actifs financiers, patrimoine du propriétaire) | **Illimitée** (≈ 1,75 % du capital) | Élevée (règle de dépense) | Moyenne : baisse des marchés, amortie par la réserve | Totale | Faible une fois constitué, sauf succession et gouvernance (§ 6.4) | **Socle de la solution** |
+| Holding de PME | Élevée (4,4 à 7,1 % du capital) | Moyenne | Faible à moyenne | Totale | **Forte** | **Moteur de constitution du capital** |
 | Logements, stockage, solaire, forêt | 0,02 à 0,1 M€ (S2) | Élevée (classe A) | Bonne | Bonne si zonée | Faible | Complément utile |
 | Pensions de chevaux | ≈ 0 à 0,1 M€ | Élevée (classe B), très résistante en crise | Très bonne | Bonne | Moyenne | Autofinance une partie de la passion |
 | Réceptions, séminaires, tournages, grande maison | 0 à 0,25 M€, très variable | Faible (classe C) | Mauvaise (−80 % en crise) | Médiocre | Moyenne à forte | Option plafonnée, jamais pour les charges fixes |
@@ -355,6 +399,6 @@ Deux précisions :
 | **V2C — budgets réels et leviers** | Aucun budget complet de domaine privé de taille S2 publié ; rapport IGF-IGAC de 2020 ; temps d'entretien des jardins ; dérives INSEE sur 20 ans (§ 5) | Jardiniers de S3 portés de 11 à 16 (besoin de S3 de 3,47 à 3,64 M€) ; dérives réelles des travaux (+0,75 %/an), de l'énergie (+2 %/an) et des assurances (+1,85 %/an) recalées ; dotations recalculées (§ 6.1) |
 | **V2D — libérer du capital, louer** | Opérations MH, démembrement, copropriété, location de luxe, dette participative (§ 3.5) | Nouveau moteur « location de luxe » et modèle M8. Aucun mécanisme ne finance durablement le fonctionnement ; le capital libéré une fois doit aller à la dotation |
 | **V2V — vérification** | 90 chiffres clés vérifiés à la source : 81 confirmés, 9 nuancés, aucun faux | Notes et statuts corrigés dans le modèle (effectif du château-hôtel, échantillon des châteaux-hôtels, crédits des DRAC, prix du gaz, loyers ruraux) ; aucune valeur centrale modifiée |
-| **V2R — équipe rouge** | Attaque du modèle et des livrables (fichier `01_RECHERCHE/V2R_equipe_rouge.md`) | Ses constats sont traités dans les livrables L3 à L8 |
+| **V2R — équipe rouge** | 29 constats, dont 2 critiques : aucun véhicule juridique ne sépare le capital de la fortune du propriétaire ; le rendement net de 3 % n'était pas justifié (fichier `01_RECHERCHE/V2R_equipe_rouge.md`) | Rendement ramené à 2 % et retrait à 1,75 % ; sinistres payés en plus du fonds de travaux ; réserve reconstituée ; maîtrise d'œuvre ajoutée ; solutions redimensionnées à 5 % d'échec sur 30 ans ; § 6.3 et 6.4 réécrits (véhicules, succession, mariage). Le capital nécessaire passe d'environ 70 à environ 100 fois le besoin |
 
-**Ce que la vague 2 confirme.** Les activités compatibles avec une résidence calme couvrent quelques pour cent du besoin. Le fonctionnement durable d'un grand domaine repose sur un **capital affecté**, constitué une fois puis géré avec une règle de dépense. Le dimensionnement de ce capital dépend d'abord de la justesse du budget.
+**Ce que la vague 2 confirme.** Les activités compatibles avec une résidence calme couvrent quelques pour cent du besoin. Le fonctionnement durable d'un grand domaine repose sur un **capital affecté**, constitué une fois puis géré avec une règle de dépense. Ce capital reste la fortune du propriétaire, et il est plus grand qu'annoncé avant l'équipe rouge : environ 100 fois le besoin annuel pour 95 % de chances de tenir 30 ans. Son dimensionnement dépend d'abord de la justesse du budget et du rendement net réellement obtenu.
