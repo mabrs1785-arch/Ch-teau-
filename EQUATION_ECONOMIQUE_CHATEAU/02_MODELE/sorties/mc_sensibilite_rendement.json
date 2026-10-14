@@ -1,0 +1,62 @@
+{
+ "rendement_0.015_retrait_fixe_2.75": {
+  "rendement_reel_net": 0.015,
+  "taux_retrait": 0.0275,
+  "k50": 47400000.0,
+  "k95": 112900000.0
+ },
+ "rendement_0.015_retrait_adapte": {
+  "rendement_reel_net": 0.015,
+  "taux_retrait": 0.0125,
+  "k50": 46800000.0,
+  "k95": 124200000.0
+ },
+ "rendement_0.020_retrait_fixe_2.75": {
+  "rendement_reel_net": 0.02,
+  "taux_retrait": 0.0275,
+  "k50": 43400000.0,
+  "k95": 102900000.0
+ },
+ "rendement_0.020_retrait_adapte": {
+  "rendement_reel_net": 0.02,
+  "taux_retrait": 0.0175,
+  "k50": 42500000.0,
+  "k95": 107700000.0
+ },
+ "rendement_0.025_retrait_fixe_2.75": {
+  "rendement_reel_net": 0.025,
+  "taux_retrait": 0.0275,
+  "k50": 39100000.0,
+  "k95": 93700000.0
+ },
+ "rendement_0.025_retrait_adapte": {
+  "rendement_reel_net": 0.025,
+  "taux_retrait": 0.0225,
+  "k50": 39100000.0,
+  "k95": 96500000.0
+ },
+ "rendement_0.030_retrait_fixe_2.75": {
+  "rendement_reel_net": 0.03,
+  "taux_retrait": 0.0275,
+  "k50": 36500000.0,
+  "k95": 85500000.0
+ },
+ "rendement_0.030_retrait_adapte": {
+  "rendement_reel_net": 0.03,
+  "taux_retrait": 0.0275,
+  "k50": 36500000.0,
+  "k95": 85500000.0
+ },
+ "rendement_0.035_retrait_fixe_2.75": {
+  "rendement_reel_net": 0.035,
+  "taux_retrait": 0.0275,
+  "k50": 33700000.0,
+  "k95": 77600000.0
+ },
+ "rendement_0.035_retrait_adapte": {
+  "rendement_reel_net": 0.035,
+  "taux_retrait": 0.0325,
+  "k50": 33600000.0,
+  "k95": 75800000.0
+ }
+}

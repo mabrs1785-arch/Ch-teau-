@@ -181,6 +181,25 @@ def comparaison_modeles():
     json.dump(out, open("sorties/mc_comparaison_modeles.json", "w"), indent=1, ensure_ascii=False)
 
 
+def sensibilite_rendement():
+    """Dotation nécessaire (S2, fonds seul, 30 ans) selon le rendement réel net et la règle de retrait.
+
+    Deux règles : taux de retrait fixe de 2,75 %, ou taux adapté au rendement (rendement − 0,25 point).
+    Le rendement réel net dépend du véhicule du fonds et de sa fiscalité (à valider, L4 § 2).
+    """
+    out = {}
+    base = mc.parametres_solution("S2", div=0, div_annees=0, reserve0=RESERVES["S2"])
+    for r in (0.015, 0.02, 0.025, 0.03, 0.035):
+        for nom, taux in (("retrait_fixe_2.75", 0.0275), ("retrait_adapte", max(0.01, r - 0.0025))):
+            P = dict(base, dot_rdt=r, dot_taux=taux)
+            k95 = mc.dotation_necessaire(P, cible=0.05, horizon=30, n=6000, borne_haute=1.5e9)
+            k50 = mc.dotation_necessaire(P, cible=0.50, horizon=30, n=6000, borne_haute=1.5e9)
+            out[f"rendement_{r:.3f}_{nom}"] = {"rendement_reel_net": r, "taux_retrait": round(taux, 4),
+                                               "k50": round(k50, -5), "k95": round(k95, -5)}
+            print(r, nom, out[f"rendement_{r:.3f}_{nom}"])
+    json.dump(out, open("sorties/mc_sensibilite_rendement.json", "w"), indent=1, ensure_ascii=False)
+
+
 if __name__ == "__main__":
     dotations()
     grille()
@@ -188,3 +207,4 @@ if __name__ == "__main__":
     holding()
     distribution()
     comparaison_modeles()
+    sensibilite_rendement()
