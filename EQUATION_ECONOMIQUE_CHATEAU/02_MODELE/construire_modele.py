@@ -125,3 +125,12 @@ if __name__ == "__main__":
           json.dumps(s["recalcul"], ensure_ascii=False)[:300])
     if s["nb_ecarts"]:
         print("ÉCARTS :", json.dumps(s["ecarts"][:10], ensure_ascii=False, indent=1))
+    import monte_carlo
+    jumeau = monte_carlo.verifier_jumeau(FICHIER)
+    print("Jumeau Monte-Carlo sans chocs, écart maximal (€) :", json.dumps(jumeau, ensure_ascii=False))
+    with open(os.path.join(SORTIES, "verification.json"), "r+", encoding="utf-8") as f:
+        v = json.load(f)
+        v["jumeau_monte_carlo_ecart_max_eur"] = jumeau
+        f.seek(0)
+        json.dump(v, f, ensure_ascii=False, indent=2)
+        f.truncate()

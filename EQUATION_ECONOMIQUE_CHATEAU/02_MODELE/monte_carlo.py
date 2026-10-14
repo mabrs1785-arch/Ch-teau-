@@ -40,7 +40,9 @@ def parametres_solution(scen: str, dotation0=None, div=None, div_annees=None, re
         "ge": (_v(f"bud_bati_ge_{scen}") + _v(f"bud_imprevus_travaux_{scen}")) * mult_besoin,
         "autres": (_v(f"bud_total_besoin_{scen}") - _v(f"bud_dont_personnel_{scen}") - _v(f"bud_bati_ge_{scen}")
                    - _v(f"bud_imprevus_travaux_{scen}") - _v(f"bud_chauffage_{scen}") - _v(f"bud_hors_gel_{scen}")
-                   - _v(f"bud_electricite_{scen}")) * mult_besoin,
+                   - _v(f"bud_electricite_{scen}") - _v(f"bud_assurance_bati_{scen}")
+                   - _v(f"bud_assurance_autres_{scen}")) * mult_besoin,
+        "assur": (_v(f"bud_assurance_bati_{scen}") + _v(f"bud_assurance_autres_{scen}")) * mult_besoin,
         "A": sum(_v(f"{scen}_ech_{m}") * _v(NOM_CONTRIB[m]) for m in SOLUTION_MOTEURS["A"]),
         "B": sum(_v(f"{scen}_ech_{m}") * _v(NOM_CONTRIB[m]) for m in SOLUTION_MOTEURS["B"]),
         "C": sum(_v(f"{scen}_ech_{m}") * _v(NOM_CONTRIB[m]) for m in SOLUTION_MOTEURS["C"]),
@@ -50,6 +52,7 @@ def parametres_solution(scen: str, dotation0=None, div=None, div_annees=None, re
         "flex_report": _v("flex_report"), "urgence": _v("retrait_urgence"),
         "B0": _v(f"bud_total_besoin_{scen}") * mult_besoin,
         "g_sal": _v("g_salaires"), "g_trav": _v("g_travaux"), "g_en": _v("g_energie"), "g_rec": _v("g_recettes"),
+        "g_ass": _v("g_assurance"),
         "inflation": _v("inflation"), "periode": int(_v("campagne_periode")),
         "rampe1": _v("rampe_an1"), "rampe2": _v("rampe_an2"), "fuite": _v("fuite_fiscale"),
         "dot_rdt": _v("dot_rendement"), "dot_taux": _v("dot_taux_net"), "taux_res": _v("taux_reserve"),
@@ -77,7 +80,7 @@ def simuler(P: dict, annees: int = 30, n: int = 20000, graine: int = 2026, chocs
             sigma_classes=(0.05, 0.10, 0.35), detail: bool = False):
     rng = np.random.default_rng(graine)
     T = annees
-    idx_sal = np.ones(n); idx_trav = 1.0; idx_en = 1.0; idx_rec = 1.0; idx_cpi = 1.0
+    idx_sal = np.ones(n); idx_trav = 1.0; idx_en = 1.0; idx_rec = 1.0; idx_cpi = 1.0; idx_ass = 1.0
     g_sal = P["g_sal"] + (rng.normal(0, sigma_g_sal, n) if chocs else 0.0)
     fonds = np.zeros(n); dot = np.full(n, P["dot0"], dtype=float); res = np.full(n, P["res0"], dtype=float)
     plafond = np.full(n, P["dot_taux"] * P["dot0"], dtype=float)
@@ -88,7 +91,7 @@ def simuler(P: dict, annees: int = 30, n: int = 20000, graine: int = 2026, chocs
     impact = {"A": (0.05, 0.02), "B": (0.15, 0.05), "C": (0.80, 0.30)}
     for t in range(1, T + 1):
         idx_sal = idx_sal * (1 + g_sal); idx_trav *= (1 + P["g_trav"]); idx_en *= (1 + P["g_en"])
-        idx_rec *= (1 + P["g_rec"]); idx_cpi *= (1 + P["inflation"])
+        idx_rec *= (1 + P["g_rec"]); idx_cpi *= (1 + P["inflation"]); idx_ass *= (1 + P["g_ass"])
         crise = (rng.random(n) < p_crise) if chocs else np.zeros(n, dtype=bool)
         reprise = crise_prec & ~crise
         tension = (P["pilotage"] * (res < P["flex_seuil"] * P["B0"])).astype(float)
@@ -96,7 +99,8 @@ def simuler(P: dict, annees: int = 30, n: int = 20000, graine: int = 2026, chocs
         en = P["energie"] * idx_en * (rng.lognormal(-0.5 * sigma_energie ** 2, sigma_energie, n) if chocs else 1.0)
         ge = P["ge"] * idx_trav
         autres = P["autres"]
-        total = pers + en + autres + ge
+        assur = P["assur"] * idx_ass
+        total = pers + en + assur + autres + ge
         # fonds de gros entretien et campagnes
         if t % P["periode"] == 0:
             mult = rng.lognormal(-0.5 * sigma_campagne ** 2, sigma_campagne, n) if chocs else 1.0
@@ -125,7 +129,7 @@ def simuler(P: dict, annees: int = 30, n: int = 20000, graine: int = 2026, chocs
         capex = P["capex"] if t == 1 else 0.0
         dette = (P["dette"] / idx_cpi) if (P["dette"] and t <= P.get("dette_n", 0)) else 0.0
         avantage_mh = P["mh"] * total
-        besoin_net = (pers + en + autres + ge + depassement + dette - act_nette - subvention - avantage_mh
+        besoin_net = (pers + en + assur + autres + ge + depassement + dette - act_nette - subvention - avantage_mh
                       - tension * P["flex_taux"] * P["B0"])
         # moteur extérieur
         if chocs:
@@ -150,8 +154,10 @@ def simuler(P: dict, annees: int = 30, n: int = 20000, graine: int = 2026, chocs
         retrait = np.minimum(np.maximum(0, besoin_net - div), plafond_eff)
         solde = div + retrait - besoin_net
         apport = np.where((solde > 0) & (res > 0), solde * P["part_surplus"], 0.0)
-        dot = np.maximum(0, dot) * (1 + rdt) - retrait + apport - capex
-        res = res * (1 + P["taux_res"]) + solde - apport
+        # l'investissement est prélevé sur la dotation, et sur la réserve pour ce qui dépasse
+        capex_dot = np.minimum(capex, np.maximum(0, dot))
+        dot = np.maximum(0, dot) * (1 + rdt) - retrait + apport - capex_dot
+        res = res * (1 + P["taux_res"]) + solde - apport - (capex - capex_dot)
         nouveaux = (res < 0) & (premier_deficit < 0)
         premier_deficit[nouveaux] = t
         crise_prec = crise
@@ -189,3 +195,27 @@ def dotation_necessaire(P: dict, cible: float = 0.05, horizon: int = 30, n: int 
         else:
             bas = milieu
     return haut
+
+
+def verifier_jumeau(fichier: str) -> dict:
+    """Compare la simulation sans chocs aux projections recalculées du classeur (réserve et dotation, 20 ans).
+
+    Renvoie l'écart absolu maximal par feuille, en euros. Le classeur doit avoir été recalculé.
+    """
+    from openpyxl import load_workbook
+    wb = load_workbook(fichier, data_only=True)
+
+    def ligne(feuille, lid):
+        ws = wb[feuille]
+        for r in range(5, ws.max_row + 1):
+            if ws.cell(row=r, column=1).value == lid:
+                return np.array([ws.cell(row=r, column=c).value for c in range(5, 25)], dtype=float)
+        raise KeyError(f"{feuille}!{lid}")
+
+    ecarts = {}
+    for feuille, scen, sans_moteur in (("Proj_S2_sans_moteur", "S2", True), ("Proj_S2_solution", "S2", False),
+                                       ("Proj_S1_solution", "S1", False), ("Proj_S3_solution", "S3", False)):
+        s = simuler(parametres_solution(scen, sans_moteur=sans_moteur), annees=20, n=1, chocs=False, detail=True)
+        ecarts[feuille] = max(float(np.abs(ligne(feuille, lid) - s["traj"][cle][0]).max())
+                              for lid, cle in (("reserve", "reserve"), ("dotation_fin", "dotation")))
+    return ecarts

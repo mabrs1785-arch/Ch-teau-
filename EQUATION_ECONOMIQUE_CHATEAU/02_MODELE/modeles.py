@@ -32,6 +32,8 @@ MOTEURS = {  # code : (nom de la contribution sur la feuille Moteurs, classe, in
     "PV": ("mot_pv_cn", "A", None),
     "BOIS": ("mot_bois_cn", "A", None),
     "HOTEL": ("mot_hot_cn", "B", "mot_hot_inv"),
+    "ANC": ("mot_anc_cn", "A", None),
+    "LUX": ("mot_lux_cn", "C", "lux_capex"),
 }
 
 MODELES = {
@@ -47,6 +49,10 @@ MODELES = {
            ["EQ_STD", "BOIS", "TOURN"]),
     "M6": ("Socle minimal + entreprise extérieure",
            ["EQ_STD", "BOIS", "TOURN"]),
+    "M7": ("Locataire d'ancrage : bail à un exploitant de séminaires + socle foncier",
+           ["ANC", "EQ_RET", "PV", "BOIS"]),
+    "M8": ("Socle M1 + location de luxe de la partie privée quelques semaines par an",
+           ["EQ_STD", "EQ_RET", "LOG", "STOCK", "PV", "BOIS", "TOURN", "LUX"]),
 }
 
 G = "Configuration des modèles"

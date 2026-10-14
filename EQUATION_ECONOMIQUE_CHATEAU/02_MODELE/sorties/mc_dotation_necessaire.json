@@ -1,56 +1,56 @@
 {
  "S1_pure": {
   "besoin_B": 325000.0,
-  "dotation_95": 21700000.0,
-  "dotation_50": 9200000.0,
-  "ratio_95_sur_B": 66.8,
-  "ratio_50_sur_B": 28.2,
-  "p_echec_20_a_k95": 0.0165,
-  "p_echec_30_a_k95": 0.0469
+  "dotation_95": 22900000.0,
+  "dotation_50": 9600000.0,
+  "ratio_95_sur_B": 70.4,
+  "ratio_50_sur_B": 29.4,
+  "p_echec_20_a_k95": 0.0151,
+  "p_echec_30_a_k95": 0.0473
  },
  "S1_leviers": {
   "besoin_B": 325000.0,
-  "dotation_95": 16100000.0,
-  "dotation_50": 6900000.0,
-  "ratio_95_sur_B": 49.4,
-  "ratio_50_sur_B": 21.1,
-  "p_echec_20_a_k95": 0.0158,
-  "p_echec_30_a_k95": 0.0479
+  "dotation_95": 17100000.0,
+  "dotation_50": 7200000.0,
+  "ratio_95_sur_B": 52.6,
+  "ratio_50_sur_B": 22.1,
+  "p_echec_20_a_k95": 0.0143,
+  "p_echec_30_a_k95": 0.0476
  },
  "S2_pure": {
   "besoin_B": 1239000.0,
-  "dotation_95": 81700000.0,
-  "dotation_50": 35200000.0,
-  "ratio_95_sur_B": 65.9,
-  "ratio_50_sur_B": 28.4,
-  "p_echec_20_a_k95": 0.0165,
-  "p_echec_30_a_k95": 0.0485
+  "dotation_95": 85500000.0,
+  "dotation_50": 36500000.0,
+  "ratio_95_sur_B": 69.0,
+  "ratio_50_sur_B": 29.4,
+  "p_echec_20_a_k95": 0.0153,
+  "p_echec_30_a_k95": 0.0483
  },
  "S2_leviers": {
   "besoin_B": 1239000.0,
-  "dotation_95": 61000000.0,
-  "dotation_50": 26400000.0,
-  "ratio_95_sur_B": 49.2,
-  "ratio_50_sur_B": 21.3,
-  "p_echec_20_a_k95": 0.0149,
-  "p_echec_30_a_k95": 0.0483
+  "dotation_95": 64000000.0,
+  "dotation_50": 27300000.0,
+  "ratio_95_sur_B": 51.6,
+  "ratio_50_sur_B": 22.1,
+  "p_echec_20_a_k95": 0.0134,
+  "p_echec_30_a_k95": 0.0479
  },
  "S3_pure": {
-  "besoin_B": 3469000.0,
-  "dotation_95": 254700000.0,
-  "dotation_50": 101200000.0,
-  "ratio_95_sur_B": 73.4,
-  "ratio_50_sur_B": 29.2,
-  "p_echec_20_a_k95": 0.0186,
-  "p_echec_30_a_k95": 0.0459
+  "besoin_B": 3643000.0,
+  "dotation_95": 242700000.0,
+  "dotation_50": 108500000.0,
+  "ratio_95_sur_B": 66.6,
+  "ratio_50_sur_B": 29.8,
+  "p_echec_20_a_k95": 0.0143,
+  "p_echec_30_a_k95": 0.0479
  },
  "S3_leviers": {
-  "besoin_B": 3469000.0,
-  "dotation_95": 192900000.0,
-  "dotation_50": 75000000.0,
-  "ratio_95_sur_B": 55.6,
-  "ratio_50_sur_B": 21.6,
-  "p_echec_20_a_k95": 0.0179,
-  "p_echec_30_a_k95": 0.0452
+  "besoin_B": 3643000.0,
+  "dotation_95": 209500000.0,
+  "dotation_50": 82100000.0,
+  "ratio_95_sur_B": 57.5,
+  "ratio_50_sur_B": 22.5,
+  "p_echec_20_a_k95": 0.0169,
+  "p_echec_30_a_k95": 0.0451
  }
 }

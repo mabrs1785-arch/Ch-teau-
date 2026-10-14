@@ -1,113 +1,113 @@
 {
  "configuration": "S2 : dotation 60 M€, dividendes 1.00 M€/an pendant 10 ans, réserve 1.50 M€",
  "reference": {
-  "echec_20": 0.037,
-  "echec_30": 0.097
+  "echec_20": 0.043,
+  "echec_30": 0.111
  },
  "dotation_initiale": {
   "30 M€": {
-   "echec_20": 0.351,
-   "echec_30": 0.492
+   "echec_20": 0.381,
+   "echec_30": 0.528
   },
   "40 M€": {
-   "echec_20": 0.155,
-   "echec_30": 0.269
+   "echec_20": 0.173,
+   "echec_30": 0.299
   },
   "50 M€": {
-   "echec_20": 0.075,
-   "echec_30": 0.162
+   "echec_20": 0.087,
+   "echec_30": 0.182
   },
   "60 M€": {
-   "echec_20": 0.037,
-   "echec_30": 0.097
+   "echec_20": 0.043,
+   "echec_30": 0.111
   },
   "70 M€": {
-   "echec_20": 0.02,
-   "echec_30": 0.057
+   "echec_20": 0.022,
+   "echec_30": 0.068
   },
   "80 M€": {
-   "echec_20": 0.011,
-   "echec_30": 0.037
+   "echec_20": 0.013,
+   "echec_30": 0.045
   }
  },
  "rendement_reel_net": {
   "0.02": {
-   "echec_20": 0.063,
-   "echec_30": 0.164
+   "echec_20": 0.073,
+   "echec_30": 0.189
   },
   "0.025": {
-   "echec_20": 0.049,
-   "echec_30": 0.127
+   "echec_20": 0.056,
+   "echec_30": 0.147
   },
   "0.03": {
-   "echec_20": 0.037,
-   "echec_30": 0.097
+   "echec_20": 0.043,
+   "echec_30": 0.111
   },
   "0.035": {
-   "echec_20": 0.029,
-   "echec_30": 0.07
+   "echec_20": 0.033,
+   "echec_30": 0.083
   }
  },
  "derive_salaires_reelle": {
   "0.0": {
-   "echec_20": 0.033,
-   "echec_30": 0.085
+   "echec_20": 0.038,
+   "echec_30": 0.099
   },
   "0.005": {
-   "echec_20": 0.037,
-   "echec_30": 0.097
+   "echec_20": 0.043,
+   "echec_30": 0.111
   },
   "0.01": {
-   "echec_20": 0.042,
-   "echec_30": 0.11
-  },
-  "0.015": {
    "echec_20": 0.048,
    "echec_30": 0.126
+  },
+  "0.015": {
+   "echec_20": 0.056,
+   "echec_30": 0.144
   }
  },
  "sans_regles_de_pilotage": {
-  "echec_20": 0.097,
-  "echec_30": 0.189
+  "echec_20": 0.111,
+  "echec_30": 0.215
  },
  "frequence_des_crises": {
   "1 tous les 20 ans": {
-   "echec_20": 0.029,
-   "echec_30": 0.076
+   "echec_20": 0.033,
+   "echec_30": 0.089
   },
   "1 tous les 12 ans": {
-   "echec_20": 0.037,
-   "echec_30": 0.097
+   "echec_20": 0.043,
+   "echec_30": 0.111
   },
   "1 tous les 8 ans": {
-   "echec_20": 0.05,
-   "echec_30": 0.115
+   "echec_20": 0.056,
+   "echec_30": 0.13
   }
  },
  "sinistres_par_an": {
   "0.05": {
-   "echec_20": 0.031,
-   "echec_30": 0.084
+   "echec_20": 0.035,
+   "echec_30": 0.099
   },
   "0.1": {
-   "echec_20": 0.037,
-   "echec_30": 0.097
+   "echec_20": 0.043,
+   "echec_30": 0.111
   },
   "0.2": {
-   "echec_20": 0.046,
-   "echec_30": 0.103
+   "echec_20": 0.051,
+   "echec_30": 0.116
   }
  },
  "besoin_plus_20_pct": {
-  "echec_20": 0.089,
-  "echec_30": 0.173
+  "echec_20": 0.102,
+  "echec_30": 0.196
  },
  "sans_dividendes_de_transition": {
-  "echec_20": 0.07,
-  "echec_30": 0.146
+  "echec_20": 0.08,
+  "echec_30": 0.166
  },
  "une_seule_entreprise": {
-  "p_echec_20": 0.0384,
-  "p_echec_30": 0.0928
+  "p_echec_20": 0.0448,
+  "p_echec_30": 0.1088
  }
 }

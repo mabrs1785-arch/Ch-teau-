@@ -154,6 +154,48 @@ p("bois_net_ha", "Forêt : revenu net des coupes", 75, fav=100, dfv=50, unite="�
   statut="HYPOTHÈSE", sources="R8-04; R8-05", groupe=G,
   note="Revenu net introuvable ; hypothèse de R8. Prix : forêt 4 950 €/ha, chêne −17 % en 2025.")
 
+G = "Moteurs — bail d'ancrage et location de luxe (vague 2)"
+p("anc_chambres", "Bail d'ancrage : chambres exploitées par un opérateur de séminaires résidentiels", 50,
+  fav=60, dfv=0, unite="chambres", statut="HYPOTHÈSE", sources="V2A-13; V2A-54", groupe=G,
+  note="Toutes les maisons Châteauform' en France ont au moins 40 chambres (médiane 61). S2 permettrait 40 à "
+       "60 chambres en mobilisant l'essentiel des bâtiments (V2A § 4.3). Défavorable = conditions non réunies "
+       "(plus de ≈ 90 km de Paris ou de 45 min d'une gare TGV, ou refus de cohabitation) : aucun exploitant.")
+p("anc_ca_chambre", "Bail d'ancrage : chiffre d'affaires annuel de l'exploitant par chambre", 70000, fav=72400,
+  dfv=68800, unite="€ HT/chambre/an", statut="ESTIMATION", sources="V2A-14; V2A-01", groupe=G,
+  note="Château de Méry (70 chambres) : 72 400 € en 2024 ; campus Saint-Just (148 chambres) : 68 800 € en "
+       "2025. Deux maisons proches de Paris, non transposables à une région éloignée.")
+p("anc_taux_loyer", "Bail d'ancrage : loyer en % du chiffre d'affaires de l'exploitant", 0.10, fav=0.12,
+  dfv=0.08, unite="%", statut="ESTIMATION", sources="V2A-29; V2A-31", groupe=G,
+  note="Pratique hôtelière : 10-15 % du CA pour un indépendant ; plafond économique 8-14 % (couverture du "
+       "loyer de 1,8 fois). V2A retient 8-15 % (central 12 %) ; ramené ici vers le bas parce que l'exploitant "
+       "finance la transformation (abattement de 5 à 50 % selon les travaux, V2A § 7). Aucun loyer réel de "
+       "château loué à un exploitant n'a été trouvé.")
+p("anc_frais_bailleur", "Bail d'ancrage : frais du bailleur (gestion, juristes, assurance, impôts non refacturés)",
+  0.10, fav=0.05, dfv=0.15, unite="% du loyer", statut="HYPOTHÈSE", groupe=G)
+p("anc_part_transferee", "Bail d'ancrage : part de l'énergie et de l'entretien courant du bâti reprise par l'exploitant",
+  0.25, fav=0.40, dfv=0.0, unite="%", statut="HYPOTHÈSE", sources="V2A-38", groupe=G,
+  note="Dans un bail commercial, l'entretien courant et les fluides de la zone louée sont au preneur ; les "
+       "grosses réparations (toiture, murs porteurs) restent toujours au bailleur.")
+p("lux_semaines", "Location de luxe de la partie privée : semaines louées par an", 3, fav=6, dfv=2,
+  unite="semaines", statut="HYPOTHÈSE", sources="V2D-26; V2D-28", groupe=G,
+  note="Aucun chiffre réel trouvé. Le Collectionist : ≈ 2 réservations par propriété et par an ; Oliver's "
+       "Travels exige 6 semaines disponibles en juillet-août. Le propriétaire doit quitter les lieux.")
+p("lux_prix_semaine", "Location de luxe : prix d'une semaine (château de 10 à 14 chambres)", 30000, fav=45000,
+  dfv=20000, unite="€/semaine", statut="ESTIMATION", sources="V2D-35; V2D-36; V2D-37; V2D-38; V2D-25", groupe=G,
+  note="Prix publiés : 12 755 à 46 860 € par semaine pour 8 à 14 chambres ; prix moyen de la plateforme ≈ "
+       "25 000 € (2020). Régime de TVA non précisé : montant traité comme hors taxe.")
+p("lux_commission", "Location de luxe : commission de la plateforme", 0.22, fav=0.20, dfv=0.22, unite="%",
+  statut="SOURCÉ", sources="V2D-24; V2D-25", groupe=G, note="Le Collectionist : 20 % (2017), 22 % (2020).")
+p("lux_var", "Location de luxe : charges variables (ménage, gardien, linge, fluides, usure)", 0.15, fav=0.10,
+  dfv=0.20, unite="%", statut="HYPOTHÈSE", sources="V2D-24", groupe=G,
+  note="Les services compris dans le prix (ménage, jardiniers) sont fournis par le propriétaire.")
+p("lux_fixe", "Location de luxe : charges fixes (assurance RC, comptabilité au réel, entretien de la piscine)",
+  10000, fav=5000, dfv=20000, unite="€/an", statut="HYPOTHÈSE", sources="V2D-28; V2D-32", groupe=G)
+p("lux_capex", "Location de luxe : mise aux standards (piscine, une salle de bains par chambre)", 300000,
+  fav=100000, dfv=600000, unite="€", statut="HYPOTHÈSE", sources="V2D-40; V2D-41", groupe=G,
+  note="Exigences observées : piscine dans tous les châteaux de la plateforme, 0,75 à 1 salle de bains par "
+       "chambre. Coût INCONNU (V2D) : ordre de grandeur à remplacer par des devis.")
+
 G = "Moteurs — extérieurs"
 p("dot_taux_net", "Dotation financière : taux de retrait réel net d'impôt soutenable", 0.0275,
   fav=0.03, dfv=0.025, unite="% du capital", statut="ESTIMATION", sources="R8-31; R8-32; R8-34", groupe=G,
@@ -238,6 +280,18 @@ LIGNES = [
      "hot_chambres{C}*hot_capex_chambre{C}*taux_renouv_capex{C}", "HOTEL", 0, "P"),
     ("hot_cn", "Château-hôtel — CONTRIBUTION NETTE", "[hot_ca]-[hot_ch]-[hot_rv]", "HOTEL", 0, "S"),
     ("hot_inv", "Château-hôtel — investissement initial", "hot_chambres{C}*hot_capex_chambre{C}", "HOTEL", 0, "S"),
+    # Bail d'ancrage (vague 2, V2A)
+    ("anc_loyer", "Bail d'ancrage — loyer brut versé par l'exploitant",
+     "anc_chambres{C}*anc_ca_chambre{C}*anc_taux_loyer{C}", "ANC", 0, "F"),
+    ("anc_eco", "Bail d'ancrage — charges du domaine reprises par l'exploitant",
+     "anc_part_transferee{C}*(bud_chauffage_S2{C}+bud_hors_gel_S2{C}+bud_electricite_S2{C}+bud_bati_courant_S2{C})",
+     "ANC", 0, "F"),
+    ("anc_cn", "Bail d'ancrage — CONTRIBUTION NETTE (si localisation et taille le permettent)",
+     "[anc_loyer]*(1-anc_frais_bailleur{C})+[anc_eco]", "ANC", 0, "S"),
+    # Location de luxe de la partie privée (vague 2, V2D)
+    ("lux_ca", "Location de luxe — recettes brutes", "lux_semaines{C}*lux_prix_semaine{C}", "LUX", 0, "F"),
+    ("lux_cn", "Location de luxe — CONTRIBUTION NETTE",
+     "[lux_ca]*(1-lux_commission{C}-lux_var{C})-lux_fixe{C}-lux_capex{C}*taux_renouv_capex{C}", "LUX", 0, "S"),
     # Extérieurs (par million d'euros)
     ("dot_cn_par_m", "Dotation financière — revenu net par million € de capital", "1000000*dot_taux_net{C}", "DOT", 0, "S"),
     ("ent_cn_par_m", "Entreprise extérieure — dividende net par million € d'EBITDA", "1000000*ent_conversion{C}", "ENT", 0, "S"),

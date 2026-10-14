@@ -22,14 +22,23 @@ N_ANNEES = 20
 # ---------------------------------------------------------------------------------------------------
 G = "Projection — dérives et règles"
 p("g_salaires", "Dérive réelle annuelle des salaires (au-delà de l'inflation)", 0.005, fav=0.0, dfv=0.01,
-  unite="% par an", statut="ESTIMATION", sources="D-01", groupe=G,
+  unite="% par an", statut="ESTIMATION", sources="D-01; V2C-05", groupe=G,
   note="Banque de France (sept. 2026) : salaire moyen par tête +2,0 %, +2,6 %, +2,4 % en 2026-2028, pour "
-       "une inflation de 2,3 %, 1,9 %, 1,6 %, soit environ +0,4 % réel par an en moyenne.")
-p("g_travaux", "Dérive réelle annuelle du coût des travaux", 0.005, fav=0.0, dfv=0.01, unite="% par an",
-  statut="ESTIMATION", sources="D-04; D-01", groupe=G,
-  note="BT01 +1,3 % en 2025 pour une inflation de 0,9 %.")
-p("g_energie", "Dérive réelle annuelle du prix de l'énergie", 0.01, fav=0.0, dfv=0.025, unite="% par an",
-  statut="HYPOTHÈSE", sources="R1-22; R1-24", groupe=G)
+       "une inflation de 2,3 %, 1,9 %, 1,6 %, soit environ +0,4 % réel par an. SMIC 2006-2026 (INSEE) : "
+       "≈ +0,4 % réel par an.")
+p("g_travaux", "Dérive réelle annuelle du coût des travaux", 0.0075, fav=0.005, dfv=0.0125, unite="% par an",
+  statut="ESTIMATION", sources="V2C-03; V2C-01; D-04", groupe=G,
+  note="INSEE, indice des prix de l'entretien-amélioration des bâtiments résidentiels (IPEA), 2005-2025 : "
+       "+0,74 % réel par an ; couverture +1,26 % ; menuiserie +1,51 %. Les métiers des monuments historiques "
+       "n'ont pas d'indice public.")
+p("g_energie", "Dérive réelle annuelle du prix de l'énergie", 0.02, fav=0.009, dfv=0.0285, unite="% par an",
+  statut="ESTIMATION", sources="V2C-04; R1-22; R1-24", groupe=G,
+  note="INSEE, IPC 2005-2025, réel : électricité +2,0 %/an, fioul +1,9 %, gaz +4,8 %, bois et granulés "
+       "+0,9 %, ensemble électricité-gaz-combustibles +2,85 %. Chocs de +40 à +66 % en 2021-2024.")
+p("g_assurance", "Dérive réelle annuelle des primes d'assurance", 0.0185, fav=0.01, dfv=0.03, unite="% par an",
+  statut="ESTIMATION", sources="V2C-19; R1-29; R1-05", groupe=G,
+  note="INSEE, IPC assurance habitation 2005-2025 : +1,85 % réel par an, puis +5,6 %, +8,1 % et +12,6 % "
+       "nominal en 2023, 2024 et 2025. Aucune série propre aux monuments.")
 p("g_recettes", "Dérive réelle annuelle des prix des activités", 0.0, fav=0.005, dfv=-0.005, unite="% par an",
   statut="HYPOTHÈSE", groupe=G)
 p("inflation", "Inflation annuelle (pour convertir une annuité nominale en euros constants)", 0.02,
@@ -177,6 +186,7 @@ def _lignes(scen: str, tid: str, avec_moteur: bool = True):
     a(("idx_sal", "Indice des salaires (réel)", "1", f"[idx_sal@-1]*(1+g_salaires+{st('g_sal_extra')})", "nb"))
     a(("idx_trav", "Indice des travaux (réel)", "1", "[idx_trav@-1]*(1+g_travaux)", "nb"))
     a(("idx_en", "Indice de l'énergie (réel)", "1", "[idx_en@-1]*(1+g_energie)", "nb"))
+    a(("idx_ass", "Indice des primes d'assurance (réel)", "1", "[idx_ass@-1]*(1+g_assurance)", "nb"))
     a(("idx_rec", "Indice des prix des activités (réel)", "1", "[idx_rec@-1]*(1+g_recettes)", "nb"))
     a(("idx_cpi", "Indice des prix à la consommation (pour la dette)", "1", "[idx_cpi@-1]*(1+inflation)", "nb"))
     a(("crise", "Année de crise (1) ou de reprise (2)", None,
@@ -188,12 +198,14 @@ def _lignes(scen: str, tid: str, avec_moteur: bool = True):
     a(("b_energie", "Énergie", None,
        f"(bud_chauffage_{scen}+bud_hors_gel_{scen}+bud_electricite_{scen})*[idx_en]"
        f"*IF(AND({{T}}>={st('energie_debut')},{{T}}<={st('energie_fin')}),{st('energie_mult')},1)", "eur"))
-    a(("b_autres", "Autres charges courantes (entretien courant, jardins, matériel, chevaux, assurances, taxes, administration, imprévus, investissements futurs)",
+    a(("b_assur", "Assurances", None, f"(bud_assurance_bati_{scen}+bud_assurance_autres_{scen})*[idx_ass]", "eur"))
+    a(("b_autres", "Autres charges courantes (entretien courant, jardins, matériel, chevaux, taxes, administration, imprévus, investissements futurs)",
        None, f"bud_total_besoin_{scen}-bud_dont_personnel_{scen}-bud_bati_ge_{scen}-bud_imprevus_travaux_{scen}"
-             f"-bud_chauffage_{scen}-bud_hors_gel_{scen}-bud_electricite_{scen}", "eur"))
+             f"-bud_chauffage_{scen}-bud_hors_gel_{scen}-bud_electricite_{scen}"
+             f"-bud_assurance_bati_{scen}-bud_assurance_autres_{scen}", "eur"))
     a(("b_ge_prov", "Provision de gros entretien versée au fonds de travaux", None,
        f"(bud_bati_ge_{scen}+bud_imprevus_travaux_{scen})*[idx_trav]", "eur"))
-    a(("total_charges", "TOTAL DU BESOIN ANNUEL DU DOMAINE", None, "[b_pers]+[b_energie]+[b_autres]+[b_ge_prov]", "eur"))
+    a(("total_charges", "TOTAL DU BESOIN ANNUEL DU DOMAINE", None, "[b_pers]+[b_energie]+[b_assur]+[b_autres]+[b_ge_prov]", "eur"))
     # ---- fonds de gros entretien
     a(("campagne", "Campagne de gros entretien (dépense du fonds)", None,
        f"IF(MOD({{T}},campagne_periode)=0,([fonds_ge@-1]+[b_ge_prov])*{st('mult_campagne')}*(1-[tension]*flex_report),0)", "eur"))
@@ -216,8 +228,10 @@ def _lignes(scen: str, tid: str, avec_moteur: bool = True):
     a(("act_brute", "Contribution brute des activités sur place", None, "[act_A]+[act_B]+[act_C]", "eur"))
     a(("act_nette", "Contribution des activités après fuite fiscale", None,
        "IF([act_brute]>0,[act_brute]*(1-fuite_fiscale),[act_brute])", "eur"))
-    a(("capex_act", "Investissements des activités (année 1, prélevés sur le capital de la dotation)", None,
+    a(("capex_act", "Investissements des activités (année 1)", None,
        f"IF({{T}}=1,{inv},0)", "eur"))
+    a(("capex_dot", "dont prélevé sur le capital de la dotation (le reste est pris sur la réserve)", None,
+       "MIN([capex_act],MAX(0,[dotation_fin@-1]))", "eur"))
     # ---- options
     a(("dette", "Annuité de la dette d'acquisition, en euros constants (option)", None,
        f"dette_active*IF({{T}}<=dette_duree,-PMT(dette_taux,dette_duree,{scen}_prix_achat*dette_quotite)/[idx_cpi],0)", "eur"))
@@ -227,7 +241,7 @@ def _lignes(scen: str, tid: str, avec_moteur: bool = True):
        f"[tension]*flex_taux*bud_total_besoin_{scen}", "eur"))
     # ---- besoin net à couvrir par le moteur extérieur
     a(("besoin_net", "Besoin net à couvrir hors activités (charges courantes + provision + dépassements + investissements + dette − activités − aides)",
-       None, "[b_pers]+[b_energie]+[b_autres]+[b_ge_prov]+[depassement_trav]+[dette]-[act_nette]-[subvention]-[avantage_mh]-[economie_pilotage]", "eur"))
+       None, "[b_pers]+[b_energie]+[b_assur]+[b_autres]+[b_ge_prov]+[depassement_trav]+[dette]-[act_nette]-[subvention]-[avantage_mh]-[economie_pilotage]", "eur"))
     # ---- moteur extérieur
     a(("dividendes", "Dividendes nets de l'entreprise extérieure", None,
        f"IF(AND({{T}}<={div_n},{{T}}<={st('div_fin')}),{div}*IF([crise]=1,0.5,1),0)", "eur"))
@@ -242,9 +256,9 @@ def _lignes(scen: str, tid: str, avec_moteur: bool = True):
     a(("apport_dot", "Excédent versé à la dotation", None,
        "IF(AND([flux_solde]>0,[reserve@-1]>0),[flux_solde]*part_surplus_dotation,0)", "eur"))
     a(("dotation_fin", "DOTATION (fin d'année)", dot0,
-       "MAX(0,[dotation_fin@-1])*(1+[rdt_dot])-[retrait]+[apport_dot]-[capex_act]", "eur"))
+       "MAX(0,[dotation_fin@-1])*(1+[rdt_dot])-[retrait]+[apport_dot]-[capex_dot]", "eur"))
     a(("reserve", "RÉSERVE DE TRÉSORERIE (fin d'année)", res0,
-       "[reserve@-1]*(1+taux_reserve)+[flux_solde]-[apport_dot]", "eur"))
+       "[reserve@-1]*(1+taux_reserve)+[flux_solde]-[apport_dot]-([capex_act]-[capex_dot])", "eur"))
     a(("kpi_liquidite", "Liquidité totale (réserve + fonds de travaux)", None, "[reserve]+[fonds_ge]", "eur"))
     a(("kpi_couverture", "Couverture du besoin par activités + règle de dépense de la dotation (hors dividendes)",
        None, "([act_nette]+[plafond])/[total_charges]", "pct"))

@@ -79,7 +79,9 @@ def tableau_moteurs(mo):
             ("gite_cn", "Grande maison louée à la semaine", "C"), ("log_cn", "Logements locatifs dans les communs (600 m²)", "A"),
             ("stock_cn", "Hivernage de camping-cars (600 m²)", "A"), ("auto_cn", "Gardiennage de voitures de collection", "A"),
             ("pv_cn", "Bail solaire (5 ha hors champ de visibilité)", "A"), ("bois_cn", "Forêt (30 ha)", "A"),
-            ("hot_cn", "Château-hôtel opéré (15 chambres)", "B/C")]
+            ("hot_cn", "Château-hôtel opéré (15 chambres)", "B/C"),
+            ("anc_cn", "Bail d'ancrage à un exploitant de séminaires (50 chambres, si conditions réunies)", "A"),
+            ("lux_cn", "Location de luxe de la partie privée (3 semaines par an)", "C")]
     inv = {"evt_cn": "evt_inv", "gite_cn": "gite_inv", "log_cn": "log_inv", "hot_cn": "hot_inv"}
     lignes = ["| Moteur (échelle S2) | Classe | Favorable | Central | Défavorable | Investissement central |",
               "|---|:---:|---:|---:|---:|---:|"]
@@ -93,7 +95,8 @@ def tableau_moteurs(mo):
 def tableau_modeles(md):
     titres = {"M1": "Socle contractuel et équestre standard", "M2": "Lieu d'exception à quota",
               "M3": "Équestre haut de gamme et services", "M4": "Château-hôtel opéré + réceptions",
-              "M5": "Socle minimal + dotation", "M6": "Socle minimal + entreprise extérieure"}
+              "M5": "Socle minimal + dotation", "M6": "Socle minimal + entreprise extérieure",
+              "M7": "Locataire d'ancrage + socle foncier", "M8": "Socle M1 + location de luxe"}
     lignes = ["| Modèle | Contribution disponible (central) | Couverture du besoin S2 (fav / cen / déf) | Écart à financer (central) | Dotation équivalente (central) | EBITDA équivalent (central) | Investissement |",
               "|---|---:|---:|---:|---:|---:|---:|"]
     for mid, t in titres.items():
@@ -127,7 +130,8 @@ def main():
            "## Moteurs de revenus", "", tableau_moteurs(mo), "",
            "## Modèles", "", tableau_modeles(md), "",
            "## Projections et stress tests", "", tableau_stress(wb["Stress_synthese"]), ""]
-    for f in ("mc_dotation_necessaire.json", "mc_grille_hybride.json", "mc_holding_hybride.json"):
+    for f in ("mc_dotation_necessaire.json", "mc_grille_hybride.json", "mc_holding_hybride.json",
+              "mc_ruptures_S2.json", "mc_ruptures_S1.json"):
         chemin = os.path.join(ICI, "sorties", f)
         if os.path.exists(chemin):
             out += [f"## {f}", "", "```json", open(chemin, encoding="utf-8").read(), "```", ""]

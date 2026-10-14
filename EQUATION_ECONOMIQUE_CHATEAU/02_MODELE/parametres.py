@@ -198,12 +198,20 @@ for scen, vals in {
                resp_ecurie=0, gouvernance=0, maison=0.5),
     "S2": dict(direction=1, admin=0, chef_jardinier=1, jardin=2, entretien=1, agricole=1, soigneur=1,
                resp_ecurie=1, gouvernance=1, maison=1),
-    "S3": dict(direction=1, admin=1, chef_jardinier=1, jardin=11, entretien=2, agricole=2, soigneur=1.5,
+    "S3": dict(direction=1, admin=1, chef_jardinier=1, jardin=16, entretien=2, agricole=2, soigneur=1.5,
                resp_ecurie=1, gouvernance=2, maison=2),
 }.items():
     for role, etp in vals.items():
-        p(f"{scen}_etp_{role}", f"{scen} — ETP {role.replace('_', ' ')}", etp, unite="ETP",
-          statut="HYPOTHÈSE", sources="R2", groupe=G, note=NOTE_ETP)
+        if scen == "S3" and role == "jardin":
+            p(f"{scen}_etp_{role}", f"{scen} — ETP {role.replace('_', ' ')}", etp, unite="ETP",
+              statut="ESTIMATION", sources="V2C-21; R2", groupe=G,
+              note="R2 retenait 11 jardiniers. V2C (temps d'entretien de la Ville de Rennes) : 15,7 ETP pour 60 ha "
+                   "en gestion différenciée (1 ha très fleuri, 9 ha de jardin régulier, 10 ha d'accompagnement, "
+                   "40 ha de prairie fauchée), 19,7 ETP avec 40 ha de pelouse champêtre, 33,4 ETP si tout le parc "
+                   "est soigné. Le budget suppose donc une gestion différenciée.")
+        else:
+            p(f"{scen}_etp_{role}", f"{scen} — ETP {role.replace('_', ' ')}", etp, unite="ETP",
+              statut="HYPOTHÈSE", sources="R2" + ("; V2C-21" if role == "jardin" else ""), groupe=G, note=NOTE_ETP)
 
 # =============================================================================
 # JARDINS, TERRES, ÉQUIPEMENTS, CHEVAUX (sources : agent R2)

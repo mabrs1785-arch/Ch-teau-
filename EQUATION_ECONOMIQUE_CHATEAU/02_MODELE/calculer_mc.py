@@ -8,7 +8,8 @@ import sys
 sys.path.insert(0, ".")
 import construire_modele as cm  # noqa: E402
 
-cm.construire()
+# reconstruit le registre ET recalcule le classeur (sinon il resterait sans valeurs en cache)
+cm.recalculer_et_verifier(cm.construire())
 import monte_carlo as mc  # noqa: E402
 from noyau import EXTRA  # noqa: E402
 
@@ -70,7 +71,7 @@ def ruptures():
         out["sinistres_par_an"] = {str(l): pe(base, lambda_sinistre=l) for l in (0.05, 0.10, 0.20)}
         m = 1.2
         out["besoin_plus_20_pct"] = pe(dict(base, pers=base["pers"] * m, energie=base["energie"] * m, ge=base["ge"] * m,
-                                            autres=base["autres"] * m, B0=base["B0"] * m))
+                                            autres=base["autres"] * m, assur=base["assur"] * m, B0=base["B0"] * m))
         out["sans_dividendes_de_transition"] = pe(dict(base, div=0, div_n=0))
         out["une_seule_entreprise"] = pe(base) if base["div"] == 0 else {
             k2: v for k2, v in mc.simuler(base, annees=30, n=N, ent_n=1).items() if k2 in ("p_echec_20", "p_echec_30")}
@@ -78,7 +79,25 @@ def ruptures():
         json.dump(out, open(f"sorties/mc_ruptures_{scen}.json", "w"), indent=1, ensure_ascii=False)
 
 
+def holding():
+    """Holding de PME qui ne fait que distribuer ses dividendes pendant 30 ans, avec une petite dotation."""
+    out = {}
+    for scen, cas in (("S1", [(300_000, 3, 3_000_000), (400_000, 3, 2_000_000), (250_000, 1, 3_000_000)]),
+                      ("S2", [(1_000_000, 5, 10_000_000), (1_200_000, 5, 8_000_000), (1_000_000, 1, 10_000_000),
+                              (1_400_000, 6, 5_000_000)])):
+        for div, n_pme, k0 in cas:
+            P = mc.parametres_solution(scen, dotation0=k0, div=div, div_annees=30, reserve0=RESERVES[scen])
+            s = mc.simuler(P, annees=30, n=20000, ent_n=n_pme)
+            cle = f"{scen}_div{div // 1000}k_{n_pme}pme_dot{k0 // 1_000_000}M"
+            out[cle] = {k: (round(v, 4) if abs(v) < 10 else round(v, -5)) for k, v in s.items()
+                        if k in ("p_echec_20", "p_echec_30", "dotation_20_p05", "dotation_20_p50",
+                                 "dotation_fin_p05", "dotation_fin_p50", "reserve_min_p05")}
+            print(cle, out[cle])
+    json.dump(out, open("sorties/mc_holding_hybride.json", "w"), indent=1, ensure_ascii=False)
+
+
 if __name__ == "__main__":
     dotations()
     grille()
     ruptures()
+    holding()

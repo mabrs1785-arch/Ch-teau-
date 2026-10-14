@@ -16,12 +16,13 @@ Avertissement : ce document n'est pas un avis juridique ou fiscal. Tout montage 
 ## Journal de progression
 
 - 2026-10-14 : squelette créé.
+- 2026-10-14 : Q1 à Q5, autre mécanisme (dette participative), synthèse par mécanisme, contre-exemples, points de doute et chiffres clés rédigés. 8 WebSearch utilisées sur 8. 58 appels WebFetch, dont 8 en échec (403 Actu-Juridique et Leggett, 404, 429, redirection). 30 téléchargements directs (PDF de l'Assemblée nationale et de Galivel, API BODACC, fichiers DVF, BOFiP), dont 14 en échec : Cloudflare, connexions coupées vers data.gouv.fr et l'API Recherche d'entreprises, portail culture en JavaScript, pages 404, et 5 redirections non suivies au premier essai. 47 sources : 44 pages lues, 3 extraits.
 
 ## Q1. Opérations de défiscalisation « Monument historique » : vendre une partie du domaine à un opérateur
 
 ### 1.1 Qui sont les opérateurs ?
 
-Un opérateur identifié et vérifié : **Histoire & Patrimoine**, filiale du groupe Altarea.
+Deux opérateurs identifiés et vérifiés : **Histoire & Patrimoine**, filiale du groupe Altarea (ci-dessous), et **Buildinvest** (§ 1.2 bis).
 - Présentation : « Spécialiste de la rénovation et de la réhabilitation de l'immobilier ancien du groupe ALTAREA » [V2D-03] (PAGE LUE). Dispositifs proposés : Monument historique, Malraux, Denormandie, déficit foncier [V2D-03].
 - Taille revendiquée : « + de 500 Demeures déjà sauvées de l'oubli », « + de 10 000 logements réhabilités », « + de 1,5 milliard d'euros déjà investis », « + de 30ans d'expérience » [V2D-04] (PAGE LUE ; chiffres déclaratifs de l'opérateur, non audités).
 - Société de gestion du groupe : ALTAREA GESTION IMMOBILIERE (HISTOIRE & PATRIMOINE GESTION), SIREN 401165089, code NAF 68.32A, créée le 20/04/1995 ; chiffre d'affaires 2025 publié : **11 347 170 €** ; résultat net 2025 : **−298 458 €** [V2D-10] (PAGE LUE, API officielle). C'est la société de gestion locative des lots.
@@ -40,7 +41,7 @@ Un opérateur identifié et vérifié : **Histoire & Patrimoine**, filiale du gr
   Total des résultats nets de ces sept sociétés et de la société de gestion : environ **−86 M€** en 2025 (ESTIMATION, simple somme ; des flux internes au groupe, des provisions ou des dépréciations peuvent expliquer une partie des pertes, et la consolidation n'est pas connue). **Lecture prudente** : l'opérateur leader vérifié a publié de lourdes pertes en 2025. Son appétit pour de nouvelles acquisitions, et donc la possibilité de lui vendre des dépendances, n'est pas acquis. Les causes sont INCONNUES ; il faudrait lire le document d'enregistrement universel 2025 d'Altarea.
 - Un lien « Proposer un bâtiment » renvoie vers altarea-partenaires.com [V2D-03]. Cette page ne donne **aucun critère** d'achat (type de bien, surface, localisation, prix) : c'est un portail pour les partenaires commerciaux (conseillers en gestion de patrimoine), joignable par courriel [V2D-11] (PAGE LUE). Les critères d'acquisition de l'opérateur restent INCONNUS.
 - Autre diffuseur vu : Euodia, site de conseil en défiscalisation, qui commercialise un programme au « Château de Chassagny » à Montagny (Rhône) : T1 « à partir de 84 800 € », T2 « à partir de 129 500 € », livraison « 4ème trimestre 2024 » ; l'opérateur et le vendeur du château ne sont pas nommés ; la page mélange « Monument Historique » et « loi Malraux » [V2D-01] (PAGE LUE, fiabilité faible).
-- D'autres opérateurs existent sans doute (le marché MH est animé par des promoteurs et des réseaux de conseillers), mais je n'en ai pas vérifié d'autre : INCONNU au-delà d'Histoire & Patrimoine.
+- D'autres opérateurs existent sans doute (le marché MH est animé par des promoteurs et des réseaux de conseillers), mais je n'en ai pas vérifié d'autre : INCONNU au-delà d'Histoire & Patrimoine et de Buildinvest.
 
 ### 1.2 Quels biens les opérateurs achètent-ils ? Typologie observée (octobre 2026)
 
@@ -56,7 +57,9 @@ Exemple livré : **Manoir de la Paclais**, Saint-Herblain, « à 10 kilomètres 
 
 **Lecture** (ESTIMATION) : les exemples vérifiés sont tous **à 10-30 minutes d'une métropole** (Nantes, Bordeaux, Luxembourg) ou en ville. La logique du montage l'explique : l'investisseur loue son lot pour transformer les travaux en déficit foncier imputable sur son revenu global (voir 1.4). Il faut donc un marché locatif. La page de Wendel met en avant un « Marché locatif tendu » [V2D-05]. Un château isolé à la campagne, loin d'un bassin d'emploi, est a priori peu adapté. Je n'ai **aucune preuve** qu'un opérateur achète des dépendances de château en zone rurale isolée : INCONNU.
 
-Deuxième opérateur vérifié : **Buildinvest**. Communiqué de presse de 2020 (agence Galivel) [V2D-13] (PAGE LUE, PDF converti localement) : « Spécialiste de la rénovation lourde de biens immobiliers depuis 50 ans » ; groupe familial de « 350 salariés » ; « 4.500 logements rénovés sur près de 350.000 m² » en cumul. Trois programmes MH cités en 2020, tous urbains :
+### 1.2 bis Deuxième opérateur vérifié : Buildinvest
+
+Communiqué de presse de 2020 (agence Galivel) [V2D-13] (PAGE LUE, PDF converti localement) : « Spécialiste de la rénovation lourde de biens immobiliers depuis 50 ans » ; groupe familial de « 350 salariés » ; « 4.500 logements rénovés sur près de 350.000 m² » en cumul. Trois programmes MH cités en 2020, tous urbains :
 - Pont-Audemer (Eure), « une maison cœur de ville du XVIème siècle de 105 m² » : « Le budget global est de 397.000 € (150.000 € de foncier + 247.000 € de travaux) ». Soit (ESTIMATION, calcul) 3 781 €/m² au total, dont 1 429 €/m² de foncier et 2 352 €/m² de travaux ; **foncier 38 %, travaux 62 %**.
 - Caen, Résidence de la Visitation (ancien couvent et caserne de cavalerie) : « 37 appartements (du T1 au T5) et les 34 parkings », prix « de 165.000 € à 440.000 € (foncier + travaux + parking) ».
 - Châtellerault, Résidence Sully (hôtel particulier du XVIe) : « 18 logements dont les prix iront de 105.000 € à 245.000 € (foncier + travaux) ».
@@ -90,7 +93,7 @@ Ce que disent les opérateurs (PAGE LUE, sources commerciales) :
 - Pas d'obligation de louer : « Pas de contraintes, donc, dans ce dispositif, liées à un engagement de location ou à des plafonds de loyers ou de revenus. Le propriétaire peut occuper le bien ou le louer » [V2D-13]. Mais R3 [R3-02] montre que, si le lot ne procure aucune recette, les travaux non subventionnés ne sont déductibles qu'à 50 % lorsque l'immeuble est fermé au public, et que l'excédent ne crée pas de déficit reportable. **En pratique, l'avantage complet suppose de louer le lot** (déficit foncier imputable sans limite sur le revenu global). ESTIMATION fondée sur [R3-02].
 - Hors plafonnement des niches fiscales : « L'avantage fiscal MH n'entre pas dans le plafond des niches fiscales de 10.000 € /an » [V2D-13] ; « Déplafonnement de l'avantage fiscal » [V2D-06].
 - Cible : contribuables à « TMI » de 41 % ou 45 % [V2D-06] ; « taux marginal d'imposition supérieur à 30 % » selon [V2D-13].
-- Report de l'excédent : « neuf années consécutives » selon l'opérateur [V2D-12] ; « 6 années suivantes » selon [V2D-13] ; la doctrine dit « des six années suivantes inclusivement » [R3-02]. **Divergence** : je retiens la doctrine (6 ans).
+- Report de l'excédent : neuf années consécutives selon l'opérateur (reformulation de la page) [V2D-12] ; « 6 années suivantes » selon [V2D-13] ; la doctrine dit « des six années suivantes inclusivement » [R3-02]. **Divergence** : je retiens la doctrine (6 ans).
 
 ### 1.5 Le cadre a changé en 2017, et cela a fait débat
 
@@ -120,14 +123,14 @@ Ce que les règles impliquent (ESTIMATION, à valider par un notaire et un fisca
 
 ## Q2. Loi Malraux et label de la Fondation du patrimoine : utiles à ce montage ?
 
-- Malraux : la réduction d'impôt peut atteindre « 30% du montant des travaux engagés sur un bien éligible », pour des « bâtiments anciens situés dans un site patrimonial remarquable (SPR) » [V2D-12] (PAGE LUE, source d'opérateur). Un domaine rural de plus de 50 ha est rarement situé dans un SPR (ESTIMATION). Dispositif **marginal pour ce projet**. Ses autres règles (plafond, engagement de location) n'ont pas été vérifiées ici, faute d'utilité.
+- Malraux : la réduction d'impôt peut atteindre « 30% du montant des travaux engagés sur un bien éligible », pour des bâtiments anciens situés dans un site patrimonial remarquable (SPR), d'après la même page (reformulation) [V2D-12] (PAGE LUE, source d'opérateur). Un domaine rural de plus de 50 ha est rarement situé dans un SPR (ESTIMATION). Dispositif **marginal pour ce projet**. Ses autres règles (plafond, engagement de location) n'ont pas été vérifiées ici, faute d'utilité.
 - Label de la Fondation du patrimoine : traité par R3 (§ 1.4). Point nouveau : les immeubles seulement labellisés sont **exclus** de l'exception « 75 % d'habitation » pour les divisions [V2D-16 § 530]. Un château non protégé (scénario S1) ne peut donc pas être divisé en lots défiscalisés sous ce régime.
 
 ## Q3. Démembrement de propriété : vendre la nue-propriété, ou céder un usufruit temporaire
 
 ### 3.1 Barème fiscal (article 669 du CGI)
 
-Doctrine BOFiP BOI-ENR-DMTG-10-40-10-50, en vigueur depuis le 23/12/2013 [V2D-19] (PAGE LUE), § 30 :
+La fiche de service-public sur les droits de donation ne reproduit pas le barème et renvoie à un simulateur [V2D-22] (PAGE LUE). Le BOFiP le publie (BOI-ENR-DMTG-10-40-10-50, en vigueur depuis le 23/12/2013, § 30) [V2D-19] (PAGE LUE) :
 
 | Âge de l'usufruitier (révolu) | Usufruit | Nue-propriété |
 |---|---|---|
@@ -149,14 +152,14 @@ Doctrine BOFiP BOI-ENR-DMTG-10-40-10-50, en vigueur depuis le 23/12/2013 [V2D-19
 **Option A — vendre la nue-propriété et garder l'usufruit à vie.**
 - Valeur fiscale de la nue-propriété : **20 %** de la pleine propriété.
 - L'investisseur attendrait environ 50 à 60 ans pour récupérer le bien, selon l'espérance de vie (HYPOTHÈSE). Un investisseur rationnel paierait sans doute **moins** que 20 %, car il supporterait en plus le risque d'entretien et l'absence de revenu (ESTIMATION).
-- Exemple : pour un château évalué 5 M€, environ 1 M€ au mieux, contre une perte définitive de la propriété pour les héritiers.
+- Exemple : pour un château évalué 5 M€, environ 1 M€ au mieux, contre une perte définitive de la propriété pour les héritiers. Pour situer les valeurs, un article immobilier de 2020 citait un château inscrit MH de 200 m² sur environ 3 ha à « 360 000 € » et un château classé de 1 700 m² sur environ 4 ha à « 2 990 000 € » [V2D-02] (PAGE LUE, fiabilité faible).
 - IFI : en cas de vente à une personne qui n'est ni héritier présomptif ni donataire, l'usufruitier n'est plus imposé sur la pleine propriété. Les deux parties sont imposées selon l'article 669 (§ 160-170) [V2D-20] (PAGE LUE). Le propriétaire de 26 ans resterait imposé sur **80 %** de la valeur. **Gain d'IFI faible.**
 
 **Option B — garder la propriété et céder un usufruit temporaire** d'une partie du domaine (par exemple les communs, un pavillon, une aile) à un exploitant ou à un investisseur pendant 10 à 30 ans.
-- Valeur fiscale : 23 % par période de dix ans (§ 70) [V2D-19]. Exemples : 23 % pour 10 ans, 46 % pour 11 à 20 ans, 69 % pour 21 à 30 ans.
+- Valeur fiscale : 23 % par période de dix ans (§ 70) [V2D-19]. Exemples : 23 % jusqu'à 10 ans, 46 % au-delà de 10 et jusqu'à 20 ans, 69 % au-delà de 20 et jusqu'à 30 ans. Cette lecture de « sans fraction » (toute période commencée compte en entier) est une ESTIMATION à valider.
 - À la fin, la pleine propriété revient au propriétaire, sans indemnité. C'est le seul sens du démembrement **compatible avec « garder la propriété »**.
 - **Fiscalité lourde** : le prix de la première cession d'un usufruit temporaire, réalisée depuis le 14 novembre 2012, est imposé comme un **revenu** de l'année d'encaissement, dans la catégorie des revenus que produit le bien : revenus fonciers pour un bien loué nu, BIC pour un bien meublé, revenus fonciers par défaut pour un immeuble (§ 1, § 130-140, § 220) [V2D-21] (PAGE LUE). S'y ajoutent les prélèvements sociaux (§ 230) et la contribution sur les hauts revenus (§ 240).
-- Conséquence (ESTIMATION) : pour une personne physique, l'essentiel du capital libéré serait taxé au barème de l'impôt sur le revenu l'année de la vente. Un capital de 1 M€ pourrait ainsi perdre près de la moitié de sa valeur en impôts. Cette fraction n'a pas été calculée finement ; le calcul est à confier à un fiscaliste.
+- Conséquence (ESTIMATION) : pour une personne physique, le capital libéré serait imposé en une seule année, au taux marginal de l'impôt sur le revenu, avec les prélèvements sociaux et la contribution sur les hauts revenus. Une part importante du capital partirait donc en impôts. Le calcul exact n'a pas été fait ; il est à confier à un fiscaliste.
 - Le même texte exclut de cette règle les cédants soumis à l'IS (§ 20). Une société à l'IS qui céderait un usufruit temporaire relèverait d'autres règles, non vérifiées ici : INCONNU.
 
 ### 3.3 Qui paie le gros entretien ?
@@ -167,10 +170,6 @@ Rappel de R8 [R8-44] : « Les grosses réparations sont à la charge du nu-propr
 - Je n'ai pas vérifié si le nu-propriétaire peut être **contraint** d'exécuter les grosses réparations, ni comment une convention peut répartir autrement les charges. À VALIDER par un notaire.
 
 ### 3.4 Le marché existe-t-il pour des châteaux ?
-
-Voir 3.5 (résultat de la recherche ciblée).
-
-### 3.5 Le marché existe-t-il pour des châteaux ? (résultat)
 
 - Recherche ciblée (viager, nue-propriété, château) : les résultats ne décrivent que le mécanisme général du viager et de la nue-propriété pour des logements ordinaires, avec une « décote de l'ordre de 30 % en moyenne » [V2D-30] (EXTRAIT). **Aucun exemple** de château vendu en nue-propriété à un investisseur, ni d'investisseur institutionnel acheteur de nues-propriétés de châteaux. R8 était arrivé au même constat [R8 § 6.3].
 - Le seul marché institutionnel du démembrement que confirme la doctrine est l'**usufruit locatif social** : des bailleurs sociaux détiennent l'usufruit de logements (CCH L.253-1 à L.253-8), cité dans [V2D-21 § 20]. Il porte sur des logements sociaux, pas sur des demeures historiques.
@@ -206,7 +205,7 @@ Autres plateformes :
 | Airbnb Luxe | INCONNU (la page des frais n'en parle pas) | — | INCONNU | [V2D-31] |
 | Abercrombie & Kent Villas | INCONNU | — | INCONNU | — |
 
-**Point important** : chez Le Collectionist, c'est le **propriétaire** qui fournit et paie les services de base compris dans le prix (ménage, jardiniers) [V2D-24]. Les fiches de 2026 confirment que le ménage (2 à 7 fois par semaine), un gardien ou la préparation du petit-déjeuner sont inclus dans le prix affiché [V2D-35] à [V2D-38]. La conciergerie est en partie assurée par la plateforme, et la conciergerie supplémentaire est facturée au client : « plus an extra €5,000 for concierge service » en moyenne en 2020 [V2D-25].
+**Point important** : chez Le Collectionist, les services de base compris dans le prix (ménage, jardiniers) sont « provided by the property owners », donc fournis par le **propriétaire** et, a priori, à sa charge (ESTIMATION) [V2D-24]. Les fiches de 2026 confirment que le ménage (2 à 7 fois par semaine), un gardien ou la préparation du petit-déjeuner sont inclus dans le prix affiché [V2D-35] à [V2D-38]. La conciergerie est en partie assurée par la plateforme, et la conciergerie supplémentaire est facturée au client : « plus an extra €5,000 for concierge service » en moyenne en 2020 [V2D-25].
 
 Comptes de Le Collectionist : société LE COLLECTIONIST, SIREN 789370152, créée le 12/11/2012 ; **finances non publiées** dans l'API (comptes probablement confidentiels) [V2D-27]. INCONNU.
 
@@ -217,12 +216,12 @@ Comptes de Le Collectionist : société LE COLLECTIONIST, SIREN 789370152, cré�
 Deux indications indirectes :
 
 1. **Moyennes de Le Collectionist** (ESTIMATION, calcul sur des données de presse) : « 160 millions d'euros de volume brut de réservations (GBV) » prévus pour 2024, « plus de 3 000 propriétés », « environ 5 000 réservations sur l'exercice 2023 » [V2D-26] (PAGE LUE).
-   - Cela donne environ 53 000 € de réservations par propriété et par an, et 1,7 à 2 réservations par propriété et par an, si l'on retient 2 300 à 3 000 propriétés.
-   - Avec un séjour moyen d'environ « 25,000 a week » [V2D-25] ou « €26,000 on average for a 10 night stay » [V2D-24], la propriété moyenne serait louée **environ 2 semaines par an**.
+   - Cela donne environ 53 000 € de réservations par propriété et par an, et 1,7 à 2,2 réservations par propriété et par an, si l'on retient 2 300 à 3 000 propriétés.
+   - Avec un prix moyen de « an average of €25,000 a week » [V2D-25] ou « €26,000 on average for a 10 night stay » [V2D-24], la propriété moyenne serait louée **environ 2 semaines par an**.
    - Limites : les années ne coïncident pas (2023, 2024, 2025), et beaucoup de propriétés sont des résidences secondaires que leurs propriétaires n'ouvrent que quelques semaines.
    - **Ce n'est pas un taux d'occupation**, mais cela montre que l'hypothèse de 8 à 12 semaines retenue par R7 [R7 § 5.3] est **très au-dessus de la moyenne de la plateforme**.
    - Autres ordres de grandeur par maison, tirés des acquisitions de la plateforme : Vallat (France) « 3,9 millions d'euros de GBV » pour « 90 maisons », soit environ 43 000 € par maison ; Bramble Ski (Suisse) « 24,2 millions d'euros » pour « 142 maisons », soit environ 170 000 € ; The Greek Villas « 7 millions d'euros » pour « 400 maisons », soit environ 17 500 € [V2D-26] (calculs : ESTIMATION).
-2. **Études de cas d'Oliver's Travels** pour des maisons de 4 à 6 chambres : occupation « typically » d'environ 62 à 80 %, par exemple Dordogne (4 chambres) environ 65 % pour 4 300 £ par semaine, Provence (4 chambres) environ 70 % pour 7 300 £, Côte d'Azur (4 chambres) environ 76 % pour 9 200 £ [V2D-28] (PAGE LUE).
+2. **Études de cas d'Oliver's Travels** pour des maisons de 4 à 6 chambres : occupation d'environ 62 à 80 % selon les cas. Exemples : Dordogne (4 chambres), « Typically achieve around 65% occupancy, with an average booking value of £4,300 per week » ; Provence (4 chambres), « around 70% occupancy », 7 300 £ par semaine ; Côte d'Azur (4 chambres), environ 76 % pour 9 200 £ [V2D-28] (PAGE LUE).
    - Le dénominateur n'est pas défini. C'est probablement la part des semaines ouvertes à la location (ESTIMATION).
    - Ces données de communication commerciale portent sur de petites maisons, pas sur des châteaux de 8 à 16 chambres, dont la clientèle est beaucoup plus étroite (groupes de 15 à 40 personnes).
 
@@ -233,7 +232,7 @@ Deux indications indirectes :
 - **Piscine** : les 9 châteaux ou domaines de Dordogne et les 6 des environs de Bordeaux proposés par Le Collectionist ont **tous** une piscine (extérieure, chauffée, à débordement ou naturelle) [V2D-40], [V2D-41] (PAGE LUE).
 - **Salles de bains** : environ une par chambre, de 0,75 à 1 salle de bains par chambre. Exemples : Château de la Belle, 11 chambres et 9 salles de bains ; Domaine Aglaé, 12 et 11 ; Château Hippolyte, 14 et 14 [V2D-40], [V2D-41].
 - **Services inclus** : ménage plusieurs fois par semaine, concierge, gardien selon le cas ; chef et personnel de maison en supplément [V2D-35] à [V2D-38].
-- **Disponibilité** : Oliver's Travels exige, pour la France et l'Italie, « a minimum of 6 weeks of availability in July and August » (formulation reprise du résumé de la page), une assurance de responsabilité civile d'au moins 2 millions de livres et le haut débit. Le propriétaire peut habiter le bien une partie de l'année si ces minimums sont respectés [V2D-28] (PAGE LUE).
+- **Disponibilité** : Oliver's Travels écrit : « For properties located in France and Italy, we require a minimum of 6 weeks of availability in July and August. » Il demande aussi une assurance de responsabilité civile d'au moins 2 millions de livres et le haut débit. Le propriétaire peut habiter le bien une partie de l'année : « many of our partners use their properties themselves or live in them part-time », « as long as the minimum availability requirements mentioned above are met » [V2D-28] (PAGE LUE).
 - **Sélectivité** : Le Collectionist retient environ 10 biens sur 100 demandes de propriétaires selon son dirigeant en 2020 [V2D-25].
 - **Cohabitation** : une fiche (Château Montravel) précise que « L'employé de maison réside sur la propriété dans un logement indépendant » et que « L'intimité des hôtes est néanmoins garantie » [V2D-35]. Une présence permanente sur le domaine, dans un logement séparé, est donc compatible avec ce marché. Je n'ai trouvé **aucune fiche** où le propriétaire habite une aile du château loué : INCONNU.
 - **Conséquence pour le projet** (ESTIMATION) : louer la **partie privée** suppose que le propriétaire la quitte entièrement pendant les semaines louées, et que ses chevaux et son personnel restent discrets. La période la plus demandée (juillet-août) est aussi celle des concours et de la vie privée estivale. Louer un bâtiment séparé (pavillon, aile autonome, communs rénovés) aux standards observés (piscine, une salle de bains par chambre) est plus cohérent avec la vie privée, mais demande un investissement.
@@ -259,12 +258,12 @@ Points nouveaux [V2D-32] (PAGE LUE, fiche F33175 « Vérifié le 21 mai 2026 »)
 
 | Cas | Montage | Chiffres | Gouvernance, difficultés | Statut | Source |
 |---|---|---|---|---|---|
-| **Château de Panat**, L'Isle-Jourdain (Gers), XIXe siècle | Collectif lié à l'association Alter-Habitat Lislois (créée en 2011), acquisition le 10 septembre 2019 ; « coopérative d'habitants », présentée comme la première du Gers | « 14 logements » sur « 1 500 m² » intérieurs, avec espaces communs ; travaux « 1,5 million d'euros », en partie en auto-réhabilitation ; prix d'achat non publié | Propriété collective, gestion non lucrative, loyers selon les revenus ; le projet a connu « 7 ans de reports et de revirements » avant de se porter sur le château | PAGE LUE | [V2D-43] |
-| **Château Monboucher**, à 10 km de Bergerac (Dordogne) | Château divisé en copropriété de 12 logements vendus à des particuliers, avec des pièces communes dans le château | Du « 50 m² » à la maison de « 270 m² » ; prix affichés 640 000 € (appartement) et 960 000 € (maison) ; surfaces incohérentes dans le texte (160 m² et 240 m²) | Salon, salle à manger, cuisine et salle de réception partagés ; concierge pour les jardins ; parcelle privative à louer ; charges et règlement non publiés | PAGE LUE (contenu d'agence, fiabilité faible) | [V2D-44] |
+| **Château de Panat**, L'Isle-Jourdain (Gers), XIXe siècle | Collectif lié à l'association Alter-Habitat Lislois (créée en 2011), acquisition le 10 septembre 2019 ; « coopérative d'habitants », présentée comme la première du Gers | 14 logements sur 1 500 m² intérieurs, avec espaces communs ; travaux « 1,5 million d'euros », en partie en auto-réhabilitation ; prix d'achat non publié | Propriété collective, gestion non lucrative, loyers selon les revenus ; le projet a connu « 7 ans de reports et de revirements » avant de se porter sur le château | PAGE LUE | [V2D-43] |
+| **Château Monboucher**, à 10 km de Bergerac (Dordogne) | Château divisé en copropriété de 12 logements vendus à des particuliers, avec des pièces communes dans le château | D'un appartement de 50 m² à une maison de 270 m² ; prix affichés 640 000 € (appartement) et 960 000 € (maison) ; surfaces incohérentes dans le texte (160 m² et 240 m²) | Salon, salle à manger, cuisine et salle de réception partagés ; concierge pour les jardins ; parcelle privative à louer ; charges et règlement non publiés | PAGE LUE (contenu d'agence, fiabilité faible) | [V2D-44] |
 | **Domaine de Courances** (Essonne) | Domaine familial géré par dix cousins copropriétaires (rappel R4) | Environ 1 800 ha (EXTRAIT R4) | Partage de la gestion ; séminaires confiés à un opérateur ; appartements loués dans la ferme (« La Ferme - Les Appartements INSEAD », intitulé du menu du site) | EXTRAIT [R4-89] ; menu du site lu, pages internes en erreur 404 | [R4-89], [V2D-47] |
 | **Chenonceau** (rappel R4) | Propriété familiale | — | Conflit familial, administrateur provisoire | voir R4 | [R4-05] |
 
-Modèles commerciaux de « résidence secondaire partagée » (pas des châteaux) : Lazazu propose l'achat à plusieurs de maisons de luxe en France, en Espagne et au Portugal, via une SCI ; « une maison égale 8 parts », entrée « à partir de 250 000 € » ; charges, impôts et travaux au prorata des parts, sauf le ménage ; calendrier d'occupation par saison et algorithme en cas de litige [V2D-33] (PAGE LUE). Je n'ai trouvé **aucun château** proposé dans ce modèle : INCONNU.
+Modèles commerciaux de « résidence secondaire partagée » (pas des châteaux) : Lazazu propose l'achat à plusieurs de maisons de luxe en France, en Espagne et au Portugal, via une SCI : « Chez Lazazu par exemple, une maison équivaut à 8 parts, mais certains en prennent plusieurs » ; ces plateformes organisent les achats « avec des parts à partir de 250 000 € » ; « Charges, taxes et travaux sont répartis au prorata des parts entre les associés » ; calendrier d'occupation par saison et algorithme en cas de litige (résumé) [V2D-33] (PAGE LUE). Je n'ai trouvé **aucun château** proposé dans ce modèle : INCONNU.
 
 ### 5.2 Gouvernance : ce que dit un notaire [V2D-34] (PAGE LUE)
 
@@ -296,5 +295,71 @@ Château Fontenay (Sarthe), communiqué du 12/12/2023 [V2D-45] (PAGE LUE, source
 - Le titre du fichier annonce 310 000 € levés en 12 heures (non vérifié dans le texte).
 - Le bien : château « classé au titre des monuments historiques », « D'une valeur d'environ 2 millions d'euros », sur « 11,6 hectares ». Projet de 200 convives, hôtel, tentes et cabanes.
 - BODACC : la société (SIREN 980419436), créée en 2023, a déposé ses comptes en 2025 et 2026 ; **aucune procédure collective** publiée [V2D-46] (PAGE LUE). Résultat économique du projet : INCONNU.
-- **Lecture** (ESTIMATION) : ce n'est pas une libération de capital, c'est une **dette** à 7 % par an, remboursable en 5 ans. Elle peut financer un investissement productif (hébergement, salle), jamais le déficit de fonctionnement courant. Pour notre domaine, emprunter 700 000 € à 7 % coûte environ 49 000 € d'intérêts par an, avant remboursement.
+- **Lecture** (ESTIMATION) : ce n'est pas une libération de capital, c'est une **dette** à 7 % par an, remboursable en 5 ans. Elle peut financer un investissement productif (hébergement, salle), jamais le déficit de fonctionnement courant. Pour notre domaine, emprunter 690 000 € à 7 % coûte environ 48 000 € d'intérêts par an, avant remboursement (ESTIMATION, calcul).
+
+## 7. Livrable : synthèse par mécanisme
+
+Rappel du besoin annuel central estimé en vague 1 : S1 ≈ 0,33 M€, S2 ≈ 1,23 M€, S3 ≈ 3,4 M€.
+
+| Mécanisme | Capital libéré ou revenu annuel | Conditions | Impact sur la propriété et la vie privée | Preuves |
+|---|---|---|---|---|
+| **1. Vendre des dépendances à un opérateur MH** (lots d'habitation défiscalisés) | **Capital : INCONNU.** Le prix payé au propriétaire n'est publié nulle part. Borne haute théorique (ESTIMATION) : la part foncier revendue aux investisseurs vaut 13 à 38 % de leur prix ; au seul point vérifié (Pont-Audemer, centre-ville, 2020), 1 429 €/m². Le propriétaire touche moins que cela, et peut-être rien si aucun opérateur ne s'intéresse à des communs isolés. Opération unique, pas un revenu récurrent. | Bâtiment classé ou inscrit (le label de la Fondation du patrimoine est exclu) ; au moins 75 % d'habitation dans les 2 ans suivant la division ; engagement de 15 ans de chaque acheteur ; marché locatif proche (tous les exemples sont à 10-30 min d'une métropole) ; PLU, ABF, accord de la commune ; appétit d'un opérateur (pertes de 2025 du leader) | Perte définitive des bâtiments vendus ; 7 à 125 ménages sur le domaine ; copropriété ou ASL, servitudes, accès, charges du parc ; incompatible avec une activité commerciale lourde dans une copropriété commune | Programmes et comptes d'Histoire & Patrimoine [V2D-03] à [V2D-10], [V2D-42] ; Buildinvest [V2D-13] ; BOFiP [V2D-16] ; question écrite AN [V2D-17]. **Aucun exemple** de propriétaire qui garde le château en vendant ses communs. |
+| **2A. Vendre la nue-propriété, garder l'usufruit à vie** | Valeur fiscale de la nue-propriété à 26 ans : **20 %** de la valeur. Prix de marché : INCONNU, probablement plus bas. Opération unique. | Acheteur qui n'est ni héritier présomptif ni donataire, pour scinder l'IFI ; aucun marché identifié | Perte définitive pour les héritiers ; le gros œuvre incombe en principe au nu-propriétaire, à valider ; IFI sur 80 % au lieu de 100 % | BOFiP [V2D-19], [V2D-20] ; R8 [R8-44]. **Aucun exemple.** |
+| **2B. Céder un usufruit temporaire d'une partie du domaine** (10 à 30 ans) | Valeur fiscale : 23 % de la partie concernée par tranche de 10 ans (46 % pour 20 ans, 69 % pour 30 ans au plus). Prix de marché : INCONNU. Le prix est **imposé comme un revenu** l'année de l'encaissement. | Contrepartie (exploitant ou investisseur) ; pour un particulier, impôt sur le revenu, prélèvements sociaux et contribution sur les hauts revenus | La propriété est conservée et la pleine propriété revient à la fin, sans indemnité ; perte de jouissance de la partie cédée pendant 10 à 30 ans | BOFiP [V2D-19], [V2D-21]. **Aucun exemple.** |
+| **3. Location de luxe à la semaine de la partie privée** | **Revenu brut client** : 12 755 à 61 850 € par semaine selon la taille (8 à 16 chambres). **Après commission de 20-22 %** (Le Collectionist en 2017-2020), et avec l'HYPOTHÈSE de 2 à 6 semaines louées par an, ESTIMATION : environ 55 000 € (2 semaines à 35 000 €) à 210 000 € (6 semaines à 45 000 €). Revenu récurrent mais incertain. **Avant** ménage, personnel, linge, énergie, usure, assurance, impôts et cotisations (INCONNU), et avant TVA éventuelle si le propriétaire n'est pas en franchise. | Piscine, environ une salle de bains par chambre, ménage et conciergerie, assurance ; au moins 6 semaines disponibles en juillet-août (Oliver's Travels) ; régime réel au-delà de 83 600 € de recettes (meublé classé) ; LMP si les recettes dépassent 23 000 € et les autres revenus d'activité du foyer ; limite de 90-120 jours pour une résidence principale dans les communes qui l'imposent | Le propriétaire quitte sa maison pendant les semaines louées, au cœur de l'été ; chevaux et personnel doivent rester discrets ; plus compatible si l'on loue un bâtiment séparé | Fiches Le Collectionist [V2D-35] à [V2D-38], [R7-54] ; commissions [V2D-24], [V2D-25], [V2D-31] ; occupation [V2D-26], [V2D-28] ; règles [V2D-32], R3 § 5.5. **Aucun témoignage** de semaines louées pour un château. |
+| **4. Copropriété ou partage entre familles** | Vente de lots ou de parts. Seul repère de prix : 640 000 à 960 000 € par logement **affichés** à Monboucher (12 logements), sans preuve de vente. Opération unique ; ensuite, partage des charges. | Règlement de copropriété ou statuts de SCI (clauses d'agrément) ; risque commercial de la location saisonnière dans une SCI ; 75 % d'habitation si le bâtiment est protégé et que les acheteurs déduisent leurs travaux | Perte d'exclusivité ; pièces communes partagées (Monboucher) ou vie collective (Panat) ; conflits possibles (unanimité, sortie d'un associé) | [V2D-43], [V2D-44], [V2D-33], [V2D-34], R4 [R4-89], [R4-05] |
+| **5. Dette participative** (obligations) | Ce n'est pas du capital : c'est une dette. Exemple : 690 000 € à 7 % sur 5 ans, soit environ 48 000 € d'intérêts par an. | Projet d'investissement rentable ; plateforme agréée | Propriété conservée ; endettement | [V2D-45], [V2D-46] |
+
+**Conclusion** (ESTIMATION) : aucun de ces mécanismes ne finance durablement le fonctionnement d'un domaine S2 ou S3.
+- **Mécanismes 1, 2 et 4** : ils libèrent un capital **une seule fois**, en général en sacrifiant une partie de la propriété ou de la tranquillité. Pour les mécanismes 1 et 2, ce capital n'est pas chiffrable avec les sources disponibles.
+- **Mécanisme 3 (location de luxe)** : c'est le seul **revenu récurrent**. Commission déduite mais avant toutes les autres charges et impôts, 55 000 à 210 000 € représenteraient environ 17 à 64 % du besoin central de S1, 4 à 17 % de celui de S2 et 2 à 6 % de celui de S3 (ESTIMATION). Il oblige le propriétaire à quitter sa maison l'été.
+- **Usage possible** : le capital libéré une fois (vente de communs, de lots) pourrait **abonder un capital dédié** (fonds de dotation, portefeuille) dont le rendement financerait le fonctionnement. Cette piste rejoint la conclusion de la vague 1 sur le « capital dédié ». Son montant reste INCONNU faute de prix publiés.
+
+## Contre-exemples et cas d'échec trouvés
+
+1. **Pertes lourdes de l'opérateur leader** : les sociétés Histoire & Patrimoine du groupe Altarea ont publié en 2025 des résultats nets négatifs, d'environ −86 M€ cumulés (simple somme), dont −31,6 M€ pour la société de promotion historique [V2D-42]. Vendre des communs à un opérateur suppose qu'il ait les moyens d'acheter.
+2. **Domaine de Grignon** : projet de cession par l'État à un promoteur, pour des « résidences et lieux de séminaires ». La commune s'opposait au changement de PLU ; la question parle de « l'abandon, à l'initiative de l'État, de la vente au promoteur », après la « mobilisation des élèves de AgroParisTech », et précise que « le processus doit être relancé au premier semestre 2022 » [V2D-17]. La suite après 2022 n'a pas été vérifiée (INCONNU). Le lotissement d'un domaine historique peut échouer pour des raisons politiques et d'urbanisme.
+3. **Résidence secondaire partagée qui se termine par une vente** : « Sylvain, 42 ans, pensait avoir trouvé la formule idéale : une maison de campagne partagée avec sa femme et son meilleur ami. » ; « Faute d'entente, la maison a été vendue. » [V2D-33] (PAGE LUE).
+4. **Château de Panat** : « 7 ans de reports et de revirements » avant l'aboutissement du projet collectif [V2D-43].
+5. **Chenonceau** : conflit familial et administrateur provisoire (rappel R4 [R4-05]).
+6. **Annonces commerciales incohérentes** : Monboucher (surfaces contradictoires) [V2D-44] ; Château Bon Air (simulateur de 250 000 € pour un prix d'entrée de 387 800 €) [V2D-09] ; Château de Chassagny (MH et Malraux mélangés) [V2D-01] ; Hayange présentée avec « 70 000 habitants » [V2D-05]. Les documents commerciaux du secteur ne sont pas fiables pour chiffrer.
+7. **Moyenne de la plateforme Le Collectionist** : environ 2 réservations par propriété et par an (ESTIMATION) [V2D-26]. C'est un contre-exemple à l'idée qu'une maison de luxe se loue facilement 8 à 12 semaines.
+
+## Points de doute / hypothèses non vérifiées
+
+1. **Prix payé par un opérateur MH au propriétaire d'origine** : INCONNU. La piste DVF de Saint-Herblain (930 000 € en 2021 pour une maison de 308 m² et environ 2,7 ha au lieu-dit La Paclais) n'est **pas attribuée** au manoir [V2D-18]. Pour vérifier : parcelles Mérimée, puis acte au service de la publicité foncière.
+2. **Durée de maintien de la condition des 75 % d'habitation** après les deux premières années : non précisée par la page lue [V2D-16].
+3. **Notion d'« immeuble »** quand la protection MH couvre à la fois le château et les communs : une division cadastrale suffit-elle à isoler les communs pour la règle des 75 % ? À VALIDER par un fiscaliste.
+4. **Location meublée de la partie privée d'un château MH** : effet sur le régime de déduction MH (exclusion des parties utilisées pour une entreprise commerciale [R3-04 § 40]) : INCONNU.
+5. **Commission actuelle de Le Collectionist** : les données de 20 % (2017) et 22 % (2020) sont anciennes ; la page de 2026 ne la publie pas [V2D-23]. Commissions d'Airbnb Luxe, d'Abercrombie & Kent Villas et taux d'Oliver's Travels : INCONNUS.
+6. **Semaines louées** : l'estimation d'environ 2 réservations par propriété et par an mélange des années (2023 à 2025) et des propriétés très diverses ; les taux d'occupation d'Oliver's Travels (62-80 %) sont des études de cas commerciales sur des maisons de 4 à 6 chambres, avec un dénominateur non défini [V2D-26], [V2D-28].
+7. **HT ou TTC** : les prix de Le Collectionist ne précisent pas la TVA. La taxe de séjour est exclue [V2D-35] à [V2D-38].
+8. **Exécution des grosses réparations** par un nu-propriétaire (peut-il y être contraint ?) et répartition conventionnelle des charges : non vérifié ; question pour un notaire.
+9. **Imposition d'une cession d'usufruit temporaire par une société à l'IS** : exclue de la règle de l'article 13, 5 [V2D-21 § 20], mais les règles applicables n'ont pas été lues.
+10. **Opérateurs MH autres qu'Histoire & Patrimoine et Buildinvest** : non recensés. Les critères d'acquisition des opérateurs ne sont pas publiés [V2D-11].
+11. **Divergence sur le report du déficit MH** : 6 ans selon la doctrine [R3-02] et [V2D-13], 9 ans selon un opérateur [V2D-12]. Je retiens la doctrine.
+12. **Le résumé de recherche sur Leggett** (foncier 174 600 € et travaux 544 300 €) n'a pas pu être vérifié : la page est protégée par Cloudflare [V2D-15].
+
+## Chiffres clés pour le modèle
+
+| # | Donnée | Valeur | Unité | Année | Statut | Source |
+|---|---|---|---|---|---|---|
+| 1 | Valeur fiscale de la nue-propriété, usufruitier de moins de 31 ans (barème art. 669) | 20 | % de la pleine propriété | doctrine en vigueur depuis 2013 | PAGE LUE | [V2D-19] |
+| 2 | Valeur fiscale d'un usufruit à durée fixe | 23 | % par période de 10 ans, sans fraction (au plus 69 % pour une personne morale) | 2013 | PAGE LUE | [V2D-19] |
+| 3 | Prix de cession d'un usufruit temporaire | imposé comme un revenu l'année d'encaissement | — | depuis le 14/11/2012 | PAGE LUE | [V2D-21] |
+| 4 | Condition des divisions d'immeubles MH depuis 2018 | ≥ 75 % des surfaces habitables affectées à l'habitation, dans les 2 ans ; locaux commerciaux exclus | — | doctrine 2018 | PAGE LUE | [V2D-16] |
+| 5 | Part du foncier dans le prix payé par l'investisseur MH | 13 à 38 | % | 2020-2026 | PAGE LUE (fourchette : ESTIMATION) | [V2D-05], [V2D-09], [V2D-13] |
+| 6 | Prix total d'un lot MH (seul point vérifié, maison de centre-ville) | 3 781 (dont 1 429 de foncier) | €/m² payés par l'investisseur, TVA non précisée | 2020 | PAGE LUE (calcul : ESTIMATION) | [V2D-13] |
+| 7 | Taille des programmes MH observés | 7 à 125 | logements | 2026 | PAGE LUE | [V2D-08], [V2D-05] |
+| 8 | Prix payé par l'opérateur au propriétaire d'origine | INCONNU | — | — | INCONNU | — |
+| 9 | Résultat net 2025 cumulé des sociétés Histoire & Patrimoine | environ −86 | M€ | 2025 | PAGE LUE (somme : ESTIMATION) | [V2D-42] |
+| 10 | Prix de location d'un château de 8 à 16 chambres | 12 755 à 61 850 | € par semaine, taxe de séjour exclue, TVA non précisée | 2026 | PAGE LUE | [V2D-35] à [V2D-38], [R7-54] |
+| 11 | Commission de Le Collectionist | 20 (2017) ; 22 (2020) | % du prix de location | 2017, 2020 | PAGE LUE | [V2D-24], [V2D-25] |
+| 12 | Frais d'Airbnb (formule hôte seul) | 15,5 (14 à 16) | % | 2026 | PAGE LUE | [V2D-31] |
+| 13 | Réservations par propriété et par an sur Le Collectionist | environ 2 (environ 53 000 € de réservations par propriété) | réservations | 2023-2025 | ESTIMATION | [V2D-26] |
+| 14 | Semaines louées pour un château de 10 à 15 chambres | 2 à 6 | semaines par an | — | HYPOTHÈSE | § 4.3 |
+| 15 | Disponibilité minimale exigée par Oliver's Travels en France | 6 | semaines en juillet-août | 2026 | PAGE LUE | [V2D-28] |
+| 16 | Location de la résidence principale (communes qui l'imposent) | 90 à 120 | jours par an (résidence principale : au moins 8 mois d'occupation) | 2026 | PAGE LUE | [V2D-32] |
+| 17 | Prix affichés de lots dans un château en copropriété (Monboucher) | 640 000 et 960 000 | € par logement, prix demandés | 2023 | PAGE LUE (faible) | [V2D-44] |
+| 18 | Dette participative pour un château classé (Fontenay) | 690 000 € à 7 % sur 5 ans | €, %/an | 2023 | PAGE LUE (faible) | [V2D-45] |
 
