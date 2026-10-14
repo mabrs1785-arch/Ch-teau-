@@ -19,7 +19,7 @@ LISEZMOI = [
     "Scénario C — Acquisition progressive : années 1-4 exploitation d'un domaine loué (loyer), acquisition en année 5 financée surtout par les fonds propres d'une holding du fondateur (alimentée par des reprises de PME — NON acquis, à démontrer).",
     "Feuille B_sans_dette : même exploitation que B_central mais acquisition 100 % en fonds propres — sert uniquement à tester si l'EXPLOITATION seule est autofinancée (hors dette).",
     "Cas prudent / optimiste : dérivés du cas central (volumes, prix, charges, travaux, montée en charge) — voir feuille Sources_hypotheses.",
-    "Stress tests (feuilles Stress_*) : appliqués au cas central — CA −30 %, travaux +30 %, ouverture retardée de 12 mois, taux +2 points, retrait de 50 % des fonds investisseurs, annulation de 40 % des événements, et un cumul.",
+    "Stress tests (feuilles S_Bfsd_* = B frugal sans dette, S_Ccib_* = C cible) : appliqués aux deux seules configurations non déficitaires — CA −30 %, travaux +30 %, ouverture retardée de 12 mois, taux +2 points, retrait de 50 % des fonds investisseurs, annulation de 40 % des événements, et un cumul.",
     "Simplifications : IS à 25 % sans taux réduit de 15 % ni plafonnement de l'imputation des déficits ; TVA neutre (montants HT) ; amortissement bâti 30 ans / travaux 15 ans ; pas de dividendes avant la sortie ; valeur de sortie = % du coût historique (hypothèse, les châteaux se revendent souvent sous leur coût de restauration).",
     "Verdict automatique : VIABLE si trésorerie jamais négative, trésorerie an 10 ≥ réserve cible, DSCR ≥ 1,2 sur les années 4-10 et cash-flow libre d'exploitation ≥ 0 sur les années 4-10. Sinon FRAGILE ou NON VIABLE.",
 ]
@@ -255,11 +255,12 @@ def feuilles():
         ("Annul40evt", {"annul_evt": 0.4}),
         ("Cumul", {"ca_mult": 0.85, "capex_mult": 1.15, "delai": 1, "taux_add": 0.01}),
     ]
-    for k in ("A", "B", "C"):
+    cibles = {"Bfsd": bfs, "Ccib": cc}
+    for k, basep in cibles.items():
         for nm, st in stresses:
-            p = copy.deepcopy(base[k])
+            p = copy.deepcopy(basep)
             p["stress"].update(st)
-            p["titre"] = p["titre"].replace("cas central", f"STRESS {nm}")
+            p["titre"] = p["titre"] + f" — STRESS {nm}"
             out.append((f"S_{k}_{nm}", p))
     return out
 
