@@ -38,7 +38,8 @@ p("eq_hdg_prix_ht", "Pension haut de gamme : prix mensuel HT", 700, fav=874, dfv
   unite="€ HT/mois", statut="ESTIMATION", sources="R6-15; R3-22", groupe=G,
   note="Haras de Jardy (10 km de Paris) : 922,50 € TTC, soit 874 € HT à 5,5 % (pension accessoire à "
        "la pratique de l'équitation). Valeur centrale abaissée pour un domaine à 1 h-1 h 30 d'une métropole. "
-       "Demande haut de gamme hors Île-de-France : non prouvée.")
+       "Demande haut de gamme hors Île-de-France : non prouvée. Le tarif publié ne précise pas l'unité de "
+       "temps : unité mensuelle supposée (V2V).")
 p("eq_hdg_occ", "Pension haut de gamme : taux d'occupation", 0.85, fav=0.92, dfv=0.70, unite="%",
   statut="HYPOTHÈSE", sources="R6-16", groupe=G)
 p("eq_hdg_cout_var", "Pension haut de gamme : charges opérationnelles par cheval présent", 2238,
@@ -70,8 +71,9 @@ p("repro_contrib", "Centre de reproduction (si vétérinaire et étalon disponib
 G = "Moteurs — événements et hébergement"
 p("evt_nb", "Réceptions privées (mariages) par an, plafonnées", 10, fav=14, dfv=5, unite="événements",
   statut="HYPOTHÈSE", sources="R7-05; R7-06; R7-15", groupe=G,
-  note="Plafond choisi pour la tranquillité. Concurrence : 1 382 châteaux et 3 769 domaines sur une "
-       "seule plateforme ; ≈ 22 samedis de mai à septembre.")
+  note="Plafond choisi pour la tranquillité. Concurrence : 1 382 lieux dans la catégorie « château » et "
+       "3 769 dans la catégorie « domaine » de Mariages.net (catégories commerciales, pas un recensement, V2V) ; "
+       "≈ 22 samedis de mai à septembre.")
 p("evt_prix_ht", "Location du lieu pour une réception (week-end, traiteur extérieur)", 6500, fav=10000,
   dfv=4500, unite="€ HT/événement", statut="ESTIMATION", sources="R7-07; R7-09; R7-10; R7-13", groupe=G,
   note="Observés : 4 000 à 10 000 € par week-end (HT/TTC rarement précisé) ; CMN : 2 425 à 3 750 € HT.")
@@ -90,7 +92,8 @@ p("tourn_jours", "Tournages et prises de vue : jours par an", 2, fav=6, dfv=0, u
   statut="HYPOTHÈSE", sources="R7-36; R7-37", groupe=G,
   note="Fréquence inconnue pour un château ordinaire ; plus de 50 % des tournages en Île-de-France.")
 p("tourn_tarif", "Tournage : tarif journalier HT", 3500, fav=5500, dfv=2500, unite="€ HT/jour",
-  statut="SOURCÉ", sources="R7-12", groupe=G, note="Grille du Centre des monuments nationaux (fiction).")
+  statut="SOURCÉ", sources="R7-12", groupe=G,
+  note="Grille du Centre des monuments nationaux (fiction), catégories B et C, prix plancher pour 12 h (V2V).")
 p("tourn_var", "Tournages : charges variables", 0.15, unite="%", statut="HYPOTHÈSE", groupe=G)
 p("semj_jours", "Séminaires de jour (journées d'étude) par an", 20, fav=40, dfv=0, unite="jours",
   statut="HYPOTHÈSE", sources="R7-74", groupe=G,
@@ -118,7 +121,8 @@ p("log_m2", "Logements locatifs créés dans les communs", 600, fav=800, dfv=400
   statut="HYPOTHÈSE", groupe=G)
 p("log_loyer_m2", "Loyer d'une maison en commune rurale, charges comprises", 8.0, fav=10.9, dfv=6.8,
   unite="€/m²/mois", statut="SOURCÉ", sources="R8-22; R8-23", groupe=G,
-  note="Carte des loyers 2025 (ANIL, annonces) : 6,8 à 10,9 €/m²/mois selon les communes rurales lues.")
+  note="Carte des loyers 2025 (ANIL, annonces) : 6,8 à 10,9 €/m²/mois couvre 75 % des communes ; médiane "
+       "des communes regroupées (en général petites) : 8,63 €/m² (fichier complet relu par V2V). 8,0 reste prudent.")
 p("log_vacance", "Logements : vacance", 0.05, fav=0.03, dfv=0.10, unite="%", statut="HYPOTHÈSE", groupe=G)
 p("log_charges", "Logements : charges non récupérables, gestion, taxe foncière, entretien courant",
   0.20, fav=0.15, dfv=0.25, unite="% des loyers", statut="HYPOTHÈSE", groupe=G)
@@ -212,14 +216,17 @@ p("hot_revpar", "Château-hôtel : revenu par chambre disponible (RevPAR) HT", 1
   note="Haut de gamme 2025 : Indre-et-Loire 102 €, Gironde 146 €, Calvados 184 €.")
 p("hot_autres_recettes", "Château-hôtel : autres recettes (restauration, événements) en % de l'hébergement",
   0.6, fav=0.9, dfv=0.4, unite="%", statut="HYPOTHÈSE", groupe=G)
-p("hot_etp_chambre", "Château-hôtel : salariés par chambre", 1.65, fav=1.2, dfv=1.9, unite="ETP/chambre",
-  statut="SOURCÉ", sources="R7-41", groupe=G, note="≈ 1,65 salarié par chambre (cas Louise de La Vallière).")
+p("hot_etp_chambre", "Château-hôtel : salariés par chambre", 1.65, fav=1.2, dfv=1.9,
+  unite="personnes/chambre", statut="ESTIMATION", sources="R7-41; V2V-30", groupe=G,
+  note="Cas Louise de La Vallière : effectif projeté à l'ouverture de 33 personnes, dont 19 en cuisine, "
+       "restaurant et bar (V2V). Sans restaurant, l'ordre de grandeur serait d'environ 0,7.")
 p("hot_cout_etp", "Château-hôtel : coût employeur moyen par ETP", 38000, fav=34000, dfv=42000,
   unite="€/ETP/an", statut="ESTIMATION", sources="R2-11", groupe=G, note="≈ 1,25 à 1,4 SMIC chargé.")
 p("hot_autres_charges", "Château-hôtel : autres charges d'exploitation en % du CA", 0.35, fav=0.30, dfv=0.40,
   unite="%", statut="HYPOTHÈSE", groupe=G)
 p("hot_capex_chambre", "Château-hôtel : investissement par chambre", 500000, fav=350000, dfv=700000,
-  unite="€/chambre", statut="SOURCÉ", sources="R7-41; R7-42; R7-43", groupe=G)
+  unite="€/chambre", statut="SOURCÉ", sources="R7-41; R7-42; R7-43", groupe=G,
+  note="Hors prix d'achat (≈ 750 000 €/chambre en l'incluant) ; restaurant, spa, piscine et parc compris (V2V).")
 
 # ---------------------------------------------------------------------------------------------------
 # Lignes : (id, libellé, gabarit, catégorie, TVA, nature). Catégorie = code du moteur.

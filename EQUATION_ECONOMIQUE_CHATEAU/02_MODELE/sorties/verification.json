@@ -7,11 +7,5 @@
   },
   "cellules_comparees": 11301,
   "ecarts": [],
-  "nb_ecarts": 0,
-  "jumeau_monte_carlo_ecart_max_eur": {
-    "Proj_S2_sans_moteur": 4.842877388000488e-08,
-    "Proj_S2_solution": 4.470348358154297e-08,
-    "Proj_S1_solution": 5.21540641784668e-08,
-    "Proj_S3_solution": 4.76837158203125e-07
-  }
+  "nb_ecarts": 0
 }

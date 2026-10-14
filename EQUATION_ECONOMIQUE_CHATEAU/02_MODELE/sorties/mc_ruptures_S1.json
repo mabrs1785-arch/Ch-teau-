@@ -99,13 +99,26 @@
   }
  },
  "besoin_plus_20_pct": {
-  "echec_20": 0.096,
-  "echec_30": 0.191
+  "echec_20": 0.094,
+  "echec_30": 0.19
  },
  "sans_dividendes_de_transition": {
   "echec_20": 0.103,
   "echec_30": 0.196
  },
+ "besoin_fourchette_L1": {
+  "favorable": {
+   "echec_20": 0.003,
+   "echec_30": 0.014,
+   "besoin": 195000.0
+  },
+  "defavorable": {
+   "echec_20": 0.335,
+   "echec_30": 0.483,
+   "besoin": 562000.0
+  }
+ },
+ "dotation_95_si_besoin_defavorable_sans_dividendes": 40100000.0,
  "une_seule_entreprise": {
   "p_echec_20": 0.0445,
   "p_echec_30": 0.1078

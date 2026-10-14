@@ -13,7 +13,10 @@ cm.recalculer_et_verifier(cm.construire())
 import monte_carlo as mc  # noqa: E402
 from noyau import EXTRA  # noqa: E402
 
-RESERVES = {"S1": 400_000, "S2": 1_500_000, "S3": 3_500_000}
+# réserves de trésorerie des solutions, lues dans le registre (feuille Hypotheses)
+RESERVES = {s: mc._v(f"{s}_sol_reserve0") for s in ("S1", "S2", "S3")}
+for s, r in RESERVES.items():   # garde-fou : une réserve sous un an de besoin déclenche la coupe dès l'année 1
+    assert r >= EXTRA[f"bud_total_besoin_{s}"], f"réserve {s} inférieure à un an de besoin"
 
 
 def dotations():
@@ -51,7 +54,7 @@ def grille():
 
 
 def ruptures():
-    for scen in ("S2", "S1"):
+    for scen in ("S2", "S1", "S3"):
         base = mc.parametres_solution(scen)
         N = 10000
 
@@ -70,9 +73,21 @@ def ruptures():
                                        "1 tous les 8 ans": pe(base, p_crise=1 / 8)}
         out["sinistres_par_an"] = {str(l): pe(base, lambda_sinistre=l) for l in (0.05, 0.10, 0.20)}
         m = 1.2
+        # la réserve suit le besoin (un peu plus d'un an de besoin), sinon la coupe de pilotage jouerait en permanence
         out["besoin_plus_20_pct"] = pe(dict(base, pers=base["pers"] * m, energie=base["energie"] * m, ge=base["ge"] * m,
-                                            autres=base["autres"] * m, assur=base["assur"] * m, B0=base["B0"] * m))
+                                            autres=base["autres"] * m, assur=base["assur"] * m, B0=base["B0"] * m,
+                                            res0=base["res0"] * m))
         out["sans_dividendes_de_transition"] = pe(dict(base, div=0, div_n=0))
+        Bc = EXTRA[f"bud_total_besoin_{scen}"]
+        out["besoin_fourchette_L1"] = {
+            nom: dict(pe(mc.parametres_solution(scen, mult_besoin=EXTRA[f"bud_total_besoin_{scen}{suf}"] / Bc,
+                                                reserve0=base["res0"] * EXTRA[f"bud_total_besoin_{scen}{suf}"] / Bc)),
+                      besoin=round(EXTRA[f"bud_total_besoin_{scen}{suf}"], -3))
+            for nom, suf in (("favorable", "_fav"), ("defavorable", "_def"))}
+        md = EXTRA[f"bud_total_besoin_{scen}_def"] / Bc
+        Pd = mc.parametres_solution(scen, mult_besoin=md, reserve0=base["res0"] * md, div=0, div_annees=0)
+        out["dotation_95_si_besoin_defavorable_sans_dividendes"] = round(
+            mc.dotation_necessaire(Pd, cible=0.05, horizon=30, n=6000, borne_haute=8e8), -5)
         out["une_seule_entreprise"] = pe(base) if base["div"] == 0 else {
             k2: v for k2, v in mc.simuler(base, annees=30, n=N, ent_n=1).items() if k2 in ("p_echec_20", "p_echec_30")}
         print(scen, json.dumps(out, ensure_ascii=False)[:600])
@@ -96,8 +111,34 @@ def holding():
     json.dump(out, open("sorties/mc_holding_hybride.json", "w"), indent=1, ensure_ascii=False)
 
 
+def distribution():
+    """Distribution des trajectoires des trois solutions (30 ans, 20 000 tirages) : dotation, tensions, échecs."""
+    import numpy as np
+    out = {}
+    for scen in ("S1", "S2", "S3"):
+        P = mc.parametres_solution(scen)
+        s = mc.simuler(P, annees=30, n=20000, ent_n=5, detail=True)
+        res, dot = s["traj"]["reserve"], s["traj"]["dotation"]
+        tension = res[:, :20] < P["B0"]   # réserve sous un an de besoin : tension l'année suivante
+        d20, d30 = dot[:, 19], dot[:, 29]
+        out[scen] = {
+            "p_echec_20": round(s["p_echec_20"], 3), "p_echec_30": round(s["p_echec_30"], 3),
+            "annee_mediane_premier_echec": s["annee_mediane_echec"],
+            "part_traj_au_moins_1_annee_tension_20ans": round(float(tension.any(axis=1).mean()), 3),
+            "nb_moyen_annees_tension_20ans": round(float(tension.sum(axis=1).mean()), 2),
+            "dotation_an20_M": {f"p{x:02d}": round(float(np.percentile(d20, x)) / 1e6, 1) for x in (5, 25, 50, 75, 95)},
+            "dotation_an30_M": {f"p{x:02d}": round(float(np.percentile(d30, x)) / 1e6, 1) for x in (5, 25, 50, 75, 95)},
+            "dotation0_M": P["dot0"] / 1e6,
+            "part_dotation_an20_sous_dotation0": round(float((d20 < P["dot0"]).mean()), 3),
+            "part_dotation_an20_sous_moitie": round(float((d20 < 0.5 * P["dot0"]).mean()), 3),
+        }
+        print(scen, out[scen])
+    json.dump(out, open("sorties/mc_distribution_solutions.json", "w"), indent=1, ensure_ascii=False)
+
+
 if __name__ == "__main__":
     dotations()
     grille()
     ruptures()
     holding()
+    distribution()

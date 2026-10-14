@@ -1,0 +1,126 @@
+{
+ "configuration": "S3 : dotation 210 M€, dividendes 0.00 M€/an pendant 0 ans, réserve 4.00 M€",
+ "reference": {
+  "echec_20": 0.053,
+  "echec_30": 0.117
+ },
+ "dotation_initiale": {
+  "105 M€": {
+   "echec_20": 0.426,
+   "echec_30": 0.554
+  },
+  "141 M€": {
+   "echec_20": 0.206,
+   "echec_30": 0.322
+  },
+  "174 M€": {
+   "echec_20": 0.107,
+   "echec_30": 0.196
+  },
+  "210 M€": {
+   "echec_20": 0.053,
+   "echec_30": 0.117
+  },
+  "246 M€": {
+   "echec_20": 0.029,
+   "echec_30": 0.071
+  },
+  "279 M€": {
+   "echec_20": 0.018,
+   "echec_30": 0.048
+  }
+ },
+ "rendement_reel_net": {
+  "0.02": {
+   "echec_20": 0.084,
+   "echec_30": 0.193
+  },
+  "0.025": {
+   "echec_20": 0.068,
+   "echec_30": 0.152
+  },
+  "0.03": {
+   "echec_20": 0.053,
+   "echec_30": 0.117
+  },
+  "0.035": {
+   "echec_20": 0.044,
+   "echec_30": 0.089
+  }
+ },
+ "derive_salaires_reelle": {
+  "0.0": {
+   "echec_20": 0.05,
+   "echec_30": 0.108
+  },
+  "0.005": {
+   "echec_20": 0.053,
+   "echec_30": 0.117
+  },
+  "0.01": {
+   "echec_20": 0.059,
+   "echec_30": 0.13
+  },
+  "0.015": {
+   "echec_20": 0.065,
+   "echec_30": 0.145
+  }
+ },
+ "sans_regles_de_pilotage": {
+  "echec_20": 0.122,
+  "echec_30": 0.223
+ },
+ "frequence_des_crises": {
+  "1 tous les 20 ans": {
+   "echec_20": 0.046,
+   "echec_30": 0.098
+  },
+  "1 tous les 12 ans": {
+   "echec_20": 0.053,
+   "echec_30": 0.117
+  },
+  "1 tous les 8 ans": {
+   "echec_20": 0.066,
+   "echec_30": 0.137
+  }
+ },
+ "sinistres_par_an": {
+  "0.05": {
+   "echec_20": 0.041,
+   "echec_30": 0.099
+  },
+  "0.1": {
+   "echec_20": 0.053,
+   "echec_30": 0.117
+  },
+  "0.2": {
+   "echec_20": 0.079,
+   "echec_30": 0.141
+  }
+ },
+ "besoin_plus_20_pct": {
+  "echec_20": 0.106,
+  "echec_30": 0.195
+ },
+ "sans_dividendes_de_transition": {
+  "echec_20": 0.053,
+  "echec_30": 0.117
+ },
+ "besoin_fourchette_L1": {
+  "favorable": {
+   "echec_20": 0.007,
+   "echec_30": 0.018,
+   "besoin": 2167000.0
+  },
+  "defavorable": {
+   "echec_20": 0.301,
+   "echec_30": 0.432,
+   "besoin": 6407000.0
+  }
+ },
+ "dotation_95_si_besoin_defavorable_sans_dividendes": 481300000.0,
+ "une_seule_entreprise": {
+  "echec_20": 0.053,
+  "echec_30": 0.117
+ }
+}

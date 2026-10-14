@@ -15,7 +15,7 @@ IDS_CLES = {"S2_vr_m2", "taux_gros_entretien", "cout_jardinier", "assurance_taux
 G = "Bâti"
 p("S1_vr_m2", "S1 — valeur de reconstruction à l'identique du château", 3000, fav=2400, dfv=4000,
   unite="€/m²", statut="ESTIMATION", sources="R1-26; R1-27", groupe=G,
-  note="Bornes sourcées : 2 400 €/m² (exemple d'un courtier, Figaro 2020, surface développée) et "
+  note="Bornes sourcées : 2 400 €/m² (exemple d'un courtier, Figaro 2020, type de surface non précisé) et "
        "5 000-10 000 €/m² (courtier 2026, fiabilité faible). Château simple, non protégé ou inscrit : "
        "bas de la fourchette. Affectation par scénario = hypothèse.")
 p("S2_vr_m2", "S2 — valeur de reconstruction à l'identique du château", 3700, fav=2800, dfv=5000,
@@ -29,11 +29,15 @@ p("vr_dep_ratio", "Valeur de reconstruction des dépendances / celle du château
   note="Écuries, granges et communs, de construction plus simple. Aucune source.")
 p("taux_entretien_courant", "Entretien courant annuel, en % de la valeur de reconstruction", 0.0075,
   fav=0.005, dfv=0.01, unite="% par an", statut="HYPOTHÈSE", sources="R1-07", groupe=G,
-  note="Part « courante » dans la règle globale de 2 à 4 %. La ventilation n'est pas sourcée (R1 § 9.1).")
+  note="Part « courante » dans la règle globale de 2 à 4 % du NRC (minimum « en l'absence d'information "
+       "spécifique », pour un parc de bâtiments et en moyenne sur 5 à 10 ans, vérifié par V2V). La ventilation "
+       "n'est pas sourcée (R1 § 9.1).")
 p("taux_gros_entretien", "Provision de gros entretien, en % de la valeur de reconstruction", 0.0225,
   fav=0.015, dfv=0.03, unite="% par an", statut="ESTIMATION", sources="R1-07; R1-08; R1-05", groupe=G,
   note="La règle du NRC (2 à 4 % de la valeur de remplacement pour l'entretien-réparation, « absolute "
-       "minimum ») porte sur des bâtiments publics américains, transposition à valider. Recoupement : "
+       "minimum ») porte sur des bâtiments publics américains, transposition à valider. Elle est conditionnelle "
+       "(« in the absence of specific information »), repose sur le jugement du comité et vaut pour un parc de "
+       "bâtiments en moyenne sur 5 à 10 ans (rapport de 1990, p. xii, vérifié par V2V). Recoupement : "
        "les maisons historiques britanniques dépensent ≈ 156-161 k£ TTC/an et accumulent pourtant ≈ 2 M£ "
        "de retard chacune (R1-05). Une dépense « normale » est donc insuffisante pour un état d'exception.")
 p("taux_aleas_travaux", "Aléas de chantier et découvertes, en % du gros entretien", 0.15, fav=0.10,
@@ -73,7 +77,7 @@ p("horsgel_kwh_m2", "Consommation hors-gel par m² non habité du château", 30,
 p("prix_chaleur_kwh", "Prix de l'énergie de chauffage livrée", 0.15, fav=0.10, dfv=0.20,
   unite="€ TTC/kWh", statut="SOURCÉ", sources="R1-22; R1-25", groupe=G,
   note="Bornes : granulés en vrac 10,4 c€ TTC/kWh (2023, ADEME repris par un tiers) ; gaz, prix "
-       "repère 19,49 c€ TTC/kWh au 1er novembre 2026.")
+       "repère 19,49 c€ TTC/kWh pour le seul mois de novembre 2026, après deux hausses successives (V2V).")
 p("S1_elec_kwh", "S1 — électricité spécifique (maison, écurie, extérieurs)", 20000, fav=15000,
   dfv=30000, unite="kWh/an", statut="HYPOTHÈSE", groupe=G)
 p("S2_elec_kwh", "S2 — électricité spécifique (dont manège éclairé, écuries, ateliers)", 60000,
@@ -135,7 +139,8 @@ p("taux_invest_futurs", "Investissements futurs, en % des charges et provisions"
 # =============================================================================
 G = "Scénario dette"
 p("S1_prix_achat", "S1 — prix d'achat", 1_200_000, unite="€", statut="HYPOTHÈSE", sources="D-02",
-  groupe=G, note="Marché : prix affichés de 920 k€ à 20 M€, prix de vente moyen de 2,415 M€ (Kretz, 2026).")
+  groupe=G, note="Marché : prix affichés de 920 k€ à 20 M€, prix affiché moyen du portefeuille ≈ 5 M€, prix de "
+                  "vente moyen de 2,415 M€ (Kretz, 2026, vérifié par V2V).")
 p("S2_prix_achat", "S2 — prix d'achat", 3_500_000, unite="€", statut="HYPOTHÈSE", sources="D-02",
   groupe=G)
 p("S3_prix_achat", "S3 — prix d'achat", 9_000_000, unite="€", statut="HYPOTHÈSE", sources="D-02",

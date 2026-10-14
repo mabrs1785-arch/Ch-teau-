@@ -130,7 +130,7 @@ p("lissage_depense", "Règle de dépense lissée : poids du plafond de l'année 
 p("S2_sol_dotation0", "S2 — dotation affectée disponible à l'année 1", 60_000_000, unite="€",
   statut="HYPOTHÈSE", groupe=G,
   note="Dimensionnement REQUIS, pas une ressource acquise : avec 1 M€/an de dividendes pendant 10 ans, environ "
-       "90 % de chances de tenir 30 ans et 96 % de tenir 20 ans selon le Monte-Carlo (sorties/mc_grille_hybride.json).")
+       "96 % de chances de tenir 20 ans et 89 % de tenir 30 ans selon le Monte-Carlo (sorties/mc_ruptures_S2.json).")
 p("S2_sol_div", "S2 — dividendes nets annuels de l'entreprise extérieure pendant la transition", 1_000_000,
   unite="€/an", statut="HYPOTHÈSE", groupe=G)
 p("S2_sol_div_annees", "S2 — durée de la transition (années de dividendes)", 10, unite="années",
@@ -138,7 +138,9 @@ p("S2_sol_div_annees", "S2 — durée de la transition (années de dividendes)",
 p("S2_sol_reserve0", "S2 — réserve de trésorerie initiale (≈ 1,2 an de besoin)", 1_500_000,
   unite="€", statut="HYPOTHÈSE", groupe=G)
 p("S1_sol_dotation0", "S1 — dotation affectée disponible à l'année 1", 15_000_000, unite="€",
-  statut="HYPOTHÈSE", groupe=G)
+  statut="HYPOTHÈSE", groupe=G,
+  note="Dimensionnement REQUIS : avec 0,4 M€/an de dividendes pendant 10 ans, environ 96 % de chances de tenir "
+       "20 ans et 89 % de tenir 30 ans (sorties/mc_ruptures_S1.json).")
 p("S1_sol_div", "S1 — dividendes nets annuels pendant la transition", 400_000, unite="€/an",
   statut="HYPOTHÈSE", groupe=G)
 p("S1_sol_div_annees", "S1 — durée de la transition", 10, unite="années", statut="HYPOTHÈSE", groupe=G)
@@ -155,11 +157,14 @@ p("flex_report", "Pilotage : part de la campagne de gros entretien reportée", 0
   groupe=G, note="Le report est remis dans le fonds de travaux : il ne disparaît pas.")
 p("retrait_urgence", "Pilotage : retrait d'urgence maximal sur la dotation (en % du capital)", 0.04, unite="%",
   statut="HYPOTHÈSE", groupe=G)
-p("S3_sol_dotation0", "S3 — dotation affectée disponible à l'année 1", 180_000_000, unite="€",
-  statut="HYPOTHÈSE", groupe=G)
+p("S3_sol_dotation0", "S3 — dotation affectée disponible à l'année 1", 210_000_000, unite="€",
+  statut="HYPOTHÈSE", groupe=G,
+  note="Dimensionnement REQUIS, sans dividendes de transition : environ 95 % de chances de tenir 20 ans et 88 % "
+       "de tenir 30 ans (sorties/mc_ruptures_S3.json), le même niveau de risque que S1 et S2.")
 p("S3_sol_div", "S3 — dividendes nets annuels pendant la transition", 0, unite="€/an", statut="HYPOTHÈSE", groupe=G)
 p("S3_sol_div_annees", "S3 — durée de la transition", 0, unite="années", statut="HYPOTHÈSE", groupe=G)
-p("S3_sol_reserve0", "S3 — réserve de trésorerie initiale (≈ 1 an de besoin)", 3_500_000, unite="€", statut="HYPOTHÈSE", groupe=G)
+p("S3_sol_reserve0", "S3 — réserve de trésorerie initiale (≈ 1,1 an de besoin)", 4_000_000, unite="€", statut="HYPOTHÈSE", groupe=G,
+  note="Doit rester supérieure à un an de besoin, sinon la règle de pilotage (coupe de 10 %) se déclenche dès l'année 1.")
 p("dette_active", "Option dette d'acquisition (1 = oui)", 0, unite="0/1", statut="HYPOTHÈSE", groupe=G)
 p("mh_actif", "Option avantage fiscal MH (1 = oui, suppose des revenus imposables au barème)", 0,
   unite="0/1", statut="HYPOTHÈSE", groupe=G,

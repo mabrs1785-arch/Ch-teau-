@@ -78,7 +78,7 @@
 | ST_S2_cumul | 1,50 M€ | 1,50 M€ | 60,3 M€ | 0 | 33 k€ |
 | Proj_S1_solution | 0,40 M€ | 0,40 M€ | 23,9 M€ | 0 | 14 k€ |
 | ST_S1_cumul | 0,40 M€ | 0,40 M€ | 16,1 M€ | 0 | 10 k€ |
-| Proj_S3_solution | 3,50 M€ | 3,50 M€ | 230,2 M€ | 0 | 88 k€ |
+| Proj_S3_solution | 4,00 M€ | 4,00 M€ | 274,6 M€ | 0 | 88 k€ |
 
 ## mc_dotation_necessaire.json
 
@@ -122,21 +122,21 @@
  },
  "S3_pure": {
   "besoin_B": 3643000.0,
-  "dotation_95": 242700000.0,
-  "dotation_50": 108500000.0,
-  "ratio_95_sur_B": 66.6,
+  "dotation_95": 271300000.0,
+  "dotation_50": 108700000.0,
+  "ratio_95_sur_B": 74.5,
   "ratio_50_sur_B": 29.8,
-  "p_echec_20_a_k95": 0.0143,
-  "p_echec_30_a_k95": 0.0479
+  "p_echec_20_a_k95": 0.0174,
+  "p_echec_30_a_k95": 0.0468
  },
  "S3_leviers": {
   "besoin_B": 3643000.0,
-  "dotation_95": 209500000.0,
-  "dotation_50": 82100000.0,
-  "ratio_95_sur_B": 57.5,
+  "dotation_95": 204000000.0,
+  "dotation_50": 82000000.0,
+  "ratio_95_sur_B": 56.0,
   "ratio_50_sur_B": 22.5,
-  "p_echec_20_a_k95": 0.0169,
-  "p_echec_30_a_k95": 0.0451
+  "p_echec_20_a_k95": 0.0162,
+  "p_echec_30_a_k95": 0.0466
  }
 }
 ```
@@ -490,13 +490,26 @@
   }
  },
  "besoin_plus_20_pct": {
-  "echec_20": 0.102,
-  "echec_30": 0.196
+  "echec_20": 0.098,
+  "echec_30": 0.197
  },
  "sans_dividendes_de_transition": {
   "echec_20": 0.08,
   "echec_30": 0.166
  },
+ "besoin_fourchette_L1": {
+  "favorable": {
+   "echec_20": 0.004,
+   "echec_30": 0.017,
+   "besoin": 777000.0
+  },
+  "defavorable": {
+   "echec_20": 0.305,
+   "echec_30": 0.446,
+   "besoin": 2058000.0
+  }
+ },
+ "dotation_95_si_besoin_defavorable_sans_dividendes": 143500000.0,
  "une_seule_entreprise": {
   "p_echec_20": 0.0448,
   "p_echec_30": 0.1088
@@ -608,13 +621,26 @@
   }
  },
  "besoin_plus_20_pct": {
-  "echec_20": 0.096,
-  "echec_30": 0.191
+  "echec_20": 0.094,
+  "echec_30": 0.19
  },
  "sans_dividendes_de_transition": {
   "echec_20": 0.103,
   "echec_30": 0.196
  },
+ "besoin_fourchette_L1": {
+  "favorable": {
+   "echec_20": 0.003,
+   "echec_30": 0.014,
+   "besoin": 195000.0
+  },
+  "defavorable": {
+   "echec_20": 0.335,
+   "echec_30": 0.483,
+   "besoin": 562000.0
+  }
+ },
+ "dotation_95_si_besoin_defavorable_sans_dividendes": 40100000.0,
  "une_seule_entreprise": {
   "p_echec_20": 0.0445,
   "p_echec_30": 0.1078
