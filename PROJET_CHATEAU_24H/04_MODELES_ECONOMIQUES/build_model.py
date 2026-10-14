@@ -127,6 +127,8 @@ def build_scenario(wb, name, p):
         ("gros_entretien_pct", "Gros entretien patrimonial annuel (% prix+travaux)", "%", ""),
         ("valo_sortie_pct", "Valeur de sortie an 10 (% prix + travaux cumulés)", "%", ""),
         ("loyer_avant_acq", "Loyer annuel versé avant acquisition (scénario location)", "€", ""),
+        ("frais_cession_pct", "Frais de cession à la sortie (% de la valeur)", "%", ""),
+        ("loyer_prive", "Loyer de la partie privée payé par le fondateur (hors CA d'exploitation)", "€", ""),
     ]:
         v, sc = p["inputs"][k]
         s.inp(k, lab, v, unit, sc)
@@ -147,13 +149,20 @@ def build_scenario(wb, name, p):
         ("oc", "Obligations / quasi-fonds propres (in fine)", "€"),
         ("oc_taux", "Coupon annuel des obligations", "%"),
         ("oc_ech", "Année de remboursement des obligations", "année"),
-        ("part_fondateur", "Part du capital détenue par le fondateur", "%"),
+        ("prime_industrie", "Part de capital supplémentaire accordée au fondateur pour son travail (sweat equity)", "%"),
         ("votes_fondateur", "Droits de vote du fondateur", "%"),
         ("treso_min", "Réserve de liquidité cible", "€"),
+        ("tri_cible", "TRI minimal exigé par des investisseurs extérieurs", "%"),
+        ("dirigeant_paye", "Le dirigeant est-il rémunéré par le domaine ? (1/0)", ""),
     ]:
         v, sc = p["inputs"][k]
         s.inp(k, lab, v, unit, sc)
 
+    r = s.row
+    s.put(r, 1, "Part du capital du fondateur (calculée : apports au prorata + prime d'industrie, plafonnée à 100 %)")
+    s.put(r, 2, f"=MIN(1,({s.ref['apport_fondateur']}+{s.ref['fp_invest']}*{s.ref['fp_fondateur']})/MAX(1,{s.ref['apport_fondateur']}+{s.ref['fp_invest']})+{s.ref['prime_industrie']})", fmt=PCT, font=BOLD)
+    s.ref["part_fondateur"] = f"$B${r}"
+    s.row += 1
     s.section("3. Paramètres de stress (neutres = 100 % / 0)")
     for k, lab, unit in [
         ("ca_mult", "Multiplicateur de chiffre d'affaires", "%"),
@@ -262,8 +271,10 @@ def build_scenario(wb, name, p):
         fix_line_rows.append(fr)
     s.line("fixes", "Charges fixes totales", lambda i, c: "+".join(f"{c}{fr}" for fr in fix_line_rows), bold=True)
     s.line("loyer", "Loyer des murs (avant acquisition)",
-           lambda i, c: f"-IF({s.R('possede', c)}=0,IF({s.R('n_exp', c)}>0,{I['loyer_avant_acq']}*{s.R('idx_c', c)},0),0)")
+           lambda i, c: f"-IF({s.R('possede', c)}=0,IF({y(c)}>={I['annee_ouv']},{I['loyer_avant_acq']}*{s.R('idx_c', c)},0),0)")
     s.line("ebitda", "EBITDA", lambda i, c: f"{s.R('marge', c)}+{s.R('fixes', c)}+{s.R('loyer', c)}", bold=True)
+    s.line("lp", "Loyer de la partie privée (payé par le fondateur, dès qu'il occupe les murs)",
+           lambda i, c: f"{s.R('possede', c)}*{I['loyer_prive']}*{s.R('idx_c', c)}")
     s.line("marge_ebitda", "  Marge d'EBITDA", lambda i, c: f"IF({s.R('ca', c)}=0,0,{s.R('ebitda', c)}/{s.R('ca', c)})", fmt=PCT, total=False)
 
     # Investissements (pour amortissements)
@@ -312,7 +323,7 @@ def build_scenario(wb, name, p):
     # Résultat net
     s.row += 1
     s.line("fin", "Charges financières", lambda i, c: f"-({s.R('d_int', c)}+{s.R('cv_int', c)}+{s.R('oc_int', c)})")
-    s.line("rai", "Résultat avant impôt", lambda i, c: f"{s.R('ebit', c)}+{s.R('fin', c)}", bold=True)
+    s.line("rai", "Résultat avant impôt", lambda i, c: f"{s.R('ebit', c)}+{s.R('fin', c)}+{s.R('lp', c)}", bold=True)
     s.line("def", "Stock de déficits reportables (fin d'année)",
            lambda i, c: (f"MAX(0,-{s.R('rai', c)})" if i == 1 else
                          f"MAX(0,{s.R('def', s.prev(c))}-{s.R('rai', c)})"), total=False)
@@ -328,8 +339,8 @@ def build_scenario(wb, name, p):
     s.line("bfr", "BFR (niveau)", lambda i, c: f"{s.R('ca', c)}*{I['bfr_pct']}", total=False)
     s.line("dbfr", "Variation du BFR",
            lambda i, c: (f"-{s.R('bfr', c)}" if i == 1 else f"-({s.R('bfr', c)}-{s.R('bfr', s.prev(c))})"))
-    s.line("cfo", "Flux d'exploitation (EBITDA − IS − ΔBFR)",
-           lambda i, c: f"{s.R('ebitda', c)}+{s.R('is', c)}+{s.R('dbfr', c)}", bold=True)
+    s.line("cfo", "Flux d'exploitation (EBITDA + loyer privé − IS − ΔBFR)",
+           lambda i, c: f"{s.R('ebitda', c)}+{s.R('lp', c)}+{s.R('is', c)}+{s.R('dbfr', c)}", bold=True)
     s.line("cfi", "Flux d'investissement",
            lambda i, c: f"-({s.R('acq', c)}+{s.R('capex_init', c)}+{s.R('ge', c)})", bold=True)
     s.line("apports", "  Apports en fonds propres + subventions",
@@ -345,9 +356,9 @@ def build_scenario(wb, name, p):
            total=False, bold=True)
     s.line("fcf_exp", "Cash-flow libre d'exploitation (CFO − gros entretien − service dette hors obligations in fine)",
            lambda i, c: f"{s.R('cfo', c)}-{s.R('ge', c)}-({s.R('d_int', c)}+{s.R('d_amo', c)}+{s.R('cv_int', c)}+{s.R('cv_amo', c)}+{s.R('oc_int', c)})")
-    s.line("dscr", "DSCR ((EBITDA − IS) / service de la dette)",
+    s.line("dscr", "DSCR ((EBITDA + loyer privé − IS − gros entretien) / service de la dette)",
            lambda i, c: f"IF(({s.R('d_int', c)}+{s.R('d_amo', c)}+{s.R('cv_int', c)}+{s.R('cv_amo', c)}+{s.R('oc_int', c)})=0,\"\","
-                        f"({s.R('ebitda', c)}+{s.R('is', c)})/({s.R('d_int', c)}+{s.R('d_amo', c)}+{s.R('cv_int', c)}+{s.R('cv_amo', c)}+{s.R('oc_int', c)}))",
+                        f"({s.R('ebitda', c)}+{s.R('lp', c)}+{s.R('is', c)}-{s.R('ge', c)})/({s.R('d_int', c)}+{s.R('d_amo', c)}+{s.R('cv_int', c)}+{s.R('cv_amo', c)}+{s.R('oc_int', c)}))",
            fmt='0.00', total=False)
 
     # Investisseurs
@@ -357,7 +368,7 @@ def build_scenario(wb, name, p):
     s.line("dette_tot", "Dettes financières totales fin d'année",
            lambda i, c: f"{s.R('d_fin', c)}+{s.R('cv_fin', c)}+{s.R('oc_enc', c)}-{s.R('oc_rmb', c)}", total=False)
     s.line("v_actif", "Valeur estimée de l'actif (si cédé cette année)",
-           lambda i, c: f"{s.R('possede', c)}*({I['prix']}+{s.R('cum_capex', c)})*{I['valo_sortie_pct']}", total=False)
+           lambda i, c: f"{s.R('possede', c)}*({I['prix']}+{s.R('cum_capex', c)})*{I['valo_sortie_pct']}*(1-{I['frais_cession_pct']})", total=False)
     s.line("v_eq", "Valeur des fonds propres (actif + trésorerie − dettes)",
            lambda i, c: f"{s.R('v_actif', c)}+{s.R('treso', c)}-{s.R('dette_tot', c)}", total=False)
     s.line("flux_inv", "Flux des investisseurs (entrée an d'acq., sortie an 10)",
@@ -384,13 +395,13 @@ def build_scenario(wb, name, p):
         ("k_fcfneg", "Nb d'années à cash-flow libre d'exploitation négatif (an 4–10)",
          f"=COUNTIF(F{I['fcf_exp']}:L{I['fcf_exp']},\"<0\")", '0'),
         ("k_tri_inv", "TRI investisseurs (sortie théorique an 10)",
-         f"=IFERROR(IRR(C{I['flux_inv']}:L{I['flux_inv']},-0.05),\"perte quasi totale (TRI non calculable)\")", PCT),
+         f"=IF({I['fp_invest']}*(1-{I['fp_fondateur']})=0,\"sans objet\",IFERROR(IRR(C{I['flux_inv']}:L{I['flux_inv']},-0.05),\"perte quasi totale (TRI non calculable)\"))", PCT),
         ("k_tri_fond", "TRI fondateur (sortie théorique an 10)",
          f"=IFERROR(IRR(C{I['flux_fond']}:L{I['flux_fond']},-0.05),\"perte quasi totale (TRI non calculable)\")", PCT),
-        ("k_dette_sout", "Dette bancaire soutenable estimée (DSCR 1,2 sur (EBITDA − gros entretien) an 6, taux et durée du scénario)",
-         f"=MAX(0,PV({I['taux']},{I['duree']},-(H{I['ebitda']}-H{I['ge']})/1.2))", EUR),
-        ("k_fp_nec", "Fonds propres nécessaires (emplois + réserve − dette soutenable)",
-         f"={I['prix']}*(1+{I['frais_acq_pct']})+SUM(C{I['capex_init']}:L{I['capex_init']})+{I['treso_min']}-B{{DS}}", EUR),
+        ("k_dette_sout", "Dette bancaire soutenable estimée (DSCR 1,2 sur (EBITDA − gros entretien) an 10, taux et durée du scénario)",
+         f"=MAX(0,PV({I['taux']},{I['duree']},-(L{I['ebitda']}+L{I['lp']}-L{I['ge']})/1.2))", EUR),
+        ("k_fp_nec", "Fonds propres nécessaires (emplois + réserve + pertes d'exploitation cumulées − dette soutenable)",
+         f"={I['prix']}*(1+{I['frais_acq_pct']})+SUM(C{I['capex_init']}:L{I['capex_init']})+{I['treso_min']}-SUMIF(C{I['cfo']}:L{I['cfo']},\"<0\")-B{{DS}}", EUR),
         ("k_part", "Part du capital du fondateur", f"={I['part_fondateur']}", PCT),
         ("k_votes", "Droits de vote du fondateur", f"={I['votes_fondateur']}", PCT),
     ]
@@ -401,10 +412,13 @@ def build_scenario(wb, name, p):
         s.put(s.row, 2, f, fmt=fmt, font=BOLD)
         I[key] = f"$B${s.row}"
         s.row += 1
-    s.put(s.row, 1, "Verdict (règle : trésorerie ≥ réserve cible, DSCR ≥ 1,2, cash-flow libre ≥ 0 an 4–10)", font=BOLD)
+    s.put(s.row, 1, "Verdict (trésorerie ≥ 0 et ≥ réserve an 10, DSCR ≥ 1,2, cash-flow libre ≥ 0 an 4–10, TRI investisseurs extérieurs ≥ cible, dirigeant payé)", font=BOLD)
+    ok_inv = f"OR({I['k_tri_inv']}=\"sans objet\",AND(ISNUMBER({I['k_tri_inv']}),N({I['k_tri_inv']})>={I['tri_cible']}))"
     s.put(s.row, 2,
-          f"=IF(AND({I['k_tmin']}>=0,{I['k_t10']}>={I['treso_min']},OR({I['k_dscr']}=\"n/a\",{I['k_dscr']}>=1.2),{I['k_fcfneg']}=0),"
-          f"\"VIABLE sous hypothèses\",IF({I['k_tmin']}<0,\"NON VIABLE (trésorerie négative)\",\"FRAGILE\"))", font=BOLD)
+          f"=IF({I['k_tmin']}<0,\"NON VIABLE (trésorerie négative)\","
+          f"IF(AND({I['k_t10']}>={I['treso_min']},OR({I['k_dscr']}=\"n/a\",{I['k_dscr']}>=1.2),{I['k_fcfneg']}=0),"
+          f"IF(NOT({ok_inv}),\"FRAGILE (investisseurs non rémunérés)\",IF({I['dirigeant_paye']}=0,\"VIABLE seulement avec dirigeant bénévole\",\"VIABLE sous hypothèses\")),"
+          f"\"FRAGILE\"))", font=BOLD)
     I["k_verdict"] = f"$B${s.row}"
     s.row += 1
     ws.freeze_panes = "B2"

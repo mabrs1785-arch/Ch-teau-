@@ -28,7 +28,7 @@ LISEZMOI = [
 B_INPUTS = {
     "annee_acq": (1, "Achat immédiat"),
     "annee_ouv": (2, "Année 1 = travaux ; ESTIMATION"),
-    "prix": (2_650_000, "Ordre de grandeur annonce Ygrande (40 ha, écuries) — agent 1, non vérifié"),
+    "prix": (2_650_000, "Ordre de grandeur annonce Ygrande (40 ha, écuries) — agent 1, non vérifié ; exploitant probablement liquidé 10/2025, remise en vente SAFER 07/2026 (agent 8, à confirmer)"),
     "frais_acq_pct": (0.075, "Droits ≈6,32 % + notaire/débours ≈1,2 % — agent 6, source secondaire"),
     "part_bati": (0.5, E),
     "capex_restauration": (600_000, "ESTIMATION sans visite ni devis (agent 1 : 0,3-1,2 M€ pour un domaine déjà équipé)"),
@@ -38,6 +38,8 @@ B_INPUTS = {
     "gros_entretien_pct": (0.01, "Règle empirique 1-2 %/an non sourcée (agent 4)"),
     "valo_sortie_pct": (0.8, "ESTIMATION prudente : décote vs coût (Hus −35 % en 1 an, agent 1/7)"),
     "loyer_avant_acq": (0, "Sans objet"),
+    "frais_cession_pct": (0.05, "ESTIMATION (honoraires + diagnostics) — correction audit"),
+    "loyer_prive": (18_000, "Loyer de marché exigé (risque ABS — agent 6) ; ESTIMATION ; payé sur revenus extérieurs du fondateur, hors CA (correction audit E1)"),
     "apport_fondateur": (250_000, "Scénario d'apport S2 (hypothèse, apport réel inconnu)"),
     "fp_invest": (1_400_000, "NON ACQUIS — investisseurs à trouver"),
     "fp_fondateur": (0, ""),
@@ -52,9 +54,11 @@ B_INPUTS = {
     "oc": (300_000, "NON ACQUIS — obligations in fine (club deal)"),
     "oc_taux": (0.06, E),
     "oc_ech": (8, E),
-    "part_fondateur": (0.35, "ESTIMATION : 250 k€ + apport en industrie / BSPCE ; à négocier"),
+    "prime_industrie": (0.10, "ESTIMATION : sweat equity négociée ; part calculée au prorata des apports (correction audit E3)"),
     "votes_fondateur": (0.51, "Actions de préférence — acceptation par investisseurs NON acquise"),
     "treso_min": (150_000, E),
+    "tri_cible": (0.06, "ESTIMATION : rendement minimal d'un investisseur en fonds propres sur actif illiquide"),
+    "dirigeant_paye": (1, "Rémunération du dirigeant incluse dans les charges"),
     "ramp1": (0.5, E), "ramp2": (0.75, E), "ramp3": (0.9, E),
     "infl_prix": (0.02, E), "infl_ch": (0.025, E),
     "bfr_pct": (-0.03, "Acomptes mariages/pensions payées d'avance — ESTIMATION"),
@@ -62,28 +66,26 @@ B_INPUTS = {
 }
 # (libellé, volume à maturité, prix unitaire annuel, coût variable %, événement ?, équestre ?, unité / source)
 B_REV = [
-    ("Pension box premium", 18, 6_600, 0.27, False, True,
-     "20 boxes × 90 % ; 550 €/mois [A3, fourchette 430-700 € sourcée] ; coût direct 150 €/mois ESTIMATION"),
-    ("Pension au pré / retraite", 27, 3_360, 0.29, False, True,
-     "30 places × 90 % ; 280 €/mois (fourchette 120-400 €, source faible) ; coût 80 €/mois ESTIMATION"),
+    ("Pension box premium", 18, 6_256, 0.29, False, True,
+     "20 boxes × 90 % ; 550 €/mois TTC → 521 € HT (TVA 5,5 %) [A3, fourchette 430-700 €] ; coût direct 150 €/mois ESTIMATION"),
+    ("Pension au pré / retraite", 27, 3_185, 0.30, False, True,
+     "30 places × 90 % ; 280 €/mois TTC → 265 € HT (fourchette 120-400 €, source faible) ; coût 80 €/mois ESTIMATION"),
     ("Ventes privées / showcases B2B (location + service)", 4, 5_000, 0.3, True, True,
      "ESTIMATION — aucune preuve de demande pour un lieu privé (agent 3)"),
-    ("Mariages (location du lieu, week-end)", 18, 5_500, 0.33, True, False,
-     "Médiane ≈5 900 € sur 10 tarifs publiés [A4] ; 18/an = plafond vie privée ESTIMATION"),
+    ("Mariages (location du lieu, week-end)", 18, 4_583, 0.39, True, False,
+     "5 500 € TTC → 4 583 € HT (TVA 20 %) ; médiane ≈5 900 € sur 10 tarifs publiés [A4] ; 18/an = plafond vie privée ESTIMATION"),
     ("Journées d'étude / CODIR (sans nuitée)", 10, 2_500, 0.3, True, False,
      "Mini 2 000 € HT observé [A4-29] ; volume ESTIMATION"),
     ("Gîte de prestige (semaines louées)", 20, 1_000, 0.42, False, False,
      "1 gîte ; 16,9 sem./an observé Gîtes de France [A4-37] ; prix ESTIMATION"),
     ("Tournages / shootings (jours)", 4, 2_000, 0.15, True, False, "≈2 000 €/j [A4-44] ; fréquence INCONNUE"),
     ("Valorisation des terres non pâturées (ha)", 15, 150, 0.1, False, False, "NON VÉRIFIÉ (agent 4)"),
-    ("Loyer de la partie privée payé par le fondateur", 1, 24_000, 0.0, False, False,
-     "Loyer de marché exigé (risque ABS sinon — agent 6) ; montant ESTIMATION, à payer sur revenus personnels"),
-]
+] 
 # (libellé, montant annuel, dès l'acquisition ?, source)
 B_CH = [
     ("Énergie (chauffage partiel, électricité)", 30_000, True, "ESTIMATION 15-40 k€ (agent 4)"),
     ("Assurances bâtiment + RC activités", 15_000, True, "ESTIMATION 5-15 k€ + RC ; devis à obtenir"),
-    ("Taxe foncière", 15_000, True, "INCONNU — demander l'avis d'imposition du vendeur"),
+    ("Taxe foncière", 6_000, True, "Exemples d'annonces 2,6-4 k€ (vague 2, V2-06/V2-14) ; ESTIMATION 3-8 k€ ; avis du vendeur à obtenir"),
     ("Jardinier / agent d'entretien (1 ETP chargé)", 40_000, True, "ESTIMATION 35-45 k€ (agent 4)"),
     ("Parc, haies, clôtures, petit entretien", 15_000, True, E),
     ("Soigneurs (2 ETP chargés)", 50_000, False, "Grille IDCC 7026 1 811 €/mois brut [A3-30] ; 1 ETP/19 équidés [A3-27]"),
@@ -92,7 +94,7 @@ B_CH = [
     ("Commercial, marketing, site, salons", 15_000, False, E),
     ("Comptabilité, juridique, banque, logiciels", 15_000, False, E),
     ("Entretien installations équestres, matériel, véhicules", 12_000, False, E),
-    ("Rémunération du dirigeant (chargée)", 30_000, False, "Hypothèse minimale ; le dirigeant paie 24 k€ de loyer privé"),
+    ("Rémunération du dirigeant (chargée)", 30_000, False, "Hypothèse minimale ; le dirigeant paie en plus 18 k€ de loyer privé"),
 ]
 
 # ---------------------------------------------------------------- Scénario A central
@@ -104,11 +106,11 @@ A_INPUTS.update({
     "dette": (2_000_000, "NON ACQUIS"),
 })
 A_REV = [
-    ("Pension box premium / pension travail", 22, 6_600, 0.27, False, True,
-     "24 boxes × 90 % ; 550 €/mois ESTIMATION centrale (fourchette sourcée 430-700 €)"),
+    ("Pension box premium / pension travail", 22, 6_256, 0.29, False, True,
+     "24 boxes × 90 % ; 550 €/mois TTC → 521 € HT ; ESTIMATION centrale (fourchette sourcée 430-700 €)"),
     ("Écurie louée à un cavalier pro (boxes/an)", 10, 2_400, 0.1, False, True,
      "200 €/box/mois ESTIMATION ; risque de requalification en bail rural (agent 3/6)"),
-    ("Pension au pré / retraite", 18, 3_360, 0.29, False, True, "280 €/mois ; source faible"),
+    ("Pension au pré / retraite", 18, 3_185, 0.30, False, True, "280 €/mois TTC → 265 € HT ; source faible"),
     ("Ventes privées / showcases B2B", 8, 5_000, 0.3, True, True,
      "ESTIMATION — aucune preuve de demande pour un lieu privé"),
     ("Concours (CSO amateur, jours) — recettes", 3, 8_000, 0.85, True, True,
@@ -118,7 +120,6 @@ A_REV = [
     ("Gîte de prestige (semaines louées)", 20, 1_000, 0.42, False, False, "Cf. B"),
     ("Tournages / shootings (jours)", 4, 2_000, 0.15, True, False, "Cf. B"),
     ("Valorisation des terres non pâturées (ha)", 10, 150, 0.1, False, False, "NON VÉRIFIÉ"),
-    ("Loyer de la partie privée payé par le fondateur", 1, 24_000, 0.0, False, False, "Cf. B"),
 ]
 A_CH = [c for c in B_CH if not c[0].startswith("Coordinateur")]
 A_CH = [("Soigneurs (3 ETP chargés)", 75_000, False, "1 ETP/15-19 équidés [A3-27] ; ~50 chevaux") if c[0].startswith("Soigneurs") else c for c in A_CH]
@@ -140,13 +141,13 @@ C_INPUTS.update({
     "fp_fondateur": (1, "Fonds propres = holding du fondateur"),
     "dette": (1_900_000, "NON ACQUIS — banque avec 4 ans d'historique d'exploitation"),
     "cv": (0, ""), "oc": (0, ""),
-    "part_fondateur": (1.0, "100 % via holding"),
+    "prime_industrie": (0.0, "Fonds propres = holding : 100 % calculé"),
     "votes_fondateur": (1.0, "100 %"),
     "ramp1": (0.6, "Domaine déjà exploité : montée en charge plus rapide (ESTIMATION)"),
     "ramp2": (0.8, E), "ramp3": (0.9, E),
 })
 C_REV = [r for r in B_REV if not r[0].startswith("Mariages") and not r[0].startswith("Journées")]
-C_REV.insert(3, ("Mariages (location du lieu) — limités pendant la location", 10, 5_500, 0.33, True, False,
+C_REV.insert(3, ("Mariages (location du lieu) — limités pendant la location", 10, 4_583, 0.39, True, False,
                  "Volume réduit (salle ERP non construite) — ESTIMATION"))
 C_REV.insert(4, ("Journées d'étude / CODIR (sans nuitée)", 6, 2_500, 0.3, True, False, E))
 C_CH = []
@@ -219,6 +220,7 @@ def feuilles():
                 lab, amt, src = "Soigneurs (2 ETP chargés)", 50_000, "Variante frugale — fondateur à l'écurie"
             ch.append((lab, amt, acq, src))
         q["charges"] = ch
+        q["inputs"]["dirigeant_paye"] = (0, "Variante frugale : fondateur non rémunéré par le domaine")
         return q
     bf = frugal(base["B"], "Variante B frugale — fondateur non rémunéré tenant écurie + événements, même financement que B central")
     out.append(("B_frugal", bf))
@@ -229,10 +231,19 @@ def feuilles():
     cf["inputs"]["dette"] = (1_200_000, "NON ACQUIS — LTV ≈ 35 %")
     out.append(("C_frugal_holding", cf))
     cc = copy.deepcopy(cf)
-    cc["titre"] = "Scénario C CIBLE — holding apporte ~2,9 M€, dette limitée à la capacité (0,9 M€)"
-    cc["inputs"]["fp_invest"] = (2_900_000, "Fonds propres HOLDING — NON acquis : objectif à constituer d'ici l'an 5")
-    cc["inputs"]["dette"] = (900_000, "≈ dette soutenable calculée (DSCR 1,2) — NON acquise")
+    cc["titre"] = "Scénario C CIBLE — loyer modéré 40 k€ en phase 1, holding apporte ~3,4 M€, dette 0,4 M€"
+    cc["inputs"]["fp_invest"] = (3_400_000, "Fonds propres HOLDING — NON acquis : objectif à constituer d'ici l'an 5")
+    cc["inputs"]["dette"] = (400_000, "Sous la dette soutenable calculée après gros entretien — NON acquise")
+    cc["inputs"]["loyer_avant_acq"] = (40_000, "ESTIMATION : bail à loyer modéré contre prise en charge de l'entretien (type association avec propriétaire / bail emphytéotique ; exemples Montfort 22,9 k€/an, Neuenbourg 1 €/an — vague 2)")
     out.append(("C_cible", cc))
+    cn = copy.deepcopy(cc)
+    cn["titre"] = "C cible NÉGOCIÉ — prix −20 % (vendeur en difficulté), travaux −30 % (équipements existants), holding 2,6 M€, dette 0,4 M€"
+    cn["inputs"]["prix"] = (2_120_000, "Prix −20 % : levier de négociation (liquidation de l'exploitant, Hus −35 %) — NON acquis")
+    for k in ("capex_restauration", "capex_equestre", "capex_evenementiel"):
+        v, src = cn["inputs"][k]
+        cn["inputs"][k] = (round(v * 0.7), "−30 % : équipements existants (correction audit P2) — ESTIMATION")
+    cn["inputs"]["fp_invest"] = (2_600_000, "Fonds propres HOLDING — NON acquis")
+    out.append(("C_cible_negocie", cn))
     dm = frugal(base["B"], "Variante D — bien modeste et isolé (~1,4 M€, ≥ 80 ha, à restaurer), exploitation frugale")
     dm["inputs"].update({
         "prix": (1_400_000, "Ordre de grandeur annonce Aubusson (23), XVe s., 85 ha ≈ 1,36 M€ — agent 1, non vérifiée"),
