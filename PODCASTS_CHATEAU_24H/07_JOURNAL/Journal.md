@@ -1,20 +1,35 @@
 # Journal — cellule audiovisuelle v2
 
-## Organisation (20 spécialités du brief, regroupées en agents par vagues)
-| Agent | Spécialités du brief | Vague |
-|---|---|---|
-| AV1 Châteaux FR | 1 propriétaires de châteaux français + 2 entrepreneurs du patrimoine | A |
-| AV2 Domaines UK/IE + haras | 3 châteaux britanniques et irlandais + 4 haras historiques | A |
-| AV3 Business du cheval | 5 ventes sport + 6 ventes course + 7 grands événements + 8 entrepreneurs équestres | A |
-| AV4 Acquisition & financement | 9 acquisitions sans apport + 10 PE/family offices + 11 immobilier entrepreneurial + 12 reprises | A |
-| AV5 Modèles premium | 13 événementiel luxe + 14 hospitality + 15 agricole/forestier + 16 marques/partenariats | A |
-| AV6 The Family | demande spécifique de l'utilisateur (Oussama Ammar, Alice Zagury, Nicolas Colin) | A |
-| AV7 Idées originales & échecs | 17 détecteur d'idées + 18 analyste des échecs | B |
-| AV8 Vérificateur | 19 vérification des preuves (recoupe les chiffres clés de la vague A) | B |
-| Directeur | 20 synthèse stratégique + interface HTML | C |
+## Capacités constatées (14/10/2026)
+- Accès web ouvert par l'utilisateur en cours de session ; WebFetch échoue (DNS) mais curl via le proxy fonctionne.
+- **Aucun outil de transcription audio** (installation refusée par l'utilisateur) et **aucun téléchargement de média**. Aucun contenu regardé ni écouté.
+- YouTube a renvoyé des erreurs HTTP 429 sur l'adresse IP partagée à partir de ~17 h 48 : aucun contournement ; seuls les flux RSS officiels des chaînes ont été utilisés ensuite.
+- Pages bloquées : Le Monde (paywall), Pappers et annuaire-entreprises (anti-robot), Légifrance (403), Medium, Happy Scribe, BAILII.
+- Persistance : commits git réguliers sur la branche de travail.
 
-## Contraintes
-- Pas de transcription audio (refus d'installation) ; aucun téléchargement de média.
+## Agents (20 spécialités du brief regroupées en 8 agents + directeur)
+| Agent | Spécialités | Contenus catalogués | Livrables | Statut |
+|---|---|---|---|---|
+| AV1 | 1-2 châteaux français, patrimoine | 182 | fiches, 14 cas, 15 idées | terminé |
+| AV2 | 3-4 domaines britanniques et irlandais, haras | 171 | 36 fiches, 22 cas, 15 idées | terminé |
+| AV3 | 5-8 business du cheval | 151 | 24 fiches, 18 cas, 14 idées | terminé |
+| AV4 | 9-12 acquisition et financement | 139 | 31 fiches, 13 cas, 13 idées + garde-fous | terminé |
+| AV5 | 13-16 modèles premium | 93 | 15 fiches, 19 cas, 15 idées | terminé |
+| AV6 | The Family (demande de l'utilisateur) | 98 | 12 fiches, dossier procédures, 14 idées | terminé |
+| AV7 | 17-18 idées originales et échecs | 44 | fiches, 12 échecs, 12 idées | terminé |
+| AV8 | 19 vérification des preuves | — | 35 affirmations vérifiées (15 ✅, 13 ◐, 6 non confirmées, 1 ✗) | terminé |
+| Directeur | 20 synthèse stratégique, interface | — | 05_RECOMMANDATIONS, index, synthèse des modèles, interface.html | terminé |
 
-## Avancement
-- 2026-10-14 : vague A lancée (AV1 à AV6) en parallèle de la fin de la mission 1.
+## Volumes réels (après dédoublonnage)
+- 836 contenus identifiés (478 vidéos, 286 podcasts, 72 autres).
+- 38 transcriptions publiées lues (10 complètes, 28 partielles) ; 390 descriptions ou chapitres lus ; 51 métadonnées ; 50 sources secondaires ; 307 seulement repérés (dont 130 pages inaccessibles).
+- 121 passages horodatés réels (issus de transcriptions ou de chapitres publiés).
+- Objectifs indicatifs du brief : 200 identifiés (atteint), 100 analysés (atteint si l'on compte descriptions et chapitres ; **non atteint** pour une analyse complète à partir de transcriptions : 38), 30 interviews intéressantes (97 contenus ≥ 70/100), 20 modèles (atteint), 15 mécanismes de financement (atteint), 10 idées originales, 5 stratégies approfondies, 3 recommandations prioritaires (livrés).
+
+## Erreurs et incidents
+- Collisions de fichiers temporaires entre agents (scripts écrasés) : règle ajoutée (sous-dossier personnel).
+- AV8 a corrigé plusieurs chiffres d'agents (Fontenay, Dampierre, Strawbridge, Fresnay, Blenheim, Castillon, Arqana) : les recommandations finales utilisent les valeurs corrigées.
+
+## Reprise
+- Pour enrichir : relancer en vague C l'analyse des contenus « repérés » à forte pertinence quand YouTube sera de nouveau accessible, ou, si l'utilisateur l'autorise, installer un outil de transcription locale pour les podcasts diffusés par flux RSS public.
+- Régénérer l'interface : `python3 build_interface.py`.
