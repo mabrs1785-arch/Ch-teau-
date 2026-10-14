@@ -157,3 +157,86 @@ Rappel de R8 [R8-44] : « Les grosses réparations sont à la charge du nu-propr
 
 Voir 3.5 (résultat de la recherche ciblée).
 
+### 3.5 Le marché existe-t-il pour des châteaux ? (résultat)
+
+- Recherche ciblée (viager, nue-propriété, château) : les résultats ne décrivent que le mécanisme général du viager et de la nue-propriété pour des logements ordinaires, avec une « décote de l'ordre de 30 % en moyenne » [V2D-30] (EXTRAIT). **Aucun exemple** de château vendu en nue-propriété à un investisseur, ni d'investisseur institutionnel acheteur de nues-propriétés de châteaux. R8 était arrivé au même constat [R8 § 6.3].
+- Le seul marché institutionnel du démembrement que confirme la doctrine est l'**usufruit locatif social** : des bailleurs sociaux détiennent l'usufruit de logements (CCH L.253-1 à L.253-8), cité dans [V2D-21 § 20]. Il porte sur des logements sociaux, pas sur des demeures historiques.
+- Conclusion : **marché non démontré pour un château. Statut : INCONNU**, avec une présomption défavorable. Pour un propriétaire de 26 ans, vendre la nue-propriété libérerait au plus de l'ordre de 20 % de la valeur (barème) et ferait perdre définitivement le bien aux héritiers. Céder un usufruit temporaire d'une partie du domaine est juridiquement possible, mais le prix est taxé comme un revenu (§ 3.2). Aucun exemple réel trouvé.
+
+## Q4. Location de luxe à la semaine de la partie privée pendant les absences du propriétaire
+
+### 4.1 Tarifs observés pour des châteaux de 8 à 16 chambres (Le Collectionist, octobre 2026)
+
+Complément aux prix de R7 § 5.3 [R7-54]. Prix pour 7 nuits, « Taxe de séjour non incluse ». Le site ne précise pas le régime de TVA. La part reversée au propriétaire n'est pas publiée.
+
+| Propriété (région) | Chambres / salles de bains | Voyageurs | Surface | Prix par semaine | Inclus | Statut | Source |
+|---|---|---|---|---|---|---|---|
+| Château Montravel (environs de Bordeaux) | 8 / 7 | 15 | 800 m² | 15 570 € (basse saison), 21 050 € (début d'été, début d'automne), 29 335 € (environ 10 juillet au 21 août) | « Gardien », ménage « 3x/semaine », concierge ; chef et personnel en plus | PAGE LUE | [V2D-35] |
+| Château Renaissance (Dordogne) | 9 / 9 | 20 | 720 m² | 12 755 € (octobre) à 15 045 € (autres semaines disponibles) ; prix d'été non affichés | ménage 3 fois par semaine, concierge ; chef en plus | PAGE LUE | [V2D-36] |
+| Château de la Belle (Dordogne) | 11 / 9 | 22 | 1 850 m² | 35 265 € (15-22 octobre 2026) à 46 860 € (juillet-août) | préparation du petit-déjeuner, ménage 2 fois par semaine, concierge ; chef et personnel en plus | PAGE LUE | [V2D-37] |
+| Château Hippolyte (environs de Bordeaux) | 14 / 14 | 33 | 945 m² | 36 615 € (même prix sur toutes les semaines affichées) | ménage « 7x/semaine », concierge ; chef et personnel en plus | PAGE LUE | [V2D-38] |
+| Château Mansart (Calvados), rappel R7 | 16 | 40 | — | 56 230 à 61 850 € | — | PAGE LUE | [R7-54] |
+
+Autres plateformes :
+- **Oliver's Travels** : six châteaux mis en avant en France, pour 10 à 20 personnes ; les prix ne sont pas affichés sur la page [V2D-29] (PAGE LUE).
+- **Abercrombie & Kent Villas et Airbnb Luxe** : non vérifiés (voir 4.2).
+
+### 4.2 Commission des plateformes
+
+| Plateforme | Commission | Année | Statut | Source |
+|---|---|---|---|---|
+| Le Collectionist | « The platform takes a 20% commission on the rentals » ; le prix « includes basic services, including housekeeping and gardeners, provided by the property owners » | 2017 | PAGE LUE | [V2D-24] |
+| Le Collectionist | « The company takes a 22% commission from the rental » | 2020 | PAGE LUE | [V2D-25] |
+| Le Collectionist (page propriétaires 2026) | non publiée | 2026 | PAGE LUE (absence) | [V2D-23] |
+| Oliver's Travels | « We operate purely on commission » ; « There's no fee to join » ; taux non publié | 2026 | PAGE LUE | [V2D-28] |
+| Airbnb (offre standard) | « Most hosts pay 15.5% » (frais payés par l'hôte seul) ; « Most hosts pay a 3% service fee » quand les frais sont partagés avec le voyageur | 2026 | PAGE LUE | [V2D-31] |
+| Airbnb Luxe | INCONNU (la page des frais n'en parle pas) | — | INCONNU | [V2D-31] |
+| Abercrombie & Kent Villas | INCONNU | — | INCONNU | — |
+
+**Point important** : chez Le Collectionist, c'est le **propriétaire** qui fournit et paie les services de base compris dans le prix (ménage, jardiniers) [V2D-24]. Les fiches de 2026 confirment que le ménage (2 à 7 fois par semaine), un gardien ou la préparation du petit-déjeuner sont inclus dans le prix affiché [V2D-35] à [V2D-38]. La conciergerie est en partie assurée par la plateforme, et la conciergerie supplémentaire est facturée au client : « plus an extra €5,000 for concierge service » en moyenne en 2020 [V2D-25].
+
+Comptes de Le Collectionist : société LE COLLECTIONIST, SIREN 789370152, créée le 12/11/2012 ; **finances non publiées** dans l'API (comptes probablement confidentiels) [V2D-27]. INCONNU.
+
+### 4.3 Nombre de semaines réellement louées
+
+**Aucun témoignage ni rapport** donnant le nombre de semaines louées par an pour un château n'a été trouvé, malgré une recherche ciblée [V2D-39] (EXTRAIT : les résultats ne portent que sur l'achat, l'entretien et les événements). **INCONNU.**
+
+Deux indications indirectes :
+
+1. **Moyennes de Le Collectionist** (ESTIMATION, calcul sur des données de presse) : « 160 millions d'euros de volume brut de réservations (GBV) » prévus pour 2024, « plus de 3 000 propriétés », « environ 5 000 réservations sur l'exercice 2023 » [V2D-26] (PAGE LUE).
+   - Cela donne environ 53 000 € de réservations par propriété et par an, et 1,7 à 2 réservations par propriété et par an, si l'on retient 2 300 à 3 000 propriétés.
+   - Avec un séjour moyen d'environ « 25,000 a week » [V2D-25] ou « €26,000 on average for a 10 night stay » [V2D-24], la propriété moyenne serait louée **environ 2 semaines par an**.
+   - Limites : les années ne coïncident pas (2023, 2024, 2025), et beaucoup de propriétés sont des résidences secondaires que leurs propriétaires n'ouvrent que quelques semaines.
+   - **Ce n'est pas un taux d'occupation**, mais cela montre que l'hypothèse de 8 à 12 semaines retenue par R7 [R7 § 5.3] est **très au-dessus de la moyenne de la plateforme**.
+   - Autres ordres de grandeur par maison, tirés des acquisitions de la plateforme : Vallat (France) « 3,9 millions d'euros de GBV » pour « 90 maisons », soit environ 43 000 € par maison ; Bramble Ski (Suisse) « 24,2 millions d'euros » pour « 142 maisons », soit environ 170 000 € ; The Greek Villas « 7 millions d'euros » pour « 400 maisons », soit environ 17 500 € [V2D-26] (calculs : ESTIMATION).
+2. **Études de cas d'Oliver's Travels** pour des maisons de 4 à 6 chambres : occupation « typically » d'environ 62 à 80 %, par exemple Dordogne (4 chambres) environ 65 % pour 4 300 £ par semaine, Provence (4 chambres) environ 70 % pour 7 300 £, Côte d'Azur (4 chambres) environ 76 % pour 9 200 £ [V2D-28] (PAGE LUE).
+   - Le dénominateur n'est pas défini. C'est probablement la part des semaines ouvertes à la location (ESTIMATION).
+   - Ces données de communication commerciale portent sur de petites maisons, pas sur des châteaux de 8 à 16 chambres, dont la clientèle est beaucoup plus étroite (groupes de 15 à 40 personnes).
+
+**HYPOTHÈSE de travail proposée pour le modèle** : 2 à 6 semaines louées par an pour un château de 10 à 15 chambres ouvert surtout l'été. Elle s'appuie sur la moyenne de la plateforme (environ 2) et sur une part d'occupation de 60 à 70 % des semaines d'été ouvertes (6 à 8 semaines). Elle est à confirmer par des propriétaires ou des agences ; ce n'est pas un fait.
+
+### 4.4 Exigences (piscine, salles de bains, conciergerie)
+
+- **Piscine** : les 9 châteaux ou domaines de Dordogne et les 6 des environs de Bordeaux proposés par Le Collectionist ont **tous** une piscine (extérieure, chauffée, à débordement ou naturelle) [V2D-40], [V2D-41] (PAGE LUE).
+- **Salles de bains** : environ une par chambre, de 0,75 à 1 salle de bains par chambre. Exemples : Château de la Belle, 11 chambres et 9 salles de bains ; Domaine Aglaé, 12 et 11 ; Château Hippolyte, 14 et 14 [V2D-40], [V2D-41].
+- **Services inclus** : ménage plusieurs fois par semaine, concierge, gardien selon le cas ; chef et personnel de maison en supplément [V2D-35] à [V2D-38].
+- **Disponibilité** : Oliver's Travels exige, pour la France et l'Italie, « a minimum of 6 weeks of availability in July and August » (formulation reprise du résumé de la page), une assurance de responsabilité civile d'au moins 2 millions de livres et le haut débit. Le propriétaire peut habiter le bien une partie de l'année si ces minimums sont respectés [V2D-28] (PAGE LUE).
+- **Sélectivité** : Le Collectionist retient environ 10 biens sur 100 demandes de propriétaires selon son dirigeant en 2020 [V2D-25].
+- **Cohabitation** : une fiche (Château Montravel) précise que « L'employé de maison réside sur la propriété dans un logement indépendant » et que « L'intimité des hôtes est néanmoins garantie » [V2D-35]. Une présence permanente sur le domaine, dans un logement séparé, est donc compatible avec ce marché. Je n'ai trouvé **aucune fiche** où le propriétaire habite une aile du château loué : INCONNU.
+- **Conséquence pour le projet** (ESTIMATION) : louer la **partie privée** suppose que le propriétaire la quitte entièrement pendant les semaines louées, et que ses chevaux et son personnel restent discrets. La période la plus demandée (juillet-août) est aussi celle des concours et de la vie privée estivale. Louer un bâtiment séparé (pavillon, aile autonome, communs rénovés) aux standards observés (piscine, une salle de bains par chambre) est plus cohérent avec la vie privée, mais demande un investissement.
+
+### 4.5 Fiscalité et règles pour un particulier
+
+Rappel de R3 § 5.5 [R3-31] [R3-33] [R3-36] : micro-BIC 2026 limité à 83 600 € de recettes avec un abattement de 50 % pour un meublé de tourisme classé, et à 15 000 € avec 30 % pour un meublé non classé. Au-delà, régime réel. LMP si les recettes du foyer dépassent 23 000 € et les autres revenus d'activité. Cotisations sociales au-delà de 23 000 € de recettes de courte durée.
+
+Points nouveaux [V2D-32] (PAGE LUE, fiche F33175 « Vérifié le 21 mai 2026 ») :
+- Une résidence principale est un « Logement occupé au moins 8 mois par an ». Le propriétaire qui y vit ne peut donc pas la louer plus de 4 mois environ.
+- Dans les communes qui l'imposent, la durée de location de la résidence principale « varie entre 90 et 120 jours par année civile ». Dépasser la limite expose à « une amende civile de 10 000 € ». Le défaut de déclaration est puni d'une amende civile « pouvant aller jusqu'à 5 000 € ».
+- Immatriculation obligatoire au répertoire Sirene (numéro SIRET, gratuit).
+- Application au projet (ESTIMATION) :
+  - 4 semaines louées à 35 000 € rapportent 140 000 € de recettes, ce qui dépasse le plafond du micro-BIC. Il faut donc passer au régime réel, avec amortissement possible et déficit imputable seulement sur les revenus de location meublée [R3-36].
+  - Ces recettes, si elles dépassent les autres revenus d'activité du foyer, font basculer le propriétaire en **LMP**, avec des cotisations sociales.
+  - Le seuil de franchise de TVA et l'option des services para-hôteliers sont à examiner (R3 § 6).
+- **Interaction avec le régime MH** (À VALIDER) : la doctrine exclut du régime les parties d'immeuble utilisées « pour les besoins d'une entreprise industrielle, commerciale » [R3-04 § 40]. La location meublée relève des BIC. Je ne sais pas si quelques semaines de location meublée de la partie privée suffisent à faire sortir cette partie du régime MH ou à changer la règle de déduction (100 %, 75 % ou 50 %). INCONNU, question pour un fiscaliste.
+- **Société civile** : si le château est détenu par une SCI, la location meublée saisonnière peut être jugée commerciale. Le notaire Wargny-Lelong écrit : l'objet de la SCI « ne doit pas être commercial – attention notamment à la location en meublé saisonnière, qui peut être considérée comme telle » [V2D-34] (PAGE LUE). Au-delà de 10 % du chiffre d'affaires, la SCI devient passible de l'IS [R3-59].
+

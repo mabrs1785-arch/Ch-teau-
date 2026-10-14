@@ -532,3 +532,52 @@ Livrable : pour chaque mécanisme,
 - les conditions ;
 - l'impact sur la propriété et la vie privée ;
 - les preuves.
+
+## V2V — Vérification indépendante des chiffres les plus influents
+
+Fichier : `01_RECHERCHE/V2V_verification.md`. Sources : `sources/sources_V2V.csv` (identifiants V2V-xx).
+
+Mission : pour chaque chiffre ci-dessous,
+1. rouvrir l'URL de la source, trouvée dans `01_RECHERCHE/sources/sources_*.csv` à partir de son identifiant ;
+2. vérifier que le chiffre, l'unité, l'année, le périmètre et le statut HT/TTC correspondent à la source ;
+3. relever la citation exacte ;
+4. classer le résultat : CONFIRMÉ / NUANCÉ (préciser) / NON CONFIRMÉ (préciser) / INACCESSIBLE.
+
+Utilise WebFetch. Pour les PDF : téléchargement par WebFetch ou par curl depuis l'URL officielle, puis pdftotext. **3 WebSearch au maximum**, seulement pour retrouver une URL morte.
+
+Ne modifie aucun fichier d'un autre agent. Tes corrections vont dans ton propre fichier, avec la recommandation : garder / corriger (nouvelle valeur) / retirer.
+
+Liste à vérifier (identifiant de source → chiffre utilisé dans le modèle) :
+1. R1-07, R1-08 → entretien et réparation de 2 à 4 % de la valeur de remplacement à neuf par an, « minimum absolu » (National Research Council).
+2. R1-26 → exemple d'un château de 2 500 m² acheté 600 000 € pour une valeur de reconstruction de 6 M€ ; prime « rarement inférieure à 2 500 € » pour un bien classé.
+3. R1-27 → reconstruction à 5 000-10 000 €/m² ; prime ≈ 5 ‰.
+4. R1-05 → dépense annuelle d'entretien et de réparation de 156 067 à 160 686 £ TTC ; retard moyen ≈ 1 994 000 £.
+5. R1-01 → « 40 000 € / an minimum », hors ouverture et restauration ; moins de 2 000 visiteurs par monument ; 99,8 % non rentables.
+6. R1-34 → taux moyens de la DRAC : 20 % pour un monument inscrit, 40 % pour un classé ; crédits d'intervention −29 % en CP en 2026.
+7. R1-28 → résiliation de l'assurance du château d'Olhain, fermeture le 01/01/2026.
+8. R1-24, R1-25 → électricité au tarif réglementé : 1 072 € pour 4,5 MWh ; gaz, prix repère 194,90 €/MWh au 1er novembre 2026.
+9. R2-01, R2-02 → SMIC à 12,31 €/h au 01/06/2026 ; réduction générale dégressive unique (RGDU) : coefficient 0,3981.
+10. R2-11 → coût employeur à 1 ; 1,5 et 2,5 SMIC = 23 853 € ; 44 118 € ; 78 982 € (simulateur URSSAF : vérifier au moins un point).
+11. R2-15 → Villandry : 10 jardiniers pour 7 ha.
+12. R2-30 → tracteur de 100 à 140 ch : 101 464 € HT, 10,7 ans.
+13. R5-03 → Blenheim : billetterie 11 068 k£, coûts 16 360 k£, 700 000 visiteurs, restauration 2,5 M£ (objectif 4 M£), toiture 10,4 M£.
+14. R5-05 → Chatsworth : 630 114 visiteurs ; entretien des jardins, du parc et des bois 1 781 k£ ; 29 jardiniers.
+15. R5-07 → Burghley : revenu immobilier net 3,52 M£ ; dépenses caritatives 4,69 M£.
+16. R6-02 → pensions en cas-types 2025 : 334 / 401 / 568 € HT par mois.
+17. R6-15 → Jardy : 922,50 € TTC (résidents du département) et 1 002,71 € TTC (extérieurs).
+18. R6-03 → Réseau Équin 2021 : charges de structure 1 449 € et 2 836 € par équidé ; 1 UMO pour 19,4 et pour 15 équidés ; revenu disponible médian de 9 437 € et 18 265 €.
+19. R6-25 → Cartoucherie : redevance minimale de 80 000 €/an, 68 boxes (25 + 43).
+20. R7-05, R7-06 → 1 382 châteaux et 3 769 domaines sur Mariages.net.
+21. R7-63 → Châteauform' France 2025 : CA 186,4 M€, résultat net 3,4 M€.
+22. R7-38 → RevPAR haut de gamme 2025 HT : Indre-et-Loire 102,1 €, Gironde 146,4 €, Calvados 183,8 €.
+23. R7-41 → investissement d'environ 675 000 € par chambre (13,5 M€ pour 20 chambres), 33 salariés.
+24. R7-12 → grille de tournage du CMN : fiction de 2 500 à 5 500 € HT par jour selon la catégorie.
+25. R4-08 → Domaine des Étangs : hôtel CA 3,47 M€ et résultat −3,20 M€ (2025) ; agriculture CA 1,82 M€ et résultat −4,36 M€ (2024).
+26. R4-34, R4-35 → 33 sociétés de châteaux-hôtels : 61 % en perte, marge médiane −6,3 % (vérifier la méthode).
+27. R8-22, R8-23 → loyers de maisons rurales de 6,8 à 10,9 €/m²/mois charges comprises ; R8-24 → transformation de grange : 1 556 €/m² HT de travaux.
+28. R8-34 → NACUBO 2025 : taux de dépense effectif de 4,9 % ; R8-32 → UBS : rendement réel de 3,5 % par an depuis 2000 ; R8-35 → Argos : 8,8x (fonds 10,2x, acquéreurs stratégiques 7,9x) ; R8-36 → « plus d'une transmission sur cinq échoue dans les six ans ».
+29. R3-16, R3-57 → PFU de 31,4 % (12,8 % + 18,6 %) ; R3-01, R3-15 → barème de l'IFI 2026 ; R3-04 → ouverture au public de 50 jours (dont 25 non ouvrables, d'avril à septembre) ou de 40 jours (juillet à septembre).
+30. R3-18 → taxe de 20 % sur les actifs non professionnels des holdings patrimoniales, conditions (5 M€, 50 %, revenus passifs > 50 %), logement réservé à l'associé, chevaux de concours.
+31. D-01 → Banque de France, septembre 2026 : IPCH 2,3 % / 1,9 % / 1,6 % ; salaire moyen par tête 2,0 % / 2,6 % / 2,4 %. D-02 → Kretz : environ 400 transactions par an, prix de vente moyen de 2,415 M€.
+
+Livrable : un tableau « n° / chiffre / verdict / citation / recommandation », puis la liste des corrections à apporter au modèle.
