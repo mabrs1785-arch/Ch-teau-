@@ -22,7 +22,7 @@
 5. **Une fois le capital réuni, le montage résiste aux crises testées, mais au plus juste** (L5, L6).
    - Aucun déficit sur 20 ans dans 7 stress tests.
    - 1,8 % d'échec simulé avant 20 ans et environ 5 % avant 30 ans pour S2.
-   - Il rompt avec une erreur de budget (22 % d'échec à 30 ans au haut de la fourchette), un décès sans montage successoral (16 %) ou l'absence de discipline de dépense (16 %).
+   - Il rompt avec une erreur de budget (22 % d'échec à 30 ans au haut de la fourchette), un décès sans montage successoral (16 %) ou l'absence de règles de pilotage en période de tension (16 %).
 6. **Le premier risque est de ne jamais réunir le capital, et le premier levier se joue avant l'achat** (L7). À 2 % réel, réunir 120 M€ prend 20 ans en épargnant 5 M€ par an. Il faut valider le budget sur le bien réel et choisir un domaine à la mesure du capital qu'on peut lui affecter.
 
 La conclusion indépendante (L8) discute ce que ce dossier démontre et ce qu'il ne démontre pas, et détaille le traitement des 29 constats de l'équipe rouge.

@@ -91,3 +91,20 @@
 - **Livrables révisés** : L1 à L8 et README ; L8 § 6 détaille le traitement de chaque constat. Ligne 14 du cadre analytique précisée.
 - **Registre des sources** : 652 sources ; tous les identifiants cités existent.
 - **Non fait** : holding gérée activement (m1) ; IFI détaillé par nature de bien (m11) ; ligne budgétaire des infrastructures (m10, coût INCONNU).
+
+## 2026-10-14 (clôture) — relecture indépendante des chiffres
+
+- Un sous-agent relecteur, en lecture seule, a confronté L1 à L8 et le README au classeur et aux sorties du modèle : 16 points relevés, aucun chiffre du modèle en cause.
+- Après vérification, 15 points corrigés dans les livrables :
+  - règle de pilotage mal décrite dans L2 et L4 : la coupe vaut 10 % du besoin, et non 10 % des dépenses discrétionnaires ;
+  - « besoin −15 % » résiduel dans L2, remplacé par 7,5 % ;
+  - revenus nécessaires au levier MH à 100 % dans L8 ;
+  - libellé « sans règles de pilotage en période de tension » au lieu de « sans discipline » ;
+  - investissement du château-hôtel : 7,9 M€ ;
+  - bail d'ancrage : loyer brut et part disponible distingués ;
+  - distance à une gare TGV : « environ 45 minutes » ;
+  - quelques arrondis et renvois.
+- Le seizième point (117,6 et 119,8 M€ pour un même objectif) relève du bruit d'échantillonnage ; il est désormais signalé dans L3.
+- Chiffre non adossé retiré de L1 (« 40 à 60 % du budget »), remplacé par le recoupement britannique du tableau.
+- Prix d'achat des trois scénarios ajoutés au tableau de L1 § 3.
+- `sensibilite.py` exporte désormais 30 lignes par scénario : toutes les valeurs citées dans L1 § 6 sont dans `sensibilite_budget.json`.

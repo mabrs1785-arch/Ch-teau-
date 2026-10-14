@@ -174,7 +174,7 @@ Lecture :
    - Les campagnes majorées de 30 % dépassent le fonds de 0,42 à 0,47 M€ chacune. Après l'année 10, le retrait atteint 1,78 à 1,86 M€ les années de campagne, soit au plus 75 % du plafond.
    - Coût total en année 20 : 3,4 M€ de capital.
 6. **Les activités, l'énergie et les salaires pèsent peu sur 20 ans.**
-   - Leurs chocs coûtent entre 0,3 et 1,2 M€ de capital final, soit moins de 1 %.
+   - Leurs chocs coûtent entre 0,2 et 1,2 M€ de capital final, soit moins de 1 %.
    - L'énergie ne représente qu'environ 5 % du besoin de S2 (L1). Les activités ne rapportent que 41 k€ par an en moyenne.
 
 ### 3.2 Domaines S1 et S3
@@ -248,7 +248,7 @@ Lecture :
 | Salaires +1,5 % réel par an | 1,9 / 5,1 % | 2,0 / 5,8 % | 2,5 / 5,2 % |
 | Une seule entreprise au lieu de cinq | 2,0 / 4,7 % | 2,0 / 5,0 % | sans objet |
 
-Sources : `sorties/mc_ruptures_S1.json`, `mc_ruptures_S2.json` et `mc_ruptures_S3.json`. Quand le besoin change, la réserve de trésorerie est ajustée dans la même proportion.
+Sources : `sorties/mc_ruptures_S1.json`, `mc_ruptures_S2.json` et `mc_ruptures_S3.json`. Quand le besoin change, la réserve de trésorerie est ajustée dans la même proportion. Les capitaux testés valent 0,5, 0,67 et 1,33 fois celui de la solution ; ils sont arrondis dans le tableau (par exemple 80,4 M€ affichés « 80 M€ »).
 
 **Classement des risques, du plus au moins grave :**
 1. **Une erreur de budget.**
@@ -277,7 +277,7 @@ Le tableau suivant porte sur un capital seul, sans dividendes, avec les règles 
 | S2 | 1,27 M€ | 50,1 M€ (39 fois) | 132,2 M€ (104 fois) | 46,3 / 122,1 M€ (36 / 96 fois) |
 | S3 | 3,77 M€ | 165,9 M€ (44 fois) | 491,6 M€ (130 fois) | 153,4 / 454,3 M€ (41 / 121 fois) |
 
-« Avec les leviers vérifiés » signifie que le besoin est réduit de 7,5 %. C'est le milieu de la fourchette des leviers du « prestige efficace » vérifiés par V2C (5 à 8 % du besoin de S2, L2 § 5). L'avantage fiscal des monuments historiques n'est pas compté : il réduit l'impôt personnel du propriétaire et suppose des revenus imposables au barème (V2R M4).
+« Avec les leviers vérifiés » signifie que le besoin est réduit de 7,5 %. C'est le haut de la fourchette des leviers du « prestige efficace » vérifiés par V2C (5 à 8 % du besoin de S2, L2 § 5). L'avantage fiscal des monuments historiques n'est pas compté : il réduit l'impôt personnel du propriétaire et suppose des revenus imposables au barème (V2R M4).
 
 Règle simple à retenir :
 - **environ 40 fois le besoin annuel** pour une chance sur deux de tenir 30 ans ;
@@ -314,7 +314,7 @@ Si l'on gardait un taux de retrait de 2,75 % avec un rendement de 1,5 %, 123,8 M
 - **Locataire d'ancrage (M7).** Il apporte des revenus contractuels, mais deux exemples montrent que ces loyers aussi peuvent s'arrêter :
   - au premier semestre 2020, les loyers variables de Covivio ont baissé de 67 % [V2A-31] ;
   - des gestionnaires de résidences Pierre et Vacances ont suspendu leurs loyers à partir de 2020, et près de 20 000 bailleurs étaient sans paiement depuis janvier 2021 [V2A-62] [V2A-63].
-- **Capital nécessaire selon le modèle** (S2, 95 % de chances de tenir 30 ans, `sorties/mc_comparaison_modeles.json`, L3 § 6) :
+- **Capital nécessaire selon le modèle** (S2, 95 % de chances de tenir 30 ans, `sorties/mc_comparaison_modeles.json`, L3 § 1 et § 3) :
   - capital seul : 132,2 M€ ;
   - leviers vérifiés : 122,1 M€ ;
   - hybride avec 1 M€ de dividendes pendant 10 ans : 117,6 M€ ;

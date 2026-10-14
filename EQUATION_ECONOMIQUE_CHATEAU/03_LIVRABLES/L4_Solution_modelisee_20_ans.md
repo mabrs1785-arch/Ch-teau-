@@ -31,7 +31,7 @@ Pendant 10 ans, des **dividendes d'entreprises** complètent ce capital et le la
 | Fonds de travaux | Provision versée chaque année (346 → 399 k€) ; campagnes de 1,40 à 1,58 M€ tous les 4 ans |
 | Activités sur place | Socle calme : logements dans les communs, hivernage, bail solaire, forêt, pension de retraite au pré, tournages. Environ 141 k€ HT de chiffre d'affaires, 71 k€ de contribution et 43 k€ disponibles après impôts |
 | Règle de dépense | Retrait annuel plafonné à 80 % du plafond précédent + 20 % × 1,75 % du capital |
-| Règles de tension | Si la réserve passe sous un an de charges : −10 % de dépenses discrétionnaires, report de 30 % de la campagne et retrait d'urgence plafonné à 4 %. La réserve est ensuite reconstituée |
+| Règles de tension | Si la réserve passe sous un an de charges : coupe des dépenses discrétionnaires à hauteur de 10 % du besoin, report de 30 % de la campagne et retrait d'urgence plafonné à 4 %. La réserve est ensuite reconstituée |
 
 **Résultats du modèle.**
 - **Cas central** :
@@ -43,7 +43,7 @@ Pendant 10 ans, des **dividendes d'entreprises** complètent ce capital et le la
 
 **Les quatre conditions sans lesquelles la solution ne tient pas :**
 1. **Un budget validé sur le bien réel.** Si le besoin réel se situe au haut de la fourchette de L1, le risque d'échec passe à 11 % sur 20 ans et à 22 % sur 30 ans (L6, § 4.2).
-2. **La discipline de dépense**, écrite et contrôlée par au moins une personne indépendante. Sans elle, le risque à 30 ans passe de 5 % à 16 %.
+2. **La discipline de dépense**, écrite et contrôlée par au moins une personne indépendante. Sans règles de pilotage en période de tension, le risque à 30 ans passe de 5 % à 16 %.
 3. **Une transmission organisée.** Sans montage, un décès en année 15, et les droits de succession qui en découlent (environ 44 % du capital), fait passer le risque à 30 ans à 16 %.
 4. **Un capital réellement constitué** avant d'engager le niveau de dépense complet (§ 6).
 
@@ -99,7 +99,7 @@ Cette architecture reprend les recommandations de R3 (questions 1, 7 et 9) et le
 | **Règle de dépense** | Retrait annuel au plus égal au plafond lissé : 80 % du plafond précédent + 20 % × 1,75 % du capital | Lisser les chocs de marché, ne pas manger le capital | Oui |
 | **Réserve de trésorerie** | Au moins un an de charges (1,5 M€ en S2), indexée sur les charges et reconstituée après usage ; placée hors des contrats d'assurance, dont les rachats peuvent être gelés en crise [V2R-10] | Absorber une mauvaise année sans vendre au pire moment | Oui (reconstitution et indexation) |
 | **Fonds de travaux** | Provision versée chaque année, même en tension ; campagnes tous les 4 ans ; sinistres non assurés payés en plus, sans annuler de travaux | Ne jamais créer de retard d'entretien caché | Oui (après correction V2R M1) |
-| **Règles de tension** | Si la réserve passe sous un an de charges : −10 % de dépenses discrétionnaires, report de 30 % de la campagne (qui reste dû), retrait d'urgence plafonné à 4 % | Sans ces règles, le risque d'échec à 30 ans passe de 5 % à 16 % (L6) | Oui |
+| **Règles de tension** | Si la réserve passe sous un an de charges : coupe des dépenses discrétionnaires à hauteur de 10 % du besoin, report de 30 % de la campagne (qui reste dû), retrait d'urgence plafonné à 4 % | Sans ces règles, le risque d'échec à 30 ans passe de 5 % à 16 % (L6) | Oui |
 | **Règle de conversion** | Les dividendes non dépensés et tout produit de cession d'entreprise ou de bâtiment vont au capital affecté | Transformer des revenus fragiles en capital durable | Partiellement (excédents versés au capital) |
 | **Seuil de déclenchement** | N'engager le niveau de dépense complet que si le capital, avec sa règle, couvre le besoin net des activités, réserve constituée | Ne pas entretenir un domaine au-dessus de ses moyens | Non (condition de départ) |
 | **Règle de l'excédent** | Si le capital dépasse durablement le niveau requis (par exemple 1,5 fois), l'excédent peut financer une restauration exceptionnelle | Le cas central accumule une marge (§ 4) ; elle doit d'abord protéger contre les mauvais scénarios | Non (proposition) |
@@ -217,7 +217,7 @@ La projection commence **une fois le capital réuni**. C'est la partie la plus d
 ### 6.1 Ce qu'il faut réunir (S2)
 
 - **120 M€ de capital** et une holding capable de verser 1 M€ net par an pendant 10 ans, soit environ 2,8 M€ d'EBITDA. C'est le dimensionnement de la solution : environ 5 % d'échec sur 30 ans.
-- Ou **85,8 M€** avec la même holding, si l'on se contente de 95 % de chances de tenir 20 ans. Le risque à 30 ans monte alors à environ 13 % (entre 14,9 % à 80 M€ et 8,6 % à 100 M€) : le critère du cadre n'est plus respecté.
+- Ou **85,8 M€** avec la même holding, si l'on se contente de 95 % de chances de tenir 20 ans. Le risque à 30 ans monte alors à environ 13 % (entre 14,9 % à 80 M€ et 8,6 % à 100 M€, `mc_grille_hybride.json`) : le critère du cadre n'est plus respecté.
 - Ou **132,2 M€ de capital seul**, sans entreprise, pour 95 % de chances de tenir 30 ans (L3).
 - À comparer au prix d'achat retenu pour S2 : 3,5 M€ (HYPOTHÈSE de L1). Le capital de fonctionnement vaut environ **34 fois** le prix d'achat.
 
@@ -278,7 +278,7 @@ S3 demande un multiple plus élevé. Dans le modèle, la taille d'un sinistre no
 | Affectation réelle du capital (statuts contraignants, fiducie) | Sans elle, la discipline ne repose que sur la volonté du propriétaire | Notaire, avocat |
 | Transmission et régime matrimonial | Environ 44 % de droits par génération sans montage ; un divorce peut partager la part réinvestie | Notaire |
 | Structure de détention (SCI, SAS, holding) et régime MH | Accès à la déduction, taxe sur les holdings, IFI, bail rural | Avocat fiscaliste, notaire, expert-comptable |
-| Gouvernance (charte, comité) | Sans discipline, le risque à 30 ans passe de 5 % à 16 % ; le propriétaire a 26 ans | Notaire, avocat |
+| Gouvernance (charte, comité) | Sans règles de pilotage en période de tension, le risque à 30 ans passe de 5 % à 16 % ; le propriétaire a 26 ans | Notaire, avocat |
 | Activités du socle : PLU, ABF, bail rural, performance énergétique des logements | Conditions de chaque revenu | Mairie, ABF, avocat |
 
 La feuille de route (L7) organise ces validations dans le temps.

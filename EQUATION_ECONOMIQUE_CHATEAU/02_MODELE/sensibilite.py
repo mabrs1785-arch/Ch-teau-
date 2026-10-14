@@ -25,7 +25,7 @@ def besoin(scen: str) -> float:
     return calc["total_besoin"]
 
 
-def tornade(scen: str, nb: int = 12) -> dict:
+def tornade(scen: str, nb: int = 30) -> dict:
     base = besoin(scen)
     utilises = set()
     for _lid, _lib, gabarit, *_ in LIGNES:

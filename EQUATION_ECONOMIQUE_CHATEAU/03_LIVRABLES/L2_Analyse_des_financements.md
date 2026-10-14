@@ -179,7 +179,7 @@ Contribution nette annuelle de chaque activité, à l'échelle d'un domaine S2, 
 - Ce format de location de dépendances génère environ 12 000 € de chiffre d'affaires par chambre côté opérateur, soit six fois moins qu'une maison de séminaires [V2A-17].
 
 **Verdict.**
-- C'est la seule activité sur place qui change l'ordre de grandeur : un revenu de classe A de 20 à 50 % du besoin.
+- C'est la seule activité sur place qui change l'ordre de grandeur : un loyer brut de classe A de 17 à 49 % du besoin de S2, soit 18 % disponible après impôts dans le cas central (§ 3.6).
 - Elle exige trois conditions cumulatives : la localisation, au moins 40 chambres et un exploitant qui finance la transformation.
 - Elle immobilise l'essentiel des bâtiments pendant 15 à 30 ans, au détriment de la partie privée et du calme.
 - **Option sérieuse pour un grand domaine (S3) bien situé ; incompatible avec le cahier des charges de S2.** Elle est évaluée comme modèle M7.
@@ -267,7 +267,7 @@ Huit combinaisons comparées au besoin du domaine S2 (1,27 M€/an), après une 
 - Seuls les leviers d'espaces verts changent l'ordre de grandeur, et seulement par rapport à un parc soigné partout. Le budget de L1 les **intègre déjà** : il suppose une gestion différenciée en S2, et 16 jardiniers au lieu de 33 en S3. Ils sont la **condition** pour que ces effectifs suffisent, pas une économie supplémentaire.
 - Les leviers énergétiques pèsent moins de 2 % du besoin de S2 et de S3.
 - Au-delà, réduire le besoin relève de **choix de train de vie** : moins de jardins réguliers, moins de personnel de maison. Ces choix contredisent en partie le brief, qui demande des jardins impeccables et un personnel suffisant.
-- Par rapport au budget central, les leviers vérifiés représentent environ **5 à 8 % du besoin de S2**. La variante « leviers » du § 6, qui suppose un besoin réduit de 15 %, est donc une **borne optimiste**.
+- Par rapport au budget central, les leviers vérifiés représentent environ **5 à 8 % du besoin de S2**. La variante « leviers » du § 6, qui suppose un besoin réduit de 7,5 %, se place dans le haut de cette fourchette : c'est une **hypothèse plutôt favorable**.
 
 ---
 
@@ -291,7 +291,7 @@ Le modèle simule 30 ans de vie du domaine, avec 6 000 à 20 000 trajectoires pa
   - La version précédente de ce dossier retenait 3 %. L'équipe rouge l'a jugé incompatible avec la fiscalité et les frais (V2R C2).
 - **Retrait annuel encadré par une règle de dépense lissée.** Le plafond vaut 1,75 % du capital, soit 0,25 point sous le rendement attendu.
 - **Règles de pilotage en période de tension**, déclenchées quand la réserve passe sous un an de charges :
-  - coupe temporaire de 10 % des dépenses discrétionnaires ;
+  - coupe temporaire des dépenses discrétionnaires, à hauteur de 10 % du besoin ;
   - report de 30 % d'une campagne de travaux ;
   - retrait d'urgence plafonné à 4 %.
 - La réserve est ensuite **reconstituée**.

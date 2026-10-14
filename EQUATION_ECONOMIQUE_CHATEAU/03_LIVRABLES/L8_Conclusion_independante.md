@@ -34,7 +34,7 @@ Ce que le dossier permet, c'est de **remplacer une dépendance permanente et dis
 | S2 | 1,27 M€ | 132,2 M€ | 120 M€ et 1 M€ de dividendes par an pendant 10 ans | ≈ 34 fois (3,5 M€) |
 | S3 | 3,77 M€ | 491,6 M€ | 480 M€, sans dividendes | ≈ 53 fois (9 M€) |
 
-Sources : `sorties/mc_dotation_necessaire.json` et `sorties/mc_dimensionnement.json`. Les prix d'achat sont des HYPOTHÈSES de L1.
+Sources : `sorties/mc_dotation_necessaire.json` et `sorties/mc_dimensionnement.json`. Les prix d'achat sont des HYPOTHÈSES (L1, § 3).
 
 **3. Le premier risque est de ne jamais réunir ce capital.**
 - À 2 % de rendement réel, réunir 120 M€ demande environ 62 ans d'épargne à 1 M€ par an, 34 ans à 2,5 M€, 20 ans à 5 M€ et 11 ans à 10 M€ (L4, § 6.2).
@@ -122,7 +122,7 @@ Sources : `sorties/mc_dotation_necessaire.json` et `sorties/mc_dimensionnement.j
 | Une fiducie, ou un autre outil, sépare réellement le capital à un coût raisonnable | L'affectation deviendrait juridique et non plus volontaire. Mais le capital devrait toujours être apporté par le propriétaire ou sa famille : la dépendance à une fortune resterait au départ |
 | Le domaine est situé près de Paris ou d'une gare TGV, et le propriétaire accepte de réduire sa partie privée | Le locataire d'ancrage réduit le capital nécessaire d'environ 13 % en S2 (de 132,2 à 114,9 M€) et de 5 % en S3 (L3, modèle 4) |
 | Des communs ou des terres peuvent être vendus à bon prix sans gêner la partie privée | Le capital est amorcé d'autant ; chaque million apporte environ 17 500 € par an à la règle de 1,75 % (L3, modèle 5) |
-| Le propriétaire accepte d'ouvrir le domaine au public 50 jours par an | Déduction fiscale MH à 100 % au lieu de 50 %, pour un propriétaire imposé au barème [R3-02] [R3-04]. Elle suppose environ 0,36 M€ de revenus imposés au barème chaque année en S2 (V2R M4), et réduit la tranquillité |
+| Le propriétaire accepte d'ouvrir le domaine au public 50 jours par an | Déduction fiscale MH à 100 % au lieu de 50 %, pour un propriétaire imposé au barème [R3-02] [R3-04]. Il faut des revenus imposés au barème capables d'absorber la déduction : environ 0,36 M€ par an en S2 pour une déduction à 50 % (V2R M4), et de l'ordre de 0,6 à 0,7 M€ pour une déduction à 100 %, deux fois plus grande (ESTIMATION arithmétique). L'ouverture réduit la tranquillité |
 
 ---
 

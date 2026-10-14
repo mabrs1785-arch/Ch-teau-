@@ -38,7 +38,7 @@ Il exclut l'achat, la restauration initiale et le train de vie personnel du prop
 2. **Deux postes font l'essentiel.**
    - Le **bâti** représente 39 à 49 % du besoin. La provision de gros entretien en constitue la plus grande part.
    - Le **personnel** représente 21 à 32 % du besoin.
-   - Énergie, taxes et assurances, réunies, n'en représentent qu'environ 10 à 15 %.
+   - Énergie, taxes et assurances, réunies, n'en représentent qu'environ 10 à 13 %.
 3. **Le gros entretien est le poste le plus incertain et le plus souvent sous-estimé.**
    - Les maisons historiques britanniques dépensent en moyenne ≈ 156 000 à 161 000 £ TTC par an pour leur seul bâtiment principal. Elles accumulent pourtant un retard d'entretien moyen d'environ 2 M£ chacune [R1-05].
    - Une dépense « normale » ne suffit donc pas à maintenir un état d'exception.
@@ -69,6 +69,7 @@ Il exclut l'achat, la restauration initiale et le train de vie personnel du prop
 | Foncier | 50 ha (35 de prés, 12 de bois, 3 de parc) | 120 ha (80 prés, 30 bois, 8 parc, 2 jardins réguliers) | 300 ha (120 prés, 120 bois, 50 parc, 10 jardins réguliers) |
 | Équestre | 12 boxes, carrière ; 4 chevaux du propriétaire | 40 boxes, manège, 2 carrières ; 8 chevaux | 50 boxes, manège ; 12 chevaux |
 | Personnel du domaine (hors activité commerciale) | 2,5 ETP | 10 ETP | 29,5 ETP |
+| Prix d'achat retenu (HYPOTHÈSE ; marché : prix affichés de 920 k€ à 20 M€ [D-02]) | 1,2 M€ | 3,5 M€ | 9 M€ |
 
 **Effectifs.** Les effectifs ne couvrent que le domaine et les chevaux du propriétaire.
 - L'agent R2 obtient 13 ETP pour S2 et 29 ETP pour S3 s'il compte une écurie pleine de 40 à 50 chevaux. Cet excédent relève d'une activité de pension, traitée comme un moteur de revenus (livrable L2).
@@ -178,7 +179,7 @@ Tableau généré depuis le modèle (`02_MODELE/tableaux.py`) :
 | Rapport IGF-IGAC sur les monuments historiques privés (février 2020) [V2C-07] | Dépense des propriétaires privés : au moins 535 M€/an, soit environ 24 000 € par monument ; modèle jugé « de plus en plus difficilement viable » | Seule évaluation publique d'ensemble. Le profil « résident », le plus proche de notre propriétaire, ne finance pas sa part des gros travaux sans revenus extérieurs. |
 | Charges courantes déclarées pour de petits châteaux (annonces, courtier, plancher de La Demeure Historique) [V2C] | 15 000 à 80 000 €/an, hors gros travaux | S1 (346 k€) est 4 à 23 fois au-dessus : c'est un budget **nécessaire**, pas un budget **observé**. |
 
-**Lecture.** Le modèle est **plus exigeant que les dépenses réellement observées**. C'est voulu : le brief demande un château restauré et maintenu dans un état d'exception. Les dépenses observées correspondent à des propriétaires qui, en moyenne, accumulent du retard d'entretien. Un propriétaire réel peut dépenser 40 à 60 % de ce budget pendant quelques années, mais il **consomme alors son patrimoine** : le retard s'accumule et se paiera plus tard.
+**Lecture.** Le modèle est **plus exigeant que les dépenses réellement observées**. C'est voulu : le brief demande un château restauré et maintenu dans un état d'exception. Les dépenses observées correspondent à des propriétaires qui, en moyenne, accumulent du retard d'entretien. Un propriétaire réel peut dépenser beaucoup moins pendant quelques années (au Royaume-Uni, la dépense observée pour le bâtiment principal représente environ la moitié de ce que le modèle S2 prévoit pour le bâti, voir le tableau), mais il **consomme alors son patrimoine** : le retard s'accumule et se paiera plus tard.
 
 ---
 
@@ -196,7 +197,7 @@ Les hypothèses sont modifiées **une à une**, de leur valeur favorable à leur
 | Taux d'assurance (1,5 – 5 ‰) | −6 / +8 k€ | −19 / +26 k€ | −73 / +97 k€ |
 | Maîtrise d'œuvre et dommages-ouvrage (8 – 18 % du gros entretien) | −3 / +5 k€ | −11 / +17 k€ | −43 / +64 k€ |
 | Coût d'un jardinier (1,1 – 1,3 SMIC) | ±4 k€ | ±9 k€ | −72 / +69 k€ |
-| Prix et consommation de chauffage | ±6 k€ chacun | ±13 k€ chacun | — |
+| Prix et consommation de chauffage | prix ±6 k€ ; consommation −5 / +6 k€ | prix ±13 k€ ; consommation −11 / +13 k€ | prix ±26 k€ ; consommation −20 / +23 k€ |
 
 **Les effectifs ne sont pas un paramètre incertain : c'est un choix de train de vie.** Chaque ETP ajouté coûte de 24 k€ (soigneur) à 79 k€ (régisseur). Supprimer le poste de gouvernante (≈ 41 k€) et celui d'ouvrier agricole (≈ 33 k€, diminué du coût de la fenaison sous-traitée) réduirait le besoin S2 d'environ 50 à 70 k€/an (livrable L2, leviers « prestige efficace »).
 
@@ -240,7 +241,7 @@ La provision comprend désormais les aléas de chantier et la maîtrise d'œuvre
 
 | Donnée | Pourquoi elle compte | Comment la vérifier |
 |---|---|---|
-| Valeur de reconstruction au m² | Premier facteur de variation, ±0,1 à 0,7 M€/an | Estimation par l'assureur (valeur à neuf ou valeur agréée), au moins 3 devis de courtiers spécialisés |
+| Valeur de reconstruction au m² | Premier facteur de variation : −0,03 / +0,05 M€ par an pour S1, −0,12 / +0,17 M€ pour S2, −0,53 / +0,80 M€ pour S3 (§ 6) | Estimation par l'assureur (valeur à neuf ou valeur agréée), au moins 3 devis de courtiers spécialisés |
 | État sanitaire et taux de gros entretien | Second facteur | Diagnostic quinquennal par un architecte du patrimoine. Au Royaume-Uni, seuls 36 % des propriétaires en ont un [R1-05] |
 | Prime d'assurance | Divergence non résolue d'un facteur 3 à 10 | Devis réels |
 | Taxe foncière d'un grand château | Un seul repère | Avis de taxe foncière du bien visité, à demander dans le dossier de vente |

@@ -85,6 +85,132 @@
     -4212,
     4212,
     8424
+   ],
+   [
+    "taux_moe_do",
+    "Maîtrise d'œuvre, diagnostics, coordination SPS et assurance dommages-ouvrage, en % du gros entretien",
+    -3370,
+    5054,
+    8424
+   ],
+   [
+    "box_entretien",
+    "Entretien et renouvellement d'un box",
+    -2496,
+    4992,
+    7488
+   ],
+   [
+    "equip_vie",
+    "Durée de renouvellement moyenne du matériel",
+    -2947,
+    4420,
+    7367
+   ],
+   [
+    "equip_entretien_taux",
+    "Entretien, réparations et carburant du matériel, en % de sa valeur",
+    -3638,
+    3638,
+    7276
+   ],
+   [
+    "tf_chateau_m2",
+    "Taxe foncière bâtie du château, par m² de plancher",
+    -2889,
+    3852,
+    6741
+   ],
+   [
+    "S1_surf_chauffee",
+    "S1 — surface chauffée à confort",
+    -3050,
+    3354,
+    6404
+   ],
+   [
+    "cloture_ml",
+    "Clôture équestre de qualité posée",
+    -2340,
+    3900,
+    6240
+   ],
+   [
+    "taux_imprevus",
+    "Imprévus d'exploitation, en % des charges de fonctionnement",
+    -1935,
+    3870,
+    5806
+   ],
+   [
+    "prairie_ha",
+    "Prairies : entretien hors récolte",
+    -2247,
+    2622,
+    4868
+   ],
+   [
+    "cout_soigneur",
+    "Soigneur, palefrenier (1,0 / 1,0 / 1,1 SMIC)",
+    -128,
+    4540,
+    4668
+   ],
+   [
+    "S1_honoraires_patrimoine",
+    "S1 — architecte du patrimoine : état sanitaire et suivi",
+    -1605,
+    2675,
+    4280
+   ],
+   [
+    "S1_assurances_autres",
+    "S1 — RC, véhicules, chevaux, contenu",
+    -1605,
+    2675,
+    4280
+   ],
+   [
+    "S1_elec_kwh",
+    "S1 — électricité spécifique (maison, écurie, extérieurs)",
+    -1273,
+    2547,
+    3820
+   ],
+   [
+    "cout_maison",
+    "Employé(e) de maison, particulier employeur (1,0 / 1,1 / 1,2 SMIC × 1,30)",
+    -1558,
+    1558,
+    3116
+   ],
+   [
+    "cloture_vie",
+    "Durée de vie des clôtures",
+    -1092,
+    1820,
+    2912
+   ],
+   [
+    "S1_securite",
+    "S1 — sécurité (télésurveillance, détection incendie, maintenance)",
+    -1070,
+    1605,
+    2675
+   ],
+   [
+    "S1_eau",
+    "S1 — eau et assainissement",
+    -1070,
+    1605,
+    2675
+   ],
+   [
+    "jardin_ha",
+    "Jardins réguliers : fournitures, végétaux, traitements, sous-traitance (hors personnel)",
+    -1070,
+    1605,
+    2675
    ]
   ]
  },
@@ -174,6 +300,132 @@
     -8320,
     16640,
     24960
+   ],
+   [
+    "chauffage_kwh_m2",
+    "Consommation de chauffage et d'eau chaude par m² chauffé",
+    -11235,
+    12840,
+    24075
+   ],
+   [
+    "taux_imprevus",
+    "Imprévus d'exploitation, en % des charges de fonctionnement",
+    -7589,
+    15178,
+    22766
+   ],
+   [
+    "cheval_an",
+    "Coût annuel d'un cheval au box hors personnel (alimentation, litière, maréchal, vétérinaire, assurance, eau)",
+    -9416,
+    12840,
+    22256
+   ],
+   [
+    "equip_vie",
+    "Durée de renouvellement moyenne du matériel",
+    -8667,
+    13000,
+    21667
+   ],
+   [
+    "equip_entretien_taux",
+    "Entretien, réparations et carburant du matériel, en % de sa valeur",
+    -10700,
+    10700,
+    21400
+   ],
+   [
+    "cout_chef_jardinier",
+    "Chef jardinier (1,5 / 1,75 / 2,0 SMIC)",
+    -9824,
+    9423,
+    19247
+   ],
+   [
+    "cout_jardinier",
+    "Jardinier qualifié (1,1 / 1,2 / 1,3 SMIC)",
+    -8956,
+    8635,
+    17591
+   ],
+   [
+    "tf_chateau_m2",
+    "Taxe foncière bâtie du château, par m² de plancher",
+    -6420,
+    8560,
+    14980
+   ],
+   [
+    "cloture_ml",
+    "Clôture équestre de qualité posée",
+    -5460,
+    9100,
+    14560
+   ],
+   [
+    "S2_elec_kwh",
+    "S2 — électricité spécifique (dont manège éclairé, écuries, ateliers)",
+    -5093,
+    7640,
+    12733
+   ],
+   [
+    "S2_surf_chauffee",
+    "S2 — surface chauffée à confort",
+    -6099,
+    6099,
+    12198
+   ],
+   [
+    "prairie_ha",
+    "Prairies : entretien hors récolte",
+    -5136,
+    5992,
+    11128
+   ],
+   [
+    "ifi_abattement_rp",
+    "IFI : abattement sur la résidence principale",
+    0,
+    10850,
+    10850
+   ],
+   [
+    "S2_assurances_autres",
+    "S2 — RC, véhicules, chevaux, contenu",
+    -4280,
+    6420,
+    10700
+   ],
+   [
+    "jardin_ha",
+    "Jardins réguliers : fournitures, végétaux, traitements, sous-traitance (hors personnel)",
+    -4280,
+    6420,
+    10700
+   ],
+   [
+    "cout_ouvrier_agricole",
+    "Ouvrier agricole qualifié (1,1 / 1,2 / 1,3 SMIC)",
+    -4478,
+    4317,
+    8795
+   ],
+   [
+    "S2_securite",
+    "S2 — sécurité",
+    -3210,
+    5350,
+    8560
+   ],
+   [
+    "S2_eau",
+    "S2 — eau et assainissement",
+    -3210,
+    5350,
+    8560
    ]
   ]
  },
@@ -263,6 +515,132 @@
     -21400,
     32100,
     53500
+   ],
+   [
+    "parc_ha",
+    "Parc : fauche, élagage par arboriste, replantation (hors personnel)",
+    -16050,
+    37450,
+    53500
+   ],
+   [
+    "prix_chaleur_kwh",
+    "Prix de l'énergie de chauffage livrée",
+    -25520,
+    25520,
+    51039
+   ],
+   [
+    "chauffage_kwh_m2",
+    "Consommation de chauffage et d'eau chaude par m² chauffé",
+    -20223,
+    23112,
+    43335
+   ],
+   [
+    "S3_cout_direction",
+    "S3 — directeur de domaine (2,5 / 3,0 / 3,5 SMIC)",
+    -18700,
+    19549,
+    38249
+   ],
+   [
+    "ifi_abattement_rp",
+    "IFI : abattement sur la résidence principale",
+    0,
+    36112,
+    36112
+   ],
+   [
+    "S3_cout_gouvernance",
+    "S3 — majordome et gouvernante, coût moyen par ETP",
+    -17657,
+    16583,
+    34240
+   ],
+   [
+    "tf_chateau_m2",
+    "Taxe foncière bâtie du château, par m² de plancher",
+    -14445,
+    19260,
+    33705
+   ],
+   [
+    "cheval_an",
+    "Coût annuel d'un cheval au box hors personnel (alimentation, litière, maréchal, vétérinaire, assurance, eau)",
+    -14124,
+    19260,
+    33384
+   ],
+   [
+    "box_entretien",
+    "Entretien et renouvellement d'un box",
+    -10400,
+    20800,
+    31200
+   ],
+   [
+    "S3_elec_kwh",
+    "S3 — électricité spécifique",
+    -12733,
+    17826,
+    30559
+   ],
+   [
+    "equip_vie",
+    "Durée de renouvellement moyenne du matériel",
+    -11527,
+    17290,
+    28817
+   ],
+   [
+    "equip_entretien_taux",
+    "Entretien, réparations et carburant du matériel, en % de sa valeur",
+    -14231,
+    14231,
+    28462
+   ],
+   [
+    "S3_surf_chauffee",
+    "S3 — surface chauffée à confort",
+    -13723,
+    13723,
+    27446
+   ],
+   [
+    "S3_securite",
+    "S3 — sécurité (dont rondes et système incendie)",
+    -10700,
+    16050,
+    26750
+   ],
+   [
+    "S3_assurances_autres",
+    "S3 — RC, véhicules, chevaux, contenu, œuvres",
+    -8560,
+    16050,
+    24610
+   ],
+   [
+    "S3_eau",
+    "S3 — eau et assainissement (dont arrosage des jardins)",
+    -8560,
+    12840,
+    21400
+   ],
+   [
+    "cloture_ml",
+    "Clôture équestre de qualité posée",
+    -7800,
+    13000,
+    20800
+   ],
+   [
+    "cout_chef_jardinier",
+    "Chef jardinier (1,5 / 1,75 / 2,0 SMIC)",
+    -9824,
+    9423,
+    19247
    ]
   ]
  }

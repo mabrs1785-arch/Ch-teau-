@@ -171,6 +171,6 @@ Définitions :
 4. **Que le capital est séparé de la fortune du propriétaire.**
    - Aucun véhicule français ne l'en sépare tout en lui laissant la jouissance du château (L2, § 6.3).
    - La démonstration suppose que ce capital ne sert qu'au domaine. Juridiquement, il reste exposé aux droits de succession (environ 44 % sans montage [V2R-06]) et, selon le régime matrimonial, au partage des revenus réinvestis [V2R-07].
-5. **Que les règles seront respectées pendant 30 ans.** La simulation suppose que la charte est appliquée. Sans elle, le risque d'échec à 30 ans passe de 5 à 16 % pour S2 (L6, § 6).
+5. **Que les règles seront respectées pendant 30 ans.** La simulation suppose que la charte est appliquée. Sans les seules règles de pilotage en période de tension, le risque d'échec à 30 ans passe déjà de 5 à 16 % pour S2 (L6, § 6).
 
 Ces cinq points sont les étapes de validation de la feuille de route (L7).

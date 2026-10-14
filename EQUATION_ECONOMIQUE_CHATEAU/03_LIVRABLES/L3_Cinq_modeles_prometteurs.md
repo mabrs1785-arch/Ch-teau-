@@ -21,7 +21,7 @@
 | **1** | **Hybride : entreprises → capital affecté** | Une holding de PME verse des dividendes de transition, puis ses revenus sont convertis en capital diversifié | **117,6 M€** au départ, plus 1 M€ de dividendes nets par an pendant 10 ans. La solution retient 120 M€ | Dépendance au fondateur pendant la constitution ; défaillance des PME | Propriétaire entrepreneur, prêt à bâtir le capital avant d'engager toute la dépense |
 | **2** | **Capital affecté seul** | Un capital diversifié réservé au domaine dès le départ, géré avec une règle de dépense | **132,2 M€** (50,1 M€ pour une chance sur deux) | Immobiliser environ 100 fois le besoin annuel | Propriétaire qui dispose déjà du capital (héritage, vente d'entreprise) |
 | **3** | **Domaine dimensionné à son capital** | Choisir le domaine et son train de vie en fonction du capital disponible | S1 : **37,9 M€** (ou 34 M€ et 0,4 M€ de dividendes pendant 10 ans) ; S2 avec les leviers vérifiés : **122,1 M€** | Moins de surface, de jardins réguliers ou de personnel de maison | Tous : c'est le levier le plus puissant, et il se joue **avant** l'achat |
-| **4** | **Locataire d'ancrage + capital réduit** | Bail de 15 à 30 ans à un exploitant de séminaires résidentiels | **114,9 M€** (S2, si les conditions sont réunies) ; S3 : 465,5 M€ au lieu de 491,6 M€ | Partie privée réduite, cohabitation avec 40 à 100 chambres, engagement de 15 à 30 ans | Grand domaine à moins de 90 km de Paris, ou à moins de 45 minutes d'une gare TGV |
+| **4** | **Locataire d'ancrage + capital réduit** | Bail de 15 à 30 ans à un exploitant de séminaires résidentiels | **114,9 M€** (S2, si les conditions sont réunies) ; S3 : 465,5 M€ au lieu de 491,6 M€ | Partie privée réduite, cohabitation avec 40 à 100 chambres, engagement de 15 à 30 ans | Grand domaine à moins de 90 km de Paris, ou à environ 45 minutes d'une gare TGV |
 | **5** | **Vente d'une partie du domaine pour amorcer le capital** | Céder des communs, un hameau ou des terres éloignés de la partie privée | Réduit le capital à trouver du produit net de la vente ; **montant INCONNU** | Voisins permanents, cession définitive, urbanisme | Grand domaine dont des bâtiments sont dispersés et inutiles au propriétaire |
 
 **Un socle commun d'activités calmes** s'ajoute à chaque modèle :
@@ -76,7 +76,8 @@ Les modèles qui échouent sur la couverture ou sur la tranquillité sont écart
   - 1 M€ de dividendes nets par an pendant 10 ans ;
   - réserve de 1,5 M€ ;
   - probabilité d'échec : 1,8 % sur 20 ans et environ 5 % sur 30 ans (L6, § 4).
-- Pour 95 % de chances de tenir 30 ans, il faut 117,6 M€ de capital au départ. Pour 95 % sur 20 ans, 85,8 M€ suffisent (`mc_comparaison_modeles.json`).
+- Pour 95 % de chances de tenir 30 ans, il faut 117,6 M€ de capital au départ. Pour 95 % sur 20 ans, 85,8 M€ suffisent (`mc_comparaison_modeles.json`, 6 000 trajectoires).
+- Un calcul séparé, sur 10 000 trajectoires, donne 119,8 M€ pour le même objectif (`mc_dimensionnement.json`). L'écart reste dans la précision de l'estimation (environ ±5 %). La solution retient 120 M€.
 - 1 M€ de dividendes nets suppose environ 2,8 M€ d'EBITDA, à raison de 0,355 € net par euro d'EBITDA après IS, PFU et contributions sur les hauts revenus (ESTIMATION [R8-35] [V2R-04] [V2R-05]). Une telle entreprise se paie environ 5 à 8 fois son EBITDA, soit 14 à 22 M€.
 - En S3, avec 3 M€ de dividendes par an pendant 10 ans, il faut 424,8 M€ de capital pour 95 % sur 30 ans, au lieu de 491,6 M€ sans dividendes.
 
@@ -165,7 +166,7 @@ Le seuil d'une chance sur deux n'est pas un objectif : à ce niveau, le domaine 
   - S3, avec 80 chambres : 465,5 M€ au lieu de 491,6 M€ (−5 %).
 
 **Conditions cumulatives** [V2A-13] [V2A-54] :
-- moins de 90 km de Paris, ou moins de 45 minutes d'une gare TGV ou d'un aéroport de métropole ;
+- moins de 90 km de Paris, ou environ 45 minutes d'une gare TGV ou d'un aéroport de métropole (35 à 50 minutes pour les 5 maisons françaises éloignées de Paris) [V2A-13] ;
 - au moins 40 chambres ;
 - un exploitant qui finance la transformation.
 
@@ -228,7 +229,7 @@ Le seuil d'une chance sur deux n'est pas un objectif : à ce niveau, le domaine 
 
 | Modèle ou piste | Raison principale | Références |
 |---|---|---|
-| Château-hôtel exploité (M4) | Contribution négative dans le cas central (−28 % du besoin) ; 7,5 M€ d'investissement ; 54 à 61 % des sociétés de châteaux-hôtels en perte selon la période des comptes | L2 § 2.2 et 3.6 ; [R4-34] ; V2V |
+| Château-hôtel exploité (M4) | Contribution négative dans le cas central (−28 % du besoin) ; 7,9 M€ d'investissement, dont 7,5 M€ pour l'hôtel ; 54 à 61 % des sociétés de châteaux-hôtels en perte selon la période des comptes | L2 § 2.2 et 3.6 ; [R4-34] ; V2V |
 | Lieu d'exception à quota : réceptions, séminaires, grande maison (M2) | Seulement +32 k€ par an par rapport au socle, pour 1 M€ d'investissement de plus, avec des nuisances ; revenus qui disparaissent en crise (−80 %) | L2 § 3.6 ; L6 § 7 |
 | Équestre haut de gamme et reproduction (M3) | Couvre 3 % du besoin ; demande non prouvée hors de l'ouest parisien ; dépend d'un vétérinaire ou du talent du propriétaire | L2 § 3.1 ; [R6-15] |
 | Ouverture à la visite | « Pour 99,8 % des propriétaires », la seule ouverture à la visite n'est pas rentable [R1-01] ; foule incompatible avec la tranquillité | L2 § 2.2 |
