@@ -221,7 +221,7 @@ Sources : AV1-158 à AV1-161 (transcriptions partielles).
   - artisans qui gonflent les devis ;
   - charges d'entretien du parc (tonte de 20 à 50 €/h) ;
   - revente incertaine.
-- **Résultat :** après 5 ans, « je n'achèterais pas ce château à nouveau » (charge mentale). Leurs revenus viennent en partie de YouTube et du podcast, et ils sont passés dans « Château DIY » (Channel 4).
+- **Résultat :** après 5 ans, « je n'achèterais pas ce château à nouveau » (charge mentale). Ils documentent leur vie sur YouTube et en podcast, et ont été filmés pour « Château DIY » (Channel 4). Leurs revenus d'exploitation ne sont pas connus.
 
 ## Cas 13 — Camp Chateau (Sud-Ouest) : Leah Lykins, sa mère et une amie
 

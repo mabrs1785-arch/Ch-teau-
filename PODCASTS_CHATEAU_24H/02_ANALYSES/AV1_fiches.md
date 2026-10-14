@@ -1,7 +1,7 @@
 # AV1 — Fiches d'analyse : châteaux français et entrepreneurs du patrimoine
 
 Agent AV1, mission 2 (cellule audiovisuelle). Travail du 2026-10-14.
-Catalogue complet : `_brut/catalogue_AV1.csv` (177 contenus). Sources : `_brut/sources_AV1.csv`.
+Catalogue complet : `_brut/catalogue_AV1.csv` (182 contenus). Sources : `_brut/sources_AV1.csv`.
 
 ## Ce que « lu » veut dire ici
 
@@ -580,3 +580,15 @@ Une affirmation d'un intervenant n'est pas un fait vérifié. Chaque chiffre por
 | AV1-081 | CNBC, 1,1 M$ achat et travaux | Budget complet |
 | AV1-074 | TF1, « Ils vivent dans un château : l'envers du décor » | Documentaire récent |
 | AV1-020 | Château du Theil | Le récit qui complète les comptes de la fiche 7 |
+
+## Points du brief vérifiés au passage
+
+- **« Inside the Château »** est le podcast de Lionel et Claire (fiche 18) ; des transcriptions sont publiées.
+- **« La vie de château »** est un podcast Ausha de 13 épisodes (2020-2021) avec des propriétaires, en majorité des héritiers. Les descriptions ont été lues : AV1-103 à AV1-115. L'épisode le plus pertinent est le #06 (Laborde Saint-Martin, néo-châtelains).
+- **« Les Voix du Tourisme » (Château des Milandes)** : transcription lue en partie (fiche 9).
+- **« Chateau Life » n'est pas le château de Picomtal :** les descriptions renvoient à « chateaudubailleul » (AV1-179). Picomtal a sa propre chaîne (mariages, chambres) et un documentaire réuploadé (AV1-180 et AV1-181).
+- **« Chateau de Lalande »** est le château de « The Chateau Diaries » (Stephanie Jarvis), dont le modèle combine chambres d'hôtes, Patreon et sponsoring (AV1-178).
+- **« Le Château de Pallanges » :** aucun contenu trouvé sous ce nom (recherche YouTube, 14/10/2026).
+- **Château de la Motte-Husson (Strawbridge) :** déjà documenté par la mission 1 (achat 280 000 £ en 2015, sociétés). Les podcasts trouvés (AV1-174 à AV1-176) sont des entretiens de personnalité, sans chiffres.
+- **Podcasts d'entrepreneurs** : l'API Apple ne remonte aucun épisode avec un propriétaire de château pour GDIY (seul résultat : Niox-Chateau, Doctolib), Le Gratin / Le Podcast de Pauline Laigneau (seulement un épisode décoration avec Cordélia de Castellane), Vlan!, J'ai un pote dans la finance et Mastermind. La Martingale en compte deux (AV1-001, AV1-141). Les épisodes entrepreneurs-châteaux se trouvent surtout dans les podcasts immobiliers : Ça fait un bail, Richissime, Hospitality Insiders, Les Investisseurs Sereins, La retraite à 40 ans.
+
