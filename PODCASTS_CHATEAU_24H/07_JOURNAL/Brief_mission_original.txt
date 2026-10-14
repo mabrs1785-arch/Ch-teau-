@@ -1,0 +1,533 @@
+OPÉRATION CHÂTEAU — INTELLIGENCE AUDIOVISUELLE MULTI-AGENTS
+
+MISSION : 24 HEURES D'INVESTIGATION
+
+Tu es le directeur d'une cellule d'intelligence économique spécialisée dans l'analyse massive de podcasts, vidéos YouTube, interviews, documentaires, conférences et témoignages d'entrepreneurs.
+
+Ta mission consiste à mobiliser un grand nombre d'agents IA pour découvrir, écouter lorsque les outils audio le permettent, transcrire, analyser et recouper des centaines d'heures potentielles de contenus pertinents.
+
+Objectif : découvrir des idées, des méthodes d'acquisition, des montages financiers, des modèles économiques et des opportunités directement exploitables pour mon projet de château équestre de prestige.
+
+Je souhaite que cette cellule fonctionne indépendamment de l'équipe de recherche financière et immobilière, puis lui transmette ses découvertes.
+
+La mission dispose d'une fenêtre cible de 24 heures.
+
+La priorité absolue est la qualité des découvertes, pas la consommation artificielle de temps ou de tokens.
+
+---
+
+1. MON PROJET
+
+Je suis un entrepreneur français de 26 ans.
+
+Mon objectif est de devenir propriétaire, idéalement d'ici 2030-2031, d'un château français entouré de plus de 50 hectares de terres.
+
+Je souhaite :
+
+- Habiter personnellement dans une partie privée du château.
+- Créer un domaine exceptionnel, parfaitement restauré et entretenu.
+- Développer une activité équestre prestigieuse.
+- Organiser potentiellement des ventes de chevaux de sport et de course.
+- Accueillir des élevages, professionnels et propriétaires de chevaux.
+- Développer de l'événementiel haut de gamme.
+- Exploiter les dépendances.
+- Générer suffisamment de bénéfices pour entretenir durablement le patrimoine.
+
+Le cheval est ma passion et doit rester un élément fondamental du projet.
+
+Cependant, les revenus du domaine peuvent provenir de plusieurs activités complémentaires.
+
+Ma principale difficulté est le financement : je ne dispose pas aujourd'hui d'un apport personnel important.
+
+Je cherche donc des méthodes intelligentes pour acquérir, financer et exploiter un château avec un apport fondateur limité.
+
+---
+
+2. CRÉER UNE ÉQUIPE DE 20 AGENTS
+
+Utilise les fonctionnalités multi-agents réellement disponibles dans Claude Code.
+
+Je souhaite une organisation de 20 agents spécialisés, sous la supervision d'un directeur de recherche.
+
+Si 20 agents simultanés sont trop coûteux ou techniquement impossibles, utilise des vagues successives et conserve la séparation des spécialités.
+
+ÉQUIPE 1 — CHÂTEAUX ET GRANDS DOMAINES
+
+Agent 1 : propriétaires de châteaux français
+
+Recherche des interviews de personnes ayant acheté et restauré un château.
+
+Agent 2 : entrepreneurs du patrimoine
+
+Recherche des personnes ayant transformé des monuments ou domaines historiques en entreprises rentables.
+
+Agent 3 : châteaux britanniques et irlandais
+
+Étudie les modèles économiques des grands domaines privés anglo-saxons.
+
+Agent 4 : haras historiques
+
+Recherche les histoires d'acquisition, de transformation et d'exploitation de grands haras et propriétés équestres.
+
+ÉQUIPE 2 — BUSINESS DU CHEVAL
+
+Agent 5 : ventes de chevaux de sport
+
+Recherche les professionnels des ventes, marchands, éleveurs et organisateurs d'événements commerciaux.
+
+Agent 6 : ventes de chevaux de course
+
+Analyse les modèles de ventes de yearlings, chevaux à l'entraînement et poulinières.
+
+Agent 7 : grands événements équestres
+
+Recherche les organisateurs de concours, manifestations premium et événements internationaux.
+
+Agent 8 : entrepreneurs équestres
+
+Recherche les personnes ayant construit des entreprises importantes dans le secteur du cheval.
+
+ÉQUIPE 3 — ACQUISITION ET FINANCEMENT
+
+Agent 9 : acquisitions sans apport important
+
+Recherche des témoignages documentés d'entrepreneurs ayant acquis des actifs importants grâce à des investisseurs ou des montages atypiques.
+
+Agent 10 : private equity et family offices
+
+Recherche des interviews de professionnels expliquant leurs décisions d'investissement, leurs critères et leurs mécanismes financiers.
+
+Agent 11 : immobilier entrepreneurial
+
+Recherche des stratégies d'acquisition de propriétés, hôtels, domaines, actifs commerciaux et patrimoines exceptionnels.
+
+Agent 12 : reprises d'entreprises
+
+Analyse les parcours d'entrepreneurs ayant utilisé la reprise d'entreprises comme levier de constitution de patrimoine.
+
+ÉQUIPE 4 — MODÈLES ÉCONOMIQUES PREMIUM
+
+Agent 13 : événementiel de luxe
+
+Recherche les entrepreneurs organisant mariages, réceptions et événements d'exception.
+
+Agent 14 : hôtellerie et hospitality de prestige
+
+Recherche les modèles de transformation de propriétés historiques en activités de prestige.
+
+Agent 15 : domaines agricoles et forestiers
+
+Étudie les entrepreneurs capables de rentabiliser de grandes propriétés foncières.
+
+Agent 16 : marques de luxe et partenariats
+
+Recherche des modèles de sponsoring, de mécénat et de commercialisation d'expériences haut de gamme.
+
+ÉQUIPE 5 — ANALYSE TRANSVERSALE
+
+Agent 17 : détecteur d'idées originales
+
+Explore toutes les pistes inattendues, même très éloignées du modèle traditionnel du château.
+
+Agent 18 : analyste des échecs
+
+Recherche des propriétaires de châteaux, investisseurs ou entrepreneurs ayant échoué et analyse les raisons.
+
+Agent 19 : vérificateur de preuves
+
+Vérifie les déclarations, les chiffres, les parcours et la possibilité de transposer les modèles découverts.
+
+Agent 20 : synthétiseur stratégique
+
+Croise les conclusions et construit des recommandations concrètes pour mon projet.
+
+---
+
+3. SOURCES AUDIOVISUELLES À EXPLORER
+
+Effectue une recherche large et méthodique.
+
+Sources prioritaires :
+
+- YouTube.
+- Podcasts Spotify.
+- Apple Podcasts.
+- Podcasts disponibles sur les sites des producteurs.
+- Interviews économiques.
+- Conférences professionnelles.
+- Conférences d'investisseurs.
+- Podcasts équestres.
+- Médias spécialisés dans les courses hippiques.
+- Médias immobiliers.
+- Chaînes consacrées aux châteaux.
+- Documentaires sur la restauration du patrimoine.
+- Interviews d'entrepreneurs.
+- Conférences sur les transmissions d'entreprises.
+- Témoignages de propriétaires de domaines historiques.
+
+Recherche en français et en anglais.
+
+Ne te limite pas aux contenus récents : une interview ancienne peut contenir une méthode entrepreneuriale encore pertinente.
+
+Privilégie cependant les sources récentes pour les données financières, fiscales et réglementaires.
+
+---
+
+4. MÉTHODE D'ANALYSE AUDIO ET VIDÉO
+
+Pour chaque contenu découvert :
+
+1. Identifie le titre exact.
+2. Identifie l'auteur, l'invité et la chaîne.
+3. Conserve l'URL originale.
+4. Relève la date de publication.
+5. Récupère la transcription officielle ou autorisée lorsqu'elle existe.
+6. Si la transcription n'est pas accessible, vérifie si un traitement audio légal et techniquement disponible est possible.
+7. Analyse les passages directement pertinents.
+8. Identifie les idées concrètes et les expériences vécues.
+9. Extrais les chiffres, méthodes, décisions et difficultés mentionnés.
+10. Évalue leur applicabilité à mon projet.
+
+Important : lire le titre, la description ou le résumé d'une vidéo ne signifie pas avoir analysé la vidéo elle-même.
+
+Distingue systématiquement :
+
+- Vidéo effectivement analysée à partir de sa transcription complète.
+- Vidéo analysée partiellement.
+- Contenu audio réellement traité.
+- Vidéo repérée, mais non analysée.
+
+Ne prétends jamais avoir regardé ou écouté une vidéo si tu n'as eu accès qu'à ses métadonnées.
+
+N'utilise pas de méthodes de récupération qui contournent les restrictions d'accès ou les protections techniques.
+
+---
+
+5. RECHERCHES PRIORITAIRES
+
+Les agents doivent chercher à répondre aux questions suivantes.
+
+A. Comment des entrepreneurs ont-ils acheté des châteaux ?
+
+Je veux connaître :
+
+- Leur situation financière initiale.
+- Le prix d'acquisition lorsqu'il est connu.
+- Leur apport personnel.
+- Le financement obtenu.
+- Les partenaires éventuels.
+- Le coût des travaux.
+- Les stratégies utilisées.
+- Les difficultés rencontrées.
+- Les erreurs commises.
+
+Accorde une attention particulière aux acquéreurs qui n'étaient pas déjà extrêmement fortunés.
+
+B. Comment les propriétaires financent-ils l'entretien des domaines ?
+
+Recherche les modèles permettant de générer des revenus récurrents.
+
+Identifie les activités qui semblent réellement contribuer à l'entretien du patrimoine, plutôt que de reposer uniquement sur le patrimoine personnel du propriétaire.
+
+C. Comment fonctionne le business des ventes de chevaux ?
+
+Recherche les interventions de :
+
+- Commissaires-priseurs spécialisés.
+- Directeurs de maisons de vente.
+- Éleveurs.
+- Courtiers et marchands.
+- Entraîneurs.
+- Propriétaires.
+- Organisateurs de manifestations.
+
+Détermine ce qui crée de la valeur, les coûts de fonctionnement, les marges possibles et les conditions nécessaires pour attirer les professionnels.
+
+D. Comment rendre un grand domaine attractif pour des investisseurs ?
+
+Recherche les méthodes permettant de financer :
+
+- L'immobilier.
+- Les travaux.
+- L'exploitation.
+- Les installations professionnelles.
+- Le besoin en fonds de roulement.
+
+Détermine pourquoi des investisseurs accepteraient de financer ce type de projet.
+
+E. Quels sont les modèles les plus originaux ?
+
+Recherche des histoires entrepreneuriales où un actif immobilier, un château, un haras ou une grande propriété est devenu le support d'une activité commerciale particulièrement performante.
+
+Ne limite pas cette recherche au monde équestre.
+
+---
+
+6. PRIORITÉ AUX TÉMOIGNAGES CONCRETS
+
+Je préfère une interview de deux heures avec un entrepreneur expliquant exactement comment il a acheté et développé son domaine à cinquante vidéos superficielles.
+
+Cherche notamment les contenus comportant :
+
+- Des montants d'acquisition.
+- Des budgets de travaux.
+- Des chiffres d'affaires.
+- Des coûts d'entretien.
+- Des stratégies de financement.
+- Des négociations avec des investisseurs.
+- Des difficultés de trésorerie.
+- Des partenariats commerciaux.
+- Des erreurs entrepreneuriales.
+- Des méthodes de développement.
+
+Ne confonds jamais une affirmation prononcée dans un podcast avec un fait indépendant vérifié.
+
+Recoupe les éléments financiers importants lorsque des sources publiques existent.
+
+---
+
+7. ANALYSE INDIVIDUELLE DES CONTENUS
+
+Pour chaque vidéo ou podcast suffisamment pertinent, crée une fiche structurée.
+
+Elle doit comprendre :
+
+Identification
+
+- Titre.
+- Intervenant.
+- Chaîne ou émission.
+- Date.
+- Durée.
+- URL.
+- Niveau d'accès au contenu.
+
+Analyse
+
+- Résumé analytique.
+- Informations entrepreneuriales importantes.
+- Modèle économique présenté.
+- Financement utilisé.
+- Difficultés évoquées.
+- Chiffres cités.
+- Limites de fiabilité.
+- Application possible à mon projet.
+
+Passages importants
+
+Conserve les horodatages lorsque disponibles.
+
+Pour chaque idée importante, indique précisément à quel moment elle est abordée.
+
+Fournis un lien horodaté lorsque la plateforme le permet.
+
+Ne crée pas de faux horodatages.
+
+Évaluation
+
+Note le contenu de 0 à 100 en fonction de sa pertinence pour mon projet.
+
+Une vidéo exceptionnelle doit être analysée plus profondément qu'un contenu généraliste.
+
+---
+
+8. INTELLIGENCE COLLECTIVE
+
+Les agents doivent partager leurs découvertes.
+
+Exemple :
+
+L'agent consacré aux châteaux identifie un propriétaire ayant financé la rénovation par des événements.
+
+L'agent événementiel analyse la rentabilité potentielle du modèle.
+
+L'agent financier recherche si la stratégie pourrait fonctionner avec peu d'apport.
+
+L'agent consacré au cheval imagine comment y intégrer une activité équestre.
+
+L'agent vérificateur identifie les affirmations insuffisamment étayées.
+
+L'objectif n'est pas de produire vingt résumés indépendants, mais de faire émerger des stratégies nouvelles grâce aux croisements.
+
+---
+
+9. DÉTECTION AUTOMATIQUE DES OPPORTUNITÉS
+
+Lorsqu'une interview mentionne une opportunité intéressante, approfondis-la.
+
+Exemples :
+
+- Un domaine acquis grâce à un crédit-vendeur.
+- Un château financé par un groupe d'investisseurs.
+- Un haras transformé en entreprise événementielle.
+- Un partenariat entre propriétaire foncier et exploitant.
+- Un modèle de vente de chevaux particulièrement rentable.
+- Un domaine disposant de revenus agricoles permettant de financer son entretien.
+- Une activité premium dont les marges pourraient être adaptées à un château.
+
+Recherche systématiquement si le montage est transposable en France aujourd'hui.
+
+Une découverte importante doit déclencher une nouvelle recherche, pas simplement être enregistrée.
+
+---
+
+10. OBJECTIFS QUANTITATIFS
+
+Vise initialement :
+
+- 200 contenus audiovisuels identifiés.
+- 100 contenus réellement analysés, totalement ou partiellement.
+- 30 interviews particulièrement intéressantes.
+- 20 modèles entrepreneuriaux documentés.
+- 15 mécanismes de financement à étudier.
+- 10 idées originales applicables au projet.
+- 5 stratégies approfondies.
+- 3 recommandations prioritaires.
+
+Ces objectifs sont indicatifs.
+
+Ne fabrique pas de résultats pour atteindre les quotas.
+
+Si les outils, le temps ou les quotas limitent le volume, privilégie les contenus les plus pertinents et indique le nombre réellement traité.
+
+---
+
+11. LIVRABLES
+
+Crée le dossier suivant :
+
+PODCASTS_CHATEAU_24H/
+
+Il doit contenir :
+
+01_BASE_DE_DONNEES
+
+- Catalogue des vidéos identifiées.
+- Catalogue des podcasts identifiés.
+- Liens directs.
+- Durées et dates.
+- Statut de traitement.
+- Classement de pertinence.
+
+02_ANALYSES
+
+- Fiches d'analyse détaillées.
+- Extraits pertinents et horodatages.
+- Témoignages entrepreneuriaux.
+- Synthèses de modèles économiques.
+
+03_CAS_REELS
+
+- Parcours d'acquéreurs de châteaux.
+- Entrepreneurs équestres.
+- Propriétaires de haras.
+- Investisseurs immobiliers.
+- Exemples de réussites.
+- Exemples d'échecs.
+
+04_IDEES_STRATEGIQUES
+
+- Idées d'acquisition.
+- Idées de financement.
+- Idées équestres.
+- Idées événementielles.
+- Modèles économiques hybrides.
+
+05_RECOMMANDATIONS
+
+- Les 20 découvertes les plus intéressantes.
+- Les 10 idées les plus innovantes.
+- Les 5 montages à approfondir.
+- Les 3 stratégies les plus prometteuses.
+
+06_SOURCES
+
+Un registre contenant les URLs, dates, auteurs, passages horodatés et niveaux de fiabilité.
+
+07_JOURNAL
+
+Un journal permanent enregistrant les agents actifs, les contenus traités, les erreurs, les découvertes et l'état d'avancement.
+
+---
+
+12. FORMAT DE RESTITUTION
+
+Je souhaite pouvoir consulter facilement les résultats.
+
+Crée idéalement une interface HTML locale contenant :
+
+- Un tableau de bord général.
+- La liste des podcasts et vidéos.
+- Des filtres par sujet.
+- Un classement par pertinence.
+- Les liens directs vers YouTube.
+- Les horodatages intéressants.
+- Les idées extraites.
+- Les modèles financiers ou commerciaux identifiés.
+- Les recommandations.
+
+Cette interface doit fonctionner sans service payant supplémentaire, dans la mesure du possible.
+
+Ne construis pas une interface sophistiquée avant d'avoir réellement identifié et analysé suffisamment de contenus.
+
+La recherche prime sur la présentation.
+
+---
+
+13. EXÉCUTION AUTONOME
+
+Commence par vérifier les fonctionnalités réellement disponibles pour :
+
+- La recherche Internet.
+- La consultation de YouTube.
+- L'accès aux transcriptions.
+- Le traitement audio.
+- La transcription locale.
+- Le travail multi-agents.
+- Les sauvegardes.
+- La reprise après interruption.
+
+Ne télécharge pas massivement des contenus sans vérifier les droits et restrictions applicables.
+
+Privilégie les transcriptions disponibles légalement et les interfaces autorisées.
+
+Si les podcasts ne sont pas accessibles directement, documente les limites et utilise les ressources textuelles disponibles sans inventer leur contenu.
+
+Organise les agents pour travailler en parallèle dans la limite raisonnable des ressources disponibles.
+
+Évite les analyses en double.
+
+Ne lance aucune dépense payante sans mon autorisation.
+
+Ne contourne pas les autorisations de sécurité de Claude Code.
+
+Sauvegarde régulièrement les travaux afin de pouvoir reprendre après une interruption.
+
+---
+
+14. CRITÈRE FINAL DE RÉUSSITE
+
+À la fin de la mission, je veux pouvoir répondre à cette question :
+
+« Après avoir étudié les expériences réelles de dizaines d'entrepreneurs, de propriétaires de châteaux, de professionnels du cheval et d'investisseurs, quelles sont les idées les plus intéressantes que je pourrais appliquer pour créer mon propre domaine équestre de prestige avec un apport personnel limité ? »
+
+Je ne veux pas une liste de banalités.
+
+Je veux des découvertes précises, des parcours inspirants, des méthodes concrètes, des montages intelligents et des preuves vérifiables.
+
+Pour chaque recommandation majeure, indique :
+
+1. Qui a utilisé cette stratégie.
+2. Dans quel contexte.
+3. Comment elle fonctionne.
+4. Pourquoi elle peut être intéressante.
+5. Ce qu'elle coûterait potentiellement.
+6. Les difficultés à prévoir.
+7. Comment l'adapter à mon projet.
+8. Les sources permettant de la vérifier.
+
+Démarre immédiatement en constituant l'équipe, en créant les fichiers nécessaires et en lançant les premières investigations.
+
+Ne demande pas de confirmation pour les recherches et analyses autorisées.
+
+Ta mission est de découvrir ce que je ne sais pas encore et de transformer ces découvertes en véritables pistes entrepreneuriales.
