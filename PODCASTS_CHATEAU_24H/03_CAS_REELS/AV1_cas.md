@@ -115,7 +115,7 @@ Sources : AV1-026 à AV1-029 ; S-13, S-14.
 
 ## Cas 5 — Château de Vaux (Fouchères, Aube) : Édouard Guyot, et la « méthode Guyot »
 
-Sources : AV1-030 à AV1-042 ; S-15 à S-17.
+Sources : AV1-030 à AV1-042 ; S-15 à S-17, S-41.
 
 - **Situation initiale :** Édouard Guyot achète en **2015, à 22 ans**, un château du XVIIIe siècle abandonné depuis 1937, avec **60 ha de parc** (French Heritage Society, S-15) [VÉRIFIÉ]. Il est le fils de Jacques et Catherine Guyot, déjà restaurateurs de châteaux. Il appartient donc à une **famille dotée du savoir-faire**, et probablement d'actifs.
 - **Prix :** inconnu.
@@ -126,6 +126,7 @@ Sources : AV1-030 à AV1-042 ; S-15 à S-17.
   - **1982 :** création d'un **spectacle historique avec cavaliers** qui finance la restauration des toitures.
   - **Achats-reventes :** Ancy-le-Franc (1981, revendu en 1986), Selles-sur-Cher (acheté et revendu en 2012), abbaye de la Réau (2016-2019).
   - **Génération suivante :** Lancelot (3 châteaux à 25 ans ; gérant du château de Beaumesnil ; 8 châteaux « en restauration et en gérance » pour la famille), Alice (Bridoire), Louis (Tiregand, 2022).
+  - **Structure commune (S-41, fiche de cas de la chaire d'entreprise familiale de HEC Montréal, 13/01/2023) :** en 2014, à l'initiative de Lancelot, la famille regroupe ses projets individuels dans une entreprise familiale, **Tous au Château**. À cette date, les parents et leurs quatre enfants possèdent **8 châteaux, tous gérés par cette société** : Beaumesnil, l'Hôtel-Dieu de Tonnerre, La Ferté-Saint-Aubin et Saint-Brisson-sur-Loire (Lancelot), Bridoire (Alice), Vaux (Édouard), Tiregand (Louis) et Marzac (Catherine et Jacques). Saint-Fargeau reste à Michel Guyot. La fiche attribue à la **colonie de vacances pour enfants** et au **spectacle historique** de Saint-Fargeau « plus d'un million de visiteurs au fil des années » [AFFIRMÉ, non recoupé]. Elle présente Lancelot comme propriétaire de Beaumesnil, alors que la vidéo AV1-038 le dit gérant : le statut exact (propriété ou gérance) reste à vérifier.
 - **Difficultés :** Lancelot évoque les « grandes difficultés financières » de ses parents et de son oncle (AV1-037) [AFFIRMÉ, non chiffrées].
 - **À retenir :** la séquence **acheter une ruine, ouvrir tout de suite, monétiser les dépendances (événements), puis un spectacle (cavaliers), puis restaurer avec les recettes** est la plus ancienne méthode documentée d'acquéreurs de châteaux sans grande fortune. Elle a aussi produit de l'endettement familial. La **gérance** de châteaux appartenant à d'autres (fondations, propriétaires) est la variante « sans achat ».
 
@@ -251,6 +252,7 @@ Sources : AV1-128, AV1-129 ; S-25.
 - **Château du Villard** (AV1-050, RSS) : en ruine et sans acquéreur depuis 25 ans, acheté en 2020, ouvert aux groupes sur rendez-vous.
 - **Manoir de Bel Ebat** (AV1-126) : ingénieure qui quitte Renault après 20 ans et achète début 2020 un château de 1735 en Brière pour une maison d'hôtes.
 - **CNBC Make It** (AV1-081, repéré) : couple de 64 et 59 ans qui vend son appartement de San Francisco 1,45 M$ et dépense 1,1 M$ pour l'achat et les travaux en Aveyron.
+- **Château de Détilly** (près de Chinon ; S-42, presse écrite, 10/06/2022, hors catalogue audiovisuel) : un couple qui vivait depuis plus de 30 ans en banlieue parisienne (un ancien enseignant et un ancien DRH) s'installe en juillet 2020 dans un château de 700 m² avec 2,6 ha de parc, déjà en bon état et autrefois loué pour des mariages. Il ouvre des chambres d'hôtes peu après. Les propriétaires jugent impossible de couvrir l'entretien et les coûts de fonctionnement avec les seules chambres d'hôtes, et prévoient des résidences d'écriture et des dégustations de vin [AFFIRMÉ ; prix d'achat et chiffres non publiés].
 
 ## Enseignements transversaux
 

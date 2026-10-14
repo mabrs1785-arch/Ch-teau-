@@ -102,7 +102,7 @@ Chaque idée donne qui l'a pratiquée, le contexte, le fonctionnement, l'intér�
 ## Idée 5 — Faire d'une animation équestre vivante le produit d'appel qui finance la restauration (méthodes Saint-Fargeau et Milandes)
 
 - **Qui :**
-  - **Michel Guyot**, « passionné de cheval », achète Saint-Fargeau en 1979 avec son frère et crée en 1982 un **spectacle historique avec cavaliers**. Ce spectacle « contribue à financer la restauration », notamment des toitures (Wikipédia). La mission 1 a relevé 600 acteurs et 60 cavaliers. France 3 parlait en 2017 d'un spectacle « renouvelé chaque année depuis 37 ans ».
+  - **Michel Guyot**, « passionné de cheval », achète Saint-Fargeau en 1979 avec son frère et crée en 1982 un **spectacle historique avec cavaliers**. Ce spectacle « contribue à financer la restauration », notamment des toitures (Wikipédia). La mission 1 a relevé 600 acteurs et 60 cavaliers. France 3 parlait en 2017 d'un spectacle « renouvelé chaque année depuis 37 ans ». La chaire d'entreprise familiale de HEC Montréal attribue à la colonie de vacances pour enfants et au spectacle historique « plus d'un million de visiteurs au fil des années » (S-41) [AFFIRMÉ, non recoupé].
   - **Les Milandes :** un **spectacle de rapaces** (gradins de 400 à 500 places) sert de « carotte » ; billet global à 15 € ; fréquentation passée de 45 000 à 193 000 visiteurs entre 2001 et 2022 [AFFIRMÉ, transcription].
 - **Fonctionnement :** un spectacle vivant et régulier attire un public familial. Le billet global fait entrer ce public dans le monument, et les recettes vont aux travaux (« j'ai pu dépenser l'argent que je gagne des visiteurs pour restaurer »).
 - **Intérêt :** il **met le cheval au centre du modèle économique**, au lieu d'en faire un centre de coûts. C'est la seule source de revenus de cette étude qui soit à la fois équestre et patrimoniale.
@@ -113,7 +113,7 @@ Chaque idée donne qui l'a pratiquée, le contexte, le fonctionnement, l'intér�
   - localisation touristique nécessaire (vallée de la Dordogne pour les Milandes) ;
   - la mission 1 a montré que les grands concours équestres de château perdent souvent de l'argent : le spectacle et la visite sont un autre modèle.
 - **Adaptation au projet :** un spectacle équestre historique ou de dressage, en saison, et des présentations quotidiennes ; une association de bénévoles cavaliers ; un billet combiné visite, spectacle et écuries ; un partenariat avec l'office de tourisme.
-- **Sources :** AV1-041, AV1-042, AV1-100 (transcription), AV1-137 (VMF « Patrimoine et sport équestre ») ; S-16, S-20, S-33.
+- **Sources :** AV1-041, AV1-042, AV1-100 (transcription), AV1-137 (VMF « Patrimoine et sport équestre ») ; S-16, S-20, S-33, S-41.
 
 ## Idée 6 — Ouvrir tout de suite et monétiser les dépendances avant de restaurer le logis (séquence Vaux)
 
@@ -168,14 +168,15 @@ Chaque idée donne qui l'a pratiquée, le contexte, le fonctionnement, l'intér�
 - **Qui :**
   - **Château Route** (Sainte-Sévère) : SAS à capital variable, 10 000 € souscrits, plafond de 2 000 000 € [VÉRIFIÉ] ;
   - **Milandes** : société d'exploitation SARL JOSEPH'IN LES MILANDES (NAF 91.03Z) distincte de « Les Jardins des Milandes » (NAF 68.20B, location de biens) [VÉRIFIÉ ; le lien de structure est déduit] ;
-  - **Castel Naustra** : holding avec une société par château [VÉRIFIÉ].
+  - **Castel Naustra** : holding avec une société par château [VÉRIFIÉ] ;
+  - **famille Guyot** : depuis 2014, une entreprise familiale commune, Tous au Château, gère les 8 châteaux détenus par les parents et leurs quatre enfants (S-41, HEC Montréal, 2023) [AFFIRMÉ ; forme juridique non vérifiée].
 - **Intérêt :**
   - faire entrer des investisseurs progressivement ;
   - protéger le patrimoine de vie (propriété) des risques d'exploitation ;
   - isoler chaque site.
 - **Difficultés :** coûts juridiques et comptables. Lisa Clapisson (AV1-170) déconseille la micro-entreprise pour ces activités et insiste sur la fiscalité de la plus-value et sur la stratégie de sortie [AFFIRMÉ].
 - **Adaptation au projet :** une SCI ou une société foncière pour le château et les terres ; une SAS d'exploitation (écuries, événements, hébergements) à capital variable pour les co-investisseurs ; un bail entre les deux. À faire valider par la cellule juridique et fiscale.
-- **Sources :** AV1-055, AV1-100, AV1-097, AV1-170 ; S-18, S-20, S-23.
+- **Sources :** AV1-055, AV1-100, AV1-097, AV1-170 ; S-18, S-20, S-23, S-41.
 
 ## Idée 11 — Arbitrer en connaissance de cause sur la protection monument historique
 
@@ -228,5 +229,6 @@ Chaque idée donne qui l'a pratiquée, le contexte, le fonctionnement, l'intér�
 5. **Prévoir la rémunération des fondateurs.** Le couple du Conquil est resté 4 ans sans se payer, et le Covid a failli tout emporter.
 6. **Dimensionner les coûts fixes avant le nombre de sites.** Les Kasteliades réalisent 0,70 M€ de CA pour une perte d'exploitation de 216 k€, avec 4,57 M€ de dettes.
 7. **Anticiper la charge mentale.** Après 5 ans, Lionel et Claire disent qu'ils ne rachèteraient pas leur château.
+8. **Ne pas compter sur la seule chambre d'hôtes.** Les propriétaires du château de Détilly, installés en 2020, jugent impossible de couvrir l'entretien et les coûts de fonctionnement d'un grand bâtiment avec les seules chambres d'hôtes ; ils prévoient des résidences d'écriture et des dégustations de vin (S-42, presse écrite) [AFFIRMÉ].
 
-- **Sources :** AV1-003, AV1-100, AV1-159, AV1-022, AV1-101, AV1-165, AV1-158.
+- **Sources :** AV1-003, AV1-100, AV1-159, AV1-022, AV1-101, AV1-165, AV1-158 ; S-42.
