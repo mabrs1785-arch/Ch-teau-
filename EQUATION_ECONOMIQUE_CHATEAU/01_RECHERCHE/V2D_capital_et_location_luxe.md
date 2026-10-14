@@ -105,3 +105,55 @@ Ce que les règles impliquent (ESTIMATION, à valider par un notaire et un fisca
 4. **Urbanisme** : changement de destination de bâtiments agricoles ou d'écuries en logements, avis de l'architecte des Bâtiments de France, PLU. Le cas de Grignon montre qu'une commune peut s'y opposer [V2D-17].
 5. **Capital libéré pour le propriétaire** : le prix payé par l'opérateur pour le bâtiment existant est INCONNU (§ 1.3, § 1.6). On sait seulement que la part « foncier » payée par l'investisseur final, marge de l'opérateur comprise, représente 13 à 38 % de son prix total [V2D-05], [V2D-09], [V2D-13]. Le propriétaire touche moins que cette part foncier.
 
+## Q2. Loi Malraux et label de la Fondation du patrimoine : utiles à ce montage ?
+
+- Malraux : la réduction d'impôt peut atteindre « 30% du montant des travaux engagés sur un bien éligible », pour des « bâtiments anciens situés dans un site patrimonial remarquable (SPR) » [V2D-12] (PAGE LUE, source d'opérateur). Un domaine rural de plus de 50 ha est rarement situé dans un SPR (ESTIMATION). Dispositif **marginal pour ce projet**. Ses autres règles (plafond, engagement de location) n'ont pas été vérifiées ici, faute d'utilité.
+- Label de la Fondation du patrimoine : traité par R3 (§ 1.4). Point nouveau : les immeubles seulement labellisés sont **exclus** de l'exception « 75 % d'habitation » pour les divisions [V2D-16 § 530]. Un château non protégé (scénario S1) ne peut donc pas être divisé en lots défiscalisés sous ce régime.
+
+## Q3. Démembrement de propriété : vendre la nue-propriété, ou céder un usufruit temporaire
+
+### 3.1 Barème fiscal (article 669 du CGI)
+
+Doctrine BOFiP BOI-ENR-DMTG-10-40-10-50, en vigueur depuis le 23/12/2013 [V2D-19] (PAGE LUE), § 30 :
+
+| Âge de l'usufruitier (révolu) | Usufruit | Nue-propriété |
+|---|---|---|
+| moins de 21 ans | 90 % | 10 % |
+| moins de 31 ans | **80 %** | **20 %** |
+| moins de 41 ans | 70 % | 30 % |
+| moins de 51 ans | 60 % | 40 % |
+| moins de 61 ans | 50 % | 50 % |
+| moins de 71 ans | 40 % | 60 % |
+| moins de 81 ans | 30 % | 70 % |
+| moins de 91 ans | 20 % | 80 % |
+| 91 ans et plus | 10 % | 90 % |
+
+- Usufruit à durée fixe (§ 70) : « 23 % de la valeur de la propriété entière pour chaque période de dix ans », « sans fraction et sans égard à l'âge de l'usufruitier ». Un usufruit accordé à une personne morale ne peut dépasser 30 ans, soit 69 % au plus (§ 80).
+- Portée : le barème sert « pour la liquidation des droits d'enregistrement et de la taxe de publicité foncière » [V2D-19]. **Ce n'est pas un prix de marché.** Dans une vente, le prix de la nue-propriété se négocie ; aucun prix de marché pour des châteaux n'a été trouvé (voir 3.4).
+
+### 3.2 Application au propriétaire de 26 ans (ESTIMATION, calcul sur le barème)
+
+**Option A — vendre la nue-propriété et garder l'usufruit à vie.**
+- Valeur fiscale de la nue-propriété : **20 %** de la pleine propriété.
+- L'investisseur attendrait environ 50 à 60 ans pour récupérer le bien, selon l'espérance de vie (HYPOTHÈSE). Un investisseur rationnel paierait sans doute **moins** que 20 %, car il supporterait en plus le risque d'entretien et l'absence de revenu (ESTIMATION).
+- Exemple : pour un château évalué 5 M€, environ 1 M€ au mieux, contre une perte définitive de la propriété pour les héritiers.
+- IFI : en cas de vente à une personne qui n'est ni héritier présomptif ni donataire, l'usufruitier n'est plus imposé sur la pleine propriété. Les deux parties sont imposées selon l'article 669 (§ 160-170) [V2D-20] (PAGE LUE). Le propriétaire de 26 ans resterait imposé sur **80 %** de la valeur. **Gain d'IFI faible.**
+
+**Option B — garder la propriété et céder un usufruit temporaire** d'une partie du domaine (par exemple les communs, un pavillon, une aile) à un exploitant ou à un investisseur pendant 10 à 30 ans.
+- Valeur fiscale : 23 % par période de dix ans (§ 70) [V2D-19]. Exemples : 23 % pour 10 ans, 46 % pour 11 à 20 ans, 69 % pour 21 à 30 ans.
+- À la fin, la pleine propriété revient au propriétaire, sans indemnité. C'est le seul sens du démembrement **compatible avec « garder la propriété »**.
+- **Fiscalité lourde** : le prix de la première cession d'un usufruit temporaire, réalisée depuis le 14 novembre 2012, est imposé comme un **revenu** de l'année d'encaissement, dans la catégorie des revenus que produit le bien : revenus fonciers pour un bien loué nu, BIC pour un bien meublé, revenus fonciers par défaut pour un immeuble (§ 1, § 130-140, § 220) [V2D-21] (PAGE LUE). S'y ajoutent les prélèvements sociaux (§ 230) et la contribution sur les hauts revenus (§ 240).
+- Conséquence (ESTIMATION) : pour une personne physique, l'essentiel du capital libéré serait taxé au barème de l'impôt sur le revenu l'année de la vente. Un capital de 1 M€ pourrait ainsi perdre près de la moitié de sa valeur en impôts. Cette fraction n'a pas été calculée finement ; le calcul est à confier à un fiscaliste.
+- Le même texte exclut de cette règle les cédants soumis à l'IS (§ 20). Une société à l'IS qui céderait un usufruit temporaire relèverait d'autres règles, non vérifiées ici : INCONNU.
+
+### 3.3 Qui paie le gros entretien ?
+
+Rappel de R8 [R8-44] : « Les grosses réparations sont à la charge du nu-propriétaire sauf si elles résultent du manque d'entretien », et pour un immeuble elles « ne concernent que le gros-œuvre ».
+- **Option A** : le gros œuvre passerait à l'investisseur nu-propriétaire. C'est séduisant pour un château, mais l'investisseur l'intégrerait dans son prix (ESTIMATION).
+- **Option B** : le propriétaire, qui garde la nue-propriété, reste chargé du gros œuvre des parties démembrées.
+- Je n'ai pas vérifié si le nu-propriétaire peut être **contraint** d'exécuter les grosses réparations, ni comment une convention peut répartir autrement les charges. À VALIDER par un notaire.
+
+### 3.4 Le marché existe-t-il pour des châteaux ?
+
+Voir 3.5 (résultat de la recherche ciblée).
+

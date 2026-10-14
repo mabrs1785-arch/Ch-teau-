@@ -89,6 +89,15 @@ LIGNES = [
      "{S}_surf_chateau*tf_chateau_m2{C}+{S}_surf_dep*tf_dep_m2{C}", "H. Impôts et taxes", 0.0, "F"),
     ("taxe_fonciere_non_bati", "Taxe foncière sur les propriétés non bâties",
      "({S}_ha_prairies+{S}_ha_bois+{S}_ha_parc+{S}_ha_jardins)*tfnb_ha{C}", "H. Impôts et taxes", 0.0, "F"),
+    ("ifi", "IFI du propriétaire au titre du domaine (barème 2026, abattement résidence principale)",
+     "IF({S}_prix_achat*(1-ifi_abattement_rp{C})>1300000,"
+     "0.005*MAX(0,MIN({S}_prix_achat*(1-ifi_abattement_rp{C}),1300000)-800000)"
+     "+0.007*MAX(0,MIN({S}_prix_achat*(1-ifi_abattement_rp{C}),2570000)-1300000)"
+     "+0.01*MAX(0,MIN({S}_prix_achat*(1-ifi_abattement_rp{C}),5000000)-2570000)"
+     "+0.0125*MAX(0,MIN({S}_prix_achat*(1-ifi_abattement_rp{C}),10000000)-5000000)"
+     "+0.015*MAX(0,{S}_prix_achat*(1-ifi_abattement_rp{C})-10000000)"
+     "-IF({S}_prix_achat*(1-ifi_abattement_rp{C})<1400000,17500-0.0125*{S}_prix_achat*(1-ifi_abattement_rp{C}),0),0)",
+     "H. Impôts et taxes", 0.0, "F"),
     # --- I. Administration -----------------------------------------------------
     ("admin", "Administration : expert-comptable, juridique, banque, informatique, télécoms",
      "{S}_admin{C}", "I. Administration", 0.20, "F"),
@@ -104,7 +113,7 @@ LIGNES = [
     ("st_fonctionnement", "Sous-total des charges de fonctionnement",
      "[bati_courant]+[securite]+[dont_personnel_calc]+[jardins_reguliers]+[parc]+[prairies]"
      "+[bois]+[equip_entretien]+[chevaux]+[chauffage]+[hors_gel]+[electricite]+[eau]"
-     "+[assurance_bati]+[assurance_autres]+[taxe_fonciere_bati]+[taxe_fonciere_non_bati]+[admin]"
+     "+[assurance_bati]+[assurance_autres]+[taxe_fonciere_bati]+[taxe_fonciere_non_bati]+[ifi]+[admin]"
      "+[honoraires_patrimoine]",
      "Totaux", 0.0, "S"),
     ("st_provisions", "Sous-total des provisions (gros entretien, aléas de chantier, renouvellements)",

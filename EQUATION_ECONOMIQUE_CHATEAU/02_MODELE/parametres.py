@@ -111,6 +111,10 @@ p("tf_chateau_m2", "Taxe foncière bâtie du château, par m² de plancher", 6, 
   unite="€/m²/an", statut="HYPOTHÈSE", sources="R1-30; R1-31; R1-32", groupe=G,
   note="Un seul repère : 2 652 € pour 512 m² habitables (≈ 5,2 €/m²). La taxe dépend de la catégorie "
        "cadastrale fixée en 1970 et du taux communal, pas de la surface.")
+p("ifi_abattement_rp", "IFI : abattement sur la résidence principale", 0.30, fav=0.30, dfv=0.0, unite="%",
+  statut="SOURCÉ", sources="R3-01; R3-15", groupe=G,
+  note="Barème 2026 : seuil 1,3 M€, taux de 0,5 % à 1,5 % ; aucune exonération pour les MH (amendement rejeté). "
+       "Défavorable : château non résidence principale. La valeur retenue est le prix d'achat du scénario (valeur vénale).")
 p("tf_dep_m2", "Taxe foncière bâtie des dépendances, par m²", 2, fav=1, dfv=3, unite="€/m²/an",
   statut="HYPOTHÈSE", sources="R1", groupe=G)
 p("S1_admin", "S1 — administration (comptabilité, banque, informatique, télécoms)", 7000, fav=4000,
