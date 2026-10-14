@@ -78,6 +78,7 @@ class Sheet:
     def line(self, key, label, fn, fmt=EUR, total=True, bold=False):
         """fn(i, col) -> formule (sans '=') pour l'année i (1..10) en colonne col."""
         r = self.row
+        self.ref[key] = r
         self.put(r, 1, label, font=BOLD if bold else None)
         for i, c in enumerate(YC):
             self.put(r, 3 + i, "=" + fn(i + 1, c), fmt=fmt, font=BOLD if bold else None)
@@ -133,7 +134,8 @@ def build_scenario(wb, name, p):
     s.section("2. Financement")
     for k, lab, unit in [
         ("apport_fondateur", "Apport du fondateur (année 1)", "€"),
-        ("fp_invest", "Fonds propres investisseurs (année d'acquisition)", "€"),
+        ("fp_invest", "Fonds propres apportés à l'acquisition (investisseurs ou holding)", "€"),
+        ("fp_fondateur", "Ces fonds propres viennent-ils de la holding du fondateur ? (1/0)", ""),
         ("subventions", "Subventions (non acquises : 0 par défaut)", "€"),
         ("dette", "Dette bancaire (année d'acquisition)", "€"),
         ("taux", "Taux de la dette bancaire", "%"),
@@ -285,6 +287,7 @@ def build_scenario(wb, name, p):
     s.row += 1
     s.line("taux_eff", "Taux bancaire effectif", lambda i, c: f"{I['taux']}+{I['taux_add']}", fmt=PCT, total=False)
     s.line("k", "Rang de l'année d'emprunt", lambda i, c: f"MAX(0,{y(c)}-{I['annee_acq']}+1)", fmt='0', total=False)
+    s.ref["d_fin"] = s.row + 3  # référence avant : d_deb, d_int, d_amo, d_fin sont consécutives
     s.line("d_deb", "Dette bancaire — capital début",
            lambda i, c: (f"IF({s.R('k', c)}=1,{I['dette']},0)" if i == 1 else
                          f"IF({s.R('k', c)}=1,{I['dette']},{s.R('d_fin', s.prev(c))})"), total=False)
@@ -293,6 +296,7 @@ def build_scenario(wb, name, p):
            lambda i, c: f"IF(OR({s.R('k', c)}=0,{s.R('k', c)}<={I['differe']},{s.R('d_deb', c)}<=0),0,"
                         f"MIN({s.R('d_deb', c)},PMT({s.R('taux_eff', c)},{I['duree']}-{I['differe']},-{I['dette']})-{s.R('d_int', c)}))")
     s.line("d_fin", "Dette bancaire — capital fin", lambda i, c: f"{s.R('d_deb', c)}-{s.R('d_amo', c)}", total=False)
+    s.ref["cv_fin"] = s.row + 3
     s.line("cv_deb", "Crédit-vendeur — capital début",
            lambda i, c: (f"IF({s.R('k', c)}=1,{I['cv']},0)" if i == 1 else
                          f"IF({s.R('k', c)}=1,{I['cv']},{s.R('cv_fin', s.prev(c))})"), total=False)
@@ -357,10 +361,10 @@ def build_scenario(wb, name, p):
     s.line("v_eq", "Valeur des fonds propres (actif + trésorerie − dettes)",
            lambda i, c: f"{s.R('v_actif', c)}+{s.R('treso', c)}-{s.R('dette_tot', c)}", total=False)
     s.line("flux_inv", "Flux des investisseurs (entrée an d'acq., sortie an 10)",
-           lambda i, c: f"-IF({y(c)}={I['annee_acq']},{I['fp_invest']}*(1-{I['retrait_inv']}),0)"
+           lambda i, c: f"-IF({y(c)}={I['annee_acq']},{I['fp_invest']}*(1-{I['retrait_inv']})*(1-{I['fp_fondateur']}),0)"
                         + (f"+MAX(0,{s.R('v_eq', c)})*(1-{I['part_fondateur']})" if i == N else ""))
-    s.line("flux_fond", "Flux du fondateur (apport an 1, sortie théorique an 10)",
-           lambda i, c: f"-IF({y(c)}=1,{I['apport_fondateur']},0)"
+    s.line("flux_fond", "Flux du fondateur et de sa holding (apports, sortie théorique an 10)",
+           lambda i, c: f"-IF({y(c)}=1,{I['apport_fondateur']},0)-IF({y(c)}={I['annee_acq']},{I['fp_invest']}*(1-{I['retrait_inv']})*{I['fp_fondateur']},0)"
                         + (f"+MAX(0,{s.R('v_eq', c)})*{I['part_fondateur']}" if i == N else ""))
 
     # Indicateurs clés
@@ -380,13 +384,19 @@ def build_scenario(wb, name, p):
         ("k_fcfneg", "Nb d'années à cash-flow libre d'exploitation négatif (an 4–10)",
          f"=COUNTIF(F{I['fcf_exp']}:L{I['fcf_exp']},\"<0\")", '0'),
         ("k_tri_inv", "TRI investisseurs (sortie théorique an 10)",
-         f"=IFERROR(IRR(C{I['flux_inv']}:L{I['flux_inv']}),\"non calculable\")", PCT),
+         f"=IFERROR(IRR(C{I['flux_inv']}:L{I['flux_inv']},-0.05),\"perte quasi totale (TRI non calculable)\")", PCT),
         ("k_tri_fond", "TRI fondateur (sortie théorique an 10)",
-         f"=IFERROR(IRR(C{I['flux_fond']}:L{I['flux_fond']}),\"non calculable\")", PCT),
+         f"=IFERROR(IRR(C{I['flux_fond']}:L{I['flux_fond']},-0.05),\"perte quasi totale (TRI non calculable)\")", PCT),
+        ("k_dette_sout", "Dette bancaire soutenable estimée (DSCR 1,2 sur (EBITDA − gros entretien) an 6, taux et durée du scénario)",
+         f"=MAX(0,PV({I['taux']},{I['duree']},-(H{I['ebitda']}-H{I['ge']})/1.2))", EUR),
+        ("k_fp_nec", "Fonds propres nécessaires (emplois + réserve − dette soutenable)",
+         f"={I['prix']}*(1+{I['frais_acq_pct']})+SUM(C{I['capex_init']}:L{I['capex_init']})+{I['treso_min']}-B{{DS}}", EUR),
         ("k_part", "Part du capital du fondateur", f"={I['part_fondateur']}", PCT),
         ("k_votes", "Droits de vote du fondateur", f"={I['votes_fondateur']}", PCT),
     ]
     for key, lab, f, fmt in kpis:
+        if "{DS}" in f:
+            f = f.replace("B{DS}", I["k_dette_sout"])
         s.put(s.row, 1, lab)
         s.put(s.row, 2, f, fmt=fmt, font=BOLD)
         I[key] = f"$B${s.row}"
@@ -422,7 +432,8 @@ def build():
             ("k_ca5", "CA an 5", EUR), ("k_ebitda5", "EBITDA an 5", EUR), ("k_ebitda10", "EBITDA an 10", EUR),
             ("k_equ5", "Part équestre CA an 5", PCT), ("k_tmin", "Trésorerie min.", EUR),
             ("k_t10", "Trésorerie an 10", EUR), ("k_dscr", "DSCR min. an 4–10", '0.00'),
-            ("k_fcfneg", "Années FCF < 0", '0'), ("k_tri_inv", "TRI investisseurs", PCT),
+            ("k_fcfneg", "Années FCF < 0", '0'), ("k_dette_sout", "Dette soutenable", EUR),
+            ("k_fp_nec", "Fonds propres nécessaires", EUR), ("k_tri_inv", "TRI investisseurs", PCT),
             ("k_tri_fond", "TRI fondateur", PCT), ("k_part", "Capital fondateur", PCT),
             ("k_votes", "Votes fondateur", PCT), ("k_verdict", "Verdict", None)]
     comp.cell(row=1, column=1, value="Comparaison des scénarios et stress tests (valeurs liées aux feuilles)").font = Font(bold=True, size=13)
