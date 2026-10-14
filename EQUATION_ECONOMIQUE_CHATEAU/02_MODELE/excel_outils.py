@@ -146,7 +146,7 @@ def ecrire_tableau_gabarits(wb, nom_feuille, titre, lignes, colonnes, note=None)
             c = ws.cell(row=r, column=j, value=vers_excel(gab, scen, cas, adr))
             c.font = F_NORMAL
             c.border = BORD
-            c.number_format = FMT_PCT if lid.startswith("part_") else FMT_EUR
+            c.number_format = FMT_PCT if (lid.startswith("part_") or "pct" in lid or lid.startswith("taux_")) else FMT_EUR
             if lid.startswith(("total", "st_")):
                 c.fill = FOND_TOTAL
                 c.font = F_GRAS

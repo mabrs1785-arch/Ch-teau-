@@ -73,3 +73,238 @@ Source principale : BOFiP BOI-ENR-DMTG-10-20-30-60, version en vigueur depuis le
 - Effet chiffré : l'exonération porte sur 100 % de la valeur des biens couverts. ESTIMATION à partir de [R3-13] : pour un château transmis en ligne directe, l'économie est égale aux droits qui auraient été dus (barème progressif jusqu'à 45 %, non vérifié ici). Le coût est perpétuel : ouverture au public 50 jours/an et maintien du mobilier, ce qui pèse sur la tranquillité de la résidence privée.
 - Usage commercial : la page ne traite pas des immeubles exploités commercialement (hôtel, réception). INCONNU ; à vérifier avec un notaire.
 
+## Q3. IFI
+
+- Seuil : assujettissement si la « valeur nette taxable » du patrimoine immobilier non professionnel est « supérieure à 1 300 000 € » au 1er janvier 2026 [R3-01] (PAGE LUE, page vérifiée le 06/03/2026).
+- Barème 2026 [R3-15] (PAGE LUE) : 0 % jusqu'à 800 000 € ; 0,50 % de 800 001 à 1 300 000 € ; 0,70 % de 1 300 001 à 2 570 000 € ; 1 % de 2 570 001 à 5 000 000 € ; 1,25 % de 5 000 001 à 10 000 000 € ; 1,50 % au-delà. Décote entre 1,3 et 1,4 M€ : « 17 500 € - 1,25 % de la valeur nette taxable du patrimoine ». Réduction pour dons : 75 % des dons, plafond 50 000 €.
+- **Monuments historiques : pas d'exonération.** La liste des biens à déclarer comprend les « Bâtiments classés monument historique » [R3-01] (PAGE LUE). Un amendement PLF 2026 d'exonération des MH ouverts au public a été rejeté [R3-12] (EXTRAIT).
+- Résidence principale : abattement de 30 % sur sa valeur [R3-01] (PAGE LUE).
+- Biens professionnels : « des exonérations partielles ou totales sont prévues pour les biens utilisés pour une activité professionnelle, sous conditions » ; « L'immobilier affecté à l'activité opérationnelle d'une société est exclu de l'assiette de l'IFI » [R3-01] (PAGE LUE). Détention indirecte : immobilier non pris en compte si le contribuable détient « moins de 10 % du capital » (sous d'autres conditions) [R3-01].
+- Bois et forêts : exonération sous conditions lorsqu'ils sont « sous engagement d'exploitation ou à usage professionnel » ; biens ruraux : exonération partielle ou totale s'ils sont loués à long terme ou à usage professionnel [R3-01] (PAGE LUE). Les quotités exactes (3/4 de la valeur ; plafond pour les biens ruraux loués) ne figurent pas sur la page lue : INCONNU ici, à vérifier dans le BOFiP (série BOI-PAT-IFI-20-20) ou CGI art. 975-976.
+- Château partiellement loué à une société d'exploitation : voir 3.1 ci-dessous.
+
+### 3.1 Exemple chiffré (ESTIMATION, barème [R3-15])
+
+Hypothèse : patrimoine immobilier taxable net = 5 M€ (château non résidence principale, pas de dette). IFI = 0,5 % × 500 000 + 0,7 % × 1 270 000 + 1 % × 2 430 000 = 2 500 + 8 890 + 24 300 = **35 690 €/an**. Si le château est la résidence principale (abattement 30 %, base 3,5 M€) : 2 500 + 8 890 + 1 % × 930 000 = **20 690 €/an**. Pour 10 M€ (S3, hors RP) : 35 690 + 1,25 % × 5 000 000 = **98 190 €/an**. Ces montants sont payés sur la fortune personnelle du propriétaire et doivent être couverts par le système économique s'il doit être autonome. ESTIMATION ; valeurs vénales = HYPOTHÈSES.
+
+### 3.2 Château partiellement affecté à une société d'exploitation
+
+- Règle lue : l'immobilier affecté à l'activité opérationnelle d'une société est exclu de l'assiette [R3-01]. Pour un immeuble détenu en direct et loué à la société d'exploitation du propriétaire, la qualification de bien professionnel dépend des conditions de l'article 975 CGI (fonctions de direction, activité principale, part détenue). INCONNU dans le détail ; À VALIDER par un fiscaliste. Hypothèse prudente pour le modèle : la partie louée reste taxable à l'IFI si le propriétaire n'exerce pas dans la société son activité professionnelle principale.
+
+## Q5 (partie 1). Loi de finances 2026, PFU, taxe sur les holdings
+
+### 5.1 Loi de finances pour 2026
+
+- Loi n° 2026-103 du 19 février 2026, publiée au JO du 20 février 2026, après une loi spéciale et l'engagement de la responsabilité du gouvernement ; décision du Conseil constitutionnel n° 2026-901 DC du 19 février 2026 [R3-18] (PAGE LUE, PDF de cabinet d'avocats, texte extrait). À confirmer sur Légifrance (bloqué ici).
+- Mesures non adoptées citées : abattement forfaitaire des retraites, accélération de la suppression de la CVAE, ajustement de la franchise en base de TVA, « qui est finalement maintenu » [R3-18].
+- Autres mesures citées utiles au projet : prorogation de la « contribution différentielle sur les hauts revenus » (taux effectif minimal de 20 % au-delà de 250 000 € de revenu fiscal de référence ajusté pour un célibataire, 500 000 € pour un couple) jusqu'au retour du déficit public à 3 % du PIB (art. 2) ; barème de l'IR revalorisé de 0,9 % (art. 4) ; Pacte Dutreil : les « biens somptuaires » de la société transmise ne sont plus exonérés sauf affectation exclusive à une activité opérationnelle, engagement individuel porté « de 4 à 6 ans » pour les transmissions dès le 21 février 2026 (art. 8) ; nouveau « statut du bailleur privé » (amortissement de 3,5 % ou 3 % sur 80 % du prix, location nue en résidence principale, acquisitions du 21/02/2026 au 31/12/2028) (art. 47) ; « réduction d'impôt en cas de participation à la restauration du château de Chambord » (art. 30) ; « ajustements des dispositifs de soutien au secteur agricole » (art. 31 à 36, contenu non détaillé) [R3-18] (PAGE LUE).
+- Rien dans [R3-18] ni [R3-19] sur le régime MH, l'IFI (hors articulation avec la taxe holdings), la TVA équestre ou les meublés de tourisme. Le projet d'« impôt sur la fortune improductive » discuté à l'automne 2025 n'apparaît pas dans ces synthèses de la loi définitive : ESTIMATION « non adopté », À VÉRIFIER.
+
+### 5.2 Taxe sur les actifs non professionnels des holdings patrimoniales (LF 2026, art. 7 ; CGI art. 235 ter C selon des extraits de recherche)
+
+Sources : [R3-18] et [R3-19] (PAGE LUE). Le numéro d'article du CGI (235 ter C) n'apparaît que dans des résultats de recherche (EXTRAIT).
+- Taux : « 20 % » (contre 2 % dans le projet initial) [R3-18].
+- Sociétés visées : holdings à l'IS (de plein droit ou sur option) avec siège en France, ou holdings étrangères dont un associé personne physique est domicilié en France. Trois conditions cumulatives à la clôture : « La valeur vénale des actifs qu'elles détiennent doit être supérieure ou égale à 5 M€ » ; une personne physique détient au moins 50 % des droits (ou exerce en fait le pouvoir de décision) ; « revenus passifs correspondant à plus de 50 % du montant cumulé des produits d'exploitation et des produits financiers » [R3-18].
+- Assiette (biens non affectés à une activité opérationnelle) : « les biens affectés à l'exercice de la chasse et de la pêche ; les véhicules qui ne sont pas affectés à une activité professionnelle [...] ; les bijoux et métaux précieux, sauf s'ils sont exposés ; **les chevaux de courses ou de concours** ; les vins et les autres alcools ; et **les logements dont une personne physique associée se réserve la jouissance** » [R3-18]. Précision [R3-19] : logements « occupés, à titre gratuit ou pour un loyer inférieur au prix du marché, à titre de résidence principale ou non » et « logements loués fictivement » ; bijoux exclus s'ils sont « affectés à l'exploitation d'un musée ou d'un monument historique ou exposés dans un lieu accessible au public ».
+- Articulation : mécanisme anti-double imposition avec l'IFI pour les biens immobiliers ; taxe « pas déductible de l'assiette de l'impôt sur les sociétés » [R3-18].
+- Entrée en vigueur : « exercices clos à compter du 31 décembre 2026 » [R3-18].
+- **Conséquence pour le projet (ESTIMATION, à valider)** : loger le propriétaire gratuitement ou sous le prix du marché dans un château détenu par une holding patrimoniale à l'IS (actifs ≥ 5 M€, revenus majoritairement passifs) exposerait la société à 20 % par an de la valeur vénale du logement, et à 20 % de la valeur de chevaux de concours non affectés à une activité opérationnelle. Une société d'exploitation réellement active (revenus d'exploitation > 50 %) n'est pas visée. Le schéma « holding patrimoniale qui détient le château et loge le propriétaire » est donc à proscrire ou à faire valider.
+
+### 5.3 PFU et prélèvements sociaux 2026
+
+- LFSS 2026 : loi n° 2025-1403 du 30 décembre 2025, « Article 12 (hausse de la CSG) » [R3-16] (PAGE LUE, service-public vérifié le 30/06/2026).
+- Revenus de placement (dont dividendes) 2026 : CSG 10,6 %, CRDS 0,5 %, prélèvement de solidarité 7,5 %, total **18,6 %** (17,2 % pour les revenus de 2025) [R3-16].
+- Revenus fonciers et plus-values immobilières : total **17,2 %** (CSG 9,2 %) ; assurance-vie : 17,2 % [R3-16].
+- PFU : « au taux de 31,4 % (ou de 30 %) » [R3-16] ; soit 12,8 % d'IR + 18,6 % de prélèvements sociaux = 31,4 % sur les dividendes 2026 (ESTIMATION arithmétique ; le 12,8 % n'est pas cité sur la page lue).
+- Que Choisir [R3-17] (PAGE LUE) : « Sont notamment visés par cette hausse les dividendes et distributions assimilées » ; « la loi exclut les revenus fonciers perçus par les propriétaires qui donnent en location des biens non meublés » ; pour les revenus du patrimoine (plus-values mobilières, LMNP), l'augmentation « concerne les revenus perçus dès 2025 ». **Divergence** : la page service-public ne mentionne pas de taux spécifique 2025 pour les revenus du patrimoine. À vérifier.
+- Conséquence : 1 € de bénéfice d'une société à l'IS distribué au propriétaire en 2026 = 1 × (1 − 25 %) × (1 − 31,4 %) = **0,514 €** net (taux normal d'IS) ou (1 − 15 %) × (1 − 31,4 %) = 0,583 € (taux réduit). ESTIMATION arithmétique ; taux d'IS à confirmer (voir 5.4).
+
+### 5.4 Impôt sur les sociétés
+
+- Taux normal : « imposée au taux normal de 25 % » [R3-20] (PAGE LUE, vérifiée le 17/02/2026).
+- Taux réduit de 15 % jusqu'à 42 500 € de bénéfice, si chiffre d'affaires ≤ 10 000 000 € et capital entièrement libéré et détenu à 75 % au moins par des personnes physiques (directement ou via une société elle-même détenue à 75 % par des personnes physiques) [R3-20] (PAGE LUE).
+- Contribution sociale de 3,3 % : non mentionnée sur la page lue ; INCONNU ici (concerne seulement les grandes entreprises, à vérifier).
+
+## Q6. TVA 2025-2026
+
+### 6.1 Activités équestres : le taux réduit a-t-il été rétabli ? Oui, partiellement, depuis le 1er janvier 2024
+
+Source principale : BOFiP BOI-TVA-SECT-80-10-30-50, version en vigueur depuis le 25/03/2026 [R3-22] (PAGE LUE).
+- « la France fait partiellement usage, depuis le 1er janvier 2024, de la possibilité qui lui est offerte » (directive 2006/112/CE modifiée par la directive (UE) 2022/542 du 5 avril 2022) ; base : CGI art. 278-0 bis, O [R3-22].
+- **5,5 %** : « l'enseignement et la pratique de l'équitation » (§ 50) ; animations et démonstrations « indépendamment des buts et motivations du consommateur » (§ 60) ; accès aux manèges, carrières et écuries et « les mises à disposition d'équidés à des fins de pratique de l'équitation » (§ 70) ; « la prise en pension du cheval d'un client [...] relève du taux réduit de TVA de 5,5 % » lorsqu'elle « en constitue l'accessoire » (accès aux installations ou pratique de l'équitation) (§ 50) ; pensions dans le cadre de la production agricole et « livraison d'un équidé à des fins de reproduction » ; saillie sans acte vétérinaire (§ 10-20).
+- **20 % (taux normal)** : « relèvent du taux normal de la TVA l'ensemble des ventes d'équidés et des prestations de services [...] telles que par exemple l'entraînement, le dressage ou la prise en pension » hors exceptions ci-dessus ; « La livraison de chevaux de course » (§ 90) ; « les prises en pension en vue de la valorisation des équidés à des fins commerciales » et chevaux mis à la retraite (§ 100) ; courtage de saillies, cession de poulains non destinés à la boucherie ou à l'agriculture (§ 120) ; « Les prestations de location de boxes, sans entretien du cheval, ne constituent pas une opération de prise en pension. » donc taux normal (§ 130).
+- **Exonération** : « Les leçons ou cours d'équitation sont exonérés de la TVA » lorsqu'ils sont donnés par une personne physique rémunérée directement par ses élèves, sans salarié participant à l'enseignement [R3-22] (reformulation du résumé, première partie citée).
+- Équidés destinés à la boucherie : 2,10 % (vendeurs au remboursement forfaitaire) ou 5,5 % (assujettis) (§ 40).
+- Confirmation : la fiche service-public « Taux de TVA dans le secteur des loisirs » (vérifiée le 11/08/2026) indique 5,5 % pour les « Activités équestres (cours, pratique, accès aux installations destinées aux équidés) » [R3-26] (PAGE LUE).
+- Historique : en février 2023, le Gouvernement jugeait l'extension à toute la filière « difficilement compatible avec le contexte très contraint de nos finances publiques » ; la doctrine alors opposable limitait le 5,5 % aux animations, démonstrations et à l'accès aux manèges, carrières ou écuries (BOI-TVA-SECT-80-10-30-50 § 20) ; coût estimé par la question écrite : 35 M€ [R3-21] (PAGE LUE).
+- **Conséquence pour le modèle** : une pension « travail » où le propriétaire monte son cheval et utilise les installations est à 5,5 % ; une pension de valorisation commerciale, une pension retraite, une location de boxes « nus » (sans entretien) ou la vente de chevaux de sport sont à 20 %. Le prix public TTC d'une pension doit être converti en HT avec le bon taux. À VALIDER au cas par cas par un expert-comptable (frontière « accessoire » fragile).
+
+### 6.2 Autres activités du domaine
+
+| Activité | Taux | Statut et source |
+|---|---|---|
+| Droits d'entrée d'un château ou monument privé, parcs et jardins | **10 %** (CGI art. 279, b nonies) ; « sites patrimoniaux, monuments et bâtiments historiques » ; la non-inscription MH est sans incidence | PAGE LUE [R3-23 § 10, § 70] |
+| Droits d'entrée des musées et monuments exploités par des établissements publics ou à but non lucratif | exonérés | PAGE LUE [R3-26] |
+| Location d'un château ou d'une salle pour un événement (mariage, séminaire) | n'est pas un droit d'admission : « la location de salles ou châteaux afin d'y d'organiser des évènements (mariages, anniversaires, etc.) » est exclue du 10 % [R3-23 § 45] ; donc taux normal 20 % | PAGE LUE pour l'exclusion ; 20 % = ESTIMATION (taux normal) à confirmer |
+| Forfait regroupant plusieurs prestations | taux « le plus élevé parmi les éléments qui ne peuvent être considérés comme accessoires » [R3-23 § 140] | PAGE LUE |
+| Spectacles vivants et concerts | 5,5 % | PAGE LUE [R3-26] |
+| Hôtels de tourisme classés | 10 % | PAGE LUE [R3-24] |
+| Location meublée avec au moins 3 des 4 prestations (petit-déjeuner, linge, nettoyage régulier, réception) | soumise à TVA ; hébergement de type hôtelier à 10 % pour 30 nuits maximum | PAGE LUE [R3-24] |
+| Location à usage d'habitation (nue ou meublée sans prestations) | « en général exonérée de TVA » | PAGE LUE [R3-24] |
+| Restauration (repas servis sur place), petit-déjeuner | **10 %** : « Tous les plats servis dans la restauration sont facturés au taux intermédiaire de 10 % » ; boissons alcoolisées : « Toutes les boissons alcoolisées sont vendues au taux normal de 20 % » | PAGE LUE [R3-29] |
+| Produits d'origine agricole (dont, probablement, foin et paille) | 5,5 % | PAGE LUE pour la catégorie [R3-25] ; application au foin = ESTIMATION |
+| Travaux forestiers ; bois de chauffage | 10 % | PAGE LUE [R3-25] |
+| Prestations de services agricoles | « en général, soumises à la TVA à 20 % » | PAGE LUE [R3-25] |
+| Location de terres nues agricoles (bail rural) | exonération avec option possible (CGI art. 261 D et 260) | INCONNU dans les pages lues ; à vérifier (BOFiP série BOI-TVA-CHAMP-30-10-60) |
+| Fourniture d'électricité | 20 % : « L'abonnement pour la livraison d'électricité ainsi que la consommation d'électricité sont soumis à la TVA à 20 % » (métropole). Le cas du producteur qui vend sa production (photovoltaïque, hydro) n'est pas traité sur la page : 20 % = ESTIMATION | PAGE LUE [R3-30] |
+| Pose d'équipements photovoltaïques par un installateur qualifié | 5,5 % (LF 2026, art. 94) | PAGE LUE [R3-18] (synthèse d'avocats) |
+
+Franchise en base de TVA 2026 [R3-27] (PAGE LUE, vérifiée le 01/01/2026) : « Pour l'année 2026, les seuils de franchise en base de TVA française applicables restent inchangés » : commerce et hébergement 85 000 € (tolérance 93 500 €) ; prestations de services 37 500 € (tolérance 41 250 €). Le projet de seuil unique de 25 000 € a été abandonné.
+
+### 5.5 Meublés de tourisme, LMNP, chambres d'hôtes (loi Le Meur, LF 2025, LF 2026)
+
+Loi n° 2024-1039 du 19 novembre 2024 « visant à renforcer les outils de régulation des meublés de tourisme à l'échelle locale » (dite loi Le Meur), JO du 20/11/2024 [R3-34] (PAGE LUE).
+
+Seuils et abattements du micro-BIC (recettes HT) [R3-31], [R3-33], [R3-36] (PAGE LUE) :
+
+| Activité | Revenus 2024 (ancien régime) | Revenus 2025 | Revenus 2026 |
+|---|---|---|---|
+| Meublé de tourisme non classé | 77 700 € / 50 % | **15 000 € / 30 %** | 15 000 € / 30 % |
+| Meublé de tourisme classé | 188 700 € / 71 % | **77 700 € / 50 %** | **83 600 € / 50 %** |
+| Chambre d'hôtes | 188 700 € / 71 % | 77 700 € / 50 % | 83 600 € / 50 % |
+| Location meublée longue durée | 77 700 € / 50 % | 77 700 € / 50 % | 83 600 € / 50 % |
+| Vente de marchandises, hébergement hors meublés de tourisme (hôtellerie) | — | 188 700 € / 71 % | 203 100 € / 71 % |
+| Prestations de services BIC | — | 77 700 € / 50 % | 83 600 € / 50 % |
+
+Remarques : abattement minimal de 305 € ; le loueur classé qui dépasse 77 700 € deux années consécutives passe au réel [R3-31] ; une année de tolérance en cas de premier dépassement [R3-36].
+
+Autres règles lues :
+- Régime réel LMNP : amortissement du logement et des meubles ; « le déficit s'impute sur les revenus de location meublée non professionnelle de la même année et des 10 années suivantes », pas sur le revenu global (sauf LMP) [R3-36] (reformulation fidèle).
+- LMP : recettes du foyer > 23 000 € et supérieures aux autres revenus d'activité ; exonération de plus-value si recettes < 90 000 € HT et activité depuis 5 ans au moins (partielle entre 90 000 et 126 000 € HT ; 250 000 / 350 000 € HT pour la para-hôtellerie) [R3-32] (PAGE LUE).
+- LF 2025 : pour les ventes réalisées depuis le 15 février 2025, les amortissements déduits en LMNP sont réintégrés dans le calcul de la plus-value, « sous certaines conditions » (exceptions non détaillées sur la page) [R3-37] (PAGE LUE, reformulation). Plus-value immobilière des particuliers : IR 19 % (exonération après 22 ans), prélèvements sociaux 17,2 % (exonération après 30 ans) [R3-37].
+- Prélèvements sociaux sur les revenus LMNP : 18,6 % selon la logique de la LFSS 2026 (revenus du patrimoine hors revenus fonciers) [R3-16], [R3-17] ; la page F32744 ne donne pas le taux. ESTIMATION.
+- Cotisations sociales : meublés de tourisme, cotisations Urssaf si les recettes de courte durée dépassent 23 000 € ; chambres d'hôtes, cotisations si le revenu imposable dépasse 13 % du PASS, « 6 123 € en 2025 » selon [R3-31] et « 6 248 € de revenus imposables en 2025 » selon [R3-35]. **Divergence non résolue** (6 248 € correspond probablement à 13 % du PASS 2026 : ESTIMATION).
+- Le Meur, autres règles [R3-34] : DPE obligatoire pour les logements nouvellement proposés en meublé de tourisme soumis à changement d'usage ; « Depuis le 1er janvier 2025, les logements classés en catégorie G ne sont plus autorisés à la location » ; F exclus en 2028, seuls A à D en 2034 ; amendes jusqu'à 10 000 € (défaut d'enregistrement) et 20 000 € (fausse déclaration) ; résidences principales limitables à 90 jours ; quotas possibles. **Risque spécifique château** : des dépendances anciennes mal isolées converties en gîtes peuvent tomber sous l'interdiction DPE G puis F. ESTIMATION ; à vérifier logement par logement.
+
+Chambres d'hôtes [R3-35] (PAGE LUE, vérifiée le 21/05/2026) :
+- Définition : « chambre meublée chez l'habitant en vue d'accueillir des touristes à titre onéreux », petit-déjeuner compris ; « La capacité d'accueil ne doit pas dépasser 5 chambres ou 15 clients simultanément. »
+- Au-delà : l'appellation ne peut plus être utilisée et il faut suivre « la réglementation des établissements recevant du public (ERP) ».
+- Déclaration en mairie (cerfa n° 13566) ; activité « considérée comme une activité commerciale, quel que soit le montant des revenus générés » ; immatriculation ; micro-BIC à 50 %. Table d'hôtes facultative, menu unique, réservée aux occupants des chambres.
+- Fiscalité : BIC ; seuils micro du tableau ci-dessus. TVA : régime de l'hébergement (franchise 85 000 € ; au-delà, 10 % si prestations para-hôtelières) [R3-24], [R3-27]. ESTIMATION pour l'application aux chambres d'hôtes.
+
+## Q4. Mécénat
+
+### 4.1 Un MH privé peut-il recevoir des dons défiscalisés ? Oui, via la Fondation du patrimoine, sous conditions strictes
+
+Source : BOFiP BOI-IR-RICI-250-10-20-30, version en vigueur depuis le 12/09/2012 [R3-10] (PAGE LUE). Le texte légal (CGI art. 200 et 238 bis ; C. patrimoine L. 143-2-1) n'a pas pu être lu sur Légifrance : vérifier qu'il n'a pas changé depuis 2012.
+- Immeubles éligibles : « classés ou inscrits au titre des monuments historiques ou ayant reçu le label de la Fondation du patrimoine » (n° 200).
+- Propriétaires : « Seuls les immeubles détenus en totalité par des personnes physiques » (n° 160) ; sociétés civiles admises seulement si elles ne comprennent que des personnes physiques et ont pour objet exclusif la gestion ou la location nue (n° 180) ; « Sont dès lors exclues toutes les sociétés commerciales » (n° 180).
+- **Exploitation commerciale** : principe d'exclusion des immeubles procurant des recettes commerciales (n° 290) ; exception : « la visite payante du monument ne permet pas de considérer que l'immeuble fait l'objet d'une exploitation commerciale » (n° 300) ; autres activités tolérées si les recettes « n'excèdent pas 60 000 euros » HT sur l'année civile précédant le versement (n° 310) ; immeubles classés ou inscrits « utilisés par leurs propriétaires pour les besoins d'une entreprise agricole » admis (n° 290).
+- Engagements (C. patrimoine L. 143-2-1, III) : « L'immeuble doit être conservé pendant au moins dix ans à compter de la date d'achèvement des travaux » (n° 430) ; parties protégées ouvertes au public pendant au moins dix ans (50 jours/an ou 40 jours en juillet-septembre), ou visibles depuis la voie publique (n° 450). Non applicables aux immeubles labellisés (n° 420).
+- Donateur : ni le propriétaire, ni un parent en ligne directe ou collatéral, ni un donateur ayant lui-même conclu une telle convention pour son propre immeuble (n° 10).
+- Avantage du donateur : IR « 66 % du montant des sommes versées dans la limite de 20 % du revenu imposable » ; entreprises 60 % (art. 238 bis) (n° 20). Selon la Fondation : 66 % IR, 60 % IS, 75 % IFI [R3-09] (PAGE LUE).
+- Frais de la Fondation du patrimoine : 6 % des dons collectés ; 94 % vont aux travaux [R3-09] (PAGE LUE).
+- Traitement chez le propriétaire : les dons reçus de la Fondation du patrimoine pour des travaux sont ajoutés aux recettes foncières de l'année de perception [R3-04 § 60] (PAGE LUE).
+- **Conséquence pour le modèle** : si le domaine dégage plus de 60 000 € HT/an de recettes commerciales (réceptions, hébergement) ou si le château appartient à une société commerciale, la collecte défiscalisée via la Fondation est fermée (doctrine 2012, À VÉRIFIER sur le texte actuel de l'article 200 CGI). Les dons financent des travaux précis, pas le fonctionnement.
+
+### 4.2 Fonds de dotation et avantage privé
+
+- Pour ouvrir droit à réduction d'impôt, l'organisme doit être d'intérêt général : pas d'activité lucrative, pas de « gestion intéressée », pas de fonctionnement « au profit d'un cercle restreint de personnes » ; définition : « Un organisme fonctionne au profit d'un cercle restreint de personnes lorsqu'il poursuit des intérêts particuliers d'une ou plusieurs personnes clairement individualisables. » [R3-43 § 90, § 130] (PAGE LUE). « tous les versements faits directement à un particulier ou à une entreprise industrielle ou commerciale sont exclus » (§ 80).
+- **Application (ESTIMATION, à valider par un avocat)** : un fonds de dotation qui porterait le château tout en logeant gratuitement son fondateur poursuivrait les intérêts particuliers d'une personne « clairement individualisable » : les dons perdraient leur caractère déductible et le fonds s'exposerait à une remise en cause. Un loyer de marché payé par le fondateur pour sa partie privée, une ouverture réelle au public et une gouvernance indépendante seraient des conditions minimales. La page associations.gouv.fr sur les fonds de dotation n'a pas pu être lue (erreur 503) : dotation minimale, interdiction des fonds publics et contrôle préfectoral restent INCONNUS ici (loi n° 2008-776 du 4 août 2008, art. 140, à vérifier).
+
+### 4.3 Mécénat d'entreprise [R3-42] (PAGE LUE, vérifiée le 20/07/2026)
+
+- Réduction d'impôt : 60 % du don jusqu'à 2 000 000 €, 40 % au-delà. Plafond : 20 000 € ou 5 ‰ du chiffre d'affaires HT si ce montant est plus élevé ; excédent reportable sur 5 exercices.
+- Bénéficiaires : organismes d'intérêt général dont l'activité ne profite pas à « un cercle restreint » ; la Fondation du patrimoine figure dans la liste. Mécénat « sans aucune contrepartie » ; à distinguer du parrainage (contrepartie publicitaire, charge déductible).
+- **Conséquence** : une entreprise ne peut pas faire un don défiscalisé directement au propriétaire privé ou à sa société d'exploitation ; seulement via la Fondation du patrimoine (conditions 4.1) ou un organisme d'intérêt général. Le parrainage d'événements (concours équestre) reste possible comme prestation commerciale (TVA 20 %).
+
+## Q7. Statut agricole, bail rural, risque de requalification
+
+### 7.1 Activités équestres agricoles
+
+- Le statut du fermage s'applique en totalité quand trois éléments sont réunis : « Mise à disposition d'un immeuble à usage agricole », exploitation pour une activité agricole, « Caractère onéreux du contrat » ; le loyer « est encadré par la loi » [R3-28] (PAGE LUE, vérifiée le 16/06/2025).
+- La même fiche indique que « Certaines activités équestres (entretien et préparation des équidés, à l'exception des activités de spectacle) » sont soumises au statut en raison de la nature de l'activité [R3-28]. Base : C. rural art. L. 311-1 modifié par la loi du 23 février 2005 (texte non lu sur Légifrance) ; selon un commentaire d'avocat, depuis 2005 « les activités équestres sont classées comme des activités agricoles à l'exception des activités de spectacle » et un contrat de mise à disposition d'un immeuble à un centre équestre « est susceptible de relever du statut du fermage » [R3-45] (PAGE LUE, article de 2013).
+- Conséquences fiscales et sociales (bénéfices agricoles, affiliation MSA) : non vérifiées dans une page lue lors de cette mission. INCONNU ; à vérifier sur msa.fr et dans le BOFiP (série BOI-BA-CHAMP).
+- TVA : les pensions dans le cadre de la production agricole relèvent du 5,5 % [R3-22] ; voir Q6.
+
+### 7.2 Risque de requalification en bail rural
+
+| Situation | Règle ou jurisprudence | Statut |
+|---|---|---|
+| Vente d'herbe | « assimilées à des baux ruraux » lorsqu'elles sont consenties chaque année au même agriculteur ; pas si elles sont occasionnelles et à des acquéreurs différents [R3-28] | PAGE LUE (reformulation fidèle) |
+| Location de boxes, sellerie, paddock à un professionnel | Tribunal paritaire de Senlis, confirmé par CA Amiens le 6 décembre 2016 : requalification portant sur « 14 boxes de chevaux, une sellerie et un paddock » [R3-47] | EXTRAIT (motivation non lue) |
+| Boxes d'écuries de chevaux de course | La question écrite n° 31336 (2020) décrit des boxes d'écuries de chevaux de course soumis au fermage ; la réponse du ministère de la Justice rappelle que la sous-location est « par principe prohibée par le cinquième alinéa de l'article L. 411-35 » (ordre public, « nullité absolue », résiliation possible) [R3-48] | PAGE LUE |
+| Gardiennage de chevaux seul | Cass. 3e civ., 13 mai 2009, n° 08-16.421 : « la seule activité de gardiennage de chevaux n'entre pas dans la classification des activités agricoles » ; requalification refusée aux preneurs qui ne justifiaient pas « de revenus provenant de leur exploitation » [R3-46] | PAGE LUE (commentaire de presse juridique) |
+| Enseignement de l'équitation sans fourniture de chevaux | cité comme activité non agricole (arrêt de la Cour de cassation de 2007) [R3-45] | PAGE LUE (commentaire, référence exacte de l'arrêt à vérifier) |
+| Bail commercial conclu pour une activité équestre | peut être requalifié en bail rural lors de son renouvellement ; règles impératives [R3-45] | PAGE LUE (commentaire 2013) |
+
+Conséquences d'une requalification [R3-45] (PAGE LUE) : bail de neuf ans « renouvelable tacitement », fermage plafonné par arrêté préfectoral, règles impératives. Le droit de préemption du preneur n'est pas traité dans les pages lues (INCONNU ici). **Pour le propriétaire du château, une requalification signifie perdre durablement la maîtrise d'écuries et de prés au cœur du domaine.**
+
+### 7.3 Alternatives contractuelles (à faire valider par un avocat en droit rural)
+
+- Contrats exclus du statut [R3-28] (PAGE LUE) : « conventions d'occupation précaire », « conventions pluriannuelles d'exploitation agricole ou de pâturage », locations de forêts, baux emphytéotiques ; mise à disposition au profit de la SAFER (6 ans maximum, renouvelable une fois).
+- Petites parcelles : application partielle du statut selon un seuil fixé par arrêté préfectoral ; un seuil « inférieure à 1 hectare » est fréquent selon [R3-45] ; exclu si la parcelle est indispensable à l'exploitation.
+- Prestation de services plutôt que location : contrat de pension où le domaine assure les soins (alimentation, litière, surveillance) ; la jurisprudence de 2009 [R3-46] indique que le simple gardiennage n'est pas agricole, mais une pension de préparation ou d'entraînement l'est depuis 2005 [R3-28]. **Point incertain** : la frontière dépend des faits (qui soigne, qui entraîne, exclusivité des boxes, durée). ESTIMATION ; À VALIDER.
+- Convention pluriannuelle de pâturage : limitée à certaines zones définies par arrêté préfectoral (montagne notamment) selon mes connaissances, non vérifié dans une page lue : INCONNU.
+- Bail commercial : possible pour une activité non agricole (gardiennage seul, activités de spectacle), mais risque de requalification au renouvellement si l'activité devient agricole [R3-45].
+
+## Q8. Urbanisme et réglementation
+
+### 8.1 Zones A et N, changement de destination, STECAL
+
+- Principe : « les zones agricoles ne sont pas constructibles » sauf projets « strictement encadrés » par le règlement du PLU ; « les constructions et les changements de destination doivent être compatibles avec l'exercice d'une activité agricole » ; extensions mesurées et annexes des constructions existantes possibles ; STECAL pour des « résidences démontables » ; « Dans les communes sans PLU, ni carte communale, les constructions sur des terrains cultivés ne sont pas autorisées. » Références citées : C. urb. L111-3 à L111-5, L151-11 à L151-13, R151-17 à R151-26 [R3-41] (PAGE LUE, vérifiée le 11/04/2025).
+- Désignation des bâtiments pouvant changer de destination par le PLU et avis conforme de la CDPENAF (zone A) ou de la CDNPS (zone N) : non trouvés dans une page lue. INCONNU ici ; à vérifier sur le texte de l'article L151-11 du code de l'urbanisme (Légifrance) et dans le PLU de la commune.
+- **Conséquence pour le modèle** : transformer une grange en salle de réception, en gîtes ou en bureaux exige (1) que le PLU ait désigné ce bâtiment, (2) un permis, (3) l'accord de l'ABF si le bâtiment est en abords ou protégé. Délai et aléa forts : à traiter comme HYPOTHÈSE à confirmer commune par commune.
+
+### 8.2 Monuments historiques et abords
+
+- Immeuble classé : il « ne peut être détruit ou déplacé ou être l'objet de travaux sans autorisation délivrée par le préfet de région » ; travaux sous « contrôle scientifique et technique » ; « La maîtrise d'œuvre de ces travaux doit être confiée à des catégories de professionnels spécialisés. » [R3-50] (PAGE LUE).
+- Immeuble inscrit : travaux soumis « dans la plupart des cas, à un permis » ou « à une déclaration préalable », délivrés « après accord du préfet de région » ; contrôle scientifique et technique « tout au long des travaux » [R3-50].
+- La protection « constitue une servitude d'utilité publique » ; en cas de vente, informer l'acquéreur et le préfet de région « dans les quinze jours » [R3-50].
+- Abords : périmètre délimité ou, à défaut, immeubles « à moins de 500 mètres » dans le champ de visibilité ; travaux « soumis à une autorisation préalable nécessitant l'accord de l'architecte des Bâtiments de France » (loi n° 2016-925 du 7 juillet 2016) [R3-51] (PAGE LUE). Formulaire spécifique pour les travaux non soumis au code de l'urbanisme : cerfa 16291*01 [R3-49].
+- Coût et délai : la maîtrise d'œuvre spécialisée (ACMH pour le classé) et l'accord de l'ABF allongent les délais et augmentent les coûts (chiffres : voir R1). ESTIMATION qualitative.
+
+### 8.3 Sites classés
+
+- Le régime MH des revenus fonciers exclut les sites classés, sauf s'ils sont aussi monuments historiques [R3-07 § 40] (PAGE LUE). Un bien en site classé peut recevoir le label de la Fondation du patrimoine [R3-08].
+- Régime d'autorisation des travaux en site classé (C. env. L341-10) : la page du ministère de l'Écologie n'a pas pu être lue (erreur 503). INCONNU ; à vérifier sur ecologie.gouv.fr ou auprès de la DREAL.
+
+### 8.4 ERP : catégories, seuils, obligations
+
+- Définition : « des bâtiments, locaux ou enceintes dans lesquels le public a un accès gratuit ou payant » [R3-38] (PAGE LUE, vérifiée le 26/09/2025).
+- Catégories : 1re > 1 500 personnes ; 2e 701 à 1 500 ; 3e 301 à 700 ; 4e jusqu'à 300 ; 5e en dessous des seuils fixés par type [R3-38].
+- Seuils de la 5e catégorie (sous-sol / étages / ensemble) [R3-38] : type L salles de réunion et polyvalentes 100 / – / **200** ; type L salles de spectacles, projections, cabarets 20 / – / **50** ; type N restaurants 100 / 200 / **200** ; type O hôtels **100** ; type X sport couvert 100 / 100 / **200** ; type PA plein air **300** ; type CTS chapiteaux et tentes **50** ; type Y musées 100 / 100 / **200**. En 5e catégorie, le personnel n'est pas compté dans l'effectif.
+- Gîtes : un gîte rural n'est ERP que si sa capacité de couchage dépasse 15 places ou s'il accueille plus de 7 mineurs sans leurs familles [R3-38]. Chambres d'hôtes au-delà de 5 chambres / 15 clients : réglementation ERP [R3-35].
+- **Correction d'une leçon de la v1** : le seuil de « 50 personnes » ne vaut que pour les salles de spectacles (type L) et les chapiteaux (CTS). Une salle de réception polyvalente reste en 5e catégorie jusqu'à 200 personnes. Mais un lieu ouvert au public est ERP dès la première personne : il faut toujours respecter les règles de la 5e catégorie [R3-38]. Le classement exact (L, N, CTS) d'une salle de mariage dépend de l'usage : À VALIDER avec un bureau de contrôle.
+- Sécurité incendie [R3-39] (PAGE LUE, vérifiée le 30/04/2025) : « au moins 1 extincteur portatif pour 300 m² et au moins 1 par niveau » ; « Tous les ERP sont équipés d'un système d'alarme » ; registre de sécurité ; vérifications périodiques par organismes agréés ; la commission (CCDSA) contrôle les ERP « tous les 3 ou 5 ans », mais « Les ERP de catégorie 5 sans locaux d'hébergement ne sont pas soumis à l'obligation périodique de visite de la CCDSA. » Avec locaux à sommeil (hébergement), pas de dispense de présence permanente du personnel.
+
+### 8.5 Accessibilité (PMR)
+
+- ERP existant de 5e catégorie : une « mesure de substitution » est obligatoire quand une partie n'est pas accessible ; dérogations possibles pour impossibilité technique, « Contraintes liées à la conservation du patrimoine », « Coût des travaux disproportionné » ; attestation d'accessibilité établie par l'exploitant lui-même en 5e catégorie ; registre public d'accessibilité obligatoire ; sanctions : fermeture, amende de 45 000 € (225 000 € pour une personne morale), remboursement de subventions [R3-40] (PAGE LUE, vérifiée le 28/11/2025).
+
+### 8.6 Bruit : musique amplifiée (décret n° 2017-1244 du 7 août 2017)
+
+Source : présentation officielle de la DGS et de la DGPR (2018) reproduisant le texte [R3-52] (PAGE LUE, texte extrait du PDF). L'arrêté d'application et l'état actuel du texte n'ont pas été vérifiés (Légifrance bloqué).
+- Champ (CSP art. R. 1336-1) : « Lieux ouverts au public ou recevant du public, clos ou ouverts, accueillant des activités impliquant la diffusion de sons amplifiés » au-delà de la règle d'égale énergie fondée sur 80 dB(A) sur 8 heures. Applicable à tous les lieux, anciens et nouveaux, depuis le 1er octobre 2018.
+- Seuils : « Ne dépasser, à aucun moment et en aucun endroit accessible au public, les niveaux de pression acoustique continus équivalents 102 dB(A) sur 15 minutes et 118 dB(C) sur 15 minutes » (94 dB(A) et 104 dB(C) pour les activités destinées aux enfants jusqu'à 6 ans).
+- Obligations selon le lieu : lieux de capacité ≥ 300 personnes diffusant à titre habituel : enregistrement et affichage en continu des niveaux, information du public, protections auditives gratuites, zones ou périodes de repos auditif ; lieux < 300 personnes à titre habituel : seuils, information, protections, repos auditif ; à titre non habituel : respect des seuils seulement.
+- Voisinage (C. env. R. 571-25 à R. 571-27) : pour les lieux clos, « Émergence globale de 3 dB(A) » et émergence spectrale maximale de 3 dB par octave (125 à 4 000 Hz) ; **étude de l'impact des nuisances sonores (EINS)** obligatoire pour les lieux « accueillant à titre habituel des activités de diffusion de sons amplifiés » et pour les festivals ; « La pose d'un limiteur peut être prescrite » ; sanctions : amende de 5e classe, confiscation du matériel (R. 571-96).
+- **Conséquence pour un domaine de mariages (ESTIMATION)** : 20 à 40 réceptions par an avec DJ = diffusion « à titre habituel » probable ; prévoir une EINS par un acousticien, un limiteur, et souvent une salle isolée. Ce coût et la contrainte d'horaires pèsent sur la compatibilité avec les chevaux et la résidence privée. Le seuil exact de l'« habitude » n'est pas défini dans la source lue : À VALIDER.
+
+### 8.7 Agrivoltaïsme (loi APER n° 2023-175 du 10 mars 2023, décret n° 2024-318 du 8 avril 2024)
+
+Source : commentaire d'avocat [R3-44] (PAGE LUE) ; les textes officiels (C. énergie L. 314-36, R. 314-108 et suivants) n'ont pas été lus (Légifrance bloqué, sites ministériels en erreur 503).
+- La production agricole doit rester principale : la surface rendue inexploitable « n'excède pas 10% » de la surface couverte ; hauteur et espacement compatibles avec une exploitation normale, « notamment la circulation, la sécurité et l'abri des animaux » ; rendement moyen par hectare « supérieure à 90 % » de celui d'une zone témoin ou d'un référentiel ; dérogations à la zone témoin pour un taux de couverture « inférieur à 40% » sous conditions [R3-44].
+- L'élevage est visé (articles R. 314-114 « hors élevage » et R. 314-115) et le confort thermique des animaux est cité comme service rendu [R3-44].
+- **Chevaux** : je n'ai trouvé aucune source lue précisant si le pâturage d'équins de loisir ou de sport est reconnu comme activité agricole « principale » pour l'agrivoltaïsme. INCONNU ; à vérifier auprès de la chambre d'agriculture et de la DDT (document-cadre départemental), et dans l'arrêté d'application du décret. Le taux maximal de couverture de 40 % pour les installations de plus de 10 MWc n'a pas été confirmé dans une source lue.
+- Revenus (loyers €/ha) : traités par R8.
+
+### 8.8 Petite hydroélectricité
+
+- Droit fondé en titre : droits d'eau attachés aux moulins accordés sous l'Ancien Régime sur des cours d'eau non domaniaux et non abolis la nuit du 4 août 1789 ; consistance légale = « la puissance maximale dont il peut en théorie disposer » fixée par le document le plus ancien ; perte du droit si la force motrice n'est plus utilisable (ruine, changement d'affectation des ouvrages essentiels), mais une longue inutilisation ne suffit pas (CAA Nantes, 29/09/2017, n° 16NT00251 : 67 kW reconnus pour 75 kW revendiqués) [R3-53] (PAGE LUE). Exemple de litige : puissance fixée à 39 kW au lieu de 273 kW demandés (TA Poitiers, 26/12/2024) [R3-54] (EXTRAIT).
+- **Point de vigilance** : la puissance reconnue d'un moulin de château est souvent de quelques dizaines de kW ; la preuve incombe au propriétaire. Obligation d'achat (arrêté tarifaire, durée, tarif) et obligations de continuité écologique : non lues dans une source officielle accessible (sites ADEME, DREAL et préfectures en erreur 403 ou 503). INCONNU ici ; voir R8 et le site de la CRE.
+
+### 8.9 ICPE et écuries
+
+- Aucune source lue ne traite du classement ICPE des écuries. INCONNU. À vérifier : nomenclature ICPE (rubriques 21xx « élevages ») sur aida.ineris.fr ; en l'absence de rubrique équine, les écuries relèvent du règlement sanitaire départemental (distances aux habitations, fumières), à confirmer auprès de la DDPP. Ne pas modéliser de coût ICPE sans vérification.
+
